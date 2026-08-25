@@ -1,0 +1,23 @@
+{
+  "name": "marketlens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Identifies the financial news that matters, then maps the second-order effects across rates, FX, equities, credit, commodities and volatility.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "daily": "node scripts/pipeline.mjs && node scripts/build.mjs",
+    "pipeline": "node scripts/pipeline.mjs",
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "serve": "node scripts/serve.mjs",
+    "seed": "node scripts/seed-demo.mjs && node scripts/build.mjs",
+    "test": "node scripts/test.mjs",
+    "diagnose": "node scripts/diagnose.mjs",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

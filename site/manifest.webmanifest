@@ -1,0 +1,25 @@
+{
+  "name": "MarketLens — second-order market analysis",
+  "short_name": "MarketLens",
+  "description": "Identifies the financial news that matters, then maps the second-order effects across rates, FX, equities, credit, commodities and volatility.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#080b11",
+  "theme_color": "#080b11",
+  "categories": ["finance", "news", "productivity"],
+  "lang": "en-GB",
+  "dir": "ltr",
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Today's read", "url": "/", "description": "The day's market read and ranked stories" },
+    { "name": "Scorecard", "url": "/scorecard/", "description": "Track record of every call" },
+    { "name": "Lenses", "url": "/lens/", "description": "Impacts grouped by asset class" }
+  ]
+}

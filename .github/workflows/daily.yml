@@ -1,0 +1,90 @@
+name: Daily edition
+
+# Runs before the London open, then commits the day's data back to the repo.
+# The commit triggers Vercel, which rebuilds and publishes the site.
+#
+# 05:10 UTC = 06:10 London in summer (BST), 05:10 in winter (GMT).
+# GitHub's scheduler is best-effort and can run several minutes late; that is
+# fine for a pre-market edition.
+
+on:
+  schedule:
+    - cron: '10 5 * * 1-5'   # weekdays only — markets are shut at weekends
+  workflow_dispatch:          # lets you run it manually from the Actions tab
+    inputs:
+      stories:
+        description: 'How many stories to analyse'
+        required: false
+        default: '5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run tests
+        run: node scripts/test.mjs
+
+      - name: Run the pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: node scripts/pipeline.mjs --stories ${{ github.event.inputs.stories || '5' }}
+
+      - name: Verify the site builds
+        run: node scripts/build.mjs
+
+      - name: Commit the new edition
+        run: |
+          git config user.name  "MarketLens bot"
+          git config user.email "actions@github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No data changes — nothing to publish."
+            exit 0
+          fi
+          git commit -m "Edition: $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### MarketLens daily run"
+            echo ""
+            if [ -f data/latest.json ]; then
+              node -e "
+                const d = require('./data/latest.json');
+                console.log('**' + d.marketRead.headline + '**');
+                console.log('');
+                console.log('| # | Story |');
+                console.log('|---|-------|');
+                d.stories.forEach(s => console.log('| ' + s.rank + ' | ' + s.headline.replace(/\|/g,'') + ' |'));
+                console.log('');
+                console.log('Articles ingested: ' + d.diagnostics.articlesIngested +
+                            ' · Feeds healthy: ' + d.diagnostics.feeds.filter(f=>f.ok).length + '/' + d.diagnostics.feeds.length +
+                            ' · Estimated cost: \$' + d.diagnostics.usage.estimatedCostUsd);
+              "
+            else
+              echo "No edition was produced."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
