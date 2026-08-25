@@ -10,12 +10,17 @@
  * scorecard settlement.
  */
 
+import { readFile } from 'node:fs/promises';
+
 import { parseFeed } from './lib/feeds.mjs';
 import { clusterArticles, scoreCluster, shortlist } from './lib/rank.mjs';
 import { extractJson } from './lib/llm.mjs';
-import { extractCalls } from './lib/prompt.mjs';
+import { extractCalls, TRANSMISSION_CHANNELS } from './lib/prompt.mjs';
 import { settleCalls, summarise, addCalls } from './lib/scorecard.mjs';
-import { esc } from './lib/render.mjs';
+import {
+  esc, renderImpact, renderChain, renderGlossary, renderAskBox,
+  pricedInLabel, ASSET_LABEL,
+} from './lib/render.mjs';
 
 let passed = 0;
 let failed = 0;
@@ -184,6 +189,169 @@ check('throws on empty response', () => {
   assert(threw, 'should have thrown');
 });
 
+/* ------------------------------------------------------------- Rendering */
+
+section('Rendering');
+
+const sampleImpact = {
+  assetClass: 'rates', instrument: 'US 2Y', direction: 'down',
+  magnitude: '6 to 12 basis points', horizon: 'days', conviction: 4, order: 2,
+  plain: 'Short-term bond yields fall because cheaper energy means lower inflation.',
+  detail: 'The front end prices a faster easing path.',
+};
+
+check('impact renders the plain sentence first', () => {
+  const html = renderImpact(sampleImpact);
+  const plainAt = html.indexOf('Short-term bond yields fall');
+  const detailAt = html.indexOf('The front end prices');
+  assert(plainAt > -1 && detailAt > -1, 'both versions must render');
+  assert(plainAt < detailAt, 'plain must come before detail');
+});
+
+check('impact labels knock-on effects for a lay reader', () => {
+  assert(renderImpact(sampleImpact).includes('Knock-on effect'));
+  assert(renderImpact({ ...sampleImpact, order: 1 }).includes('Direct effect'));
+});
+
+check('chain renders the plain channel name, not the key', () => {
+  const html = renderChain({
+    channel: 'policy-reaction',
+    links: [{ plain: 'Cheaper oil lowers inflation.', detail: 'Energy CPI contribution turns negative.' }],
+    endpoint: 'the yield curve', strength: 'strong',
+  }, 0);
+  assert(html.includes('What central banks do next'), 'plain channel name missing');
+  assert(!html.includes('policy-reaction'), 'raw channel key leaked into the page');
+});
+
+check('every channel key has a plain name and explanation', () => {
+  for (const [key, v] of Object.entries(TRANSMISSION_CHANNELS)) {
+    assert(v.name && v.name.length > 3, `${key} has no name`);
+    assert(v.plain && v.plain.length > 20, `${key} has no plain explanation`);
+    assert(!/-/.test(v.name) || v.name !== key, `${key} name is just the key`);
+  }
+});
+
+check('priced-in states read as plain English', () => {
+  eq(pricedInLabel('surprise'), 'Caught the market out');
+  eq(pricedInLabel('partly-priced'), 'Partly expected');
+  eq(pricedInLabel('expected'), 'Market expected this');
+});
+
+check('asset class labels avoid jargon', () => {
+  eq(ASSET_LABEL.rates, 'Government bonds');
+  eq(ASSET_LABEL.equities, 'Shares');
+  eq(ASSET_LABEL.credit, 'Corporate debt');
+});
+
+check('glossary renders term and definition', () => {
+  const html = renderGlossary([{ term: 'Basis point', plain: 'One hundredth of a percentage point.' }]);
+  assert(html.includes('Basis point') && html.includes('One hundredth'));
+});
+
+check('glossary is omitted when empty', () => {
+  eq(renderGlossary([]), '');
+  eq(renderGlossary(undefined), '');
+});
+
+check('ask box carries the story id for the API call', () => {
+  const html = renderAskBox({ id: '2026-08-25-example' });
+  assert(html.includes('data-story="2026-08-25-example"'), 'story id missing');
+});
+
+check('model output is escaped everywhere it renders', () => {
+  const nasty = '<img src=x onerror=alert(1)>';
+  const html = renderImpact({ ...sampleImpact, instrument: nasty, plain: nasty, detail: nasty });
+  assert(!html.includes('<img'), 'unescaped HTML reached the page');
+  assert(html.includes('&lt;img'), 'escaped form missing');
+});
+
+/* --------------------------------------------------------- Prose quality */
+
+section('Prose quality of the shipped demo copy');
+
+const BANNED_PHRASES = [
+  'the tell is', 'that is the whole point', 'which is precisely why',
+  'it is worth noting', 'in other words', 'make no mistake', 'at the end of the day',
+];
+const BANNED_WORDS = /\b(crucially|notably|importantly|fundamentally|genuinely|robust|nuanced|landscape|delve|underscore|testament)\b/i;
+
+function collectProse(story) {
+  const out = [];
+  const push = (s) => { if (typeof s === 'string' && s.length) out.push(s); };
+  push(story.headline); push(story.standfirst);
+  push(story.whatHappened?.plain); push(story.whatHappened?.whyItMatters); push(story.whatHappened?.detail);
+  push(story.whatMarketMisses?.plain); push(story.whatMarketMisses?.detail);
+  for (const c of story.chains || []) for (const l of c.links || []) { push(l.plain); push(l.detail); }
+  for (const i of story.assetImpacts || []) { push(i.plain); push(i.detail); }
+  for (const t of story.tradeExpression || []) { push(t.plain); push(t.risk); }
+  for (const f of story.falsifiers || []) push(f);
+  return out;
+}
+
+let demoStories = [];
+try {
+  const demo = JSON.parse(await readFile(new URL('../data/latest.json', import.meta.url), 'utf8'));
+  demoStories = demo.stories || [];
+} catch { /* no data yet; these checks are skipped */ }
+
+if (demoStories.length) {
+  const prose = demoStories.flatMap(collectProse);
+
+  check('no em dashes in shipped copy', () => {
+    const bad = prose.filter((p) => p.includes('—'));
+    assert(bad.length === 0, `${bad.length} passage(s) contain em dashes: "${(bad[0] || '').slice(0, 70)}"`);
+  });
+
+  check('no banned filler phrases', () => {
+    for (const phrase of BANNED_PHRASES) {
+      const bad = prose.find((p) => p.toLowerCase().includes(phrase));
+      assert(!bad, `found "${phrase}" in: "${(bad || '').slice(0, 70)}"`);
+    }
+  });
+
+  check('no banned filler words', () => {
+    const bad = prose.find((p) => BANNED_WORDS.test(p));
+    assert(!bad, `banned word in: "${(bad || '').slice(0, 80)}"`);
+  });
+
+  check('every story has a glossary', () => {
+    for (const s of demoStories) {
+      assert((s.glossary || []).length >= 3, `${s.id} has ${(s.glossary || []).length} glossary terms`);
+    }
+  });
+
+  check('every chain link has both a plain and a detail version', () => {
+    for (const s of demoStories) {
+      for (const c of s.chains || []) {
+        for (const l of c.links || []) {
+          assert(l.plain && l.plain.length > 10, `${s.id}: link missing plain text`);
+          assert(l.detail && l.detail.length > 10, `${s.id}: link missing detail text`);
+        }
+      }
+    }
+  });
+
+  check('every story produces at least three knock-on effects', () => {
+    for (const s of demoStories) {
+      const second = (s.assetImpacts || []).filter((i) => i.order === 2).length;
+      assert(second >= 3, `${s.id} has only ${second} second-order impacts`);
+    }
+  });
+
+  check('plain text avoids unexplained jargon density', () => {
+    // A crude proxy: the plain fields should not be denser in jargon than the detail fields.
+    const jargon = /\b(basis points?|term premium|carry|OAS|DV01|CDX|skew|beta|duration|convexity|front end|curve)\b/gi;
+    for (const s of demoStories) {
+      for (const i of s.assetImpacts || []) {
+        const plainHits = (i.plain.match(jargon) || []).length;
+        assert(plainHits <= 2, `${s.id} / ${i.instrument}: plain text has ${plainHits} jargon terms`);
+      }
+    }
+  });
+} else {
+  console.log('  (skipped — run npm run seed first)');
+}
+
 /* ------------------------------------------------------------ Call extraction */
 
 section('Call extraction');
@@ -273,6 +441,85 @@ check('handles null and undefined', () => {
   eq(esc(null), '');
   eq(esc(undefined), '');
 });
+
+/* ------------------------------------------------------------ Ask endpoint */
+
+section('Ask endpoint');
+
+if (demoStories.length) {
+  // Stub both the site fetch (for story lookup) and the model call, so this
+  // runs offline with no server and no API key.
+  const realFetch = globalThis.fetch;
+  let lastPrompt = '';
+  let lastMaxTokens = 0;
+
+  const latest = JSON.parse(await readFile(new URL('../data/latest.json', import.meta.url), 'utf8'));
+
+  globalThis.fetch = async (url, opts = {}) => {
+    const u = String(url);
+    if (u.includes('api.anthropic.com')) {
+      const b = JSON.parse(opts.body);
+      lastPrompt = b.messages[0].content;
+      lastMaxTokens = b.max_tokens;
+      return new Response(
+        JSON.stringify({ content: [{ type: 'text', text: 'Cheaper oil lowers inflation, so rate cuts look more likely and short-term yields fall.' }] }),
+        { status: 200, headers: { 'content-type': 'application/json' } },
+      );
+    }
+    if (u.includes('/data/latest.json')) {
+      return new Response(JSON.stringify(latest), { status: 200, headers: { 'content-type': 'application/json' } });
+    }
+    return new Response('not found', { status: 404 });
+  };
+
+  process.env.SITE_URL = 'https://example.test';
+  const savedKey = process.env.ANTHROPIC_API_KEY;
+  process.env.ANTHROPIC_API_KEY = 'test-key';
+
+  const { default: handler } = await import('../api/ask.js');
+
+  const mkRes = () => {
+    const r = { statusCode: 0, body: null };
+    r.setHeader = () => {};
+    r.status = (c) => { r.statusCode = c; return r; };
+    r.json = (o) => { r.body = o; return r; };
+    return r;
+  };
+  const call = async (method, body, ip = '1.2.3.4') => {
+    const res = mkRes();
+    await handler({ method, body, headers: { 'x-forwarded-for': ip, host: 'example.test' } }, res);
+    return res;
+  };
+
+  const storyId = demoStories[0].id;
+
+  // Each case is awaited up front, then reported through the normal checker.
+  const results = [];
+  results.push(['rejects non-POST requests', (await call('GET', {})).statusCode === 405]);
+  results.push(['requires a story id', (await call('POST', { question: 'hi' })).statusCode === 400]);
+  results.push(['requires a question', (await call('POST', { storyId, question: '  ' })).statusCode === 400]);
+  results.push(['caps question length', (await call('POST', { storyId, question: 'a'.repeat(501) })).statusCode === 400]);
+  results.push(['404s an unknown story', (await call('POST', { storyId: '2020-01-01-nope', question: 'what?' })).statusCode === 404]);
+
+  const good = await call('POST', { storyId, question: 'Why does cheaper oil push bond yields down?' }, '5.5.5.5');
+  results.push(['answers a valid question', good.statusCode === 200 && (good.body.answer || '').length > 20]);
+  results.push(['grounds the prompt in the story', lastPrompt.includes(demoStories[0].headline)]);
+  results.push(['passes the chains into the prompt', lastPrompt.includes('HOW IT SPREADS')]);
+  results.push(['caps the answer length', lastMaxTokens === 500]);
+  results.push(['forbids investment advice', /Never give investment advice/.test(lastPrompt)]);
+  results.push(['forbids inventing facts', /Never invent facts/.test(lastPrompt)]);
+
+  for (let i = 0; i < 12; i += 1) await call('POST', { storyId, question: `q${i}` }, '9.9.9.9');
+  results.push(['rate limits one IP', (await call('POST', { storyId, question: 'more' }, '9.9.9.9')).statusCode === 429]);
+  results.push(['leaves other IPs alone', (await call('POST', { storyId, question: 'fine?' }, '7.7.7.7')).statusCode === 200]);
+
+  for (const [name, ok] of results) check(name, () => assert(ok));
+
+  globalThis.fetch = realFetch;
+  if (savedKey) process.env.ANTHROPIC_API_KEY = savedKey; else delete process.env.ANTHROPIC_API_KEY;
+} else {
+  console.log('  (skipped — run npm run seed first)');
+}
 
 /* -------------------------------------------------------------------- Result */
 

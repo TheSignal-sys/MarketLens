@@ -4,6 +4,9 @@
  *
  *   node scripts/serve.mjs          then open http://localhost:4321
  *   node scripts/serve.mjs 8080     to use a different port
+ *
+ * Also runs the /api/ask function locally, so the question box works in
+ * preview exactly as it will in production. It needs a model API key in .env.
  */
 
 import { createServer } from 'node:http';
@@ -11,7 +14,12 @@ import { readFile, stat } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, extname, normalize } from 'node:path';
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'dist');
+import { loadEnv } from './lib/env.mjs';
+
+loadEnv();
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const DIST = join(ROOT, 'dist');
 const PORT = Number(process.argv[2] || process.env.PORT || 4321);
 
 const TYPES = {
@@ -27,11 +35,43 @@ const TYPES = {
   '.txt': 'text/plain; charset=utf-8',
 };
 
+/** Minimal shim so the Vercel-style handler runs unmodified under plain Node. */
+function shimResponse(res) {
+  res.status = (code) => { res.statusCode = code; return res; };
+  res.json = (obj) => {
+    res.setHeader('content-type', 'application/json; charset=utf-8');
+    res.end(JSON.stringify(obj));
+    return res;
+  };
+  return res;
+}
+
+async function readBody(req) {
+  const chunks = [];
+  for await (const chunk of req) chunks.push(chunk);
+  const raw = Buffer.concat(chunks).toString('utf8');
+  try { return JSON.parse(raw); } catch { return raw; }
+}
+
 createServer(async (req, res) => {
+  const url = new URL(req.url, `http://localhost:${PORT}`);
+
+  // Local stand-in for the Vercel serverless function.
+  if (url.pathname === '/api/ask') {
+    try {
+      const { default: handler } = await import('../api/ask.js');
+      req.body = await readBody(req);
+      if (!process.env.SITE_URL) process.env.SITE_URL = `http://localhost:${PORT}`;
+      await handler(req, shimResponse(res));
+    } catch (err) {
+      shimResponse(res).status(500).json({ error: `Local ask handler failed: ${err.message}` });
+    }
+    return;
+  }
+
   try {
-    const url = new URL(req.url, 'http://localhost');
     let path = normalize(decodeURIComponent(url.pathname)).replace(/^(\.\.[/\\])+/, '');
-    let file = join(ROOT, path);
+    let file = join(DIST, path);
 
     try {
       const s = await stat(file);
@@ -48,7 +88,7 @@ createServer(async (req, res) => {
     res.end(body);
   } catch {
     try {
-      const notFound = await readFile(join(ROOT, '404.html'));
+      const notFound = await readFile(join(DIST, '404.html'));
       res.writeHead(404, { 'content-type': TYPES['.html'] });
       res.end(notFound);
     } catch {
@@ -57,5 +97,7 @@ createServer(async (req, res) => {
     }
   }
 }).listen(PORT, () => {
+  const key = process.env.ANTHROPIC_API_KEY || process.env.OPENAI_API_KEY;
   console.log(`MarketLens preview → http://localhost:${PORT}`);
+  console.log(key ? '  question box: live (using your API key)' : '  question box: off (no API key in .env)');
 });

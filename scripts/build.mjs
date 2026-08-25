@@ -16,7 +16,8 @@ import { dirname, join } from 'node:path';
 
 import { loadEnv } from './lib/env.mjs';
 import {
-  esc, attr, layout, renderStoryCard, renderImpact, renderChain, ASSET_LABEL,
+  esc, attr, layout, renderStoryCard, renderImpact, renderChain,
+  renderAskBox, renderGlossary, pricedInLabel, ASSET_LABEL, ASSET_SHORT,
 } from './lib/render.mjs';
 import { summarise } from './lib/scorecard.mjs';
 import { TRANSMISSION_CHANNELS } from './lib/prompt.mjs';
@@ -32,6 +33,14 @@ const SITE_URL = (process.env.SITE_URL || 'https://marketlens.app').replace(/\/$
 
 /** Maximum points each materiality component can contribute — see rank.mjs. */
 const COMPONENT_MAX = { corroboration: 30, authority: 20, breadth: 20, salience: 20, recency: 10 };
+
+const COMPONENT_LABEL = {
+  corroboration: 'How many outlets ran it',
+  authority: 'How authoritative the source is',
+  breadth: 'How many markets it touches',
+  salience: 'How market-relevant the language is',
+  recency: 'How fresh it is',
+};
 
 async function readJson(path, fallback = null) {
   try { return JSON.parse(await readFile(path, 'utf8')); } catch { return fallback; }
@@ -53,10 +62,10 @@ function todayPage(data, { canonical = '/', isArchive = false } = {}) {
   const body = `
     ${isArchive ? `<a class="back" href="/archive/">← Archive</a>` : ''}
     <section class="read">
-      <div class="read-kicker">The read · ${esc(data.dateLabel)}</div>
+      <div class="read-kicker">Today's read · ${esc(data.dateLabel)}</div>
       <h1>${esc(read.headline || 'Today in markets')}</h1>
       <div class="read-body">${esc(read.body || '')}</div>
-      ${read.regime ? `<div class="read-regime">Regime · <b>${esc(read.regime)}</b></div>` : ''}
+      ${read.regime ? `<div class="read-regime">The mood right now · <b>${esc(read.regime)}</b></div>` : ''}
     </section>
 
     <div class="section-head">
@@ -68,35 +77,22 @@ function todayPage(data, { canonical = '/', isArchive = false } = {}) {
       ${stories.map((s) => renderStoryCard(s, { href: storyHref(s) })).join('\n      ')}
     </div>
 
-    ${(data.rejected || []).length ? `
-    <div class="section-head">
-      <h2>Considered and rejected</h2>
-      <span class="rule"></span>
-    </div>
-    <div class="panel">
-      <div class="panel-title">Why these did not make the cut</div>
-      ${data.rejected.slice(0, 6).map((r) => `<div class="source-link">
-        <span class="name">${esc(String(r.score))}</span>
-        <span class="t"><strong style="color:var(--text)">${esc(r.title)}</strong><br>${esc(r.why)}</span>
-      </div>`).join('\n      ')}
-    </div>` : ''}
-
     ${data.scorecardSummary && data.scorecardSummary.settled ? `
     <div class="section-head">
-      <h2>Track record</h2>
+      <h2>Has it been right?</h2>
       <span class="rule"></span>
-      <a class="count" href="/scorecard/">view all →</a>
+      <a class="count" href="/scorecard/">see all →</a>
     </div>
     <div class="stat-grid">
-      <div class="stat"><div class="stat-value ${data.scorecardSummary.hitRate >= 50 ? 'up' : 'down'}">${data.scorecardSummary.hitRate ?? '—'}%</div><div class="stat-label">Hit rate</div></div>
-      <div class="stat"><div class="stat-value">${data.scorecardSummary.settled}</div><div class="stat-label">Settled</div></div>
-      <div class="stat"><div class="stat-value">${data.scorecardSummary.open}</div><div class="stat-label">Open</div></div>
+      <div class="stat"><div class="stat-value ${data.scorecardSummary.hitRate >= 50 ? 'up' : 'down'}">${data.scorecardSummary.hitRate ?? '—'}%</div><div class="stat-label">Called right</div></div>
+      <div class="stat"><div class="stat-value">${data.scorecardSummary.settled}</div><div class="stat-label">Finished</div></div>
+      <div class="stat"><div class="stat-value">${data.scorecardSummary.open}</div><div class="stat-label">Still running</div></div>
     </div>` : ''}
   `;
 
   return layout({
     title: isArchive ? data.dateLabel : 'MarketLens',
-    description: read.body?.slice(0, 175) || 'Second-order analysis of the financial news that moves markets.',
+    description: read.body?.slice(0, 175) || 'What today’s financial news actually does to markets, traced step by step.',
     activeTab: isArchive ? 'archive' : 'today',
     body,
     snapshot: data.snapshot,
@@ -109,13 +105,20 @@ function todayPage(data, { canonical = '/', isArchive = false } = {}) {
 /* ============================================================ Story page */
 
 function storyPage(story, data, { basePath }) {
-  const impacts = [...(story.assetImpacts || [])].sort(
-    (a, b) => (a.order || 1) - (b.order || 1) || (b.conviction || 0) - (a.conviction || 0),
-  );
-  const firstOrder = impacts.filter((i) => i.order !== 2);
-  const secondOrder = impacts.filter((i) => i.order === 2);
+  const impacts = story.assetImpacts || [];
   const c = story.classification || {};
   const m = story.materiality || {};
+  const wh = story.whatHappened || {};
+  const miss = story.whatMarketMisses || {};
+
+  // Stage 3 reads far better grouped by asset class than as one long list.
+  const grouped = {};
+  for (const i of impacts) (grouped[i.assetClass] ||= []).push(i);
+  for (const list of Object.values(grouped)) {
+    list.sort((a, b) => (a.order || 1) - (b.order || 1) || (b.conviction || 0) - (a.conviction || 0));
+  }
+  const groupOrder = ['rates', 'fx', 'equities', 'credit', 'commodities', 'vol']
+    .filter((k) => grouped[k]);
 
   const body = `
     <a class="back" href="${attr(basePath)}">← ${esc(data.dateLabel)}</a>
@@ -123,52 +126,64 @@ function storyPage(story, data, { basePath }) {
     <div class="story-head">
       <div class="chips">
         <span class="chip chip--accent">#${esc(story.rank)} today</span>
+        <span class="chip">${esc(pricedInLabel(c.pricedIn))}</span>
         <span class="chip chip--mono">${esc(String(c.eventType || '').replace(/-/g, ' '))}</span>
-        <span class="chip chip--mono">${esc(String(c.pricedIn || '').replace(/-/g, ' '))}</span>
-        <span class="chip chip--mono">${esc(c.persistence || '')}</span>
       </div>
       <h1>${esc(story.headline)}</h1>
       <div class="standfirst">${esc(story.standfirst)}</div>
     </div>
 
-    <div class="panel">
-      <div class="panel-title"><span class="num">01</span> First order — what the market already knows</div>
-      <div class="prose">${esc(story.firstOrder)}</div>
-      ${c.pricedInRationale ? `<div class="chain-note" style="margin-top:11px">${esc(c.pricedInRationale)}</div>` : ''}
-    </div>
+    <!-- The three-stage flow. The numbered spine is the product. -->
+    <ol class="flow-nav" aria-label="How this analysis is structured">
+      <li><a href="#stage-1"><b>1</b> What happened</a></li>
+      <li><a href="#stage-2"><b>2</b> How it spreads</a></li>
+      <li><a href="#stage-3"><b>3</b> What it means</a></li>
+    </ol>
 
-    ${(story.transmission || []).length ? `
-    <div class="panel">
-      <div class="panel-title"><span class="num">02</span> Transmission — how it propagates</div>
-      ${story.transmission.map(renderChain).join('\n      ')}
-    </div>` : ''}
+    <section class="stage" id="stage-1">
+      <div class="stage-head"><span class="stage-num">1</span><h2>What happened</h2></div>
+      <div class="panel">
+        <p class="lead-text">${esc(wh.plain || '')}</p>
+        ${wh.whyItMatters ? `<div class="why-matters"><b>Why it matters</b>${esc(wh.whyItMatters)}</div>` : ''}
+        ${wh.detail ? `<p class="impact-detail"><b>Market context</b> ${esc(wh.detail)}</p>` : ''}
+        ${c.pricedInRationale ? `<p class="impact-detail"><b>Already priced in?</b> ${esc(c.pricedInRationale)}</p>` : ''}
+      </div>
+    </section>
 
-    ${secondOrder.length ? `
-    <div class="panel">
-      <div class="panel-title"><span class="num">03</span> Second-order impacts</div>
-      ${secondOrder.map(renderImpact).join('\n      ')}
-    </div>` : ''}
+    ${(story.chains || []).length ? `
+    <section class="stage" id="stage-2">
+      <div class="stage-head"><span class="stage-num">2</span><h2>How it spreads</h2></div>
+      <p class="stage-intro">Each step below is caused by the step above it. The first effect is obvious and already reflected in prices. The ones after it usually are not.</p>
+      <div class="panel">
+        ${story.chains.map(renderChain).join('\n        ')}
+      </div>
+    </section>` : ''}
 
-    ${firstOrder.length ? `
-    <div class="panel">
-      <div class="panel-title"><span class="num">04</span> Direct impacts</div>
-      ${firstOrder.map(renderImpact).join('\n      ')}
-    </div>` : ''}
+    ${groupOrder.length ? `
+    <section class="stage" id="stage-3">
+      <div class="stage-head"><span class="stage-num">3</span><h2>What it means for each market</h2></div>
+      ${groupOrder.map((k) => `
+      <div class="panel">
+        <div class="panel-title">${esc(ASSET_LABEL[k] || k)}</div>
+        ${grouped[k].map((i) => renderImpact(i, { showClass: false })).join('\n        ')}
+      </div>`).join('\n      ')}
+    </section>` : ''}
 
-    ${story.nonConsensus ? `
+    ${miss.plain ? `
     <div class="callout callout-edge">
-      <h4>Where the edge is</h4>
-      <p>${esc(story.nonConsensus)}</p>
+      <h4>What the market may be missing</h4>
+      <p>${esc(miss.plain)}</p>
+      ${miss.detail ? `<p class="impact-detail" style="margin-top:10px">${esc(miss.detail)}</p>` : ''}
     </div>` : ''}
 
     ${(story.tradeExpression || []).length ? `
     <div class="panel">
-      <div class="panel-title"><span class="num">05</span> How you would express it</div>
+      <div class="panel-title">How you would act on it</div>
       ${story.tradeExpression.map((t) => `<div class="trade">
         <h5>${esc(t.idea)}</h5>
-        <div class="instrument">${esc(t.instrument)}</div>
-        <p>${esc(t.rationale)}</p>
-        <div class="risk"><b>Risk:</b> ${esc(t.risk)}</div>
+        <p>${esc(t.plain || '')}</p>
+        ${t.instrument ? `<div class="instrument">${esc(t.instrument)}</div>` : ''}
+        <div class="risk"><b>How it loses money:</b> ${esc(t.risk)}</div>
       </div>`).join('\n      ')}
     </div>` : ''}
 
@@ -180,28 +195,28 @@ function storyPage(story, data, { basePath }) {
 
     ${(story.watchNext || []).length ? `
     <div class="panel">
-      <div class="panel-title">Catalysts to watch</div>
+      <div class="panel-title">What to watch next</div>
       <ul class="tick-list watch">${story.watchNext.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>
     </div>` : ''}
 
-    <div class="panel">
-      <div class="panel-title">Why this story was prioritised</div>
-      <div class="prose" style="margin-bottom:13px">${esc(story.editorNote || '')}</div>
-      ${m.components ? `
-      <div class="stat-grid" style="margin-bottom:6px">
-        <div class="stat"><div class="stat-value" style="font-size:19px">${esc(m.score)}</div><div class="stat-label">Materiality</div></div>
-        <div class="stat"><div class="stat-value" style="font-size:19px">${esc(m.distinctSources)}</div><div class="stat-label">Sources</div></div>
-        <div class="stat"><div class="stat-value" style="font-size:19px">${esc(story.confidence ?? '—')}/5</div><div class="stat-label">Confidence</div></div>
+    ${renderGlossary(story.glossary)}
+
+    ${renderAskBox(story)}
+
+    <details class="glossary">
+      <summary><span>Why this story was picked</span><span class="g-count">score ${esc(m.score ?? '—')}</span></summary>
+      <div style="padding-top:6px">
+        <p class="impact-plain" style="margin-bottom:14px">${esc(story.editorNote || '')}</p>
+        ${m.components ? Object.entries(m.components).map(([k, v]) => `<div class="bar-row">
+          <div class="bar-top"><span class="k">${esc(COMPONENT_LABEL[k] || k)}</span><span class="v">${esc(v)} / ${COMPONENT_MAX[k] ?? 20}</span></div>
+          <div class="bar"><i style="width:${Math.min(100, (Number(v) / (COMPONENT_MAX[k] ?? 20)) * 100).toFixed(0)}%"></i></div>
+        </div>`).join('\n        ') : ''}
       </div>
-      ${Object.entries(m.components).map(([k, v]) => `<div class="bar-row">
-        <div class="bar-top"><span class="k">${esc(k)}</span><span class="v">${esc(v)} / ${COMPONENT_MAX[k] ?? 20}</span></div>
-        <div class="bar"><i style="width:${Math.min(100, (Number(v) / (COMPONENT_MAX[k] ?? 20)) * 100).toFixed(0)}%"></i></div>
-      </div>`).join('\n      ')}` : ''}
-    </div>
+    </details>
 
     ${(story.links || []).length ? `
     <div class="panel">
-      <div class="panel-title">Sources</div>
+      <div class="panel-title">Where this came from</div>
       ${story.links.map((l) => `<a class="source-link" href="${attr(l.url)}" target="_blank" rel="noopener noreferrer nofollow">
         <span class="name">${esc(l.name)}</span><span class="t">${esc(l.title)}</span>
       </a>`).join('\n      ')}
@@ -226,22 +241,20 @@ function lensIndexPage(data) {
   const classes = Object.keys(ASSET_LABEL);
   const counts = {};
   for (const s of data.stories || []) {
-    for (const i of s.assetImpacts || []) {
-      counts[i.assetClass] = (counts[i.assetClass] || 0) + 1;
-    }
+    for (const i of s.assetImpacts || []) counts[i.assetClass] = (counts[i.assetClass] || 0) + 1;
   }
   const body = `
-    <div class="section-head"><h2>Lenses</h2><span class="rule"></span></div>
-    <p class="prose" style="margin-bottom:16px">Every impact identified today, regrouped by asset class rather than by story — the view a desk actually needs.</p>
+    <div class="section-head"><h2>By market</h2><span class="rule"></span></div>
+    <p class="stage-intro">Every effect identified today, regrouped by the market it lands in rather than by the story it came from.</p>
     <div class="cards">
       ${classes.map((c) => `<a class="card" href="/lens/${c}/">
         <div class="card-top"><span class="chip chip--accent">${esc(ASSET_LABEL[c])}</span></div>
-        <h3 style="font-size:15px">${counts[c] || 0} impact${counts[c] === 1 ? '' : 's'} today</h3>
+        <h3 style="font-size:15px">${counts[c] || 0} effect${counts[c] === 1 ? '' : 's'} today</h3>
       </a>`).join('\n      ')}
     </div>`;
   return layout({
-    title: 'Lenses',
-    description: 'Today’s market impacts grouped by asset class: rates, FX, equities, credit, commodities and volatility.',
+    title: 'By market',
+    description: 'Today’s market effects grouped by asset class: bonds, currencies, shares, corporate debt, commodities and volatility.',
     activeTab: 'lenses', body, snapshot: data.snapshot, dateLabel: data.dateLabel,
     canonical: '/lens/', siteUrl: SITE_URL, generatedAt: data.generatedAt,
   });
@@ -250,27 +263,25 @@ function lensIndexPage(data) {
 function lensPage(cls, data) {
   const rows = [];
   for (const s of data.stories || []) {
-    for (const i of s.assetImpacts || []) {
-      if (i.assetClass === cls) rows.push({ impact: i, story: s });
-    }
+    for (const i of s.assetImpacts || []) if (i.assetClass === cls) rows.push({ impact: i, story: s });
   }
   rows.sort((a, b) => (b.impact.conviction || 0) - (a.impact.conviction || 0));
 
   const body = `
-    <a class="back" href="/lens/">← All lenses</a>
+    <a class="back" href="/lens/">← All markets</a>
     <div class="section-head"><h2>${esc(ASSET_LABEL[cls])}</h2><span class="rule"></span><span class="count">${rows.length}</span></div>
     ${rows.length ? rows.map(({ impact, story }) => `
       <div class="panel">
-        ${renderImpact(impact)}
+        ${renderImpact(impact, { showClass: false })}
         <a class="source-link" href="/story/${attr(story.id)}/" style="border-bottom:none;padding-bottom:0">
           <span class="name">#${esc(story.rank)}</span><span class="t">${esc(story.headline)}</span>
         </a>
       </div>`).join('\n')
-      : '<div class="empty">No impacts flagged for this asset class today.</div>'}
+      : '<div class="empty">Nothing flagged for this market today.</div>'}
   `;
   return layout({
     title: ASSET_LABEL[cls],
-    description: `Second-order ${ASSET_LABEL[cls].toLowerCase()} impacts identified from today's market news.`,
+    description: `How today's news affects ${ASSET_LABEL[cls].toLowerCase()}.`,
     activeTab: 'lenses', body, snapshot: data.snapshot, dateLabel: data.dateLabel,
     canonical: `/lens/${cls}/`, siteUrl: SITE_URL, generatedAt: data.generatedAt,
   });
@@ -284,63 +295,82 @@ function scorecardPage(scorecard, data) {
   const open = calls.filter((c) => c.status === 'open');
   const settled = calls.filter((c) => c.status !== 'open');
 
+  // A worked example makes the page self-explanatory to a first-time visitor.
+  const example = settled.find((c) => c.status === 'hit') || settled[0] || null;
+
   const callRow = (c) => {
-    const good = c.status === 'hit';
     const moveCls = c.moveAbs === undefined ? 'flat' : (c.moveAbs > 0) === (c.direction === 'up') ? 'up' : 'down';
+    const verdict = { hit: 'Right', miss: 'Wrong', flat: 'Barely moved', open: 'Running' }[c.status] || c.status;
     return `<div class="call">
-      <span class="status ${esc(c.status)}"></span>
+      <span class="status ${esc(c.status)}" aria-hidden="true"></span>
       <span class="body">
-        <span class="l">${esc(c.instrumentLabel)} <span class="${c.direction === 'up' ? 'up' : 'down'}">${c.direction === 'up' ? '▲' : '▼'}</span> <span class="muted" style="font-weight:400">${esc(c.magnitude || '')}</span></span>
-        <span class="s">${esc(c.horizon)} · conviction ${esc(c.conviction)} · from ${esc(c.entryDisplay)}${c.settledAt ? ` · ${good ? 'hit' : c.status}` : ''}</span>
+        <span class="l">${esc(c.instrumentLabel)} to go ${esc(c.direction === 'up' ? 'up' : 'down')} <span class="muted" style="font-weight:400">${esc(c.magnitude || '')}</span></span>
+        <span class="s">${esc(verdict)} · from ${esc(c.entryDisplay)} · ${esc(c.horizon)} view · confidence ${esc(c.conviction)}/5</span>
       </span>
       <span class="move ${moveCls}">${esc(c.moveDisplay || '—')}</span>
     </div>`;
   };
 
   const body = `
-    <div class="section-head"><h2>Track record</h2><span class="rule"></span></div>
-    <p class="prose" style="margin-bottom:16px">Every directional call made with conviction of 3 or higher is logged at the prevailing market level and settled once its stated horizon elapses. Moves smaller than 3bp (rates and spreads) or 0.3% (everything else) settle as flat and are excluded from the hit rate.</p>
+    <div class="section-head"><h2>Scorecard</h2><span class="rule"></span></div>
+
+    <section class="explainer">
+      <h3>What this page is</h3>
+      <p>Most market commentary never gets marked. This does. Whenever the analysis says a market should move in a particular direction with reasonable confidence, that prediction is written down along with the price at the time. When its time is up, it gets compared against what actually happened and scored right or wrong.</p>
+      <p>Nothing here is edited afterwards. The misses stay on the page.</p>
+      ${example ? `
+      <div class="worked">
+        <div class="worked-label">For example</div>
+        <ol class="worked-steps">
+          <li><b>The call.</b> A story predicted <b>${esc(example.instrumentLabel)}</b> would go <b>${esc(example.direction)}</b> by ${esc(example.magnitude || 'some amount')} over ${esc(example.horizon)}.</li>
+          <li><b>The starting point.</b> It was at ${esc(example.entryDisplay)} when the call was made.</li>
+          <li><b>What happened.</b> It moved ${esc(example.moveDisplay || '—')}.</li>
+          <li><b>The verdict.</b> ${example.status === 'hit' ? 'Right direction, so it counts as a hit.' : example.status === 'miss' ? 'Wrong direction, so it counts as a miss.' : 'Too small a move to count either way.'}</li>
+        </ol>
+      </div>` : ''}
+      <p class="fineprint">Moves smaller than 3 basis points (bonds and credit) or 0.3% (everything else) count as "barely moved" and are left out of the percentage, so the score is not flattered by noise.</p>
+    </section>
 
     <div class="stat-grid">
-      <div class="stat"><div class="stat-value ${(stats.hitRate ?? 0) >= 50 ? 'up' : 'down'}">${stats.hitRate ?? '—'}${stats.hitRate === null ? '' : '%'}</div><div class="stat-label">Hit rate</div></div>
-      <div class="stat"><div class="stat-value up">${stats.hits}</div><div class="stat-label">Hits</div></div>
-      <div class="stat"><div class="stat-value down">${stats.misses}</div><div class="stat-label">Misses</div></div>
-      <div class="stat"><div class="stat-value">${stats.open}</div><div class="stat-label">Open</div></div>
+      <div class="stat"><div class="stat-value ${(stats.hitRate ?? 0) >= 50 ? 'up' : 'down'}">${stats.hitRate ?? '—'}${stats.hitRate === null ? '' : '%'}</div><div class="stat-label">Called right</div></div>
+      <div class="stat"><div class="stat-value up">${stats.hits}</div><div class="stat-label">Right</div></div>
+      <div class="stat"><div class="stat-value down">${stats.misses}</div><div class="stat-label">Wrong</div></div>
+      <div class="stat"><div class="stat-value">${stats.open}</div><div class="stat-label">Running</div></div>
       <div class="stat"><div class="stat-value muted">${stats.flat}</div><div class="stat-label">Flat</div></div>
     </div>
 
     ${Object.keys(stats.byClass).length ? `
     <div class="panel">
-      <div class="panel-title">By asset class</div>
+      <div class="panel-title">Which markets it reads best</div>
       ${Object.entries(stats.byClass).map(([k, v]) => `<div class="bar-row">
-        <div class="bar-top"><span class="k">${esc(ASSET_LABEL[k] || k)}</span><span class="v">${v.hits}/${v.total} · ${v.rate}%</span></div>
+        <div class="bar-top"><span class="k">${esc(ASSET_SHORT[k] || k)}</span><span class="v">${v.hits}/${v.total} · ${v.rate}%</span></div>
         <div class="bar"><i style="width:${v.rate}%"></i></div>
       </div>`).join('\n      ')}
     </div>` : ''}
 
     ${Object.keys(stats.byConviction).length ? `
     <div class="panel">
-      <div class="panel-title">By stated conviction</div>
+      <div class="panel-title">Does confidence mean anything?</div>
       ${Object.entries(stats.byConviction).sort((a, b) => b[0] - a[0]).map(([k, v]) => `<div class="bar-row">
-        <div class="bar-top"><span class="k">Conviction ${esc(k)}/5</span><span class="v">${v.hits}/${v.total} · ${v.rate}%</span></div>
+        <div class="bar-top"><span class="k">Confidence ${esc(k)}/5</span><span class="v">${v.hits}/${v.total} · ${v.rate}%</span></div>
         <div class="bar"><i style="width:${v.rate}%"></i></div>
       </div>`).join('\n      ')}
-      <div class="chain-note">A tool with genuine signal should show a higher hit rate at higher stated conviction. If it does not, the conviction scale is not calibrated.</div>
+      <p class="fineprint">If the tool has real signal, the calls it was most confident about should be right more often than the ones it hedged on. If they are not, the confidence scale means nothing and this chart will show it.</p>
     </div>` : ''}
 
     ${open.length ? `
-    <div class="section-head"><h2>Open calls</h2><span class="rule"></span><span class="count">${open.length}</span></div>
+    <div class="section-head"><h2>Still running</h2><span class="rule"></span><span class="count">${open.length}</span></div>
     <div class="panel">${open.slice(0, 40).map(callRow).join('\n')}</div>` : ''}
 
     ${settled.length ? `
-    <div class="section-head"><h2>Settled</h2><span class="rule"></span><span class="count">${settled.length}</span></div>
+    <div class="section-head"><h2>Finished</h2><span class="rule"></span><span class="count">${settled.length}</span></div>
     <div class="panel">${settled.slice(0, 60).map(callRow).join('\n')}</div>`
-    : '<div class="empty">No calls have settled yet. Check back once the first horizons elapse.</div>'}
+    : '<div class="empty">No calls have finished yet. Check back once the first ones run their course.</div>'}
   `;
 
   return layout({
     title: 'Scorecard',
-    description: 'Track record of every directional call MarketLens has made, settled against realised market moves.',
+    description: 'Every market call MarketLens has made, scored against what actually happened. Including the ones it got wrong.',
     activeTab: 'calls', body, snapshot: data.snapshot, dateLabel: data.dateLabel,
     canonical: '/scorecard/', siteUrl: SITE_URL, generatedAt: data.generatedAt,
   });
@@ -356,11 +386,11 @@ function archivePage(index, data) {
         <span class="date">${esc(e.date.slice(8))} ${esc(new Date(e.date + 'T12:00:00Z').toLocaleDateString('en-GB', { month: 'short' }))}<br><span class="muted">${esc(e.date.slice(0, 4))}</span></span>
         <span class="h">${esc(e.headline)}<span class="r">${esc(e.regime)} · ${esc(e.storyCount)} stories</span></span>
         <span class="arrow-r">→</span>
-      </a>`).join('\n      ') : '<div class="empty">No archived editions yet.</div>'}
+      </a>`).join('\n      ') : '<div class="empty">No past editions yet.</div>'}
     </div>`;
   return layout({
     title: 'Archive',
-    description: 'Every previous edition of MarketLens, with the day’s market read and full second-order analysis.',
+    description: 'Every previous edition of MarketLens.',
     activeTab: 'archive', body, snapshot: data.snapshot, dateLabel: data.dateLabel,
     canonical: '/archive/', siteUrl: SITE_URL, generatedAt: data.generatedAt,
   });
@@ -371,56 +401,59 @@ function archivePage(index, data) {
 function methodPage(data) {
   const channels = Object.entries(TRANSMISSION_CHANNELS);
   const body = `
-    <div class="section-head"><h2>Method</h2><span class="rule"></span></div>
+    <div class="section-head"><h2>How it works</h2><span class="rule"></span></div>
     <div class="prose">
-      <p>MarketLens exists to answer one question that most financial news fails to address: <strong>who else is affected, and how?</strong> A headline tells you an event happened. A first-order read tells you the obvious asset that moves. Neither is where returns come from, because both are priced within minutes. The second-order effect — the supplier three steps down a value chain, the currency that becomes the funding leg, the leveraged strategy forced to delever because a correlation broke — is where the analytical work actually lies.</p>
+      <p>Financial news tells you an event happened. It rarely tells you the thing that matters: <strong>who else is affected, and how?</strong> The obvious effect is priced within minutes of the headline. The interesting one is two or three steps down the chain, hitting a company nobody has mentioned, or a currency, or a fund forced to sell something unrelated.</p>
+      <p>MarketLens traces those chains, every weekday morning, in the same three stages.</p>
 
-      <h3>1. Ingestion</h3>
-      <p>Every morning before the London open, the system pulls headlines from ${esc((data.diagnostics?.feeds || []).length)} sources spanning central banks and statistical agencies, wire services and financial newsrooms, and asset-class specialist feeds. Roughly ${esc(data.diagnostics?.articlesIngested || 300)} articles enter the funnel on a typical day.</p>
-
-      <h3>2. Clustering and materiality scoring</h3>
-      <p>Near-duplicate headlines are clustered by token overlap, so a story carried by eight outlets is treated as one event with eight corroborating sources rather than eight events. Each cluster is then scored 0–100 on five components:</p>
+      <h3>The three stages</h3>
       <div class="table-scroll"><table>
-        <tr><th>Component</th><th>Max</th><th>What it measures</th></tr>
-        <tr><td><code>corroboration</code></td><td>30</td><td>Independent outlets carrying the story — the strongest available proxy for importance</td></tr>
-        <tr><td><code>authority</code></td><td>20</td><td>Best source tier in the cluster; a central bank release outranks an aggregator</td></tr>
-        <tr><td><code>breadth</code></td><td>20</td><td>Number of asset-class lexicons the story touches</td></tr>
-        <tr><td><code>salience</code></td><td>20</td><td>Density of high-impact market vocabulary, individually weighted</td></tr>
-        <tr><td><code>recency</code></td><td>10</td><td>Linear decay across a 36-hour window</td></tr>
+        <tr><th>Stage</th><th>Question it answers</th></tr>
+        <tr><td><b>1. What happened</b></td><td>The event in plain English, and whether the market had already expected it.</td></tr>
+        <tr><td><b>2. How it spreads</b></td><td>Each consequence, link by link, with each link caused by the one before it.</td></tr>
+        <tr><td><b>3. What it means</b></td><td>The effect on each market, with a direction, a size, a timeframe and a confidence score.</td></tr>
       </table></div>
-      <p>This stage is deliberately deterministic and cheap. It reduces several hundred headlines to about 25 candidates before a single token is spent on a language model, and its output is published on every story page so the prioritisation can be interrogated rather than taken on trust.</p>
 
-      <h3>3. Editorial triage</h3>
-      <p>The shortlist goes to a language model acting as editor, with the score presented explicitly as a prior it is expected to override where its judgement differs. It selects the day's stories on breadth, novelty, persistence and non-obviousness, and must publish its reasons for rejection alongside its selections. Rejections appear on the front page.</p>
-
-      <h3>4. Transmission mapping</h3>
-      <p>Each selected story is analysed against a fixed set of transmission channels. Every second-order claim must run through a named channel — this is what stops the output collapsing into "markets may be volatile".</p>
+      <h3>Picking the stories</h3>
+      <p>Every morning before the London open, the system reads headlines from ${esc((data.diagnostics?.feeds || []).length)} sources: central banks and statistical agencies, wire services and financial newsrooms, and specialist feeds for each asset class. Around ${esc(data.diagnostics?.articlesIngested || 300)} articles come in on a normal day.</p>
+      <p>Near-identical headlines are grouped, so a story carried by eight outlets counts as one event with eight sources rather than eight events. Each group is then scored out of 100:</p>
       <div class="table-scroll"><table>
-        <tr><th>Channel</th><th>Mechanism</th></tr>
-        ${channels.map(([k, v]) => `<tr><td><code>${esc(k)}</code></td><td>${esc(v)}</td></tr>`).join('\n        ')}
+        <tr><th>What is measured</th><th>Max</th><th>Why it counts</th></tr>
+        <tr><td>How many outlets ran it</td><td>30</td><td>The best available signal that something is genuinely important</td></tr>
+        <tr><td>How authoritative the source is</td><td>20</td><td>A central bank announcement outranks an aggregator</td></tr>
+        <tr><td>How many markets it touches</td><td>20</td><td>Breadth is what makes a story worth a full analysis</td></tr>
+        <tr><td>How market-relevant the language is</td><td>20</td><td>Weighted vocabulary, so "tariff" counts for more than "quarterly"</td></tr>
+        <tr><td>How fresh it is</td><td>10</td><td>Decays over a 36-hour window</td></tr>
       </table></div>
-      <p>Each impact carries a direction, a magnitude range in the correct units, a time horizon, a conviction score from 1 to 5, and a flag marking it first- or second-order. Analyses must produce at least three second-order impacts or they are not doing their job.</p>
+      <p>This step is deliberately mechanical and cheap. It cuts several hundred headlines down to about 25 before any expensive analysis begins. The score for each published story is shown on its own page, so you can check the working.</p>
 
-      <h3>5. Falsification and expression</h3>
-      <p>Every analysis states what would prove it wrong, and how the view would actually be expressed — cash, futures, options, or relative value — together with the main way that expression loses money. A thesis with no falsifier is a narrative, and a view with no expression is a comment.</p>
+      <h3>Tracing the chain</h3>
+      <p>Every knock-on effect has to travel through one of eight named routes. That constraint is the whole design. Without it, this kind of analysis drifts into saying markets might be volatile, which is true every day and useful never.</p>
+      <div class="table-scroll"><table>
+        <tr><th>Route</th><th>What it means</th></tr>
+        ${channels.map(([, v]) => `<tr><td><b>${esc(v.name)}</b></td><td>${esc(v.plain)}</td></tr>`).join('\n        ')}
+      </table></div>
 
-      <h3>6. Accountability</h3>
-      <p>Every call made with conviction of 3 or higher is logged at the prevailing market level and settled against the realised move once its horizon elapses. The <a href="/scorecard/">scorecard</a> is published in full, including the misses, and breaks the hit rate down by asset class and by stated conviction. A tool whose high-conviction calls do not outperform its low-conviction calls has an uncalibrated conviction scale, and that should be visible.</p>
+      <h3>Two versions of everything</h3>
+      <p>Each claim is written twice. The plain version explains what it means to someone who reads the news but does not work in markets. Underneath sits the same point in the language a trading desk would use, with the exact mechanism. Neither reader has to put up with the other's version.</p>
 
-      <h3>Honest limitations</h3>
+      <h3>Being marked</h3>
+      <p>Whenever the analysis makes a confident directional call, it is logged with the market price at that moment and scored against what actually happened once its timeframe is up. The <a href="/scorecard/">scorecard</a> shows the record, including every miss, broken down by market and by how confident the call was. If the confident calls are not more accurate than the hedged ones, the confidence scale is meaningless, and that will be visible on the page rather than hidden.</p>
+
+      <h3>What it cannot do</h3>
       <ul>
-        <li>The analysis is generated by a language model. It reasons well about mechanisms and poorly about precise numbers, which is why magnitudes are expressed as ranges and no figure is presented as a data point.</li>
-        <li>Source coverage is limited to freely available feeds. Paywalled primary reporting and real-time wire services are absent.</li>
-        <li>Market data is delayed and used for context and call settlement, not for execution.</li>
-        <li>The system runs once a day. It is a framework for thinking about propagation, not a live trading signal.</li>
+        <li>The analysis is generated by a language model. It reasons well about how things connect and badly about precise numbers, which is why every size is a range and no figure is presented as a data point.</li>
+        <li>It reads only freely available sources. Paywalled reporting and real-time wire services are not included.</li>
+        <li>Market data is delayed. It is used for context and for scoring, never for trading.</li>
+        <li>It runs once a day. This is a way of thinking about how news travels, not a live trading signal.</li>
       </ul>
 
-      <h3>Built by</h3>
-      <p>Jonathan Savill. MarketLens is an independent project built to develop and demonstrate a structured approach to cross-asset news analysis. The full pipeline — ingestion, scoring, prompting, settlement and this site — is custom-built with no third-party dependencies.</p>
+      <h3>Who built it</h3>
+      <p>Jonathan Savill. MarketLens is an independent project, built to develop and demonstrate a structured way of reading cross-asset news. The whole pipeline, from reading the feeds to scoring the calls to rendering this page, is custom-built with no third-party code.</p>
     </div>`;
   return layout({
-    title: 'Method',
-    description: 'How MarketLens selects, prioritises and analyses market news: materiality scoring, transmission channels, and a published track record.',
+    title: 'How it works',
+    description: 'How MarketLens picks stories, traces knock-on effects through eight named routes, and scores its own record.',
     activeTab: 'method', body, snapshot: data.snapshot, dateLabel: data.dateLabel,
     canonical: '/method/', siteUrl: SITE_URL, generatedAt: data.generatedAt,
   });
@@ -432,15 +465,13 @@ async function main() {
   const started = Date.now();
   const data = await readJson(join(DATA, 'latest.json'));
   if (!data) {
-    console.error('No data/latest.json found. Run: node scripts/pipeline.mjs');
+    console.error('No data/latest.json found. Run: node scripts/pipeline.mjs  (or npm run seed for demo data)');
     process.exit(1);
   }
   const scorecard = await readJson(join(DATA, 'scorecard.json'), { calls: [] });
   const archiveIndex = await readJson(join(DATA, 'archive', 'index.json'), []);
 
   await mkdir(DIST, { recursive: true });
-
-  // Static assets
   await cp(SITE, DIST, { recursive: true });
 
   const routes = ['/'];
@@ -481,13 +512,11 @@ async function main() {
     }
   }
 
-  // Machine-readable data for anyone who wants it (and for the service worker)
-  await mkdir(join(DIST, 'api'), { recursive: true });
-  await writeFile(join(DIST, 'api', 'latest.json'), JSON.stringify(data));
-  await writeFile(join(DIST, 'api', 'scorecard.json'), JSON.stringify(scorecard));
+  // Machine-readable data, served statically at /data/. The /api/ask function
+  // fetches these to ground its answers, so they must ship with the site.
+  await cp(DATA, join(DIST, 'data'), { recursive: true });
 
-  // robots + sitemap
-  await writeFile(join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+  await writeFile(join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /data/\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
   await writeFile(
     join(DIST, 'sitemap.xml'),
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${
@@ -495,11 +524,11 @@ async function main() {
     }\n</urlset>\n`,
   );
 
-  // 404
   await writeFile(join(DIST, '404.html'), layout({
     title: 'Not found', description: 'Page not found.', activeTab: 'today',
     body: '<div class="empty">That page does not exist.<br><br><a class="chip chip--accent" href="/">Back to today</a></div>',
-    snapshot: data.snapshot, dateLabel: data.dateLabel, canonical: '/404', siteUrl: SITE_URL, generatedAt: data.generatedAt, showTape: false,
+    snapshot: data.snapshot, dateLabel: data.dateLabel, canonical: '/404', siteUrl: SITE_URL,
+    generatedAt: data.generatedAt, showTape: false,
   }));
 
   console.log(`Built ${routes.length} routes (+${archived} archived editions) in ${Date.now() - started}ms → dist/`);

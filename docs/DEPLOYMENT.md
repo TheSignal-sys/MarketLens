@@ -68,7 +68,8 @@ If you are using OpenAI rather than Anthropic, add `OPENAI_API_KEY` instead, the
 2. On the dashboard, click **Add New… → Project**.
 3. Find `marketlens` in the list and click **Import**.
 4. Vercel reads `vercel.json` and fills everything in. Do not change the build settings.
-5. Click **Deploy**.
+5. Before clicking Deploy, expand **Environment Variables** and add `ANTHROPIC_API_KEY` with your key. This is separate from the GitHub secret you added in Step 2, and it is what powers the "Ask about this story" box on each story page. Without it the box politely says questions are switched off; everything else still works.
+6. Click **Deploy**.
 
 About a minute later you have a live site at something like `marketlens-abc123.vercel.app`. Open it. It will show whatever data is currently in the repo.
 
@@ -187,11 +188,14 @@ You get an icon, no browser chrome, and the last edition stays readable offline.
 | Domain | £8–35/year |
 | GitHub Actions | Free (unlimited on public repos) |
 | Vercel Hobby | Free |
-| Anthropic API | ~£5/month at five stories a day, weekdays only |
+| Anthropic API — daily analysis | ~£5/month at five stories a day, weekdays only |
+| Anthropic API — reader questions | ~£0.007 per question asked |
 
-To cut the API cost roughly in half, change `--stories 5` to `--stories 3` in the workflow file.
+To cut the analysis cost roughly in half, change `--stories 5` to `--stories 3` in the workflow file.
 
-**Set a spend limit.** In the Anthropic console under Billing, set a monthly cap of £15 or so. A runaway loop is unlikely given the job runs once a day, but a cap costs nothing and removes the worry.
+**The question box is the only part with open-ended cost**, because anyone who visits the site can use it. Three guardrails are built in: each visitor is limited to 12 questions an hour, answers are capped short, and there is a site-wide ceiling of 300 questions a day. You can lower that ceiling by adding a Vercel environment variable `ASK_DAILY_LIMIT` set to whatever you prefer. At the default ceiling the absolute worst case is around £1.70 a day, and realistically it will be pennies.
+
+**Set a spend limit anyway.** In the Anthropic console under Billing, set a monthly cap of £15 or so. The rate limiter resets when the serverless function goes idle, so it stops casual abuse rather than a determined one. The billing cap is the real backstop, it costs nothing, and it removes the worry entirely.
 
 ---
 

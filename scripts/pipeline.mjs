@@ -110,9 +110,8 @@ async function main() {
         regime: 'dry run',
       },
       selected: candidates.slice(0, STORY_COUNT).map((c, i) => ({
-        index: i, rank: i + 1, why: 'Selected by materiality score (dry run).', expectedBreadth: c.assetClasses,
+        index: i, rank: i + 1, why: 'Selected by materiality score (dry run).',
       })),
-      rejected: [],
     };
     log('skipped (dry run)');
   } else {
@@ -141,9 +140,11 @@ async function main() {
         analysis: {
           headline: cluster.lead.title.slice(0, 90),
           standfirst: 'Dry run: no model analysis generated.',
-          classification: { eventType: 'macro-data', pricedIn: 'partially-priced', pricedInRationale: 'n/a', persistence: 'weeks', regionFocus: ['Global'] },
-          firstOrder: 'n/a', transmission: [], assetImpacts: [],
-          nonConsensus: 'n/a', falsifiers: [], tradeExpression: [], watchNext: [], confidence: 1,
+          classification: { eventType: 'macro-data', pricedIn: 'partly-priced', pricedInRationale: 'n/a', persistence: 'weeks', regionFocus: ['Global'] },
+          whatHappened: { plain: 'n/a', whyItMatters: 'n/a', detail: '' },
+          chains: [], assetImpacts: [],
+          whatMarketMisses: { plain: 'n/a', detail: '' },
+          falsifiers: [], tradeExpression: [], watchNext: [], glossary: [], confidence: 1,
         },
         editorNote: sel.why,
       };
@@ -197,9 +198,6 @@ async function main() {
       newestAt: s.cluster.newestAt,
       ...s.analysis,
     })),
-    rejected: (triage.rejected || [])
-      .filter((r) => candidates[r.index])
-      .map((r) => ({ title: candidates[r.index].lead.title, why: r.why, score: candidates[r.index].score })),
     diagnostics: {
       articlesIngested: articles.length,
       clustersConsidered: candidates.length,

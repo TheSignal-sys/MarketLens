@@ -6,6 +6,8 @@
  * all model output is treated as untrusted text.
  */
 
+import { TRANSMISSION_CHANNELS } from './prompt.mjs';
+
 export function esc(s) {
   return String(s ?? '')
     .replace(/&/g, '&amp;')
@@ -28,11 +30,11 @@ const ICONS = {
 };
 
 const TABS = [
-  { href: '/',          key: 'today',   label: 'Today' },
-  { href: '/lens/',     key: 'lenses',  label: 'Lenses' },
-  { href: '/scorecard/', key: 'calls',  label: 'Calls' },
-  { href: '/archive/',  key: 'archive', label: 'Archive' },
-  { href: '/method/',   key: 'method',  label: 'Method' },
+  { href: '/',           key: 'today',   label: 'Today' },
+  { href: '/lens/',      key: 'lenses',  label: 'Lenses' },
+  { href: '/scorecard/', key: 'calls',   label: 'Scorecard' },
+  { href: '/archive/',   key: 'archive', label: 'Archive' },
+  { href: '/method/',    key: 'method',  label: 'Method' },
 ];
 
 function tabbar(active) {
@@ -76,7 +78,7 @@ export function renderTape(snapshot) {
 /* ------------------------------------------------------------- Layout */
 
 export function layout({ title, description, activeTab, body, snapshot, dateLabel, canonical, siteUrl, showTape = true, generatedAt = '' }) {
-  const fullTitle = title === 'MarketLens' ? 'MarketLens — second-order market analysis' : `${title} · MarketLens`;
+  const fullTitle = title === 'MarketLens' ? 'MarketLens — what today’s news does to markets' : `${title} · MarketLens`;
   const url = canonical ? `${siteUrl}${canonical}` : siteUrl;
   return `<!doctype html>
 <html lang="en-GB">
@@ -109,7 +111,7 @@ export function layout({ title, description, activeTab, body, snapshot, dateLabe
     <a class="brand" href="/">${BRAND_MARK}<span>Market<em>Lens</em></span></a>
     <div class="masthead-meta">
       <div><span class="live-dot"></span>${esc(dateLabel || '')}</div>
-      <div>second-order analysis</div>
+      <div>what the news does to markets</div>
     </div>
   </div>
 </header>
@@ -118,8 +120,8 @@ ${showTape ? renderTape(snapshot) : ''}
   <div class="wrap">
 ${body}
     <footer class="foot">
-      <p>MarketLens is an independent research project built by Jonathan Savill. Stories are selected by a transparent materiality model and analysed by a large language model against a fixed second-order framework. <a href="/method/">Read the method</a>.</p>
-      <p class="disclaimer">Not investment advice. Nothing here is a recommendation to buy or sell any security. Analysis is model-generated and may contain errors. Market data is delayed and provided for context only.</p>
+      <p>MarketLens is an independent research project built by Jonathan Savill. Stories are picked by a transparent scoring model and analysed against a fixed framework for tracing knock-on effects. <a href="/method/">How it works</a>.</p>
+      <p class="disclaimer">Not investment advice. Nothing here is a recommendation to buy or sell anything. Analysis is model-generated and may contain errors. Market data is delayed and shown for context only.</p>
     </footer>
   </div>
 </main>
@@ -147,46 +149,77 @@ export function directionMeta(d) {
 }
 
 export const ASSET_LABEL = {
-  rates: 'Rates', fx: 'FX', equities: 'Equities',
+  rates: 'Government bonds', fx: 'Currencies', equities: 'Shares',
+  credit: 'Corporate debt', commodities: 'Commodities', vol: 'Market volatility',
+};
+
+/** Short form for chips and tabs where the long name will not fit. */
+export const ASSET_SHORT = {
+  rates: 'Bonds', fx: 'Currencies', equities: 'Shares',
   credit: 'Credit', commodities: 'Commodities', vol: 'Volatility',
 };
 
+const PRICED_IN_LABEL = {
+  expected: 'Market expected this',
+  'partly-priced': 'Partly expected',
+  'partially-priced': 'Partly expected',
+  anticipated: 'Market expected this',
+  surprise: 'Caught the market out',
+};
+
+export function pricedInLabel(v) {
+  return PRICED_IN_LABEL[String(v || '').toLowerCase()] || v || '';
+}
+
 function convictionDots(n) {
   const v = Math.max(0, Math.min(5, Number(n) || 0));
-  return `<span class="conviction" title="Conviction ${v}/5" aria-label="Conviction ${v} of 5">${
+  return `<span class="conviction" title="Confidence ${v} out of 5" aria-label="Confidence ${v} out of 5">${
     Array.from({ length: 5 }, (_, i) => `<i class="${i < v ? 'on' : ''}"></i>`).join('')
   }</span>`;
 }
 
-export function renderImpact(impact) {
+/**
+ * One asset impact. Plain sentence leads; the desk-language mechanism sits
+ * underneath in smaller type for readers who want it.
+ */
+export function renderImpact(impact, { showClass = true } = {}) {
   const d = directionMeta(impact.direction);
   return `<div class="impact">
   <div class="impact-top">
     <span class="impact-instrument">${esc(impact.instrument)}</span>
-    <span class="arrow ${d.cls}">${d.arrow}</span>
-    <span class="impact-mag ${d.cls}">${esc(impact.magnitude || d.word)}</span>
+    <span class="impact-move ${d.cls}"><span class="arrow">${d.arrow}</span>${esc(impact.magnitude || d.word)}</span>
   </div>
-  <div class="impact-rationale">${esc(impact.rationale)}</div>
+  ${impact.plain ? `<p class="impact-plain">${esc(impact.plain)}</p>` : ''}
+  ${impact.detail ? `<p class="impact-detail"><b>Mechanism</b> ${esc(impact.detail)}</p>` : ''}
   <div class="impact-foot">
-    <span class="chip${impact.order === 2 ? ' chip--accent' : ''}">${impact.order === 2 ? '2nd order' : '1st order'}</span>
-    <span class="chip chip--mono">${esc(ASSET_LABEL[impact.assetClass] || impact.assetClass)}</span>
+    <span class="chip${impact.order === 2 ? ' chip--accent' : ''}">${impact.order === 2 ? 'Knock-on effect' : 'Direct effect'}</span>
+    ${showClass ? `<span class="chip chip--mono">${esc(ASSET_SHORT[impact.assetClass] || impact.assetClass)}</span>` : ''}
     <span class="chip chip--mono">${esc(impact.horizon || '')}</span>
     ${convictionDots(impact.conviction)}
   </div>
 </div>`;
 }
 
-export function renderChain(t, i) {
+/**
+ * One chain of consequence. This is the "flow": event, then each link caused
+ * by the one before it, then where it lands.
+ */
+export function renderChain(chain, index) {
+  const meta = TRANSMISSION_CHANNELS[chain.channel] || { name: String(chain.channel || '').replace(/-/g, ' '), plain: '' };
   return `<div class="chain">
   <div class="chain-head">
-    <span class="chain-channel">${esc(String(t.channel || '').replace(/-/g, ' '))}</span>
-    <span class="chip chip--mono">${esc(t.strength || '')}</span>
+    <span class="chain-index">${index + 1}</span>
+    <span class="chain-name">${esc(meta.name)}</span>
+    <span class="chip chip--mono">${esc(chain.strength || '')}</span>
   </div>
+  ${meta.plain ? `<p class="chain-what">${esc(meta.plain)}</p>` : ''}
   <ol class="chain-steps">
-    ${(t.chain || []).map((step) => `<li>${esc(step)}</li>`).join('\n    ')}
+    ${(chain.links || []).map((l) => `<li>
+      <span class="link-plain">${esc(l.plain)}</span>
+      ${l.detail ? `<span class="link-detail">${esc(l.detail)}</span>` : ''}
+    </li>`).join('\n    ')}
   </ol>
-  ${t.endpoint ? `<div class="chain-endpoint"><b>Lands on</b>${esc(t.endpoint)}</div>` : ''}
-  ${t.note ? `<div class="chain-note">${esc(t.note)}</div>` : ''}
+  ${chain.endpoint ? `<div class="chain-endpoint"><b>Ends up hitting</b>${esc(chain.endpoint)}</div>` : ''}
 </div>`;
 }
 
@@ -194,19 +227,65 @@ export function renderStoryCard(story, { href }) {
   const impacts = story.assetImpacts || [];
   const classes = [...new Set(impacts.map((i) => i.assetClass))];
   const second = impacts.filter((i) => i.order === 2).length;
-  const priced = story.classification?.pricedIn;
+  const priced = String(story.classification?.pricedIn || '').toLowerCase();
   return `<a class="card" href="${attr(href)}">
   <div class="card-top">
     <span class="rank">${esc(story.rank)}</span>
-    <span class="chip chip--mono">${esc(String(story.classification?.eventType || '').replace(/-/g, ' '))}</span>
-    ${priced === 'surprise' ? '<span class="chip chip--accent">surprise</span>' : ''}
-    ${priced === 'anticipated' ? '<span class="chip">priced in</span>' : ''}
+    ${priced === 'surprise' ? '<span class="chip chip--accent">Caught the market out</span>'
+      : priced.startsWith('part') ? '<span class="chip">Partly expected</span>'
+      : '<span class="chip">Market expected this</span>'}
   </div>
   <h3>${esc(story.headline)}</h3>
   <div class="standfirst">${esc(story.standfirst)}</div>
   <div class="card-foot">
-    <div class="chips">${classes.map((c) => `<span class="chip chip--mono">${esc(ASSET_LABEL[c] || c)}</span>`).join('')}</div>
-    <span class="meta" style="margin-left:auto">${second} 2nd-order</span>
+    <div class="chips">${classes.map((c) => `<span class="chip chip--mono">${esc(ASSET_SHORT[c] || c)}</span>`).join('')}</div>
+    <span class="meta" style="margin-left:auto">${second} knock-on</span>
   </div>
 </a>`;
+}
+
+/* ------------------------------------------------------------ Ask box */
+
+/**
+ * Per-story question box. Progressive enhancement: without JavaScript it is a
+ * plain form that explains itself; with JavaScript it posts to /api/ask.
+ */
+export function renderAskBox(story) {
+  const suggestions = [
+    'Explain this like I know nothing about markets',
+    'Why does this affect bonds?',
+    'What is the simplest way to think about this?',
+    'What would make this analysis wrong?',
+  ];
+  return `<section class="ask" id="ask" data-story="${attr(story.id)}">
+  <div class="ask-head">
+    <h3>Ask about this story</h3>
+    <p>Questions are answered from this story's analysis. Ask for a simpler explanation, or push on anything that does not add up.</p>
+  </div>
+  <div class="ask-suggest">
+    ${suggestions.map((s) => `<button type="button" class="ask-chip">${esc(s)}</button>`).join('\n    ')}
+  </div>
+  <form class="ask-form" autocomplete="off">
+    <label class="visually-hidden" for="ask-input-${attr(story.id)}">Your question</label>
+    <textarea id="ask-input-${attr(story.id)}" class="ask-input" rows="2" maxlength="500"
+      placeholder="e.g. why would cheaper oil push bond yields down?"></textarea>
+    <div class="ask-actions">
+      <span class="ask-count"><span class="n">0</span>/500</span>
+      <button type="submit" class="ask-send">Ask</button>
+    </div>
+  </form>
+  <div class="ask-answer" hidden aria-live="polite"></div>
+</section>`;
+}
+
+/* --------------------------------------------------------------- Glossary */
+
+export function renderGlossary(terms) {
+  if (!terms || !terms.length) return '';
+  return `<details class="glossary">
+  <summary><span>Jargon buster</span><span class="g-count">${terms.length} terms</span></summary>
+  <dl>
+    ${terms.map((t) => `<dt>${esc(t.term)}</dt><dd>${esc(t.plain)}</dd>`).join('\n    ')}
+  </dl>
+</details>`;
 }
