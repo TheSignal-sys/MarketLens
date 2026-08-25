@@ -1,1233 +1,1053 @@
 {
-  "version": 2,
+  "version": 1,
   "date": "2026-08-25",
   "dateLabel": "Tuesday, 25 August 2026",
-  "generatedAt": "2026-08-25T11:51:25.040Z",
-  "model": "demo/seed",
-  "demo": true,
+  "generatedAt": "2026-08-25T14:55:18.010Z",
+  "model": "openai/gpt-4o",
   "marketRead": {
-    "headline": "Cheaper oil is doing the job of an interest rate cut",
-    "body": "A sanctions package that markets read as a step towards a settlement took 6% off the oil price, which pulled short-term interest rate expectations down with it. Long-term borrowing costs went the other way, because governments still need to borrow the same amount, and that gap is the clearest signal in markets today. Gold sitting near a record high while real yields stay high says investors are worried about confidence in policy rather than about growth.",
-    "regime": "confidence worries, not growth worries"
+    "headline": "US sanctions and falling yields drive markets",
+    "body": "US sanctions on Iran are straining China's oil ties, potentially impacting global oil prices and FX markets. Falling US Treasury yields are boosting equities, with tech stocks like Nvidia and Micron leading gains. Extreme weather in Europe threatens agricultural output, possibly affecting commodity prices and inflation expectations.",
+    "regime": "geopolitical tensions and yield dynamics"
   },
   "snapshot": {
-    "fetchedAt": "2026-08-25T11:51:25.040Z",
+    "quotes": [],
     "report": [
       {
-        "provider": "demo",
-        "ok": true,
-        "count": 22,
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 669,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 288,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
         "ms": 0,
-        "error": null
+        "error": "no rows"
       }
     ],
-    "quotes": [
-      {
-        "key": "spx",
-        "label": "S&P 500",
-        "group": "equities",
-        "unit": "index",
-        "value": 6842,
-        "display": "6,842",
-        "change": -29,
-        "changePct": -0.4220637461795954,
-        "changeDisplay": "-0.42%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "ndx",
-        "label": "Nasdaq 100",
-        "group": "equities",
-        "unit": "index",
-        "value": 25310,
-        "display": "25,310",
-        "change": -188,
-        "changePct": -0.7373127304102283,
-        "changeDisplay": "-0.74%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "ukx",
-        "label": "FTSE 100",
-        "group": "equities",
-        "unit": "index",
-        "value": 9614,
-        "display": "9,614",
-        "change": 26,
-        "changePct": 0.2711722987067167,
-        "changeDisplay": "+0.27%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "dax",
-        "label": "DAX",
-        "group": "equities",
-        "unit": "index",
-        "value": 24880,
-        "display": "24,880",
-        "change": -51,
-        "changePct": -0.20456459829128393,
-        "changeDisplay": "-0.20%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "nkx",
-        "label": "Nikkei 225",
-        "group": "equities",
-        "unit": "index",
-        "value": 44120,
-        "display": "44,120",
-        "change": -535,
-        "changePct": -1.198074123838316,
-        "changeDisplay": "-1.20%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "us2y",
-        "label": "US 2Y",
-        "group": "rates",
-        "unit": "pct",
-        "value": 3.42,
-        "display": "3.42%",
-        "change": -0.07000000000000028,
-        "changePct": -2.005730659025796,
-        "changeDisplay": "-7bp",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "us10y",
-        "label": "US 10Y",
-        "group": "rates",
-        "unit": "pct",
-        "value": 4.28,
-        "display": "4.28%",
-        "change": 0.07000000000000028,
-        "changePct": 1.6627078384798168,
-        "changeDisplay": "+7bp",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "us30y",
-        "label": "US 30Y",
-        "group": "rates",
-        "unit": "pct",
-        "value": 4.91,
-        "display": "4.91%",
-        "change": 0.08999999999999986,
-        "changePct": 1.867219917012445,
-        "changeDisplay": "+9bp",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "uk10y",
-        "label": "UK 10Y gilt",
-        "group": "rates",
-        "unit": "pct",
-        "value": 4.63,
-        "display": "4.63%",
-        "change": 0.04999999999999982,
-        "changePct": 1.091703056768555,
-        "changeDisplay": "+5bp",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "de10y",
-        "label": "German 10Y",
-        "group": "rates",
-        "unit": "pct",
-        "value": 2.74,
-        "display": "2.74%",
-        "change": 0.03000000000000025,
-        "changePct": 1.1070110701107103,
-        "changeDisplay": "+3bp",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "jp10y",
-        "label": "Japan 10Y",
-        "group": "rates",
-        "unit": "pct",
-        "value": 1.94,
-        "display": "1.94%",
-        "change": 0.06000000000000005,
-        "changePct": 3.1914893617021307,
-        "changeDisplay": "+6bp",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "eurusd",
-        "label": "EUR/USD",
-        "group": "fx",
-        "unit": "fx4",
-        "value": 1.1842,
-        "display": "1.1842",
-        "change": 0.005099999999999882,
-        "changePct": 0.4325332881010841,
-        "changeDisplay": "+0.43%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "gbpusd",
-        "label": "GBP/USD",
-        "group": "fx",
-        "unit": "fx4",
-        "value": 1.3706,
-        "display": "1.3706",
-        "change": 0.0038000000000000256,
-        "changePct": 0.27802165642376536,
-        "changeDisplay": "+0.28%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "usdjpy",
-        "label": "USD/JPY",
-        "group": "fx",
-        "unit": "fx2",
-        "value": 146.8,
-        "display": "146.80",
-        "change": -2.3999999999999773,
-        "changePct": -1.6085790884718347,
-        "changeDisplay": "-1.61%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "dxy",
-        "label": "Dollar index",
-        "group": "fx",
-        "unit": "index",
-        "value": 96.42,
-        "display": "96.42",
-        "change": -0.6299999999999955,
-        "changePct": -0.6491499227202426,
-        "changeDisplay": "-0.65%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "brent",
-        "label": "Brent crude",
-        "group": "commodities",
-        "unit": "usd",
-        "value": 68.4,
-        "display": "68.40",
-        "change": -4.5,
-        "changePct": -6.172839506172839,
-        "changeDisplay": "-6.17%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "wti",
-        "label": "WTI crude",
-        "group": "commodities",
-        "unit": "usd",
-        "value": 64.8,
-        "display": "64.80",
-        "change": -4.299999999999997,
-        "changePct": -6.222865412445727,
-        "changeDisplay": "-6.22%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "gold",
-        "label": "Gold",
-        "group": "commodities",
-        "unit": "usd",
-        "value": 3985,
-        "display": "3985.00",
-        "change": 64,
-        "changePct": 1.632236674317776,
-        "changeDisplay": "+1.63%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "copper",
-        "label": "Copper",
-        "group": "commodities",
-        "unit": "usd",
-        "value": 5.12,
-        "display": "5.12",
-        "change": 0.0600000000000005,
-        "changePct": 1.1857707509881523,
-        "changeDisplay": "+1.19%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "vix",
-        "label": "VIX",
-        "group": "vol",
-        "unit": "index",
-        "value": 18.7,
-        "display": "18.7",
-        "change": 2.5,
-        "changePct": 15.432098765432102,
-        "changeDisplay": "+15.43%",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "hy_oas",
-        "label": "US HY OAS",
-        "group": "credit",
-        "unit": "pct",
-        "value": 3.14,
-        "display": "3.14%",
-        "change": 0.1200000000000001,
-        "changePct": 3.973509933774838,
-        "changeDisplay": "+12bp",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      },
-      {
-        "key": "ig_oas",
-        "label": "US IG OAS",
-        "group": "credit",
-        "unit": "pct",
-        "value": 0.94,
-        "display": "0.94%",
-        "change": 0.029999999999999916,
-        "changePct": 3.296703296703287,
-        "changeDisplay": "+3bp",
-        "asOf": "2026-08-25",
-        "provider": "demo"
-      }
-    ]
+    "fetchedAt": "2026-08-25T14:54:43.473Z"
   },
   "stories": [
     {
-      "id": "2026-08-25-oil-falls-sanctions-de-escalation",
+      "id": "2026-08-25-china-is-the-biggest-buyer-of-iran-s-oil-could-us-sanctions-",
       "rank": 1,
-      "editorNote": "Widest reach of any story today. A big move in the oil price feeds straight into inflation, which changes what central banks are expected to do, which moves almost everything else.",
+      "editorNote": "US sanctions on Iran and China's response could significantly impact oil prices and FX markets.",
       "materiality": {
-        "score": 84.2,
+        "score": 76.8,
         "components": {
-          "corroboration": 26.1,
-          "authority": 20,
-          "breadth": 18,
-          "salience": 17.2,
-          "recency": 9.4
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 9.3
         },
-        "distinctSources": 7,
+        "distinctSources": 2,
         "salienceTerms": [
+          "treasury",
           "sanctions",
+          "war",
           "oil",
-          "crude",
-          "brent",
-          "inflation",
           "dollar"
         ]
       },
       "sources": [
-        "MarketWatch",
-        "Investing.com Commodities",
-        "Financial Times",
-        "CNBC",
-        "Yahoo Finance",
         "Guardian Business",
-        "BBC Business"
+        "Investing.com Economy"
       ],
       "links": [
         {
-          "name": "MarketWatch",
-          "url": "https://www.marketwatch.com/",
-          "title": "New sanctions on Iran send oil prices to their biggest drop in three weeks"
+          "name": "Guardian Business",
+          "url": "https://www.theguardian.com/world/2026/aug/25/trump-us-economic-sanctions-china-biggest-buyer-iran-oil",
+          "title": "China is the biggest buyer of Iran’s oil. Could US sanctions threaten those ties?"
+        },
+        {
+          "name": "Investing.com Economy",
+          "url": "https://www.investing.com/news/economy-news/china-vows-to-protect-iran-ties-after-us-sanctions-threat-93CH-4875284",
+          "title": "China vows to protect Iran ties after US sanctions threat"
         }
       ],
       "headlines": [
-        "New sanctions on Iran send oil prices to their biggest drop in three weeks, while raising hopes of a settlement"
+        "China is the biggest buyer of Iran’s oil. Could US sanctions threaten those ties?",
+        "China vows to protect Iran ties after US sanctions threat"
       ],
-      "newestAt": "2026-08-25T11:51:25.040Z",
-      "headline": "Oil drops 6% and drags interest rate expectations down with it",
-      "standfirst": "New sanctions on Iran were read as a step towards a deal rather than a step towards conflict, and the oil price fell sharply.",
+      "newestAt": "2026-08-25T12:24:59.000Z",
+      "headline": "US Sanctions on Iran Strain China Ties, Impact Oil and FX Markets",
+      "standfirst": "The US expanded sanctions on Iran, potentially affecting China's oil imports.",
       "classification": {
         "eventType": "geopolitical",
-        "pricedIn": "surprise",
-        "pricedInRationale": "Investors were positioned for oil to rise on this news. It fell instead. That tells you the market had the direction wrong, not just the size.",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market anticipated some US action, but the specifics and China's response add uncertainty.",
         "persistence": "weeks",
         "regionFocus": [
           "Global",
-          "US",
-          "Europe"
+          "China",
+          "US"
         ]
       },
       "whatHappened": {
-        "plain": "The US announced a wide package of sanctions on Iran. Sanctions normally restrict oil supply and push prices up. This time the market read them differently. Because the package sets out formal terms and a negotiating process, traders concluded that the chance of military action just fell, and that mattered more than the supply restrictions. Brent crude fell about 6%, its biggest one-day drop in three weeks.",
-        "whyItMatters": "Oil is one of the few prices that feeds into almost everything else. It affects what you pay for petrol and heating, which affects inflation, which affects whether central banks cut interest rates, which affects the price of nearly every investment.",
-        "detail": "The move removes an embedded geopolitical risk premium rather than repricing physical supply. Energy equities underperformed the index materially on the session."
+        "plain": "The US has expanded sanctions on Iran, warning countries to stop doing business with Iran or face consequences. China, a major buyer of Iranian oil, has vowed to protect its economic ties with Iran.",
+        "whyItMatters": "This could disrupt global oil supply and affect foreign exchange markets, especially if China retaliates.",
+        "detail": "The US aims to restrict Iran's economic activities, potentially impacting oil exports. China's response could lead to broader geopolitical tensions affecting trade and currency markets."
       },
       "chains": [
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "China may reduce US imports in retaliation.",
+              "detail": "If China retaliates, it could impose tariffs or reduce imports from the US, impacting US-China trade balance."
+            },
+            {
+              "plain": "This could weaken the US dollar against other currencies.",
+              "detail": "A shift in the US-China trade balance would pressure the USD, potentially weakening it against major currencies."
+            }
+          ],
+          "endpoint": "US dollar",
+          "strength": "moderate"
+        },
+        {
+          "channel": "commodities",
+          "links": [
+            {
+              "plain": "Oil prices may rise due to potential supply disruptions.",
+              "detail": "Sanctions on Iran could reduce global oil supply, driving up prices as markets adjust to potential shortages."
+            }
+          ],
+          "endpoint": "oil prices",
+          "strength": "strong"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Higher oil prices could increase costs for companies reliant on oil.",
+              "detail": "Rising oil prices would increase input costs for energy-intensive industries, squeezing profit margins."
+            }
+          ],
+          "endpoint": "energy-intensive companies",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "fx",
+          "instrument": "US dollar index",
+          "direction": "down",
+          "magnitude": "0.5 to 1.5%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The US dollar may weaken if China retaliates against US sanctions.",
+          "detail": "A shift in trade dynamics due to Chinese retaliation could lead to a weaker USD as trade imbalances adjust."
+        },
+        {
+          "assetClass": "commodities",
+          "instrument": "Brent crude oil",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Brent crude prices are likely to rise due to potential supply disruptions from Iran.",
+          "detail": "Sanctions could curtail Iranian oil exports, tightening global supply and pushing prices higher."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "European airlines",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Rising oil prices could hurt European airlines' profitability.",
+          "detail": "Higher fuel costs would increase operational expenses for airlines, impacting their earnings negatively."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may not fully appreciate how a prolonged US-China trade tension could affect global supply chains, beyond just oil and currency markets.",
+        "detail": "The broader impact on global supply chains from US-China tensions could lead to more significant disruptions than currently anticipated."
+      },
+      "falsifiers": [
+        "China decides not to retaliate against US sanctions.",
+        "Iran finds alternative buyers for its oil, mitigating supply disruption.",
+        "US and China reach a diplomatic resolution reducing tensions."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US Dollar Index",
+          "plain": "Sell the US Dollar Index, anticipating it will weaken if China retaliates.",
+          "instrument": "futures",
+          "risk": "The US dollar strengthens if China does not retaliate or if tensions ease."
+        }
+      ],
+      "watchNext": [
+        "China's official response to US sanctions.",
+        "Changes in Iranian oil export data.",
+        "US-China diplomatic engagements."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-08-25-stock-market-today-nasdaq-charges-higher-as-treasury-yields-",
+      "rank": 2,
+      "editorNote": "Falling Treasury yields are driving equity markets higher, with notable gains in tech stocks.",
+      "materiality": {
+        "score": 69.3,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 9.8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "treasury",
+          "rally",
+          "oil",
+          "nvidia"
+        ]
+      },
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "links": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-25-dow-sp-500-nasdaq-080527092.html",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq gain as oil, Treasury yields fall"
+        },
+        {
+          "name": "Yahoo Finance",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-treasury-yields-nvidia-micron-sandisk/?src=A00220&yptr=yahoo",
+          "title": "Stock Market Today: Nasdaq Charges Higher As Treasury Yields Fall; Nvidia, Micron, Sandisk Rally (Live Coverage)"
+        }
+      ],
+      "headlines": [
+        "Stock market today: Dow, S&P 500, Nasdaq gain as oil, Treasury yields fall",
+        "Stock Market Today: Nasdaq Charges Higher As Treasury Yields Fall; Nvidia, Micron, Sandisk Rally (Live Coverage)"
+      ],
+      "newestAt": "2026-08-25T14:16:42.000Z",
+      "headline": "Tech Stocks Surge as Falling Treasury Yields Boost Market",
+      "standfirst": "US equity markets rise as Treasury yields decline, lifting tech stocks.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Markets had anticipated some yield decline but not the full extent of the tech rally.",
+        "persistence": "days",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "US stock markets rose today as Treasury yields fell. Tech stocks, including Nvidia and Micron, saw significant gains.",
+        "whyItMatters": "Lower yields make stocks more attractive compared to bonds, especially benefiting growth sectors like technology.",
+        "detail": "The drop in Treasury yields reduced the discount rate, increasing the present value of future earnings, which is particularly impactful for high-growth tech stocks."
+      },
+      "chains": [
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Lower Treasury yields make stocks more attractive.",
+              "detail": "The decline in Treasury yields reduces the discount rate, making equities relatively more appealing compared to fixed income."
+            },
+            {
+              "plain": "Tech stocks gain as they benefit most from lower rates.",
+              "detail": "Growth stocks, such as those in the tech sector, see higher valuations as their future cash flows are discounted at a lower rate."
+            }
+          ],
+          "endpoint": "Tech sector equities",
+          "strength": "strong"
+        },
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Cheaper oil means cheaper petrol and cheaper energy bills over the next few months.",
-              "detail": "A 6% fall in crude takes roughly 0.1 to 0.2 percentage points off headline inflation over the following two prints, via the energy component."
-            },
-            {
-              "plain": "That pulls measured inflation down, which removes one reason for central banks to keep interest rates high.",
-              "detail": "The energy contribution to headline CPI turns negative, loosening the near-term constraint on the easing path."
-            },
-            {
-              "plain": "Investors therefore expect rate cuts sooner, and short-term government bond yields fall.",
-              "detail": "The front end of the curve rallies as the market prices a faster cutting cycle. US 2-year yields fell 7 basis points."
-            },
-            {
-              "plain": "But long-term yields went the other way, because governments still need to borrow just as much money.",
-              "detail": "The long end sold off on unchanged issuance and an unchanged term premium, which energy prices do not touch. The result is a steeper curve."
+              "plain": "Falling yields may lead central banks to pause rate hikes.",
+              "detail": "The decline in yields could signal to the Fed that market conditions are easing, potentially slowing the pace of future rate hikes."
             }
           ],
-          "endpoint": "The gap between short and long-term US government bond yields",
+          "endpoint": "Monetary policy outlook",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "US Tech Sector",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Tech stocks are likely to continue rising as lower yields support their valuations.",
+          "detail": "The reduction in discount rates disproportionately benefits tech stocks due to their higher growth expectations, leading to a rally in the sector."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "intraday",
+          "conviction": 3,
+          "order": 1,
+          "plain": "Yields on US Treasuries are expected to decline further as demand for bonds increases.",
+          "detail": "The flight to safety and lower inflation expectations are causing a decrease in Treasury yields, with the 10-year yield dropping intraday."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "High-yield corporate bonds",
+          "direction": "tighter",
+          "magnitude": "10 to 15 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads are likely to tighten as lower yields reduce borrowing costs.",
+          "detail": "The decline in Treasury yields lowers the benchmark rate, which in turn compresses credit spreads for high-yield bonds as investors seek higher returns."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might underestimate the impact of sustained low yields on tech valuations, potentially leading to an extended rally.",
+        "detail": "The market may not fully appreciate the duration effect of persistently low yields on tech sector valuations, leading to an underestimation of the rally's sustainability."
+      },
+      "falsifiers": [
+        "A sudden rise in Treasury yields",
+        "Unexpectedly hawkish Fed comments",
+        "A tech earnings miss"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long Tech Equities",
+          "plain": "Buy tech stocks to benefit from lower yields boosting valuations.",
+          "instrument": "Buy Nasdaq futures",
+          "risk": "Rising yields could reverse the tech rally."
+        }
+      ],
+      "watchNext": [
+        "Upcoming Fed meeting",
+        "Next US inflation report",
+        "Tech company earnings releases"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "discount rate",
+          "plain": "The interest rate used to calculate the present value of future cash flows."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-08-25-extreme-weather-is-hammering-europe-s-summer-harvest-eu-says",
+      "rank": 3,
+      "editorNote": "Extreme weather in Europe is affecting agricultural output, with potential long-term implications for commodity prices.",
+      "materiality": {
+        "score": 63.7,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 18,
+          "salience": 10.2,
+          "recency": 9.5
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "spread",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ World"
+      ],
+      "links": [
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/world/europe/extreme-weather-is-hammering-europes-summer-harvest-eu-says-c607fef0?mod=rss_worldnews",
+          "title": "Extreme Weather Is Hammering Europe’s Summer Harvest, EU Says"
+        }
+      ],
+      "headlines": [
+        "Extreme Weather Is Hammering Europe’s Summer Harvest, EU Says"
+      ],
+      "newestAt": "2026-08-25T12:56:00.000Z",
+      "headline": "Extreme Weather Threatens European Crop Yields, Pressures Food Prices",
+      "standfirst": "Europe's summer harvest is suffering due to extreme weather conditions.",
+      "classification": {
+        "eventType": "supply-shock",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Markets have started to factor in the impact on crop yields but may not fully reflect the long-term price effects.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Europe is experiencing extreme weather that is damaging this summer's crop yields. This could lead to lower agricultural output and higher food prices.",
+        "whyItMatters": "Lower crop yields can increase food prices, affecting consumers and businesses dependent on agricultural products.",
+        "detail": "The European agricultural sector is facing significant challenges due to extreme weather, likely leading to reduced output and upward pressure on food commodity prices."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Farmers will earn less due to smaller harvests.",
+              "detail": "Reduced crop yields directly lower farmers' revenue, affecting their profitability."
+            },
+            {
+              "plain": "Food companies may face higher costs.",
+              "detail": "Food producers will likely pay more for raw materials, squeezing margins unless they pass costs to consumers."
+            }
+          ],
+          "endpoint": "European food producers",
           "strength": "strong"
         },
         {
           "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "Countries that import most of their oil, like Germany and Japan, suddenly have a smaller bill to pay.",
-              "detail": "Terms of trade improve for large net energy importers, reducing the current account drag."
+              "plain": "European food imports may rise.",
+              "detail": "With domestic supply constrained, Europe might increase food imports, affecting trade balances."
             },
             {
-              "plain": "They need fewer dollars to buy that oil, because oil is priced in dollars worldwide.",
-              "detail": "Marginal dollar demand for energy invoicing falls."
-            },
-            {
-              "plain": "So their currencies strengthen against the dollar, while currencies of oil-exporting countries weaken.",
-              "detail": "EUR and JPY outperform; commodity currencies such as NOK, CAD and COP underperform on the same signal."
+              "plain": "The euro could weaken if trade deficits widen.",
+              "detail": "Increased imports without a corresponding rise in exports could pressure the euro as trade deficits expand."
             }
           ],
-          "endpoint": "The euro, the yen, and oil-exporter currencies",
-          "strength": "moderate"
-        },
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "Oil companies earn less per barrel, so the money they had planned to spend next year gets cut.",
-              "detail": "Lower realised prices compress upstream cash flow and pressure marginal barrel economics, particularly in US shale."
-            },
-            {
-              "plain": "The companies that supply the oil industry lose orders as a result. That includes drilling contractors, specialist steel makers and industrial gas suppliers.",
-              "detail": "Oilfield services order books, OCTG demand and industrial gas volumes are affected with a two to three quarter lag."
-            },
-            {
-              "plain": "This shows up months later, when those companies report, not today.",
-              "detail": "The lag between the producer move and the supply chain repricing at the next capex guidance round is the tradeable window."
-            }
-          ],
-          "endpoint": "Oilfield services companies and industrial suppliers",
+          "endpoint": "Euro currency",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
           "assetClass": "commodities",
-          "instrument": "Brent crude",
-          "direction": "down",
-          "magnitude": "5 to 8%",
-          "horizon": "days",
+          "instrument": "European wheat prices",
+          "direction": "up",
+          "magnitude": "3 to 5%",
+          "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "The oil price falls because the risk of conflict disrupting supply just went down.",
-          "detail": "Direct removal of the geopolitical risk premium as the sanctions framework is read as de-escalatory."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 2Y",
-          "direction": "down",
-          "magnitude": "6 to 12 basis points",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 2,
-          "plain": "Short-term bond yields fall because cheaper energy means lower inflation, so rate cuts look more likely.",
-          "detail": "The front end prices a faster easing path as the energy contribution to headline inflation turns negative."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 2s30s curve",
-          "direction": "steeper",
-          "magnitude": "12 to 20 basis points",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "The gap between short and long-term borrowing costs widens, because only the short end responds to the inflation news.",
-          "detail": "Front end rallies on the disinflation impulse while the long end stays anchored by unchanged issuance and term premium."
+          "plain": "Wheat prices in Europe are likely to rise as supply becomes constrained.",
+          "detail": "With reduced yields, wheat futures could see upward pressure as traders anticipate tighter supply."
         },
         {
           "assetClass": "fx",
           "instrument": "EUR/USD",
-          "direction": "up",
-          "magnitude": "0.6 to 1.2%",
-          "horizon": "days",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "The euro strengthens because Europe imports most of its energy and just got a discount on it.",
-          "detail": "Terms-of-trade improvement for a large net energy importer, amplified by narrowing front-end rate differentials."
+          "plain": "The euro might weaken if Europe imports more food, worsening the trade balance.",
+          "detail": "Increased food imports could lead to a larger trade deficit, exerting downward pressure on the euro."
         },
         {
           "assetClass": "equities",
-          "instrument": "European airlines and car makers",
-          "direction": "up",
-          "magnitude": "1.5 to 3%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Fuel is one of the biggest costs for airlines, and cheaper petrol makes people more willing to drive and to buy cars.",
-          "detail": "Jet fuel is a direct and often partly unhedged input; for autos the channel is demand elasticity rather than input cost."
-        },
-        {
-          "assetClass": "credit",
-          "instrument": "US high-yield energy spreads",
-          "direction": "wider",
-          "magnitude": "25 to 45 basis points",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Heavily indebted oil companies become riskier to lend to, because their income just fell while their debts did not.",
-          "detail": "Sub-$65 WTI pressures interest coverage ratios for the levered shale cohort heading into a 2027 refinancing wall."
-        },
-        {
-          "assetClass": "vol",
-          "instrument": "Oil price volatility",
+          "instrument": "European food producers",
           "direction": "down",
-          "magnitude": "3 to 6 points",
+          "magnitude": "2 to 4%",
           "horizon": "weeks",
-          "conviction": 2,
+          "conviction": 3,
           "order": 2,
-          "plain": "With a formal process in place, the range of possible outcomes narrows, so the market expects smaller swings.",
-          "detail": "Implied vol compresses as the outcome distribution tightens, though realised vol stays elevated while positioning clears."
+          "plain": "Shares of European food producers may fall due to higher input costs and squeezed margins.",
+          "detail": "Higher agricultural input costs could reduce profitability, leading to a sell-off in food producer stocks."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Everyone is treating cheaper oil as straightforwardly good news, and for most companies it is. The part being overlooked is what it does to oil companies that borrowed heavily. A lot of American shale producers took on debt that only makes sense above a certain oil price, and they were counting on falling interest rates to let them refinance next year. This news hands them the lower interest rates and takes away the income that would have made them worth lending to. Those two things arriving together is worse for them than either one alone, and it is not visible in the headline credit numbers because the wider market is rallying at the same time.",
-        "detail": "HY energy spreads should widen even as the index tightens on duration. The divergence within the asset class will be masked by the top-line index spread for several weeks."
+        "plain": "Investors may not fully appreciate the potential for prolonged supply disruptions and sustained higher food prices, which could have broader inflationary effects.",
+        "detail": "The market might underestimate the duration and severity of supply chain disruptions, leading to persistent inflationary pressures not yet priced in."
       },
       "falsifiers": [
-        "Brent recovers above $74 within five trading days, which would mean the market has reread the sanctions as supply-restricting after all",
-        "Short and long-term yields fall together rather than the curve steepening, which would mean this is being traded as a slowdown warning rather than an inflation story",
-        "High-yield energy spreads tighten alongside the wider index, which would directly disprove the credit argument",
-        "OPEC+ announces production cuts that offset the supply picture and restore the risk premium"
+        "Improved weather conditions leading to a recovery in yields",
+        "Government intervention to subsidise affected farmers",
+        "A significant drop in global food demand"
       ],
       "tradeExpression": [
         {
-          "idea": "Bet on the gap between short and long-term yields, not on yields overall",
-          "plain": "Buy short-dated government bonds and sell long-dated ones in equal risk size. You profit if short-term yields fall further than long-term ones, without needing to be right about the overall direction of interest rates.",
-          "instrument": "US 2s30s steepener via futures, DV01-neutral",
-          "risk": "If the market decides this is a sign of a slowing economy, all yields fall together and the position makes nothing while the underlying view was right."
-        },
-        {
-          "idea": "Separate the indebted oil companies from the rest of the credit market",
-          "plain": "Hold the broad high-yield bond market while buying protection against default by the most indebted oil producers specifically. This isolates the problem from the rally happening around it.",
-          "instrument": "Long HY index CDX against a single-name protection basket in levered E&P",
-          "risk": "One of those companies sells assets or raises equity and solves its funding problem before the argument plays out."
+          "idea": "Long European wheat futures",
+          "plain": "Buy European wheat futures to profit from expected price increases due to lower yields.",
+          "instrument": "futures",
+          "risk": "Weather conditions improve unexpectedly, boosting yields."
         }
       ],
       "watchNext": [
-        "The next US inflation reading, which shows whether cheaper energy is actually feeding through",
-        "The OPEC+ monitoring committee meeting, and whether they cut supply in response",
-        "Third-quarter results from oil companies and their spending plans for next year",
-        "Weekly US oil inventory data, as physical confirmation of the demand picture"
+        "Upcoming EU agricultural output reports",
+        "Weather forecasts for key European farming regions"
       ],
       "glossary": [
         {
-          "term": "Basis point",
+          "term": "basis point",
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
         },
         {
-          "term": "Yield",
-          "plain": "The annual return you get from holding a bond. When bond prices go up, yields go down, and vice versa."
-        },
-        {
-          "term": "The curve",
-          "plain": "The pattern of yields across different lending periods. A \"steeper\" curve means long-term borrowing has become more expensive relative to short-term borrowing."
-        },
-        {
-          "term": "Credit spread",
-          "plain": "The extra interest a company pays to borrow compared with the government. Wider means investors see more risk."
-        },
-        {
-          "term": "High yield",
-          "plain": "Bonds issued by companies considered more likely to default, so they pay more interest. Sometimes called junk bonds."
-        },
-        {
-          "term": "Terms of trade",
-          "plain": "The relationship between what a country earns from exports and what it pays for imports. Cheaper oil improves it for importers."
-        },
-        {
-          "term": "Risk premium",
-          "plain": "The extra amount built into a price to compensate for the chance something goes wrong. When the risk fades, the price falls."
+          "term": "trade balance",
+          "plain": "The difference between a country's exports and imports. A deficit occurs when imports exceed exports."
         }
       ],
-      "confidence": 4
+      "confidence": 3
     },
     {
-      "id": "2026-08-25-dollar-stops-following-interest-rates",
-      "rank": 2,
-      "editorNote": "A slow-moving structural story rather than a headline. It matters because it changes how different markets move in relation to each other, which is what most investors rely on to control risk.",
+      "id": "2026-08-25-china-needs-u-s-dollars-but-is-building-a-hedge-against-wash",
+      "rank": 4,
+      "editorNote": "China's need for US dollars amidst sanctions highlights ongoing geopolitical and FX market tensions.",
       "materiality": {
-        "score": 71.6,
+        "score": 66,
         "components": {
-          "corroboration": 20.6,
+          "corroboration": 21,
           "authority": 13,
-          "breadth": 18,
-          "salience": 14.8,
-          "recency": 8.2
+          "breadth": 9,
+          "salience": 13.6,
+          "recency": 9.4
         },
-        "distinctSources": 4,
+        "distinctSources": 2,
         "salienceTerms": [
-          "dollar",
-          "fed",
-          "treasury",
-          "monetary policy",
-          "reserves"
+          "sanctions",
+          "dollar"
         ]
       },
       "sources": [
-        "Investing.com FX",
-        "Financial Times",
-        "MarketWatch",
+        "CNBC",
         "CNBC Economy"
       ],
       "links": [
         {
-          "name": "Investing.com",
-          "url": "https://www.investing.com/",
-          "title": "Why the dollar outlook now depends on confidence in US policy"
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
+          "title": "China needs U.S. dollars but is building a hedge against Washington’s sanctions"
+        },
+        {
+          "name": "CNBC Economy",
+          "url": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
+          "title": "China needs U.S. dollars but is building a hedge against Washington’s sanctions"
         }
       ],
       "headlines": [
-        "Why the dollar outlook now depends on confidence in US policy",
-        "Strategists say sell the dollar against these currencies"
+        "China needs U.S. dollars but is building a hedge against Washington’s sanctions"
       ],
-      "newestAt": "2026-08-25T11:51:25.040Z",
-      "headline": "The dollar has stopped following interest rates, and that breaks a lot of hedges",
-      "standfirst": "Several research desks now argue the dollar is moving on confidence in US institutions rather than on the interest rate gap that normally drives it.",
+      "newestAt": "2026-08-25T12:42:15.000Z",
+      "headline": "China's Dollar Need Fuels Geopolitical Tensions, Impacts FX Markets",
+      "standfirst": "China seeks alternatives to US financial influence amidst dollar dependency.",
       "classification": {
-        "eventType": "monetary-policy",
+        "eventType": "geopolitical",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Most investors already agree the dollar is heading lower, so that part is in the price. What is not in the price is the change in how the dollar moves relative to other assets.",
-        "persistence": "lasting",
+        "pricedInRationale": "The market had anticipated some geopolitical tensions but underestimated China's strategic financial shifts.",
+        "persistence": "weeks",
         "regionFocus": [
+          "China",
           "US",
           "Global"
         ]
       },
       "whatHappened": {
-        "plain": "For decades, the simplest rule for predicting the dollar was to look at US interest rates compared with those elsewhere. Higher US rates meant a stronger dollar, because investors moved money to where it earned more. That rule has stopped working. The dollar has weakened this year even though the interest rate gap should have supported it. Research desks are converging on the explanation that investors are demanding a discount for holding dollars because they are less confident in how US policy is being run.",
-        "whyItMatters": "This is not really about the dollar going up or down. It is about a relationship breaking. Most large investors build portfolios assuming certain assets move in predictable ways relative to each other. When one of those relationships stops holding, protections that were supposed to offset each other stop doing so, and that is usually discovered at the worst possible time.",
-        "detail": "The dollar is trading with a credibility discount rather than a cyclical one, which decouples it from the two-year rate differential that historically explained most of the variance."
+        "plain": "China is trying to reduce its dependency on US dollars by building financial systems like CIPS. This is a response to potential sanctions from the US.",
+        "whyItMatters": "This move could shift global financial power balances and affect currency markets.",
+        "detail": "China's development of CIPS aims to bypass SWIFT and reduce vulnerability to US sanctions, impacting global FX dynamics."
       },
       "chains": [
         {
-          "channel": "correlation",
+          "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "If the dollar no longer tracks interest rates, then models built on that relationship give the wrong answer.",
-              "detail": "The historical dollar/rate-differential beta breaks down, invalidating models calibrated on it."
+              "plain": "China's dollar demand keeps the yuan under pressure.",
+              "detail": "China's need for dollars to settle international trade exerts downward pressure on the yuan due to increased demand for USD."
             },
             {
-              "plain": "Investors who hedged their US bond holdings by taking a matching currency position find the hedge no longer offsets anything.",
-              "detail": "Cross-asset hedge ratios are being set off a relationship that has stopped explaining the move."
-            },
-            {
-              "plain": "Funds that use borrowed money size their positions based on how assets have moved together in the past. When that changes, they are forced to cut positions to stay within their risk limits.",
-              "detail": "Volatility-targeting and risk-parity strategies size leverage off trailing correlation matrices that have not yet registered the regime change."
+              "plain": "A weaker yuan makes Chinese exports cheaper.",
+              "detail": "As the yuan depreciates, Chinese goods become more competitively priced in international markets, boosting export volumes."
             }
           ],
-          "endpoint": "Leveraged multi-asset funds and their hedging",
+          "endpoint": "Chinese exporters",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may react to currency shifts.",
+              "detail": "If the yuan's depreciation leads to significant trade imbalances, central banks might adjust interest rates to stabilize their currencies."
+            }
+          ],
+          "endpoint": "Global central banks",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "fx",
+          "instrument": "USD/CNY exchange rate",
+          "direction": "up",
+          "magnitude": "1% to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 1,
+          "plain": "The USD is likely to strengthen against the CNY as China's dollar demand persists.",
+          "detail": "Increased demand for dollars to settle trade will likely cause the USD/CNY exchange rate to rise."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Chinese export-oriented companies",
+          "direction": "up",
+          "magnitude": "3% to 5%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Cheaper exports could boost revenues for Chinese exporters.",
+          "detail": "As the yuan weakens, Chinese export firms may see increased foreign demand, supporting their stock prices."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US Treasury yields",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 2,
+          "order": 2,
+          "plain": "Increased demand for dollars may push US yields higher.",
+          "detail": "As global demand for USD increases, it could lead to higher US Treasury yields due to inflation expectations."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of China's financial strategies on global currency markets.",
+        "detail": "The market might not fully price in the strategic shift China's CIPS represents, potentially altering long-term FX and trade dynamics."
+      },
+      "falsifiers": [
+        "China significantly reduces its dollar holdings without market disruption.",
+        "The US and China reach a diplomatic agreement reducing tensions."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long USD/CNY",
+          "plain": "Buy USD against CNY to benefit from China's dollar demand.",
+          "instrument": "FX spot or futures",
+          "risk": "A sudden policy change by China to stabilize the yuan."
+        }
+      ],
+      "watchNext": [
+        "Upcoming US-China trade negotiations.",
+        "Central bank meetings addressing currency stability."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "CIPS",
+          "plain": "China's Cross-Border Interbank Payment System, an alternative to SWIFT for international payments."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-08-25-u-s-treasury-yields-fall-dollar-steady",
+      "rank": 5,
+      "editorNote": "The steady dollar amidst falling US Treasury yields suggests a shift in rate expectations and FX stability.",
+      "materiality": {
+        "score": 68.1,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 8.6
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "treasury",
+          "sanctions",
+          "buyback",
+          "dollar"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-as-traders-parse-u-s-new-measures-on-iran-40b529c7?mod=rss_markets_main",
+          "title": "U.S. Treasury Yields Fall, Dollar Steady"
+        }
+      ],
+      "headlines": [
+        "U.S. Treasury Yields Fall, Dollar Steady"
+      ],
+      "newestAt": "2026-08-25T10:00:00.000Z",
+      "headline": "US Treasury Yields Drop, Markets Brace for Policy Shifts",
+      "standfirst": "US Treasury yields fell while the dollar remained stable.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some yield movement but not the full impact of policy shifts.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "US Treasury yields fell, and the dollar held steady. This came after reactions to Treasury buybacks and new Iran sanctions.",
+        "whyItMatters": "Falling yields suggest changing expectations for interest rates, affecting investments globally.",
+        "detail": "The market is adjusting to potential shifts in monetary policy due to Treasury buybacks and geopolitical tensions impacting rates."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Falling yields suggest rate cuts may be more likely.",
+              "detail": "Lower Treasury yields imply the market expects the Fed to ease monetary policy."
+            },
+            {
+              "plain": "This could lead to increased borrowing and investment.",
+              "detail": "Easier monetary conditions typically stimulate borrowing and capital expenditure."
+            }
+          ],
+          "endpoint": "US economy",
           "strength": "strong"
         },
         {
           "channel": "discount-rate",
           "links": [
             {
-              "plain": "If investors want compensation for holding dollars, they want it most on long-dated US government debt, where they are locked in for decades.",
-              "detail": "The credibility discount is expressed as a higher term premium at the long end."
+              "plain": "Lower yields reduce the cost of borrowing.",
+              "detail": "The drop in long-term Treasury yields decreases the baseline cost of capital."
             },
             {
-              "plain": "That pushes long-term yields up regardless of what happens to official interest rates.",
-              "detail": "Long-end yields rise independently of the policy path."
-            },
-            {
-              "plain": "Gold benefits, because it is the standard place investors go when they doubt the currency itself rather than the economy.",
-              "detail": "Gold above $3,900 with elevated real yields is a monetary credibility hedge, not an inflation hedge, at these levels."
+              "plain": "This makes equities more attractive compared to bonds.",
+              "detail": "With lower yields, the equity risk premium becomes more appealing, supporting stock valuations."
             }
           ],
-          "endpoint": "Long-dated US government bonds and gold",
-          "strength": "strong"
-        },
-        {
-          "channel": "positioning",
-          "links": [
-            {
-              "plain": "Almost every large fund is now betting against the dollar.",
-              "detail": "Short dollar is a consensus position across macro funds and real money."
-            },
-            {
-              "plain": "When everyone is on the same side, there are few buyers left to push the move further.",
-              "detail": "Crowding reduces the marginal seller and compresses the forward return of the trade."
-            },
-            {
-              "plain": "Any piece of news that restores confidence causes a sharp reversal, larger than the news itself justifies.",
-              "detail": "A credibility-restoring event triggers a squeeze disproportionate to its fundamental content."
-            }
-          ],
-          "endpoint": "Anyone currently short the dollar",
+          "endpoint": "equity markets",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "fx",
-          "instrument": "Dollar index",
-          "direction": "down",
-          "magnitude": "1.5 to 3%",
-          "horizon": "quarters",
-          "conviction": 3,
-          "order": 1,
-          "plain": "The dollar weakens over time, though the crowded positioning means it will not go in a straight line.",
-          "detail": "Structural credibility discount, offset in the near term by extremely crowded short positioning."
-        },
-        {
           "assetClass": "rates",
-          "instrument": "US 30Y",
-          "direction": "up",
-          "magnitude": "15 to 30 basis points",
-          "horizon": "quarters",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Long-term US borrowing costs rise, because investors want paying more to lend for thirty years.",
-          "detail": "Term premium expansion, independent of where the policy rate settles."
-        },
-        {
-          "assetClass": "commodities",
-          "instrument": "Gold",
-          "direction": "up",
-          "magnitude": "4 to 9%",
-          "horizon": "quarters",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
           "conviction": 4,
-          "order": 2,
-          "plain": "Gold rises because it is what investors buy when they lose confidence in a currency rather than in an economy.",
-          "detail": "The cleanest available expression of a monetary credibility hedge, and the least dependent on the timing of the dollar move."
+          "order": 1,
+          "plain": "US 10-year Treasury yields are likely to fall further as rate cut expectations grow.",
+          "detail": "The yield curve is pricing in more accommodative policy, pushing long-term yields lower."
         },
         {
-          "assetClass": "vol",
-          "instrument": "Currency volatility",
+          "assetClass": "equities",
+          "instrument": "US equities",
           "direction": "up",
-          "magnitude": "1.5 to 3 points",
+          "magnitude": "2 to 4%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Currency markets get choppier, because the old rule of thumb no longer tells anyone where the dollar should be.",
-          "detail": "A correlation regime change raises realised volatility before implied volatility catches up. The gap is where the value sits."
+          "plain": "US stocks could rise as lower yields make them more attractive.",
+          "detail": "The relative valuation of equities improves as the discount rate falls, supporting higher stock prices."
         },
         {
-          "assetClass": "equities",
-          "instrument": "US exporters",
-          "direction": "up",
-          "magnitude": "1 to 2.5%",
-          "horizon": "quarters",
-          "conviction": 2,
-          "order": 2,
-          "plain": "American companies that sell abroad earn more when converted back into a weaker dollar, though higher long-term rates work against them.",
-          "detail": "Translation tailwind on overseas earnings, partly offset by the higher discount rate applied to those cash flows."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Nearly everyone agrees the dollar is going lower, which makes that view almost worthless as a way to make money. The overlooked consequence is what a dollar driven by confidence rather than by interest rates does to portfolio construction. The standard way to hold foreign bonds safely is to offset the currency exposure, and that only works if the two move in a stable relationship. If they do not, the protection fails at exactly the moment both positions are losing money. The interesting position is not being short the dollar. It is owning the disruption itself, because the eventual unwind will be funds mechanically forced to cut risk rather than anyone changing their mind about the fundamentals.",
-        "detail": "Long FX volatility and long the correlation break expresses this better than short spot, which is already consensus."
-      },
-      "falsifiers": [
-        "The dollar re-establishes a stable relationship with the two-year rate gap over a full quarter",
-        "Gold fails to make a new high while the dollar keeps falling, which would break the confidence explanation",
-        "Currency volatility falls to the bottom of its two-year range despite continued dollar weakness",
-        "A credible plan to reduce government borrowing removes the discount at its source"
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Bet on movement rather than on direction",
-          "plain": "Buy options that pay off if the euro-dollar exchange rate moves a long way in either direction. Everyone is already betting on which way it goes, so the mispriced thing is how violently it gets there.",
-          "instrument": "Long 6-month EUR/USD strangles, part-funded by selling short-dated wings",
-          "risk": "If the dollar drifts steadily lower without any sharp moves, the options expire worthless even though the underlying view was correct."
-        },
-        {
-          "idea": "Own gold instead of shorting the dollar",
-          "plain": "Hold gold against a basket of currencies rather than betting against the dollar directly. It captures the same loss of confidence without sitting in the most crowded trade in the market.",
-          "instrument": "Long gold versus a short G10 dollar basket",
-          "risk": "In a genuine liquidity crisis, investors sell gold to raise cash regardless of what they believe about currencies."
-        }
-      ],
-      "watchNext": [
-        "The next Federal Reserve meeting, read for what it signals about independence rather than for the rate decision",
-        "Demand at long-dated US government bond auctions, which measures directly what investors want paying",
-        "Weekly Federal Reserve data on foreign official holdings of US debt",
-        "The rolling 60-day relationship between the dollar and the rate gap, which is the direct test of this argument"
-      ],
-      "glossary": [
-        {
-          "term": "Interest rate differential",
-          "plain": "The gap between interest rates in two countries. Money tends to flow towards the higher rate, which usually supports that currency."
-        },
-        {
-          "term": "Hedge",
-          "plain": "A second position taken to offset the risk in the first one. It only works if the two reliably move in opposite directions."
-        },
-        {
-          "term": "Term premium",
-          "plain": "The extra yield investors demand for lending money for a long time rather than a short time."
-        },
-        {
-          "term": "Correlation",
-          "plain": "How closely two things move together. Portfolio risk models depend heavily on correlations staying stable."
-        },
-        {
-          "term": "Crowded trade",
-          "plain": "A position almost everyone already holds. Crowded trades tend to unwind violently, because there is nobody left to buy."
-        },
-        {
-          "term": "Option",
-          "plain": "A contract giving the right, but not the obligation, to buy or sell at a set price. Used to bet on the size of a move rather than its direction."
-        },
-        {
-          "term": "Leverage",
-          "plain": "Using borrowed money to increase the size of a position. It magnifies gains and losses, and forces selling when risk limits are breached."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-08-25-sp500-dividend-yield-record-low",
-      "rank": 3,
-      "editorNote": "Widely reported as a valuation warning. The more interesting consequence is what it does to who owns shares and how they behave in a downturn.",
-      "materiality": {
-        "score": 63.4,
-        "components": {
-          "corroboration": 16.4,
-          "authority": 13,
-          "breadth": 13.5,
-          "salience": 12.1,
-          "recency": 8.4
-        },
-        "distinctSources": 3,
-        "salienceTerms": [
-          "earnings",
-          "valuation",
-          "buyback",
-          "megacap"
-        ]
-      },
-      "sources": [
-        "Yahoo Finance",
-        "MarketWatch",
-        "CNBC"
-      ],
-      "links": [
-        {
-          "name": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/",
-          "title": "S&P 500 dividend yield hits record low near 1%"
-        }
-      ],
-      "headlines": [
-        "S&P 500 dividend yield hits record low near 1% and it has some retirees rethinking their strategies"
-      ],
-      "newestAt": "2026-08-25T11:51:25.040Z",
-      "headline": "Shares pay almost no income now, and that changes who owns them",
-      "standfirst": "The dividend yield on the S&P 500 has fallen to a record low near 1%, well below what cash pays.",
-      "classification": {
-        "eventType": "flows",
-        "pricedIn": "expected",
-        "pricedInRationale": "The number itself is well known and correctly understood as a side effect of index concentration. What has not been thought through is the effect on who is willing to own shares.",
-        "persistence": "lasting",
-        "regionFocus": [
-          "US"
-        ]
-      },
-      "whatHappened": {
-        "plain": "A dividend is a cash payment a company makes to shareholders out of profits. The dividend yield is that payment as a percentage of the share price. Across the 500 largest US companies it has fallen to about 1%, the lowest on record, and below what you get on cash in the bank. Two things caused it. The largest technology companies now dominate the index and mostly pay no dividend, and companies increasingly return cash by buying back their own shares instead.",
-        "whyItMatters": "Taken alone the number means little, because buybacks return cash too and are not counted in it. What matters is that a lot of investors, particularly pension funds and retirees, are required to generate income. If shares no longer produce any, those investors go elsewhere, and the people left holding shares behave differently.",
-        "detail": "Total shareholder yield including buybacks is unremarkable. The signal is in the composition of the shareholder base, not the multiple."
-      },
-      "chains": [
-        {
-          "channel": "substitution",
-          "links": [
-            {
-              "plain": "Investors who need regular income can no longer get it from the main share index.",
-              "detail": "Income-mandated investors cannot meet distribution requirements from cap-weighted equity."
-            },
-            {
-              "plain": "They move money into corporate bonds, infrastructure, and funds that specifically target high-dividend companies.",
-              "detail": "Rotation into IG credit, private credit, infrastructure and high-dividend factor strategies."
-            },
-            {
-              "plain": "That leaves the index owned almost entirely by investors who only care about the share price going up, and those investors sell faster when it does not.",
-              "detail": "The marginal holder becomes exclusively total-return oriented and more price-sensitive in a drawdown."
-            }
-          ],
-          "endpoint": "How sharply share prices fall in a selloff",
-          "strength": "moderate"
-        },
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "Buybacks have replaced dividends as the main way companies return cash.",
-              "detail": "The substitution has run for two decades and accelerated with index concentration."
-            },
-            {
-              "plain": "The difference is that companies cut buybacks immediately when profits fall, but defend dividends for as long as they can, because cutting one is seen as an admission of trouble.",
-              "detail": "Buybacks are discretionary and procyclical; dividends are sticky and defended through several quarters of deterioration."
-            },
-            {
-              "plain": "So the index has quietly swapped a reliable source of return for one that disappears exactly when things get difficult.",
-              "detail": "A stable return component has been converted into a procyclical one, which deepens realised drawdowns."
-            }
-          ],
-          "endpoint": "The depth of the next equity market fall",
-          "strength": "strong"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "equities",
-          "instrument": "High-dividend share strategies",
-          "direction": "up",
-          "magnitude": "1 to 3% relative",
-          "horizon": "quarters",
+          "assetClass": "fx",
+          "instrument": "US Dollar Index (DXY)",
+          "direction": "stable",
+          "magnitude": "0.5%",
+          "horizon": "weeks",
           "conviction": 3,
-          "order": 2,
-          "plain": "Funds targeting income-paying shares attract steady money from investors who can no longer find income in the main index.",
-          "detail": "Persistent mandate-driven flow into high-dividend factor strategies."
-        },
-        {
-          "assetClass": "credit",
-          "instrument": "US IG OAS",
-          "direction": "tighter",
-          "magnitude": "5 to 15 basis points",
-          "horizon": "quarters",
-          "conviction": 2,
-          "order": 2,
-          "plain": "Corporate bonds get more expensive as income investors pushed out of shares buy them instead.",
-          "detail": "Substitution demand acts as a non-economic bid, partly explaining why IG spreads look rich relative to leverage metrics."
-        },
-        {
-          "assetClass": "vol",
-          "instrument": "S&P 500 downside protection",
-          "direction": "up",
-          "magnitude": "1 to 3 points of skew",
-          "horizon": "quarters",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Insurance against a market fall gets more expensive, because a shareholder base with no income has less reason to sit through a bad year.",
-          "detail": "Skew steepens without a change in at-the-money volatility, reflecting a deeper left tail."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "S&P 500",
-          "direction": "mixed",
-          "magnitude": "no clear direction",
-          "horizon": "quarters",
-          "conviction": 2,
           "order": 1,
-          "plain": "The dividend yield on its own says almost nothing about whether shares are expensive.",
-          "detail": "Total shareholder yield including buybacks is close to its long-run average."
+          "plain": "The dollar is likely to remain stable despite yield changes.",
+          "detail": "The dollar's stability reflects balanced expectations of US economic performance and rate policy."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Most coverage treats this as a warning that shares are expensive. That reading is wrong, because it ignores buybacks, which return just as much cash and are not in the number. The real consequence is about behaviour rather than valuation. Dividends are defended by company boards for years after profits start falling, because cutting one is publicly humiliating. Buybacks are switched off in a single quarter with no announcement. The index has swapped one for the other, which means that in the next serious downturn the support disappears at exactly the moment it is needed. Shares have not become more expensive. They have become more fragile, and that belongs in the price of downside protection rather than in the valuation debate.",
-        "detail": "The correct expression is in skew, not in the multiple."
+        "plain": "Investors may underestimate the impact of geopolitical tensions on future rate decisions.",
+        "detail": "Geopolitical risks, particularly from Iran, could lead to more aggressive easing than currently priced."
       },
       "falsifiers": [
-        "Total shareholder yield including buybacks also hits a record low, which would restore the simple valuation reading",
-        "High-dividend strategies underperform for two consecutive quarters despite the income gap",
-        "Downside protection on the S&P 500 gets cheaper over six months",
-        "Buyback programmes hold up through the next fall in profits"
+        "If the Fed signals a hawkish stance despite falling yields.",
+        "An unexpected rise in inflation data that prompts a policy shift.",
+        "Geopolitical tensions easing, reducing the need for policy intervention."
       ],
       "tradeExpression": [
         {
-          "idea": "Buy protection against a fall rather than betting on direction",
-          "plain": "Buy insurance against the market dropping, and pay for it by giving up some of the gain if it rises sharply. This is a bet on the shape of the outcome rather than on whether the market goes up or down.",
-          "instrument": "S&P 500 put spread collar",
-          "risk": "A steady rise means you pay for protection you never use and cap the upside you would otherwise have had."
-        },
-        {
-          "idea": "Follow the income money",
-          "plain": "Own high-dividend shares while shorting the equal-weighted index, so you capture the flow into income strategies without taking a view on the market overall.",
-          "instrument": "Long high-dividend factor versus short equal-weight S&P 500",
-          "risk": "High-dividend baskets carry hidden exposure to interest rates and to value shares, which can swamp the flow effect entirely."
+          "idea": "Long US equities",
+          "plain": "Buy US equities in anticipation of lower rates boosting stock prices.",
+          "instrument": "equity index futures",
+          "risk": "A sudden hawkish turn by the Fed could hurt equity valuations."
         }
       ],
       "watchNext": [
-        "Quarterly buyback authorisation totals, which measure the discretionary part directly",
-        "Net money flowing into high-dividend exchange traded funds",
-        "The price of three-month downside protection relative to its five-year range",
-        "Whether corporate bond spreads keep tightening despite rising company debt levels"
+        "Upcoming Fed meeting for policy guidance.",
+        "Inflation data releases for signs of economic overheating.",
+        "Geopolitical developments, particularly in the Middle East."
       ],
       "glossary": [
         {
-          "term": "Dividend",
-          "plain": "A cash payment a company makes to its shareholders out of profits, usually quarterly."
-        },
-        {
-          "term": "Dividend yield",
-          "plain": "The annual dividend as a percentage of the share price. A £2 dividend on a £100 share is a 2% yield."
-        },
-        {
-          "term": "Buyback",
-          "plain": "A company buying its own shares in the market. It returns cash to shareholders by making each remaining share represent a bigger slice of the company."
-        },
-        {
-          "term": "Index concentration",
-          "plain": "When a small number of very large companies make up most of an index, their characteristics dominate the whole thing."
-        },
-        {
-          "term": "Skew",
-          "plain": "The extra cost of insuring against a market fall compared with betting on a rise. Rising skew means investors are more worried about downside."
-        },
-        {
-          "term": "Procyclical",
-          "plain": "Something that gets stronger in good times and weaker in bad times, which amplifies whatever is already happening."
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
         }
       ],
       "confidence": 3
     }
   ],
   "diagnostics": {
-    "articlesIngested": 287,
+    "articlesIngested": 257,
     "clustersConsidered": 25,
     "feeds": [
       {
-        "id": "feed-0",
-        "name": "Source 0",
+        "id": "fed",
+        "name": "Federal Reserve",
         "ok": true,
         "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
+        "fresh": 0,
+        "ms": 186,
         "error": null
       },
       {
-        "id": "feed-1",
-        "name": "Source 1",
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
         "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
+        "parsed": 15,
+        "fresh": 0,
+        "ms": 176,
         "error": null
       },
       {
-        "id": "feed-2",
-        "name": "Source 2",
+        "id": "ecb",
+        "name": "European Central Bank",
         "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
+        "parsed": 15,
+        "fresh": 1,
+        "ms": 853,
         "error": null
       },
       {
-        "id": "feed-3",
-        "name": "Source 3",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-4",
-        "name": "Source 4",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-5",
-        "name": "Source 5",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-6",
-        "name": "Source 6",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-7",
-        "name": "Source 7",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-8",
-        "name": "Source 8",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-9",
-        "name": "Source 9",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-10",
-        "name": "Source 10",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-11",
-        "name": "Source 11",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-12",
-        "name": "Source 12",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-13",
-        "name": "Source 13",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-14",
-        "name": "Source 14",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-15",
-        "name": "Source 15",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-16",
-        "name": "Source 16",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-17",
-        "name": "Source 17",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-18",
-        "name": "Source 18",
-        "ok": true,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": null
-      },
-      {
-        "id": "feed-19",
-        "name": "Source 19",
+        "id": "boe",
+        "name": "Bank of England",
         "ok": false,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 1021,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 741,
         "error": "HTTP 403"
       },
       {
-        "id": "feed-20",
-        "name": "Source 20",
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
         "ok": false,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 818,
         "error": "HTTP 403"
       },
       {
-        "id": "feed-21",
-        "name": "Source 21",
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 19,
+        "fresh": 1,
+        "ms": 925,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1134,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 1131,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 1172,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 34,
+        "ms": 1162,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 70,
+        "fresh": 24,
+        "ms": 1204,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": true,
+        "parsed": 49,
+        "fresh": 48,
+        "ms": 1337,
+        "error": null
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 30,
+        "ms": 1401,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 4,
+        "ms": 1368,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 12,
+        "fresh": 12,
+        "ms": 2053,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 52,
+        "fresh": 24,
+        "ms": 1548,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": true,
+        "parsed": 38,
+        "fresh": 29,
+        "ms": 1310,
+        "error": null
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1415,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1432,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1421,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
         "ok": false,
-        "parsed": 20,
-        "fresh": 13,
-        "ms": 300,
-        "error": "HTTP 403"
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 3430,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1425,
+        "error": null
       }
     ],
     "marketProviders": [
       {
-        "provider": "demo",
-        "ok": true,
-        "count": 22,
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 669,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 288,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
         "ms": 0,
-        "error": null
+        "error": "no rows"
       }
     ],
     "usage": {
-      "calls": 4,
-      "inputTokens": 28400,
-      "outputTokens": 16200,
-      "estimatedCostUsd": 0.2188
+      "calls": 6,
+      "inputTokens": 12620,
+      "outputTokens": 5558,
+      "estimatedCostUsd": 0.0871
     },
-    "runtimeMs": 43100
+    "runtimeMs": 39352
   },
   "scorecardSummary": {
     "total": 8,
