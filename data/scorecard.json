@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T05:21:05.765Z",
+  "updatedAt": "2026-09-14T05:21:45.959Z",
   "calls": [
     {
       "id": "demo-1",
@@ -188,6 +188,91 @@
       "moveDisplay": "-0.19%",
       "settledAt": "2026-08-19T11:51:25.040Z",
       "outcome": "S&P 500 down -0.19% vs called up"
+    },
+    {
+      "id": "2026-09-14-oil-hits-108-after-gulf-states-postpone-talks-with-iran-over:wti",
+      "storyId": "2026-09-14-oil-hits-108-after-gulf-states-postpone-talks-with-iran-over",
+      "instrumentKey": "wti",
+      "instrumentLabel": "WTI crude",
+      "assetClass": "commodities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "5 to 10%",
+      "horizon": "weeks",
+      "conviction": 4,
+      "rationale": "Oil prices are likely to remain elevated due to supply concerns.",
+      "entryValue": 102.69,
+      "entryDisplay": "102.69",
+      "openedAt": "2026-09-14T05:21:45.959Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-09-14-goldman-sachs-jp-morgan-expect-september-fed-hike-as-inflati:spx",
+      "storyId": "2026-09-14-goldman-sachs-jp-morgan-expect-september-fed-hike-as-inflati",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "1 to 2%",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "The S&P 500 may decline as higher rates reduce the attractiveness of stocks.",
+      "entryValue": 7656.98,
+      "entryDisplay": "7,657",
+      "openedAt": "2026-09-14T05:21:45.959Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-09-14-goldman-sachs-jp-morgan-expect-september-fed-hike-as-inflati:dxy",
+      "storyId": "2026-09-14-goldman-sachs-jp-morgan-expect-september-fed-hike-as-inflati",
+      "instrumentKey": "dxy",
+      "instrumentLabel": "Dollar index",
+      "assetClass": "fx",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "0.5 to 1%",
+      "horizon": "days",
+      "conviction": 4,
+      "rationale": "The dollar is expected to strengthen as higher rates attract investors.",
+      "entryValue": 99.355,
+      "entryDisplay": "99.36",
+      "openedAt": "2026-09-14T05:21:45.959Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-09-14-fed-rate-hikes-won-t-bring-down-gas-prices-why-the-bond-mark:spx",
+      "storyId": "2026-09-14-fed-rate-hikes-won-t-bring-down-gas-prices-why-the-bond-mark",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "2 to 4%",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "Higher borrowing costs and squeezed margins could lead to a decline in stock prices.",
+      "entryValue": 7656.98,
+      "entryDisplay": "7,657",
+      "openedAt": "2026-09-14T05:21:45.959Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-09-14-new-attacks-in-hormuz-and-saudi-test-nerves-as-war-s-spread-:wti",
+      "storyId": "2026-09-14-new-attacks-in-hormuz-and-saudi-test-nerves-as-war-s-spread-",
+      "instrumentKey": "wti",
+      "instrumentLabel": "WTI crude",
+      "assetClass": "commodities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "4 to 7%",
+      "horizon": "weeks",
+      "conviction": 4,
+      "rationale": "Oil prices are likely to remain elevated due to ongoing supply disruptions.",
+      "entryValue": 102.69,
+      "entryDisplay": "102.69",
+      "openedAt": "2026-09-14T05:21:45.959Z",
+      "status": "open"
     }
   ]
 }
