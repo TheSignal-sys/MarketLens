@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T05:21:17.860Z",
+  "updatedAt": "2026-09-17T05:21:56.322Z",
   "calls": [
     {
       "id": "demo-1",
@@ -221,7 +221,12 @@
       "entryValue": 7656.98,
       "entryDisplay": "7,657",
       "openedAt": "2026-09-14T05:21:45.959Z",
-      "status": "open"
+      "status": "open",
+      "markValue": 7551.81,
+      "markDisplay": "7,552",
+      "moveAbs": -105.16999999999916,
+      "movePct": -1.3735180188533753,
+      "moveDisplay": "-1.37%"
     },
     {
       "id": "2026-09-14-goldman-sachs-jp-morgan-expect-september-fed-hike-as-inflati:dxy",
@@ -255,7 +260,12 @@
       "entryValue": 7656.98,
       "entryDisplay": "7,657",
       "openedAt": "2026-09-14T05:21:45.959Z",
-      "status": "open"
+      "status": "open",
+      "markValue": 7551.81,
+      "markDisplay": "7,552",
+      "moveAbs": -105.16999999999916,
+      "movePct": -1.3735180188533753,
+      "moveDisplay": "-1.37%"
     },
     {
       "id": "2026-09-14-new-attacks-in-hormuz-and-saudi-test-nerves-as-war-s-spread-:wti",
@@ -272,6 +282,57 @@
       "entryValue": 102.69,
       "entryDisplay": "102.69",
       "openedAt": "2026-09-14T05:21:45.959Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-09-17-us-federal-reserve-raises-interest-rates-for-the-first-time-:spx",
+      "storyId": "2026-09-17-us-federal-reserve-raises-interest-rates-for-the-first-time-",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "1% to 2%",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "Rising borrowing costs and potential profit declines may weigh on the S&P 500.",
+      "entryValue": 7551.81,
+      "entryDisplay": "7,552",
+      "openedAt": "2026-09-17T05:21:56.321Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-09-17-analysis-how-trump-could-reignite-the-fed-independence-fight:spx",
+      "storyId": "2026-09-17-analysis-how-trump-could-reignite-the-fed-independence-fight",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "1 to 2%",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Increased political risk and higher rates could weigh on US stocks.",
+      "entryValue": 7551.81,
+      "entryDisplay": "7,552",
+      "openedAt": "2026-09-17T05:21:56.321Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-09-17-as-fed-rolls-out-its-first-interest-rate-hike-in-3-years-mar:spx",
+      "storyId": "2026-09-17-as-fed-rolls-out-its-first-interest-rate-hike-in-3-years-mar",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "1% to 2%",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "Equity markets may decline as higher yields make stocks less attractive.",
+      "entryValue": 7551.81,
+      "entryDisplay": "7,552",
+      "openedAt": "2026-09-17T05:21:56.322Z",
       "status": "open"
     }
   ]
