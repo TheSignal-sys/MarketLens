@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T05:21:56.322Z",
+  "updatedAt": "2026-09-18T05:20:18.345Z",
   "calls": [
     {
       "id": "demo-1",
@@ -333,6 +333,40 @@
       "entryValue": 7551.81,
       "entryDisplay": "7,552",
       "openedAt": "2026-09-17T05:21:56.322Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-09-18-stocks-rise-as-oil-dips-yen-weakens-after-boj-hikes-as-expec:nkx",
+      "storyId": "2026-09-18-stocks-rise-as-oil-dips-yen-weakens-after-boj-hikes-as-expec",
+      "instrumentKey": "nkx",
+      "instrumentLabel": "Nikkei 225",
+      "assetClass": "equities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "1.5 to 3.0%",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Japanese stocks are set to rise as a weaker yen boosts exporter earnings.",
+      "entryValue": 65308.75,
+      "entryDisplay": "65,309",
+      "openedAt": "2026-09-18T05:20:18.345Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-09-18-oil-prices-fall-as-saudi-supply-hopes-outweigh-fresh-houthi-:nkx",
+      "storyId": "2026-09-18-oil-prices-fall-as-saudi-supply-hopes-outweigh-fresh-houthi-",
+      "instrumentKey": "nkx",
+      "instrumentLabel": "Nikkei 225",
+      "assetClass": "equities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "1% to 2%",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Japanese equities could rise as lower oil prices reduce costs for energy-intensive sectors.",
+      "entryValue": 65308.75,
+      "entryDisplay": "65,309",
+      "openedAt": "2026-09-18T05:20:18.345Z",
       "status": "open"
     }
   ]
