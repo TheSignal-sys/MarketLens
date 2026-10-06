@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T12:13:28.152Z",
+  "updatedAt": "2026-10-06T11:59:24.907Z",
   "calls": [
     {
       "id": "demo-1",
@@ -367,6 +367,23 @@
       "entryValue": 65308.75,
       "entryDisplay": "65,309",
       "openedAt": "2026-09-18T05:20:18.345Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-10-06-fed-minutes-are-next-key-test-for-dollar-s-direction:us10y",
+      "storyId": "2026-10-06-fed-minutes-are-next-key-test-for-dollar-s-direction",
+      "instrumentKey": "us10y",
+      "instrumentLabel": "US 10Y",
+      "assetClass": "rates",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "10 to 20 basis points",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "Treasury yields may rise if the Fed minutes suggest more rate hikes.",
+      "entryValue": 5.311,
+      "entryDisplay": "5.31%",
+      "openedAt": "2026-10-06T11:59:24.907Z",
       "status": "open"
     }
   ]
