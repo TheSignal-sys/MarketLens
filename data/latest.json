@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "date": "2026-10-09",
-  "dateLabel": "Friday, 9 October 2026",
-  "generatedAt": "2026-10-09T11:51:15.748Z",
+  "date": "2026-10-12",
+  "dateLabel": "Monday, 12 October 2026",
+  "generatedAt": "2026-10-12T13:07:06.133Z",
   "model": "openai/gpt-4o",
   "marketRead": {
-    "headline": "Gold rises as dollar and oil ease",
-    "body": "Gold prices are climbing due to a weaker dollar and declining oil prices, suggesting a shift in investor sentiment towards safe-haven assets. The hiring of Judy Shelton by the Treasury signals potential changes in monetary policy, which could impact interest rate expectations. Meanwhile, geopolitical tensions with Iran are easing, leading to a drop in oil prices and affecting energy markets.",
-    "regime": "shifting investor sentiment"
+    "headline": "Inflation and geopolitical tensions shape markets",
+    "body": "India's unexpected inflation rise suggests further rate hikes, impacting emerging market bonds and currencies. Rising oil tanker rates due to geopolitical tensions could increase energy costs, affecting inflation and growth forecasts globally. Continued Russian aggression in Ukraine, despite a ceasefire, may lead to further sanctions and energy market volatility.",
+    "regime": "inflationary pressures with geopolitical risk"
   },
   "snapshot": {
     "quotes": [],
@@ -16,14 +16,14 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 10193,
-        "error": "TypeError: fetch failed"
+        "ms": 570,
+        "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 267,
+        "ms": 363,
         "error": "no rows"
       },
       {
@@ -34,309 +34,161 @@
         "error": "no rows"
       }
     ],
-    "fetchedAt": "2026-10-09T11:50:57.409Z"
+    "fetchedAt": "2026-10-12T13:06:48.520Z"
   },
   "stories": [
     {
-      "id": "2026-10-09-gold-rises-on-softer-u-s-dollar-lower-oil-prices",
+      "id": "2026-10-12-india-s-retail-inflation-jumps-to-5-54-in-september-above-es",
       "rank": 1,
-      "editorNote": "Gold's rise on a softer dollar and lower oil prices affects multiple asset classes and indicates a shift in market sentiment.",
+      "editorNote": "India's inflation surprise suggests further rate hikes, affecting emerging markets broadly.",
       "materiality": {
-        "score": 76.9,
+        "score": 73,
         "components": {
-          "corroboration": 21,
-          "authority": 13,
-          "breadth": 13.5,
-          "salience": 20,
-          "recency": 9.4
-        },
-        "distinctSources": 2,
-        "salienceTerms": [
-          "fed",
-          "inflation",
-          "oil",
-          "gold",
-          "dollar"
-        ]
-      },
-      "sources": [
-        "WSJ Markets",
-        "Investing.com Commodities"
-      ],
-      "links": [
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/commodities-futures/gold-rises-supported-by-potential-china-demand-08b60462?mod=rss_markets_main",
-          "title": "Gold Rises on Softer U.S. Dollar, Lower Oil Prices"
-        },
-        {
-          "name": "Investing.com Commodities",
-          "url": "https://www.investing.com/news/commodities-news/gold-rises-on-softer-dollar-easing-yields-fed-outlook-in-focus-4940135",
-          "title": "Gold rises as dollar, oil prices ease; investors eye Fed rate trajectory"
-        }
-      ],
-      "headlines": [
-        "Gold Rises on Softer U.S. Dollar, Lower Oil Prices",
-        "Gold rises as dollar, oil prices ease; investors eye Fed rate trajectory"
-      ],
-      "newestAt": "2026-10-09T09:40:49.000Z",
-      "headline": "Gold Gains as Dollar Weakens and Oil Prices Fall",
-      "standfirst": "Gold prices rose over 1% due to a weaker dollar and falling oil prices.",
-      "classification": {
-        "eventType": "macro-data",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some dollar weakness but underestimated the impact of falling oil prices.",
-        "persistence": "days",
-        "regionFocus": [
-          "Global"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Gold prices increased more than 1% as the US dollar weakened and oil prices dropped. This change comes as investors reassess inflation and interest-rate expectations.",
-        "whyItMatters": "The rise in gold affects other asset classes and indicates changing market sentiment about inflation and interest rates.",
-        "detail": "Gold's increase reflects a shift in investor sentiment towards safe-haven assets amid a weaker dollar and lower oil prices, affecting inflation expectations."
-      },
-      "chains": [
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "A weaker dollar makes gold cheaper for foreign buyers.",
-              "detail": "As the dollar depreciates, gold becomes more affordable in other currencies, boosting demand."
-            },
-            {
-              "plain": "Increased gold demand pushes prices higher.",
-              "detail": "Rising demand from international buyers lifts gold prices as they seek to capitalize on favourable currency exchange rates."
-            }
-          ],
-          "endpoint": "global gold buyers",
-          "strength": "strong"
-        },
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "Lower oil prices reduce inflationary pressures.",
-              "detail": "Falling oil prices ease cost-push inflation, potentially altering central banks' rate hike trajectories."
-            },
-            {
-              "plain": "Central banks may delay interest rate hikes.",
-              "detail": "With reduced inflation pressures, central banks might reconsider the pace of monetary tightening."
-            }
-          ],
-          "endpoint": "central banks",
-          "strength": "moderate"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "commodities",
-          "instrument": "Gold",
-          "direction": "up",
-          "magnitude": "1 to 2%",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Gold prices are likely to rise as demand increases due to a weaker dollar.",
-          "detail": "The depreciation of the dollar makes gold more attractive to foreign buyers, driving up prices."
-        },
-        {
-          "assetClass": "fx",
-          "instrument": "US Dollar Index",
-          "direction": "down",
-          "magnitude": "0.5 to 1%",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 1,
-          "plain": "The dollar is expected to weaken further as investors adjust their positions.",
-          "detail": "As the dollar weakens, investors may continue to sell off dollar holdings, further depreciating the currency."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "down",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Treasury yields might fall as inflation expectations ease.",
-          "detail": "Lower oil prices reduce inflation expectations, potentially leading to lower yields as bond prices rise."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may not fully appreciate the potential for central banks to delay rate hikes if oil prices remain low, which could further support gold prices.",
-        "detail": "The market might underestimate the impact of sustained low oil prices on central banks' rate hike timelines, which could keep gold prices elevated."
-      },
-      "falsifiers": [
-        "A rebound in oil prices could reignite inflation fears and alter central bank expectations.",
-        "A sudden strengthening of the dollar would reduce gold's appeal to international buyers.",
-        "Unexpectedly strong US economic data could prompt faster rate hikes, affecting gold negatively."
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Long Gold",
-          "plain": "Buy gold futures to capitalize on rising prices due to a weaker dollar and lower oil prices.",
-          "instrument": "Gold futures",
-          "risk": "The main risk is a rebound in the dollar or oil prices, which could reverse gold's gains."
-        }
-      ],
-      "watchNext": [
-        "Upcoming US inflation data",
-        "OPEC meetings that could influence oil prices",
-        "Federal Reserve's next policy meeting"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-10-09-treasury-s-bessent-hires-trump-s-controversial-former-fed-bo",
-      "rank": 2,
-      "editorNote": "The hiring of Judy Shelton by the Treasury could signal changes in monetary policy, impacting interest rates.",
-      "materiality": {
-        "score": 68.5,
-        "components": {
-          "corroboration": 21,
+          "corroboration": 26,
           "authority": 13,
           "breadth": 4.5,
           "salience": 20,
-          "recency": 10
+          "recency": 9.5
         },
-        "distinctSources": 2,
+        "distinctSources": 3,
         "salienceTerms": [
-          "fed",
-          "federal reserve",
-          "treasury"
+          "rate hike",
+          "interest rate",
+          "inflation"
         ]
       },
       "sources": [
         "CNBC",
-        "CNBC Economy"
+        "CNBC Economy",
+        "Investing.com Economy"
       ],
       "links": [
         {
           "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
-          "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as adviser"
+          "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
+          "title": "India’s retail inflation jumps to 5.54% in September, above estimates"
         },
         {
           "name": "CNBC Economy",
-          "url": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
-          "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as adviser"
+          "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
+          "title": "India’s retail inflation jumps to 5.54% in September, above estimates"
+        },
+        {
+          "name": "Investing.com Economy",
+          "url": "https://www.investing.com/news/economy-news/india-inflation-jumps-to-554-in-september-strengthening-case-for-further-rate-hikes-4943948",
+          "title": "India inflation jumps to 5.54% in September, strengthening case for further rate hikes"
         }
       ],
       "headlines": [
-        "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as adviser"
+        "India’s retail inflation jumps to 5.54% in September, above estimates",
+        "India inflation jumps to 5.54% in September, strengthening case for further rate hikes"
       ],
-      "newestAt": "2026-10-09T11:50:39.000Z",
-      "headline": "Shelton's Treasury Role May Signal Shift in US Monetary Policy",
-      "standfirst": "Judy Shelton, known for controversial economic views, joins Treasury as an adviser.",
+      "newestAt": "2026-10-12T11:12:22.000Z",
+      "headline": "India's Inflation Surge Signals More Rate Hikes Ahead",
+      "standfirst": "India's retail inflation rose to 5.54% in September, exceeding expectations.",
       "classification": {
-        "eventType": "monetary-policy",
+        "eventType": "macro-data",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some policy influence but not the specific impact of Shelton's ideas.",
+        "pricedInRationale": "The market had anticipated higher inflation but not to this extent, as seen in bond market reactions.",
         "persistence": "weeks",
         "regionFocus": [
-          "US"
+          "India",
+          "Emerging Markets"
         ]
       },
       "whatHappened": {
-        "plain": "Judy Shelton, who was blocked from joining the Federal Reserve due to her unconventional views, has been hired as an adviser to the Treasury Secretary. This move could indicate a shift in the US government's approach to monetary policy.",
-        "whyItMatters": "Shelton's influence may lead to changes in interest rate policies, affecting borrowing costs and investment decisions.",
-        "detail": "Shelton's hiring suggests a potential pivot towards more unconventional monetary policy tools, which could alter the trajectory of interest rates and economic growth."
+        "plain": "India's retail inflation increased to 5.54% in September, marking the eleventh consecutive monthly rise. This figure was higher than expected.",
+        "whyItMatters": "Rising inflation increases the likelihood of further interest rate hikes by India's central bank, which can affect borrowing costs and economic growth.",
+        "detail": "The unexpected jump in inflation strengthens the case for the Reserve Bank of India to consider tightening monetary policy, affecting rates and potentially slowing economic activity."
       },
       "chains": [
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Shelton's ideas may push for lower interest rates.",
-              "detail": "Shelton's advocacy for a return to a gold standard and lower rates could pressure the Fed to consider rate cuts."
+              "plain": "Higher inflation makes rate hikes more likely.",
+              "detail": "The Reserve Bank of India is likely to respond to persistent inflation by increasing interest rates to curb price pressures."
             },
             {
-              "plain": "Lower rates could boost borrowing and spending.",
-              "detail": "If the Fed responds by cutting rates, borrowing costs will fall, encouraging consumer and business spending."
+              "plain": "Rate hikes increase borrowing costs for companies.",
+              "detail": "As the central bank raises rates, the cost of borrowing for businesses rises, impacting their investment and expansion plans."
             }
           ],
-          "endpoint": "US economy",
+          "endpoint": "Indian companies",
           "strength": "strong"
         },
         {
-          "channel": "discount-rate",
+          "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "Treasury yields may fall as investors anticipate rate cuts.",
-              "detail": "Expectations of lower future Fed rates could lead to a drop in long-term Treasury yields as investors adjust their portfolios."
+              "plain": "Higher rates strengthen the Indian rupee.",
+              "detail": "Increased interest rates attract foreign capital, boosting demand for the rupee and strengthening its value against other currencies."
             },
             {
-              "plain": "Lower yields could increase stock valuations.",
-              "detail": "As discount rates fall, the present value of future earnings rises, potentially boosting equity prices."
+              "plain": "A stronger rupee makes exports more expensive.",
+              "detail": "As the rupee appreciates, Indian goods become more costly for foreign buyers, potentially reducing export competitiveness."
             }
           ],
-          "endpoint": "US stock market",
+          "endpoint": "Indian exporters",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
           "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "down",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "weeks",
-          "conviction": 3,
+          "instrument": "Indian government bond yields",
+          "direction": "up",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "days",
+          "conviction": 4,
           "order": 1,
-          "plain": "Treasury yields may decrease as investors expect rate cuts.",
-          "detail": "The anticipation of lower future Fed rates could lead to a decline in the 10-year yield as investors price in potential monetary easing."
+          "plain": "Bond yields in India are likely to rise as investors anticipate further rate hikes.",
+          "detail": "The expectation of monetary tightening will lead to higher yields on Indian government bonds as investors demand more return for holding debt."
         },
         {
-          "assetClass": "equities",
-          "instrument": "US stock market",
+          "assetClass": "fx",
+          "instrument": "Indian rupee",
           "direction": "up",
           "magnitude": "1 to 2%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Stocks might rise due to lower discount rates increasing valuations.",
-          "detail": "As Treasury yields fall, the present value of future earnings rises, potentially boosting stock prices."
+          "plain": "The Indian rupee is expected to strengthen due to anticipated rate hikes.",
+          "detail": "Higher interest rates attract foreign capital, increasing demand for the rupee and pushing its value higher."
         },
         {
-          "assetClass": "fx",
-          "instrument": "USD",
+          "assetClass": "equities",
+          "instrument": "Indian exporters",
           "direction": "down",
-          "magnitude": "0.5 to 1%",
+          "magnitude": "2 to 4%",
           "horizon": "weeks",
-          "conviction": 2,
+          "conviction": 3,
           "order": 2,
-          "plain": "The dollar could weaken if rates are expected to fall.",
-          "detail": "Lower interest rate expectations may reduce demand for USD-denominated assets, leading to a weaker dollar."
+          "plain": "Shares of Indian exporters may fall as a stronger rupee makes their products more expensive abroad.",
+          "detail": "An appreciating rupee reduces the competitiveness of Indian exports, potentially impacting the earnings of export-oriented companies."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the extent to which Shelton's influence could lead to unconventional policy shifts, such as a return to a gold standard, which could have profound implications for currency stability and inflation expectations.",
-        "detail": "Shelton's historical advocacy for a gold standard suggests potential for significant policy shifts that could disrupt current monetary frameworks."
+        "plain": "Investors may underestimate the impact of sustained inflation on consumer spending and corporate margins in India.",
+        "detail": "Persistent inflation could erode consumer purchasing power and squeeze profit margins, impacting broader economic growth and corporate earnings."
       },
       "falsifiers": [
-        "The Fed explicitly states no change in rate policy despite Shelton's influence.",
-        "Treasury yields rise due to stronger-than-expected economic data.",
-        "Shelton's role is clarified as non-influential in policy decisions."
+        "Inflation data for October shows a significant decline.",
+        "The Reserve Bank of India signals no immediate rate hikes.",
+        "Global commodity prices drop sharply, easing inflationary pressures."
       ],
       "tradeExpression": [
         {
-          "idea": "Long US Equities",
-          "plain": "Buy US stocks to benefit from potential lower discount rates and higher valuations.",
-          "instrument": "S&P 500 futures",
-          "risk": "The risk is that interest rates do not fall as expected, leading to lower stock valuations."
+          "idea": "Long Indian rupee",
+          "plain": "Buy the Indian rupee against the US dollar, expecting it to strengthen with rate hikes.",
+          "instrument": "FX forwards or options",
+          "risk": "If the RBI does not hike rates as expected, the rupee could weaken."
         }
       ],
       "watchNext": [
-        "Upcoming Federal Reserve meetings for any policy changes.",
-        "Statements from Treasury officials on Shelton's role.",
-        "Economic data releases that could influence rate expectations."
+        "Upcoming RBI policy meeting",
+        "Next month's inflation data release",
+        "Trends in global commodity prices"
       ],
       "glossary": [
         {
@@ -347,88 +199,93 @@
       "confidence": 3
     },
     {
-      "id": "2026-10-09-oil-prices-fall-as-trump-pauses-iran-attacks-china-restarts-",
-      "rank": 3,
-      "editorNote": "Trump's pause on Iran attacks and China's fuel exports affect oil prices, impacting the commodities market.",
+      "id": "2026-10-12-oil-tanker-rates-surge-amid-rising-attacks-longer-voyages",
+      "rank": 2,
+      "editorNote": "Surging oil tanker rates due to geopolitical tensions could impact global energy costs.",
       "materiality": {
-        "score": 60.4,
+        "score": 68.5,
         "components": {
           "corroboration": 13,
           "authority": 13,
-          "breadth": 4.5,
+          "breadth": 13.5,
           "salience": 20,
-          "recency": 9.9
+          "recency": 9
         },
         "distinctSources": 1,
         "salienceTerms": [
-          "war",
-          "election",
+          "ppi",
+          "rout",
           "oil",
           "crude",
           "brent"
         ]
       },
       "sources": [
-        "Guardian Business"
+        "WSJ Markets"
       ],
       "links": [
         {
-          "name": "Guardian Business",
-          "url": "https://www.theguardian.com/business/live/2026/oct/09/oil-prices-crude-brent-trump-iran-us-war-midterm-elections-stocks-bonds-business-live",
-          "title": "Oil prices fall as Trump pauses Iran attacks, China restarts fuel exports – business live"
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/commodities-futures/oil-falls-on-hopes-that-russian-diesel-can-ease-global-fuel-shortages-db1651af?mod=rss_markets_main",
+          "title": "Oil Tanker Rates Surge Amid Rising Attacks, Longer Voyages"
         }
       ],
       "headlines": [
-        "Oil prices fall as Trump pauses Iran attacks, China restarts fuel exports – business live"
+        "Oil Tanker Rates Surge Amid Rising Attacks, Longer Voyages"
       ],
-      "newestAt": "2026-10-09T11:32:35.000Z",
-      "headline": "Oil Prices Drop as Trump Halts Iran Strikes and China Resumes Exports",
-      "standfirst": "Oil prices fell after President Trump paused military action against Iran and China restarted fuel exports.",
+      "newestAt": "2026-10-12T09:38:00.000Z",
+      "headline": "Oil Tanker Rates Surge, Raising Global Energy Costs",
+      "standfirst": "Oil tanker rates have surged due to increased attacks and longer routes.",
       "classification": {
         "eventType": "geopolitical",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some geopolitical risk premium, but the full impact of China's exports was not fully absorbed.",
+        "pricedInRationale": "The market has reacted to initial news of rising tanker rates, but further impacts on energy costs remain to be fully absorbed.",
         "persistence": "weeks",
         "regionFocus": [
-          "Global",
-          "US",
-          "China"
+          "Global"
         ]
       },
       "whatHappened": {
-        "plain": "President Trump announced a pause on military action against Iran, and China resumed fuel exports. This led to a drop in oil prices.",
-        "whyItMatters": "Investors should care because changes in oil prices affect the cost structure for many industries and can influence inflation and economic growth.",
-        "detail": "The geopolitical risk premium on oil prices decreased as military tensions eased, while increased supply from China put downward pressure on prices."
+        "plain": "Oil tanker rates are rising sharply due to increased attacks and longer shipping routes in the Middle East. This has pushed Brent crude futures above $105 a barrel.",
+        "whyItMatters": "Higher tanker rates can lead to increased global energy costs, affecting everything from consumer prices to industrial production.",
+        "detail": "Geopolitical tensions are disrupting oil shipping routes, reducing vessel availability and increasing freight costs, which in turn is pushing up oil prices."
       },
       "chains": [
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "Oil prices dropped.",
-              "detail": "Brent crude fell as geopolitical tensions eased and supply increased."
-            },
-            {
-              "plain": "Currencies of oil-exporting countries weakened.",
-              "detail": "Lower oil prices reduce export revenues, impacting currencies like the Russian ruble and Canadian dollar."
-            }
-          ],
-          "endpoint": "Oil-exporting countries",
-          "strength": "strong"
-        },
         {
           "channel": "earnings",
           "links": [
             {
-              "plain": "Oil company profits are likely to decrease.",
-              "detail": "Lower oil prices reduce revenue for oil producers, impacting earnings."
+              "plain": "Higher shipping costs increase oil prices.",
+              "detail": "The rise in freight rates due to longer routes and attacks increases the cost of transporting oil, lifting crude prices."
             },
             {
-              "plain": "Industries reliant on oil may see reduced costs.",
-              "detail": "Lower oil prices decrease input costs for sectors such as airlines and transportation."
+              "plain": "Higher oil prices increase costs for energy-intensive industries.",
+              "detail": "As crude prices rise, industries that rely heavily on energy face higher input costs, squeezing margins."
             }
           ],
-          "endpoint": "Oil-dependent industries",
+          "endpoint": "Energy-intensive industries",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may delay rate cuts due to inflation concerns.",
+              "detail": "Rising oil prices can feed into broader inflation, potentially causing central banks to hold off on easing monetary policy."
+            }
+          ],
+          "endpoint": "Central banks",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "Countries importing oil face higher trade deficits.",
+              "detail": "As oil-importing nations pay more for energy, their trade balances may worsen, affecting currency valuations."
+            }
+          ],
+          "endpoint": "Oil-importing countries",
           "strength": "moderate"
         }
       ],
@@ -436,57 +293,58 @@
         {
           "assetClass": "commodities",
           "instrument": "Brent crude oil",
-          "direction": "down",
-          "magnitude": "3 to 5%",
-          "horizon": "weeks",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "Oil prices are likely to decrease due to reduced geopolitical tensions and increased supply.",
-          "detail": "The easing of military risks and China's export resumption are expected to exert downward pressure on Brent crude prices."
+          "plain": "Brent crude prices are likely to rise further as shipping disruptions continue.",
+          "detail": "The ongoing geopolitical tensions are expected to sustain upward pressure on crude prices as freight costs remain elevated."
         },
         {
-          "assetClass": "fx",
-          "instrument": "Russian ruble",
+          "assetClass": "equities",
+          "instrument": "European energy-intensive industries",
           "direction": "down",
           "magnitude": "1 to 2%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "The ruble may weaken as lower oil prices reduce Russia's export revenues.",
-          "detail": "A decline in oil prices typically leads to a weaker ruble due to reduced foreign exchange inflows from oil sales."
+          "plain": "Energy-intensive sectors in Europe may face pressure from rising input costs.",
+          "detail": "With higher oil prices increasing operational costs, companies in energy-dependent sectors could see margin compression."
         },
         {
-          "assetClass": "equities",
-          "instrument": "Airline stocks",
-          "direction": "up",
-          "magnitude": "2 to 4%",
+          "assetClass": "fx",
+          "instrument": "Emerging market currencies",
+          "direction": "down",
+          "magnitude": "0.5 to 1.5%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Airline stocks could rise as lower oil prices reduce fuel costs.",
-          "detail": "Cheaper oil decreases operational costs for airlines, potentially boosting profit margins and stock prices."
+          "plain": "Emerging market currencies may weaken as trade deficits widen.",
+          "detail": "Higher oil import costs can exacerbate trade imbalances, putting pressure on the currencies of oil-importing emerging markets."
         }
       ],
       "whatMarketMisses": {
-        "plain": "The market may underestimate the speed at which increased Chinese fuel exports will affect global oil supply dynamics.",
-        "detail": "Traders might not fully appreciate the rapid impact of China's export resumption on global supply and pricing."
+        "plain": "Investors may underestimate the potential for prolonged disruptions in oil supply chains, which could lead to sustained high energy prices and broader inflationary pressures.",
+        "detail": "The market might not fully appreciate the risk of continued geopolitical instability leading to persistent supply chain disruptions and extended periods of elevated oil prices."
       },
       "falsifiers": [
-        "If China reduces fuel exports unexpectedly",
-        "If geopolitical tensions with Iran escalate again"
+        "A sudden de-escalation in geopolitical tensions reducing shipping disruptions.",
+        "A significant increase in alternative energy supply mitigating oil price rises.",
+        "Central banks aggressively countering inflationary pressures with policy adjustments."
       ],
       "tradeExpression": [
         {
-          "idea": "Short Brent crude",
-          "plain": "Sell Brent crude futures to profit from expected price declines due to increased supply and reduced geopolitical risk.",
+          "idea": "Long Brent crude futures",
+          "plain": "Buy Brent crude futures to profit from expected further price increases due to shipping disruptions.",
           "instrument": "Futures",
-          "risk": "Geopolitical tensions could unexpectedly rise, pushing oil prices higher."
+          "risk": "A de-escalation in geopolitical tensions could lower oil prices quickly."
         }
       ],
       "watchNext": [
-        "US midterm elections",
-        "Any new geopolitical developments involving Iran",
-        "China's export data releases"
+        "Upcoming OPEC meetings for potential production adjustments.",
+        "Geopolitical developments in the Middle East affecting shipping routes.",
+        "Central bank statements on inflation and monetary policy."
       ],
       "glossary": [
         {
@@ -497,89 +355,235 @@
       "confidence": 3
     },
     {
-      "id": "2026-10-09-us-10-year-treasury-yields-risk-hitting-6-for-first-time-sin",
-      "rank": 4,
-      "editorNote": "The risk of US 10-year Treasury yields hitting 6% suggests potential volatility in bond markets.",
+      "id": "2026-10-12-zelenskyy-accuses-russia-of-violating-trump-s-energy-ceasefi",
+      "rank": 3,
+      "editorNote": "Russia's actions in Ukraine could lead to further sanctions, affecting energy markets.",
       "materiality": {
-        "score": 62.4,
+        "score": 62,
         "components": {
-          "corroboration": 13,
+          "corroboration": 21,
           "authority": 13,
-          "breadth": 9,
-          "salience": 19.6,
-          "recency": 7.8
+          "breadth": 4.5,
+          "salience": 13.6,
+          "recency": 9.9
         },
-        "distinctSources": 1,
+        "distinctSources": 2,
         "salienceTerms": [
-          "treasury",
-          "war",
-          "unwind"
+          "sanctions",
+          "ceasefire"
         ]
       },
       "sources": [
-        "Financial Times"
+        "CNBC",
+        "Investing.com Commodities"
       ],
       "links": [
         {
-          "name": "Financial Times",
-          "url": "https://www.ft.com/content/a752a86c-cf05-4152-b842-2ae6b6bf3fe0?syn-25a6b1a6=1",
-          "title": "US 10-year Treasury yields risk hitting 6% for first time since 2000, Pimco says"
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-trump.html",
+          "title": "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue"
+        },
+        {
+          "name": "Investing.com Commodities",
+          "url": "https://www.investing.com/news/commodities-news/ukraine-accuses-russia-of-violating-trumps-energy-ceasefire-as-eu-imposes-new-sanctions-4943687",
+          "title": "Ukraine accuses Russia of violating Trump’s energy ceasefire as EU imposes new sanctions"
         }
       ],
       "headlines": [
-        "US 10-year Treasury yields risk hitting 6% for first time since 2000, Pimco says"
+        "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue",
+        "Ukraine accuses Russia of violating Trump’s energy ceasefire as EU imposes new sanctions"
       ],
-      "newestAt": "2026-10-09T04:00:31.000Z",
-      "headline": "US Treasury Yields May Surge, Impacting Global Markets",
-      "standfirst": "US 10-year Treasury yields risk reaching 6%, raising borrowing costs.",
+      "newestAt": "2026-10-12T12:36:21.000Z",
+      "headline": "Energy Markets Rattle as Russia Violates Ceasefire, Sanctions Loom",
+      "standfirst": "Russia's breach of the energy ceasefire with Ukraine risks new sanctions.",
       "classification": {
-        "eventType": "macro-data",
+        "eventType": "geopolitical",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Market participants have anticipated rising yields but not to the extent of 6%.",
+        "pricedInRationale": "Markets had anticipated some tension, but the breach and potential sanctions add new uncertainty.",
         "persistence": "weeks",
         "regionFocus": [
-          "US",
+          "Europe",
           "Global"
         ]
       },
       "whatHappened": {
-        "plain": "Pimco warns that US 10-year Treasury yields could hit 6%, a level not seen since 2000. This suggests a significant increase in borrowing costs.",
-        "whyItMatters": "Higher yields mean higher borrowing costs for governments and companies, potentially slowing economic growth.",
-        "detail": "The potential rise in US 10-year Treasury yields to 6% indicates a major shift in the cost of borrowing, affecting financial conditions globally."
+        "plain": "Russia has violated the energy ceasefire brokered by Trump, leading to accusations from Ukraine and new EU sanctions. This escalation could disrupt energy supplies and increase geopolitical tensions.",
+        "whyItMatters": "Energy markets are sensitive to disruptions, and further sanctions could exacerbate supply issues, impacting prices and economic stability.",
+        "detail": "The breach of the ceasefire increases the risk of supply disruptions in European energy markets, with potential knock-on effects on global energy prices and economic policies."
+      },
+      "chains": [
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "European energy prices rise due to supply concerns.",
+              "detail": "The breach heightens risk of supply disruptions, pushing European energy prices higher as traders adjust for potential shortages."
+            },
+            {
+              "plain": "Euro weakens as energy costs increase.",
+              "detail": "Higher energy prices strain European economies, leading to a weaker Euro as investors anticipate slower growth."
+            }
+          ],
+          "endpoint": "European importers and consumers",
+          "strength": "strong"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Energy companies see potential for higher profits.",
+              "detail": "With potential supply disruptions, energy firms could benefit from higher prices, boosting their earnings outlook."
+            },
+            {
+              "plain": "Manufacturers face higher input costs.",
+              "detail": "Rising energy prices increase operational costs for manufacturers, squeezing margins and potentially leading to higher consumer prices."
+            }
+          ],
+          "endpoint": "European manufacturers",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "European natural gas",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Natural gas prices in Europe are likely to rise as supply concerns grow.",
+          "detail": "The violation of the ceasefire raises the risk of supply disruptions, causing traders to bid up natural gas prices in anticipation of shortages."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "EUR/USD",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The Euro may weaken as increased energy costs weigh on the European economy.",
+          "detail": "Higher energy prices could slow economic growth in Europe, leading to a depreciation of the Euro against the US dollar."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "European industrials",
+          "direction": "down",
+          "magnitude": "3 to 5%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Shares of European industrial companies could fall due to rising input costs.",
+          "detail": "As energy prices rise, European industrial firms face higher production costs, which could pressure their profit margins and stock prices."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of sustained higher energy prices on European growth and inflation.",
+        "detail": "The market might not fully price in the persistent drag on European economic performance and inflationary pressures from prolonged high energy costs."
+      },
+      "falsifiers": [
+        "Russia agreeing to reinstate the ceasefire",
+        "EU backing down on sanctions",
+        "A significant drop in energy prices"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short Euro",
+          "plain": "Sell the Euro against the US dollar to profit from potential Euro weakness due to rising energy costs.",
+          "instrument": "FX futures",
+          "risk": "The Euro could strengthen if energy prices stabilize or geopolitical tensions ease."
+        }
+      ],
+      "watchNext": [
+        "Further EU sanctions announcements",
+        "Statements from Russian and Ukrainian leaders",
+        "Energy supply data releases"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-12-the-bond-market-is-doing-the-fed-s-job-and-that-could-be-goo",
+      "rank": 4,
+      "editorNote": "The bond market's role in monetary policy could influence equity market sentiment.",
+      "materiality": {
+        "score": 73,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 18,
+          "salience": 20,
+          "recency": 9
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "war",
+          "dollar"
+        ]
+      },
+      "sources": [
+        "MarketWatch"
+      ],
+      "links": [
+        {
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/the-bond-market-is-doing-the-feds-job-and-that-could-be-good-news-for-stocks-says-morgan-stanley-strategist-ec57b81a?mod=mw_rss_topstories",
+          "title": "The bond market is doing the Fed’s job, and that could be good news for stocks, says Morgan Stanley strategist"
+        }
+      ],
+      "headlines": [
+        "The bond market is doing the Fed’s job, and that could be good news for stocks, says Morgan Stanley strategist"
+      ],
+      "newestAt": "2026-10-12T09:23:00.000Z",
+      "headline": "Bond Market Tightening Eases Pressure on Fed Rate Hikes",
+      "standfirst": "Higher bond yields and a strong dollar reduce the need for Fed action.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The bond market had already adjusted to higher yields, but the full impact on Fed policy is still unfolding.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The bond market is seeing higher yields, and the US dollar is strengthening. This is making financial conditions tighter in the US.",
+        "whyItMatters": "Tighter financial conditions might reduce the need for the Federal Reserve to raise interest rates.",
+        "detail": "Yields on US Treasury bonds have risen, and the dollar has appreciated, both of which contribute to tighter monetary conditions without direct Fed intervention."
       },
       "chains": [
         {
           "channel": "discount-rate",
           "links": [
             {
-              "plain": "Higher Treasury yields raise the baseline return for other investments.",
-              "detail": "As US 10-year yields rise, the discount rate for all future cash flows increases, affecting asset valuations."
-            }
-          ],
-          "endpoint": "Global asset valuations",
-          "strength": "strong"
-        },
-        {
-          "channel": "credit",
-          "links": [
+              "plain": "Higher bond yields make borrowing more expensive.",
+              "detail": "Rising Treasury yields increase the baseline cost of capital across financial markets."
+            },
             {
-              "plain": "Companies face higher borrowing costs due to rising yields.",
-              "detail": "Higher Treasury yields lead to wider credit spreads, increasing the cost of corporate debt."
+              "plain": "Companies may face higher costs for new projects.",
+              "detail": "Increased borrowing costs can lead to reduced capital expenditure by firms."
             }
           ],
-          "endpoint": "Highly leveraged companies",
+          "endpoint": "corporate investment",
           "strength": "moderate"
         },
         {
-          "channel": "positioning",
+          "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Investors may be forced to sell bonds, pushing yields higher.",
-              "detail": "As yields rise, investors with leveraged bond positions may face margin calls, leading to forced selling."
+              "plain": "The Fed might delay further rate hikes.",
+              "detail": "With financial conditions tightening, the Fed has less immediate pressure to raise rates to control inflation."
             }
           ],
-          "endpoint": "Bond markets",
-          "strength": "speculative"
+          "endpoint": "Federal Reserve policy",
+          "strength": "strong"
         }
       ],
       "assetImpacts": [
@@ -587,225 +591,202 @@
           "assetClass": "rates",
           "instrument": "US 10-year Treasury yield",
           "direction": "up",
-          "magnitude": "20 to 40 basis points",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 1,
-          "plain": "US 10-year Treasury yields could rise significantly, increasing borrowing costs.",
-          "detail": "A move towards 6% would represent a significant repricing in the Treasury market, reflecting increased inflation expectations and risk premia."
-        },
-        {
-          "assetClass": "credit",
-          "instrument": "US corporate bonds",
-          "direction": "wider",
-          "magnitude": "10 to 20 basis points",
+          "magnitude": "5 to 10 basis points",
           "horizon": "weeks",
           "conviction": 3,
-          "order": 2,
-          "plain": "Corporate bond spreads may widen as borrowing costs increase.",
-          "detail": "As Treasury yields rise, credit spreads are likely to widen due to increased risk aversion and higher baseline rates."
+          "order": 1,
+          "plain": "Treasury yields are likely to rise as the market adjusts to tighter conditions.",
+          "detail": "The increased yield reflects the market's anticipation of reduced Fed intervention and ongoing inflation pressures."
         },
         {
           "assetClass": "equities",
           "instrument": "US stock market",
-          "direction": "down",
-          "magnitude": "2 to 4%",
+          "direction": "mixed",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 2,
+          "order": 2,
+          "plain": "Stocks could see mixed reactions as higher borrowing costs weigh against reduced rate hike fears.",
+          "detail": "Equity markets may experience volatility as investors balance the impact of higher yields against the potential for a more dovish Fed."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "US dollar",
+          "direction": "up",
+          "magnitude": "0.5 to 1%",
           "horizon": "weeks",
           "conviction": 3,
-          "order": 2,
-          "plain": "US stocks could decline due to higher discount rates and borrowing costs.",
-          "detail": "Rising yields increase the discount rate for equities, reducing present value estimates and pressuring stock prices."
+          "order": 1,
+          "plain": "The dollar is likely to strengthen as higher yields attract foreign investment.",
+          "detail": "Increased Treasury yields make US assets more attractive, boosting demand for the dollar."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the impact of rising yields on consumer spending and housing markets, which could slow economic growth more than expected.",
-        "detail": "Higher yields could significantly affect consumer credit and mortgage rates, dampening spending and housing demand, leading to slower GDP growth."
+        "plain": "Investors may underestimate how much tighter financial conditions could slow economic growth, which might lead to a reevaluation of equity valuations.",
+        "detail": "The market might not fully price in the potential drag on GDP from sustained higher yields and a strong dollar, which could impact earnings forecasts."
       },
       "falsifiers": [
-        "If inflation data shows a significant decline, reducing pressure on yields.",
-        "A major geopolitical event causing a flight to safety, lowering yields.",
-        "Central banks intervene to cap yields through policy measures."
+        "The Fed signals an unexpected rate hike.",
+        "Bond yields fall significantly in the next few weeks.",
+        "The US dollar weakens despite higher yields."
       ],
       "tradeExpression": [
         {
-          "idea": "Short US Treasuries",
-          "plain": "Sell US 10-year Treasury futures to profit from rising yields.",
-          "instrument": "Short US 10-year Treasury futures",
-          "risk": "A sudden drop in yields due to unexpected economic data or central bank intervention."
+          "idea": "Long US Dollar",
+          "plain": "Buy the US dollar against a basket of currencies to benefit from rising yields.",
+          "instrument": "FX futures",
+          "risk": "The dollar could weaken if the Fed signals a dovish turn."
         }
       ],
       "watchNext": [
-        "Upcoming US inflation reports",
-        "Federal Reserve meeting minutes",
-        "Corporate earnings reports indicating cost pressures"
+        "Upcoming Federal Reserve meetings",
+        "US inflation data releases",
+        "Corporate earnings reports"
       ],
       "glossary": [
         {
           "term": "basis point",
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        },
-        {
-          "term": "credit spread",
-          "plain": "The difference in yield between a corporate bond and a government bond of similar maturity."
-        },
-        {
-          "term": "discount rate",
-          "plain": "The interest rate used to determine the present value of future cash flows."
         }
       ],
       "confidence": 3
     },
     {
-      "id": "2026-10-09-bp-curbs-production-at-two-platforms-in-gulf-of-mexico-due-t",
+      "id": "2026-10-12-fed-officials-want-to-hold-off-a-rate-hike-this-month-will-t",
       "rank": 5,
-      "editorNote": "Hurricane Isaias affecting Gulf of Mexico production has immediate implications for oil supply and prices.",
+      "editorNote": "Fed's potential pause on rate hikes hinges on upcoming inflation data, affecting market expectations.",
       "materiality": {
-        "score": 53.9,
+        "score": 59.9,
         "components": {
-          "corroboration": 21,
+          "corroboration": 13,
           "authority": 13,
           "breadth": 4.5,
-          "salience": 6,
+          "salience": 20,
           "recency": 9.4
         },
-        "distinctSources": 2,
+        "distinctSources": 1,
         "salienceTerms": [
-          "oil"
+          "fed",
+          "rate hike",
+          "inflation"
         ]
       },
       "sources": [
-        "WSJ Markets",
-        "WSJ World"
+        "MarketWatch"
       ],
       "links": [
         {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/business/energy-oil/bp-curbs-production-at-two-platforms-in-gulf-of-mexico-due-to-hurricane-isaias-d582fc67?mod=rss_markets_main",
-          "title": "BP Curbs Production at Two Platforms in Gulf of Mexico Due to Hurricane Isaias"
-        },
-        {
-          "name": "WSJ World",
-          "url": "https://www.wsj.com/business/harbour-energy-curbs-gulf-of-mexico-production-ahead-of-storm-isaias-48734408?mod=rss_worldnews",
-          "title": "Oil Majors Cut Production in Gulf of Mexico as Hurricane Isaias Strengthens"
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/fed-officials-want-to-hold-off-a-rate-hike-this-month-will-this-weeks-inflation-data-let-them-a82754d1?mod=mw_rss_topstories",
+          "title": "Fed officials want to hold off a rate hike this month. Will this week’s inflation data let them?"
         }
       ],
       "headlines": [
-        "BP Curbs Production at Two Platforms in Gulf of Mexico Due to Hurricane Isaias",
-        "Oil Majors Cut Production in Gulf of Mexico as Hurricane Isaias Strengthens"
+        "Fed officials want to hold off a rate hike this month. Will this week’s inflation data let them?"
       ],
-      "newestAt": "2026-10-09T09:48:00.000Z",
-      "headline": "Hurricane Isaias Disrupts Gulf Oil Production, Boosting Prices",
-      "standfirst": "BP evacuates Gulf platforms as Hurricane Isaias strengthens, affecting oil supply.",
+      "newestAt": "2026-10-12T11:00:00.000Z",
+      "headline": "Fed's Rate Pause Hinges on Inflation Data, Market Awaits Clarity",
+      "standfirst": "Fed officials are considering pausing rate hikes, pending this week's inflation data.",
       "classification": {
-        "eventType": "supply-shock",
+        "eventType": "monetary-policy",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Initial disruptions were anticipated, but the hurricane's strengthening could lead to more extended supply issues.",
+        "pricedInRationale": "The market anticipates a pause but inflation data could shift expectations.",
         "persistence": "weeks",
         "regionFocus": [
-          "US",
-          "Global"
+          "US"
         ]
       },
       "whatHappened": {
-        "plain": "BP evacuated staff from its Na Kika and Thunder Horse platforms in the Gulf of Mexico due to Hurricane Isaias. The hurricane is disrupting oil production in the region.",
-        "whyItMatters": "This affects oil supply, which can raise prices and impact related industries.",
-        "detail": "The evacuation of personnel from key platforms indicates a significant disruption in oil production, which could tighten supply and drive up prices."
+        "plain": "Fed officials are inclined to pause rate hikes this month, but upcoming inflation data could change their decision.",
+        "whyItMatters": "This decision affects borrowing costs and investment returns across the economy.",
+        "detail": "The Fed's decision to pause or continue rate hikes is contingent on inflation data, influencing monetary policy expectations."
       },
       "chains": [
         {
-          "channel": "earnings",
+          "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Oil supply disruption raises prices.",
-              "detail": "Reduced output from Gulf platforms tightens supply, lifting oil prices."
+              "plain": "If inflation is high, the Fed may raise rates.",
+              "detail": "Elevated inflation could prompt the Fed to hike rates to curb price increases."
             },
             {
-              "plain": "Higher oil prices increase costs for transport companies.",
-              "detail": "Transport firms face higher input costs as fuel prices rise, squeezing margins."
+              "plain": "Higher rates increase borrowing costs for companies.",
+              "detail": "A rate hike would elevate the discount rate, raising the cost of capital for businesses."
             }
           ],
-          "endpoint": "transport companies",
+          "endpoint": "corporate borrowers",
           "strength": "strong"
         },
         {
-          "channel": "fx-terms-of-trade",
+          "channel": "discount-rate",
           "links": [
             {
-              "plain": "Higher oil prices strengthen the US dollar.",
-              "detail": "As oil prices rise, the US dollar appreciates due to increased demand for oil traded in dollars."
+              "plain": "Higher rates push bond yields up.",
+              "detail": "A Fed rate hike would lead to higher yields on government bonds as investors demand greater returns."
+            },
+            {
+              "plain": "Rising yields make stocks less attractive.",
+              "detail": "As bond yields increase, the relative attractiveness of equities diminishes due to higher opportunity costs."
             }
           ],
-          "endpoint": "US dollar",
+          "endpoint": "equity investors",
           "strength": "moderate"
-        },
-        {
-          "channel": "substitution",
-          "links": [
-            {
-              "plain": "Investors shift to alternative energy stocks.",
-              "detail": "With oil supply concerns, investors pivot to renewables, expecting a boost in demand."
-            }
-          ],
-          "endpoint": "renewable energy stocks",
-          "strength": "speculative"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "commodities",
-          "instrument": "WTI Crude Oil",
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
           "direction": "up",
-          "magnitude": "3 to 5%",
-          "horizon": "days",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "Oil prices are likely to rise due to reduced supply from the Gulf.",
-          "detail": "The evacuation of key platforms is expected to reduce output, tightening supply and pushing prices higher."
+          "plain": "If inflation is high, expect Treasury yields to rise as rate hike odds increase.",
+          "detail": "A higher inflation print would likely push the US 10-year yield up by 10 to 20 basis points as the market prices in rate hikes."
         },
         {
           "assetClass": "equities",
-          "instrument": "US transport sector",
+          "instrument": "US stock market",
           "direction": "down",
           "magnitude": "1 to 2%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Transport stocks may fall as higher oil prices increase operating costs.",
-          "detail": "Higher fuel costs will squeeze margins for transport companies, likely leading to stock price declines."
+          "plain": "Rising bond yields could lead to a stock market decline as investors reassess risk.",
+          "detail": "Higher yields make equities less attractive, potentially leading to a 1 to 2% drop in US stocks as investors shift to bonds."
         },
         {
-          "assetClass": "fx",
-          "instrument": "US dollar index",
-          "direction": "up",
-          "magnitude": "0.5 to 1%",
-          "horizon": "days",
+          "assetClass": "credit",
+          "instrument": "US corporate bonds",
+          "direction": "wider",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "The US dollar could strengthen as higher oil prices increase demand for dollars.",
-          "detail": "Increased oil prices typically lead to a stronger dollar as global buyers need more dollars to purchase oil."
+          "plain": "Corporate bond spreads may widen as borrowing costs rise.",
+          "detail": "With higher Treasury yields, corporate bond spreads could widen by 5 to 10 basis points due to increased credit risk."
         }
       ],
       "whatMarketMisses": {
-        "plain": "The market may underestimate the duration of supply disruptions if the hurricane causes long-term damage to infrastructure.",
-        "detail": "Investors might not fully price in the potential for extended production outages if infrastructure damage occurs, leading to prolonged supply constraints."
+        "plain": "Investors might underestimate how persistent inflation could force the Fed to maintain a tighter policy longer than expected.",
+        "detail": "The market may not fully appreciate the risk of entrenched inflation, which could necessitate prolonged Fed tightening beyond current expectations."
       },
       "falsifiers": [
-        "Hurricane Isaias weakens significantly and causes minimal damage.",
-        "BP resumes production sooner than expected.",
-        "Global oil demand declines unexpectedly."
+        "Inflation data comes in significantly lower than expected.",
+        "The Fed signals a clear commitment to pausing regardless of data."
       ],
       "tradeExpression": [
         {
-          "idea": "Long WTI Crude Oil",
-          "plain": "Buy WTI Crude Oil futures, anticipating a price increase due to supply disruptions.",
-          "instrument": "WTI Crude Oil futures",
-          "risk": "Oil prices could fall if the hurricane weakens or production resumes quickly."
+          "idea": "Long US Treasury yields",
+          "plain": "Buy US Treasury futures to profit from rising yields if inflation data is high.",
+          "instrument": "US Treasury futures",
+          "risk": "The trade loses if inflation data is weak and yields fall."
         }
       ],
       "watchNext": [
-        "Hurricane Isaias's path and strength updates",
-        "BP's announcements on platform status",
-        "Global oil demand indicators"
+        "US Consumer Price Index (CPI) release",
+        "Fed meeting minutes"
       ],
       "glossary": [
         {
@@ -817,7 +798,7 @@
     }
   ],
   "diagnostics": {
-    "articlesIngested": 208,
+    "articlesIngested": 163,
     "clustersConsidered": 25,
     "feeds": [
       {
@@ -825,8 +806,8 @@
         "name": "Federal Reserve",
         "ok": true,
         "parsed": 20,
-        "fresh": 1,
-        "ms": 146,
+        "fresh": 0,
+        "ms": 741,
         "error": null
       },
       {
@@ -835,7 +816,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 0,
-        "ms": 105,
+        "ms": 705,
         "error": null
       },
       {
@@ -843,8 +824,8 @@
         "name": "European Central Bank",
         "ok": true,
         "parsed": 15,
-        "fresh": 2,
-        "ms": 698,
+        "fresh": 0,
+        "ms": 1466,
         "error": null
       },
       {
@@ -853,7 +834,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 692,
+        "ms": 1068,
         "error": "HTTP 404"
       },
       {
@@ -862,7 +843,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 466,
+        "ms": 1085,
         "error": "HTTP 404"
       },
       {
@@ -871,16 +852,16 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 636,
+        "ms": 1053,
         "error": "HTTP 403"
       },
       {
         "id": "eia",
         "name": "US EIA",
         "ok": true,
-        "parsed": 14,
+        "parsed": 15,
         "fresh": 0,
-        "ms": 545,
+        "ms": 1188,
         "error": null
       },
       {
@@ -889,7 +870,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 434,
+        "ms": 1294,
         "error": null
       },
       {
@@ -898,7 +879,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 0,
-        "ms": 457,
+        "ms": 1291,
         "error": null
       },
       {
@@ -907,7 +888,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 0,
-        "ms": 459,
+        "ms": 1345,
         "error": null
       },
       {
@@ -915,17 +896,17 @@
         "name": "WSJ Markets",
         "ok": true,
         "parsed": 61,
-        "fresh": 35,
-        "ms": 513,
+        "fresh": 19,
+        "ms": 1321,
         "error": null
       },
       {
         "id": "wsj-world",
         "name": "WSJ World",
         "ok": true,
-        "parsed": 73,
-        "fresh": 29,
-        "ms": 516,
+        "parsed": 72,
+        "fresh": 24,
+        "ms": 1509,
         "error": null
       },
       {
@@ -934,7 +915,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 567,
+        "ms": 1457,
         "error": "HTTP 404"
       },
       {
@@ -942,8 +923,8 @@
         "name": "CNBC",
         "ok": true,
         "parsed": 30,
-        "fresh": 30,
-        "ms": 989,
+        "fresh": 27,
+        "ms": 1692,
         "error": null
       },
       {
@@ -951,8 +932,8 @@
         "name": "CNBC Economy",
         "ok": true,
         "parsed": 30,
-        "fresh": 2,
-        "ms": 712,
+        "fresh": 3,
+        "ms": 1785,
         "error": null
       },
       {
@@ -961,25 +942,25 @@
         "ok": true,
         "parsed": 12,
         "fresh": 12,
-        "ms": 1259,
+        "ms": 2394,
         "error": null
       },
       {
         "id": "bbc-biz",
         "name": "BBC Business",
         "ok": true,
-        "parsed": 50,
-        "fresh": 29,
-        "ms": 707,
+        "parsed": 41,
+        "fresh": 14,
+        "ms": 1666,
         "error": null
       },
       {
         "id": "guardian-biz",
         "name": "Guardian Business",
         "ok": true,
-        "parsed": 37,
-        "fresh": 18,
-        "ms": 630,
+        "parsed": 40,
+        "fresh": 19,
+        "ms": 1771,
         "error": null
       },
       {
@@ -987,8 +968,8 @@
         "name": "Investing.com FX",
         "ok": true,
         "parsed": 10,
-        "fresh": 10,
-        "ms": 713,
+        "fresh": 5,
+        "ms": 1873,
         "error": null
       },
       {
@@ -997,7 +978,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 711,
+        "ms": 1901,
         "error": null
       },
       {
@@ -1006,7 +987,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 714,
+        "ms": 1882,
         "error": null
       },
       {
@@ -1015,7 +996,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 856,
+        "ms": 2956,
         "error": "HTTP 404"
       },
       {
@@ -1024,7 +1005,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 707,
+        "ms": 1876,
         "error": null
       }
     ],
@@ -1033,14 +1014,14 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 10193,
-        "error": "TypeError: fetch failed"
+        "ms": 570,
+        "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 267,
+        "ms": 363,
         "error": "no rows"
       },
       {
@@ -1053,11 +1034,11 @@
     ],
     "usage": {
       "calls": 6,
-      "inputTokens": 12667,
-      "outputTokens": 5746,
-      "estimatedCostUsd": 0.0891
+      "inputTokens": 12547,
+      "outputTokens": 5616,
+      "estimatedCostUsd": 0.0875
     },
-    "runtimeMs": 30178
+    "runtimeMs": 21622
   },
   "scorecardSummary": {
     "total": 19,
