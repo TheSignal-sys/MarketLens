@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "date": "2026-10-12",
-  "dateLabel": "Monday, 12 October 2026",
-  "generatedAt": "2026-10-12T13:07:06.133Z",
+  "date": "2026-10-13",
+  "dateLabel": "Tuesday, 13 October 2026",
+  "generatedAt": "2026-10-13T12:39:21.071Z",
   "model": "openai/gpt-4o",
   "marketRead": {
-    "headline": "Inflation and geopolitical tensions shape markets",
-    "body": "India's unexpected inflation rise suggests further rate hikes, impacting emerging market bonds and currencies. Rising oil tanker rates due to geopolitical tensions could increase energy costs, affecting inflation and growth forecasts globally. Continued Russian aggression in Ukraine, despite a ceasefire, may lead to further sanctions and energy market volatility.",
-    "regime": "inflationary pressures with geopolitical risk"
+    "headline": "Tech selloff and geopolitical tensions dominate markets",
+    "body": "The global tech selloff, led by AI-related stocks, is intensifying and affecting broader equity markets. Rising geopolitical tensions in the Middle East and Ukraine are pushing oil prices higher, adding to market volatility. Investors are also concerned about potential disruptions in the energy supply as Europe faces low gas reserves ahead of winter.",
+    "regime": "increased volatility amid tech and geopolitical risks"
   },
   "snapshot": {
     "quotes": [],
@@ -16,14 +16,14 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 570,
+        "ms": 561,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 363,
+        "ms": 486,
         "error": "no rows"
       },
       {
@@ -34,161 +34,321 @@
         "error": "no rows"
       }
     ],
-    "fetchedAt": "2026-10-12T13:06:48.520Z"
+    "fetchedAt": "2026-10-13T12:38:59.661Z"
   },
   "stories": [
     {
-      "id": "2026-10-12-india-s-retail-inflation-jumps-to-5-54-in-september-above-es",
+      "id": "2026-10-13-nasdaq-futures-fall-as-global-ai-selloff-intensifies",
       "rank": 1,
-      "editorNote": "India's inflation surprise suggests further rate hikes, affecting emerging markets broadly.",
+      "editorNote": "The global AI selloff is impacting multiple asset classes and signals a shift in investor sentiment.",
       "materiality": {
-        "score": 73,
+        "score": 72.5,
         "components": {
-          "corroboration": 26,
+          "corroboration": 13,
           "authority": 13,
-          "breadth": 4.5,
-          "salience": 20,
-          "recency": 9.5
+          "breadth": 18,
+          "salience": 18.7,
+          "recency": 9.8
         },
-        "distinctSources": 3,
+        "distinctSources": 1,
         "salienceTerms": [
-          "rate hike",
-          "interest rate",
-          "inflation"
+          "treasury",
+          "selloff",
+          "oil"
         ]
       },
       "sources": [
-        "CNBC",
-        "CNBC Economy",
-        "Investing.com Economy"
+        "WSJ Markets"
       ],
       "links": [
         {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
-          "title": "India’s retail inflation jumps to 5.54% in September, above estimates"
-        },
-        {
-          "name": "CNBC Economy",
-          "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
-          "title": "India’s retail inflation jumps to 5.54% in September, above estimates"
-        },
-        {
-          "name": "Investing.com Economy",
-          "url": "https://www.investing.com/news/economy-news/india-inflation-jumps-to-554-in-september-strengthening-case-for-further-rate-hikes-4943948",
-          "title": "India inflation jumps to 5.54% in September, strengthening case for further rate hikes"
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/nasdaq-futures-fall-as-global-ai-selloff-intensifies-fe149717?mod=rss_markets_main",
+          "title": "Nasdaq Futures Fall as Global AI Selloff Intensifies"
         }
       ],
       "headlines": [
-        "India’s retail inflation jumps to 5.54% in September, above estimates",
-        "India inflation jumps to 5.54% in September, strengthening case for further rate hikes"
+        "Nasdaq Futures Fall as Global AI Selloff Intensifies"
       ],
-      "newestAt": "2026-10-12T11:12:22.000Z",
-      "headline": "India's Inflation Surge Signals More Rate Hikes Ahead",
-      "standfirst": "India's retail inflation rose to 5.54% in September, exceeding expectations.",
+      "newestAt": "2026-10-13T11:58:00.000Z",
+      "headline": "Nasdaq Futures Drop as AI Selloff and China Fears Hit Markets",
+      "standfirst": "Nasdaq futures fell sharply due to intensified selling of AI stocks and concerns over Chinese competition.",
       "classification": {
-        "eventType": "macro-data",
+        "eventType": "corporate",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated higher inflation but not to this extent, as seen in bond market reactions.",
+        "pricedInRationale": "The market had anticipated some AI sector volatility, but the extent of the selloff and its global reach were not fully expected.",
         "persistence": "weeks",
         "regionFocus": [
-          "India",
-          "Emerging Markets"
+          "Global",
+          "US",
+          "China"
         ]
       },
       "whatHappened": {
-        "plain": "India's retail inflation increased to 5.54% in September, marking the eleventh consecutive monthly rise. This figure was higher than expected.",
-        "whyItMatters": "Rising inflation increases the likelihood of further interest rate hikes by India's central bank, which can affect borrowing costs and economic growth.",
-        "detail": "The unexpected jump in inflation strengthens the case for the Reserve Bank of India to consider tightening monetary policy, affecting rates and potentially slowing economic activity."
+        "plain": "Nasdaq futures dropped significantly as investors sold off AI stocks. Concerns about increasing competition from Chinese AI firms fueled the selloff.",
+        "whyItMatters": "This matters because it signals a shift in investor sentiment towards AI stocks, which have been a major driver of market gains.",
+        "detail": "Nasdaq futures fell as investors reacted to heightened fears of Chinese competition in the AI space, leading to a broad selloff in technology stocks."
       },
       "chains": [
         {
-          "channel": "policy-reaction",
+          "channel": "positioning",
           "links": [
             {
-              "plain": "Higher inflation makes rate hikes more likely.",
-              "detail": "The Reserve Bank of India is likely to respond to persistent inflation by increasing interest rates to curb price pressures."
+              "plain": "Investors are selling AI stocks heavily.",
+              "detail": "A crowded long position in AI stocks is being unwound, leading to forced selling."
             },
             {
-              "plain": "Rate hikes increase borrowing costs for companies.",
-              "detail": "As the central bank raises rates, the cost of borrowing for businesses rises, impacting their investment and expansion plans."
+              "plain": "This selling pressure spreads to other tech stocks.",
+              "detail": "As AI stocks drop, investors reassess their tech exposure, leading to broader tech stock declines."
             }
           ],
-          "endpoint": "Indian companies",
+          "endpoint": "technology sector equities",
           "strength": "strong"
         },
         {
-          "channel": "fx-terms-of-trade",
+          "channel": "correlation",
           "links": [
             {
-              "plain": "Higher rates strengthen the Indian rupee.",
-              "detail": "Increased interest rates attract foreign capital, boosting demand for the rupee and strengthening its value against other currencies."
+              "plain": "Treasury yields fall as investors seek safety.",
+              "detail": "Safe-haven demand increases for Treasuries, pushing yields lower."
             },
             {
-              "plain": "A stronger rupee makes exports more expensive.",
-              "detail": "As the rupee appreciates, Indian goods become more costly for foreign buyers, potentially reducing export competitiveness."
+              "plain": "Lower yields make bonds more attractive compared to equities.",
+              "detail": "As bond yields decline, the relative attractiveness of equities diminishes, leading to further equity selling."
             }
           ],
-          "endpoint": "Indian exporters",
+          "endpoint": "US Treasury yields",
           "strength": "moderate"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors look for alternatives to AI stocks.",
+              "detail": "Capital rotates out of AI stocks into sectors perceived as safer or undervalued."
+            },
+            {
+              "plain": "This benefits defensive sectors like utilities.",
+              "detail": "Defensive sectors attract inflows as investors seek stability amid tech volatility."
+            }
+          ],
+          "endpoint": "defensive sector equities",
+          "strength": "speculative"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "rates",
-          "instrument": "Indian government bond yields",
-          "direction": "up",
-          "magnitude": "10 to 20 basis points",
+          "assetClass": "equities",
+          "instrument": "Nasdaq 100 Index",
+          "direction": "down",
+          "magnitude": "3 to 5%",
           "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "Bond yields in India are likely to rise as investors anticipate further rate hikes.",
-          "detail": "The expectation of monetary tightening will lead to higher yields on Indian government bonds as investors demand more return for holding debt."
+          "plain": "Nasdaq 100 is likely to fall as AI stocks continue to be sold off.",
+          "detail": "The Nasdaq 100 is expected to decline as investors reduce exposure to AI stocks, which have been a significant component of the index."
         },
         {
-          "assetClass": "fx",
-          "instrument": "Indian rupee",
-          "direction": "up",
-          "magnitude": "1 to 2%",
-          "horizon": "weeks",
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
           "conviction": 3,
           "order": 2,
-          "plain": "The Indian rupee is expected to strengthen due to anticipated rate hikes.",
-          "detail": "Higher interest rates attract foreign capital, increasing demand for the rupee and pushing its value higher."
+          "plain": "US Treasury yields may decrease as investors seek safe assets.",
+          "detail": "Safe-haven flows into US Treasuries are likely to push yields lower as risk sentiment deteriorates."
         },
         {
           "assetClass": "equities",
-          "instrument": "Indian exporters",
-          "direction": "down",
-          "magnitude": "2 to 4%",
+          "instrument": "Utilities sector",
+          "direction": "up",
+          "magnitude": "1 to 2%",
           "horizon": "weeks",
-          "conviction": 3,
+          "conviction": 2,
           "order": 2,
-          "plain": "Shares of Indian exporters may fall as a stronger rupee makes their products more expensive abroad.",
-          "detail": "An appreciating rupee reduces the competitiveness of Indian exports, potentially impacting the earnings of export-oriented companies."
+          "plain": "Utilities stocks could rise as investors shift to defensive sectors.",
+          "detail": "With increased volatility in tech, investors may rotate into utilities for their defensive characteristics."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the impact of sustained inflation on consumer spending and corporate margins in India.",
-        "detail": "Persistent inflation could erode consumer purchasing power and squeeze profit margins, impacting broader economic growth and corporate earnings."
+        "plain": "Investors may underestimate the potential for prolonged volatility in AI stocks due to geopolitical tensions and competitive pressures, which could lead to further market instability.",
+        "detail": "The market may not fully appreciate the lasting impact of geopolitical competition on AI sector valuations and the potential for extended volatility."
       },
       "falsifiers": [
-        "Inflation data for October shows a significant decline.",
-        "The Reserve Bank of India signals no immediate rate hikes.",
-        "Global commodity prices drop sharply, easing inflationary pressures."
+        "A rapid resolution to geopolitical tensions",
+        "A significant recovery in AI stock prices",
+        "Unexpected positive earnings reports from major AI firms"
       ],
       "tradeExpression": [
         {
-          "idea": "Long Indian rupee",
-          "plain": "Buy the Indian rupee against the US dollar, expecting it to strengthen with rate hikes.",
-          "instrument": "FX forwards or options",
-          "risk": "If the RBI does not hike rates as expected, the rupee could weaken."
+          "idea": "Short Nasdaq 100",
+          "plain": "Sell Nasdaq 100 futures to profit from continued weakness in tech stocks.",
+          "instrument": "Nasdaq 100 futures",
+          "risk": "A sudden rebound in tech stocks could lead to losses."
         }
       ],
       "watchNext": [
-        "Upcoming RBI policy meeting",
-        "Next month's inflation data release",
-        "Trends in global commodity prices"
+        "Upcoming earnings reports from major AI companies",
+        "US-China trade negotiations",
+        "Federal Reserve policy announcements"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "Nasdaq futures",
+          "plain": "Financial contracts that speculate on the future value of the Nasdaq 100 Index."
+        },
+        {
+          "term": "safe-haven",
+          "plain": "An investment expected to retain or increase in value during times of market turbulence."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-13-micron-softbank-and-asml-slide-as-wall-street-chip-rout-spre",
+      "rank": 2,
+      "editorNote": "The chip rout is spreading across tech stocks, indicating a broader market concern.",
+      "materiality": {
+        "score": 73.8,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 18,
+          "salience": 20,
+          "recency": 9.8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "spread",
+          "rout",
+          "semiconductor",
+          "chip",
+          "euro"
+        ]
+      },
+      "sources": [
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/13/sk-hynix-softbank-samsung-electronics-shares-tech-stocks-fall.html",
+          "title": "Micron, SoftBank and ASML slide as Wall Street chip rout spreads"
+        }
+      ],
+      "headlines": [
+        "Micron, SoftBank and ASML slide as Wall Street chip rout spreads"
+      ],
+      "newestAt": "2026-10-13T11:47:25.000Z",
+      "headline": "Global Tech Stocks Slide Amid Semiconductor Sell-off",
+      "standfirst": "Tech stocks fell globally as a sell-off in U.S. semiconductor shares spread.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The initial sell-off in semiconductor stocks was expected, but the broader tech impact was not fully absorbed.",
+        "persistence": "days",
+        "regionFocus": [
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Technology stocks across the globe fell sharply as a sell-off in U.S. semiconductor shares extended into Asian and European markets. Companies like Micron, SoftBank, and ASML saw significant declines.",
+        "whyItMatters": "This matters because it signals broader concerns about the tech sector, potentially impacting investor sentiment and market stability.",
+        "detail": "The sell-off in semiconductor stocks, initially triggered by sector-specific concerns, has now affected broader tech indices, indicating potential systemic issues within the tech sector."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Tech companies may face lower profits due to reduced investor confidence.",
+              "detail": "The decline in semiconductor stocks can lead to reduced capital inflows and investment in tech, impacting future earnings potential."
+            },
+            {
+              "plain": "Lower profits could result in cost-cutting measures.",
+              "detail": "As profits fall, tech companies might reduce R&D or workforce to maintain margins."
+            }
+          ],
+          "endpoint": "Tech sector workforce",
+          "strength": "moderate"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors may be forced to sell tech stocks to limit losses.",
+              "detail": "The sharp decline in tech stocks could trigger stop-loss orders, leading to further selling pressure."
+            },
+            {
+              "plain": "This could lead to a broader market decline.",
+              "detail": "Forced selling in tech stocks can spill over into other sectors, causing a wider market downturn."
+            }
+          ],
+          "endpoint": "Global equity markets",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Global tech stocks",
+          "direction": "down",
+          "magnitude": "3 to 5%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Global tech stocks are likely to fall further as the sell-off continues.",
+          "detail": "The initial semiconductor sell-off has not been fully priced in, suggesting further downside for tech stocks as investor sentiment remains negative."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "Tech sector corporate bonds",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads for tech companies may widen as perceived risk increases.",
+          "detail": "As tech stocks decline, the risk premium on tech corporate bonds is likely to rise, widening credit spreads."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Treasury yields may fall as investors seek safe havens.",
+          "detail": "The flight to safety amid tech stock declines could push investors into Treasuries, lowering yields."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might underestimate the long-term impact on tech innovation if cost-cutting measures become widespread.",
+        "detail": "If tech companies cut R&D spending to maintain short-term profitability, it could hinder future innovation and growth potential."
+      },
+      "falsifiers": [
+        "A sudden recovery in semiconductor stock prices",
+        "Positive earnings surprises from major tech firms",
+        "A shift in central bank policy towards more accommodative measures"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short Global Tech",
+          "plain": "Sell global tech stocks to profit from continued declines.",
+          "instrument": "Sell tech sector ETFs or futures",
+          "risk": "A sudden reversal in tech stock prices could lead to losses."
+        }
+      ],
+      "watchNext": [
+        "Upcoming earnings reports from major tech companies",
+        "Central bank meetings and policy announcements",
+        "Economic data releases impacting tech demand"
       ],
       "glossary": [
         {
@@ -199,25 +359,25 @@
       "confidence": 3
     },
     {
-      "id": "2026-10-12-oil-tanker-rates-surge-amid-rising-attacks-longer-voyages",
-      "rank": 2,
-      "editorNote": "Surging oil tanker rates due to geopolitical tensions could impact global energy costs.",
+      "id": "2026-10-13-oil-climbs-as-fighting-flares-in-middle-east-ukraine",
+      "rank": 3,
+      "editorNote": "Geopolitical tensions are driving oil prices, affecting commodities and related equities.",
       "materiality": {
-        "score": 68.5,
+        "score": 64.9,
         "components": {
           "corroboration": 13,
           "authority": 13,
           "breadth": 13.5,
           "salience": 20,
-          "recency": 9
+          "recency": 5.4
         },
         "distinctSources": 1,
         "salienceTerms": [
-          "ppi",
-          "rout",
+          "credit",
           "oil",
-          "crude",
-          "brent"
+          "merger",
+          "ipo",
+          "chip"
         ]
       },
       "sources": [
@@ -226,52 +386,54 @@
       "links": [
         {
           "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/commodities-futures/oil-falls-on-hopes-that-russian-diesel-can-ease-global-fuel-shortages-db1651af?mod=rss_markets_main",
-          "title": "Oil Tanker Rates Surge Amid Rising Attacks, Longer Voyages"
+          "url": "https://www.wsj.com/finance/stocks/oil-climbs-as-fighting-flares-in-middle-east-ukraine-62ac534c?mod=rss_markets_main",
+          "title": "Oil Climbs as Fighting Flares in Middle East, Ukraine"
         }
       ],
       "headlines": [
-        "Oil Tanker Rates Surge Amid Rising Attacks, Longer Voyages"
+        "Oil Climbs as Fighting Flares in Middle East, Ukraine"
       ],
-      "newestAt": "2026-10-12T09:38:00.000Z",
-      "headline": "Oil Tanker Rates Surge, Raising Global Energy Costs",
-      "standfirst": "Oil tanker rates have surged due to increased attacks and longer routes.",
+      "newestAt": "2026-10-12T20:15:00.000Z",
+      "headline": "Oil Prices Surge Amid Middle East and Ukraine Conflicts",
+      "standfirst": "Geopolitical tensions have pushed oil prices higher.",
       "classification": {
         "eventType": "geopolitical",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market has reacted to initial news of rising tanker rates, but further impacts on energy costs remain to be fully absorbed.",
+        "pricedInRationale": "The market anticipated some impact from ongoing conflicts, but the escalation adds new pressure.",
         "persistence": "weeks",
         "regionFocus": [
-          "Global"
+          "Global",
+          "Middle East",
+          "Ukraine"
         ]
       },
       "whatHappened": {
-        "plain": "Oil tanker rates are rising sharply due to increased attacks and longer shipping routes in the Middle East. This has pushed Brent crude futures above $105 a barrel.",
-        "whyItMatters": "Higher tanker rates can lead to increased global energy costs, affecting everything from consumer prices to industrial production.",
-        "detail": "Geopolitical tensions are disrupting oil shipping routes, reducing vessel availability and increasing freight costs, which in turn is pushing up oil prices."
+        "plain": "Fighting has intensified in the Middle East and Ukraine, leading to a rise in oil prices.",
+        "whyItMatters": "Oil is a key input for many industries, so rising prices can increase costs and affect economic growth.",
+        "detail": "The escalation in geopolitical tensions has disrupted oil supply expectations, driving prices higher as markets react to potential shortages."
       },
       "chains": [
         {
           "channel": "earnings",
           "links": [
             {
-              "plain": "Higher shipping costs increase oil prices.",
-              "detail": "The rise in freight rates due to longer routes and attacks increases the cost of transporting oil, lifting crude prices."
+              "plain": "Higher oil prices increase costs for airlines.",
+              "detail": "Airlines face higher fuel costs, squeezing margins as oil prices rise."
             },
             {
-              "plain": "Higher oil prices increase costs for energy-intensive industries.",
-              "detail": "As crude prices rise, industries that rely heavily on energy face higher input costs, squeezing margins."
+              "plain": "Airline ticket prices may rise as companies pass on costs.",
+              "detail": "To maintain profitability, airlines are likely to increase ticket prices, impacting consumer travel demand."
             }
           ],
-          "endpoint": "Energy-intensive industries",
+          "endpoint": "Airline industry",
           "strength": "strong"
         },
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Central banks may delay rate cuts due to inflation concerns.",
-              "detail": "Rising oil prices can feed into broader inflation, potentially causing central banks to hold off on easing monetary policy."
+              "plain": "Central banks may delay interest rate cuts due to inflation concerns.",
+              "detail": "Rising oil prices add inflationary pressure, which could prompt central banks to hold off on rate cuts."
             }
           ],
           "endpoint": "Central banks",
@@ -281,70 +443,68 @@
           "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "Countries importing oil face higher trade deficits.",
-              "detail": "As oil-importing nations pay more for energy, their trade balances may worsen, affecting currency valuations."
+              "plain": "Oil-exporting currencies may strengthen.",
+              "detail": "Currencies of oil-exporting countries could appreciate as higher oil prices improve trade balances."
             }
           ],
-          "endpoint": "Oil-importing countries",
+          "endpoint": "Oil-exporting countries",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
           "assetClass": "commodities",
-          "instrument": "Brent crude oil",
+          "instrument": "Crude oil",
           "direction": "up",
-          "magnitude": "2 to 4%",
-          "horizon": "days",
+          "magnitude": "5 to 8%",
+          "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "Brent crude prices are likely to rise further as shipping disruptions continue.",
-          "detail": "The ongoing geopolitical tensions are expected to sustain upward pressure on crude prices as freight costs remain elevated."
+          "plain": "Oil prices are likely to rise due to supply concerns.",
+          "detail": "The geopolitical conflicts are expected to lead to disruptions in oil supply, pushing prices higher."
         },
         {
           "assetClass": "equities",
-          "instrument": "European energy-intensive industries",
+          "instrument": "Airline stocks",
           "direction": "down",
-          "magnitude": "1 to 2%",
+          "magnitude": "3 to 5%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Energy-intensive sectors in Europe may face pressure from rising input costs.",
-          "detail": "With higher oil prices increasing operational costs, companies in energy-dependent sectors could see margin compression."
+          "plain": "Airline stocks may decline as higher fuel costs hit profits.",
+          "detail": "Rising oil prices increase operational costs for airlines, likely leading to lower stock valuations."
         },
         {
           "assetClass": "fx",
-          "instrument": "Emerging market currencies",
-          "direction": "down",
-          "magnitude": "0.5 to 1.5%",
+          "instrument": "Russian Ruble",
+          "direction": "up",
+          "magnitude": "2 to 4%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Emerging market currencies may weaken as trade deficits widen.",
-          "detail": "Higher oil import costs can exacerbate trade imbalances, putting pressure on the currencies of oil-importing emerging markets."
+          "plain": "The Russian Ruble might strengthen as oil prices rise.",
+          "detail": "As an oil exporter, Russia's trade balance improves with higher oil prices, supporting the Ruble."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the potential for prolonged disruptions in oil supply chains, which could lead to sustained high energy prices and broader inflationary pressures.",
-        "detail": "The market might not fully appreciate the risk of continued geopolitical instability leading to persistent supply chain disruptions and extended periods of elevated oil prices."
+        "plain": "Investors may underestimate the potential for prolonged disruption in oil supply, leading to sustained higher prices.",
+        "detail": "The market might not fully price in the risk of extended geopolitical conflicts causing long-term supply constraints."
       },
       "falsifiers": [
-        "A sudden de-escalation in geopolitical tensions reducing shipping disruptions.",
-        "A significant increase in alternative energy supply mitigating oil price rises.",
-        "Central banks aggressively countering inflationary pressures with policy adjustments."
+        "A sudden resolution to conflicts in the Middle East or Ukraine.",
+        "A significant increase in oil production from other regions."
       ],
       "tradeExpression": [
         {
-          "idea": "Long Brent crude futures",
-          "plain": "Buy Brent crude futures to profit from expected further price increases due to shipping disruptions.",
+          "idea": "Long Crude Oil Futures",
+          "plain": "Buy crude oil futures to benefit from rising prices due to supply disruptions.",
           "instrument": "Futures",
-          "risk": "A de-escalation in geopolitical tensions could lower oil prices quickly."
+          "risk": "If geopolitical tensions ease, oil prices could fall, leading to losses."
         }
       ],
       "watchNext": [
-        "Upcoming OPEC meetings for potential production adjustments.",
-        "Geopolitical developments in the Middle East affecting shipping routes.",
-        "Central bank statements on inflation and monetary policy."
+        "Announcements from OPEC regarding production levels.",
+        "Updates on peace talks or ceasefires in conflict regions."
       ],
       "glossary": [
         {
@@ -355,51 +515,45 @@
       "confidence": 3
     },
     {
-      "id": "2026-10-12-zelenskyy-accuses-russia-of-violating-trump-s-energy-ceasefi",
-      "rank": 3,
-      "editorNote": "Russia's actions in Ukraine could lead to further sanctions, affecting energy markets.",
+      "id": "2026-10-13-europe-heads-into-winter-with-low-gas-reserves-uncertain-gul",
+      "rank": 4,
+      "editorNote": "Europe's low gas reserves pose a significant risk to energy markets as winter approaches.",
       "materiality": {
-        "score": 62,
+        "score": 60,
         "components": {
-          "corroboration": 21,
+          "corroboration": 13,
           "authority": 13,
-          "breadth": 4.5,
-          "salience": 13.6,
-          "recency": 9.9
+          "breadth": 9,
+          "salience": 15.3,
+          "recency": 9.7
         },
-        "distinctSources": 2,
+        "distinctSources": 1,
         "salienceTerms": [
-          "sanctions",
-          "ceasefire"
+          "lng",
+          "euro",
+          "reserves"
         ]
       },
       "sources": [
-        "CNBC",
-        "Investing.com Commodities"
+        "WSJ Markets"
       ],
       "links": [
         {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-trump.html",
-          "title": "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue"
-        },
-        {
-          "name": "Investing.com Commodities",
-          "url": "https://www.investing.com/news/commodities-news/ukraine-accuses-russia-of-violating-trumps-energy-ceasefire-as-eu-imposes-new-sanctions-4943687",
-          "title": "Ukraine accuses Russia of violating Trump’s energy ceasefire as EU imposes new sanctions"
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/commodities-futures/europe-heads-into-winter-with-low-gas-reserves-uncertain-gulf-supplies-78cd3507?mod=rss_markets_main",
+          "title": "Europe Heads Into Winter With Low Gas Reserves, Uncertain Gulf Supplies"
         }
       ],
       "headlines": [
-        "Zelenskyy accuses Russia of violating Trump’s energy ceasefire as drone attacks continue",
-        "Ukraine accuses Russia of violating Trump’s energy ceasefire as EU imposes new sanctions"
+        "Europe Heads Into Winter With Low Gas Reserves, Uncertain Gulf Supplies"
       ],
-      "newestAt": "2026-10-12T12:36:21.000Z",
-      "headline": "Energy Markets Rattle as Russia Violates Ceasefire, Sanctions Loom",
-      "standfirst": "Russia's breach of the energy ceasefire with Ukraine risks new sanctions.",
+      "newestAt": "2026-10-13T11:43:00.000Z",
+      "headline": "Middle East Tensions Spike European Gas Prices, Risking Broader Energy Crunch",
+      "standfirst": "Rising Middle East conflict has pushed European gas prices to a four-year high.",
       "classification": {
-        "eventType": "geopolitical",
+        "eventType": "supply-shock",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Markets had anticipated some tension, but the breach and potential sanctions add new uncertainty.",
+        "pricedInRationale": "The initial price spike reflects immediate fears, but further supply disruptions are not fully priced.",
         "persistence": "weeks",
         "regionFocus": [
           "Europe",
@@ -407,39 +561,46 @@
         ]
       },
       "whatHappened": {
-        "plain": "Russia has violated the energy ceasefire brokered by Trump, leading to accusations from Ukraine and new EU sanctions. This escalation could disrupt energy supplies and increase geopolitical tensions.",
-        "whyItMatters": "Energy markets are sensitive to disruptions, and further sanctions could exacerbate supply issues, impacting prices and economic stability.",
-        "detail": "The breach of the ceasefire increases the risk of supply disruptions in European energy markets, with potential knock-on effects on global energy prices and economic policies."
+        "plain": "European natural-gas prices have surged due to low storage levels and escalating tensions in the Middle East threatening supply routes. This comes at a critical time as Europe heads into winter.",
+        "whyItMatters": "Higher gas prices can lead to increased energy costs for consumers and businesses, potentially slowing economic growth.",
+        "detail": "The rise in European gas prices is driven by geopolitical risks in the Gulf, compounded by Europe's inadequate gas reserves as winter approaches, raising concerns of an energy crunch."
       },
       "chains": [
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "European energy prices rise due to supply concerns.",
-              "detail": "The breach heightens risk of supply disruptions, pushing European energy prices higher as traders adjust for potential shortages."
-            },
-            {
-              "plain": "Euro weakens as energy costs increase.",
-              "detail": "Higher energy prices strain European economies, leading to a weaker Euro as investors anticipate slower growth."
-            }
-          ],
-          "endpoint": "European importers and consumers",
-          "strength": "strong"
-        },
         {
           "channel": "earnings",
           "links": [
             {
-              "plain": "Energy companies see potential for higher profits.",
-              "detail": "With potential supply disruptions, energy firms could benefit from higher prices, boosting their earnings outlook."
+              "plain": "Higher gas prices increase costs for European manufacturers.",
+              "detail": "Rising input costs due to higher gas prices squeeze margins for energy-intensive industries in Europe."
             },
             {
-              "plain": "Manufacturers face higher input costs.",
-              "detail": "Rising energy prices increase operational costs for manufacturers, squeezing margins and potentially leading to higher consumer prices."
+              "plain": "Manufacturers may pass on costs to consumers, leading to higher inflation.",
+              "detail": "To maintain profitability, companies may raise prices, contributing to consumer price inflation."
             }
           ],
-          "endpoint": "European manufacturers",
+          "endpoint": "European consumers",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Higher inflation may prompt the ECB to delay rate cuts.",
+              "detail": "Elevated inflation due to rising energy costs could lead the ECB to maintain current rates longer to manage inflation expectations."
+            }
+          ],
+          "endpoint": "European Central Bank",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "Rising energy costs weaken the euro as import costs rise.",
+              "detail": "Increased energy import costs deteriorate Europe's trade balance, putting downward pressure on the euro."
+            }
+          ],
+          "endpoint": "EUR/USD",
           "strength": "moderate"
         }
       ],
@@ -452,8 +613,8 @@
           "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "Natural gas prices in Europe are likely to rise as supply concerns grow.",
-          "detail": "The violation of the ceasefire raises the risk of supply disruptions, causing traders to bid up natural gas prices in anticipation of shortages."
+          "plain": "European natural gas prices are likely to rise further as supply concerns persist.",
+          "detail": "Ongoing geopolitical tensions and low reserves suggest sustained upward pressure on European gas prices."
         },
         {
           "assetClass": "fx",
@@ -463,42 +624,42 @@
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "The Euro may weaken as increased energy costs weigh on the European economy.",
-          "detail": "Higher energy prices could slow economic growth in Europe, leading to a depreciation of the Euro against the US dollar."
+          "plain": "The euro may weaken against the dollar due to rising energy costs.",
+          "detail": "Increased import costs from higher gas prices could worsen the eurozone's trade balance, pressuring the euro."
         },
         {
           "assetClass": "equities",
           "instrument": "European industrials",
           "direction": "down",
-          "magnitude": "3 to 5%",
+          "magnitude": "2 to 4%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Shares of European industrial companies could fall due to rising input costs.",
-          "detail": "As energy prices rise, European industrial firms face higher production costs, which could pressure their profit margins and stock prices."
+          "plain": "European industrial stocks may decline as higher energy costs squeeze margins.",
+          "detail": "Energy-intensive sectors face margin compression, which could lead to lower equity valuations."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the long-term impact of sustained higher energy prices on European growth and inflation.",
-        "detail": "The market might not fully price in the persistent drag on European economic performance and inflationary pressures from prolonged high energy costs."
+        "plain": "Investors may underestimate the potential for prolonged Middle East tensions to exacerbate the European energy crisis, leading to sustained higher prices and deeper economic impacts.",
+        "detail": "Market participants might not fully appreciate the risk of extended geopolitical instability, which could keep energy prices elevated longer than expected, impacting growth and inflation."
       },
       "falsifiers": [
-        "Russia agreeing to reinstate the ceasefire",
-        "EU backing down on sanctions",
-        "A significant drop in energy prices"
+        "A rapid de-escalation of Middle East tensions.",
+        "Unexpectedly mild winter reducing energy demand.",
+        "Increased LNG supplies offsetting shortages."
       ],
       "tradeExpression": [
         {
-          "idea": "Short Euro",
-          "plain": "Sell the Euro against the US dollar to profit from potential Euro weakness due to rising energy costs.",
-          "instrument": "FX futures",
-          "risk": "The Euro could strengthen if energy prices stabilize or geopolitical tensions ease."
+          "idea": "Long European Natural Gas",
+          "plain": "Buy European natural gas futures to benefit from expected price increases due to supply risks.",
+          "instrument": "Futures",
+          "risk": "Prices may fall if geopolitical tensions ease or if Europe secures alternative supplies."
         }
       ],
       "watchNext": [
-        "Further EU sanctions announcements",
-        "Statements from Russian and Ukrainian leaders",
-        "Energy supply data releases"
+        "Developments in Middle East geopolitical tensions.",
+        "European weather forecasts for the upcoming winter.",
+        "Announcements from major LNG suppliers on supply commitments."
       ],
       "glossary": [
         {
@@ -509,284 +670,150 @@
       "confidence": 3
     },
     {
-      "id": "2026-10-12-the-bond-market-is-doing-the-fed-s-job-and-that-could-be-goo",
-      "rank": 4,
-      "editorNote": "The bond market's role in monetary policy could influence equity market sentiment.",
+      "id": "2026-10-13-cyber-attack-on-french-supermarket-fridges-raises-alarm-over",
+      "rank": 5,
+      "editorNote": "The cyber attack on French supermarkets highlights vulnerabilities in food security, with potential long-term impacts on commodities.",
       "materiality": {
-        "score": 73,
+        "score": 69.8,
         "components": {
-          "corroboration": 13,
+          "corroboration": 21,
           "authority": 13,
-          "breadth": 18,
-          "salience": 20,
-          "recency": 9
+          "breadth": 9,
+          "salience": 17,
+          "recency": 9.8
         },
-        "distinctSources": 1,
+        "distinctSources": 2,
         "salienceTerms": [
-          "fed",
-          "war",
-          "dollar"
+          "repo",
+          "oil",
+          "euro"
         ]
       },
       "sources": [
-        "MarketWatch"
+        "Financial Times",
+        "BBC Business"
       ],
       "links": [
         {
-          "name": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/the-bond-market-is-doing-the-feds-job-and-that-could-be-good-news-for-stocks-says-morgan-stanley-strategist-ec57b81a?mod=mw_rss_topstories",
-          "title": "The bond market is doing the Fed’s job, and that could be good news for stocks, says Morgan Stanley strategist"
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/6908a0ce-ffdd-4ea9-b376-d35d362639f3?syn-25a6b1a6=1",
+          "title": "Cyber attack on French supermarket fridges raises alarm over food security"
+        },
+        {
+          "name": "BBC Business",
+          "url": "https://www.bbc.co.uk/news/articles/crq5nzxv9q4yo?at_medium=RSS&at_campaign=rss",
+          "title": "Fridges in French supermarkets hit by cyber attack"
         }
       ],
       "headlines": [
-        "The bond market is doing the Fed’s job, and that could be good news for stocks, says Morgan Stanley strategist"
+        "Cyber attack on French supermarket fridges raises alarm over food security",
+        "Fridges in French supermarkets hit by cyber attack"
       ],
-      "newestAt": "2026-10-12T09:23:00.000Z",
-      "headline": "Bond Market Tightening Eases Pressure on Fed Rate Hikes",
-      "standfirst": "Higher bond yields and a strong dollar reduce the need for Fed action.",
+      "newestAt": "2026-10-13T11:50:21.000Z",
+      "headline": "Cyber attack on French supermarkets exposes food security risks",
+      "standfirst": "A cyber attack hit fridges in French supermarkets, melting equipment and destroying food.",
       "classification": {
-        "eventType": "monetary-policy",
+        "eventType": "supply-shock",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The bond market had already adjusted to higher yields, but the full impact on Fed policy is still unfolding.",
+        "pricedInRationale": "The immediate impact on supermarket stocks is likely priced in, but broader supply chain effects are not.",
         "persistence": "weeks",
         "regionFocus": [
-          "US"
+          "Europe"
         ]
       },
       "whatHappened": {
-        "plain": "The bond market is seeing higher yields, and the US dollar is strengthening. This is making financial conditions tighter in the US.",
-        "whyItMatters": "Tighter financial conditions might reduce the need for the Federal Reserve to raise interest rates.",
-        "detail": "Yields on US Treasury bonds have risen, and the dollar has appreciated, both of which contribute to tighter monetary conditions without direct Fed intervention."
+        "plain": "A cyber attack targeted fridges in French supermarkets, causing temperatures to rise as high as 80°C. This led to equipment damage and food spoilage.",
+        "whyItMatters": "This incident highlights vulnerabilities in food supply chains and could lead to increased costs and tighter security measures.",
+        "detail": "The attack on supermarket fridges reveals a critical vulnerability in the food supply chain, potentially leading to increased operational costs and heightened regulatory scrutiny."
       },
       "chains": [
         {
-          "channel": "discount-rate",
+          "channel": "earnings",
           "links": [
             {
-              "plain": "Higher bond yields make borrowing more expensive.",
-              "detail": "Rising Treasury yields increase the baseline cost of capital across financial markets."
+              "plain": "Supermarkets face higher costs to replace damaged equipment.",
+              "detail": "Supermarkets will incur capital expenditure to replace or repair damaged fridges, impacting short-term earnings."
             },
             {
-              "plain": "Companies may face higher costs for new projects.",
-              "detail": "Increased borrowing costs can lead to reduced capital expenditure by firms."
+              "plain": "Food suppliers may see increased demand as supermarkets restock.",
+              "detail": "As supermarkets replenish spoiled stock, food suppliers may experience a temporary boost in orders, affecting their revenue positively."
             }
           ],
-          "endpoint": "corporate investment",
+          "endpoint": "supermarkets and food suppliers",
           "strength": "moderate"
         },
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "The Fed might delay further rate hikes.",
-              "detail": "With financial conditions tightening, the Fed has less immediate pressure to raise rates to control inflation."
+              "plain": "Regulators may impose stricter cybersecurity standards.",
+              "detail": "In response to the attack, regulators could enforce stricter cybersecurity protocols, increasing compliance costs for retailers."
+            },
+            {
+              "plain": "Central banks might monitor inflation risks from supply disruptions.",
+              "detail": "Potential supply chain disruptions could lead central banks to reassess inflation risks, influencing monetary policy decisions."
             }
           ],
-          "endpoint": "Federal Reserve policy",
-          "strength": "strong"
+          "endpoint": "retail sector and monetary policy",
+          "strength": "speculative"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "up",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "weeks",
+          "assetClass": "equities",
+          "instrument": "European supermarkets",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
           "conviction": 3,
           "order": 1,
-          "plain": "Treasury yields are likely to rise as the market adjusts to tighter conditions.",
-          "detail": "The increased yield reflects the market's anticipation of reduced Fed intervention and ongoing inflation pressures."
+          "plain": "Shares of European supermarkets may fall due to increased costs and potential regulatory burdens.",
+          "detail": "The immediate impact on supermarket stocks will come from expected higher costs and potential regulatory actions, leading to a short-term price decline."
         },
         {
-          "assetClass": "equities",
-          "instrument": "US stock market",
-          "direction": "mixed",
+          "assetClass": "commodities",
+          "instrument": "European food commodities",
+          "direction": "up",
           "magnitude": "1 to 2%",
           "horizon": "weeks",
           "conviction": 2,
           "order": 2,
-          "plain": "Stocks could see mixed reactions as higher borrowing costs weigh against reduced rate hike fears.",
-          "detail": "Equity markets may experience volatility as investors balance the impact of higher yields against the potential for a more dovish Fed."
-        },
-        {
-          "assetClass": "fx",
-          "instrument": "US dollar",
-          "direction": "up",
-          "magnitude": "0.5 to 1%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 1,
-          "plain": "The dollar is likely to strengthen as higher yields attract foreign investment.",
-          "detail": "Increased Treasury yields make US assets more attractive, boosting demand for the dollar."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may underestimate how much tighter financial conditions could slow economic growth, which might lead to a reevaluation of equity valuations.",
-        "detail": "The market might not fully price in the potential drag on GDP from sustained higher yields and a strong dollar, which could impact earnings forecasts."
-      },
-      "falsifiers": [
-        "The Fed signals an unexpected rate hike.",
-        "Bond yields fall significantly in the next few weeks.",
-        "The US dollar weakens despite higher yields."
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Long US Dollar",
-          "plain": "Buy the US dollar against a basket of currencies to benefit from rising yields.",
-          "instrument": "FX futures",
-          "risk": "The dollar could weaken if the Fed signals a dovish turn."
-        }
-      ],
-      "watchNext": [
-        "Upcoming Federal Reserve meetings",
-        "US inflation data releases",
-        "Corporate earnings reports"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-10-12-fed-officials-want-to-hold-off-a-rate-hike-this-month-will-t",
-      "rank": 5,
-      "editorNote": "Fed's potential pause on rate hikes hinges on upcoming inflation data, affecting market expectations.",
-      "materiality": {
-        "score": 59.9,
-        "components": {
-          "corroboration": 13,
-          "authority": 13,
-          "breadth": 4.5,
-          "salience": 20,
-          "recency": 9.4
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "fed",
-          "rate hike",
-          "inflation"
-        ]
-      },
-      "sources": [
-        "MarketWatch"
-      ],
-      "links": [
-        {
-          "name": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/fed-officials-want-to-hold-off-a-rate-hike-this-month-will-this-weeks-inflation-data-let-them-a82754d1?mod=mw_rss_topstories",
-          "title": "Fed officials want to hold off a rate hike this month. Will this week’s inflation data let them?"
-        }
-      ],
-      "headlines": [
-        "Fed officials want to hold off a rate hike this month. Will this week’s inflation data let them?"
-      ],
-      "newestAt": "2026-10-12T11:00:00.000Z",
-      "headline": "Fed's Rate Pause Hinges on Inflation Data, Market Awaits Clarity",
-      "standfirst": "Fed officials are considering pausing rate hikes, pending this week's inflation data.",
-      "classification": {
-        "eventType": "monetary-policy",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The market anticipates a pause but inflation data could shift expectations.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "US"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Fed officials are inclined to pause rate hikes this month, but upcoming inflation data could change their decision.",
-        "whyItMatters": "This decision affects borrowing costs and investment returns across the economy.",
-        "detail": "The Fed's decision to pause or continue rate hikes is contingent on inflation data, influencing monetary policy expectations."
-      },
-      "chains": [
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "If inflation is high, the Fed may raise rates.",
-              "detail": "Elevated inflation could prompt the Fed to hike rates to curb price increases."
-            },
-            {
-              "plain": "Higher rates increase borrowing costs for companies.",
-              "detail": "A rate hike would elevate the discount rate, raising the cost of capital for businesses."
-            }
-          ],
-          "endpoint": "corporate borrowers",
-          "strength": "strong"
-        },
-        {
-          "channel": "discount-rate",
-          "links": [
-            {
-              "plain": "Higher rates push bond yields up.",
-              "detail": "A Fed rate hike would lead to higher yields on government bonds as investors demand greater returns."
-            },
-            {
-              "plain": "Rising yields make stocks less attractive.",
-              "detail": "As bond yields increase, the relative attractiveness of equities diminishes due to higher opportunity costs."
-            }
-          ],
-          "endpoint": "equity investors",
-          "strength": "moderate"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "up",
-          "magnitude": "10 to 20 basis points",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 1,
-          "plain": "If inflation is high, expect Treasury yields to rise as rate hike odds increase.",
-          "detail": "A higher inflation print would likely push the US 10-year yield up by 10 to 20 basis points as the market prices in rate hikes."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "US stock market",
-          "direction": "down",
-          "magnitude": "1 to 2%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Rising bond yields could lead to a stock market decline as investors reassess risk.",
-          "detail": "Higher yields make equities less attractive, potentially leading to a 1 to 2% drop in US stocks as investors shift to bonds."
+          "plain": "Prices for European food commodities might rise as supermarkets restock.",
+          "detail": "Increased demand for restocking by supermarkets could drive up food commodity prices in the short term."
         },
         {
           "assetClass": "credit",
-          "instrument": "US corporate bonds",
+          "instrument": "European retail sector bonds",
           "direction": "wider",
           "magnitude": "5 to 10 basis points",
           "horizon": "weeks",
-          "conviction": 3,
+          "conviction": 2,
           "order": 2,
-          "plain": "Corporate bond spreads may widen as borrowing costs rise.",
-          "detail": "With higher Treasury yields, corporate bond spreads could widen by 5 to 10 basis points due to increased credit risk."
+          "plain": "Credit spreads for European retail bonds may widen due to perceived higher operational risks.",
+          "detail": "The market may demand a higher risk premium for retail sector bonds due to increased operational and regulatory risks."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors might underestimate how persistent inflation could force the Fed to maintain a tighter policy longer than expected.",
-        "detail": "The market may not fully appreciate the risk of entrenched inflation, which could necessitate prolonged Fed tightening beyond current expectations."
+        "plain": "Investors may underestimate the potential for regulatory changes that could increase costs across the retail sector, not just for supermarkets.",
+        "detail": "The market might not fully price in the broader impact of potential regulatory changes on the entire retail sector, which could lead to higher compliance costs."
       },
       "falsifiers": [
-        "Inflation data comes in significantly lower than expected.",
-        "The Fed signals a clear commitment to pausing regardless of data."
+        "No significant regulatory changes are announced.",
+        "Supermarkets report minimal financial impact from the attack.",
+        "Central banks do not mention inflation concerns related to the incident."
       ],
       "tradeExpression": [
         {
-          "idea": "Long US Treasury yields",
-          "plain": "Buy US Treasury futures to profit from rising yields if inflation data is high.",
-          "instrument": "US Treasury futures",
-          "risk": "The trade loses if inflation data is weak and yields fall."
+          "idea": "Short European supermarkets",
+          "plain": "Sell shares of European supermarkets, anticipating cost increases and regulatory impacts.",
+          "instrument": "equity short",
+          "risk": "If regulatory impacts are minimal, supermarket shares could rebound."
         }
       ],
       "watchNext": [
-        "US Consumer Price Index (CPI) release",
-        "Fed meeting minutes"
+        "Announcements from French regulators on cybersecurity measures.",
+        "Earnings reports from affected supermarkets.",
+        "Central bank statements on inflation and supply chain risks."
       ],
       "glossary": [
         {
@@ -798,7 +825,7 @@
     }
   ],
   "diagnostics": {
-    "articlesIngested": 163,
+    "articlesIngested": 197,
     "clustersConsidered": 25,
     "feeds": [
       {
@@ -807,7 +834,7 @@
         "ok": true,
         "parsed": 20,
         "fresh": 0,
-        "ms": 741,
+        "ms": 127,
         "error": null
       },
       {
@@ -816,7 +843,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 0,
-        "ms": 705,
+        "ms": 129,
         "error": null
       },
       {
@@ -825,7 +852,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 0,
-        "ms": 1466,
+        "ms": 1007,
         "error": null
       },
       {
@@ -834,7 +861,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 1068,
+        "ms": 627,
         "error": "HTTP 404"
       },
       {
@@ -843,7 +870,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 1085,
+        "ms": 452,
         "error": "HTTP 404"
       },
       {
@@ -852,7 +879,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 1053,
+        "ms": 465,
         "error": "HTTP 403"
       },
       {
@@ -861,7 +888,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 0,
-        "ms": 1188,
+        "ms": 602,
         "error": null
       },
       {
@@ -870,7 +897,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 1294,
+        "ms": 538,
         "error": null
       },
       {
@@ -879,7 +906,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 0,
-        "ms": 1291,
+        "ms": 627,
         "error": null
       },
       {
@@ -888,7 +915,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 0,
-        "ms": 1345,
+        "ms": 613,
         "error": null
       },
       {
@@ -896,8 +923,8 @@
         "name": "WSJ Markets",
         "ok": true,
         "parsed": 61,
-        "fresh": 19,
-        "ms": 1321,
+        "fresh": 29,
+        "ms": 638,
         "error": null
       },
       {
@@ -905,8 +932,8 @@
         "name": "WSJ World",
         "ok": true,
         "parsed": 72,
-        "fresh": 24,
-        "ms": 1509,
+        "fresh": 27,
+        "ms": 630,
         "error": null
       },
       {
@@ -915,7 +942,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 1457,
+        "ms": 840,
         "error": "HTTP 404"
       },
       {
@@ -923,8 +950,8 @@
         "name": "CNBC",
         "ok": true,
         "parsed": 30,
-        "fresh": 27,
-        "ms": 1692,
+        "fresh": 30,
+        "ms": 755,
         "error": null
       },
       {
@@ -932,26 +959,26 @@
         "name": "CNBC Economy",
         "ok": true,
         "parsed": 30,
-        "fresh": 3,
-        "ms": 1785,
+        "fresh": 6,
+        "ms": 823,
         "error": null
       },
       {
         "id": "ft",
         "name": "Financial Times",
         "ok": true,
-        "parsed": 12,
-        "fresh": 12,
-        "ms": 2394,
+        "parsed": 11,
+        "fresh": 11,
+        "ms": 1457,
         "error": null
       },
       {
         "id": "bbc-biz",
         "name": "BBC Business",
         "ok": true,
-        "parsed": 41,
-        "fresh": 14,
-        "ms": 1666,
+        "parsed": 43,
+        "fresh": 22,
+        "ms": 761,
         "error": null
       },
       {
@@ -959,8 +986,8 @@
         "name": "Guardian Business",
         "ok": true,
         "parsed": 40,
-        "fresh": 19,
-        "ms": 1771,
+        "fresh": 26,
+        "ms": 759,
         "error": null
       },
       {
@@ -968,8 +995,8 @@
         "name": "Investing.com FX",
         "ok": true,
         "parsed": 10,
-        "fresh": 5,
-        "ms": 1873,
+        "fresh": 6,
+        "ms": 789,
         "error": null
       },
       {
@@ -978,7 +1005,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 1901,
+        "ms": 802,
         "error": null
       },
       {
@@ -987,7 +1014,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 1882,
+        "ms": 789,
         "error": null
       },
       {
@@ -996,7 +1023,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 2956,
+        "ms": 954,
         "error": "HTTP 404"
       },
       {
@@ -1005,7 +1032,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 1876,
+        "ms": 805,
         "error": null
       }
     ],
@@ -1014,14 +1041,14 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 570,
+        "ms": 561,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 363,
+        "ms": 486,
         "error": "no rows"
       },
       {
@@ -1034,11 +1061,11 @@
     ],
     "usage": {
       "calls": 6,
-      "inputTokens": 12547,
-      "outputTokens": 5616,
-      "estimatedCostUsd": 0.0875
+      "inputTokens": 12506,
+      "outputTokens": 5851,
+      "estimatedCostUsd": 0.0898
     },
-    "runtimeMs": 21622
+    "runtimeMs": 24026
   },
   "scorecardSummary": {
     "total": 19,
