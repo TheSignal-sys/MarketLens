@@ -1,0 +1,1098 @@
+{
+  "version": 1,
+  "date": "2026-10-14",
+  "dateLabel": "Wednesday, 14 October 2026",
+  "generatedAt": "2026-10-14T10:06:44.941Z",
+  "model": "openai/gpt-4o",
+  "marketRead": {
+    "headline": "Inflation data anticipation and geopolitical tensions",
+    "body": "Investors are closely watching upcoming U.S. inflation data, which could influence Treasury yields and equity markets. The ongoing 'Godzilla El Niño' is causing significant disruptions in commodity markets, particularly impacting inflation forecasts in the Philippines. Meanwhile, geopolitical tensions, including Ukraine's concerns over Starlink and EU-China trade pressures, add layers of uncertainty to global markets.",
+    "regime": "inflation data anticipation"
+  },
+  "snapshot": {
+    "quotes": [],
+    "report": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 574,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 280,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "fetchedAt": "2026-10-14T10:06:25.158Z"
+  },
+  "stories": [
+    {
+      "id": "2026-10-14-godzilla-el-ni-o-is-wreaking-havoc-with-philippine-central-b",
+      "rank": 1,
+      "editorNote": "The 'Godzilla El Niño' affects multiple asset classes and has lasting implications for inflation forecasts and commodity prices.",
+      "materiality": {
+        "score": 71,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 19.6,
+          "recency": 8.4
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "inflation",
+          "ppi",
+          "oil"
+        ]
+      },
+      "sources": [
+        "CNBC",
+        "CNBC Economy"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
+          "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts"
+        },
+        {
+          "name": "CNBC Economy",
+          "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
+          "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts"
+        }
+      ],
+      "headlines": [
+        "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts"
+      ],
+      "newestAt": "2026-10-14T04:24:28.000Z",
+      "headline": "Philippine Inflation Surges as 'Godzilla El Niño' Intensifies",
+      "standfirst": "A severe El Niño is complicating inflation forecasts in the Philippines.",
+      "classification": {
+        "eventType": "supply-shock",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market has anticipated some inflationary pressure, but the severity of El Niño's impact is still unfolding.",
+        "persistence": "lasting",
+        "regionFocus": [
+          "Philippines",
+          "Southeast Asia"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The 'Godzilla El Niño' is causing significant disruptions in the Philippines, pushing inflation to a three-year high. The central bank is considering various policy responses to manage the economic impact.",
+        "whyItMatters": "Investors should care because rising inflation can affect interest rates, currency values, and the profitability of companies reliant on stable input costs.",
+        "detail": "The Philippine central bank is under pressure to adjust its monetary policy as inflation surges due to adverse weather conditions affecting agricultural output and energy prices."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "The central bank may raise interest rates to combat inflation.",
+              "detail": "Higher inflation increases the likelihood of the central bank tightening monetary policy by raising interest rates to curb price growth."
+            },
+            {
+              "plain": "Higher rates could slow economic growth.",
+              "detail": "Increased borrowing costs from higher rates could dampen consumer spending and business investment, slowing GDP growth."
+            }
+          ],
+          "endpoint": "Philippine economy",
+          "strength": "strong"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The Philippine peso may weaken due to inflation concerns.",
+              "detail": "Rising inflation can lead to a weaker currency as investors demand higher returns for holding assets denominated in that currency."
+            },
+            {
+              "plain": "A weaker peso makes imports more expensive.",
+              "detail": "As the peso depreciates, the cost of imported goods rises, further fueling inflationary pressures."
+            }
+          ],
+          "endpoint": "Philippine importers and consumers",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "Philippine government bond yields",
+          "direction": "up",
+          "magnitude": "20 to 40 basis points",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Government bond yields in the Philippines are likely to rise as the central bank raises rates.",
+          "detail": "As monetary policy tightens, yields on government bonds increase to reflect higher expected returns for investors."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "Philippine peso",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The peso is expected to weaken due to rising inflation and potential rate hikes.",
+          "detail": "Inflationary pressures and the prospect of higher interest rates can lead to currency depreciation as capital flows out seeking better returns."
+        },
+        {
+          "assetClass": "commodities",
+          "instrument": "Agricultural commodities",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Prices for agricultural commodities may rise due to supply disruptions from El Niño.",
+          "detail": "El Niño's impact on weather patterns can reduce crop yields, leading to higher prices for affected commodities."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might not fully appreciate how prolonged inflation could shift the central bank's focus from growth to price stability, leading to sustained higher interest rates.",
+        "detail": "The market may underestimate the central bank's tolerance for economic slowdown in favour of controlling inflation, which could lead to a more aggressive tightening cycle."
+      },
+      "falsifiers": [
+        "El Niño's impact diminishes faster than expected.",
+        "The central bank decides to maintain current interest rates despite inflation.",
+        "Global commodity prices fall, easing inflationary pressures."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short Philippine Peso",
+          "plain": "Sell the Philippine peso against the US dollar to profit from expected depreciation.",
+          "instrument": "FX forward or options",
+          "risk": "The peso strengthens unexpectedly if inflation concerns subside or the central bank intervenes."
+        }
+      ],
+      "watchNext": [
+        "Philippine central bank's next interest rate decision",
+        "Weather forecasts for El Niño's progression",
+        "Inflation data releases in the Philippines"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "El Niño",
+          "plain": "A climate pattern that describes the unusual warming of surface waters in the eastern tropical Pacific Ocean."
+        },
+        {
+          "term": "monetary policy",
+          "plain": "Actions by a central bank to influence the availability and cost of money and credit to help promote national economic goals."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-14-treasury-eurozone-yields-decline-as-markets-look-to-u-s-infl",
+      "rank": 2,
+      "editorNote": "The anticipation of U.S. inflation data is affecting rates, equities, and commodities, with potential for significant market repricing.",
+      "materiality": {
+        "score": 69.7,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 18,
+          "salience": 20,
+          "recency": 5.7
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "inflation",
+          "treasury",
+          "crude",
+          "brent",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/economy/central-banking/treasury-eurozone-yields-fall-as-markets-look-to-u-s-inflation-data-412d95a4?mod=rss_markets_main",
+          "title": "Treasury, Eurozone Yields Decline as Markets Look to U.S. Inflation Data"
+        }
+      ],
+      "headlines": [
+        "Treasury, Eurozone Yields Decline as Markets Look to U.S. Inflation Data"
+      ],
+      "newestAt": "2026-10-13T18:47:00.000Z",
+      "headline": "Bond Yields Drop Amid Inflation Data Anticipation",
+      "standfirst": "U.S. Treasury and eurozone bond yields fell as markets await U.S. inflation data.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Markets have partially adjusted for expected inflation data, but uncertainty remains.",
+        "persistence": "days",
+        "regionFocus": [
+          "US",
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Yields on U.S. Treasury and eurozone government bonds declined. This was influenced by falling Brent crude prices and a drop in artificial intelligence stock prices.",
+        "whyItMatters": "Investors are adjusting positions in anticipation of U.S. inflation data, which could impact future interest rate decisions.",
+        "detail": "The decline in yields reflects market positioning ahead of key inflation data, which investors expect could alter central bank rate expectations."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Lower yields suggest expectations for stable or lower interest rates.",
+              "detail": "The drop in yields indicates market participants anticipate that central banks may hold or cut rates if inflation data is lower than expected."
+            }
+          ],
+          "endpoint": "central banks",
+          "strength": "moderate"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Falling bond yields reduce the cost of borrowing.",
+              "detail": "As government bond yields decline, the benchmark rate for other borrowing costs decreases, lowering the discount rate applied to future cash flows."
+            }
+          ],
+          "endpoint": "corporate borrowers",
+          "strength": "strong"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors shift from stocks to bonds as yields fall.",
+              "detail": "With bond yields dropping, the relative attractiveness of equities diminishes, leading investors to reallocate towards fixed income."
+            }
+          ],
+          "endpoint": "equity markets",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 1,
+          "plain": "US 10-year Treasury yields are likely to fall as investors anticipate stable rates.",
+          "detail": "The expectation of unchanged or lower rates drives demand for Treasuries, pushing yields down by 5 to 10 basis points."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "AI technology stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "AI stocks may see further declines as investors move towards safer assets.",
+          "detail": "The shift in investor preference towards bonds amid yield drops could lead to a 2 to 4% decrease in AI stock prices."
+        },
+        {
+          "assetClass": "commodities",
+          "instrument": "Brent crude oil",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Brent crude prices are expected to fall due to lower demand expectations.",
+          "detail": "A decrease in economic activity expectations, reflected in bond yields, could lead to a 1 to 2% drop in Brent crude prices."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the potential for inflation data to surprise on the upside, which could lead to a rapid reversal in bond yields.",
+        "detail": "If inflation prints higher than expected, markets might quickly reprice for tighter monetary policy, reversing the current yield decline."
+      },
+      "falsifiers": [
+        "A higher-than-expected inflation print",
+        "Central bank signals of imminent rate hikes"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long US Treasuries",
+          "plain": "Buy US Treasuries to benefit from falling yields as inflation concerns ease.",
+          "instrument": "Cash bonds or futures",
+          "risk": "Yields could rise sharply if inflation data surprises on the upside."
+        }
+      ],
+      "watchNext": [
+        "Upcoming U.S. inflation report",
+        "Central bank meetings and statements"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-14-ukraine-warns-starlink-limits-are-disrupting-military-operat",
+      "rank": 3,
+      "editorNote": "Ukraine's warning about Starlink disruptions highlights geopolitical risks that could impact energy markets and broader geopolitical stability.",
+      "materiality": {
+        "score": 57.5,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 12.8,
+          "recency": 9.8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "war",
+          "ceasefire"
+        ]
+      },
+      "sources": [
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/14/russia-ukraine-energy-ceasefire-power-outages.html",
+          "title": "Ukraine warns Starlink limits are disrupting military operations as Russia pounds its energy infrastructure"
+        }
+      ],
+      "headlines": [
+        "Ukraine warns Starlink limits are disrupting military operations as Russia pounds its energy infrastructure"
+      ],
+      "newestAt": "2026-10-14T09:18:18.000Z",
+      "headline": "Starlink Disruptions Heighten Geopolitical Risks, Affect Energy Markets",
+      "standfirst": "Ukraine warns Starlink limits are disrupting military operations as Russia targets energy infrastructure.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market has reacted to the initial news of the Starlink disruptions but may not fully account for the broader geopolitical implications.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Ukraine has reported that disruptions to Starlink services are affecting its military operations, coinciding with Russian attacks on its energy infrastructure.",
+        "whyItMatters": "The disruption to Starlink services could weaken Ukraine's military capabilities, potentially prolonging the conflict and impacting energy markets.",
+        "detail": "The geopolitical tension due to Starlink disruptions adds uncertainty to energy supply chains, which could lead to increased volatility in energy prices."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Energy companies may face higher costs due to disrupted supply chains.",
+              "detail": "Disruptions in Ukraine could lead to increased energy prices, raising input costs for energy companies."
+            },
+            {
+              "plain": "Higher costs could reduce profit margins for these companies.",
+              "detail": "Increased energy prices could compress margins for companies reliant on stable energy inputs."
+            }
+          ],
+          "endpoint": "energy companies",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The euro may weaken if energy supply concerns persist.",
+              "detail": "Continued disruptions in energy supply could lead to a weaker euro as Europe is heavily reliant on energy imports."
+            }
+          ],
+          "endpoint": "euro",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "European natural gas prices",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Natural gas prices in Europe are likely to rise due to supply concerns.",
+          "detail": "Disruptions in Ukraine could lead to tighter supply, pushing European natural gas prices higher."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "EUR/USD",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The euro may weaken against the dollar due to energy supply concerns.",
+          "detail": "Persistent energy supply issues could weigh on the euro as Europe faces economic headwinds."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "European utility stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Utility stocks in Europe may decline due to rising energy costs.",
+          "detail": "Rising natural gas prices could increase operational costs for utility companies, impacting their profitability."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "The market may not fully appreciate the potential for prolonged geopolitical tensions to impact European economic growth, leading to a more sustained weakness in the euro.",
+        "detail": "Investors might underestimate the long-term economic impact of energy supply disruptions on European growth, which could lead to a sustained depreciation of the euro."
+      },
+      "falsifiers": [
+        "A rapid resolution to the Starlink disruptions.",
+        "A de-escalation in the Ukraine-Russia conflict.",
+        "Unexpectedly strong economic data from Europe."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short EUR/USD",
+          "plain": "Sell the euro against the dollar to benefit from potential euro weakness due to energy concerns.",
+          "instrument": "FX futures or options",
+          "risk": "The euro could strengthen if energy supply concerns are resolved quickly."
+        }
+      ],
+      "watchNext": [
+        "Further developments in the Ukraine-Russia conflict.",
+        "Announcements from Starlink regarding service restoration.",
+        "European Central Bank policy responses."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-14-uk-resists-eu-pressure-to-hit-china-with-tariffs",
+      "rank": 4,
+      "editorNote": "The UK's resistance to EU pressure on China tariffs could have broader implications for trade relations and currency markets.",
+      "materiality": {
+        "score": 59.1,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 20,
+          "recency": 8.6
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "tariff",
+          "war",
+          "euro"
+        ]
+      },
+      "sources": [
+        "Guardian Business"
+      ],
+      "links": [
+        {
+          "name": "Guardian Business",
+          "url": "https://www.theguardian.com/politics/2026/oct/14/uk-will-not-put-tariffs-on-chinese-vehicles-says-jonathan-reynolds",
+          "title": "UK resists EU pressure to hit China with tariffs"
+        }
+      ],
+      "headlines": [
+        "UK resists EU pressure to hit China with tariffs"
+      ],
+      "newestAt": "2026-10-14T05:00:45.000Z",
+      "headline": "UK's Tariff Stance on China Strains EU Trade Relations",
+      "standfirst": "The UK refuses to impose tariffs on Chinese imports despite EU pressure.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Markets expected some resistance from the UK, but the firm stance was not fully anticipated.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe",
+          "UK",
+          "China"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The UK government has decided not to impose tariffs on Chinese imports, resisting pressure from the EU. This decision comes amid calls for increased tariffs on Chinese vehicles to protect European industries.",
+        "whyItMatters": "This decision could affect trade relations between the UK and the EU, potentially impacting currency and bond markets.",
+        "detail": "The UK's stance may lead to tensions with the EU, influencing trade negotiations and potentially affecting the GBP and Euro exchange rates."
+      },
+      "chains": [
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The UK's decision could weaken trade relations with the EU.",
+              "detail": "A lack of alignment on trade policy may strain UK-EU relations, affecting trade flows and currency stability."
+            },
+            {
+              "plain": "This strain may lead to volatility in the GBP/EUR exchange rate.",
+              "detail": "Increased uncertainty in trade negotiations could lead to fluctuations in the GBP/EUR pair as investors reassess risk."
+            }
+          ],
+          "endpoint": "GBP/EUR exchange rate",
+          "strength": "moderate"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "UK-based companies may face increased competition from Chinese imports.",
+              "detail": "Without tariffs, UK firms might struggle against cheaper Chinese goods, impacting their market share and profitability."
+            },
+            {
+              "plain": "This could pressure earnings for UK manufacturers.",
+              "detail": "Reduced pricing power and increased competition could lead to narrower profit margins for UK industrial firms."
+            }
+          ],
+          "endpoint": "UK manufacturing sector",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "fx",
+          "instrument": "GBP/EUR exchange rate",
+          "direction": "mixed",
+          "magnitude": "0.5% to 1%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The GBP/EUR rate may experience volatility as trade tensions with the EU develop.",
+          "detail": "Trade policy divergence could lead to uncertainty, causing fluctuations in the GBP/EUR rate as market participants reassess risk."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "UK manufacturing sector",
+          "direction": "down",
+          "magnitude": "1% to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "UK manufacturers might see their stock prices decline due to increased competition.",
+          "detail": "Without tariffs, UK manufacturers could face pressure on margins, leading to potential stock price declines."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "UK government bond yields",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 2,
+          "order": 2,
+          "plain": "UK bond yields might rise due to increased economic uncertainty.",
+          "detail": "Trade tensions could lead to higher risk premiums, pushing UK bond yields higher as investors demand more compensation for uncertainty."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of strained UK-EU trade relations on the broader European economy. The UK's decision not to align with the EU on tariffs could set a precedent for future trade disagreements, potentially affecting cross-border supply chains and economic growth.",
+        "detail": "The market may not fully price in the prolonged economic impact of UK-EU trade policy divergence, which could disrupt supply chains and slow growth."
+      },
+      "falsifiers": [
+        "The UK decides to impose tariffs on Chinese imports after all.",
+        "The EU softens its stance and reduces pressure on the UK.",
+        "A new trade agreement between the UK and EU mitigates tensions."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short UK Manufacturing Stocks",
+          "plain": "Sell UK manufacturing equities due to potential earnings pressure from increased competition.",
+          "instrument": "equity short, options",
+          "risk": "The UK government changes its stance and imposes tariffs, improving the outlook for UK manufacturers."
+        }
+      ],
+      "watchNext": [
+        "Upcoming UK-EU trade negotiations",
+        "Statements from UK and EU officials on trade policy",
+        "Economic data releases from the UK and EU"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-14-bank-of-america-to-pay-1-2-billion-to-settle-violations-of-m",
+      "rank": 5,
+      "editorNote": "Bank of America's settlement over money laundering violations, while significant, is largely priced in but still affects regulatory sentiment and financial sector stability.",
+      "materiality": {
+        "score": 69.7,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 6.7
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "treasury",
+          "sanctions",
+          "repo",
+          "earnings",
+          "regulat"
+        ]
+      },
+      "sources": [
+        "WSJ Markets",
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/regulation/bank-of-america-to-pay-1-21-billion-to-settle-violations-of-money-laundering-sanctions-laws-203b5fdf?mod=rss_markets_main",
+          "title": "Bank of America to Pay $1.2 Billion to Settle Violations of Money Laundering, Sanctions Laws"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/13/bank-of-america-treasury-money-laundering.html",
+          "title": "Bank of America fined $1.2 billion over money-laundering violations"
+        }
+      ],
+      "headlines": [
+        "Bank of America to Pay $1.2 Billion to Settle Violations of Money Laundering, Sanctions Laws",
+        "Bank of America fined $1.2 billion over money-laundering violations"
+      ],
+      "newestAt": "2026-10-13T22:05:00.000Z",
+      "headline": "Bank of America Settlement Shakes Regulatory Confidence",
+      "standfirst": "Bank of America will pay $1.2 billion to settle money laundering violations.",
+      "classification": {
+        "eventType": "regulatory",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The settlement was anticipated, but the scale of regulatory scrutiny was underestimated.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Bank of America has agreed to pay a $1.2 billion fine to settle allegations of money laundering violations. This settlement follows accusations that the bank missed $5 billion in suspicious activity.",
+        "whyItMatters": "This settlement highlights ongoing regulatory risks in the financial sector, potentially affecting future compliance costs and regulatory scrutiny.",
+        "detail": "The settlement reflects heightened regulatory vigilance, which could lead to increased compliance costs and influence the regulatory environment for large financial institutions."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Bank of America's profits may be pressured by increased compliance costs.",
+              "detail": "The settlement may lead to higher compliance expenses as Bank of America enhances its internal controls to prevent future violations."
+            },
+            {
+              "plain": "Other banks might also face higher compliance costs due to increased regulatory scrutiny.",
+              "detail": "The regulatory environment is likely to tighten for the entire banking sector, leading to higher operating costs as banks invest in compliance."
+            }
+          ],
+          "endpoint": "banking sector profitability",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Regulators may push for stricter rules on money laundering.",
+              "detail": "The settlement could prompt regulators to propose or enforce stricter anti-money laundering regulations, affecting banks' operational frameworks."
+            },
+            {
+              "plain": "This could influence central banks to maintain a cautious stance on interest rate hikes.",
+              "detail": "With increased regulatory scrutiny potentially slowing credit growth, central banks might adopt a more cautious approach to tightening monetary policy."
+            }
+          ],
+          "endpoint": "central bank policy",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "US banking sector stocks",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 1,
+          "plain": "Banking stocks may dip as investors reassess compliance costs and regulatory risks.",
+          "detail": "The settlement increases perceived regulatory risks, likely leading to a short-term sell-off in bank stocks as investors factor in potential compliance cost increases."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "Bank of America credit spreads",
+          "direction": "wider",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Bank of America's credit spreads may widen due to perceived higher risk.",
+          "detail": "The settlement could lead to a reassessment of Bank of America's credit risk, causing spreads to widen as investors demand more compensation for holding its debt."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US Treasury yields",
+          "direction": "down",
+          "magnitude": "3 to 5 basis points",
+          "horizon": "weeks",
+          "conviction": 2,
+          "order": 2,
+          "plain": "US Treasury yields might dip as regulatory caution supports a dovish policy bias.",
+          "detail": "Increased regulatory scrutiny could slow economic activity, leading investors to anticipate a more dovish stance from the Fed, thus pushing Treasury yields lower."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might underestimate how this settlement could lead to a broader tightening of regulatory frameworks across the financial sector, potentially increasing compliance costs industry-wide.",
+        "detail": "The market may not fully price in the ripple effects of heightened regulatory scrutiny, which could lead to increased compliance burdens and operational costs for the entire banking sector."
+      },
+      "falsifiers": [
+        "If other banks do not report increased compliance costs.",
+        "If regulatory bodies do not propose stricter regulations following the settlement.",
+        "If Bank of America's credit spreads do not widen in the coming weeks."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US banking stocks",
+          "plain": "Sell US banking sector stocks to profit from potential declines due to increased compliance costs.",
+          "instrument": "sell banking sector ETF or individual bank stocks",
+          "risk": "The main risk is a strong rebound in banking stocks if compliance costs are lower than expected."
+        }
+      ],
+      "watchNext": [
+        "Upcoming regulatory announcements regarding anti-money laundering rules.",
+        "Bank of America's next earnings report for compliance cost updates.",
+        "Statements from the Federal Reserve on regulatory impacts on monetary policy."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    }
+  ],
+  "diagnostics": {
+    "articlesIngested": 208,
+    "clustersConsidered": 25,
+    "feeds": [
+      {
+        "id": "fed",
+        "name": "Federal Reserve",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 1,
+        "ms": 163,
+        "error": null
+      },
+      {
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 1,
+        "ms": 138,
+        "error": null
+      },
+      {
+        "id": "ecb",
+        "name": "European Central Bank",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 2,
+        "ms": 526,
+        "error": null
+      },
+      {
+        "id": "boe",
+        "name": "Bank of England",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 524,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 453,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 345,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 0,
+        "ms": 674,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 418,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 422,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 472,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 30,
+        "ms": 476,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 73,
+        "fresh": 28,
+        "ms": 490,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 576,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 30,
+        "ms": 669,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 6,
+        "ms": 804,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 11,
+        "fresh": 11,
+        "ms": 1174,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 49,
+        "fresh": 22,
+        "ms": 650,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": true,
+        "parsed": 40,
+        "fresh": 29,
+        "ms": 665,
+        "error": null
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 8,
+        "ms": 686,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 709,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 682,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 814,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 686,
+        "error": null
+      }
+    ],
+    "marketProviders": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 574,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 280,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "usage": {
+      "calls": 6,
+      "inputTokens": 12586,
+      "outputTokens": 5985,
+      "estimatedCostUsd": 0.0913
+    },
+    "runtimeMs": 21898
+  },
+  "scorecardSummary": {
+    "total": 19,
+    "open": 13,
+    "flat": 0,
+    "hits": 4,
+    "misses": 2,
+    "settled": 6,
+    "hitRate": 66.7,
+    "byClass": {
+      "rates": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "commodities": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "fx": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "vol": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "credit": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "equities": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      }
+    },
+    "byConviction": {
+      "3": {
+        "hits": 2,
+        "total": 4,
+        "rate": 50
+      },
+      "4": {
+        "hits": 2,
+        "total": 2,
+        "rate": 100
+      }
+    }
+  }
+}
