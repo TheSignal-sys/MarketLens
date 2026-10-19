@@ -1,618 +1,208 @@
 {
   "version": 1,
-  "date": "2026-10-16",
-  "dateLabel": "Friday, 16 October 2026",
-  "generatedAt": "2026-10-16T09:42:36.541Z",
+  "date": "2026-10-19",
+  "dateLabel": "Monday, 19 October 2026",
+  "generatedAt": "2026-10-19T10:41:58.989Z",
   "model": "openai/gpt-4o",
   "marketRead": {
-    "headline": "Gold and Indonesian Stocks Drive Market Focus",
-    "body": "Gold prices are rising due to a weaker US dollar, which could lead to increased interest in commodities. Indonesian stocks are under pressure as MSCI considers downgrading the market, potentially affecting regional equity flows. The Bank of England's cautious stance on inflation suggests interest rates may remain stable, impacting bond markets and related sectors.",
-    "regime": "currency and equity volatility"
+    "headline": "AI stock rebound and geopolitical shifts dominate",
+    "body": "AI stocks are rebounding, lifting Wall Street futures despite recent tech selloffs. President Trump's waiver of Russia sanctions is pushing oil prices lower, impacting commodities and related sectors. French protests are causing bond yields to rise, affecting European markets and the euro.",
+    "regime": "geopolitical and tech-driven volatility"
   },
   "snapshot": {
-    "quotes": [],
+    "quotes": [
+      {
+        "key": "spx",
+        "label": "S&P 500",
+        "group": "equities",
+        "unit": "index",
+        "value": 7659.44,
+        "display": "7,659",
+        "change": -152.10000000000036,
+        "changePct": -1.9471192620149211,
+        "changeDisplay": "-1.95%",
+        "asOf": "2026-10-16",
+        "provider": "yahoo"
+      }
+    ],
     "report": [
       {
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 10475,
-        "error": "TypeError: fetch failed"
+        "ms": 643,
+        "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
-        "ok": false,
-        "count": 0,
-        "ms": 262,
-        "error": "no rows"
+        "ok": true,
+        "count": 1,
+        "ms": 482,
+        "error": null
       },
       {
         "provider": "fred",
         "ok": false,
         "count": 0,
-        "ms": 0,
+        "ms": 1,
         "error": "no rows"
       }
     ],
-    "fetchedAt": "2026-10-16T09:42:17.173Z"
+    "fetchedAt": "2026-10-19T10:41:38.101Z"
   },
   "stories": [
     {
-      "id": "2026-10-16-gold-rises-on-softer-u-s-dollar",
+      "id": "2026-10-19-wall-st-futures-climb-as-ai-stocks-rebound-oil-yields-fall",
       "rank": 1,
-      "editorNote": "Gold's rise on a softer dollar could shift commodity investment strategies.",
+      "editorNote": "AI stock rebound affects multiple asset classes and indicates a potential shift in market sentiment.",
       "materiality": {
-        "score": 67,
-        "components": {
-          "corroboration": 13,
-          "authority": 13,
-          "breadth": 13.5,
-          "salience": 17.8,
-          "recency": 9.7
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "selloff",
-          "gold",
-          "dollar"
-        ]
-      },
-      "sources": [
-        "WSJ Markets"
-      ],
-      "links": [
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/commodities-futures/gold-falls-as-investors-await-fed-chairmans-remarks-f12f0c32?mod=rss_markets_main",
-          "title": "Gold Rises on Softer U.S. Dollar"
-        }
-      ],
-      "headlines": [
-        "Gold Rises on Softer U.S. Dollar"
-      ],
-      "newestAt": "2026-10-16T08:35:00.000Z",
-      "headline": "Gold Price Increase Signals Potential Shift in Commodity Strategies",
-      "standfirst": "Gold prices rose due to a weaker U.S. dollar.",
-      "classification": {
-        "eventType": "macro-data",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "Gold's rise reflects some anticipation of dollar weakness, but further moves depend on sustained currency trends.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "Global",
-          "US"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Gold prices increased as the U.S. dollar weakened. Saxo Bank noted resistance at $4,235, a level previously tested in late September.",
-        "whyItMatters": "Investors may adjust commodity allocations in response to currency-driven gold price changes.",
-        "detail": "The U.S. dollar's decline has made gold more attractive, pushing it towards key technical levels, indicating potential for further gains."
-      },
-      "chains": [
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "A weaker dollar makes gold cheaper for non-U.S. buyers.",
-              "detail": "As the dollar falls, gold becomes more affordable in other currencies, boosting demand."
-            },
-            {
-              "plain": "Increased demand raises gold prices further.",
-              "detail": "The currency-driven demand increase pushes gold prices higher, reinforcing the trend."
-            }
-          ],
-          "endpoint": "global gold buyers",
-          "strength": "strong"
-        },
-        {
-          "channel": "substitution",
-          "links": [
-            {
-              "plain": "Investors may shift from dollar assets to gold.",
-              "detail": "With the dollar weakening, investors seek alternatives like gold for better returns."
-            },
-            {
-              "plain": "This shift can increase gold's appeal relative to other commodities.",
-              "detail": "As funds move into gold, its relative attractiveness compared to other commodities rises."
-            }
-          ],
-          "endpoint": "commodity investors",
-          "strength": "moderate"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "commodities",
-          "instrument": "Gold",
-          "direction": "up",
-          "magnitude": "2 to 4%",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Gold prices are likely to rise further as the dollar weakens, attracting more buyers.",
-          "detail": "The ongoing dollar weakness supports further gold price increases, potentially breaching resistance levels."
-        },
-        {
-          "assetClass": "fx",
-          "instrument": "U.S. Dollar Index",
-          "direction": "down",
-          "magnitude": "0.5 to 1%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "The dollar may continue to weaken, enhancing gold's attractiveness.",
-          "detail": "Sustained dollar weakness could lead to further declines in the U.S. Dollar Index, supporting gold prices."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "Gold mining stocks",
-          "direction": "up",
-          "magnitude": "3 to 5%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Gold mining stocks may benefit from rising gold prices.",
-          "detail": "Higher gold prices can boost mining company revenues, supporting stock price increases."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors might underestimate the persistence of the dollar's weakness, which could sustain higher gold prices longer than expected.",
-        "detail": "The market may not fully price in the potential for prolonged dollar weakness, which could keep gold prices elevated."
-      },
-      "falsifiers": [
-        "A sudden rebound in the U.S. dollar",
-        "Stronger-than-expected U.S. economic data"
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Long Gold Futures",
-          "plain": "Buy gold futures to capitalize on expected price increases due to dollar weakness.",
-          "instrument": "Gold futures",
-          "risk": "A strengthening dollar could reverse gold price gains."
-        }
-      ],
-      "watchNext": [
-        "Upcoming U.S. economic data releases",
-        "Federal Reserve policy announcements"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-10-16-indonesian-stocks-dive-as-msci-weighs-downgrade-to-standalon",
-      "rank": 2,
-      "editorNote": "MSCI's potential downgrade of Indonesia could significantly affect regional equity markets.",
-      "materiality": {
-        "score": 66.8,
+        "score": 68.6,
         "components": {
           "corroboration": 21,
-          "authority": 13,
-          "breadth": 9,
-          "salience": 14.5,
-          "recency": 9.3
+          "authority": 7,
+          "breadth": 18,
+          "salience": 12.8,
+          "recency": 9.8
         },
         "distinctSources": 2,
         "salienceTerms": [
-          "downgrade",
-          "war"
+          "selloff",
+          "oil"
         ]
       },
       "sources": [
-        "WSJ Markets",
-        "WSJ World"
+        "Investing.com Economy",
+        "Investing.com Equities"
       ],
       "links": [
         {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/investing/indonesian-stocks-dive-as-msci-weighs-downgrade-to-standalone-market-406133fc?mod=rss_markets_main",
-          "title": "Indonesian Stocks Dive as MSCI Weighs Downgrade to Standalone Market"
+          "name": "Investing.com Economy",
+          "url": "https://www.investing.com/news/economy-news/wall-st-futures-climb-as-ai-stocks-rebound-oil-yields-fall-4956777",
+          "title": "Wall St futures climb as AI stocks rebound; oil, yields fall"
         },
         {
-          "name": "WSJ World",
-          "url": "https://www.wsj.com/finance/investing/indonesian-stocks-dive-as-msci-weighs-downgrade-to-standalone-market-406133fc?mod=rss_worldnews",
-          "title": "Indonesian Stocks Dive as MSCI Weighs Downgrade to Standalone Market"
+          "name": "Investing.com Equities",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-climb-as-investors-return-to-ai-trade-after-selloff-4956195",
+          "title": "S&P, Nasdaq futures climb as AI stocks rebound after selloff"
         }
       ],
       "headlines": [
-        "Indonesian Stocks Dive as MSCI Weighs Downgrade to Standalone Market"
+        "Wall St futures climb as AI stocks rebound; oil, yields fall",
+        "S&P, Nasdaq futures climb as AI stocks rebound after selloff"
       ],
-      "newestAt": "2026-10-16T07:18:00.000Z",
-      "headline": "Indonesian Stocks Plummet Amid MSCI Downgrade Fears",
-      "standfirst": "Indonesian stocks are tumbling as MSCI considers removing the country from its indexes.",
+      "newestAt": "2026-10-19T10:08:35.000Z",
+      "headline": "AI Stock Rebound Shifts Market Sentiment, Eases Bond Yields",
+      "standfirst": "AI stocks recover, boosting Wall St futures and easing pressure on bond yields.",
       "classification": {
-        "eventType": "flows",
+        "eventType": "corporate",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some risk of downgrade but the scale of the sell-off indicates further repricing.",
-        "persistence": "weeks",
+        "pricedInRationale": "The initial rebound in AI stocks was expected after the selloff, but the broader impact on bond yields and market sentiment is still unfolding.",
+        "persistence": "days",
         "regionFocus": [
-          "Indonesia",
-          "Southeast Asia"
+          "US",
+          "Global"
         ]
       },
       "whatHappened": {
-        "plain": "MSCI is considering downgrading Indonesia from its indexes. This has led to a sharp drop in Indonesian stock prices.",
-        "whyItMatters": "Being removed from MSCI indexes could lead to significant capital outflows from Indonesia, impacting its financial markets.",
-        "detail": "MSCI's potential downgrade signals a loss of confidence in Indonesia's market conditions, potentially triggering portfolio reallocations by global investors."
+        "plain": "AI stocks have bounced back after a recent selloff, leading to a rise in Wall Street futures. This recovery has also contributed to a decline in oil prices and bond yields.",
+        "whyItMatters": "The rebound in AI stocks suggests a shift in investor sentiment, potentially affecting multiple asset classes and influencing central bank policy expectations.",
+        "detail": "The recovery in AI stocks has boosted market confidence, leading to a rally in futures and a decrease in bond yields as investors adjust their risk perceptions."
       },
       "chains": [
         {
           "channel": "positioning",
           "links": [
             {
-              "plain": "Investors sell Indonesian stocks to reduce exposure.",
-              "detail": "Funds tracking MSCI indexes preemptively sell Indonesian equities to manage potential outflows."
+              "plain": "Investors buy back AI stocks after a selloff.",
+              "detail": "The recent selloff in AI stocks created buying opportunities, leading to a rebound as investors reposition their portfolios."
             },
             {
-              "plain": "This selling pressure drives stock prices down further.",
-              "detail": "The forced liquidation of positions exacerbates downward pressure on Indonesian equities."
+              "plain": "This boosts Wall St futures as confidence returns.",
+              "detail": "The rebound in AI stocks improves sentiment, driving futures higher as investors anticipate better performance."
             }
           ],
-          "endpoint": "Indonesian equity market",
+          "endpoint": "equity investors",
           "strength": "strong"
         },
         {
-          "channel": "fx-terms-of-trade",
+          "channel": "discount-rate",
           "links": [
             {
-              "plain": "The Indonesian rupiah weakens as investors pull out funds.",
-              "detail": "Capital outflows increase demand for foreign currency, depreciating the rupiah."
-            },
-            {
-              "plain": "A weaker rupiah raises import costs for Indonesian businesses.",
-              "detail": "As the rupiah depreciates, importers face higher costs, squeezing profit margins."
+              "plain": "AI stock recovery reduces risk aversion, easing bond yields.",
+              "detail": "Improved sentiment from AI stock gains reduces demand for safe-haven bonds, leading to lower yields."
             }
           ],
-          "endpoint": "Indonesian importers",
-          "strength": "moderate"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "equities",
-          "instrument": "Indonesian stock market",
-          "direction": "down",
-          "magnitude": "5 to 10%",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Indonesian stocks are likely to continue falling as investors adjust to the potential index removal.",
-          "detail": "The sell-off in Indonesian equities is expected to persist as funds adjust their holdings in anticipation of MSCI's decision."
-        },
-        {
-          "assetClass": "fx",
-          "instrument": "Indonesian rupiah",
-          "direction": "down",
-          "magnitude": "2 to 4%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "The rupiah is expected to weaken as capital flows out of Indonesia.",
-          "detail": "The currency is under pressure due to increased demand for foreign exchange amid capital flight."
-        },
-        {
-          "assetClass": "credit",
-          "instrument": "Indonesian corporate bonds",
-          "direction": "wider",
-          "magnitude": "20 to 40 basis points",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Corporate bond spreads may widen as investors demand higher risk premiums.",
-          "detail": "Credit spreads are likely to widen as investors reassess the risk of holding Indonesian corporate debt."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may underestimate the long-term impact on regional markets if Indonesia is downgraded, potentially leading to broader regional volatility.",
-        "detail": "The market may not fully price in the contagion risk to Southeast Asian equities and currencies, which could experience increased volatility."
-      },
-      "falsifiers": [
-        "MSCI decides not to downgrade Indonesia.",
-        "Indonesian government announces supportive fiscal measures.",
-        "Global risk appetite improves significantly."
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Short Indonesian equities",
-          "plain": "Sell Indonesian stocks to profit from further declines due to index removal fears.",
-          "instrument": "Sell Indonesian stock index futures",
-          "risk": "The trade loses money if MSCI decides against the downgrade or if local markets stabilize unexpectedly."
-        }
-      ],
-      "watchNext": [
-        "MSCI's final decision on Indonesia's index status",
-        "Indonesian central bank's policy response",
-        "Regional stock market reactions"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-10-16-bank-of-england-governor-says-too-early-to-make-call-on-seco",
-      "rank": 3,
-      "editorNote": "The Bank of England's comments on inflation impact interest rate expectations.",
-      "materiality": {
-        "score": 64.2,
-        "components": {
-          "corroboration": 13,
-          "authority": 13,
-          "breadth": 9,
-          "salience": 20,
-          "recency": 9.2
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "bank of england",
-          "inflation",
-          "war"
-        ]
-      },
-      "sources": [
-        "WSJ World"
-      ],
-      "links": [
-        {
-          "name": "WSJ World",
-          "url": "https://www.wsj.com/pro/central-banking/bank-of-england-governor-says-too-early-to-make-call-on-second-round-inflation-91443098?mod=rss_worldnews",
-          "title": "Bank of England Governor Says Too Early to Make Call on Second-Round Inflation"
-        }
-      ],
-      "headlines": [
-        "Bank of England Governor Says Too Early to Make Call on Second-Round Inflation"
-      ],
-      "newestAt": "2026-10-16T06:54:00.000Z",
-      "headline": "Bank of England's Inflation Stance Clouds Rate Outlook",
-      "standfirst": "The Bank of England says it's too early to decide on second-round inflation effects.",
-      "classification": {
-        "eventType": "monetary-policy",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "Markets have anticipated some inflation impact from the Middle East conflict, but the uncertainty about second-round effects remains.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "Europe"
-        ]
-      },
-      "whatHappened": {
-        "plain": "The Bank of England's governor said it's too early to determine the impact of second-round inflation from higher energy prices due to the Middle East conflict.",
-        "whyItMatters": "This uncertainty affects expectations for future interest rate changes, influencing borrowing costs and investment decisions.",
-        "detail": "The Bank of England's cautious stance suggests they are not yet ready to adjust monetary policy, leaving markets uncertain about the timing of future rate hikes."
-      },
-      "chains": [
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "The Bank of England's caution suggests they may delay rate hikes.",
-              "detail": "The uncertainty around second-round inflation effects implies the Bank of England might adopt a wait-and-see approach, delaying any immediate rate adjustments."
-            },
-            {
-              "plain": "This delay could keep borrowing costs lower for longer.",
-              "detail": "If the Bank of England holds off on raising rates, the cost of borrowing remains stable, supporting credit conditions."
-            }
-          ],
-          "endpoint": "UK borrowers and investors",
-          "strength": "moderate"
-        },
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "Higher energy prices could squeeze company profits.",
-              "detail": "Increased energy costs may reduce margins for companies, particularly those with energy-intensive operations."
-            },
-            {
-              "plain": "This could lead to lower earnings forecasts for affected sectors.",
-              "detail": "Analysts might revise down earnings expectations for sectors like manufacturing and transportation, impacting stock valuations."
-            }
-          ],
-          "endpoint": "UK equities",
-          "strength": "strong"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "rates",
-          "instrument": "UK 10-year Gilt yield",
-          "direction": "down",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 1,
-          "plain": "UK government bond yields may fall as rate hike expectations are pushed back.",
-          "detail": "The delay in expected rate hikes could lead to a rally in UK Gilts, lowering yields as investors adjust to a more dovish outlook."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "UK energy-intensive sectors",
-          "direction": "down",
-          "magnitude": "2 to 4%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Stocks in energy-intensive sectors might decline due to profit margin pressures.",
-          "detail": "Higher energy costs could lead to downward revisions in earnings forecasts, pressuring stock prices in sectors like manufacturing."
-        },
-        {
-          "assetClass": "credit",
-          "instrument": "UK corporate bonds",
-          "direction": "wider",
-          "magnitude": "10 to 15 basis points",
-          "horizon": "weeks",
-          "conviction": 2,
-          "order": 2,
-          "plain": "Corporate bond spreads may widen as energy costs impact company finances.",
-          "detail": "Increased energy expenses could elevate credit risk perceptions, leading to wider spreads on corporate bonds."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors might underestimate the persistence of higher energy prices and their broader impact on inflation expectations, potentially leading to a delayed reaction in bond and equity markets.",
-        "detail": "The market may not fully price in the sustained nature of energy cost pressures, which could lead to a reassessment of inflation risks and monetary policy expectations."
-      },
-      "falsifiers": [
-        "A significant drop in energy prices",
-        "Clear guidance from the Bank of England on rate hikes",
-        "Stronger-than-expected economic data from the UK"
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Long UK Gilts",
-          "plain": "Buy UK government bonds to benefit from potential yield declines as rate hikes are delayed.",
-          "instrument": "UK Gilt futures",
-          "risk": "The main risk is a surprise rate hike or stronger inflation data leading to higher yields."
-        }
-      ],
-      "watchNext": [
-        "Upcoming Bank of England meetings",
-        "Inflation data releases in the UK",
-        "Developments in the Middle East conflict"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-10-16-gold-inches-higher-as-dollar-softens-investors-eye-fed-rate-",
-      "rank": 4,
-      "editorNote": "Further analysis on gold and dollar movements complements the top-ranked story.",
-      "materiality": {
-        "score": 62.1,
-        "components": {
-          "corroboration": 13,
-          "authority": 7,
-          "breadth": 13.5,
-          "salience": 18.7,
-          "recency": 9.9
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "fed",
-          "gold",
-          "dollar"
-        ]
-      },
-      "sources": [
-        "Investing.com Commodities"
-      ],
-      "links": [
-        {
-          "name": "Investing.com Commodities",
-          "url": "https://www.investing.com/news/commodities-news/gold-steadies-near-4160-as-stock-selloff-drives-bond-rally-treasury-yields-fall-4952940",
-          "title": "Gold inches higher as dollar softens, investors eye Fed rate outlook"
-        }
-      ],
-      "headlines": [
-        "Gold inches higher as dollar softens, investors eye Fed rate outlook"
-      ],
-      "newestAt": "2026-10-16T09:13:53.000Z",
-      "headline": "Gold Gains as Dollar Weakens Amid Fed Rate Speculation",
-      "standfirst": "Gold prices rose slightly as the US dollar softened, with investors focusing on the Federal Reserve's interest rate outlook.",
-      "classification": {
-        "eventType": "monetary-policy",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some impact from the dollar's weakness, but the extent of the Fed's future rate path remains uncertain.",
-        "persistence": "days",
-        "regionFocus": [
-          "Global"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Gold prices increased slightly as the US dollar weakened. Investors are paying close attention to the Federal Reserve's future interest rate decisions.",
-        "whyItMatters": "The movement in gold prices and the dollar reflects investor sentiment on US monetary policy, which affects global financial markets.",
-        "detail": "Gold's rise is linked to the dollar's depreciation, making gold cheaper for foreign buyers. The focus on the Fed's rate outlook suggests uncertainty about future monetary policy."
-      },
-      "chains": [
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "A weaker dollar makes US exports cheaper.",
-              "detail": "As the dollar depreciates, US goods become more competitively priced in foreign markets, potentially boosting export volumes."
-            }
-          ],
-          "endpoint": "US exporters",
+          "endpoint": "bond investors",
           "strength": "moderate"
         },
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "The Fed may adjust its interest rate policy based on inflation data.",
-              "detail": "A softer dollar could influence the Fed's assessment of inflationary pressures, potentially altering the timing of rate changes."
+              "plain": "Eased bond yields may influence central bank decisions.",
+              "detail": "Lower yields could reduce pressure on central banks to raise rates, as financial conditions improve."
             }
           ],
-          "endpoint": "Federal Reserve",
+          "endpoint": "central banks",
           "strength": "speculative"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "commodities",
-          "instrument": "Gold",
-          "direction": "up",
-          "magnitude": "0.5 to 1.0%",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 1,
-          "plain": "Gold prices are likely to rise as the dollar weakens, making gold more attractive to international buyers.",
-          "detail": "The inverse relationship between the dollar and gold suggests that a weaker dollar supports higher gold prices due to increased demand from non-dollar investors."
-        },
-        {
-          "assetClass": "fx",
-          "instrument": "US Dollar Index",
-          "direction": "down",
-          "magnitude": "0.3 to 0.6%",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 1,
-          "plain": "The US dollar is expected to weaken further as investors anticipate changes in Fed policy.",
-          "detail": "Expectations of a dovish Fed stance are putting downward pressure on the dollar, as lower rates reduce the currency's yield appeal."
-        },
-        {
           "assetClass": "equities",
-          "instrument": "US Exporters",
+          "instrument": "S&P 500",
           "direction": "up",
-          "magnitude": "1.0 to 2.0%",
-          "horizon": "weeks",
-          "conviction": 2,
+          "magnitude": "1% to 2%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "The S&P 500 is likely to rise as AI stocks rebound, boosting overall market sentiment.",
+          "detail": "The recovery in AI stocks is expected to lift the S&P 500 by 1% to 2% over the next few days, as investors regain confidence."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
           "order": 2,
-          "plain": "US exporters could benefit from a weaker dollar, boosting their competitiveness abroad.",
-          "detail": "A depreciating dollar enhances US firms' price competitiveness in international markets, potentially increasing sales and revenues."
+          "plain": "US 10-year Treasury yields may fall as improved sentiment reduces demand for safe assets.",
+          "detail": "The easing of risk aversion following the AI stock rebound could lower US 10-year yields by 5 to 10 basis points."
+        },
+        {
+          "assetClass": "commodities",
+          "instrument": "Oil prices",
+          "direction": "down",
+          "magnitude": "1% to 3%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Oil prices might decline as easing yields and improved sentiment reduce inflation concerns.",
+          "detail": "The combination of lower yields and better market sentiment could lead to a 1% to 3% drop in oil prices."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate how a prolonged weaker dollar could shift the balance of trade, benefiting US exporters more than currently anticipated.",
-        "detail": "The market may not fully price in the extended competitive advantage a weaker dollar provides to US exporters, which could lead to sustained earnings growth."
+        "plain": "Investors may underestimate how much the AI stock recovery can shift central bank expectations. If bond yields stay low, it could delay rate hikes, impacting currency markets and global trade.",
+        "detail": "The market might not fully appreciate the potential for sustained lower yields to alter central bank rate paths, affecting FX and trade dynamics."
       },
       "falsifiers": [
-        "The dollar strengthens unexpectedly due to geopolitical tensions.",
-        "The Fed signals a more hawkish stance than anticipated.",
-        "Gold demand decreases due to changes in consumer preferences."
+        "AI stocks fall again, reversing sentiment.",
+        "Bond yields rise despite the AI stock rebound.",
+        "Central banks signal imminent rate hikes."
       ],
       "tradeExpression": [
         {
-          "idea": "Long Gold via Futures",
-          "plain": "Buy gold futures to profit from the expected rise in gold prices as the dollar weakens.",
-          "instrument": "Gold futures",
-          "risk": "The main risk is a sudden strengthening of the dollar, which would reduce gold's appeal."
+          "idea": "Long S&P 500 Futures",
+          "plain": "Buy S&P 500 futures to gain from the AI stock recovery boosting equities.",
+          "instrument": "S&P 500 futures",
+          "risk": "A renewed selloff in AI stocks could reverse gains."
         }
       ],
       "watchNext": [
-        "Upcoming Federal Reserve meetings",
-        "US inflation data releases",
-        "Geopolitical developments affecting the dollar"
+        "Upcoming central bank meetings",
+        "Earnings reports from major AI companies",
+        "US inflation data releases"
       ],
       "glossary": [
         {
@@ -623,23 +213,183 @@
       "confidence": 3
     },
     {
-      "id": "2026-10-16-stocks-gain-as-treasury-yields-give-back-some-recent-gains",
-      "rank": 5,
-      "editorNote": "Changes in Treasury yields influence broader equity market dynamics.",
+      "id": "2026-10-19-oil-falls-after-president-trump-waives-sanctions-against-rus",
+      "rank": 2,
+      "editorNote": "The waiver of Russia sanctions by President Trump is a significant geopolitical move impacting oil prices and commodities.",
       "materiality": {
-        "score": 65.5,
+        "score": 68.2,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 20,
+          "recency": 9.7
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "tariff",
+          "sanctions",
+          "oil"
+        ]
+      },
+      "sources": [
+        "WSJ Markets",
+        "Investing.com Commodities"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/commodities-futures/oil-futures-fall-on-possible-correction-but-drop-may-be-limited-by-geopolitical-tensions-21ff1c15?mod=rss_markets_main",
+          "title": "Oil Falls After President Trump Waives Sanctions Against Russia"
+        },
+        {
+          "name": "Investing.com Commodities",
+          "url": "https://www.investing.com/news/commodities-news/oil-prices-slide-as-trump-waives-russia-sanctions-4956158",
+          "title": "Oil prices dip as Trump waives Russia sanctions"
+        }
+      ],
+      "headlines": [
+        "Oil Falls After President Trump Waives Sanctions Against Russia",
+        "Oil prices dip as Trump waives Russia sanctions"
+      ],
+      "newestAt": "2026-10-19T09:38:51.000Z",
+      "headline": "Oil Prices Drop as Trump Waives Sanctions on Russia",
+      "standfirst": "Oil prices fell after President Trump waived certain sanctions on Russia.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market anticipated some easing of tensions, but the extent of the waiver was unexpected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global",
+          "US",
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "President Trump waived some sanctions on Russia, leading to a drop in oil prices. This move allows more Russian oil to enter the market.",
+        "whyItMatters": "The waiver increases global oil supply, potentially lowering prices and affecting energy markets.",
+        "detail": "The waiver reduces geopolitical risk premiums in oil prices, increasing supply expectations and pressuring prices downward."
+      },
+      "chains": [
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "Russian oil exports rise, increasing supply.",
+              "detail": "The sanction waiver boosts Russian oil export volumes, impacting global supply dynamics."
+            },
+            {
+              "plain": "Increased supply leads to lower oil prices.",
+              "detail": "Higher supply from Russia reduces the global oil price by shifting the supply curve outwards."
+            },
+            {
+              "plain": "Lower oil prices reduce revenue for oil-exporting countries.",
+              "detail": "Countries reliant on oil exports face reduced income, affecting their trade balances and currency values."
+            }
+          ],
+          "endpoint": "oil-exporting countries",
+          "strength": "strong"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Oil companies face pressure on profits.",
+              "detail": "Oil producers see reduced margins as prices fall, impacting their earnings forecasts."
+            },
+            {
+              "plain": "Energy sector stocks decline.",
+              "detail": "Lower expected earnings lead to a sell-off in energy equities, particularly those with high production costs."
+            }
+          ],
+          "endpoint": "energy sector equities",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "Brent crude oil",
+          "direction": "down",
+          "magnitude": "3 to 5%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Brent crude prices are likely to drop due to increased supply from Russia.",
+          "detail": "The waiver allows more Russian oil into the market, increasing supply and pushing Brent crude prices down."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US energy sector stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US energy stocks may decline as lower oil prices pressure profits.",
+          "detail": "With oil prices falling, energy companies face margin compression, leading to a decline in stock prices."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "Russian ruble",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The Russian ruble could strengthen due to increased oil export revenues.",
+          "detail": "Higher oil export volumes improve Russia's trade balance, supporting the ruble's value."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact on US shale producers, who could face sustained price pressure and reduced competitiveness.",
+        "detail": "The market might not fully account for the prolonged margin squeeze on US shale, which could alter production dynamics and investment flows."
+      },
+      "falsifiers": [
+        "A rapid reversal of the waiver decision",
+        "A significant geopolitical event disrupting Russian oil exports",
+        "Unexpected OPEC+ production cuts"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US energy stocks",
+          "plain": "Sell US energy sector ETFs to profit from anticipated stock declines due to lower oil prices.",
+          "instrument": "ETFs, options",
+          "risk": "A sudden rebound in oil prices could lead to losses on short positions."
+        }
+      ],
+      "watchNext": [
+        "OPEC+ meetings",
+        "Further US-Russia diplomatic developments",
+        "US shale production reports"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-19-french-government-bond-yields-rise-on-protests-budget-concer",
+      "rank": 3,
+      "editorNote": "French bond yield rise due to protests has implications for European debt markets and currency stability.",
+      "materiality": {
+        "score": 63.3,
         "components": {
           "corroboration": 13,
           "authority": 13,
-          "breadth": 13.5,
-          "salience": 19.6,
-          "recency": 6.5
+          "breadth": 9,
+          "salience": 18.7,
+          "recency": 9.6
         },
         "distinctSources": 1,
         "salienceTerms": [
-          "inflation",
           "treasury",
-          "volatility"
+          "budget",
+          "deficit"
         ]
       },
       "sources": [
@@ -648,63 +398,229 @@
       "links": [
         {
           "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/stocks/stocks-gain-as-treasury-yields-give-back-some-recent-gains-abd77be3?mod=rss_markets_main",
-          "title": "Stocks Gain as Treasury Yields Give Back Some Recent Gains"
+          "url": "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-in-asian-trade-e5171539?mod=rss_markets_main",
+          "title": "French Government-Bond Yields Rise on Protests, Budget Concerns; Treasury Yields Fall"
         }
       ],
       "headlines": [
-        "Stocks Gain as Treasury Yields Give Back Some Recent Gains"
+        "French Government-Bond Yields Rise on Protests, Budget Concerns; Treasury Yields Fall"
       ],
-      "newestAt": "2026-10-15T21:03:00.000Z",
-      "headline": "US Stocks Rise as Treasury Yields Retreat, Easing Market Tensions",
-      "standfirst": "US stocks gained as Treasury yields fell, despite tech sector volatility.",
+      "newestAt": "2026-10-19T09:21:00.000Z",
+      "headline": "French Bond Yields Spike Amid Protests, U.S. Treasury Yields Decline",
+      "standfirst": "French bond yields rose due to protests over budget cuts, while U.S. Treasury yields fell.",
       "classification": {
-        "eventType": "macro-data",
+        "eventType": "geopolitical",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some yield movement, but the extent of the decline was unexpected.",
-        "persistence": "days",
+        "pricedInRationale": "The market anticipated some impact from the protests, but the intensity and potential for escalation were underestimated.",
+        "persistence": "weeks",
         "regionFocus": [
+          "Europe",
           "US"
         ]
       },
       "whatHappened": {
-        "plain": "US stocks rose today as Treasury yields fell, despite ongoing volatility in the tech sector and a higher-than-expected wholesale inflation report.",
-        "whyItMatters": "Investors pay close attention to Treasury yields because they influence borrowing costs and investment decisions across the economy.",
-        "detail": "The drop in Treasury yields provided relief to equity markets, particularly sectors sensitive to interest rates, even as inflation data suggested potential future rate hikes."
+        "plain": "French government bond yields rose as protests erupted against budget cuts. Meanwhile, U.S. Treasury yields fell.",
+        "whyItMatters": "Rising French yields indicate heightened risk in European debt markets, while falling U.S. yields suggest a flight to safety.",
+        "detail": "The protests in France have raised concerns about fiscal stability, pushing investors to demand higher yields on French bonds. Simultaneously, investors are moving funds to U.S. Treasuries, seen as safer assets."
       },
       "chains": [
         {
           "channel": "discount-rate",
           "links": [
             {
-              "plain": "Treasury yields fell, making borrowing cheaper.",
-              "detail": "The decline in Treasury yields reduced the baseline cost of borrowing, easing financial conditions."
+              "plain": "French bond yields rise as investors demand more return for risk.",
+              "detail": "Investors require a risk premium due to increased uncertainty, leading to higher yields on French bonds."
             },
             {
-              "plain": "Cheaper borrowing supports stock prices.",
-              "detail": "Lower yields decrease the discount rate applied to future earnings, boosting equity valuations."
+              "plain": "Higher French yields could increase borrowing costs for other European countries.",
+              "detail": "Rising yields in France may spill over, affecting the perceived risk and borrowing costs for other European sovereigns."
             }
           ],
-          "endpoint": "equity investors",
+          "endpoint": "European sovereign bonds",
           "strength": "strong"
         },
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Lower yields may delay Fed rate hikes.",
-              "detail": "The drop in yields could lead the Federal Reserve to reassess the timing of future rate increases."
-            },
-            {
-              "plain": "Delayed rate hikes support economic growth.",
-              "detail": "A slower pace of rate hikes would maintain accommodative monetary policy, supporting economic activity."
+              "plain": "European Central Bank may delay rate hikes due to fiscal instability.",
+              "detail": "The ECB might reconsider tightening monetary policy if fiscal risks in France threaten broader economic stability."
             }
           ],
-          "endpoint": "economic growth",
+          "endpoint": "ECB policy",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "Euro weakens as investors move to safer currencies like the U.S. dollar.",
+              "detail": "Increased geopolitical risk in Europe leads to a flight to safety, strengthening the dollar as the euro depreciates."
+            }
+          ],
+          "endpoint": "EUR/USD exchange rate",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "French 10-year government bond yield",
+          "direction": "up",
+          "magnitude": "15 to 25 basis points",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "French bond yields are likely to rise further as protests continue.",
+          "detail": "The ongoing protests increase fiscal uncertainty, necessitating a higher yield to attract investors to French bonds."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 1,
+          "plain": "U.S. Treasury yields are expected to fall as investors seek safety.",
+          "detail": "Increased geopolitical risk in Europe is driving a flight to safety, lowering yields on U.S. Treasuries."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "EUR/USD",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The euro is likely to weaken against the dollar as investors shift to safer assets.",
+          "detail": "Heightened fiscal risk in Europe leads to euro depreciation as investors prefer the safety of the dollar."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the potential for protests to disrupt broader European fiscal policies, affecting the eurozone's economic stability.",
+        "detail": "The market might not fully price in the risk of contagion from French fiscal instability to other European economies, which could impact the eurozone's economic outlook."
+      },
+      "falsifiers": [
+        "The French government successfully negotiates with protesters, reducing fiscal tensions.",
+        "The European Central Bank announces aggressive measures to stabilize bond markets."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long U.S. Treasuries",
+          "plain": "Buy U.S. Treasuries to benefit from the flight to safety as European risks rise.",
+          "instrument": "Long U.S. Treasury futures",
+          "risk": "If European tensions ease unexpectedly, yields could rise, causing losses."
+        }
+      ],
+      "watchNext": [
+        "Upcoming ECB meeting for policy updates",
+        "Developments in French protests and government response"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-19-u-s-dollar-is-stable-treasury-yields-decline",
+      "rank": 4,
+      "editorNote": "Stable US dollar and declining Treasury yields suggest shifts in investor risk appetite and interest rate expectations.",
+      "materiality": {
+        "score": 65,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 10
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "treasury",
+          "fiscal",
+          "dollar",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/currencies/yen-consolidates-but-may-be-supported-by-risk-off-mood-7504bde7?mod=rss_markets_main",
+          "title": "U.S. Dollar Is Stable, Treasury Yields Decline"
+        }
+      ],
+      "headlines": [
+        "U.S. Dollar Is Stable, Treasury Yields Decline"
+      ],
+      "newestAt": "2026-10-19T10:33:00.000Z",
+      "headline": "Stable Dollar and Lower Yields Signal Shift in Risk Appetite",
+      "standfirst": "The US dollar remains stable while Treasury yields decline amid European unrest.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some stability in the dollar, but the full impact of European unrest on Treasury yields is still unfolding.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US",
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The US dollar held steady, with slight gains against the euro due to social unrest in France. Meanwhile, US Treasury yields fell.",
+        "whyItMatters": "This stability in the dollar and decline in yields indicate changes in investor sentiment and expectations for future interest rates.",
+        "detail": "The dollar's stability against the euro reflects geopolitical concerns in Europe, while declining yields suggest a flight to safety and changing rate expectations."
+      },
+      "chains": [
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "Social unrest in France weakens the euro.",
+              "detail": "Political instability in France raises concerns over fiscal policies, pressuring the euro lower."
+            },
+            {
+              "plain": "A weaker euro makes US exports more competitive.",
+              "detail": "As the euro depreciates, US goods become cheaper in Europe, potentially boosting US export volumes."
+            }
+          ],
+          "endpoint": "US exporters",
+          "strength": "moderate"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Investors buy US Treasuries, pushing yields down.",
+              "detail": "Heightened geopolitical risks lead to a flight to safety, increasing demand for US Treasuries and lowering yields."
+            },
+            {
+              "plain": "Lower yields reduce borrowing costs for US companies.",
+              "detail": "As Treasury yields decline, the benchmark for corporate borrowing costs falls, easing financial conditions for US firms."
+            }
+          ],
+          "endpoint": "US corporate borrowers",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "fx",
+          "instrument": "EUR/USD",
+          "direction": "down",
+          "magnitude": "0.5 to 1%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 1,
+          "plain": "The euro is likely to weaken against the dollar due to unrest in France.",
+          "detail": "Political instability in France is expected to weigh on the euro, leading to a depreciation against the dollar."
+        },
         {
           "assetClass": "rates",
           "instrument": "US 10-year Treasury yield",
@@ -713,53 +629,197 @@
           "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "US 10-year Treasury yields are likely to fall as investors adjust to lower borrowing costs.",
-          "detail": "The decline in yields reflects a repricing of interest rate expectations, with investors seeking safer assets."
+          "plain": "US Treasury yields are expected to fall as investors seek safety.",
+          "detail": "Increased demand for Treasuries amid geopolitical concerns is likely to push yields lower."
         },
         {
           "assetClass": "equities",
-          "instrument": "US technology stocks",
+          "instrument": "US exporters",
           "direction": "up",
           "magnitude": "1 to 2%",
-          "horizon": "days",
-          "conviction": 3,
+          "horizon": "weeks",
+          "conviction": 2,
           "order": 2,
-          "plain": "Tech stocks may rise as lower yields make future earnings more attractive.",
-          "detail": "Tech valuations benefit from lower discount rates, as their earnings are often projected further into the future."
-        },
-        {
-          "assetClass": "credit",
-          "instrument": "US corporate bonds",
-          "direction": "tighter",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Corporate bond spreads might tighten as lower Treasury yields reduce overall borrowing costs.",
-          "detail": "The narrowing of spreads reflects improved credit conditions as lower yields reduce the cost of capital for companies."
+          "plain": "US exporters may benefit from a weaker euro, boosting their share prices.",
+          "detail": "A depreciating euro enhances the competitiveness of US exports, potentially increasing revenues for US exporters."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the potential for a rebound in inflation expectations, which could reverse the decline in Treasury yields.",
-        "detail": "The market may not fully account for the risk of inflationary pressures re-emerging, which would push yields higher."
+        "plain": "Investors may underestimate the potential for prolonged unrest in Europe to impact global trade and economic growth, which could lead to more sustained shifts in currency and bond markets.",
+        "detail": "The market may not fully price in the extended impact of European instability on trade flows and global growth, which could further influence currency valuations and bond yields."
       },
       "falsifiers": [
-        "A significant rebound in inflation expectations",
-        "Unexpectedly strong economic data",
-        "Hawkish comments from Federal Reserve officials"
+        "Resolution of social unrest in France leading to euro strengthening",
+        "US economic data surprising positively, reversing Treasury yield declines",
+        "Increased geopolitical tensions elsewhere diverting focus from Europe"
       ],
       "tradeExpression": [
         {
-          "idea": "Long US Tech Stocks",
-          "plain": "Buy US technology stocks to benefit from lower discount rates and potential price appreciation.",
-          "instrument": "Equity futures or options on major tech indices",
-          "risk": "A reversal in Treasury yields could hurt tech stock valuations."
+          "idea": "Long US exporters",
+          "plain": "Buy shares of US exporters to benefit from a weaker euro.",
+          "instrument": "Equities or equity futures of major US exporting companies",
+          "risk": "The euro could strengthen if European unrest resolves quickly."
         }
       ],
       "watchNext": [
-        "Upcoming Federal Reserve meeting",
-        "Next US inflation report",
-        "Earnings reports from major tech companies"
+        "Developments in French social unrest",
+        "Upcoming US economic data releases",
+        "ECB policy announcements"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-19-profit-warnings-from-uk-listed-firms-at-highest-level-in-two",
+      "rank": 5,
+      "editorNote": "Profit warnings from UK firms highlight broader economic pressures from geopolitical tensions, affecting equities.",
+      "materiality": {
+        "score": 58.5,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 19.6,
+          "recency": 8.4
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "budget",
+          "war",
+          "profit warning"
+        ]
+      },
+      "sources": [
+        "Guardian Business"
+      ],
+      "links": [
+        {
+          "name": "Guardian Business",
+          "url": "https://www.theguardian.com/business/2026/oct/19/profit-warnings-from-uk-listed-firms-at-highest-level-in-two-years-as-iran-war-drives-up-costs",
+          "title": "Profit warnings from UK-listed firms at highest level in two years as Iran war drives up costs"
+        }
+      ],
+      "headlines": [
+        "Profit warnings from UK-listed firms at highest level in two years as Iran war drives up costs"
+      ],
+      "newestAt": "2026-10-19T05:00:19.000Z",
+      "headline": "UK Profit Warnings Surge Amid Middle East Conflict, Impacting Markets",
+      "standfirst": "UK-listed firms issue record profit warnings due to rising costs from Iran war.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Markets have reacted to increased costs but may not fully account for ongoing geopolitical risks.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "UK companies have issued 65 profit warnings in the last three months, the highest in two years. The ongoing conflict in Iran has led to increased business costs, affecting profitability.",
+        "whyItMatters": "Investors need to be cautious as rising costs can reduce company earnings and affect stock prices.",
+        "detail": "The conflict has disrupted supply chains and increased energy costs, directly impacting company margins and leading to more profit warnings."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Higher costs reduce company profits.",
+              "detail": "Increased input costs from supply chain disruptions and energy prices squeeze margins."
+            },
+            {
+              "plain": "Lower profits lead to reduced investor confidence.",
+              "detail": "Profit warnings signal potential earnings misses, prompting investors to reassess valuations."
+            }
+          ],
+          "endpoint": "equities",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may delay rate hikes.",
+              "detail": "With rising costs impacting growth, central banks might adopt a more cautious stance on monetary tightening."
+            }
+          ],
+          "endpoint": "rates",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "Increased costs weaken the pound.",
+              "detail": "Rising import costs and economic uncertainty could pressure the pound lower."
+            }
+          ],
+          "endpoint": "fx",
+          "strength": "speculative"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "FTSE 100",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "FTSE 100 may fall as profit warnings weigh on investor sentiment.",
+          "detail": "Profit warnings suggest earnings downgrades, likely leading to a repricing of UK stocks."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "UK 10-year Gilt yield",
+          "direction": "flatter",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "UK bond yields might flatten as rate hikes are postponed.",
+          "detail": "Expectations of delayed rate hikes could flatten the yield curve as short rates fall relative to long rates."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "GBP/USD",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 2,
+          "order": 2,
+          "plain": "The pound may weaken due to higher import costs and uncertainty.",
+          "detail": "Rising costs and geopolitical risks could lead to a depreciation of the pound against the dollar."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might underestimate the long-term impact of sustained geopolitical tensions on global supply chains, which could lead to prolonged cost pressures.",
+        "detail": "The market may not fully price in the extended disruption to supply chains, potentially leading to sustained inflationary pressures."
+      },
+      "falsifiers": [
+        "Resolution of the Iran conflict leading to stabilized supply chains.",
+        "Unexpected central bank rate hikes despite rising costs.",
+        "A stronger-than-expected economic performance in the UK."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short FTSE 100",
+          "plain": "Sell FTSE 100 futures to profit from expected declines in UK equities due to profit warnings.",
+          "instrument": "FTSE 100 futures",
+          "risk": "The main risk is a rapid resolution of geopolitical tensions boosting market sentiment."
+        }
+      ],
+      "watchNext": [
+        "UK Chancellor's budget announcement",
+        "Central bank policy meetings",
+        "Developments in the Iran conflict"
       ],
       "glossary": [
         {
@@ -771,7 +831,7 @@
     }
   ],
   "diagnostics": {
-    "articlesIngested": 208,
+    "articlesIngested": 161,
     "clustersConsidered": 25,
     "feeds": [
       {
@@ -780,7 +840,7 @@
         "ok": true,
         "parsed": 20,
         "fresh": 0,
-        "ms": 117,
+        "ms": 122,
         "error": null
       },
       {
@@ -789,7 +849,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 0,
-        "ms": 90,
+        "ms": 128,
         "error": null
       },
       {
@@ -797,8 +857,8 @@
         "name": "European Central Bank",
         "ok": true,
         "parsed": 15,
-        "fresh": 0,
-        "ms": 704,
+        "fresh": 1,
+        "ms": 442,
         "error": null
       },
       {
@@ -807,7 +867,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 974,
+        "ms": 766,
         "error": "HTTP 404"
       },
       {
@@ -816,7 +876,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 586,
+        "ms": 590,
         "error": "HTTP 404"
       },
       {
@@ -825,16 +885,16 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 596,
+        "ms": 296,
         "error": "HTTP 403"
       },
       {
         "id": "eia",
         "name": "US EIA",
         "ok": true,
-        "parsed": 17,
-        "fresh": 1,
-        "ms": 873,
+        "parsed": 18,
+        "fresh": 0,
+        "ms": 399,
         "error": null
       },
       {
@@ -843,7 +903,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 803,
+        "ms": 434,
         "error": null
       },
       {
@@ -852,7 +912,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 0,
-        "ms": 811,
+        "ms": 500,
         "error": null
       },
       {
@@ -861,7 +921,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 0,
-        "ms": 842,
+        "ms": 545,
         "error": null
       },
       {
@@ -869,8 +929,8 @@
         "name": "WSJ Markets",
         "ok": true,
         "parsed": 61,
-        "fresh": 35,
-        "ms": 826,
+        "fresh": 21,
+        "ms": 564,
         "error": null
       },
       {
@@ -878,8 +938,8 @@
         "name": "WSJ World",
         "ok": true,
         "parsed": 73,
-        "fresh": 24,
-        "ms": 1059,
+        "fresh": 20,
+        "ms": 579,
         "error": null
       },
       {
@@ -888,7 +948,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 1001,
+        "ms": 625,
         "error": "HTTP 404"
       },
       {
@@ -896,8 +956,8 @@
         "name": "CNBC",
         "ok": true,
         "parsed": 30,
-        "fresh": 30,
-        "ms": 1164,
+        "fresh": 22,
+        "ms": 727,
         "error": null
       },
       {
@@ -905,8 +965,8 @@
         "name": "CNBC Economy",
         "ok": true,
         "parsed": 30,
-        "fresh": 8,
-        "ms": 1227,
+        "fresh": 1,
+        "ms": 834,
         "error": null
       },
       {
@@ -915,16 +975,16 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 1733,
+        "ms": 1269,
         "error": null
       },
       {
         "id": "bbc-biz",
         "name": "BBC Business",
         "ok": true,
-        "parsed": 47,
+        "parsed": 44,
         "fresh": 17,
-        "ms": 1156,
+        "ms": 976,
         "error": null
       },
       {
@@ -932,8 +992,8 @@
         "name": "Guardian Business",
         "ok": true,
         "parsed": 40,
-        "fresh": 35,
-        "ms": 1118,
+        "fresh": 25,
+        "ms": 728,
         "error": null
       },
       {
@@ -941,8 +1001,8 @@
         "name": "Investing.com FX",
         "ok": true,
         "parsed": 10,
-        "fresh": 8,
-        "ms": 1236,
+        "fresh": 4,
+        "ms": 828,
         "error": null
       },
       {
@@ -951,7 +1011,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 1252,
+        "ms": 843,
         "error": null
       },
       {
@@ -960,7 +1020,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 1235,
+        "ms": 829,
         "error": null
       },
       {
@@ -969,7 +1029,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 5307,
+        "ms": 937,
         "error": "HTTP 404"
       },
       {
@@ -978,7 +1038,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 1254,
+        "ms": 858,
         "error": null
       }
     ],
@@ -987,40 +1047,40 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 10475,
-        "error": "TypeError: fetch failed"
+        "ms": 643,
+        "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
-        "ok": false,
-        "count": 0,
-        "ms": 262,
-        "error": "no rows"
+        "ok": true,
+        "count": 1,
+        "ms": 482,
+        "error": null
       },
       {
         "provider": "fred",
         "ok": false,
         "count": 0,
-        "ms": 0,
+        "ms": 1,
         "error": "no rows"
       }
     ],
     "usage": {
       "calls": 6,
-      "inputTokens": 12424,
-      "outputTokens": 5528,
-      "estimatedCostUsd": 0.0863
+      "inputTokens": 12614,
+      "outputTokens": 5825,
+      "estimatedCostUsd": 0.0898
     },
-    "runtimeMs": 35499
+    "runtimeMs": 23364
   },
   "scorecardSummary": {
-    "total": 19,
-    "open": 13,
-    "flat": 0,
+    "total": 20,
+    "open": 9,
+    "flat": 2,
     "hits": 4,
-    "misses": 2,
-    "settled": 6,
-    "hitRate": 66.7,
+    "misses": 5,
+    "settled": 9,
+    "hitRate": 44.4,
     "byClass": {
       "rates": {
         "hits": 1,
@@ -1049,15 +1109,15 @@
       },
       "equities": {
         "hits": 0,
-        "total": 1,
+        "total": 4,
         "rate": 0
       }
     },
     "byConviction": {
       "3": {
         "hits": 2,
-        "total": 4,
-        "rate": 50
+        "total": 7,
+        "rate": 28.6
       },
       "4": {
         "hits": 2,

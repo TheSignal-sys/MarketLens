@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T09:42:36.540Z",
+  "updatedAt": "2026-10-19T10:41:58.989Z",
   "calls": [
     {
       "id": "demo-1",
@@ -221,12 +221,14 @@
       "entryValue": 7656.98,
       "entryDisplay": "7,657",
       "openedAt": "2026-09-14T05:21:45.959Z",
-      "status": "open",
-      "markValue": 7551.81,
-      "markDisplay": "7,552",
-      "moveAbs": -105.16999999999916,
-      "movePct": -1.3735180188533753,
-      "moveDisplay": "-1.37%"
+      "status": "flat",
+      "markValue": 7659.44,
+      "markDisplay": "7,659",
+      "moveAbs": 2.4600000000000364,
+      "movePct": 0.032127548981452696,
+      "moveDisplay": "+0.03%",
+      "outcome": "No meaningful move within horizon",
+      "settledAt": "2026-10-19T10:41:58.988Z"
     },
     {
       "id": "2026-09-14-goldman-sachs-jp-morgan-expect-september-fed-hike-as-inflati:dxy",
@@ -260,12 +262,14 @@
       "entryValue": 7656.98,
       "entryDisplay": "7,657",
       "openedAt": "2026-09-14T05:21:45.959Z",
-      "status": "open",
-      "markValue": 7551.81,
-      "markDisplay": "7,552",
-      "moveAbs": -105.16999999999916,
-      "movePct": -1.3735180188533753,
-      "moveDisplay": "-1.37%"
+      "status": "flat",
+      "markValue": 7659.44,
+      "markDisplay": "7,659",
+      "moveAbs": 2.4600000000000364,
+      "movePct": 0.032127548981452696,
+      "moveDisplay": "+0.03%",
+      "outcome": "No meaningful move within horizon",
+      "settledAt": "2026-10-19T10:41:58.988Z"
     },
     {
       "id": "2026-09-14-new-attacks-in-hormuz-and-saudi-test-nerves-as-war-s-spread-:wti",
@@ -299,7 +303,14 @@
       "entryValue": 7551.81,
       "entryDisplay": "7,552",
       "openedAt": "2026-09-17T05:21:56.321Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 7659.44,
+      "markDisplay": "7,659",
+      "moveAbs": 107.6299999999992,
+      "movePct": 1.4252212383521194,
+      "moveDisplay": "+1.43%",
+      "outcome": "S&P 500 up +1.43% vs called down",
+      "settledAt": "2026-10-19T10:41:58.988Z"
     },
     {
       "id": "2026-09-17-analysis-how-trump-could-reignite-the-fed-independence-fight:spx",
@@ -316,7 +327,14 @@
       "entryValue": 7551.81,
       "entryDisplay": "7,552",
       "openedAt": "2026-09-17T05:21:56.321Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 7659.44,
+      "markDisplay": "7,659",
+      "moveAbs": 107.6299999999992,
+      "movePct": 1.4252212383521194,
+      "moveDisplay": "+1.43%",
+      "outcome": "S&P 500 up +1.43% vs called down",
+      "settledAt": "2026-10-19T10:41:58.988Z"
     },
     {
       "id": "2026-09-17-as-fed-rolls-out-its-first-interest-rate-hike-in-3-years-mar:spx",
@@ -333,7 +351,14 @@
       "entryValue": 7551.81,
       "entryDisplay": "7,552",
       "openedAt": "2026-09-17T05:21:56.322Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 7659.44,
+      "markDisplay": "7,659",
+      "moveAbs": 107.6299999999992,
+      "movePct": 1.4252212383521194,
+      "moveDisplay": "+1.43%",
+      "outcome": "S&P 500 up +1.43% vs called down",
+      "settledAt": "2026-10-19T10:41:58.988Z"
     },
     {
       "id": "2026-09-18-stocks-rise-as-oil-dips-yen-weakens-after-boj-hikes-as-expec:nkx",
@@ -384,6 +409,23 @@
       "entryValue": 5.311,
       "entryDisplay": "5.31%",
       "openedAt": "2026-10-06T11:59:24.907Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-10-19-wall-st-futures-climb-as-ai-stocks-rebound-oil-yields-fall:spx",
+      "storyId": "2026-10-19-wall-st-futures-climb-as-ai-stocks-rebound-oil-yields-fall",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "1% to 2%",
+      "horizon": "days",
+      "conviction": 4,
+      "rationale": "The S&P 500 is likely to rise as AI stocks rebound, boosting overall market sentiment.",
+      "entryValue": 7659.44,
+      "entryDisplay": "7,659",
+      "openedAt": "2026-10-19T10:41:58.988Z",
       "status": "open"
     }
   ]
