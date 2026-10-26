@@ -1,0 +1,1108 @@
+{
+  "version": 1,
+  "date": "2026-10-26",
+  "dateLabel": "Monday, 26 October 2026",
+  "generatedAt": "2026-10-26T11:00:27.735Z",
+  "model": "openai/gpt-4o",
+  "marketRead": {
+    "headline": "Energy prices and Fed decisions drive markets",
+    "body": "High energy prices and potential Fed rate hikes are supporting the US dollar, influencing global asset allocation. The Kospi index's forecast cut signals concerns in the AI sector, affecting tech stocks globally. European gas prices are surging due to geopolitical tensions, impacting energy markets and inflation expectations.",
+    "regime": "inflation and rate hike concerns"
+  },
+  "snapshot": {
+    "quotes": [],
+    "report": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 10473,
+        "error": "TypeError: fetch failed"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 136,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "fetchedAt": "2026-10-26T11:00:00.746Z"
+  },
+  "stories": [
+    {
+      "id": "2026-10-26-high-energy-prices-fed-rate-rise-prospects-could-keep-dollar",
+      "rank": 1,
+      "editorNote": "Energy prices and Fed rate expectations are influencing multiple asset classes, including rates, FX, and commodities.",
+      "materiality": {
+        "score": 69.4,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 9.9
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "federal reserve",
+          "dollar"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-fed-meet-in-focus-c2958e7e?mod=rss_markets_main",
+          "title": "High Energy Prices, Fed Rate-Rise Prospects Could Keep Dollar Supported"
+        }
+      ],
+      "headlines": [
+        "High Energy Prices, Fed Rate-Rise Prospects Could Keep Dollar Supported"
+      ],
+      "newestAt": "2026-10-26T10:38:00.000Z",
+      "headline": "Dollar Steady as Energy Prices and Fed Outlook Support",
+      "standfirst": "The dollar remains stable with high energy prices and potential Fed rate hikes.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market has anticipated some Fed action, but energy price impacts are still unfolding.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global",
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The dollar stayed mostly unchanged as traders awaited the Federal Reserve's decision on interest rates this Wednesday. Rising energy prices and expectations of a rate hike are supporting the dollar.",
+        "whyItMatters": "Investors need to understand the impact of energy costs and interest rates on currency values, as these factors influence global trade and investment flows.",
+        "detail": "The dollar's stability reflects a balance between high energy costs, which can drive inflation, and the Fed's potential rate hikes to control it. This equilibrium is key for currency traders."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "High energy prices may lead the Fed to consider rate hikes.",
+              "detail": "Elevated energy prices can increase inflation expectations, prompting the Fed to tighten monetary policy sooner."
+            },
+            {
+              "plain": "Higher rates can strengthen the dollar.",
+              "detail": "As the Fed raises rates, the yield on dollar-denominated assets increases, attracting foreign investment and boosting the dollar."
+            }
+          ],
+          "endpoint": "FX markets",
+          "strength": "strong"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "A stronger dollar makes US exports more expensive.",
+              "detail": "As the dollar appreciates, US goods become pricier for foreign buyers, potentially reducing export volumes."
+            },
+            {
+              "plain": "This can impact US manufacturing and trade balances.",
+              "detail": "Reduced export competitiveness may lead to a decline in manufacturing output and worsen the trade deficit."
+            }
+          ],
+          "endpoint": "US manufacturing sector",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "fx",
+          "instrument": "US Dollar Index",
+          "direction": "up",
+          "magnitude": "0.5 to 1%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "The dollar is likely to appreciate as the market prices in potential Fed rate hikes.",
+          "detail": "Expectations of higher US interest rates increase demand for dollars, pushing the US Dollar Index higher."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Treasury yields may rise as investors anticipate Fed rate hikes.",
+          "detail": "The prospect of tighter monetary policy leads to higher yields as investors demand more return for holding long-term bonds."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US manufacturing stocks",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US manufacturing stocks might decline due to a stronger dollar reducing export competitiveness.",
+          "detail": "As the dollar strengthens, US exporters face headwinds from less competitive pricing, potentially impacting earnings."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the prolonged impact of high energy prices on inflation, which could lead to more aggressive Fed actions than currently expected.",
+        "detail": "The market might not fully appreciate how sustained energy price pressures could force the Fed to accelerate its rate hike timeline, impacting asset valuations."
+      },
+      "falsifiers": [
+        "Energy prices fall sharply, reducing inflationary pressures.",
+        "The Fed signals a more dovish stance than expected.",
+        "Global economic slowdown reduces demand for the dollar."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long USD",
+          "plain": "Buy the US Dollar Index to benefit from potential Fed rate hikes and dollar appreciation.",
+          "instrument": "Futures on the US Dollar Index",
+          "risk": "The trade loses if the Fed does not raise rates or if energy prices drop significantly."
+        }
+      ],
+      "watchNext": [
+        "Federal Reserve rate decision on Wednesday",
+        "Next US inflation report",
+        "OPEC+ meeting outcomes impacting energy prices"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "US Dollar Index",
+          "plain": "A measure of the value of the US dollar relative to a basket of foreign currencies."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-26-the-kospi-index-is-the-leading-indicator-for-the-global-ai-t",
+      "rank": 2,
+      "editorNote": "The Kospi forecast cut highlights significant concerns in the AI sector, affecting global tech stock valuations.",
+      "materiality": {
+        "score": 65,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 18,
+          "salience": 11,
+          "recency": 9.9
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "volatility",
+          "gold"
+        ]
+      },
+      "sources": [
+        "MarketWatch"
+      ],
+      "links": [
+        {
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/the-kospi-index-is-the-leading-indicator-for-the-global-ai-trade-and-goldman-just-slashed-its-forecast-by-25-ccfe2690?mod=mw_rss_topstories",
+          "title": "The Kospi index is the leading indicator for the global AI trade &#x2014; and Goldman just slashed its forecast by 25%"
+        }
+      ],
+      "headlines": [
+        "The Kospi index is the leading indicator for the global AI trade &#x2014; and Goldman just slashed its forecast by 25%"
+      ],
+      "newestAt": "2026-10-26T10:43:00.000Z",
+      "headline": "Goldman's Kospi Cut Signals AI Sector Volatility Concerns",
+      "standfirst": "Goldman Sachs reduced its forecast for the Kospi index, indicating worries about AI stock valuations.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Investors had anticipated some volatility in AI stocks, but the scale of Goldman's forecast cut was larger than expected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global",
+          "Korea"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Goldman Sachs reduced its forecast for the Kospi index by 25%, citing increased volatility and lower growth multiples for AI stocks.",
+        "whyItMatters": "This forecast cut reflects broader concerns about the valuation of AI stocks globally, impacting investor sentiment and potentially leading to a reevaluation of tech stock prices.",
+        "detail": "Goldman's decision to slash the Kospi forecast underscores a reassessment of risk in AI-related equities, driven by heightened volatility and compressed valuation multiples."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Lower AI stock valuations may lead to reduced investment in AI companies.",
+              "detail": "As AI stock valuations decrease, companies may face challenges in securing funding or investment, impacting their growth prospects."
+            },
+            {
+              "plain": "Reduced investment could slow innovation and profitability in the AI sector.",
+              "detail": "The decrease in available capital may hinder AI companies' ability to innovate and expand, potentially affecting their future earnings."
+            }
+          ],
+          "endpoint": "AI sector companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors may rebalance portfolios away from tech stocks.",
+              "detail": "The forecast cut could trigger portfolio adjustments, with investors reducing exposure to tech stocks in favour of more stable sectors."
+            },
+            {
+              "plain": "This rebalancing may increase selling pressure on tech stocks.",
+              "detail": "As investors adjust their holdings, the increased selling pressure could exacerbate declines in tech stock prices."
+            }
+          ],
+          "endpoint": "tech stock prices",
+          "strength": "moderate"
+        },
+        {
+          "channel": "correlation",
+          "links": [
+            {
+              "plain": "Tech stocks may become more correlated with broader market volatility.",
+              "detail": "The increased volatility in AI stocks could lead to a stronger correlation between tech stocks and overall market movements, reducing diversification benefits."
+            }
+          ],
+          "endpoint": "diversified portfolios",
+          "strength": "speculative"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Korean tech stocks",
+          "direction": "down",
+          "magnitude": "3 to 5%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Korean tech stocks are likely to fall as investors digest the lowered forecast.",
+          "detail": "The immediate impact of Goldman's forecast cut will likely be a decline in Korean tech stocks as investors adjust their expectations."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Global AI-related stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Global AI-related stocks may see a decline as concerns about valuations spread.",
+          "detail": "The concerns highlighted by the Kospi forecast cut could lead to a broader reevaluation of AI stock valuations globally, impacting prices."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "Tech sector volatility index",
+          "direction": "up",
+          "magnitude": "10 to 15%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Volatility in the tech sector is expected to rise as investors react to the news.",
+          "detail": "The increased uncertainty surrounding AI stock valuations is likely to drive up volatility indices related to the tech sector."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the potential for a prolonged impact on AI innovation due to reduced investment, which could have long-term implications for tech sector growth.",
+        "detail": "The market may not fully appreciate the long-term consequences of reduced capital flows into AI, potentially stifling innovation and affecting future growth trajectories in the tech sector."
+      },
+      "falsifiers": [
+        "A rapid recovery in AI stock valuations.",
+        "Increased investment in AI companies despite lower valuations.",
+        "Stability in tech stock volatility indices."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short Korean Tech",
+          "plain": "Sell Korean tech stocks to profit from expected declines after the forecast cut.",
+          "instrument": "short Korean tech ETF",
+          "risk": "The main risk is a rebound in tech stocks if investor sentiment improves unexpectedly."
+        }
+      ],
+      "watchNext": [
+        "Earnings reports from major AI companies.",
+        "Central bank statements on interest rates.",
+        "Volatility index movements in the tech sector."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-26-european-gas-surges-to-fresh-2022-highs-on-middle-east-war-s",
+      "rank": 3,
+      "editorNote": "European gas price surges due to geopolitical tensions are impacting energy markets and inflation expectations.",
+      "materiality": {
+        "score": 50.7,
+        "components": {
+          "corroboration": 13,
+          "authority": 7,
+          "breadth": 9,
+          "salience": 11.9,
+          "recency": 9.8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "war",
+          "euro"
+        ]
+      },
+      "sources": [
+        "Investing.com Commodities"
+      ],
+      "links": [
+        {
+          "name": "Investing.com Commodities",
+          "url": "https://www.investing.com/news/commodities-news/european-gas-surges-to-fresh-2022-highs-on-middle-east-war-strain-4971735",
+          "title": "European gas surges to fresh 2022 highs on Middle East war strain"
+        }
+      ],
+      "headlines": [
+        "European gas surges to fresh 2022 highs on Middle East war strain"
+      ],
+      "newestAt": "2026-10-26T10:11:45.000Z",
+      "headline": "European Gas Prices Spike Amid Middle East Tensions",
+      "standfirst": "European gas prices have surged to levels last seen in 2022 due to geopolitical tensions in the Middle East.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some risk premium due to ongoing tensions, but the extent of the price surge was unexpected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe",
+          "Middle East"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Gas prices in Europe have risen sharply as conflict in the Middle East disrupts supply lines and raises concerns over energy security. This has pushed prices to levels not seen since 2022.",
+        "whyItMatters": "Higher gas prices increase costs for businesses and consumers, impacting inflation and economic growth.",
+        "detail": "The escalation in the Middle East has tightened gas supplies, leading to a significant price increase. This affects energy-intensive industries and could influence monetary policy."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Higher gas prices increase costs for European manufacturers.",
+              "detail": "Rising energy costs squeeze profit margins for companies reliant on gas, reducing earnings."
+            },
+            {
+              "plain": "Companies may pass on costs to consumers, raising prices.",
+              "detail": "To maintain margins, firms may increase product prices, contributing to inflation."
+            }
+          ],
+          "endpoint": "European manufacturers and consumers",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may delay rate cuts due to inflation fears.",
+              "detail": "Higher energy costs could prompt central banks to maintain or raise rates to curb inflation."
+            }
+          ],
+          "endpoint": "European Central Bank",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The euro weakens as energy costs rise.",
+              "detail": "Increased import costs from higher gas prices exert downward pressure on the euro."
+            }
+          ],
+          "endpoint": "Euro",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "European natural gas futures",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Gas futures are likely to remain elevated as supply concerns persist.",
+          "detail": "The geopolitical risk premium is likely to keep European gas futures elevated in the short to medium term."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "European industrials",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Industrial stocks may decline due to rising energy costs impacting profits.",
+          "detail": "Increased energy expenses are expected to compress margins for European industrial companies, weighing on stock performance."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "EUR/USD",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The euro could weaken as higher gas prices hurt the trade balance.",
+          "detail": "Rising energy import costs may negatively impact the euro, as trade balance pressures mount."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of sustained high energy prices on European economic growth and competitiveness.",
+        "detail": "The persistent elevation in energy costs could erode Europe's industrial competitiveness, leading to slower growth and potential structural shifts."
+      },
+      "falsifiers": [
+        "Middle East tensions ease significantly",
+        "European governments intervene with energy subsidies",
+        "Unexpected drop in global energy demand"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short European Industrials",
+          "plain": "Sell European industrial stocks due to rising energy costs impacting earnings.",
+          "instrument": "Short equity futures on European industrial index",
+          "risk": "Energy prices could stabilize or fall, improving industrial margins."
+        }
+      ],
+      "watchNext": [
+        "OPEC meetings",
+        "European Central Bank policy announcements",
+        "Developments in Middle East conflict"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-26-treasury-yields-turn-slightly-higher-french-bonds-outperform",
+      "rank": 4,
+      "editorNote": "Rising Treasury yields and French bond performance indicate shifts in credit markets and investor sentiment.",
+      "materiality": {
+        "score": 65.4,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 16.2,
+          "recency": 9.7
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "treasury",
+          "credit",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/economy/central-banking/treasury-yields-turn-slightly-higher-french-bonds-outperform-2fd1aaa0?mod=rss_markets_main",
+          "title": "Treasury Yields Turn Slightly Higher, French Bonds Outperform"
+        }
+      ],
+      "headlines": [
+        "Treasury Yields Turn Slightly Higher, French Bonds Outperform"
+      ],
+      "newestAt": "2026-10-26T10:03:00.000Z",
+      "headline": "Rising Treasury Yields Signal Global Bond Market Adjustments",
+      "standfirst": "Treasury yields rose as French bonds outperformed after Moody's rating decision.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some yield movement, but the French bond outperformance was less expected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US",
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Treasury yields increased on Monday, following a rise in most eurozone bond yields. French government bonds outperformed after Moody's maintained France's credit rating.",
+        "whyItMatters": "Changes in Treasury yields affect borrowing costs and investment returns globally. French bond performance suggests investor confidence in France's fiscal stability.",
+        "detail": "The rise in Treasury yields reflects investor reactions to broader eurozone bond movements, while Moody's decision on France supports its bond market."
+      },
+      "chains": [
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Higher Treasury yields increase the baseline return for investments.",
+              "detail": "The uptick in US Treasury yields sets a higher benchmark for returns, influencing valuations across asset classes."
+            },
+            {
+              "plain": "Investors may shift to higher-yielding assets.",
+              "detail": "With Treasury yields rising, investors could reallocate portfolios towards assets offering better returns, impacting equity and bond markets."
+            }
+          ],
+          "endpoint": "global investors",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may reassess interest rate policies.",
+              "detail": "The rise in yields could prompt central banks to evaluate their rate stance, especially if inflation expectations shift."
+            },
+            {
+              "plain": "Interest rate hikes become more likely.",
+              "detail": "If yields continue to rise, the probability of central banks increasing rates to control inflationary pressures grows."
+            }
+          ],
+          "endpoint": "central banks",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "8 to 15 basis points",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "US 10-year Treasury yields are expected to rise as investors adjust to new return benchmarks.",
+          "detail": "The increase in Treasury yields reflects a shift in the risk-free rate, affecting pricing across financial markets."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US equities",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US equities may face pressure as higher yields make bonds more attractive.",
+          "detail": "As bond yields rise, equity valuations may adjust downward due to increased competition for capital."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "European corporate bonds",
+          "direction": "wider",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "European corporate bond spreads might widen as investors demand higher returns.",
+          "detail": "The rise in sovereign yields could prompt a reassessment of credit risk, leading to wider spreads in corporate bonds."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the medium-term impact of rising yields on corporate borrowing costs and equity valuations.",
+        "detail": "The market might not fully price in the implications of higher yields on corporate refinancing risks and the potential for equity repricing."
+      },
+      "falsifiers": [
+        "Treasury yields fall back to previous levels.",
+        "Moody's revises France's credit rating downward.",
+        "Central banks signal no change in interest rate policy despite rising yields."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US Equities",
+          "plain": "Sell US equities to hedge against potential declines due to rising yields.",
+          "instrument": "S&P 500 futures",
+          "risk": "Equities could rally if economic data surprises positively."
+        }
+      ],
+      "watchNext": [
+        "Upcoming Federal Reserve meeting for interest rate guidance.",
+        "Inflation data releases in the US and Europe.",
+        "Moody's updates on other eurozone economies."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "yield",
+          "plain": "The income return on an investment, such as the interest or dividends received."
+        },
+        {
+          "term": "spread",
+          "plain": "The difference in yield between two different bonds or bond categories."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-10-26-asian-stocks-decline-as-appetite-for-risky-assets-ebbs",
+      "rank": 5,
+      "editorNote": "Declining Asian stocks reflect a broader risk-off sentiment, affecting global equity markets.",
+      "materiality": {
+        "score": 68,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 8.5
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "federal reserve",
+          "oil"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/asian-stocks-decline-as-appetite-for-risky-assets-ebbs-926087d6?mod=rss_markets_main",
+          "title": "Asian Stocks Decline as Appetite for Risky Assets Ebbs"
+        }
+      ],
+      "headlines": [
+        "Asian Stocks Decline as Appetite for Risky Assets Ebbs"
+      ],
+      "newestAt": "2026-10-26T05:30:00.000Z",
+      "headline": "Asian Stock Decline Sparks Global Market Caution",
+      "standfirst": "Asian stocks fell as investors grew wary of risky assets.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some risk aversion, but the extent of the decline was unexpected.",
+        "persistence": "days",
+        "regionFocus": [
+          "Global",
+          "Asia"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Asian stocks dropped as investors became cautious about taking risks. This follows concerns about global economic stability and upcoming Federal Reserve decisions.",
+        "whyItMatters": "Investors are pulling back from stocks, which could lead to broader declines in global markets.",
+        "detail": "The decline in Asian equities reflects a shift in investor sentiment towards risk aversion, influenced by macroeconomic uncertainties and anticipated monetary policy changes."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Investors expect the Federal Reserve to maintain or raise interest rates.",
+              "detail": "The risk-off sentiment increases the likelihood that the Fed will either hold rates steady or consider a rate hike to manage inflation expectations."
+            }
+          ],
+          "endpoint": "Federal Reserve policy",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The US dollar strengthens as investors seek safer assets.",
+              "detail": "As risk appetite declines, capital flows into the US dollar, viewed as a safe haven, leading to its appreciation against other currencies."
+            }
+          ],
+          "endpoint": "US dollar",
+          "strength": "strong"
+        },
+        {
+          "channel": "correlation",
+          "links": [
+            {
+              "plain": "Global equities move in tandem with Asian stocks, leading to declines.",
+              "detail": "The sell-off in Asian markets triggers a correlated decline in global equities as risk aversion spreads across regions."
+            }
+          ],
+          "endpoint": "Global equity markets",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Global equity indices",
+          "direction": "down",
+          "magnitude": "1.5 to 3%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Global stock markets are likely to fall as investors become more risk-averse.",
+          "detail": "The decline in Asian equities is expected to lead to a similar pullback in global indices as risk sentiment deteriorates."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "US dollar index",
+          "direction": "up",
+          "magnitude": "0.5 to 1%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The US dollar is likely to gain as investors seek safety.",
+          "detail": "Increased demand for the US dollar as a safe-haven asset will likely drive its appreciation against a basket of other currencies."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US Treasury yields may fall as investors buy bonds for safety.",
+          "detail": "The flight to safety is expected to increase demand for US Treasuries, pushing yields lower as bond prices rise."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the persistence of risk aversion, which could lead to prolonged market volatility.",
+        "detail": "The market might not fully account for the sustained impact of risk-off sentiment, potentially leading to extended periods of volatility and price adjustments."
+      },
+      "falsifiers": [
+        "A surprising dovish pivot by the Federal Reserve",
+        "A sudden improvement in Asian economic data",
+        "Stabilization or rebound in Asian stock markets"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long US Dollar",
+          "plain": "Buy the US dollar against a basket of currencies to benefit from risk aversion.",
+          "instrument": "FX futures or options",
+          "risk": "The US dollar could weaken if global risk sentiment improves unexpectedly."
+        }
+      ],
+      "watchNext": [
+        "Upcoming Federal Reserve meeting",
+        "Economic data releases from China",
+        "Earnings reports from major Asian companies"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    }
+  ],
+  "diagnostics": {
+    "articlesIngested": 154,
+    "clustersConsidered": 25,
+    "feeds": [
+      {
+        "id": "fed",
+        "name": "Federal Reserve",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 0,
+        "ms": 115,
+        "error": null
+      },
+      {
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 0,
+        "ms": 80,
+        "error": null
+      },
+      {
+        "id": "ecb",
+        "name": "European Central Bank",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 2,
+        "ms": 375,
+        "error": null
+      },
+      {
+        "id": "boe",
+        "name": "Bank of England",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 607,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 237,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 181,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 0,
+        "ms": 230,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 222,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 293,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 314,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 17,
+        "ms": 320,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 72,
+        "fresh": 24,
+        "ms": 323,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 383,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 21,
+        "ms": 441,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 425,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 11,
+        "fresh": 11,
+        "ms": 741,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 56,
+        "fresh": 14,
+        "ms": 429,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": true,
+        "parsed": 37,
+        "fresh": 22,
+        "ms": 385,
+        "error": null
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 3,
+        "ms": 411,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 423,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 458,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 3265,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 422,
+        "error": null
+      }
+    ],
+    "marketProviders": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 10473,
+        "error": "TypeError: fetch failed"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 136,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "usage": {
+      "calls": 6,
+      "inputTokens": 12434,
+      "outputTokens": 5936,
+      "estimatedCostUsd": 0.0904
+    },
+    "runtimeMs": 40978
+  },
+  "scorecardSummary": {
+    "total": 20,
+    "open": 9,
+    "flat": 2,
+    "hits": 4,
+    "misses": 5,
+    "settled": 9,
+    "hitRate": 44.4,
+    "byClass": {
+      "rates": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "commodities": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "fx": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "vol": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "credit": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "equities": {
+        "hits": 0,
+        "total": 4,
+        "rate": 0
+      }
+    },
+    "byConviction": {
+      "3": {
+        "hits": 2,
+        "total": 7,
+        "rate": 28.6
+      },
+      "4": {
+        "hits": 2,
+        "total": 2,
+        "rate": 100
+      }
+    }
+  }
+}
