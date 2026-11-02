@@ -1,30 +1,44 @@
 {
   "version": 1,
-  "date": "2026-10-30",
-  "dateLabel": "Friday, 30 October 2026",
-  "generatedAt": "2026-10-30T11:20:38.840Z",
+  "date": "2026-11-02",
+  "dateLabel": "Monday, 2 November 2026",
+  "generatedAt": "2026-11-02T13:26:11.016Z",
   "model": "openai/gpt-4o",
   "marketRead": {
-    "headline": "AI Selloff and ECB Leadership Shift Impact Markets",
-    "body": "The deepening AI selloff is causing significant volatility across equities, commodities, and FX markets, with investors reassessing tech valuations. Christine Lagarde's early resignation as ECB President introduces uncertainty in European monetary policy, affecting rates and FX. These developments suggest a shift towards risk aversion, with potential for increased bond demand and pressure on tech stocks.",
-    "regime": "risk aversion amid tech volatility"
+    "headline": "Oil and bond yields drive market sentiment",
+    "body": "Oil prices are falling as U.S.-Iran diplomatic efforts progress, easing inflation concerns and pushing bond yields lower. This shift in energy prices and yields supports a risk-on sentiment, lifting stock futures. Investors are also watching the upcoming midterm elections, which could impact sectors like defense and healthcare.",
+    "regime": "risk-on sentiment amid easing inflation fears"
   },
   "snapshot": {
-    "quotes": [],
+    "quotes": [
+      {
+        "key": "us10y",
+        "label": "US 10Y",
+        "group": "rates",
+        "unit": "pct",
+        "value": 4.929,
+        "display": "4.93%",
+        "change": -0.06400000000000006,
+        "changePct": -1.2817945123172452,
+        "changeDisplay": "-6bp",
+        "asOf": "2026-10-30",
+        "provider": "yahoo"
+      }
+    ],
     "report": [
       {
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 541,
+        "ms": 412,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
-        "ok": false,
-        "count": 0,
-        "ms": 562,
-        "error": "no rows"
+        "ok": true,
+        "count": 1,
+        "ms": 268,
+        "error": null
       },
       {
         "provider": "fred",
@@ -34,21 +48,21 @@
         "error": "no rows"
       }
     ],
-    "fetchedAt": "2026-10-30T11:20:18.941Z"
+    "fetchedAt": "2026-11-02T13:25:37.161Z"
   },
   "stories": [
     {
-      "id": "2026-10-30-ai-selloff-deepens-oil-jumps-and-crypto-falls",
+      "id": "2026-11-02-stock-futures-higher-oil-lower-as-investors-return-to-risk",
       "rank": 1,
-      "editorNote": "The AI selloff is affecting multiple asset classes and could lead to a sustained shift in tech valuations.",
+      "editorNote": "This story captures the broad market sentiment shift towards risk-on, affecting multiple asset classes.",
       "materiality": {
-        "score": 72.3,
+        "score": 72.6,
         "components": {
           "corroboration": 13,
           "authority": 13,
           "breadth": 18,
           "salience": 18.7,
-          "recency": 9.6
+          "recency": 9.9
         },
         "distinctSources": 1,
         "salienceTerms": [
@@ -63,296 +77,118 @@
       "links": [
         {
           "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/stocks/ai-selloff-deepens-oil-jumps-and-crypto-falls-4703d21b?mod=rss_markets_main",
-          "title": "AI Selloff Deepens, Oil Jumps and Crypto Falls"
+          "url": "https://www.wsj.com/finance/stocks/stock-futures-higher-oil-lower-as-investors-return-to-risk-17e79294?mod=rss_markets_main",
+          "title": "Stock Futures Higher, Oil Lower as Investors Return to Risk"
         }
       ],
       "headlines": [
-        "AI Selloff Deepens, Oil Jumps and Crypto Falls"
+        "Stock Futures Higher, Oil Lower as Investors Return to Risk"
       ],
-      "newestAt": "2026-10-30T09:48:00.000Z",
-      "headline": "AI Stock Selloff Triggers Broader Market Repricing",
-      "standfirst": "AI stocks plunged after disappointing earnings, affecting other markets.",
+      "newestAt": "2026-11-02T13:03:00.000Z",
+      "headline": "Investor Risk Appetite Returns as Oil Prices Fall",
+      "standfirst": "Stock futures rise and oil prices drop, encouraging a cautious return to risk.",
       "classification": {
-        "eventType": "corporate",
+        "eventType": "macro-data",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The initial AI stock decline was expected, but the broader market impact is still unfolding.",
-        "persistence": "weeks",
+        "pricedInRationale": "The market had anticipated some recovery after the tech selloff, but the oil price drop was not fully expected.",
+        "persistence": "days",
         "regionFocus": [
           "Global"
         ]
       },
       "whatHappened": {
-        "plain": "AI stocks fell sharply after companies reported weaker-than-expected earnings. This has caused investors to seek safer investments, like government bonds.",
-        "whyItMatters": "The selloff is spreading to other sectors, affecting tech valuations and pushing Treasury yields lower.",
-        "detail": "AI companies reported disappointing earnings, leading to a selloff in their stocks. This has prompted a flight to safety, with investors buying government bonds, reducing yields."
+        "plain": "Stock futures are up and oil prices are down, which is making investors more willing to take risks after last week's tech selloff.",
+        "whyItMatters": "This change in sentiment affects multiple asset classes, potentially stabilizing markets after recent volatility.",
+        "detail": "The decline in oil prices is easing inflation concerns, leading to a rise in stock futures and a drop in Treasury yields as investors shift back to riskier assets."
       },
       "chains": [
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "AI companies reported weak earnings.",
-              "detail": "AI companies underperformed expectations in their quarterly reports, leading to a stock selloff."
-            },
-            {
-              "plain": "Investors sold AI stocks.",
-              "detail": "Investors, reacting to poor earnings, sold off AI stocks, driving prices lower."
-            }
-          ],
-          "endpoint": "AI stock prices",
-          "strength": "strong"
-        },
         {
           "channel": "discount-rate",
           "links": [
             {
-              "plain": "Investors moved to safer assets.",
-              "detail": "Investors shifted funds from AI stocks to government bonds, seeking safety."
+              "plain": "Oil prices fall, reducing inflation expectations.",
+              "detail": "Lower oil prices ease inflationary pressures, leading to a potential reduction in the term premium embedded in Treasury yields."
             },
             {
-              "plain": "This pushed bond yields lower.",
-              "detail": "The demand for government bonds increased, causing their yields to fall."
+              "plain": "Lower inflation expectations reduce Treasury yields.",
+              "detail": "As inflation expectations fall, the real yield component of nominal Treasury yields decreases, causing yields to drop."
             }
           ],
-          "endpoint": "Treasury yields",
-          "strength": "moderate"
+          "endpoint": "US Treasury market",
+          "strength": "strong"
         },
         {
-          "channel": "substitution",
+          "channel": "positioning",
           "links": [
             {
-              "plain": "Other tech stocks were sold.",
-              "detail": "Investors, concerned about tech valuations, sold off other tech stocks as well."
+              "plain": "Investors shift back to stocks as oil prices drop.",
+              "detail": "The decline in oil prices reduces input costs for many companies, improving earnings outlooks and encouraging a rotation back into equities."
             },
             {
-              "plain": "This affected broader tech valuations.",
-              "detail": "The selloff in AI stocks led to a repricing in the broader tech sector."
+              "plain": "The tech sector stabilizes after last week's selloff.",
+              "detail": "With risk appetite returning, tech stocks, which were oversold, see buying interest as investors reassess growth prospects."
             }
           ],
-          "endpoint": "Tech sector valuations",
+          "endpoint": "US equities",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
-        {
-          "assetClass": "equities",
-          "instrument": "AI stocks",
-          "direction": "down",
-          "magnitude": "5 to 10%",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 1,
-          "plain": "AI stocks are expected to continue falling as investors react to weak earnings.",
-          "detail": "The weak earnings reports have triggered a selloff, likely continuing as investors reassess AI sector valuations."
-        },
         {
           "assetClass": "rates",
           "instrument": "US 10-year Treasury yield",
           "direction": "down",
           "magnitude": "5 to 10 basis points",
           "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Treasury yields are likely to fall as investors seek safer assets.",
-          "detail": "Increased demand for Treasuries is pushing yields lower as investors move away from riskier assets."
+          "conviction": 4,
+          "order": 1,
+          "plain": "US Treasury yields are likely to fall as inflation concerns ease.",
+          "detail": "The drop in oil prices reduces inflation expectations, leading to a decline in the term premium and hence lower Treasury yields."
         },
         {
           "assetClass": "equities",
-          "instrument": "Tech sector",
-          "direction": "down",
+          "instrument": "US tech stocks",
+          "direction": "up",
           "magnitude": "2 to 4%",
-          "horizon": "weeks",
+          "horizon": "days",
           "conviction": 3,
           "order": 2,
-          "plain": "Broader tech stocks may decline as AI stock selloff affects sector sentiment.",
-          "detail": "The AI selloff could lead to a reevaluation of tech sector valuations, causing broader declines."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may not fully appreciate the long-term impact of AI sector volatility on tech valuations, which could lead to sustained underperformance in the sector.",
-        "detail": "The market may underestimate the potential for prolonged weakness in tech stocks due to ongoing volatility in AI valuations."
-      },
-      "falsifiers": [
-        "AI companies report improved earnings next quarter",
-        "Central banks significantly change interest rates",
-        "A major geopolitical event shifts market focus"
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Short AI Stocks",
-          "plain": "Sell AI stocks to profit from continued weakness in the sector.",
-          "instrument": "short AI sector ETFs",
-          "risk": "AI stocks rebound unexpectedly due to positive news or sentiment shift."
-        }
-      ],
-      "watchNext": [
-        "Next quarter AI company earnings",
-        "Central bank policy meetings",
-        "Major geopolitical developments"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+          "plain": "Tech stocks are likely to recover as investors return to riskier assets.",
+          "detail": "With reduced inflation fears and a more stable outlook, investors are likely to rotate back into tech stocks, which were oversold."
         },
         {
-          "term": "Treasury yield",
-          "plain": "The interest rate on US government bonds, which reflects the cost of borrowing for the government."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-10-30-ecb-president-lagarde-to-step-down-on-7-february-2027",
-      "rank": 2,
-      "editorNote": "Lagarde's resignation introduces uncertainty in ECB policy, impacting rates and FX markets.",
-      "materiality": {
-        "score": 74.3,
-        "components": {
-          "corroboration": 21,
-          "authority": 20,
-          "breadth": 9,
-          "salience": 19.6,
-          "recency": 4.8
-        },
-        "distinctSources": 2,
-        "salienceTerms": [
-          "ecb",
-          "lagarde",
-          "euro"
-        ]
-      },
-      "sources": [
-        "European Central Bank",
-        "WSJ World"
-      ],
-      "links": [
-        {
-          "name": "European Central Bank",
-          "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
-          "title": "ECB President Lagarde to step down on 7 February 2027"
-        },
-        {
-          "name": "WSJ World",
-          "url": "https://www.wsj.com/world/europe/christine-lagarde-to-resign-early-as-ecb-president-2ad844e6?mod=rss_worldnews",
-          "title": "Christine Lagarde to Resign Early as ECB President"
-        }
-      ],
-      "headlines": [
-        "ECB President Lagarde to step down on 7 February 2027",
-        "Christine Lagarde to Resign Early as ECB President"
-      ],
-      "newestAt": "2026-10-29T16:37:00.000Z",
-      "headline": "Lagarde's Departure Sparks ECB Policy Uncertainty",
-      "standfirst": "Christine Lagarde announced her early resignation as ECB President.",
-      "classification": {
-        "eventType": "monetary-policy",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some policy uncertainty but not the specific timing of Lagarde's resignation.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "Europe"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Christine Lagarde announced she will step down as President of the European Central Bank on 7 February 2027. Her early resignation introduces uncertainty about future ECB policies.",
-        "whyItMatters": "Lagarde's departure could lead to shifts in ECB's monetary policy, affecting interest rates and currency markets.",
-        "detail": "Lagarde's resignation creates a leadership vacuum at the ECB, potentially altering the trajectory of interest rate decisions and affecting the euro's value."
-      },
-      "chains": [
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "Lagarde's resignation creates uncertainty about ECB's future policy direction.",
-              "detail": "The unexpected timing of Lagarde's departure raises questions about the ECB's policy stance, particularly regarding interest rates."
-            },
-            {
-              "plain": "Uncertainty may delay or alter planned interest rate changes.",
-              "detail": "Market participants may reassess expectations for ECB rate hikes, leading to volatility in rate markets."
-            }
-          ],
-          "endpoint": "European interest rates",
-          "strength": "strong"
-        },
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "The euro may weaken due to policy uncertainty.",
-              "detail": "Lagarde's resignation introduces risk premium into the euro, as investors reassess ECB's future policy path."
-            }
-          ],
-          "endpoint": "EUR/USD exchange rate",
-          "strength": "moderate"
-        },
-        {
-          "channel": "correlation",
-          "links": [
-            {
-              "plain": "European bond yields may become more volatile.",
-              "detail": "Lagarde's departure could disrupt the usual correlation between European bond yields and ECB policy signals."
-            }
-          ],
-          "endpoint": "European government bonds",
-          "strength": "speculative"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "rates",
-          "instrument": "German 10-year Bund yield",
-          "direction": "up",
-          "magnitude": "5 to 10 basis points",
+          "assetClass": "commodities",
+          "instrument": "Brent crude oil",
+          "direction": "down",
+          "magnitude": "3 to 5%",
           "horizon": "days",
           "conviction": 3,
           "order": 1,
-          "plain": "German bond yields may rise as investors adjust to ECB policy uncertainty.",
-          "detail": "The uncertainty around ECB leadership may lead to a repricing of Bunds, pushing yields higher."
-        },
-        {
-          "assetClass": "fx",
-          "instrument": "EUR/USD",
-          "direction": "down",
-          "magnitude": "1 to 2%",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 2,
-          "plain": "The euro could weaken against the dollar due to uncertainty over ECB's future policy.",
-          "detail": "Investors may sell euros in anticipation of potential policy shifts, increasing downward pressure on EUR/USD."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "European bank stocks",
-          "direction": "mixed",
-          "magnitude": "1 to 3%",
-          "horizon": "weeks",
-          "conviction": 2,
-          "order": 2,
-          "plain": "European bank stocks may experience volatility as ECB policy uncertainty affects interest rate expectations.",
-          "detail": "Bank stocks could be volatile as changes in rate expectations impact their net interest margins."
+          "plain": "Oil prices are expected to continue falling due to lower demand expectations.",
+          "detail": "The market anticipates weaker demand for oil, leading to a further decline in prices as supply outpaces consumption."
         }
       ],
       "whatMarketMisses": {
-        "plain": "The market may underestimate the impact of Lagarde's departure on ECB's long-term policy framework, which could become more hawkish or dovish depending on her successor.",
-        "detail": "Investors might not fully appreciate how a new ECB president could shift the policy framework, leading to unexpected rate path changes."
+        "plain": "Investors may underestimate the potential for a prolonged period of lower oil prices to impact energy sector earnings and related credit markets.",
+        "detail": "The sustained drop in oil prices could lead to a significant repricing of energy sector debt, as lower revenues impact creditworthiness."
       },
       "falsifiers": [
-        "A swift and clear appointment of a new ECB president with a similar policy stance to Lagarde.",
-        "Immediate and strong communication from the ECB reducing policy uncertainty."
+        "A sudden geopolitical event that spikes oil prices.",
+        "Stronger-than-expected economic data that reignites inflation fears.",
+        "Central bank actions that alter interest rate expectations abruptly."
       ],
       "tradeExpression": [
         {
-          "idea": "Short EUR/USD",
-          "plain": "Sell the euro against the dollar to profit from potential euro weakness due to ECB uncertainty.",
-          "instrument": "FX futures or spot market",
-          "risk": "The euro could strengthen if the ECB quickly clarifies its policy direction."
+          "idea": "Long US tech stocks",
+          "plain": "Buy US tech stocks to benefit from the expected recovery in risk appetite.",
+          "instrument": "Cash equities or equity futures",
+          "risk": "A renewed selloff in tech stocks if inflation concerns resurface."
         }
       ],
       "watchNext": [
-        "Announcements regarding Lagarde's successor.",
-        "Upcoming ECB meetings or statements."
+        "Upcoming US inflation data releases.",
+        "OPEC meetings that could influence oil supply decisions.",
+        "Federal Reserve statements on interest rate policy."
       ],
       "glossary": [
         {
@@ -360,202 +196,176 @@
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
         },
         {
-          "term": "risk premium",
-          "plain": "The extra return investors demand for holding a risky asset instead of a risk-free one."
+          "term": "term premium",
+          "plain": "The extra yield investors require to hold a longer-term bond instead of a series of shorter-term bonds."
+        },
+        {
+          "term": "real yield",
+          "plain": "The yield on a bond after adjusting for inflation."
         }
       ],
       "confidence": 3
     },
     {
-      "id": "2026-10-30-gold-below-4-000-on-inflation-concerns-tech-selloff",
-      "rank": 3,
-      "editorNote": "Gold's decline below $4,000 signals inflation concerns and tech selloff effects on commodities.",
+      "id": "2026-11-02-u-s-crude-falls-below-100-amid-reports-of-u-s-iran-diplomati",
+      "rank": 2,
+      "editorNote": "The fall in oil prices due to diplomatic efforts has a significant impact on inflation expectations and bond yields.",
       "materiality": {
-        "score": 68.8,
+        "score": 58.1,
         "components": {
           "corroboration": 13,
           "authority": 13,
-          "breadth": 13.5,
-          "salience": 20,
-          "recency": 9.3
+          "breadth": 4.5,
+          "salience": 17.8,
+          "recency": 9.8
         },
         "distinctSources": 1,
         "salienceTerms": [
-          "fed",
-          "federal reserve",
-          "interest rate",
-          "inflation",
-          "selloff",
+          "repo",
           "oil",
-          "gold"
+          "crude"
         ]
       },
       "sources": [
-        "WSJ Markets"
+        "CNBC"
       ],
       "links": [
         {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/commodities-futures/gold-declines-weighed-by-tighter-monetary-policy-expectations-2c50c549?mod=rss_markets_main",
-          "title": "Gold Below $4,000 on Inflation Concerns, Tech Selloff"
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html",
+          "title": "U.S. crude falls below $100 amid reports of U.S.-Iran diplomatic efforts"
         }
       ],
       "headlines": [
-        "Gold Below $4,000 on Inflation Concerns, Tech Selloff"
+        "U.S. crude falls below $100 amid reports of U.S.-Iran diplomatic efforts"
       ],
-      "newestAt": "2026-10-30T08:52:00.000Z",
-      "headline": "Gold Slump Signals Inflation Worries and Tech Market Impact",
-      "standfirst": "Gold prices fell below $4,000 due to inflation concerns and tech selloff.",
+      "newestAt": "2026-11-02T12:40:46.000Z",
+      "headline": "Oil Prices Drop as US-Iran Talks Ease Supply Concerns",
+      "standfirst": "Oil prices fell below $100 as US and Iran engage in diplomatic talks.",
       "classification": {
-        "eventType": "macro-data",
+        "eventType": "geopolitical",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some inflation concerns but not the full extent of the tech selloff's impact.",
+        "pricedInRationale": "The market had anticipated some diplomatic movement, but the scale of the price drop suggests further repricing.",
         "persistence": "weeks",
         "regionFocus": [
           "Global"
         ]
       },
       "whatHappened": {
-        "plain": "Gold prices dropped below $4,000 per troy ounce. This was driven by rising oil prices and persistent inflation, which increased expectations of a Federal Reserve interest rate hike.",
-        "whyItMatters": "Investors see gold as a hedge against inflation. A drop signals changing expectations about inflation and interest rates, affecting broader market sentiment.",
-        "detail": "The decline in gold prices reflects a shift in investor sentiment due to rising inflation risks and the potential for tighter monetary policy from the Federal Reserve."
+        "plain": "Oil prices dropped below $100 per barrel as news emerged of diplomatic efforts between the US and Iran. This development comes amid ongoing tensions in the Middle East.",
+        "whyItMatters": "Lower oil prices can reduce inflation expectations and influence central bank policy decisions.",
+        "detail": "The diplomatic efforts between the US and Iran suggest potential easing of geopolitical tensions, which could lead to increased oil supply and lower prices."
       },
       "chains": [
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Higher inflation expectations lead to predictions of Fed rate hikes.",
-              "detail": "The market anticipates that persistent inflation will prompt the Federal Reserve to increase interest rates sooner than previously expected."
+              "plain": "Lower oil prices reduce inflation expectations.",
+              "detail": "With oil prices falling, the pressure on central banks to combat inflation decreases, potentially altering their rate hike plans."
             },
             {
-              "plain": "Predicted Fed rate hikes make borrowing more expensive.",
-              "detail": "As expectations for Fed rate hikes solidify, the cost of borrowing is expected to rise, impacting businesses and consumers."
+              "plain": "Central banks may slow down rate hikes.",
+              "detail": "If inflation pressures ease, central banks might delay or reduce the magnitude of future interest rate increases."
             }
           ],
-          "endpoint": "borrowers",
+          "endpoint": "central banks",
           "strength": "strong"
-        },
-        {
-          "channel": "correlation",
-          "links": [
-            {
-              "plain": "Tech stocks and gold prices fall together.",
-              "detail": "The selloff in tech stocks has coincided with the drop in gold prices, suggesting a breakdown in typical asset correlations."
-            },
-            {
-              "plain": "Investors adjust portfolios away from tech and gold.",
-              "detail": "As correlations shift, investors may reduce positions in both tech stocks and gold, seeking alternative safe havens."
-            }
-          ],
-          "endpoint": "investor portfolios",
-          "strength": "moderate"
         },
         {
           "channel": "discount-rate",
           "links": [
             {
-              "plain": "Rising inflation expectations push bond yields higher.",
-              "detail": "With inflation concerns mounting, government bond yields are expected to rise as investors demand higher returns."
-            },
-            {
-              "plain": "Higher bond yields increase the cost of capital.",
-              "detail": "As yields rise, the cost of capital for companies increases, affecting their investment and spending decisions."
+              "plain": "Bond yields fall as inflation fears ease.",
+              "detail": "The decrease in oil prices lowers inflation expectations, leading to a reduction in bond yields as investors adjust their inflation outlook."
             }
           ],
-          "endpoint": "corporate investment",
+          "endpoint": "bond markets",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
           "assetClass": "commodities",
-          "instrument": "Gold",
+          "instrument": "Crude oil",
           "direction": "down",
-          "magnitude": "2 to 4%",
-          "horizon": "weeks",
+          "magnitude": "3 to 5%",
+          "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "Gold prices are expected to continue falling as inflation concerns persist.",
-          "detail": "With inflation expectations rising, gold's appeal as a hedge diminishes, leading to further price declines."
+          "plain": "Oil prices are likely to stay lower as diplomatic talks progress.",
+          "detail": "The potential for increased oil supply from Iran could keep prices subdued in the near term."
         },
         {
           "assetClass": "rates",
           "instrument": "US 10-year Treasury yield",
-          "direction": "up",
-          "magnitude": "10 to 20 basis points",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "US Treasury yields are likely to rise as investors anticipate Fed rate hikes.",
-          "detail": "The expectation of tighter monetary policy is pushing yields higher as investors adjust for increased inflation risk."
+          "plain": "US Treasury yields may fall as inflation concerns ease.",
+          "detail": "Reduced inflation expectations could lead to a decline in yields as investors reassess their expectations for future rate hikes."
         },
         {
           "assetClass": "equities",
-          "instrument": "Tech sector stocks",
-          "direction": "down",
-          "magnitude": "3 to 5%",
+          "instrument": "US consumer discretionary stocks",
+          "direction": "up",
+          "magnitude": "1 to 2%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Tech stocks may face continued pressure as investors reassess risk.",
-          "detail": "The tech sector is likely to see further declines as investors rotate out of high-growth stocks amid rising interest rate expectations."
+          "plain": "Lower oil prices could boost consumer spending, benefiting discretionary stocks.",
+          "detail": "With lower fuel costs, consumers may have more disposable income, potentially increasing spending in discretionary sectors."
         }
       ],
       "whatMarketMisses": {
-        "plain": "The market may be underestimating the impact of rising interest rates on consumer spending. If rates rise faster than expected, the knock-on effects on consumption could be more severe, impacting retail and consumer-focused sectors.",
-        "detail": "The potential for accelerated rate hikes could lead to a sharper than anticipated decline in consumer spending, affecting sectors reliant on discretionary income."
+        "plain": "Investors may underestimate the potential for a significant shift in US-Iran relations, which could lead to a more sustained period of lower oil prices.",
+        "detail": "The market might not fully price in the long-term implications of a diplomatic breakthrough, which could stabilize oil supply and keep prices lower for an extended period."
       },
       "falsifiers": [
-        "If inflation data shows a significant decline, reducing rate hike expectations.",
-        "If the tech sector stabilizes and rebounds, reversing the current selloff.",
-        "If geopolitical events lead to a flight to safety, boosting gold prices."
+        "A breakdown in US-Iran talks leading to renewed tensions",
+        "A sudden supply disruption in another major oil-producing region",
+        "Unexpectedly strong inflation data prompting aggressive central bank action"
       ],
       "tradeExpression": [
         {
-          "idea": "Short Gold",
-          "plain": "Sell gold futures to profit from continued price declines due to inflation concerns.",
-          "instrument": "Futures",
-          "risk": "A sudden geopolitical event could increase demand for gold as a safe haven."
+          "idea": "Long US consumer discretionary",
+          "plain": "Buy US consumer discretionary stocks to benefit from increased consumer spending due to lower oil prices.",
+          "instrument": "Cash equities or ETFs",
+          "risk": "A reversal in oil prices could reduce consumer spending power."
         }
       ],
       "watchNext": [
-        "Upcoming Federal Reserve meetings for rate decision clues.",
-        "Inflation data releases for signs of easing or worsening trends.",
-        "Tech sector earnings reports for insights into market sentiment."
+        "Upcoming OPEC meetings",
+        "US inflation data releases",
+        "Further announcements on US-Iran diplomatic progress"
       ],
       "glossary": [
         {
           "term": "basis point",
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        },
-        {
-          "term": "hedge",
-          "plain": "An investment made to reduce the risk of adverse price movements in an asset."
-        },
-        {
-          "term": "monetary policy",
-          "plain": "Actions by a central bank to control the money supply and interest rates in an economy."
         }
       ],
       "confidence": 3
     },
     {
-      "id": "2026-10-30-european-indexes-largely-lower-as-ai-selloff-bites",
-      "rank": 4,
-      "editorNote": "European indexes reacting to the AI selloff indicate broader market implications beyond tech.",
+      "id": "2026-11-02-u-s-treasury-european-bond-yields-fall-as-oil-prices-drop",
+      "rank": 3,
+      "editorNote": "The drop in U.S. Treasury and European bond yields is a key factor in the current market environment.",
       "materiality": {
-        "score": 71.2,
+        "score": 68.9,
         "components": {
           "corroboration": 13,
           "authority": 13,
-          "breadth": 18,
-          "salience": 17.8,
-          "recency": 9.3
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 9.4
         },
         "distinctSources": 1,
         "salienceTerms": [
-          "selloff",
+          "treasury",
+          "election",
           "oil",
           "euro"
         ]
@@ -566,126 +376,271 @@
       "links": [
         {
           "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/stocks/nikkei-falls-1-3-dragged-by-electronics-metals-stocks-6961975d?mod=rss_markets_main",
-          "title": "European Indexes Largely Lower as AI Selloff Bites"
+          "url": "https://www.wsj.com/finance/investing/treasury-yields-little-changed-in-asian-trade-ahead-of-midterms-key-data-this-week-c5a1fdb3?mod=rss_markets_main",
+          "title": "U.S. Treasury, European Bond Yields Fall as Oil Prices Drop"
         }
       ],
       "headlines": [
-        "European Indexes Largely Lower as AI Selloff Bites"
+        "U.S. Treasury, European Bond Yields Fall as Oil Prices Drop"
       ],
-      "newestAt": "2026-10-30T08:55:00.000Z",
-      "headline": "European Stocks Fall as AI Selloff Spreads Market Worry",
-      "standfirst": "European stocks dropped due to a selloff in AI tech and rising oil prices.",
+      "newestAt": "2026-11-02T11:06:00.000Z",
+      "headline": "Bond Yields Fall as Oil Prices Decline, Impacting Markets",
+      "standfirst": "US Treasury and European bond yields dropped due to falling oil prices.",
       "classification": {
-        "eventType": "corporate",
+        "eventType": "macro-data",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some volatility in tech stocks, but the extent of the AI selloff was unexpected.",
-        "persistence": "weeks",
+        "pricedInRationale": "The market had anticipated some impact from oil price changes, but the extent of the bond yield drop was unexpected.",
+        "persistence": "days",
         "regionFocus": [
-          "Europe",
-          "Global"
+          "US",
+          "Europe"
         ]
       },
       "whatHappened": {
-        "plain": "European stock markets fell as investors sold off shares in AI-related technology companies. Rising oil prices added to the pressure on stocks.",
-        "whyItMatters": "This matters because it shows how sensitive markets are to tech sector volatility and commodity price changes.",
-        "detail": "The AI sector, previously a growth driver, is now experiencing a correction, leading to broader market declines. Oil price increases are compounding the pressure by raising inflation concerns."
+        "plain": "US Treasury and European bond yields fell as oil prices dropped. Investors are also focused on upcoming US midterm elections and economic data releases.",
+        "whyItMatters": "The decline in yields affects borrowing costs and investment returns, influencing decisions across financial markets.",
+        "detail": "The US 10-year Treasury yield fell 6 basis points, reflecting reduced inflation expectations due to lower oil prices."
       },
       "chains": [
         {
-          "channel": "earnings",
+          "channel": "discount-rate",
           "links": [
             {
-              "plain": "AI companies see their stock prices fall.",
-              "detail": "Investors are selling AI stocks due to concerns about overvaluation and future earnings potential."
+              "plain": "Lower bond yields make borrowing cheaper.",
+              "detail": "A decrease in government bond yields reduces the baseline cost of borrowing across the economy."
             },
             {
-              "plain": "Companies dependent on AI technology face reduced demand.",
-              "detail": "As AI stocks drop, firms reliant on AI tech may forecast lower sales, impacting their earnings."
+              "plain": "Cheaper borrowing can boost investment.",
+              "detail": "With lower yields, companies and consumers may find it more attractive to finance new projects or purchases, potentially stimulating economic activity."
             }
           ],
-          "endpoint": "Tech-dependent companies",
-          "strength": "strong"
+          "endpoint": "corporate borrowers",
+          "strength": "moderate"
         },
         {
           "channel": "policy-reaction",
           "links": [
             {
               "plain": "Central banks may delay interest rate hikes.",
-              "detail": "With market instability, central banks might hold off on raising rates to avoid further volatility."
+              "detail": "Falling yields and lower inflation expectations could lead central banks to maintain accommodative monetary policies for longer."
             }
           ],
-          "endpoint": "Central banks",
-          "strength": "moderate"
-        },
-        {
-          "channel": "correlation",
-          "links": [
-            {
-              "plain": "Tech stocks and broader market indices move together.",
-              "detail": "The selloff in AI stocks causes a correlated decline in broader indices, as tech is a major market component."
-            }
-          ],
-          "endpoint": "Market indices",
+          "endpoint": "central banks",
           "strength": "strong"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "equities",
-          "instrument": "European tech stocks",
-          "direction": "down",
-          "magnitude": "3 to 5%",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 1,
-          "plain": "European tech stocks are likely to continue falling as investors reassess valuations.",
-          "detail": "The AI selloff has led to a reevaluation of tech stock valuations, causing sustained downward pressure."
-        },
-        {
           "assetClass": "rates",
-          "instrument": "European government bond yields",
+          "instrument": "US 10-year Treasury yield",
           "direction": "down",
           "magnitude": "5 to 10 basis points",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Bond yields may fall as investors seek safety in government bonds.",
-          "detail": "The equity market volatility drives a flight to quality, pushing yields lower as bond prices rise."
-        },
-        {
-          "assetClass": "commodities",
-          "instrument": "Oil",
-          "direction": "up",
-          "magnitude": "2 to 4%",
           "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "Oil prices are rising, adding inflationary pressure.",
-          "detail": "Supply constraints and geopolitical tensions are driving oil prices higher, impacting inflation expectations."
+          "plain": "US Treasury yields are likely to continue falling as oil prices influence inflation expectations.",
+          "detail": "The drop in oil prices reduces inflationary pressures, leading to lower nominal yields on US Treasuries."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US stock market",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Lower yields could support higher stock prices as borrowing costs fall.",
+          "detail": "With reduced yields, the equity risk premium looks more attractive, potentially driving up stock valuations."
+        },
+        {
+          "assetClass": "commodities",
+          "instrument": "oil",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 1,
+          "plain": "Oil prices are expected to continue declining, affecting energy sector revenues.",
+          "detail": "The current trend in oil prices reflects oversupply concerns and reduced demand expectations, pressuring prices downward."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may not fully appreciate the longer-term impact of AI volatility on tech sector growth and innovation.",
-        "detail": "The current selloff could dampen future investment in AI development, slowing growth in a key innovation sector."
+        "plain": "Investors may underestimate the impact of sustained lower oil prices on long-term inflation expectations and central bank policies.",
+        "detail": "The market may not fully price the longer-term implications of reduced oil prices on inflation and the potential delay in monetary tightening."
       },
       "falsifiers": [
-        "AI stocks rebound strongly next week.",
-        "Central banks proceed with rate hikes despite market volatility.",
-        "Oil prices stabilize or fall significantly."
+        "A sharp rebound in oil prices",
+        "Unexpectedly strong inflation data",
+        "Central bank statements indicating imminent rate hikes"
       ],
       "tradeExpression": [
         {
-          "idea": "Short European Tech",
-          "plain": "Sell European tech stocks to profit from continued weakness.",
-          "instrument": "Short futures on Euro Stoxx Technology Index",
-          "risk": "A sudden rebound in tech stocks could lead to losses."
+          "idea": "Long US equities",
+          "plain": "Buy US stocks as lower yields make equities more attractive.",
+          "instrument": "S&P 500 futures",
+          "risk": "A sudden rise in yields could reverse the positive sentiment in equities."
         }
       ],
       "watchNext": [
-        "Upcoming tech earnings reports",
-        "Central bank policy meetings",
-        "Oil supply announcements"
+        "US midterm election results",
+        "Upcoming US employment data",
+        "Central bank meetings and statements"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "yield",
+          "plain": "The income return on an investment, such as the interest or dividends received from holding a particular security."
+        },
+        {
+          "term": "equity risk premium",
+          "plain": "The excess return that investing in the stock market provides over a risk-free rate, typically the return on government bonds."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-02-defense-healthcare-crypto-and-ai-how-the-midterm-election-co",
+      "rank": 4,
+      "editorNote": "The midterm elections could lead to sector-specific shifts, particularly in defense and healthcare.",
+      "materiality": {
+        "score": 69.5,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 10
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "election",
+          "regulat",
+          "dollar"
+        ]
+      },
+      "sources": [
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html",
+          "title": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks"
+        }
+      ],
+      "headlines": [
+        "Defense, healthcare, crypto and AI: How the midterm election could affect stocks"
+      ],
+      "newestAt": "2026-11-02T13:23:58.000Z",
+      "headline": "Democratic Gains May Shift Spending in Defense and Healthcare Stocks",
+      "standfirst": "Midterm elections could lead to increased oversight and spending shifts in key sectors.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Markets have anticipated some Democratic gains, but the extent of policy shifts is uncertain.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The midterm elections may lead to Democrats gaining more seats in Congress. This could result in increased oversight of large companies and changes in federal spending, particularly in defense and healthcare.",
+        "whyItMatters": "Investors need to be aware of potential shifts in government spending and regulation, which can impact profits in these sectors.",
+        "detail": "Democratic control could lead to policy changes affecting corporate oversight and federal budget allocations, impacting sector-specific earnings."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Increased oversight could raise compliance costs for defense firms.",
+              "detail": "Democratic policies may impose stricter regulations, increasing operational costs for defense contractors."
+            },
+            {
+              "plain": "Higher compliance costs can reduce profit margins.",
+              "detail": "As compliance costs rise, defense companies may see reduced net income, affecting their stock valuations."
+            }
+          ],
+          "endpoint": "Defense companies",
+          "strength": "moderate"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Healthcare firms may see changes in reimbursement rates.",
+              "detail": "Democratic policies could adjust Medicare and Medicaid reimbursement rates, impacting healthcare providers' revenues."
+            },
+            {
+              "plain": "Lower reimbursement rates can squeeze healthcare profits.",
+              "detail": "If reimbursement rates are cut, healthcare providers might face tighter margins, affecting their earnings outlook."
+            }
+          ],
+          "endpoint": "Healthcare companies",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "US defense stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Defense stocks might decline due to increased regulatory costs.",
+          "detail": "Stricter oversight could lead to higher operational expenses, pressuring defense stock prices."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US healthcare stocks",
+          "direction": "down",
+          "magnitude": "1.5 to 3%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Healthcare stocks could fall if reimbursement rates are reduced.",
+          "detail": "Potential cuts in government reimbursement rates could lead to lower profits for healthcare providers."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 2,
+          "order": 2,
+          "plain": "Treasury yields might fall as investors seek safer assets amid policy uncertainty.",
+          "detail": "Increased regulatory oversight could drive a flight to safety, pushing down yields on US Treasuries."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the speed and extent of regulatory changes, particularly in defense, which could impact earnings more than expected.",
+        "detail": "The market might not fully price in the rapid implementation of new compliance measures, affecting defense sector profitability."
+      },
+      "falsifiers": [
+        "Republicans maintain or increase their seats in Congress.",
+        "No significant regulatory changes occur post-election.",
+        "Defense and healthcare spending remain stable."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US defense stocks",
+          "plain": "Sell US defense stocks to profit from potential regulatory cost increases.",
+          "instrument": "equity short",
+          "risk": "Defense spending increases or regulatory changes are less impactful than expected."
+        }
+      ],
+      "watchNext": [
+        "Midterm election results",
+        "Announcements on new regulatory policies",
+        "Changes in federal budget allocations"
       ],
       "glossary": [
         {
@@ -696,144 +651,166 @@
       "confidence": 3
     },
     {
-      "id": "2026-10-30-euro-falls-on-french-debt-concerns-cautious-ecb",
+      "id": "2026-11-02-boe-expected-to-join-peers-in-raising-key-rate",
       "rank": 5,
-      "editorNote": "Euro's fall on French debt concerns and cautious ECB stance highlights FX market volatility.",
+      "editorNote": "The BOE's expected rate hike aligns with global central bank actions, influencing rate markets.",
       "materiality": {
-        "score": 64.4,
+        "score": 66.8,
         "components": {
-          "corroboration": 13,
+          "corroboration": 21,
           "authority": 13,
-          "breadth": 9,
+          "breadth": 4.5,
           "salience": 20,
-          "recency": 9.4
+          "recency": 8.3
         },
-        "distinctSources": 1,
+        "distinctSources": 2,
         "salienceTerms": [
+          "fed",
           "ecb",
-          "interest rate",
-          "euro",
-          "sterling"
+          "boj",
+          "war"
         ]
       },
       "sources": [
-        "WSJ Markets"
+        "WSJ Markets",
+        "WSJ World"
       ],
       "links": [
         {
           "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/currencies/singapore-dollar-strengthens-amid-falling-u-s-treasury-yields-b806c8af?mod=rss_markets_main",
-          "title": "Euro Falls on French Debt Concerns, Cautious ECB"
+          "url": "https://www.wsj.com/economy/central-banking/boe-expected-to-join-peers-in-raising-key-rate-62a61c5b?mod=rss_markets_main",
+          "title": "BOE Expected to Join Peers in Raising Key Rate"
+        },
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/economy/central-banking/boe-expected-to-join-peers-in-raising-key-rate-62a61c5b?mod=rss_worldnews",
+          "title": "BOE Expected to Join Peers in Raising Key Rate"
         }
       ],
       "headlines": [
-        "Euro Falls on French Debt Concerns, Cautious ECB"
+        "BOE Expected to Join Peers in Raising Key Rate"
       ],
-      "newestAt": "2026-10-30T09:05:00.000Z",
-      "headline": "Euro Drops Amid French Debt Worries and ECB Caution",
-      "standfirst": "The euro fell due to concerns over France's debt and the ECB's cautious stance.",
+      "newestAt": "2026-11-02T07:28:00.000Z",
+      "headline": "BOE Rate Hike to Align with Global Central Bank Moves",
+      "standfirst": "The Bank of England is expected to raise its key interest rate this Thursday.",
       "classification": {
         "eventType": "monetary-policy",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The euro's decline reflects existing concerns, but further ECB actions are not fully priced.",
+        "pricedInRationale": "The market anticipates a rate hike, but the magnitude and future guidance remain uncertain.",
         "persistence": "weeks",
         "regionFocus": [
-          "Europe"
+          "UK",
+          "Global"
         ]
       },
       "whatHappened": {
-        "plain": "The euro dropped to a 19-month low against the British pound and neared a four-month low versus the Swiss franc. This was due to concerns about France's debt and the European Central Bank's cautious approach to interest rates.",
-        "whyItMatters": "Investors are worried about the stability of the eurozone's economy, which could impact global markets.",
-        "detail": "The euro's decline is driven by market fears over France's fiscal position and the ECB's reluctance to change interest rates, signalling potential economic instability."
+        "plain": "The Bank of England is expected to raise its key interest rate this Thursday. This follows similar moves by the Federal Reserve, the European Central Bank, and the Bank of Japan since the start of the U.S.-Iran war.",
+        "whyItMatters": "Rate hikes influence borrowing costs and investment returns, affecting economic activity and financial markets.",
+        "detail": "The BOE's anticipated rate hike is part of a coordinated global tightening of monetary policy in response to geopolitical tensions and inflationary pressures."
       },
       "chains": [
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "A weaker euro makes European exports cheaper.",
-              "detail": "The euro's depreciation improves the competitiveness of eurozone exports by reducing their price in foreign currency terms."
-            },
-            {
-              "plain": "This could boost European companies' revenues.",
-              "detail": "Increased export activity due to a weaker euro could enhance revenue streams for European exporters."
-            }
-          ],
-          "endpoint": "European exporters",
-          "strength": "moderate"
-        },
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "The ECB may delay interest rate hikes.",
-              "detail": "The ECB's cautious stance suggests it may postpone tightening monetary policy to support economic growth amidst fiscal concerns."
+              "plain": "The BOE raises its key interest rate.",
+              "detail": "The BOE increases its policy rate to curb inflation and align with global central bank actions."
             },
             {
-              "plain": "This could keep borrowing costs low in Europe.",
-              "detail": "A delay in rate hikes would maintain lower interest rates, reducing the cost of borrowing for businesses and consumers."
+              "plain": "Investors expect further rate hikes from the BOE.",
+              "detail": "Market participants price in additional rate hikes, anticipating tighter monetary conditions in the UK."
             }
           ],
-          "endpoint": "European borrowers",
+          "endpoint": "UK bond markets",
           "strength": "strong"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "UK government bond yields rise.",
+              "detail": "Increased policy rates lead to higher yields on UK gilts as investors demand more return for holding bonds."
+            },
+            {
+              "plain": "Higher yields affect corporate borrowing costs.",
+              "detail": "Rising gilt yields increase the baseline cost of borrowing for UK corporates, impacting their financial strategies."
+            }
+          ],
+          "endpoint": "UK corporate sector",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The British pound strengthens.",
+              "detail": "Higher interest rates make UK assets more attractive, boosting demand for the pound."
+            },
+            {
+              "plain": "A stronger pound affects UK exporters.",
+              "detail": "An appreciating currency makes UK exports more expensive abroad, potentially reducing competitiveness."
+            }
+          ],
+          "endpoint": "UK exporters",
+          "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "fx",
-          "instrument": "EUR/GBP",
-          "direction": "down",
-          "magnitude": "1 to 2%",
+          "assetClass": "rates",
+          "instrument": "UK 10-year Gilt yield",
+          "direction": "up",
+          "magnitude": "10 to 20 basis points",
           "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "The euro is likely to weaken further against the pound as concerns persist.",
-          "detail": "Continued negative sentiment around French debt and ECB policy could drive the EUR/GBP exchange rate lower."
+          "plain": "UK government bond yields are likely to rise as investors adjust to the BOE's rate hike.",
+          "detail": "The anticipated policy rate increase will lead to a repricing of UK gilts, pushing yields higher as investors demand more return."
         },
         {
-          "assetClass": "credit",
-          "instrument": "French government bonds",
-          "direction": "wider",
-          "magnitude": "5 to 10 basis points",
+          "assetClass": "fx",
+          "instrument": "British pound",
+          "direction": "up",
+          "magnitude": "1 to 2%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "French bond yields may rise as debt concerns grow.",
-          "detail": "Increased risk perception could lead to higher yield spreads on French government bonds as investors demand more compensation for holding them."
+          "plain": "The pound is expected to strengthen as higher rates attract foreign investment.",
+          "detail": "Higher UK interest rates increase the relative attractiveness of pound-denominated assets, driving up the currency's value."
         },
         {
           "assetClass": "equities",
-          "instrument": "European exporters",
-          "direction": "up",
+          "instrument": "UK exporters",
+          "direction": "down",
           "magnitude": "2 to 4%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Shares in European exporters could rise due to a weaker euro boosting competitiveness.",
-          "detail": "The depreciation of the euro enhances the earnings potential of European exporters by making their goods cheaper abroad."
+          "plain": "Shares of UK exporters may fall as a stronger pound makes their products more expensive abroad.",
+          "detail": "An appreciating pound reduces the competitive pricing of UK exports, potentially impacting revenue for companies reliant on foreign markets."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the potential for the ECB to implement unconventional monetary measures if the economic situation worsens.",
-        "detail": "The market might not fully appreciate the ECB's toolkit, including asset purchases or targeted lending, which could be deployed if fiscal concerns escalate."
+        "plain": "Investors may underestimate the BOE's commitment to further tightening if inflation persists, leading to more aggressive rate hikes than currently priced in.",
+        "detail": "Market participants might not fully account for the BOE's potential to continue raising rates aggressively if inflation remains elevated, which could lead to sharper adjustments in interest rate expectations."
       },
       "falsifiers": [
-        "A sudden improvement in French fiscal policy",
-        "A hawkish shift in ECB communication",
-        "Stronger-than-expected European economic data"
+        "The BOE decides to hold rates steady this Thursday.",
+        "Inflation data shows a significant decline, reducing the need for further rate hikes.",
+        "Geopolitical tensions ease, leading to a shift in central bank priorities."
       ],
       "tradeExpression": [
         {
-          "idea": "Short EUR/GBP",
-          "plain": "Sell the euro against the pound, expecting further euro weakness.",
-          "instrument": "FX spot or futures",
-          "risk": "A reversal in ECB policy or improved French fiscal outlook could strengthen the euro."
+          "idea": "Long UK 10-year yield",
+          "plain": "Buy UK 10-year gilts to benefit from expected yield increases.",
+          "instrument": "Futures on UK 10-year gilts",
+          "risk": "The main risk is if the BOE does not hike rates as expected, causing yields to fall."
         }
       ],
       "watchNext": [
-        "Upcoming ECB meeting",
-        "French government budget announcements",
-        "Eurozone economic data releases"
+        "BOE rate decision on Thursday.",
+        "Upcoming UK inflation reports.",
+        "Developments in the U.S.-Iran geopolitical situation."
       ],
       "glossary": [
         {
@@ -845,7 +822,7 @@
     }
   ],
   "diagnostics": {
-    "articlesIngested": 233,
+    "articlesIngested": 161,
     "clustersConsidered": 25,
     "feeds": [
       {
@@ -853,8 +830,8 @@
         "name": "Federal Reserve",
         "ok": true,
         "parsed": 20,
-        "fresh": 1,
-        "ms": 163,
+        "fresh": 0,
+        "ms": 111,
         "error": null
       },
       {
@@ -863,7 +840,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 0,
-        "ms": 127,
+        "ms": 77,
         "error": null
       },
       {
@@ -871,8 +848,8 @@
         "name": "European Central Bank",
         "ok": true,
         "parsed": 15,
-        "fresh": 5,
-        "ms": 533,
+        "fresh": 1,
+        "ms": 541,
         "error": null
       },
       {
@@ -881,7 +858,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 586,
+        "ms": 268,
         "error": "HTTP 404"
       },
       {
@@ -890,7 +867,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 537,
+        "ms": 196,
         "error": "HTTP 404"
       },
       {
@@ -899,16 +876,16 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 454,
+        "ms": 183,
         "error": "HTTP 403"
       },
       {
         "id": "eia",
         "name": "US EIA",
         "ok": true,
-        "parsed": 21,
-        "fresh": 1,
-        "ms": 497,
+        "parsed": 22,
+        "fresh": 0,
+        "ms": 191,
         "error": null
       },
       {
@@ -917,7 +894,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 460,
+        "ms": 161,
         "error": null
       },
       {
@@ -926,7 +903,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 0,
-        "ms": 457,
+        "ms": 155,
         "error": null
       },
       {
@@ -935,7 +912,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 0,
-        "ms": 460,
+        "ms": 160,
         "error": null
       },
       {
@@ -943,17 +920,17 @@
         "name": "WSJ Markets",
         "ok": true,
         "parsed": 61,
-        "fresh": 37,
-        "ms": 472,
+        "fresh": 22,
+        "ms": 163,
         "error": null
       },
       {
         "id": "wsj-world",
         "name": "WSJ World",
         "ok": true,
-        "parsed": 73,
-        "fresh": 33,
-        "ms": 541,
+        "parsed": 71,
+        "fresh": 13,
+        "ms": 162,
         "error": null
       },
       {
@@ -962,7 +939,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 535,
+        "ms": 188,
         "error": "HTTP 404"
       },
       {
@@ -970,8 +947,8 @@
         "name": "CNBC",
         "ok": true,
         "parsed": 30,
-        "fresh": 30,
-        "ms": 657,
+        "fresh": 27,
+        "ms": 353,
         "error": null
       },
       {
@@ -979,26 +956,26 @@
         "name": "CNBC Economy",
         "ok": true,
         "parsed": 30,
-        "fresh": 5,
-        "ms": 663,
+        "fresh": 1,
+        "ms": 334,
         "error": null
       },
       {
         "id": "ft",
         "name": "Financial Times",
         "ok": true,
-        "parsed": 11,
-        "fresh": 11,
-        "ms": 1228,
+        "parsed": 12,
+        "fresh": 12,
+        "ms": 642,
         "error": null
       },
       {
         "id": "bbc-biz",
         "name": "BBC Business",
         "ok": true,
-        "parsed": 45,
-        "fresh": 24,
-        "ms": 768,
+        "parsed": 48,
+        "fresh": 11,
+        "ms": 187,
         "error": null
       },
       {
@@ -1006,8 +983,8 @@
         "name": "Guardian Business",
         "ok": true,
         "parsed": 40,
-        "fresh": 36,
-        "ms": 619,
+        "fresh": 28,
+        "ms": 191,
         "error": null
       },
       {
@@ -1015,8 +992,8 @@
         "name": "Investing.com FX",
         "ok": true,
         "parsed": 10,
-        "fresh": 10,
-        "ms": 698,
+        "fresh": 6,
+        "ms": 222,
         "error": null
       },
       {
@@ -1025,7 +1002,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 695,
+        "ms": 233,
         "error": null
       },
       {
@@ -1034,7 +1011,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 662,
+        "ms": 232,
         "error": null
       },
       {
@@ -1043,7 +1020,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 845,
+        "ms": 2806,
         "error": "HTTP 404"
       },
       {
@@ -1052,7 +1029,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 697,
+        "ms": 224,
         "error": null
       }
     ],
@@ -1061,15 +1038,15 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 541,
+        "ms": 412,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
-        "ok": false,
-        "count": 0,
-        "ms": 562,
-        "error": "no rows"
+        "ok": true,
+        "count": 1,
+        "ms": 268,
+        "error": null
       },
       {
         "provider": "fred",
@@ -1081,25 +1058,25 @@
     ],
     "usage": {
       "calls": 6,
-      "inputTokens": 12462,
-      "outputTokens": 6046,
-      "estimatedCostUsd": 0.0916
+      "inputTokens": 12480,
+      "outputTokens": 5831,
+      "estimatedCostUsd": 0.0895
     },
-    "runtimeMs": 22356
+    "runtimeMs": 37877
   },
   "scorecardSummary": {
-    "total": 20,
-    "open": 9,
+    "total": 23,
+    "open": 11,
     "flat": 2,
     "hits": 4,
-    "misses": 5,
-    "settled": 9,
-    "hitRate": 44.4,
+    "misses": 6,
+    "settled": 10,
+    "hitRate": 40,
     "byClass": {
       "rates": {
         "hits": 1,
-        "total": 1,
-        "rate": 100
+        "total": 2,
+        "rate": 50
       },
       "commodities": {
         "hits": 1,
@@ -1130,8 +1107,8 @@
     "byConviction": {
       "3": {
         "hits": 2,
-        "total": 7,
-        "rate": 28.6
+        "total": 8,
+        "rate": 25
       },
       "4": {
         "hits": 2,

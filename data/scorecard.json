@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T11:20:38.838Z",
+  "updatedAt": "2026-11-02T13:26:11.015Z",
   "calls": [
     {
       "id": "demo-1",
@@ -409,7 +409,14 @@
       "entryValue": 5.311,
       "entryDisplay": "5.31%",
       "openedAt": "2026-10-06T11:59:24.907Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 4.929,
+      "markDisplay": "4.93%",
+      "moveAbs": -0.3819999999999997,
+      "movePct": -7.192619092449627,
+      "moveDisplay": "-38bp",
+      "outcome": "US 10Y down -38bp vs called up",
+      "settledAt": "2026-11-02T13:26:11.014Z"
     },
     {
       "id": "2026-10-19-wall-st-futures-climb-as-ai-stocks-rebound-oil-yields-fall:spx",
@@ -426,6 +433,57 @@
       "entryValue": 7659.44,
       "entryDisplay": "7,659",
       "openedAt": "2026-10-19T10:41:58.988Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-02-stock-futures-higher-oil-lower-as-investors-return-to-risk:us10y",
+      "storyId": "2026-11-02-stock-futures-higher-oil-lower-as-investors-return-to-risk",
+      "instrumentKey": "us10y",
+      "instrumentLabel": "US 10Y",
+      "assetClass": "rates",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "5 to 10 basis points",
+      "horizon": "days",
+      "conviction": 4,
+      "rationale": "US Treasury yields are likely to fall as inflation concerns ease.",
+      "entryValue": 4.929,
+      "entryDisplay": "4.93%",
+      "openedAt": "2026-11-02T13:26:11.015Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-02-u-s-crude-falls-below-100-amid-reports-of-u-s-iran-diplomati:us10y",
+      "storyId": "2026-11-02-u-s-crude-falls-below-100-amid-reports-of-u-s-iran-diplomati",
+      "instrumentKey": "us10y",
+      "instrumentLabel": "US 10Y",
+      "assetClass": "rates",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "5 to 10 basis points",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "US Treasury yields may fall as inflation concerns ease.",
+      "entryValue": 4.929,
+      "entryDisplay": "4.93%",
+      "openedAt": "2026-11-02T13:26:11.015Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-02-u-s-treasury-european-bond-yields-fall-as-oil-prices-drop:us10y",
+      "storyId": "2026-11-02-u-s-treasury-european-bond-yields-fall-as-oil-prices-drop",
+      "instrumentKey": "us10y",
+      "instrumentLabel": "US 10Y",
+      "assetClass": "rates",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "5 to 10 basis points",
+      "horizon": "days",
+      "conviction": 4,
+      "rationale": "US Treasury yields are likely to continue falling as oil prices influence inflation expectations.",
+      "entryValue": 4.929,
+      "entryDisplay": "4.93%",
+      "openedAt": "2026-11-02T13:26:11.015Z",
       "status": "open"
     }
   ]
