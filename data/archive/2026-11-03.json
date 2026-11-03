@@ -1,0 +1,1444 @@
+{
+  "version": 1,
+  "date": "2026-11-03",
+  "dateLabel": "Tuesday, 3 November 2026",
+  "generatedAt": "2026-11-03T10:18:56.834Z",
+  "model": "openai/gpt-4o",
+  "marketRead": {
+    "headline": "Geopolitical tensions and election uncertainty dominate",
+    "body": "The US strike on Iran's Qeshm Island is driving oil prices higher and increasing market volatility, with potential long-term impacts on energy markets and geopolitical stability. Meanwhile, the upcoming US midterm elections are causing uncertainty in bond and equity markets, as investors await potential policy shifts. European chip stocks are under pressure following an Asian selloff, indicating broader concerns in the technology sector.",
+    "regime": "geopolitical risk and election uncertainty"
+  },
+  "snapshot": {
+    "quotes": [],
+    "report": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 10466,
+        "error": "TypeError: fetch failed"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 136,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "fetchedAt": "2026-11-03T10:18:12.126Z"
+  },
+  "stories": [
+    {
+      "id": "2026-11-03-us-strikes-iran-s-qeshm-island-on-eve-of-election",
+      "rank": 1,
+      "editorNote": "The US strike on Iran has immediate and broad implications for commodities and FX markets, with potential for lasting geopolitical impact.",
+      "materiality": {
+        "score": 72.9,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 9.9
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "election",
+          "strike",
+          "oil",
+          "euro"
+        ]
+      },
+      "sources": [
+        "Financial Times",
+        "Investing.com Commodities"
+      ],
+      "links": [
+        {
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/ebeaca62-8958-459a-be9d-d3d39e441a53?syn-25a6b1a6=1",
+          "title": "US strikes Iran’s Qeshm Island on eve of election"
+        },
+        {
+          "name": "Investing.com Commodities",
+          "url": "https://www.investing.com/news/commodities-news/european-gas-surges-as-us-strikes-irans-qeshm-island-4993864",
+          "title": "European gas surges as U.S. strikes Iran’s Qeshm Island"
+        }
+      ],
+      "headlines": [
+        "US strikes Iran’s Qeshm Island on eve of election",
+        "European gas surges as U.S. strikes Iran’s Qeshm Island"
+      ],
+      "newestAt": "2026-11-03T09:48:45.000Z",
+      "headline": "US-Iran Tensions Spike, Impacting Energy and Currency Markets",
+      "standfirst": "The US conducted a defensive strike on Iran's Qeshm Island, affecting markets.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some geopolitical tension but not a direct US strike.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global",
+          "US",
+          "Europe",
+          "Middle East"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The United States launched a strike on Iran's Qeshm Island, citing a defensive move against potential missile threats from Tehran. This action occurs just before the US election, heightening geopolitical tensions.",
+        "whyItMatters": "Geopolitical tensions can disrupt energy supplies and affect global trade, impacting commodity prices and currency values.",
+        "detail": "The strike is seen as a preemptive measure to neutralize perceived threats, adding uncertainty to energy markets and heightening risk premiums."
+      },
+      "chains": [
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The US dollar strengthens as investors seek safe-haven assets.",
+              "detail": "Geopolitical risks drive demand for the US dollar, increasing its value as investors move to safer assets."
+            },
+            {
+              "plain": "Emerging market currencies weaken due to increased risk aversion.",
+              "detail": "Higher US dollar demand and risk aversion lead to capital outflows from emerging markets, depreciating their currencies."
+            }
+          ],
+          "endpoint": "Emerging market currencies",
+          "strength": "strong"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "European natural gas prices rise as supply concerns grow.",
+              "detail": "Fears of disrupted energy supplies from the Middle East push European gas prices higher, as traders anticipate potential shortages."
+            },
+            {
+              "plain": "Alternative energy stocks gain as investors look for stability.",
+              "detail": "Investors shift focus to renewable energy stocks, anticipating increased demand for non-Middle Eastern energy sources."
+            }
+          ],
+          "endpoint": "European energy markets",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "fx",
+          "instrument": "US Dollar Index",
+          "direction": "up",
+          "magnitude": "1.0 to 2.0%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "The US dollar is likely to rise as investors seek safety amid geopolitical tensions.",
+          "detail": "Increased demand for the US dollar as a safe-haven asset is expected to boost the US Dollar Index by 1.0 to 2.0% in the coming days."
+        },
+        {
+          "assetClass": "commodities",
+          "instrument": "European Natural Gas",
+          "direction": "up",
+          "magnitude": "5.0 to 7.0%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "European natural gas prices are set to rise due to fears of supply disruptions.",
+          "detail": "Anticipated supply chain disruptions from the Middle East are likely to drive European natural gas prices up by 5.0 to 7.0% over the next few weeks."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Alternative Energy Stocks",
+          "direction": "up",
+          "magnitude": "3.0 to 5.0%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Stocks in the alternative energy sector may gain as investors look for stable energy sources.",
+          "detail": "As geopolitical risks increase, investors could pivot towards alternative energy stocks, expecting a 3.0 to 5.0% rise over the coming weeks."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of heightened US-Iran tensions on global trade routes and energy supply chains, potentially leading to sustained volatility in commodity markets.",
+        "detail": "The market might not fully price in the risk of prolonged disruptions in energy supply chains and trade routes, which could sustain higher commodity price volatility."
+      },
+      "falsifiers": [
+        "A diplomatic resolution between the US and Iran.",
+        "No further military actions or threats from either side.",
+        "Stable energy supply reports from the Middle East."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long US Dollar Index",
+          "plain": "Buy the US Dollar Index to benefit from its rise as a safe-haven asset.",
+          "instrument": "US Dollar Index futures",
+          "risk": "The trade loses if geopolitical tensions ease, reducing demand for the US dollar."
+        }
+      ],
+      "watchNext": [
+        "US election results and their impact on foreign policy.",
+        "Statements from OPEC regarding oil supply adjustments.",
+        "Iran's potential response to the US strike."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-03-treasury-european-government-bond-yields-rise-as-markets-awa",
+      "rank": 2,
+      "editorNote": "Rising bond yields ahead of the US midterm elections signal significant market anticipation of policy changes.",
+      "materiality": {
+        "score": 69.4,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 9.9
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "treasury",
+          "election",
+          "oil",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/investing/u-s-treasury-yields-rise-as-markets-await-midterm-election-results-ddbae162?mod=rss_markets_main",
+          "title": "Treasury, European Government Bond Yields Rise as Markets Await U.S. Midterm Election Results"
+        }
+      ],
+      "headlines": [
+        "Treasury, European Government Bond Yields Rise as Markets Await U.S. Midterm Election Results"
+      ],
+      "newestAt": "2026-11-03T10:04:00.000Z",
+      "headline": "US Treasury Yields Rise as Midterm Elections Loom",
+      "standfirst": "Treasury yields increased as markets anticipate US midterm election outcomes.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some yield movement due to election uncertainty, but the extent of policy changes remains unclear.",
+        "persistence": "days",
+        "regionFocus": [
+          "US",
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "US Treasury yields rose as investors prepared for potential policy shifts following the midterm elections. European government bond yields followed suit.",
+        "whyItMatters": "Rising yields indicate market expectations of potential policy changes that could impact interest rates and economic growth.",
+        "detail": "The increase in Treasury yields reflects investor anticipation of possible fiscal policy shifts post-election, which could influence the Federal Reserve's interest rate trajectory."
+      },
+      "chains": [
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "US Treasury yields rise as investors anticipate election outcomes.",
+              "detail": "Investors demand higher yields on Treasuries due to uncertainty around fiscal policy changes post-election."
+            },
+            {
+              "plain": "Higher Treasury yields make borrowing more expensive.",
+              "detail": "As the baseline yield rises, the cost of borrowing for companies and consumers increases, potentially slowing economic activity."
+            }
+          ],
+          "endpoint": "US borrowers",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may adjust interest rate expectations based on election results.",
+              "detail": "If the election results suggest significant fiscal policy changes, central banks might revise their interest rate outlooks to maintain economic stability."
+            }
+          ],
+          "endpoint": "central bank policy",
+          "strength": "moderate"
+        },
+        {
+          "channel": "correlation",
+          "links": [
+            {
+              "plain": "European bond yields rise in tandem with US Treasuries.",
+              "detail": "European bonds see yield increases as investors adjust their portfolios in response to US market movements, reflecting global risk sentiment."
+            }
+          ],
+          "endpoint": "European bond markets",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "8 to 15 basis points",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "US 10-year Treasury yields are likely to rise as investors brace for election outcomes.",
+          "detail": "The anticipation of potential fiscal policy shifts post-election is driving demand for higher yields on long-term Treasuries."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "German 10-year Bund yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "German Bund yields may increase as they follow US Treasury movements.",
+          "detail": "Global risk sentiment and portfolio adjustments are likely to push European yields higher in response to US market trends."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US stock market",
+          "direction": "mixed",
+          "magnitude": "0.5 to 1.5%",
+          "horizon": "days",
+          "conviction": 2,
+          "order": 2,
+          "plain": "US stocks may see mixed performance as investors weigh the impact of potential policy changes.",
+          "detail": "Equity markets are likely to experience volatility as investors assess how election outcomes could influence fiscal policy and economic growth."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the speed at which central banks could react to election-induced fiscal policy changes, potentially leading to quicker adjustments in interest rates.",
+        "detail": "Markets might not fully price in the possibility of rapid central bank responses to fiscal shifts, which could alter interest rate expectations sooner than anticipated."
+      },
+      "falsifiers": [
+        "Election results indicate no significant policy changes.",
+        "Central banks signal no immediate reaction to election outcomes.",
+        "Bond yields reverse direction despite election uncertainty."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long US Treasuries",
+          "plain": "Buy US Treasuries to benefit from potential yield increases post-election.",
+          "instrument": "US Treasury futures",
+          "risk": "Election results lead to unexpected policy stability, causing yields to fall."
+        }
+      ],
+      "watchNext": [
+        "US midterm election results",
+        "Federal Reserve's post-election statements",
+        "European Central Bank's response to US market movements"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "yield",
+          "plain": "The income return on an investment, such as the interest or dividends received from holding a particular security."
+        },
+        {
+          "term": "Bund",
+          "plain": "A German government bond, similar to a US Treasury."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-03-u-s-strikes-iran-s-qeshm-island-as-trump-talks-down-war-risk",
+      "rank": 3,
+      "editorNote": "Oil price movements following the US strike on Iran highlight ongoing volatility in energy markets.",
+      "materiality": {
+        "score": 68.4,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 20,
+          "recency": 9.9
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "war",
+          "election",
+          "strike",
+          "oil"
+        ]
+      },
+      "sources": [
+        "WSJ World",
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/world/middle-east/u-s-strikes-irans-qeshm-island-as-trump-talks-down-war-risks-79d73d3d?mod=rss_worldnews",
+          "title": "U.S. Strikes Iran’s Qeshm Island as Trump Talks Down War Risks"
+        },
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/world/middle-east/u-s-strikes-irans-qeshm-island-as-trump-talks-down-war-risks-79d73d3d?mod=rss_worldnews",
+          "title": "U.S. Strikes Iran’s Qeshm Island as Trump Talks Down War Risks"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/03/oil-prices-climb-after-us-reportedly-strikes-irans-qeshm-island.html",
+          "title": "Oil prices climb after U.S. strikes Iran's Qeshm Island"
+        }
+      ],
+      "headlines": [
+        "U.S. Strikes Iran’s Qeshm Island as Trump Talks Down War Risks",
+        "Oil prices climb after U.S. strikes Iran's Qeshm Island"
+      ],
+      "newestAt": "2026-11-03T09:58:37.000Z",
+      "headline": "Oil Prices Surge as US Strikes Iran, Raising Energy Market Volatility",
+      "standfirst": "The US launched a strike on Iran's Qeshm Island, pushing oil prices higher.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Oil prices reacted immediately, indicating partial anticipation of geopolitical tensions.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global",
+          "US",
+          "Middle East"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The United States conducted a military strike on Iran's Qeshm Island. This action follows comments by President Trump minimizing the risk of war with Iran after the midterm elections.",
+        "whyItMatters": "This strike raises geopolitical tensions, affecting global oil supply expectations and increasing market volatility.",
+        "detail": "The US military action on Qeshm Island, a strategic location, heightens tensions in the Middle East, a critical region for global oil production and transport."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Oil prices rise as supply concerns grow.",
+              "detail": "The US strike on Iran threatens potential disruptions in oil supply, leading to higher oil prices."
+            },
+            {
+              "plain": "Higher oil prices increase costs for transportation companies.",
+              "detail": "Rising oil prices raise fuel costs for airlines and shipping companies, squeezing their profit margins."
+            }
+          ],
+          "endpoint": "transportation companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "Higher oil prices strengthen the US dollar.",
+              "detail": "As oil is priced in dollars, higher prices increase demand for the currency, boosting its value."
+            },
+            {
+              "plain": "A stronger dollar pressures emerging market currencies.",
+              "detail": "Emerging markets with dollar-denominated debt face increased repayment costs as their currencies weaken against the dollar."
+            }
+          ],
+          "endpoint": "emerging market economies",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "Brent crude oil",
+          "direction": "up",
+          "magnitude": "3 to 5%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Oil prices are likely to rise due to concerns over supply disruptions.",
+          "detail": "The geopolitical risk premium increases as the US-Iran tensions threaten oil supply routes, pushing Brent crude prices higher."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "US dollar index",
+          "direction": "up",
+          "magnitude": "0.5 to 1%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The US dollar is expected to strengthen as oil prices rise.",
+          "detail": "Higher oil prices increase demand for the dollar, as oil transactions are typically conducted in USD, leading to a stronger dollar index."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US transportation sector",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Transportation stocks may fall due to rising fuel costs.",
+          "detail": "Increased oil prices raise operational costs for transportation companies, likely pressuring their stock prices downward."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the potential for prolonged geopolitical tensions to disrupt oil supply chains, leading to sustained higher prices.",
+        "detail": "The market may not fully price in the risk of extended disruptions in oil transport through the Strait of Hormuz, a critical chokepoint."
+      },
+      "falsifiers": [
+        "Iran de-escalates tensions, leading to a rapid drop in oil prices",
+        "US announces new diplomatic efforts with Iran",
+        "Global oil supply increases from other producers"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long Brent Crude",
+          "plain": "Buy Brent crude oil futures to profit from potential supply disruptions.",
+          "instrument": "futures",
+          "risk": "Rapid geopolitical de-escalation could lead to a sharp drop in oil prices."
+        }
+      ],
+      "watchNext": [
+        "OPEC meetings on production levels",
+        "US-Iran diplomatic developments",
+        "US economic data releases"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "geopolitical risk premium",
+          "plain": "The additional cost or price increase in an asset due to geopolitical tensions or conflicts."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-03-european-chip-stocks-fall-after-asia-selloff",
+      "rank": 4,
+      "editorNote": "The decline in European chip stocks after an Asian selloff suggests broader concerns in the global technology sector.",
+      "materiality": {
+        "score": 69.3,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 9.8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "selloff",
+          "semiconductor",
+          "chip",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/australian-banks-outperforming-on-rotation-away-from-ai-04a0c978?mod=rss_markets_main",
+          "title": "European Chip Stocks Fall After Asia Selloff"
+        }
+      ],
+      "headlines": [
+        "European Chip Stocks Fall After Asia Selloff"
+      ],
+      "newestAt": "2026-11-03T09:30:00.000Z",
+      "headline": "Global Tech Concerns Weigh on European Chip Stocks",
+      "standfirst": "European semiconductor shares fell after an AI-related selloff in Asia.",
+      "classification": {
+        "eventType": "flows",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The initial drop in Asia was expected, but the extent of the European impact was not fully absorbed.",
+        "persistence": "days",
+        "regionFocus": [
+          "Europe",
+          "Asia",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "European semiconductor stocks dropped after a selloff in Asia, driven by concerns over AI-related stocks.",
+        "whyItMatters": "This indicates broader worries about the technology sector, affecting global investor sentiment.",
+        "detail": "The decline in European chip stocks follows a significant selloff in Asian markets, particularly in stocks tied to artificial intelligence, pointing to global tech sector concerns."
+      },
+      "chains": [
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors moved out of European chip stocks.",
+              "detail": "Investors reallocated funds away from European semiconductor equities due to perceived sector risks."
+            },
+            {
+              "plain": "Funds flowed into safer assets.",
+              "detail": "Capital shifted towards lower-risk assets, such as government bonds, as investors sought safety."
+            }
+          ],
+          "endpoint": "European government bonds",
+          "strength": "moderate"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Chip companies face potential revenue declines.",
+              "detail": "European semiconductor firms may see reduced demand and pricing power, impacting future earnings."
+            },
+            {
+              "plain": "Lower earnings forecasts could pressure stock prices.",
+              "detail": "Analysts may revise earnings forecasts downward, leading to further declines in semiconductor stock valuations."
+            }
+          ],
+          "endpoint": "European semiconductor stocks",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "European semiconductor stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "European chip stocks are likely to continue falling as investors react to global tech sector concerns.",
+          "detail": "The selloff in Asian AI-related stocks has led to a reassessment of risk in European semiconductor equities, pushing prices lower."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "European government bonds",
+          "direction": "down",
+          "magnitude": "3 to 5 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Government bond yields in Europe may decline as investors seek safer assets.",
+          "detail": "As investors move capital out of riskier equities, demand for government bonds increases, driving yields lower."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "European tech corporate bonds",
+          "direction": "wider",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads for European tech companies could widen due to increased sector risk.",
+          "detail": "The perceived risk in the tech sector may lead to higher credit spreads for tech corporate bonds as investors demand more compensation for risk."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of AI-related volatility on the semiconductor supply chain, which could affect earnings beyond the immediate term.",
+        "detail": "The market might not fully price in the potential for prolonged disruptions in semiconductor demand due to AI sector volatility, affecting future earnings."
+      },
+      "falsifiers": [
+        "A rebound in Asian AI stocks could reverse sentiment.",
+        "Stronger-than-expected earnings reports from European chip companies.",
+        "Central bank interventions that alter risk perceptions."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short European semiconductor stocks",
+          "plain": "Sell European semiconductor stocks to profit from continued sector weakness.",
+          "instrument": "cash equity or equity futures",
+          "risk": "A sector recovery or positive earnings surprise could lead to losses."
+        }
+      ],
+      "watchNext": [
+        "Upcoming earnings reports from major chip manufacturers.",
+        "Policy announcements from central banks regarding interest rates.",
+        "Further developments in Asian stock markets, particularly in AI-related sectors."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-03-apple-warns-unprecedented-memory-chip-costs-will-hit-margins",
+      "rank": 5,
+      "editorNote": "Apple's warning about rising memory chip costs could have ripple effects across the tech industry.",
+      "materiality": {
+        "score": 63.4,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 15.3,
+          "recency": 9.6
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "war",
+          "chip",
+          "apple"
+        ]
+      },
+      "sources": [
+        "Financial Times",
+        "Guardian Business"
+      ],
+      "links": [
+        {
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/f6ad8c32-cacb-48ad-ad85-a9a7edac3f16?syn-25a6b1a6=1",
+          "title": "Apple warns ‘unprecedented’ memory chip costs will hit margins"
+        },
+        {
+          "name": "Guardian Business",
+          "url": "https://www.theguardian.com/technology/2026/nov/02/apple-third-quarter-revenue-earnings",
+          "title": "Apple warns of ‘unprecedented’ rise in memory chip prices"
+        }
+      ],
+      "headlines": [
+        "Apple warns ‘unprecedented’ memory chip costs will hit margins",
+        "Apple warns of ‘unprecedented’ rise in memory chip prices"
+      ],
+      "newestAt": "2026-11-03T09:01:19.000Z",
+      "headline": "Apple's Chip Cost Warning Threatens Tech Sector Margins",
+      "standfirst": "Apple warns of rising memory chip costs impacting its profit margins.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some cost pressures, but the scale of Apple's warning was unexpected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Apple has warned that rising memory chip costs are expected to impact its profit margins. The company still anticipates strong sales during the holiday season, but its services outlook is less optimistic.",
+        "whyItMatters": "Rising costs for a key component could affect Apple's profitability and have broader implications for the tech industry, which relies heavily on similar components.",
+        "detail": "Apple's announcement highlights a significant increase in memory chip prices, which could squeeze margins across the tech sector. This warning comes despite expectations of strong product sales, suggesting that cost pressures are a serious concern."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Rising chip costs reduce Apple's profit margins.",
+              "detail": "The increase in memory chip prices directly impacts Apple's cost of goods sold, reducing its gross margins."
+            },
+            {
+              "plain": "Other tech companies face similar cost pressures.",
+              "detail": "Competitors using similar components may also see margin compression, as they face the same supply chain cost increases."
+            },
+            {
+              "plain": "Investors reassess tech sector earnings expectations.",
+              "detail": "Analysts may revise earnings forecasts downwards for tech firms, anticipating lower profitability due to higher input costs."
+            }
+          ],
+          "endpoint": "Tech sector equities",
+          "strength": "strong"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors shift focus to less affected sectors.",
+              "detail": "With tech margins under pressure, investors may rotate into sectors with more stable cost structures."
+            }
+          ],
+          "endpoint": "Sector rotation in equities",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Tech sector stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Tech stocks are likely to fall as investors adjust for lower profit margins.",
+          "detail": "The anticipated margin squeeze from higher chip costs leads to downward revisions in earnings estimates, pressuring tech stock prices."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Consumer staples stocks",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Consumer staples may benefit as investors seek stability.",
+          "detail": "As tech becomes less attractive due to cost pressures, investors may rotate into consumer staples, which are less affected by chip prices."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "Tech company bonds",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads for tech companies may widen due to profitability concerns.",
+          "detail": "Increased input costs could pressure tech companies' cash flows, leading to wider credit spreads as perceived credit risk rises."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "The market may underestimate the duration of elevated chip costs, which could persist longer than expected due to ongoing supply chain disruptions.",
+        "detail": "Investors might be too optimistic about a quick resolution to chip supply issues, not accounting for persistent supply chain bottlenecks that could keep prices elevated."
+      },
+      "falsifiers": [
+        "A rapid decline in chip prices due to increased supply.",
+        "Tech companies successfully passing on costs to consumers without demand impact.",
+        "Stronger-than-expected growth in Apple's services segment offsetting hardware margin pressures."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short tech, long consumer staples",
+          "plain": "Sell tech sector ETFs and buy consumer staples ETFs to capitalize on sector rotation.",
+          "instrument": "Spread trade using sector ETFs",
+          "risk": "Tech sector rebounds if chip cost pressures ease quickly."
+        }
+      ],
+      "watchNext": [
+        "Upcoming earnings reports from major tech companies.",
+        "Updates on global chip supply chain developments.",
+        "Central bank statements on inflation and interest rates."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-03-defense-healthcare-crypto-and-ai-how-the-midterm-election-co",
+      "rank": 6,
+      "editorNote": "The potential impact of the US midterm elections on various sectors, including defence and healthcare, warrants attention.",
+      "materiality": {
+        "score": 65.2,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 5.7
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "election",
+          "regulat",
+          "dollar"
+        ]
+      },
+      "sources": [
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/02/midterm-election-stocks-defense-healthcare-crypto-ai.html",
+          "title": "Defense, healthcare, crypto and AI: How the midterm election could affect stocks"
+        }
+      ],
+      "headlines": [
+        "Defense, healthcare, crypto and AI: How the midterm election could affect stocks"
+      ],
+      "newestAt": "2026-11-02T18:59:48.000Z",
+      "headline": "Democratic Gains Signal Regulatory Shift for Key Sectors",
+      "standfirst": "Democratic wins in Congress may lead to increased regulation and spending shifts.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market anticipated some regulatory changes, but the extent of Democratic gains was not fully expected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The Democrats have gained more seats in Congress following the midterm elections. This shift could lead to stricter regulations for major industries like defense, healthcare, crypto, and AI.",
+        "whyItMatters": "Investors need to consider potential changes in federal spending and regulatory policies that could impact company profits in these sectors.",
+        "detail": "The Democratic control in Congress suggests a potential increase in regulatory scrutiny and changes in budget allocations that could affect sectors reliant on federal funding or facing regulatory risks."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Increased regulation could raise costs for healthcare companies.",
+              "detail": "Stricter oversight in healthcare may lead to higher compliance costs, impacting profit margins."
+            },
+            {
+              "plain": "Healthcare companies may see reduced profits.",
+              "detail": "The additional regulatory burden could compress margins, leading to lower earnings for healthcare firms."
+            }
+          ],
+          "endpoint": "Healthcare companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Potential shifts in defense spending could affect defense stocks.",
+              "detail": "Changes in budget priorities may reduce or redirect defense spending, impacting revenue projections for defense contractors."
+            },
+            {
+              "plain": "Defense stocks might experience volatility.",
+              "detail": "Uncertainty over future defense contracts could lead to increased volatility in defense equities."
+            }
+          ],
+          "endpoint": "Defense stocks",
+          "strength": "moderate"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Crypto regulations could push investors towards traditional assets.",
+              "detail": "Increased scrutiny on cryptocurrencies might drive investors to reallocate funds to more stable traditional assets."
+            },
+            {
+              "plain": "Traditional financial assets may see inflows.",
+              "detail": "As regulatory risks in crypto rise, capital may flow into equities and bonds, seeking stability."
+            }
+          ],
+          "endpoint": "Traditional financial assets",
+          "strength": "speculative"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "US healthcare stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 2,
+          "plain": "Healthcare stocks may fall as regulatory costs rise.",
+          "detail": "Increased compliance costs from new regulations could pressure earnings, leading to a decline in stock prices."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US defense stocks",
+          "direction": "mixed",
+          "magnitude": "1 to 3%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Defense stocks could see mixed performance due to spending uncertainty.",
+          "detail": "Potential changes in defense spending priorities could create uncertainty, causing mixed reactions in stock prices."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Cryptocurrency-related stocks",
+          "direction": "down",
+          "magnitude": "3 to 5%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Crypto-related stocks might decline due to regulatory fears.",
+          "detail": "Increased regulatory oversight could dampen enthusiasm and valuations for companies tied to cryptocurrencies."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might underestimate the speed at which regulatory changes could be implemented, particularly in the healthcare sector, leading to faster-than-expected impacts on company earnings.",
+        "detail": "The timeline for implementing new regulations could be shorter than anticipated, accelerating the impact on healthcare companies' cost structures and profitability."
+      },
+      "falsifiers": [
+        "Republican resistance in Congress limits regulatory changes.",
+        "Healthcare companies adapt quickly, mitigating cost increases.",
+        "Defense spending remains unchanged, stabilizing defense stocks."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US healthcare equities",
+          "plain": "Sell healthcare stocks to profit from expected regulatory cost increases.",
+          "instrument": "sell US healthcare ETF",
+          "risk": "If regulatory changes are delayed or less impactful, healthcare stocks may not decline as expected."
+        }
+      ],
+      "watchNext": [
+        "Announcements on healthcare regulation from Congress.",
+        "Defense budget proposals from the federal government.",
+        "Statements from the SEC regarding cryptocurrency regulation."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "ETF",
+          "plain": "Exchange-Traded Fund, a type of investment fund traded on stock exchanges."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-03-who-is-hacking-europe-s-supermarket-fridges-and-freezers-and",
+      "rank": 7,
+      "editorNote": "The cyberattack on European supermarkets introduces a new risk factor for supply chains and consumer markets.",
+      "materiality": {
+        "score": 57.8,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 5.1,
+          "recency": 9.7
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "euro"
+        ]
+      },
+      "sources": [
+        "Guardian Business",
+        "Investing.com Equities"
+      ],
+      "links": [
+        {
+          "name": "Guardian Business",
+          "url": "https://www.theguardian.com/technology/2026/nov/02/europe-supermarket-fridges-freezers-who-hacking-why",
+          "title": "Who is hacking Europe’s supermarket fridges and freezers, and why?"
+        },
+        {
+          "name": "Investing.com Equities",
+          "url": "https://www.investing.com/news/stock-market-news/cyberattack-on-fridges-hits-supermarkets-across-europe-4991995",
+          "title": "New cyberattack on supermarket fridges sweeps across Europe"
+        }
+      ],
+      "headlines": [
+        "Who is hacking Europe’s supermarket fridges and freezers, and why?",
+        "New cyberattack on supermarket fridges sweeps across Europe"
+      ],
+      "newestAt": "2026-11-03T09:18:41.000Z",
+      "headline": "Cyberattack on European Supermarkets Threatens Supply Chains",
+      "standfirst": "A cyberattack has disrupted supermarket fridges in Europe, impacting food supply chains.",
+      "classification": {
+        "eventType": "supply-shock",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Initial disruptions were known, but the full extent of supply chain impacts is still unfolding.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "A cyberattack has targeted supermarket fridges across Europe, causing them to malfunction with temperatures rising dramatically. This has led to concerns about food safety and supply chain stability.",
+        "whyItMatters": "This attack introduces a new risk factor for the food supply chain, potentially leading to increased costs and supply shortages.",
+        "detail": "The attack on refrigeration systems is a novel form of cyber threat, directly impacting the operational capabilities of supermarkets and potentially leading to spoilage and supply disruptions."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Supermarkets face increased costs due to food spoilage.",
+              "detail": "The malfunctioning fridges lead to spoilage, increasing operational costs and reducing margins for affected supermarkets."
+            },
+            {
+              "plain": "Higher costs may be passed on to consumers.",
+              "detail": "Supermarkets may raise prices to offset increased spoilage costs, affecting consumer spending patterns."
+            }
+          ],
+          "endpoint": "European consumers",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Governments may increase cybersecurity regulations.",
+              "detail": "In response to the attack, European governments might implement stricter cybersecurity measures, impacting operational costs for retailers."
+            }
+          ],
+          "endpoint": "European retailers",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "European retail stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 1,
+          "plain": "Retail stocks in Europe could see a decline due to increased costs and potential supply disruptions.",
+          "detail": "The attack increases operational risks and costs, pressuring margins and leading to a repricing of retail equities."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "European retail corporate bonds",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads for retail companies may widen as investors price in higher operational risk.",
+          "detail": "Increased costs and potential revenue impacts from the attack may lead to a reassessment of credit risk, widening spreads."
+        },
+        {
+          "assetClass": "commodities",
+          "instrument": "European food commodities",
+          "direction": "up",
+          "magnitude": "3 to 5%",
+          "horizon": "weeks",
+          "conviction": 2,
+          "order": 2,
+          "plain": "Food commodity prices could rise due to potential supply chain disruptions.",
+          "detail": "Disruptions in the supply chain may lead to increased demand for certain food commodities, pushing prices higher."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of increased cybersecurity costs on retail margins. While immediate supply chain disruptions are evident, the ongoing need for enhanced security measures could pressure profitability over the medium term.",
+        "detail": "Markets may not fully price in the sustained increase in cybersecurity expenditure required to prevent future attacks, which could erode margins and affect long-term earnings."
+      },
+      "falsifiers": [
+        "A rapid resolution and restoration of supermarket operations without significant spoilage.",
+        "No further cyberattacks or disruptions in the coming weeks.",
+        "Government intervention that mitigates the impact on supply chains effectively."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short European Retail",
+          "plain": "Sell European retail stocks in anticipation of increased costs and supply chain disruptions.",
+          "instrument": "equity futures",
+          "risk": "If the situation resolves quickly, retail stocks could rebound."
+        }
+      ],
+      "watchNext": [
+        "Announcements from European governments on cybersecurity measures.",
+        "Updates from major supermarket chains on operational impacts.",
+        "Any further cyber incidents affecting other sectors."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    }
+  ],
+  "diagnostics": {
+    "articlesIngested": 194,
+    "clustersConsidered": 25,
+    "feeds": [
+      {
+        "id": "fed",
+        "name": "Federal Reserve",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 0,
+        "ms": 221,
+        "error": null
+      },
+      {
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 0,
+        "ms": 180,
+        "error": null
+      },
+      {
+        "id": "ecb",
+        "name": "European Central Bank",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 1,
+        "ms": 578,
+        "error": null
+      },
+      {
+        "id": "boe",
+        "name": "Bank of England",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 453,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 770,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 382,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 22,
+        "fresh": 0,
+        "ms": 427,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 467,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 539,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 541,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 30,
+        "ms": 545,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 72,
+        "fresh": 24,
+        "ms": 550,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 598,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 30,
+        "ms": 799,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 2,
+        "ms": 639,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 11,
+        "fresh": 11,
+        "ms": 1098,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 44,
+        "fresh": 18,
+        "ms": 650,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": true,
+        "parsed": 40,
+        "fresh": 29,
+        "ms": 688,
+        "error": null
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 9,
+        "ms": 750,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 747,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 753,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 888,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 766,
+        "error": null
+      }
+    ],
+    "marketProviders": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 10466,
+        "error": "TypeError: fetch failed"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 136,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "usage": {
+      "calls": 8,
+      "inputTokens": 16588,
+      "outputTokens": 8320,
+      "estimatedCostUsd": 0.1247
+    },
+    "runtimeMs": 56528
+  },
+  "scorecardSummary": {
+    "total": 23,
+    "open": 11,
+    "flat": 2,
+    "hits": 4,
+    "misses": 6,
+    "settled": 10,
+    "hitRate": 40,
+    "byClass": {
+      "rates": {
+        "hits": 1,
+        "total": 2,
+        "rate": 50
+      },
+      "commodities": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "fx": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "vol": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "credit": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "equities": {
+        "hits": 0,
+        "total": 4,
+        "rate": 0
+      }
+    },
+    "byConviction": {
+      "3": {
+        "hits": 2,
+        "total": 8,
+        "rate": 25
+      },
+      "4": {
+        "hits": 2,
+        "total": 2,
+        "rate": 100
+      }
+    }
+  }
+}
