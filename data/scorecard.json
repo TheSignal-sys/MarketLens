@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T12:56:37.074Z",
+  "updatedAt": "2026-11-05T13:07:07.598Z",
   "calls": [
     {
       "id": "demo-1",
@@ -204,7 +204,14 @@
       "entryValue": 102.69,
       "entryDisplay": "102.69",
       "openedAt": "2026-09-14T05:21:45.959Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 89.6,
+      "markDisplay": "89.60",
+      "moveAbs": -13.090000000000003,
+      "movePct": -12.747102931152016,
+      "moveDisplay": "-12.75%",
+      "outcome": "WTI crude down -12.75% vs called up",
+      "settledAt": "2026-11-05T13:07:07.598Z"
     },
     {
       "id": "2026-09-14-goldman-sachs-jp-morgan-expect-september-fed-hike-as-inflati:spx",
@@ -286,7 +293,14 @@
       "entryValue": 102.69,
       "entryDisplay": "102.69",
       "openedAt": "2026-09-14T05:21:45.959Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 89.6,
+      "markDisplay": "89.60",
+      "moveAbs": -13.090000000000003,
+      "movePct": -12.747102931152016,
+      "moveDisplay": "-12.75%",
+      "outcome": "WTI crude down -12.75% vs called up",
+      "settledAt": "2026-11-05T13:07:07.598Z"
     },
     {
       "id": "2026-09-17-us-federal-reserve-raises-interest-rates-for-the-first-time-:spx",
@@ -484,6 +498,23 @@
       "entryValue": 4.929,
       "entryDisplay": "4.93%",
       "openedAt": "2026-11-02T13:26:11.015Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-05-interest-rates-could-go-x2018-significantly-higher-if-oil-pr:wti",
+      "storyId": "2026-11-05-interest-rates-could-go-x2018-significantly-higher-if-oil-pr",
+      "instrumentKey": "wti",
+      "instrumentLabel": "WTI crude",
+      "assetClass": "commodities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "5 to 10%",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "WTI crude prices may continue to rise due to ongoing supply constraints.",
+      "entryValue": 89.6,
+      "entryDisplay": "89.60",
+      "openedAt": "2026-11-05T13:07:07.598Z",
       "status": "open"
     }
   ]
