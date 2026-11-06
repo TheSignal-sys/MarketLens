@@ -1,0 +1,1109 @@
+{
+  "version": 1,
+  "date": "2026-11-06",
+  "dateLabel": "Friday, 6 November 2026",
+  "generatedAt": "2026-11-06T12:53:40.812Z",
+  "model": "openai/gpt-4o",
+  "marketRead": {
+    "headline": "AI and rate shifts drive market volatility",
+    "body": "Markets are reacting to a significant selloff in AI stocks following midterm election results, suggesting a shift in investor sentiment towards technology equities. The Bank of England's rate hike, the first since the Iran conflict, signals a tightening monetary environment, which could pressure equities and commodities. Investors are also navigating geopolitical tensions in Europe, with bomb threats affecting travel and potentially impacting consumer confidence and economic activity.",
+    "regime": "volatility amid geopolitical and monetary shifts"
+  },
+  "snapshot": {
+    "quotes": [],
+    "report": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 599,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 269,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "fetchedAt": "2026-11-06T12:53:15.260Z"
+  },
+  "stories": [
+    {
+      "id": "2026-11-06-ai-stocks-hammered-by-midterm-shock-as-data-center-buildout-",
+      "rank": 1,
+      "editorNote": "AI stocks' decline due to midterm results represents a significant shift in tech sector sentiment.",
+      "materiality": {
+        "score": 69.3,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 9.8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "interest rate",
+          "war",
+          "election",
+          "rout"
+        ]
+      },
+      "sources": [
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
+          "title": "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'"
+        }
+      ],
+      "headlines": [
+        "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'"
+      ],
+      "newestAt": "2026-11-06T12:04:17.000Z",
+      "headline": "AI Stock Plunge Signals Broader Tech Sentiment Shift",
+      "standfirst": "AI stocks fell sharply after midterm elections, highlighting tech sector concerns.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The AI sector was already under pressure from high interest rates, but the election results added unexpected downside.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "AI stocks dropped significantly following the US midterm elections. The results added to existing pressures from high interest rates and capital spending concerns in the tech sector.",
+        "whyItMatters": "This decline reflects a broader shift in investor sentiment towards technology stocks, which could impact investment decisions across the sector.",
+        "detail": "The midterm election results introduced new uncertainties for AI companies, exacerbating existing pressures from macroeconomic factors like interest rates and capital expenditures."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "AI companies face higher operational costs.",
+              "detail": "Increased regulatory scrutiny and potential policy changes could raise compliance and operational costs for AI firms."
+            },
+            {
+              "plain": "Tech sector profits could shrink.",
+              "detail": "Higher costs and uncertainty may lead to reduced profit margins across the tech sector, impacting earnings projections."
+            }
+          ],
+          "endpoint": "tech sector earnings",
+          "strength": "strong"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors may sell tech stocks.",
+              "detail": "As AI stocks fall, investors holding large positions may be forced to unwind, leading to further selling pressure."
+            },
+            {
+              "plain": "Broader market volatility could increase.",
+              "detail": "Forced selling in tech stocks can spill over into broader market volatility as investors rebalance portfolios."
+            }
+          ],
+          "endpoint": "equity market volatility",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "US tech stocks",
+          "direction": "down",
+          "magnitude": "3 to 5%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "US tech stocks are likely to see continued pressure as sentiment shifts.",
+          "detail": "The combination of election uncertainty and existing economic pressures suggests further downside for tech equities."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "VIX Index",
+          "direction": "up",
+          "magnitude": "2 to 4 points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Market volatility is expected to rise as tech stocks decline.",
+          "detail": "Increased selling pressure in tech could lead to heightened volatility, reflected in the VIX Index."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "Tech sector credit spreads",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Tech sector credit spreads may widen as financial risks increase.",
+          "detail": "Higher operational costs and profit uncertainties could lead to wider credit spreads for tech companies."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of regulatory changes on AI companies' profitability. While immediate reactions focus on election results, the real challenge lies in adapting to potential new regulations that could alter the competitive landscape.",
+        "detail": "The market may not fully price in the regulatory risks that could significantly impact AI companies' long-term profitability and market positioning."
+      },
+      "falsifiers": [
+        "A rapid recovery in AI stock prices",
+        "Stronger-than-expected tech earnings reports",
+        "Clear policy signals reducing regulatory uncertainty"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US Tech Stocks",
+          "plain": "Sell US tech stocks, anticipating further declines due to sentiment shifts and regulatory risks.",
+          "instrument": "equity futures",
+          "risk": "Tech stocks could rebound if regulatory fears ease or earnings surprise positively."
+        }
+      ],
+      "watchNext": [
+        "Upcoming tech earnings reports",
+        "Regulatory announcements affecting the AI sector",
+        "Federal Reserve interest rate decisions"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-06-bank-of-england-hikes-interest-rate-for-the-first-time-since",
+      "rank": 2,
+      "editorNote": "The Bank of England's rate hike marks a pivotal change in monetary policy affecting rates and commodities.",
+      "materiality": {
+        "score": 67.2,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 4.2
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "bank of england",
+          "interest rate",
+          "inflation",
+          "war"
+        ]
+      },
+      "sources": [
+        "WSJ World",
+        "CNBC Economy"
+      ],
+      "links": [
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/economy/central-banking/bank-of-england-raises-rates-for-first-time-since-start-of-iran-war-f6353d96?mod=rss_worldnews",
+          "title": "Bank of England Raises Rates for First Time Since Start of Iran War"
+        },
+        {
+          "name": "CNBC Economy",
+          "url": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
+          "title": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%"
+        }
+      ],
+      "headlines": [
+        "Bank of England Raises Rates for First Time Since Start of Iran War",
+        "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%"
+      ],
+      "newestAt": "2026-11-05T16:01:47.000Z",
+      "headline": "Bank of England Rate Hike Signals Shift Amid Inflation Concerns",
+      "standfirst": "The Bank of England raised its key interest rate to 4.25% to combat rising inflation.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The rate hike was anticipated by some investors due to rising inflation signals, but the specific timing and magnitude were not fully expected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The Bank of England increased its main interest rate to 4.25% for the first time since the Iran war began. This move aims to address inflation, which is expected to approach 5%.",
+        "whyItMatters": "Investors need to consider the impact of higher borrowing costs on economic growth and company profits.",
+        "detail": "This rate hike marks a significant shift in the Bank of England's monetary policy, as it attempts to curb inflation pressures that have been building post-Iran war."
+      },
+      "chains": [
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Government bond yields are likely to rise.",
+              "detail": "An increase in the Bank of England's rate typically leads to higher yields on UK government bonds as the cost of money rises."
+            },
+            {
+              "plain": "Higher bond yields make borrowing more expensive.",
+              "detail": "As yields rise, the cost of issuing new debt increases, impacting companies and governments looking to finance through bonds."
+            }
+          ],
+          "endpoint": "UK government bond market",
+          "strength": "strong"
+        },
+        {
+          "channel": "credit",
+          "links": [
+            {
+              "plain": "Companies with high debt will face increased borrowing costs.",
+              "detail": "Firms with significant leverage will see their interest expenses rise, potentially squeezing margins."
+            },
+            {
+              "plain": "This could lead to reduced investment and slower growth.",
+              "detail": "Higher costs may force companies to cut back on capital expenditures, affecting future growth prospects."
+            }
+          ],
+          "endpoint": "Highly leveraged UK companies",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The British pound may strengthen against other currencies.",
+              "detail": "Higher interest rates generally attract foreign investment, increasing demand for the currency."
+            }
+          ],
+          "endpoint": "GBP exchange rates",
+          "strength": "speculative"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "UK 10-year Gilt yield",
+          "direction": "up",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "UK government bond yields are expected to rise as the cost of borrowing increases.",
+          "detail": "The rate hike will likely push UK 10-year Gilt yields higher as investors demand more return for holding government debt."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "UK high-debt companies",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Shares of companies with high debt levels may fall due to increased borrowing costs.",
+          "detail": "Higher interest expenses could squeeze profit margins, leading to a sell-off in stocks of highly leveraged firms."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "GBP/USD",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "days",
+          "conviction": 2,
+          "order": 2,
+          "plain": "The British pound may rise against the US dollar as higher rates attract investment.",
+          "detail": "The rate hike could lead to increased demand for GBP, boosting its value relative to the USD."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of higher rates on consumer spending and economic growth, which could lead to a more pronounced slowdown than currently anticipated.",
+        "detail": "The market might not fully price in the potential for prolonged economic drag from reduced consumer spending due to higher borrowing costs."
+      },
+      "falsifiers": [
+        "Inflation does not rise as expected, reducing the need for further rate hikes.",
+        "The UK economy shows unexpected resilience, maintaining growth despite higher rates.",
+        "Global economic conditions improve, offsetting domestic rate impacts."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short UK high-debt equities",
+          "plain": "Sell shares in UK companies with high leverage as their borrowing costs rise.",
+          "instrument": "short equity positions or put options",
+          "risk": "The main risk is that these companies manage to offset higher costs through increased revenues or cost-cutting measures."
+        }
+      ],
+      "watchNext": [
+        "UK inflation data releases",
+        "Future Bank of England policy meetings",
+        "Economic growth indicators in the UK"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "Gilt",
+          "plain": "A UK government bond."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-06-healthcare-stocks-fall-as-market-rout-spreads",
+      "rank": 3,
+      "editorNote": "The healthcare sector's involvement in the broader market selloff indicates widespread equity market concerns.",
+      "materiality": {
+        "score": 73.7,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 18,
+          "salience": 20,
+          "recency": 9.7
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "spread",
+          "selloff",
+          "rout",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/healthcare-stocks-fall-as-market-rout-spreads-f789b5c8?mod=rss_markets_main",
+          "title": "Healthcare Stocks Fall as Market Rout Spreads"
+        },
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/nikkei-falls-5-9-dragged-by-chip-stocks-d8937761?mod=rss_markets_main",
+          "title": "Healthcare Stocks Caught Up in Market Selloff"
+        }
+      ],
+      "headlines": [
+        "Healthcare Stocks Fall as Market Rout Spreads",
+        "Healthcare Stocks Caught Up in Market Selloff"
+      ],
+      "newestAt": "2026-11-06T11:54:00.000Z",
+      "headline": "Global Market Selloff Hits Healthcare Stocks Hard",
+      "standfirst": "Healthcare stocks fell globally as a market selloff spread across sectors.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The initial selloff in AI and U.S. markets was already factored in, but the spread to healthcare and global markets adds new layers.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Healthcare stocks dropped globally as a broad market selloff spread across regions and sectors. The selloff began with AI and U.S. markets earlier in the week and has now affected Europe and Asia.",
+        "whyItMatters": "This matters because it signals widespread market concerns that could affect investor confidence and economic stability.",
+        "detail": "The market rout, initially concentrated in AI and U.S. equities, has now extended to healthcare stocks globally, indicating a shift in investor sentiment and potential liquidity concerns."
+      },
+      "chains": [
+        {
+          "channel": "correlation",
+          "links": [
+            {
+              "plain": "Healthcare stocks fell as they moved in line with other sectors.",
+              "detail": "The correlation between healthcare and other sectors increased, leading to synchronized selling across asset classes."
+            },
+            {
+              "plain": "Investors are forced to rebalance portfolios, selling more assets.",
+              "detail": "Portfolio rebalancing due to increased correlations forces investors to sell healthcare stocks, exacerbating the selloff."
+            }
+          ],
+          "endpoint": "global equity markets",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may consider monetary policy adjustments.",
+              "detail": "The broad market selloff could prompt central banks to reassess interest rate paths to stabilize markets."
+            },
+            {
+              "plain": "Lower interest rates could ease borrowing costs for companies.",
+              "detail": "Potential rate cuts would lower the cost of capital, potentially supporting corporate balance sheets."
+            }
+          ],
+          "endpoint": "central bank policy",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "global healthcare stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Healthcare stocks are likely to continue falling as the market selloff spreads.",
+          "detail": "The selloff in healthcare stocks is expected to persist as investors adjust portfolios amid increased correlations and market concerns."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US Treasury yields may fall as investors seek safe-haven assets.",
+          "detail": "The flight to safety amid the equity selloff is likely to drive demand for Treasuries, pushing yields lower."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "corporate bond spreads",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Corporate bond spreads may widen as credit risk concerns increase.",
+          "detail": "Increased market volatility and economic uncertainty could lead to wider credit spreads as investors demand higher risk premiums."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may not fully appreciate how the increased correlation between sectors can lead to more severe market dislocations and force central banks to act more aggressively than anticipated.",
+        "detail": "The rising correlation across sectors suggests potential systemic risks that could prompt more aggressive central bank interventions, which the market may not yet fully price in."
+      },
+      "falsifiers": [
+        "A quick recovery in AI and U.S. markets without further spread to other sectors.",
+        "Central banks maintaining current policy without intervention.",
+        "Stabilization in global equity markets with reduced volatility."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long US Treasuries",
+          "plain": "Buy US Treasuries as a safe haven amid the selloff.",
+          "instrument": "US Treasury futures",
+          "risk": "If the equity markets stabilize quickly, Treasuries could lose their appeal."
+        }
+      ],
+      "watchNext": [
+        "Central bank meetings for potential policy shifts.",
+        "Economic data releases that could affect market sentiment.",
+        "Corporate earnings reports for signs of economic impact."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-06-hoax-bomb-threats-repeatedly-disrupt-flights-across-europe-t",
+      "rank": 4,
+      "editorNote": "Bomb threats in Europe could have lasting impacts on consumer confidence and economic activity.",
+      "materiality": {
+        "score": 65.7,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 17.8,
+          "recency": 9.3
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "nationalis",
+          "repo",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ World",
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/business/airlines/flights-across-europe-diverted-after-bomb-threats-2e860a9c?mod=rss_worldnews",
+          "title": "Bomb Threats Cause Diverted Flights, Emergency Landings Across Europe"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/bomb-threats-flights-europe.html",
+          "title": "Hoax Bomb threats repeatedly disrupt flights across Europe this week. Here’s what we know"
+        }
+      ],
+      "headlines": [
+        "Bomb Threats Cause Diverted Flights, Emergency Landings Across Europe",
+        "Hoax Bomb threats repeatedly disrupt flights across Europe this week. Here’s what we know"
+      ],
+      "newestAt": "2026-11-06T10:28:40.000Z",
+      "headline": "European Bomb Threats Disrupt Travel and Hit Airline Stocks",
+      "standfirst": "Bomb threats have caused flight disruptions across Europe, affecting major airports.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Initial disruptions have been traded, but broader economic impacts are still unfolding.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "This week, numerous flights across Europe faced bomb threats, leading to emergency landings and diversions at airports in London, Dublin, and Helsinki.",
+        "whyItMatters": "These disruptions could damage consumer confidence in air travel and affect airline revenues.",
+        "detail": "The threats have led to operational disruptions for airlines, potentially impacting their short-term financial performance and investor sentiment."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Airlines face increased costs due to flight disruptions.",
+              "detail": "Operational disruptions force airlines to incur additional costs for rerouting and passenger compensation."
+            },
+            {
+              "plain": "Lower consumer confidence may reduce future bookings.",
+              "detail": "Ongoing safety concerns could lead to a decline in passenger demand, impacting future revenue streams for airlines."
+            }
+          ],
+          "endpoint": "European airline companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Governments may increase security measures at airports.",
+              "detail": "Heightened security protocols could be implemented, increasing operational costs for airports and airlines."
+            }
+          ],
+          "endpoint": "European airports and infrastructure",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "European airline stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Airline stocks may fall due to increased costs and lower demand.",
+          "detail": "The immediate impact of the disruptions and potential future booking declines are likely to weigh on airline stock prices."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "European travel sector volatility",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "intraday",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Volatility in the travel sector could rise due to uncertainty.",
+          "detail": "Increased uncertainty around travel safety and demand could lead to higher implied volatility in travel-related equities."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "European airline credit spreads",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads for airlines may widen due to increased risk perception.",
+          "detail": "Investors may demand a higher risk premium for holding airline debt, widening credit spreads."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact on consumer confidence and the potential for increased regulatory costs.",
+        "detail": "The market may not fully price in the sustained decline in air travel demand and the potential for higher regulatory compliance costs."
+      },
+      "falsifiers": [
+        "No further incidents occur, restoring consumer confidence quickly",
+        "Airlines report minimal disruption to bookings",
+        "Governments do not implement additional security measures"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short European Airlines",
+          "plain": "Sell European airline stocks as they face operational disruptions and lower demand.",
+          "instrument": "equity shorts or put options on European airline indices",
+          "risk": "Airline stocks rebound if threats are resolved quickly and confidence returns."
+        }
+      ],
+      "watchNext": [
+        "Government security updates",
+        "Airline earnings reports",
+        "Passenger booking trends"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-06-wall-street-gets-2-5-trillion-ai-reality-check-with-historic",
+      "rank": 5,
+      "editorNote": "The tech sector's rout underscores broader market volatility and investor reassessment of AI valuations.",
+      "materiality": {
+        "score": 65.3,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 5.8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "tariff",
+          "rout",
+          "oil"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/wall-street-gets-2-5-trillion-ai-reality-check-with-historic-rout-of-tech-stocks-93985d7c?mod=rss_markets_main",
+          "title": "Wall Street Gets $2.5 Trillion AI Reality Check With Historic Rout of Tech Stocks"
+        },
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/wall-street-gets-2-5-trillion-ai-reality-check-with-historic-rout-of-tech-stocks-93985d7c?mod=rss_markets_main",
+          "title": "Wall Street Gets $2.5 Trillion AI Reality Check With Historic Rout of Tech Stocks"
+        }
+      ],
+      "headlines": [
+        "Wall Street Gets $2.5 Trillion AI Reality Check With Historic Rout of Tech Stocks"
+      ],
+      "newestAt": "2026-11-05T21:41:00.000Z",
+      "headline": "Tech Stock Sell-Off Sparks Broader Market Repricing",
+      "standfirst": "Tech stocks plunged, triggering a wider reassessment of AI valuations.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Investors had anticipated some correction, but the scale of the sell-off was larger than expected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Tech stocks on Wall Street experienced a significant sell-off, with the Nasdaq entering correction territory. This marks the worst day for the stock market since last April's tariff issues.",
+        "whyItMatters": "Investors are re-evaluating the high valuations of AI-related companies, which could lead to broader market volatility.",
+        "detail": "The Nasdaq's correction signals a major shift in sentiment towards tech stocks, particularly those involved in AI, as investors reassess growth expectations and valuations."
+      },
+      "chains": [
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors are forced to sell tech stocks.",
+              "detail": "The crowded positioning in tech stocks led to forced selling as stop-loss levels were breached."
+            },
+            {
+              "plain": "This selling pressure spreads to other sectors.",
+              "detail": "As tech stocks are liquidated, investors rebalance portfolios, leading to selling in other sectors."
+            }
+          ],
+          "endpoint": "broader equity markets",
+          "strength": "strong"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Bond yields rise as investors seek safer assets.",
+              "detail": "The sell-off in equities prompts a flight to safety, pushing up government bond yields."
+            }
+          ],
+          "endpoint": "government bonds",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Nasdaq Composite",
+          "direction": "down",
+          "magnitude": "3 to 5%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "The Nasdaq is likely to see further declines as investors continue to reassess tech valuations.",
+          "detail": "The initial sell-off is expected to trigger additional selling as margin calls and risk management protocols are activated."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US Treasury yields may rise as investors seek safer investments.",
+          "detail": "The equity market turbulence increases demand for Treasuries, pushing yields higher as prices fall."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "High Yield Corporate Bonds",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads could widen as risk aversion increases.",
+          "detail": "The sell-off in equities may lead to higher risk premiums in credit markets, particularly affecting high-yield bonds."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "The market may underestimate the potential for a prolonged reassessment of AI-driven valuations, which could lead to sustained volatility across sectors.",
+        "detail": "Investors might not fully appreciate the depth of the sentiment shift regarding AI valuations, which could lead to ongoing repricing and volatility."
+      },
+      "falsifiers": [
+        "A rapid recovery in tech stock prices",
+        "Central bank intervention to stabilize markets",
+        "Stronger-than-expected earnings reports from major tech firms"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short Nasdaq",
+          "plain": "Sell Nasdaq futures to profit from further declines in tech stocks.",
+          "instrument": "Nasdaq futures",
+          "risk": "The main risk is a sudden reversal in tech stock prices due to positive news or sentiment shift."
+        }
+      ],
+      "watchNext": [
+        "Upcoming earnings reports from major tech companies",
+        "US Federal Reserve's next policy meeting",
+        "Any major announcements from AI companies regarding future growth"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    }
+  ],
+  "diagnostics": {
+    "articlesIngested": 214,
+    "clustersConsidered": 25,
+    "feeds": [
+      {
+        "id": "fed",
+        "name": "Federal Reserve",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 1,
+        "ms": 141,
+        "error": null
+      },
+      {
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 0,
+        "ms": 99,
+        "error": null
+      },
+      {
+        "id": "ecb",
+        "name": "European Central Bank",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 3,
+        "ms": 531,
+        "error": null
+      },
+      {
+        "id": "boe",
+        "name": "Bank of England",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 622,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 409,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 235,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 24,
+        "fresh": 1,
+        "ms": 387,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 308,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 307,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 342,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 38,
+        "ms": 358,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 74,
+        "fresh": 22,
+        "ms": 372,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 611,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 29,
+        "ms": 683,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 4,
+        "ms": 760,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 12,
+        "fresh": 12,
+        "ms": 1346,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 54,
+        "fresh": 22,
+        "ms": 567,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": true,
+        "parsed": 40,
+        "fresh": 32,
+        "ms": 651,
+        "error": null
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 683,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 655,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 658,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 4758,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 665,
+        "error": null
+      }
+    ],
+    "marketProviders": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 599,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 269,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "usage": {
+      "calls": 6,
+      "inputTokens": 12606,
+      "outputTokens": 5724,
+      "estimatedCostUsd": 0.0888
+    },
+    "runtimeMs": 31310
+  },
+  "scorecardSummary": {
+    "total": 24,
+    "open": 10,
+    "flat": 2,
+    "hits": 4,
+    "misses": 8,
+    "settled": 12,
+    "hitRate": 33.3,
+    "byClass": {
+      "rates": {
+        "hits": 1,
+        "total": 2,
+        "rate": 50
+      },
+      "commodities": {
+        "hits": 1,
+        "total": 3,
+        "rate": 33.3
+      },
+      "fx": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "vol": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "credit": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "equities": {
+        "hits": 0,
+        "total": 4,
+        "rate": 0
+      }
+    },
+    "byConviction": {
+      "3": {
+        "hits": 2,
+        "total": 8,
+        "rate": 25
+      },
+      "4": {
+        "hits": 2,
+        "total": 4,
+        "rate": 50
+      }
+    }
+  }
+}
