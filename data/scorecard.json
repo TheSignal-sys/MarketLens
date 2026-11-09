@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T12:53:40.811Z",
+  "updatedAt": "2026-11-09T13:49:25.897Z",
   "calls": [
     {
       "id": "demo-1",
@@ -447,7 +447,14 @@
       "entryValue": 7659.44,
       "entryDisplay": "7,659",
       "openedAt": "2026-10-19T10:41:58.988Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 7376.86,
+      "markDisplay": "7,377",
+      "moveAbs": -282.5799999999999,
+      "movePct": -3.689303656664194,
+      "moveDisplay": "-3.69%",
+      "outcome": "S&P 500 down -3.69% vs called up",
+      "settledAt": "2026-11-09T13:49:25.897Z"
     },
     {
       "id": "2026-11-02-stock-futures-higher-oil-lower-as-investors-return-to-risk:us10y",
@@ -515,6 +522,40 @@
       "entryValue": 89.6,
       "entryDisplay": "89.60",
       "openedAt": "2026-11-05T13:07:07.598Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-09-dow-futures-rally-600-points-as-oil-prices-drop-traders-brac:spx",
+      "storyId": "2026-11-09-dow-futures-rally-600-points-as-oil-prices-drop-traders-brac",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "1.5 to 3%",
+      "horizon": "days",
+      "conviction": 4,
+      "rationale": "Lower oil prices could boost company profits, lifting the S&P 500.",
+      "entryValue": 7376.86,
+      "entryDisplay": "7,377",
+      "openedAt": "2026-11-09T13:49:25.897Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-09-gold-rises-above-4-100-an-ounce-with-focus-on-u-s-inflation-:spx",
+      "storyId": "2026-11-09-gold-rises-above-4-100-an-ounce-with-focus-on-u-s-inflation-",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "1 to 2%",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "Equity markets may face pressure as investors move to gold.",
+      "entryValue": 7376.86,
+      "entryDisplay": "7,377",
+      "openedAt": "2026-11-09T13:49:25.897Z",
       "status": "open"
     }
   ]
