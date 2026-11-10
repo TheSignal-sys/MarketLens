@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T13:49:25.897Z",
+  "updatedAt": "2026-11-10T10:01:49.660Z",
   "calls": [
     {
       "id": "demo-1",
@@ -556,6 +556,74 @@
       "entryValue": 7376.86,
       "entryDisplay": "7,377",
       "openedAt": "2026-11-09T13:49:25.897Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-10-better-risk-appetite-weighs-on-dollar-treasury-yields-seek-d:gold",
+      "storyId": "2026-11-10-better-risk-appetite-weighs-on-dollar-treasury-yields-seek-d",
+      "instrumentKey": "gold",
+      "instrumentLabel": "Gold",
+      "assetClass": "commodities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "1% to 2%",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Gold prices may rise as the dollar weakens, increasing its appeal.",
+      "entryValue": 4090.4,
+      "entryDisplay": "4090.40",
+      "openedAt": "2026-11-10T10:01:49.660Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-10-gold-holds-above-4-100-on-softer-dollar-oil-prices:gold",
+      "storyId": "2026-11-10-gold-holds-above-4-100-on-softer-dollar-oil-prices",
+      "instrumentKey": "gold",
+      "instrumentLabel": "Gold",
+      "assetClass": "commodities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "1 to 2%",
+      "horizon": "weeks",
+      "conviction": 4,
+      "rationale": "Gold prices are likely to rise due to the weaker dollar and lower oil prices.",
+      "entryValue": 4090.4,
+      "entryDisplay": "4090.40",
+      "openedAt": "2026-11-10T10:01:49.660Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-10-a-key-report-for-where-inflation-stood-in-october-comes-out-:gold",
+      "storyId": "2026-11-10-a-key-report-for-where-inflation-stood-in-october-comes-out-",
+      "instrumentKey": "gold",
+      "instrumentLabel": "Gold",
+      "assetClass": "commodities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "0.5 to 1%",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Gold prices could dip slightly as inflation remains controlled.",
+      "entryValue": 4090.4,
+      "entryDisplay": "4090.40",
+      "openedAt": "2026-11-10T10:01:49.660Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-10-the-stock-market-rally-keeps-spreading-beyond-big-tech-octob:gold",
+      "storyId": "2026-11-10-the-stock-market-rally-keeps-spreading-beyond-big-tech-octob",
+      "instrumentKey": "gold",
+      "instrumentLabel": "Gold",
+      "assetClass": "commodities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "1 to 2%",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Gold prices may rise as investors seek inflation hedges.",
+      "entryValue": 4090.4,
+      "entryDisplay": "4090.40",
+      "openedAt": "2026-11-10T10:01:49.660Z",
       "status": "open"
     }
   ]
