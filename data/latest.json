@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "date": "2026-11-10",
-  "dateLabel": "Tuesday, 10 November 2026",
-  "generatedAt": "2026-11-10T13:25:29.736Z",
+  "date": "2026-11-11",
+  "dateLabel": "Wednesday, 11 November 2026",
+  "generatedAt": "2026-11-11T12:39:29.599Z",
   "model": "openai/gpt-4o",
   "marketRead": {
-    "headline": "Oil and inflation drive market sentiment",
-    "body": "Oil prices dropping below $90 a barrel, driven by Trump's comments on Iran, are affecting multiple asset classes, including equities and commodities. The upcoming CPI report is crucial as investors anticipate its impact on inflation expectations and potential rate hikes. Nvidia's scandal adds uncertainty, but its broader market impact is limited compared to macroeconomic factors.",
-    "regime": "inflation concerns with geopolitical influences"
+    "headline": "Rate Hike Prospects Dominate Market Sentiment",
+    "body": "The prospect of further US rate hikes is driving the dollar's strength and impacting global markets, with European gas prices rising due to storage withdrawals. AI optimism is boosting Nasdaq futures, but market volatility remains as investors seek low-volatility stocks amid uncertainty. These dynamics suggest a market focused on interest rate expectations and sector-specific developments.",
+    "regime": "rate hike anticipation"
   },
   "snapshot": {
     "quotes": [],
@@ -16,14 +16,14 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 543,
+        "ms": 681,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 447,
+        "ms": 96,
         "error": "no rows"
       },
       {
@@ -34,292 +34,149 @@
         "error": "no rows"
       }
     ],
-    "fetchedAt": "2026-11-10T13:24:59.878Z"
+    "fetchedAt": "2026-11-11T12:39:05.922Z"
   },
   "stories": [
     {
-      "id": "2026-11-10-cpi-report-today-oil-prices-fall-on-trump-iran-comments-inve",
+      "id": "2026-11-11-dollar-s-strength-could-persist-on-u-s-rate-rise-prospects",
       "rank": 1,
-      "editorNote": "The CPI report and Trump's comments on Iran affect inflation expectations and oil prices, influencing multiple asset classes.",
+      "editorNote": "The potential for sustained dollar strength due to US rate hikes affects multiple asset classes and has significant global implications.",
       "materiality": {
-        "score": 68.6,
+        "score": 65,
         "components": {
           "corroboration": 13,
           "authority": 13,
-          "breadth": 13.5,
+          "breadth": 9,
           "salience": 20,
-          "recency": 9.1
+          "recency": 10
         },
         "distinctSources": 1,
         "salienceTerms": [
-          "inflation",
-          "cpi",
-          "repo",
-          "rally",
-          "oil",
-          "nvidia"
-        ]
-      },
-      "sources": [
-        "WSJ Markets"
-      ],
-      "links": [
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-11-10-2026?mod=rss_markets_main",
-          "title": "CPI Report Today: Oil Prices Fall on Trump Iran Comments; Investors Await Latest Inflation Data"
-        }
-      ],
-      "headlines": [
-        "CPI Report Today: Oil Prices Fall on Trump Iran Comments; Investors Await Latest Inflation Data"
-      ],
-      "newestAt": "2026-11-10T10:01:59.000Z",
-      "headline": "Oil Prices Drop on Trump's Iran Comments, Awaiting CPI Data",
-      "standfirst": "Oil prices fell after Trump's comments on Iran, with investors focusing on upcoming CPI data.",
-      "classification": {
-        "eventType": "geopolitical",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "Oil prices had already adjusted to geopolitical tensions, but Trump's comments added fresh uncertainty.",
-        "persistence": "days",
-        "regionFocus": [
-          "Global"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Oil prices fell after Donald Trump made comments about Iran, raising hopes for reduced tensions. Investors are now waiting for the latest Consumer Price Index (CPI) data to gauge inflation trends.",
-        "whyItMatters": "Oil prices influence inflation and economic growth, while the CPI data will guide expectations for future interest rate moves.",
-        "detail": "Trump's comments suggested a potential easing of geopolitical tensions, which could lead to increased oil supply. The CPI data will provide insights into inflationary pressures, affecting monetary policy expectations."
-      },
-      "chains": [
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "Lower oil prices could ease inflation concerns.",
-              "detail": "A drop in oil prices reduces input costs, potentially slowing inflation and altering central bank rate hike expectations."
-            },
-            {
-              "plain": "Central banks might delay rate hikes if inflation eases.",
-              "detail": "If CPI data shows moderated inflation, central banks could maintain accommodative policies longer, affecting interest rate trajectories."
-            }
-          ],
-          "endpoint": "Central banks",
-          "strength": "moderate"
-        },
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "Lower oil prices reduce costs for companies reliant on energy.",
-              "detail": "Companies with significant energy expenses could see improved margins, as reduced oil prices lower operational costs."
-            },
-            {
-              "plain": "Improved margins could boost stock prices in energy-intensive sectors.",
-              "detail": "As input costs fall, companies in sectors like transportation and manufacturing might report better earnings, supporting their stock valuations."
-            }
-          ],
-          "endpoint": "Energy-intensive sectors",
-          "strength": "strong"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "commodities",
-          "instrument": "Crude oil",
-          "direction": "down",
-          "magnitude": "3 to 5%",
-          "horizon": "intraday",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Oil prices are likely to fall due to potential easing of Iran tensions.",
-          "detail": "The geopolitical risk premium in oil prices decreases as Trump's comments suggest reduced Middle East tensions."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "Energy-intensive sectors",
-          "direction": "up",
-          "magnitude": "1 to 2%",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Stocks in sectors like transportation may rise due to lower fuel costs.",
-          "detail": "Reduced oil prices improve margins for energy-dependent companies, potentially boosting their stock prices."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "down",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Treasury yields may fall if inflation expectations are lowered by CPI data.",
-          "detail": "Lower oil prices and moderated CPI data could reduce inflation expectations, leading to a drop in long-term yields."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors might underestimate the impact of sustained lower oil prices on long-term inflation trends, which could delay central bank tightening.",
-        "detail": "The market may not fully price in the potential for lower oil prices to persistently dampen inflation, affecting rate hike timelines."
-      },
-      "falsifiers": [
-        "A sharp increase in geopolitical tensions reversing oil price declines.",
-        "CPI data showing unexpectedly high inflation."
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Long energy-intensive stocks",
-          "plain": "Buy stocks in sectors like transportation to benefit from lower oil prices.",
-          "instrument": "Equity futures or sector ETFs",
-          "risk": "Oil prices could rebound if geopolitical tensions escalate."
-        }
-      ],
-      "watchNext": [
-        "Release of CPI data",
-        "Further geopolitical developments in the Middle East"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-11-10-jensen-huang-s-affair-with-alleged-chinese-spy-further-compl",
-      "rank": 2,
-      "editorNote": "Nvidia's scandal introduces uncertainty, but its broader market impact is limited compared to macroeconomic factors.",
-      "materiality": {
-        "score": 69.1,
-        "components": {
-          "corroboration": 21,
-          "authority": 13,
-          "breadth": 9,
-          "salience": 16.2,
-          "recency": 10
-        },
-        "distinctSources": 2,
-        "salienceTerms": [
-          "chip",
-          "nvidia",
+          "fed",
+          "federal reserve",
+          "interest rate",
           "dollar"
         ]
       },
       "sources": [
-        "CNBC",
-        "BBC Business"
+        "WSJ Markets"
       ],
       "links": [
         {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
-          "title": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem"
-        },
-        {
-          "name": "BBC Business",
-          "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
-          "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy"
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/currencies/asian-currencies-soften-after-u-s-cpi-data-boosts-dollar-26f03632?mod=rss_markets_main",
+          "title": "Dollar’s Strength Could Persist on U.S. Rate-Rise Prospects"
         }
       ],
       "headlines": [
-        "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
-        "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy"
+        "Dollar’s Strength Could Persist on U.S. Rate-Rise Prospects"
       ],
-      "newestAt": "2026-11-10T13:24:05.000Z",
-      "headline": "Nvidia Shares Fall Amid CEO Scandal and China Concerns",
-      "standfirst": "Nvidia's CEO Jensen Huang is under investigation for an alleged affair with a Chinese spy, impacting the company's stock.",
+      "newestAt": "2026-11-11T12:35:00.000Z",
+      "headline": "Dollar Strengthens on Fed Rate Hike Prospects, Affecting Global Markets",
+      "standfirst": "The dollar rose to a four-week high as markets anticipate US interest rate hikes.",
       "classification": {
-        "eventType": "corporate",
+        "eventType": "monetary-policy",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market has reacted to the news with a share price drop, but the full implications for Nvidia's operations in China are not yet clear.",
+        "pricedInRationale": "The initial dollar strength is priced in, but further rate hikes are not fully absorbed.",
         "persistence": "weeks",
         "regionFocus": [
           "US",
-          "China"
+          "Global"
         ]
       },
       "whatHappened": {
-        "plain": "Jensen Huang, CEO of Nvidia, is under investigation for an alleged affair with a person suspected to be a Chinese spy. This has led to a drop in Nvidia's stock price.",
-        "whyItMatters": "This situation adds uncertainty to Nvidia's business prospects, especially regarding its operations and sales in China.",
-        "detail": "The investigation could complicate Nvidia's strategic position in China, a critical market for semiconductor sales, and may lead to increased regulatory scrutiny."
+        "plain": "The US dollar has reached a four-week high against other currencies. This is due to expectations that the Federal Reserve will increase interest rates.",
+        "whyItMatters": "A stronger dollar can affect global trade and investment flows, impacting economies worldwide.",
+        "detail": "The dollar's rise reflects market anticipation of tighter monetary policy by the Federal Reserve, which is expected to raise rates to combat inflation."
       },
       "chains": [
         {
-          "channel": "earnings",
+          "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "Nvidia's sales to China could be disrupted.",
-              "detail": "Potential regulatory actions or shifts in policy may restrict Nvidia's ability to operate freely in China, impacting its revenue."
+              "plain": "A stronger dollar makes US exports more expensive abroad.",
+              "detail": "The appreciation of the dollar increases the cost of US goods in foreign markets, potentially reducing demand for US exports."
             },
             {
-              "plain": "Lower sales would reduce Nvidia's profits.",
-              "detail": "A significant portion of Nvidia's sales are tied to China; any disruption could materially affect their earnings."
+              "plain": "Foreign companies may see reduced earnings from US sales.",
+              "detail": "Non-US companies with significant revenue in dollars will convert those earnings into weaker local currencies, impacting profitability."
             }
           ],
-          "endpoint": "Nvidia's profit margins",
+          "endpoint": "global exporters",
           "strength": "strong"
         },
         {
-          "channel": "substitution",
+          "channel": "discount-rate",
           "links": [
             {
-              "plain": "Investors may shift to other tech stocks.",
-              "detail": "With Nvidia's outlook uncertain, investors might reallocate their portfolios to tech firms with less exposure to geopolitical risks."
+              "plain": "Higher US rates push up global bond yields.",
+              "detail": "Expectations of US rate hikes increase the yield on US Treasuries, which influences global bond markets by setting a higher benchmark."
             },
             {
-              "plain": "Other tech stocks could see increased demand.",
-              "detail": "As funds move out of Nvidia, competitors like AMD or Intel might benefit from increased inflows."
+              "plain": "Rising yields make borrowing more expensive worldwide.",
+              "detail": "As bond yields rise, the cost of issuing new debt increases, affecting both sovereign and corporate borrowers globally."
             }
           ],
-          "endpoint": "Tech sector equity valuations",
+          "endpoint": "global bond markets",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "equities",
-          "instrument": "Nvidia shares",
-          "direction": "down",
-          "magnitude": "3 to 5%",
+          "assetClass": "fx",
+          "instrument": "US Dollar Index",
+          "direction": "up",
+          "magnitude": "1% to 2%",
           "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "Nvidia's shares are likely to continue falling as the investigation unfolds.",
-          "detail": "With the CEO under scrutiny, investor confidence in Nvidia's management and future earnings may be shaken, leading to further stock price declines."
+          "plain": "The dollar is expected to continue rising as rate hike expectations grow.",
+          "detail": "The anticipation of further Fed rate hikes supports continued dollar strength, likely pushing the US Dollar Index higher."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 1,
+          "plain": "US bond yields are likely to rise as investors anticipate higher rates.",
+          "detail": "The prospect of Fed rate hikes increases yields on US Treasuries, reflecting the higher cost of borrowing."
         },
         {
           "assetClass": "equities",
-          "instrument": "AMD shares",
-          "direction": "up",
-          "magnitude": "1 to 2%",
+          "instrument": "Emerging Market Stocks",
+          "direction": "down",
+          "magnitude": "2% to 4%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "AMD might gain as investors look for alternatives to Nvidia.",
-          "detail": "As Nvidia's risk profile increases, capital may flow into AMD, perceived as a safer bet within the semiconductor space."
+          "plain": "Emerging market stocks may fall due to a stronger dollar and higher borrowing costs.",
+          "detail": "A stronger dollar and rising global yields can lead to capital outflows from emerging markets, pressuring stock prices."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the long-term impact on Nvidia's strategic operations in China, which could face more than just temporary setbacks.",
-        "detail": "The investigation could lead to lasting regulatory challenges for Nvidia in China, affecting its long-term growth prospects in a key market."
+        "plain": "Investors may underestimate the impact of a stronger dollar on global supply chains, particularly in sectors reliant on US imports. This could lead to unexpected cost pressures and margin squeezes.",
+        "detail": "The market may not fully appreciate how dollar strength could disrupt supply chains, especially in industries heavily dependent on US-sourced inputs, leading to inflationary pressures."
       },
       "falsifiers": [
-        "The investigation clears Jensen Huang without further complications.",
-        "Nvidia announces a strategic partnership in China mitigating risks.",
-        "Global semiconductor demand surges, overshadowing the scandal."
+        "The Fed signals a pause or slower pace in rate hikes.",
+        "US inflation data comes in lower than expected, reducing rate hike pressure.",
+        "Geopolitical tensions ease, reducing safe-haven demand for the dollar."
       ],
       "tradeExpression": [
         {
-          "idea": "Short Nvidia, Long AMD",
-          "plain": "Sell Nvidia shares and buy AMD shares to hedge against Nvidia's China risks.",
-          "instrument": "Equity pairs trade using cash or options",
-          "risk": "Nvidia resolves the scandal quickly and regains investor confidence, reversing the trade."
+          "idea": "Long USD against Emerging Market Currencies",
+          "plain": "Buy the US dollar against a basket of emerging market currencies to benefit from rate differentials.",
+          "instrument": "FX forwards or options",
+          "risk": "Emerging market currencies could strengthen if local central banks raise rates aggressively."
         }
       ],
       "watchNext": [
-        "Updates on the investigation into Jensen Huang.",
-        "Nvidia's quarterly earnings report and guidance.",
-        "Any regulatory announcements affecting US-China tech trade."
+        "Upcoming US inflation data releases",
+        "Federal Reserve meeting minutes",
+        "Emerging market central bank rate decisions"
       ],
       "glossary": [
         {
@@ -330,147 +187,155 @@
       "confidence": 3
     },
     {
-      "id": "2026-11-10-sterling-falls-as-drop-in-oil-prices-curtails-u-k-rate-rise-",
-      "rank": 3,
-      "editorNote": "Sterling's reaction to oil prices affects FX and rate expectations, with potential implications for UK monetary policy.",
+      "id": "2026-11-11-european-ttf-gas-rises-as-storage-withdrawals-accelerate",
+      "rank": 2,
+      "editorNote": "Rising European gas prices due to storage withdrawals can have lasting effects on energy markets and inflation expectations.",
       "materiality": {
-        "score": 68.9,
+        "score": 68.1,
         "components": {
-          "corroboration": 13,
+          "corroboration": 21,
           "authority": 13,
           "breadth": 13.5,
-          "salience": 20,
-          "recency": 9.4
+          "salience": 11,
+          "recency": 9.5
         },
-        "distinctSources": 1,
+        "distinctSources": 2,
         "salienceTerms": [
-          "bank of england",
-          "interest rate",
-          "oil",
-          "dollar",
-          "euro",
-          "sterling"
+          "natural gas",
+          "euro"
         ]
       },
       "sources": [
-        "WSJ Markets"
+        "WSJ Markets",
+        "WSJ World"
       ],
       "links": [
         {
           "name": "WSJ Markets",
-          "url": "https://www.wsj.com/articles/dollar-weakens-ahead-of-u-s-inflation-data-c7cddfbe?mod=rss_markets_main",
-          "title": "Sterling Falls as Drop in Oil Prices Curtails U.K. Rate-Rise Prospects"
+          "url": "https://www.wsj.com/finance/commodities-futures/european-ttf-gas-rises-as-storage-withdrawals-accelerate-569c8aab?mod=rss_markets_main",
+          "title": "European TTF Gas Rises as Storage Withdrawals Accelerate"
+        },
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/finance/commodities-futures/european-ttf-gas-rises-as-storage-withdrawals-accelerate-569c8aab?mod=rss_worldnews",
+          "title": "European TTF Gas Rises as Storage Withdrawals Accelerate"
         }
       ],
       "headlines": [
-        "Sterling Falls as Drop in Oil Prices Curtails U.K. Rate-Rise Prospects"
+        "European TTF Gas Rises as Storage Withdrawals Accelerate"
       ],
-      "newestAt": "2026-11-10T11:17:00.000Z",
-      "headline": "Sterling Weakens as Lower Oil Prices Dampen UK Rate Hike Prospects",
-      "standfirst": "Sterling fell as lower oil prices made a UK rate hike less likely.",
+      "newestAt": "2026-11-11T10:54:00.000Z",
+      "headline": "European Gas Prices Surge, Raising Inflation Concerns",
+      "standfirst": "European natural gas prices rose due to increased storage withdrawals.",
       "classification": {
-        "eventType": "macro-data",
+        "eventType": "supply-shock",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Investors had anticipated some impact on sterling from oil prices, but the extent of the shift in rate expectations was not fully absorbed.",
-        "persistence": "days",
+        "pricedInRationale": "The market had anticipated some increase due to seasonal demand, but the acceleration in withdrawals was unexpected.",
+        "persistence": "weeks",
         "regionFocus": [
-          "UK",
-          "Europe",
-          "Global"
+          "Europe"
         ]
       },
       "whatHappened": {
-        "plain": "Sterling fell against the euro and the dollar as oil prices dropped, reducing the likelihood of the Bank of England raising interest rates. Lower oil prices can signal weaker economic activity, which might lead the central bank to keep rates unchanged.",
-        "whyItMatters": "Currency movements affect trade competitiveness and inflation. A weaker sterling can increase import costs, affecting inflation and consumer spending.",
-        "detail": "The decline in oil prices has shifted expectations for UK monetary policy, reducing the likelihood of a rate hike by the Bank of England. This has led to a depreciation of sterling as traders adjust their positions."
+        "plain": "European natural gas prices have risen above €85 per megawatt-hour. This is due to faster storage withdrawals as winter approaches.",
+        "whyItMatters": "Higher gas prices can increase energy costs for businesses and consumers, potentially leading to higher inflation.",
+        "detail": "The acceleration in storage withdrawals suggests supply concerns, pushing prices higher as demand increases with colder weather."
       },
       "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Higher gas prices increase costs for energy-intensive industries.",
+              "detail": "Industries reliant on natural gas for production face higher input costs, squeezing profit margins."
+            },
+            {
+              "plain": "Companies may pass on higher costs to consumers.",
+              "detail": "Firms with pricing power will attempt to offset increased costs by raising prices, contributing to inflation."
+            }
+          ],
+          "endpoint": "European manufacturers and consumers",
+          "strength": "strong"
+        },
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Lower oil prices reduce inflation pressure.",
-              "detail": "The drop in oil prices eases inflationary pressures, making a rate hike less urgent for the Bank of England."
-            },
-            {
-              "plain": "Bank of England less likely to raise rates.",
-              "detail": "With reduced inflationary pressure, the Bank of England is less inclined to raise interest rates in the near term."
+              "plain": "Rising energy prices may prompt central banks to reconsider interest rate policies.",
+              "detail": "Central banks may delay rate cuts or consider hikes to combat inflationary pressures from energy costs."
             }
           ],
-          "endpoint": "UK interest rate expectations",
+          "endpoint": "European Central Bank",
           "strength": "moderate"
         },
         {
           "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "Sterling falls against other currencies.",
-              "detail": "As rate hike expectations diminish, sterling depreciates against the euro and the dollar."
-            },
-            {
-              "plain": "UK exports become more competitive.",
-              "detail": "A weaker sterling makes UK goods cheaper abroad, potentially boosting exports."
+              "plain": "Higher energy costs can weaken the euro.",
+              "detail": "Increased import costs from higher gas prices can deteriorate the eurozone's trade balance, putting pressure on the euro."
             }
           ],
-          "endpoint": "UK exporters",
-          "strength": "strong"
+          "endpoint": "EUR/USD exchange rate",
+          "strength": "speculative"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "fx",
-          "instrument": "GBP/USD",
-          "direction": "down",
-          "magnitude": "1 to 2%",
-          "horizon": "days",
+          "assetClass": "commodities",
+          "instrument": "European natural gas",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "Sterling is likely to weaken against the dollar as rate hike expectations fade.",
-          "detail": "With the Bank of England less likely to raise rates, sterling is expected to depreciate relative to the dollar as traders adjust their positions."
+          "plain": "Natural gas prices in Europe are likely to continue rising as storage levels fall.",
+          "detail": "The combination of increased demand and supply concerns will likely keep upward pressure on gas prices."
         },
         {
           "assetClass": "equities",
-          "instrument": "UK exporters",
-          "direction": "up",
+          "instrument": "European industrials",
+          "direction": "down",
           "magnitude": "2 to 4%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "UK exporters may benefit from a weaker sterling, improving their competitiveness abroad.",
-          "detail": "The depreciation of sterling enhances the international competitiveness of UK exporters, potentially boosting their revenue and share prices."
+          "plain": "Industrials may face pressure due to rising energy costs impacting profitability.",
+          "detail": "Higher input costs from energy prices will likely weigh on margins, affecting stock performance."
         },
         {
-          "assetClass": "rates",
-          "instrument": "UK government bond yields",
+          "assetClass": "fx",
+          "instrument": "EUR/USD",
           "direction": "down",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "days",
-          "conviction": 3,
+          "magnitude": "0.5 to 1%",
+          "horizon": "weeks",
+          "conviction": 2,
           "order": 2,
-          "plain": "UK bond yields may fall as rate hike expectations diminish.",
-          "detail": "With the Bank of England less likely to raise rates, UK government bond yields are expected to decline as investors adjust to a lower rate environment."
+          "plain": "The euro could weaken against the dollar due to adverse trade effects.",
+          "detail": "Rising import costs from energy may weaken the eurozone's trade position, impacting the currency."
         }
       ],
       "whatMarketMisses": {
-        "plain": "While the immediate impact of lower oil prices on sterling and rate expectations is clear, the longer-term effects on UK inflation and economic growth are less certain. If oil prices remain low, this could suppress inflation further and delay any rate hikes, potentially leading to a prolonged period of low interest rates.",
-        "detail": "The market may underestimate the persistence of low oil prices' impact on UK inflation, which could lead to a more extended period of low rates than currently anticipated."
+        "plain": "Investors may underestimate the potential for sustained inflationary pressures from energy costs, leading to a more prolonged impact on central bank policy.",
+        "detail": "The market may not fully price in the risk that persistent energy cost increases could lead to sustained inflation, affecting long-term rate expectations."
       },
       "falsifiers": [
-        "A sudden rebound in oil prices would negate the current analysis.",
-        "Unexpected hawkish comments from the Bank of England could shift rate expectations."
+        "European gas storage levels stabilize or increase unexpectedly.",
+        "A mild winter reduces heating demand significantly.",
+        "Significant alternative energy supplies become available quickly."
       ],
       "tradeExpression": [
         {
-          "idea": "Short GBP/USD",
-          "plain": "Sell GBP/USD as sterling is likely to weaken with reduced rate hike prospects.",
-          "instrument": "FX spot or futures",
-          "risk": "A reversal in oil prices or unexpected BoE hawkishness could strengthen sterling."
+          "idea": "Short European industrials",
+          "plain": "Sell European industrial stocks as rising energy costs threaten margins.",
+          "instrument": "equity futures or options on industrial sector ETFs",
+          "risk": "If energy prices fall or companies successfully pass costs to consumers, the trade could lose money."
         }
       ],
       "watchNext": [
-        "Upcoming Bank of England meeting minutes",
-        "Next inflation data release in the UK",
-        "Oil price movements in the coming weeks"
+        "European Central Bank's next policy meeting",
+        "Upcoming weather forecasts for Europe",
+        "Reports on European gas storage levels"
       ],
       "glossary": [
         {
@@ -481,106 +346,405 @@
       "confidence": 3
     },
     {
-      "id": "2026-11-10-fed-s-waller-puts-half-point-rate-hike-into-the-mix-for-dece",
-      "rank": 4,
-      "editorNote": "Fed's Waller discussing potential rate hikes impacts rate expectations and investor sentiment.",
+      "id": "2026-11-11-nasdaq-futures-rally-as-ai-optimism-returns",
+      "rank": 3,
+      "editorNote": "AI optimism driving Nasdaq futures highlights a sector-specific trend that could influence broader equity market sentiment.",
       "materiality": {
-        "score": 64.2,
+        "score": 64.1,
         "components": {
-          "corroboration": 21,
+          "corroboration": 13,
           "authority": 13,
-          "breadth": 4.5,
-          "salience": 16.2,
-          "recency": 9.5
+          "breadth": 9,
+          "salience": 20,
+          "recency": 9.1
         },
-        "distinctSources": 2,
+        "distinctSources": 1,
         "salienceTerms": [
           "fed",
-          "rate hike"
+          "federal reserve",
+          "rally"
         ]
       },
       "sources": [
-        "MarketWatch",
-        "Investing.com Economy"
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/commodities-futures/nasdaq-futures-rally-as-ai-optimism-returns-af100e62?mod=rss_markets_main",
+          "title": "Nasdaq Futures Rally as AI Optimism Returns"
+        }
+      ],
+      "headlines": [
+        "Nasdaq Futures Rally as AI Optimism Returns"
+      ],
+      "newestAt": "2026-11-11T09:16:00.000Z",
+      "headline": "AI Optimism Boosts Nasdaq, Offsets Rate-Hike Fears",
+      "standfirst": "Nasdaq futures rallied as renewed confidence in AI technology outweighed concerns about potential Federal Reserve rate hikes.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some AI sector recovery, but the extent of optimism was underestimated.",
+        "persistence": "days",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Nasdaq futures rose sharply as investors regained confidence in the potential of artificial intelligence technologies. This optimism helped counterbalance worries about the Federal Reserve possibly raising interest rates.",
+        "whyItMatters": "This shift in sentiment could influence broader market trends, as technology stocks often lead market movements.",
+        "detail": "The Nasdaq's rise reflects a renewed belief in AI's growth prospects, which is significant given tech's outsized influence on market indices."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "AI companies expect higher future profits.",
+              "detail": "Improved sentiment boosts projected earnings for AI firms, increasing their stock valuations."
+            }
+          ],
+          "endpoint": "technology sector stocks",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Fed may delay rate hikes if tech drives growth.",
+              "detail": "A tech-led economic boost could lead the Fed to hold off on rate increases to support broader growth."
+            }
+          ],
+          "endpoint": "Federal Reserve policy",
+          "strength": "moderate"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors shift from bonds to tech stocks.",
+              "detail": "As AI optimism grows, funds flow from lower-yielding bonds to higher-growth tech equities."
+            }
+          ],
+          "endpoint": "bond and equity markets",
+          "strength": "speculative"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Nasdaq Composite",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Nasdaq stocks are likely to rise as AI optimism boosts investor confidence.",
+          "detail": "The anticipated growth in AI earnings propels tech stocks, driving the Nasdaq higher."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Bond yields may increase as investors move funds to equities.",
+          "detail": "A shift from bonds to equities as AI optimism rises could push Treasury yields higher."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "Tech sector credit spreads",
+          "direction": "tighter",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads in the tech sector may narrow as confidence in AI boosts creditworthiness.",
+          "detail": "Improved earnings outlook for AI firms reduces perceived credit risk, tightening spreads."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the speed at which AI advancements could translate into tangible earnings growth, potentially leading to further upside in tech stocks.",
+        "detail": "The market might not fully appreciate how quickly AI developments can enhance profitability, suggesting additional gains in tech equities are possible."
+      },
+      "falsifiers": [
+        "A sharp decline in AI-related earnings reports",
+        "Federal Reserve unexpectedly raises rates soon",
+        "Negative regulatory news on AI technologies"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long Nasdaq Futures",
+          "plain": "Buy Nasdaq futures to benefit from the expected rise in tech stocks due to AI optimism.",
+          "instrument": "Nasdaq futures",
+          "risk": "The trade loses if AI sentiment reverses or if rate hike fears dominate."
+        }
+      ],
+      "watchNext": [
+        "Upcoming Federal Reserve meeting",
+        "Earnings reports from major AI companies",
+        "New AI regulatory developments"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-11-market-angst-is-driving-investors-into-low-volatility-stocks",
+      "rank": 4,
+      "editorNote": "The shift towards low-volatility stocks indicates persistent market uncertainty and a defensive investor stance.",
+      "materiality": {
+        "score": 62.1,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 12.8,
+          "recency": 9.8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "volatility",
+          "selloff"
+        ]
+      },
+      "sources": [
+        "MarketWatch"
       ],
       "links": [
         {
           "name": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/feds-waller-puts-half-point-rate-hike-into-the-mix-for-december-1bebdffc?mod=mw_rss_topstories",
-          "title": "Fed’s Waller puts half-point rate hike into the mix for December"
-        },
-        {
-          "name": "Investing.com Economy",
-          "url": "https://www.investing.com/news/economy-news/feds-waller-plans-to-support-at-least-a-quarterpoint-rate-hike-in-december-5014429",
-          "title": "Fed’s Waller plans to support at least a quarter-point rate hike in December"
+          "url": "https://www.marketwatch.com/story/market-angst-is-driving-investors-into-low-volatility-stocks-as-ai-trade-stumbles-23d905e9?mod=mw_rss_topstories",
+          "title": "Market angst is driving investors into low-volatility stocks as AI trade stumbles"
         }
       ],
       "headlines": [
-        "Fed’s Waller puts half-point rate hike into the mix for December",
-        "Fed’s Waller plans to support at least a quarter-point rate hike in December"
+        "Market angst is driving investors into low-volatility stocks as AI trade stumbles"
       ],
-      "newestAt": "2026-11-10T11:44:01.000Z",
-      "headline": "Fed Rate Hike Speculation Pressures Markets",
-      "standfirst": "Fed's Waller hints at possible rate hikes in December.",
+      "newestAt": "2026-11-11T12:00:00.000Z",
+      "headline": "Investors Flee AI Stocks for Safety Amid Market Turmoil",
+      "standfirst": "Investors are moving to low-volatility stocks as AI shares drop and bond yields stay high.",
       "classification": {
-        "eventType": "monetary-policy",
+        "eventType": "flows",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Markets had anticipated some rate hike signals but not the possibility of a half-point increase.",
+        "pricedInRationale": "The market has reacted to the AI selloff, but the full impact on low-volatility stocks is still unfolding.",
         "persistence": "weeks",
         "regionFocus": [
           "US"
         ]
       },
       "whatHappened": {
-        "plain": "Fed Governor Waller suggested that a rate hike in December is likely, with the possibility of a half-point increase if inflation data is strong.",
-        "whyItMatters": "This indicates a more aggressive stance on controlling inflation, affecting borrowing costs and investment decisions.",
-        "detail": "Waller's comments introduce uncertainty about the size of the December rate hike, suggesting a potential 50 basis point increase if October's inflation data is high."
+        "plain": "Investors are selling off artificial intelligence stocks due to market anxiety and high bond yields. They are shifting their money into low-volatility stocks, which are seen as safer.",
+        "whyItMatters": "This shift indicates that investors are worried about the market and are looking for safer places to put their money.",
+        "detail": "The selloff in AI stocks, driven by high bond yields and market uncertainty, is pushing investors towards low-volatility equities as a defensive strategy."
+      },
+      "chains": [
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors sell AI stocks and buy low-volatility stocks.",
+              "detail": "Positioning unwinds in AI names are reallocating capital towards low-volatility sectors."
+            },
+            {
+              "plain": "This increases demand for low-volatility stocks.",
+              "detail": "The rotation into low-volatility stocks drives demand higher, supporting their prices."
+            }
+          ],
+          "endpoint": "Low-volatility stocks",
+          "strength": "strong"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "High bond yields make borrowing more expensive.",
+              "detail": "Elevated yields increase the discount rate, impacting valuations across equities."
+            },
+            {
+              "plain": "This pressures high-growth stocks like AI.",
+              "detail": "Higher discount rates reduce the present value of future earnings, disproportionately affecting high-growth sectors."
+            }
+          ],
+          "endpoint": "AI and high-growth stocks",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Low-volatility stocks",
+          "direction": "up",
+          "magnitude": "2% to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Low-volatility stocks are likely to rise as investors seek safety.",
+          "detail": "Increased demand from risk-averse investors should lift low-volatility equities by 2% to 4% over the coming weeks."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "AI stocks",
+          "direction": "down",
+          "magnitude": "3% to 5%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 1,
+          "plain": "AI stocks may continue to fall due to high bond yields and market anxiety.",
+          "detail": "Ongoing pressure from elevated yields and investor repositioning could see AI equities decline by 3% to 5%."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Rising bond yields could further impact equity valuations.",
+          "detail": "As yields rise, the higher discount rate could continue to weigh on equity valuations, particularly in growth sectors."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the persistence of high bond yields' impact on equity valuations, especially in sectors reliant on future growth.",
+        "detail": "The market might not fully appreciate how sustained high yields could compress equity valuations, particularly in growth sectors like AI."
+      },
+      "falsifiers": [
+        "A sharp drop in bond yields would ease pressure on AI stocks.",
+        "A significant improvement in AI company earnings could reverse the selloff.",
+        "A shift in central bank policy towards rate cuts would alter the current dynamics."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Buy Low-Volatility Stocks",
+          "plain": "Purchase low-volatility stocks to benefit from the safety-seeking shift.",
+          "instrument": "Cash equities or ETFs focused on low-volatility sectors",
+          "risk": "A reversal in bond yields or market sentiment could reduce the appeal of low-volatility stocks."
+        }
+      ],
+      "watchNext": [
+        "Upcoming US inflation data releases",
+        "Federal Reserve's next policy meeting",
+        "Earnings reports from major AI companies"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "discount rate",
+          "plain": "The interest rate used to determine the present value of future cash flows."
+        },
+        {
+          "term": "positioning",
+          "plain": "The distribution of investments held by investors, which can affect market movements when changed."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-11-why-goldman-sachs-is-now-changing-its-federal-reserve-intere",
+      "rank": 5,
+      "editorNote": "Goldman Sachs changing its Fed rate forecast suggests a reassessment of monetary policy expectations, impacting rates and commodities.",
+      "materiality": {
+        "score": 64.4,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 9.4
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "federal reserve",
+          "cpi",
+          "gold"
+        ]
+      },
+      "sources": [
+        "MarketWatch"
+      ],
+      "links": [
+        {
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/why-goldman-sachs-is-now-changing-its-federal-reserve-interest-rate-forecast-3753f968?mod=mw_rss_topstories",
+          "title": "Why Goldman Sachs is now changing its Federal Reserve interest-rate forecast"
+        }
+      ],
+      "headlines": [
+        "Why Goldman Sachs is now changing its Federal Reserve interest-rate forecast"
+      ],
+      "newestAt": "2026-11-11T10:37:00.000Z",
+      "headline": "Goldman Sachs Expects More Fed Rate Hikes After Hot CPI Data",
+      "standfirst": "Goldman Sachs has revised its forecast, anticipating further Federal Reserve rate hikes.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some tightening, but the hot CPI data suggests more aggressive action.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Goldman Sachs has updated its forecast to predict additional interest rate hikes by the Federal Reserve. This change follows the release of higher-than-expected Consumer Price Index (CPI) data.",
+        "whyItMatters": "Investors need to reassess their expectations for interest rates, which affects borrowing costs and investment returns.",
+        "detail": "The hotter-than-expected CPI print has led Goldman Sachs to anticipate that the Fed will raise rates more aggressively to combat inflation."
       },
       "chains": [
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Investors expect the Fed to raise rates more aggressively.",
-              "detail": "Waller's remarks increase the probability of a 50 basis point hike, shifting expectations for Fed policy."
+              "plain": "The Fed is now more likely to raise interest rates.",
+              "detail": "The CPI data increases the probability of the Fed implementing additional rate hikes to control inflation."
             },
             {
-              "plain": "Higher expected rates push bond yields up.",
-              "detail": "Anticipation of a larger rate hike leads to a sell-off in Treasuries, raising yields."
+              "plain": "Higher rates make borrowing more expensive.",
+              "detail": "As the Fed raises rates, the cost of borrowing for consumers and businesses increases, potentially slowing economic activity."
             }
           ],
-          "endpoint": "bond investors",
+          "endpoint": "borrowers and lenders",
           "strength": "strong"
         },
         {
-          "channel": "credit",
+          "channel": "discount-rate",
           "links": [
             {
-              "plain": "Companies face higher borrowing costs.",
-              "detail": "Rising bond yields increase the cost of issuing new debt, impacting corporate financing."
+              "plain": "Bond yields are likely to rise.",
+              "detail": "With expectations of higher Fed rates, government bond yields are set to increase as investors demand higher returns."
             },
             {
-              "plain": "Firms may cut back on expansion plans.",
-              "detail": "Higher borrowing costs could lead companies to delay or scale back investment projects."
+              "plain": "Higher yields can lead to lower bond prices.",
+              "detail": "As yields rise, the prices of existing bonds fall, affecting portfolios with fixed-income securities."
             }
           ],
-          "endpoint": "corporate borrowers",
-          "strength": "moderate"
+          "endpoint": "bondholders",
+          "strength": "strong"
         },
         {
-          "channel": "fx-terms-of-trade",
+          "channel": "earnings",
           "links": [
             {
-              "plain": "The dollar strengthens as rates rise.",
-              "detail": "Higher US yields attract capital inflows, boosting the dollar's value against other currencies."
+              "plain": "Companies may face higher borrowing costs.",
+              "detail": "Rising interest rates increase corporate financing costs, which can squeeze profit margins."
             },
             {
-              "plain": "US exports become more expensive.",
-              "detail": "A stronger dollar makes US goods pricier abroad, potentially reducing export competitiveness."
+              "plain": "This can lead to reduced earnings for some companies.",
+              "detail": "Higher interest expenses may reduce net income for debt-laden firms, impacting their stock valuations."
             }
           ],
-          "endpoint": "US exporters",
-          "strength": "speculative"
+          "endpoint": "equity investors",
+          "strength": "moderate"
         }
       ],
       "assetImpacts": [
@@ -588,208 +752,57 @@
           "assetClass": "rates",
           "instrument": "US 10-year Treasury yield",
           "direction": "up",
-          "magnitude": "8 to 15 basis points",
-          "horizon": "weeks",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "Treasury yields are likely to rise as investors adjust to the possibility of a larger rate hike.",
-          "detail": "The expectation of a 50 basis point rate hike increases selling pressure on Treasuries, lifting yields."
+          "plain": "The yield on the US 10-year Treasury is expected to rise as investors anticipate more rate hikes.",
+          "detail": "Expectations of further Fed tightening will push the US 10-year yield higher as the market prices in more aggressive rate action."
         },
         {
           "assetClass": "equities",
-          "instrument": "US growth stocks",
+          "instrument": "US stock market",
           "direction": "down",
-          "magnitude": "1.5 to 3%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Growth stocks may fall as higher rates make future earnings less valuable.",
-          "detail": "Rising discount rates reduce the present value of future cash flows, pressuring growth stock valuations."
-        },
-        {
-          "assetClass": "fx",
-          "instrument": "USD Index",
-          "direction": "up",
-          "magnitude": "0.5 to 1%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "The dollar is expected to strengthen as higher rates attract foreign investment.",
-          "detail": "Increased interest rate differentials make USD-denominated assets more attractive, driving dollar appreciation."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may underestimate the impact of a stronger dollar on US corporate earnings, particularly for multinational companies.",
-        "detail": "A stronger dollar could significantly affect the earnings of US multinationals by reducing the competitiveness of their exports and translating foreign revenues at less favourable exchange rates."
-      },
-      "falsifiers": [
-        "October inflation data comes in lower than expected.",
-        "Fed officials signal a preference for smaller rate hikes.",
-        "Global economic conditions deteriorate, reducing the likelihood of aggressive Fed action."
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Short US Growth Stocks",
-          "plain": "Sell US growth stocks as higher rates could weigh on their valuations.",
-          "instrument": "equity futures",
-          "risk": "If inflation data is weak, the Fed might opt for a smaller hike, supporting growth stocks."
-        }
-      ],
-      "watchNext": [
-        "October CPI release",
-        "Upcoming Fed meeting minutes",
-        "Statements from other Fed officials"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-11-10-gold-holds-above-4-100-on-softer-dollar-oil-prices",
-      "rank": 5,
-      "editorNote": "Gold's response to a softer dollar and oil prices reflects broader commodity market dynamics.",
-      "materiality": {
-        "score": 68.4,
-        "components": {
-          "corroboration": 13,
-          "authority": 13,
-          "breadth": 13.5,
-          "salience": 20,
-          "recency": 8.9
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "inflation",
-          "oil",
-          "gold",
-          "dollar"
-        ]
-      },
-      "sources": [
-        "WSJ Markets"
-      ],
-      "links": [
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/commodities-futures/gold-edges-lower-as-investors-await-key-u-s-inflation-data-d4a0623a?mod=rss_markets_main",
-          "title": "Gold Holds Above $4,100 on Softer Dollar, Oil Prices"
-        }
-      ],
-      "headlines": [
-        "Gold Holds Above $4,100 on Softer Dollar, Oil Prices"
-      ],
-      "newestAt": "2026-11-10T09:36:00.000Z",
-      "headline": "Gold Prices Steady on Weaker Dollar and Lower Oil Costs",
-      "standfirst": "Gold futures remain above $4,100 due to a softer dollar and declining oil prices.",
-      "classification": {
-        "eventType": "macro-data",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some impact from a weaker dollar but not the full extent of oil price declines.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "Global"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Gold prices held steady above $4,100 as the dollar weakened and oil prices fell. This combination has eased inflation concerns.",
-        "whyItMatters": "Investors care because stable gold prices amidst a weaker dollar and lower oil costs can signal shifts in inflation expectations.",
-        "detail": "Gold's stability reflects its role as a hedge against currency depreciation and inflation. The weaker dollar and oil price drop have altered inflation outlooks."
-      },
-      "chains": [
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "Central banks may delay interest rate hikes.",
-              "detail": "A weaker dollar and lower oil prices reduce inflation pressure, potentially postponing central bank rate hikes."
-            }
-          ],
-          "endpoint": "central banks",
-          "strength": "moderate"
-        },
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "The weaker dollar makes US exports cheaper.",
-              "detail": "A softer dollar enhances US export competitiveness by lowering prices in foreign currencies."
-            }
-          ],
-          "endpoint": "US exporters",
-          "strength": "strong"
-        },
-        {
-          "channel": "substitution",
-          "links": [
-            {
-              "plain": "Investors may shift from bonds to gold.",
-              "detail": "With gold prices stable and yields low, investors might reallocate from bonds to gold for better returns."
-            }
-          ],
-          "endpoint": "investors",
-          "strength": "speculative"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "commodities",
-          "instrument": "Gold futures",
-          "direction": "up",
           "magnitude": "1 to 2%",
           "horizon": "weeks",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Gold prices are likely to rise as a hedge against currency and inflation risks.",
-          "detail": "Gold's appeal increases as a safe haven with the dollar's weakness and reduced inflation pressures."
-        },
-        {
-          "assetClass": "fx",
-          "instrument": "US Dollar Index",
-          "direction": "down",
-          "magnitude": "0.5 to 1%",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 1,
-          "plain": "The US dollar is expected to weaken further, making exports cheaper.",
-          "detail": "The dollar's decline is likely to continue as lower oil prices and stable inflation reduce the need for rate hikes."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "US Exporters",
-          "direction": "up",
-          "magnitude": "2 to 4%",
-          "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "US exporters may see stock price gains due to improved competitiveness.",
-          "detail": "A weaker dollar boosts US exporters' earnings potential, likely leading to stock price appreciation."
+          "plain": "US stocks may decline due to concerns over higher borrowing costs and their impact on corporate profits.",
+          "detail": "Higher interest rates could pressure stock valuations, particularly in sectors sensitive to borrowing costs, leading to a market pullback."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "US corporate bonds",
+          "direction": "wider",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads may widen as investors demand more yield for corporate bonds amid rising rates.",
+          "detail": "As the cost of borrowing increases, credit spreads are likely to widen, reflecting higher risk premiums for corporate debt."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the long-term impact of sustained lower oil prices on inflation and growth expectations.",
-        "detail": "The market might not fully price in how prolonged low oil prices can reshape inflation trajectories and economic growth forecasts."
+        "plain": "Many investors may underestimate the speed at which the Fed could act if inflation remains persistent, leading to a more rapid adjustment in interest rates than currently anticipated.",
+        "detail": "The market might not fully appreciate the Fed's willingness to accelerate rate hikes if inflation data continues to surprise on the upside, risking a sharper repricing of rate expectations."
       },
       "falsifiers": [
-        "A sharp rebound in oil prices",
-        "Unexpected central bank rate hikes",
-        "A sudden strengthening of the US dollar"
+        "Inflation data cools significantly in the next report.",
+        "The Federal Reserve signals a more dovish stance despite CPI data.",
+        "Global economic conditions deteriorate, prompting a policy pivot."
       ],
       "tradeExpression": [
         {
-          "idea": "Long gold futures",
-          "plain": "Buy gold futures to benefit from stable prices amidst weaker dollar and lower oil costs.",
-          "instrument": "futures",
-          "risk": "Gold prices could fall if the dollar strengthens unexpectedly."
+          "idea": "Short US Treasuries",
+          "plain": "Sell US Treasury futures to profit from rising yields as the Fed tightens policy.",
+          "instrument": "US Treasury futures",
+          "risk": "The main risk is if inflation data weakens, leading to a reversal in rate hike expectations."
         }
       ],
       "watchNext": [
-        "Upcoming Federal Reserve meeting",
-        "OPEC's next decision on oil production",
-        "US inflation data release"
+        "Upcoming US CPI and PCE inflation reports.",
+        "Federal Reserve meeting minutes and public statements.",
+        "US employment data releases."
       ],
       "glossary": [
         {
@@ -809,8 +822,8 @@
         "name": "Federal Reserve",
         "ok": true,
         "parsed": 20,
-        "fresh": 1,
-        "ms": 149,
+        "fresh": 0,
+        "ms": 177,
         "error": null
       },
       {
@@ -827,8 +840,8 @@
         "name": "European Central Bank",
         "ok": true,
         "parsed": 15,
-        "fresh": 0,
-        "ms": 645,
+        "fresh": 2,
+        "ms": 794,
         "error": null
       },
       {
@@ -837,7 +850,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 721,
+        "ms": 564,
         "error": "HTTP 404"
       },
       {
@@ -846,7 +859,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 677,
+        "ms": 394,
         "error": "HTTP 404"
       },
       {
@@ -855,7 +868,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 516,
+        "ms": 473,
         "error": "HTTP 403"
       },
       {
@@ -864,7 +877,7 @@
         "ok": true,
         "parsed": 25,
         "fresh": 0,
-        "ms": 648,
+        "ms": 499,
         "error": null
       },
       {
@@ -873,7 +886,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 574,
+        "ms": 466,
         "error": null
       },
       {
@@ -882,7 +895,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 0,
-        "ms": 580,
+        "ms": 500,
         "error": null
       },
       {
@@ -891,7 +904,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 0,
-        "ms": 575,
+        "ms": 496,
         "error": null
       },
       {
@@ -899,17 +912,17 @@
         "name": "WSJ Markets",
         "ok": true,
         "parsed": 61,
-        "fresh": 35,
-        "ms": 573,
+        "fresh": 34,
+        "ms": 541,
         "error": null
       },
       {
         "id": "wsj-world",
         "name": "WSJ World",
         "ok": true,
-        "parsed": 70,
-        "fresh": 27,
-        "ms": 608,
+        "parsed": 71,
+        "fresh": 30,
+        "ms": 543,
         "error": null
       },
       {
@@ -918,7 +931,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 848,
+        "ms": 591,
         "error": "HTTP 404"
       },
       {
@@ -926,8 +939,8 @@
         "name": "CNBC",
         "ok": true,
         "parsed": 30,
-        "fresh": 30,
-        "ms": 774,
+        "fresh": 29,
+        "ms": 805,
         "error": null
       },
       {
@@ -935,26 +948,26 @@
         "name": "CNBC Economy",
         "ok": true,
         "parsed": 30,
-        "fresh": 4,
-        "ms": 991,
+        "fresh": 2,
+        "ms": 693,
         "error": null
       },
       {
         "id": "ft",
         "name": "Financial Times",
         "ok": true,
-        "parsed": 12,
-        "fresh": 12,
-        "ms": 1421,
+        "parsed": 11,
+        "fresh": 11,
+        "ms": 1287,
         "error": null
       },
       {
         "id": "bbc-biz",
         "name": "BBC Business",
         "ok": true,
-        "parsed": 47,
-        "fresh": 24,
-        "ms": 905,
+        "parsed": 52,
+        "fresh": 21,
+        "ms": 593,
         "error": null
       },
       {
@@ -962,8 +975,8 @@
         "name": "Guardian Business",
         "ok": true,
         "parsed": 40,
-        "fresh": 32,
-        "ms": 993,
+        "fresh": 34,
+        "ms": 587,
         "error": null
       },
       {
@@ -971,8 +984,8 @@
         "name": "Investing.com FX",
         "ok": true,
         "parsed": 10,
-        "fresh": 6,
-        "ms": 918,
+        "fresh": 8,
+        "ms": 654,
         "error": null
       },
       {
@@ -981,7 +994,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 913,
+        "ms": 655,
         "error": null
       },
       {
@@ -990,7 +1003,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 914,
+        "ms": 656,
         "error": null
       },
       {
@@ -999,7 +1012,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 3753,
+        "ms": 1429,
         "error": "HTTP 404"
       },
       {
@@ -1008,7 +1021,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 916,
+        "ms": 666,
         "error": null
       }
     ],
@@ -1017,14 +1030,14 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 543,
+        "ms": 681,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 447,
+        "ms": 96,
         "error": "no rows"
       },
       {
@@ -1037,11 +1050,11 @@
     ],
     "usage": {
       "calls": 6,
-      "inputTokens": 12540,
-      "outputTokens": 5756,
-      "estimatedCostUsd": 0.0889
+      "inputTokens": 12461,
+      "outputTokens": 5974,
+      "estimatedCostUsd": 0.0909
     },
-    "runtimeMs": 34681
+    "runtimeMs": 26261
   },
   "scorecardSummary": {
     "total": 30,
