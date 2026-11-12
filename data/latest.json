@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "date": "2026-11-11",
-  "dateLabel": "Wednesday, 11 November 2026",
-  "generatedAt": "2026-11-11T12:39:29.599Z",
+  "date": "2026-11-12",
+  "dateLabel": "Thursday, 12 November 2026",
+  "generatedAt": "2026-11-12T13:42:46.927Z",
   "model": "openai/gpt-4o",
   "marketRead": {
-    "headline": "Rate Hike Prospects Dominate Market Sentiment",
-    "body": "The prospect of further US rate hikes is driving the dollar's strength and impacting global markets, with European gas prices rising due to storage withdrawals. AI optimism is boosting Nasdaq futures, but market volatility remains as investors seek low-volatility stocks amid uncertainty. These dynamics suggest a market focused on interest rate expectations and sector-specific developments.",
-    "regime": "rate hike anticipation"
+    "headline": "AI and Fed expectations drive market shifts",
+    "body": "The UK economy's rapid growth, aided by AI, suggests a potential shift in investment towards technology-driven sectors. Nvidia's leadership crisis highlights vulnerabilities in the AI industry, causing ripple effects across tech stocks. Persistent Fed rate hike expectations continue to support the US dollar and pressure commodities like gold.",
+    "regime": "AI-driven growth with monetary policy tension"
   },
   "snapshot": {
     "quotes": [],
@@ -16,45 +16,344 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 681,
+        "ms": 416,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 96,
+        "ms": 282,
         "error": "no rows"
       },
       {
         "provider": "fred",
         "ok": false,
         "count": 0,
-        "ms": 0,
+        "ms": 1,
         "error": "no rows"
       }
     ],
-    "fetchedAt": "2026-11-11T12:39:05.922Z"
+    "fetchedAt": "2026-11-12T13:42:13.851Z"
   },
   "stories": [
     {
-      "id": "2026-11-11-dollar-s-strength-could-persist-on-u-s-rate-rise-prospects",
+      "id": "2026-11-12-ai-helps-uk-economy-grow-at-fastest-pace-for-more-than-two-y",
       "rank": 1,
-      "editorNote": "The potential for sustained dollar strength due to US rate hikes affects multiple asset classes and has significant global implications.",
+      "editorNote": "The UK's fastest economic growth in two years, driven by AI, signals a significant shift in economic momentum with broad asset class implications.",
       "materiality": {
-        "score": 65,
+        "score": 81.3,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 18,
+          "salience": 20,
+          "recency": 9.3
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "gdp",
+          "spread",
+          "repo",
+          "oil"
+        ]
+      },
+      "sources": [
+        "BBC Business",
+        "Guardian Business"
+      ],
+      "links": [
+        {
+          "name": "BBC Business",
+          "url": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o?at_medium=RSS&at_campaign=rss",
+          "title": "UK economy grows at fastest rate for more than two years"
+        },
+        {
+          "name": "Guardian Business",
+          "url": "https://www.theguardian.com/business/2026/nov/12/uk-economy-grows-third-quarter-oil-price-ons-gdp",
+          "title": "AI helps UK economy grow at fastest pace for more than two years"
+        }
+      ],
+      "headlines": [
+        "UK economy grows at fastest rate for more than two years",
+        "AI helps UK economy grow at fastest pace for more than two years"
+      ],
+      "newestAt": "2026-11-12T11:20:25.000Z",
+      "headline": "AI-driven growth boosts UK economy, raises policy questions",
+      "standfirst": "The UK economy expanded by 0.7% in Q3, driven by AI service adoption.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Investors anticipated some growth due to AI, but the extent was underestimated.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "UK"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The UK economy grew by 0.7% in the third quarter, the fastest in over two years, largely due to AI services boosting activity.",
+        "whyItMatters": "This growth suggests a potential shift in economic momentum, which could influence future monetary policy decisions.",
+        "detail": "The Office for National Statistics reported a robust GDP increase, with AI-driven productivity gains playing a significant role, impacting expectations for interest rate adjustments."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may reconsider interest rate hikes.",
+              "detail": "The unexpected GDP growth could prompt the Bank of England to delay or moderate interest rate increases to avoid stifling economic momentum."
+            }
+          ],
+          "endpoint": "UK interest rates",
+          "strength": "moderate"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Companies using AI might see higher profits.",
+              "detail": "Firms integrating AI could experience reduced operational costs and increased efficiency, boosting profitability."
+            }
+          ],
+          "endpoint": "AI-focused companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The pound could strengthen due to economic optimism.",
+              "detail": "Improved growth prospects may lead to a stronger GBP as investors anticipate a more resilient UK economy."
+            }
+          ],
+          "endpoint": "GBP/USD exchange rate",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "UK 10-year gilt yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 1,
+          "plain": "UK bond yields may rise as growth reduces the need for rate cuts.",
+          "detail": "The stronger-than-expected GDP growth diminishes the likelihood of rate cuts, pushing gilt yields higher as investors adjust their expectations."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "UK AI sector stocks",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 2,
+          "plain": "AI sector stocks could gain as investors bet on continued growth.",
+          "detail": "The role of AI in driving GDP growth boosts investor confidence in AI companies, leading to higher stock prices as earnings prospects improve."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "GBP/USD",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The pound may rise as the UK economy shows resilience.",
+          "detail": "The unexpected economic strength could lead to a stronger GBP as traders adjust for a more positive economic outlook."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might underestimate the long-term impact of AI on productivity and growth, focusing too much on short-term data.",
+        "detail": "The market may not fully price in AI's potential to sustain higher productivity growth, which could lead to a prolonged economic expansion."
+      },
+      "falsifiers": [
+        "UK GDP growth slows significantly in the next quarter.",
+        "The Bank of England raises rates unexpectedly soon.",
+        "AI adoption does not translate to sustained productivity gains."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long UK AI sector",
+          "plain": "Buy UK AI sector stocks to benefit from increased earnings due to AI-driven growth.",
+          "instrument": "Equity long position in a UK AI sector ETF",
+          "risk": "AI adoption fails to deliver expected productivity gains."
+        }
+      ],
+      "watchNext": [
+        "Bank of England's next monetary policy meeting",
+        "UK GDP growth figures for Q4 2026",
+        "AI adoption rates in key UK industries"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-12-nvidia-s-jensen-huang-crisis-tests-how-much-of-the-ai-indust",
+      "rank": 2,
+      "editorNote": "Nvidia's leadership crisis underscores the AI sector's dependency on key figures, affecting tech equities broadly.",
+      "materiality": {
+        "score": 67.9,
         "components": {
           "corroboration": 13,
           "authority": 13,
-          "breadth": 9,
-          "salience": 20,
-          "recency": 10
+          "breadth": 13.5,
+          "salience": 18.7,
+          "recency": 9.7
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "inflation",
+          "oil",
+          "nvidia"
+        ]
+      },
+      "sources": [
+        "MarketWatch"
+      ],
+      "links": [
+        {
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/nvidias-jensen-huang-dilemma-is-a-test-of-the-ai-industrys-dependence-on-one-flawed-man-a9a1d99c?mod=mw_rss_topstories",
+          "title": "Nvidia’s Jensen Huang crisis tests how much of the AI industry depends on one man"
+        }
+      ],
+      "headlines": [
+        "Nvidia’s Jensen Huang crisis tests how much of the AI industry depends on one man"
+      ],
+      "newestAt": "2026-11-12T12:29:00.000Z",
+      "headline": "Nvidia's Leadership Shock Reverberates Across AI Sector",
+      "standfirst": "Nvidia's CEO Jensen Huang's departure could disrupt the AI industry.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some leadership risk given Huang's prominent role, but the sudden nature of his exit was unexpected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Jensen Huang, the CEO of Nvidia, has stepped down unexpectedly. This has raised concerns about the future direction of Nvidia and its role in the AI industry.",
+        "whyItMatters": "Nvidia is a key player in the AI sector, and Huang's leadership has been central to its success. His exit could lead to uncertainty and volatility in AI-related stocks.",
+        "detail": "Jensen Huang's sudden departure from Nvidia creates a leadership vacuum at a pivotal time for the AI industry, potentially impacting Nvidia's strategic initiatives and market positioning."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Nvidia's future earnings might be less predictable.",
+              "detail": "Huang's exit could disrupt Nvidia's strategic initiatives, affecting its revenue growth and profit margins."
+            },
+            {
+              "plain": "AI companies reliant on Nvidia may face challenges.",
+              "detail": "Companies that depend on Nvidia's GPUs might experience delays or increased costs, impacting their earnings."
+            }
+          ],
+          "endpoint": "AI sector companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "correlation",
+          "links": [
+            {
+              "plain": "Tech stocks may become more volatile.",
+              "detail": "The uncertainty around Nvidia could increase volatility in tech stocks, as investors reassess risk."
+            }
+          ],
+          "endpoint": "tech sector equities",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Nvidia shares",
+          "direction": "down",
+          "magnitude": "5 to 8%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Nvidia shares are likely to fall as investors react to leadership uncertainty.",
+          "detail": "The immediate reaction to Huang's departure is a sell-off in Nvidia shares, reflecting concerns over future leadership and strategy."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "AI sector stocks",
+          "direction": "down",
+          "magnitude": "2 to 5%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "AI sector stocks may decline as they adjust to potential disruptions.",
+          "detail": "The knock-on effect of Nvidia's uncertainty could lead to a broader revaluation of AI stocks, impacting their performance."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "Tech sector volatility index",
+          "direction": "up",
+          "magnitude": "10 to 15%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Volatility in tech stocks is expected to increase due to uncertainty.",
+          "detail": "The leadership change at Nvidia could lead to higher implied volatility in tech stocks, as investors reassess risk and exposure."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the strategic shifts needed at Nvidia without Huang's leadership, potentially leading to longer-term impacts on its competitive position.",
+        "detail": "The market might not fully price in the strategic realignment Nvidia will require post-Huang, affecting its long-term growth trajectory and market share."
+      },
+      "falsifiers": [
+        "Nvidia announces a strong successor with a clear strategic vision.",
+        "AI sector companies report unaffected or improved earnings despite Nvidia's leadership change.",
+        "Tech sector volatility remains stable or decreases."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short Nvidia",
+          "plain": "Sell Nvidia shares to profit from expected declines due to leadership uncertainty.",
+          "instrument": "Cash equity or equity futures",
+          "risk": "A strong interim CEO announcement could stabilize or reverse the share price decline."
+        }
+      ],
+      "watchNext": [
+        "Nvidia's announcement of a new CEO or interim leadership plan.",
+        "Earnings reports from major AI companies.",
+        "Volatility trends in the tech sector."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-12-fed-rate-rise-expectations-should-keep-dollar-supported",
+      "rank": 3,
+      "editorNote": "Fed rate hike expectations are likely to keep the US dollar strong, impacting rates and FX markets significantly.",
+      "materiality": {
+        "score": 63,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 13.6,
+          "recency": 9.9
         },
         "distinctSources": 1,
         "salienceTerms": [
           "fed",
-          "federal reserve",
-          "interest rate",
           "dollar"
         ]
       },
@@ -64,20 +363,20 @@
       "links": [
         {
           "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/currencies/asian-currencies-soften-after-u-s-cpi-data-boosts-dollar-26f03632?mod=rss_markets_main",
-          "title": "Dollar’s Strength Could Persist on U.S. Rate-Rise Prospects"
+          "url": "https://www.wsj.com/finance/currencies/yen-hitting-160-to-dollar-again-wont-be-surprising-f82f47e6?mod=rss_markets_main",
+          "title": "Fed Rate-Rise Expectations Should Keep Dollar Supported"
         }
       ],
       "headlines": [
-        "Dollar’s Strength Could Persist on U.S. Rate-Rise Prospects"
+        "Fed Rate-Rise Expectations Should Keep Dollar Supported"
       ],
-      "newestAt": "2026-11-11T12:35:00.000Z",
-      "headline": "Dollar Strengthens on Fed Rate Hike Prospects, Affecting Global Markets",
-      "standfirst": "The dollar rose to a four-week high as markets anticipate US interest rate hikes.",
+      "newestAt": "2026-11-12T13:12:00.000Z",
+      "headline": "Fed Rate Hike Expectations Keep Dollar Strong",
+      "standfirst": "The US dollar remains strong due to expectations of Fed rate hikes.",
       "classification": {
         "eventType": "monetary-policy",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The initial dollar strength is priced in, but further rate hikes are not fully absorbed.",
+        "pricedInRationale": "The market had anticipated some level of rate hikes, but the strength of the dollar suggests further expectations are being adjusted.",
         "persistence": "weeks",
         "regionFocus": [
           "US",
@@ -85,257 +384,98 @@
         ]
       },
       "whatHappened": {
-        "plain": "The US dollar has reached a four-week high against other currencies. This is due to expectations that the Federal Reserve will increase interest rates.",
-        "whyItMatters": "A stronger dollar can affect global trade and investment flows, impacting economies worldwide.",
-        "detail": "The dollar's rise reflects market anticipation of tighter monetary policy by the Federal Reserve, which is expected to raise rates to combat inflation."
+        "plain": "The US dollar index is stable after reaching a 19-month high. This is due to expectations that the Federal Reserve will raise interest rates.",
+        "whyItMatters": "A strong dollar affects global trade and financial markets, impacting everything from import costs to investment returns.",
+        "detail": "The DXY index's recent high reflects market expectations of tighter monetary policy from the Fed, which supports the dollar's strength."
       },
       "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "The Fed is expected to raise interest rates.",
+              "detail": "Market participants anticipate the Fed will hike rates to combat inflation, which supports the dollar."
+            },
+            {
+              "plain": "Higher rates make US assets more attractive.",
+              "detail": "Increased rates enhance the yield on US assets, drawing in foreign capital and supporting the dollar."
+            }
+          ],
+          "endpoint": "US dollar and US financial markets",
+          "strength": "strong"
+        },
         {
           "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "A stronger dollar makes US exports more expensive abroad.",
-              "detail": "The appreciation of the dollar increases the cost of US goods in foreign markets, potentially reducing demand for US exports."
+              "plain": "A stronger dollar makes US exports more expensive.",
+              "detail": "As the dollar appreciates, US goods become pricier abroad, potentially reducing export competitiveness."
             },
             {
-              "plain": "Foreign companies may see reduced earnings from US sales.",
-              "detail": "Non-US companies with significant revenue in dollars will convert those earnings into weaker local currencies, impacting profitability."
+              "plain": "US importers benefit from cheaper foreign goods.",
+              "detail": "A stronger dollar lowers the cost of imports, benefiting US companies reliant on foreign goods."
             }
           ],
-          "endpoint": "global exporters",
-          "strength": "strong"
-        },
-        {
-          "channel": "discount-rate",
-          "links": [
-            {
-              "plain": "Higher US rates push up global bond yields.",
-              "detail": "Expectations of US rate hikes increase the yield on US Treasuries, which influences global bond markets by setting a higher benchmark."
-            },
-            {
-              "plain": "Rising yields make borrowing more expensive worldwide.",
-              "detail": "As bond yields rise, the cost of issuing new debt increases, affecting both sovereign and corporate borrowers globally."
-            }
-          ],
-          "endpoint": "global bond markets",
+          "endpoint": "US exporters and importers",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
           "assetClass": "fx",
-          "instrument": "US Dollar Index",
+          "instrument": "DXY Dollar Index",
           "direction": "up",
-          "magnitude": "1% to 2%",
+          "magnitude": "0.5 to 1%",
           "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "The dollar is expected to continue rising as rate hike expectations grow.",
-          "detail": "The anticipation of further Fed rate hikes supports continued dollar strength, likely pushing the US Dollar Index higher."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "up",
-          "magnitude": "10 to 20 basis points",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 1,
-          "plain": "US bond yields are likely to rise as investors anticipate higher rates.",
-          "detail": "The prospect of Fed rate hikes increases yields on US Treasuries, reflecting the higher cost of borrowing."
+          "plain": "The dollar is likely to strengthen further as rate hike expectations solidify.",
+          "detail": "The DXY index is expected to appreciate as investors price in higher US interest rates."
         },
         {
           "assetClass": "equities",
-          "instrument": "Emerging Market Stocks",
-          "direction": "down",
-          "magnitude": "2% to 4%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Emerging market stocks may fall due to a stronger dollar and higher borrowing costs.",
-          "detail": "A stronger dollar and rising global yields can lead to capital outflows from emerging markets, pressuring stock prices."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may underestimate the impact of a stronger dollar on global supply chains, particularly in sectors reliant on US imports. This could lead to unexpected cost pressures and margin squeezes.",
-        "detail": "The market may not fully appreciate how dollar strength could disrupt supply chains, especially in industries heavily dependent on US-sourced inputs, leading to inflationary pressures."
-      },
-      "falsifiers": [
-        "The Fed signals a pause or slower pace in rate hikes.",
-        "US inflation data comes in lower than expected, reducing rate hike pressure.",
-        "Geopolitical tensions ease, reducing safe-haven demand for the dollar."
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Long USD against Emerging Market Currencies",
-          "plain": "Buy the US dollar against a basket of emerging market currencies to benefit from rate differentials.",
-          "instrument": "FX forwards or options",
-          "risk": "Emerging market currencies could strengthen if local central banks raise rates aggressively."
-        }
-      ],
-      "watchNext": [
-        "Upcoming US inflation data releases",
-        "Federal Reserve meeting minutes",
-        "Emerging market central bank rate decisions"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-11-11-european-ttf-gas-rises-as-storage-withdrawals-accelerate",
-      "rank": 2,
-      "editorNote": "Rising European gas prices due to storage withdrawals can have lasting effects on energy markets and inflation expectations.",
-      "materiality": {
-        "score": 68.1,
-        "components": {
-          "corroboration": 21,
-          "authority": 13,
-          "breadth": 13.5,
-          "salience": 11,
-          "recency": 9.5
-        },
-        "distinctSources": 2,
-        "salienceTerms": [
-          "natural gas",
-          "euro"
-        ]
-      },
-      "sources": [
-        "WSJ Markets",
-        "WSJ World"
-      ],
-      "links": [
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/commodities-futures/european-ttf-gas-rises-as-storage-withdrawals-accelerate-569c8aab?mod=rss_markets_main",
-          "title": "European TTF Gas Rises as Storage Withdrawals Accelerate"
-        },
-        {
-          "name": "WSJ World",
-          "url": "https://www.wsj.com/finance/commodities-futures/european-ttf-gas-rises-as-storage-withdrawals-accelerate-569c8aab?mod=rss_worldnews",
-          "title": "European TTF Gas Rises as Storage Withdrawals Accelerate"
-        }
-      ],
-      "headlines": [
-        "European TTF Gas Rises as Storage Withdrawals Accelerate"
-      ],
-      "newestAt": "2026-11-11T10:54:00.000Z",
-      "headline": "European Gas Prices Surge, Raising Inflation Concerns",
-      "standfirst": "European natural gas prices rose due to increased storage withdrawals.",
-      "classification": {
-        "eventType": "supply-shock",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some increase due to seasonal demand, but the acceleration in withdrawals was unexpected.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "Europe"
-        ]
-      },
-      "whatHappened": {
-        "plain": "European natural gas prices have risen above €85 per megawatt-hour. This is due to faster storage withdrawals as winter approaches.",
-        "whyItMatters": "Higher gas prices can increase energy costs for businesses and consumers, potentially leading to higher inflation.",
-        "detail": "The acceleration in storage withdrawals suggests supply concerns, pushing prices higher as demand increases with colder weather."
-      },
-      "chains": [
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "Higher gas prices increase costs for energy-intensive industries.",
-              "detail": "Industries reliant on natural gas for production face higher input costs, squeezing profit margins."
-            },
-            {
-              "plain": "Companies may pass on higher costs to consumers.",
-              "detail": "Firms with pricing power will attempt to offset increased costs by raising prices, contributing to inflation."
-            }
-          ],
-          "endpoint": "European manufacturers and consumers",
-          "strength": "strong"
-        },
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "Rising energy prices may prompt central banks to reconsider interest rate policies.",
-              "detail": "Central banks may delay rate cuts or consider hikes to combat inflationary pressures from energy costs."
-            }
-          ],
-          "endpoint": "European Central Bank",
-          "strength": "moderate"
-        },
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "Higher energy costs can weaken the euro.",
-              "detail": "Increased import costs from higher gas prices can deteriorate the eurozone's trade balance, putting pressure on the euro."
-            }
-          ],
-          "endpoint": "EUR/USD exchange rate",
-          "strength": "speculative"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "commodities",
-          "instrument": "European natural gas",
-          "direction": "up",
-          "magnitude": "5 to 10%",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Natural gas prices in Europe are likely to continue rising as storage levels fall.",
-          "detail": "The combination of increased demand and supply concerns will likely keep upward pressure on gas prices."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "European industrials",
+          "instrument": "US Exporters",
           "direction": "down",
           "magnitude": "2 to 4%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Industrials may face pressure due to rising energy costs impacting profitability.",
-          "detail": "Higher input costs from energy prices will likely weigh on margins, affecting stock performance."
+          "plain": "US exporters may face pressure as a stronger dollar makes their products more expensive abroad.",
+          "detail": "US companies with significant overseas revenue could see earnings pressure due to adverse currency effects."
         },
         {
-          "assetClass": "fx",
-          "instrument": "EUR/USD",
+          "assetClass": "commodities",
+          "instrument": "Oil",
           "direction": "down",
-          "magnitude": "0.5 to 1%",
+          "magnitude": "3 to 5%",
           "horizon": "weeks",
-          "conviction": 2,
+          "conviction": 3,
           "order": 2,
-          "plain": "The euro could weaken against the dollar due to adverse trade effects.",
-          "detail": "Rising import costs from energy may weaken the eurozone's trade position, impacting the currency."
+          "plain": "Oil prices could fall as a stronger dollar makes commodities more expensive for non-dollar buyers.",
+          "detail": "As the dollar strengthens, the purchasing power of non-dollar currencies weakens, potentially reducing demand for dollar-priced commodities."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the potential for sustained inflationary pressures from energy costs, leading to a more prolonged impact on central bank policy.",
-        "detail": "The market may not fully price in the risk that persistent energy cost increases could lead to sustained inflation, affecting long-term rate expectations."
+        "plain": "Investors may underestimate the impact of a strong dollar on emerging market economies, which could face capital outflows and currency depreciation.",
+        "detail": "Emerging markets could experience increased financial stress as capital flows back to higher-yielding US assets, weakening their currencies."
       },
       "falsifiers": [
-        "European gas storage levels stabilize or increase unexpectedly.",
-        "A mild winter reduces heating demand significantly.",
-        "Significant alternative energy supplies become available quickly."
+        "The Fed signals a pause or reversal in rate hikes.",
+        "US inflation data comes in lower than expected, reducing rate hike pressure.",
+        "Global economic conditions improve significantly, reducing the dollar's safe-haven appeal."
       ],
       "tradeExpression": [
         {
-          "idea": "Short European industrials",
-          "plain": "Sell European industrial stocks as rising energy costs threaten margins.",
-          "instrument": "equity futures or options on industrial sector ETFs",
-          "risk": "If energy prices fall or companies successfully pass costs to consumers, the trade could lose money."
+          "idea": "Long Dollar Index",
+          "plain": "Buy the DXY index to benefit from expected dollar strength.",
+          "instrument": "DXY futures",
+          "risk": "The trade loses if the Fed unexpectedly pauses rate hikes or if global economic conditions shift."
         }
       ],
       "watchNext": [
-        "European Central Bank's next policy meeting",
-        "Upcoming weather forecasts for Europe",
-        "Reports on European gas storage levels"
+        "Upcoming Fed meeting minutes",
+        "US inflation and employment data releases",
+        "Statements from Fed officials on monetary policy"
       ],
       "glossary": [
         {
@@ -346,14 +486,14 @@
       "confidence": 3
     },
     {
-      "id": "2026-11-11-nasdaq-futures-rally-as-ai-optimism-returns",
-      "rank": 3,
-      "editorNote": "AI optimism driving Nasdaq futures highlights a sector-specific trend that could influence broader equity market sentiment.",
+      "id": "2026-11-12-dollar-scales-2025-peak-on-hawkish-fed-bets-yen-nears-160-le",
+      "rank": 4,
+      "editorNote": "The dollar's strength against the yen due to hawkish Fed bets has notable implications for FX and rates.",
       "materiality": {
-        "score": 64.1,
+        "score": 58.1,
         "components": {
           "corroboration": 13,
-          "authority": 13,
+          "authority": 7,
           "breadth": 9,
           "salience": 20,
           "recency": 9.1
@@ -361,277 +501,130 @@
         "distinctSources": 1,
         "salienceTerms": [
           "fed",
-          "federal reserve",
-          "rally"
+          "hawkish",
+          "dollar",
+          "yen"
         ]
       },
       "sources": [
-        "WSJ Markets"
+        "Investing.com FX"
       ],
       "links": [
         {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/commodities-futures/nasdaq-futures-rally-as-ai-optimism-returns-af100e62?mod=rss_markets_main",
-          "title": "Nasdaq Futures Rally as AI Optimism Returns"
+          "name": "Investing.com FX",
+          "url": "https://www.investing.com/news/forex-news/asia-fx-holds-losses-as-dollar-hits-19mth-high-yen-nears-160-5020289",
+          "title": "Dollar scales 2025 peak on hawkish Fed bets; yen nears 160-level"
         }
       ],
       "headlines": [
-        "Nasdaq Futures Rally as AI Optimism Returns"
+        "Dollar scales 2025 peak on hawkish Fed bets; yen nears 160-level"
       ],
-      "newestAt": "2026-11-11T09:16:00.000Z",
-      "headline": "AI Optimism Boosts Nasdaq, Offsets Rate-Hike Fears",
-      "standfirst": "Nasdaq futures rallied as renewed confidence in AI technology outweighed concerns about potential Federal Reserve rate hikes.",
+      "newestAt": "2026-11-12T10:37:12.000Z",
+      "headline": "Dollar Strengthens on Fed Rate Hike Bets, Pressures Yen",
+      "standfirst": "The US dollar hit its highest level since 2025 as investors expect the Fed to raise rates, pushing the yen close to 160 per dollar.",
       "classification": {
-        "eventType": "corporate",
+        "eventType": "monetary-policy",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some AI sector recovery, but the extent of optimism was underestimated.",
-        "persistence": "days",
+        "pricedInRationale": "The market had anticipated some dollar strength due to Fed expectations, but the extent of the yen's weakness was not fully priced in.",
+        "persistence": "weeks",
         "regionFocus": [
-          "US"
+          "US",
+          "Japan"
         ]
       },
       "whatHappened": {
-        "plain": "Nasdaq futures rose sharply as investors regained confidence in the potential of artificial intelligence technologies. This optimism helped counterbalance worries about the Federal Reserve possibly raising interest rates.",
-        "whyItMatters": "This shift in sentiment could influence broader market trends, as technology stocks often lead market movements.",
-        "detail": "The Nasdaq's rise reflects a renewed belief in AI's growth prospects, which is significant given tech's outsized influence on market indices."
+        "plain": "The US dollar reached its highest level since 2025 against the yen as investors bet on further interest rate hikes by the Federal Reserve. The yen approached 160 per dollar, indicating significant weakness.",
+        "whyItMatters": "A strong dollar and weak yen can impact global trade balances and corporate earnings, especially for companies with exposure to these currencies.",
+        "detail": "The dollar's rise was driven by expectations of more aggressive rate hikes from the Fed, which contrasted with Japan's continued low-rate policy, leading to a widening interest rate differential."
       },
       "chains": [
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "AI companies expect higher future profits.",
-              "detail": "Improved sentiment boosts projected earnings for AI firms, increasing their stock valuations."
-            }
-          ],
-          "endpoint": "technology sector stocks",
-          "strength": "strong"
-        },
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Fed may delay rate hikes if tech drives growth.",
-              "detail": "A tech-led economic boost could lead the Fed to hold off on rate increases to support broader growth."
-            }
-          ],
-          "endpoint": "Federal Reserve policy",
-          "strength": "moderate"
-        },
-        {
-          "channel": "substitution",
-          "links": [
-            {
-              "plain": "Investors shift from bonds to tech stocks.",
-              "detail": "As AI optimism grows, funds flow from lower-yielding bonds to higher-growth tech equities."
-            }
-          ],
-          "endpoint": "bond and equity markets",
-          "strength": "speculative"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "equities",
-          "instrument": "Nasdaq Composite",
-          "direction": "up",
-          "magnitude": "2 to 4%",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Nasdaq stocks are likely to rise as AI optimism boosts investor confidence.",
-          "detail": "The anticipated growth in AI earnings propels tech stocks, driving the Nasdaq higher."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "up",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Bond yields may increase as investors move funds to equities.",
-          "detail": "A shift from bonds to equities as AI optimism rises could push Treasury yields higher."
-        },
-        {
-          "assetClass": "credit",
-          "instrument": "Tech sector credit spreads",
-          "direction": "tighter",
-          "magnitude": "10 to 20 basis points",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Credit spreads in the tech sector may narrow as confidence in AI boosts creditworthiness.",
-          "detail": "Improved earnings outlook for AI firms reduces perceived credit risk, tightening spreads."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may underestimate the speed at which AI advancements could translate into tangible earnings growth, potentially leading to further upside in tech stocks.",
-        "detail": "The market might not fully appreciate how quickly AI developments can enhance profitability, suggesting additional gains in tech equities are possible."
-      },
-      "falsifiers": [
-        "A sharp decline in AI-related earnings reports",
-        "Federal Reserve unexpectedly raises rates soon",
-        "Negative regulatory news on AI technologies"
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Long Nasdaq Futures",
-          "plain": "Buy Nasdaq futures to benefit from the expected rise in tech stocks due to AI optimism.",
-          "instrument": "Nasdaq futures",
-          "risk": "The trade loses if AI sentiment reverses or if rate hike fears dominate."
-        }
-      ],
-      "watchNext": [
-        "Upcoming Federal Reserve meeting",
-        "Earnings reports from major AI companies",
-        "New AI regulatory developments"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-11-11-market-angst-is-driving-investors-into-low-volatility-stocks",
-      "rank": 4,
-      "editorNote": "The shift towards low-volatility stocks indicates persistent market uncertainty and a defensive investor stance.",
-      "materiality": {
-        "score": 62.1,
-        "components": {
-          "corroboration": 13,
-          "authority": 13,
-          "breadth": 13.5,
-          "salience": 12.8,
-          "recency": 9.8
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "volatility",
-          "selloff"
-        ]
-      },
-      "sources": [
-        "MarketWatch"
-      ],
-      "links": [
-        {
-          "name": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/market-angst-is-driving-investors-into-low-volatility-stocks-as-ai-trade-stumbles-23d905e9?mod=mw_rss_topstories",
-          "title": "Market angst is driving investors into low-volatility stocks as AI trade stumbles"
-        }
-      ],
-      "headlines": [
-        "Market angst is driving investors into low-volatility stocks as AI trade stumbles"
-      ],
-      "newestAt": "2026-11-11T12:00:00.000Z",
-      "headline": "Investors Flee AI Stocks for Safety Amid Market Turmoil",
-      "standfirst": "Investors are moving to low-volatility stocks as AI shares drop and bond yields stay high.",
-      "classification": {
-        "eventType": "flows",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The market has reacted to the AI selloff, but the full impact on low-volatility stocks is still unfolding.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "US"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Investors are selling off artificial intelligence stocks due to market anxiety and high bond yields. They are shifting their money into low-volatility stocks, which are seen as safer.",
-        "whyItMatters": "This shift indicates that investors are worried about the market and are looking for safer places to put their money.",
-        "detail": "The selloff in AI stocks, driven by high bond yields and market uncertainty, is pushing investors towards low-volatility equities as a defensive strategy."
-      },
-      "chains": [
-        {
-          "channel": "positioning",
-          "links": [
-            {
-              "plain": "Investors sell AI stocks and buy low-volatility stocks.",
-              "detail": "Positioning unwinds in AI names are reallocating capital towards low-volatility sectors."
+              "plain": "The Fed is likely to continue raising rates.",
+              "detail": "Given the strong dollar, the Fed may feel validated in pursuing further rate hikes to control inflation and maintain currency strength."
             },
             {
-              "plain": "This increases demand for low-volatility stocks.",
-              "detail": "The rotation into low-volatility stocks drives demand higher, supporting their prices."
+              "plain": "Japan may intervene to support the yen.",
+              "detail": "With the yen nearing 160, Japanese authorities might step in to stabilize their currency, either through direct intervention or policy adjustments."
             }
           ],
-          "endpoint": "Low-volatility stocks",
+          "endpoint": "central banks",
           "strength": "strong"
         },
         {
-          "channel": "discount-rate",
+          "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "High bond yields make borrowing more expensive.",
-              "detail": "Elevated yields increase the discount rate, impacting valuations across equities."
+              "plain": "Japanese exporters benefit from a weaker yen.",
+              "detail": "A weaker yen makes Japanese goods cheaper abroad, potentially boosting sales and profits for exporters."
             },
             {
-              "plain": "This pressures high-growth stocks like AI.",
-              "detail": "Higher discount rates reduce the present value of future earnings, disproportionately affecting high-growth sectors."
+              "plain": "US importers face higher costs.",
+              "detail": "A strong dollar increases costs for US companies importing goods from Japan, squeezing margins unless they can pass these costs to consumers."
             }
           ],
-          "endpoint": "AI and high-growth stocks",
+          "endpoint": "corporate earnings",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "equities",
-          "instrument": "Low-volatility stocks",
+          "assetClass": "fx",
+          "instrument": "USD/JPY",
           "direction": "up",
-          "magnitude": "2% to 4%",
-          "horizon": "weeks",
+          "magnitude": "1.5 to 2%",
+          "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "Low-volatility stocks are likely to rise as investors seek safety.",
-          "detail": "Increased demand from risk-averse investors should lift low-volatility equities by 2% to 4% over the coming weeks."
+          "plain": "The dollar is likely to continue appreciating against the yen in the short term due to rate differentials.",
+          "detail": "With the Fed expected to hike rates further, the interest rate differential will likely push USD/JPY higher."
         },
         {
           "assetClass": "equities",
-          "instrument": "AI stocks",
-          "direction": "down",
-          "magnitude": "3% to 5%",
+          "instrument": "Japanese exporters",
+          "direction": "up",
+          "magnitude": "2 to 4%",
           "horizon": "weeks",
           "conviction": 3,
-          "order": 1,
-          "plain": "AI stocks may continue to fall due to high bond yields and market anxiety.",
-          "detail": "Ongoing pressure from elevated yields and investor repositioning could see AI equities decline by 3% to 5%."
+          "order": 2,
+          "plain": "Japanese exporters could see a boost in their stock prices as a weaker yen improves their competitiveness.",
+          "detail": "The depreciation of the yen enhances the earnings outlook for Japanese exporters, likely driving up their stock valuations."
         },
         {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "up",
+          "assetClass": "credit",
+          "instrument": "US importers",
+          "direction": "wider",
           "magnitude": "5 to 10 basis points",
-          "horizon": "days",
+          "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Rising bond yields could further impact equity valuations.",
-          "detail": "As yields rise, the higher discount rate could continue to weigh on equity valuations, particularly in growth sectors."
+          "plain": "US companies reliant on imports may face higher borrowing costs as profit margins are squeezed.",
+          "detail": "The stronger dollar increases input costs for US importers, potentially leading to wider credit spreads as investors price in higher risk."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the persistence of high bond yields' impact on equity valuations, especially in sectors reliant on future growth.",
-        "detail": "The market might not fully appreciate how sustained high yields could compress equity valuations, particularly in growth sectors like AI."
+        "plain": "The market may underestimate the speed at which Japan could intervene to prop up the yen, which could reverse some of the dollar's gains.",
+        "detail": "Traders might not fully appreciate the likelihood and potential impact of Japanese intervention, which could rapidly alter USD/JPY dynamics."
       },
       "falsifiers": [
-        "A sharp drop in bond yields would ease pressure on AI stocks.",
-        "A significant improvement in AI company earnings could reverse the selloff.",
-        "A shift in central bank policy towards rate cuts would alter the current dynamics."
+        "The Fed signals a pause in rate hikes.",
+        "Japan announces direct currency intervention.",
+        "Unexpected geopolitical events affecting currency stability."
       ],
       "tradeExpression": [
         {
-          "idea": "Buy Low-Volatility Stocks",
-          "plain": "Purchase low-volatility stocks to benefit from the safety-seeking shift.",
-          "instrument": "Cash equities or ETFs focused on low-volatility sectors",
-          "risk": "A reversal in bond yields or market sentiment could reduce the appeal of low-volatility stocks."
+          "idea": "Long USD/JPY",
+          "plain": "Buy USD/JPY to profit from the expected continued strength of the dollar against the yen.",
+          "instrument": "FX spot or futures",
+          "risk": "The main risk is unexpected intervention by the Bank of Japan or a dovish shift by the Fed."
         }
       ],
       "watchNext": [
-        "Upcoming US inflation data releases",
-        "Federal Reserve's next policy meeting",
-        "Earnings reports from major AI companies"
+        "Upcoming Fed meetings and statements.",
+        "Japanese government or central bank announcements.",
+        "Trade data releases from Japan and the US."
       ],
       "glossary": [
         {
@@ -639,182 +632,171 @@
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
         },
         {
-          "term": "discount rate",
-          "plain": "The interest rate used to determine the present value of future cash flows."
-        },
-        {
-          "term": "positioning",
-          "plain": "The distribution of investments held by investors, which can affect market movements when changed."
+          "term": "interest rate differential",
+          "plain": "The difference in interest rates between two countries, which can influence currency exchange rates."
         }
       ],
       "confidence": 3
     },
     {
-      "id": "2026-11-11-why-goldman-sachs-is-now-changing-its-federal-reserve-intere",
+      "id": "2026-11-12-gold-slips-below-4-000-as-hawkish-fed-bets-keep-bullion-unde",
       "rank": 5,
-      "editorNote": "Goldman Sachs changing its Fed rate forecast suggests a reassessment of monetary policy expectations, impacting rates and commodities.",
+      "editorNote": "Gold's decline below $4,000 due to Fed expectations affects commodities and signals investor sentiment shifts.",
       "materiality": {
-        "score": 64.4,
+        "score": 57.6,
         "components": {
           "corroboration": 13,
-          "authority": 13,
+          "authority": 7,
           "breadth": 9,
-          "salience": 20,
-          "recency": 9.4
+          "salience": 19.6,
+          "recency": 9
         },
         "distinctSources": 1,
         "salienceTerms": [
           "fed",
-          "federal reserve",
-          "cpi",
+          "hawkish",
           "gold"
         ]
       },
       "sources": [
-        "MarketWatch"
+        "Investing.com Commodities"
       ],
       "links": [
         {
-          "name": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/why-goldman-sachs-is-now-changing-its-federal-reserve-interest-rate-forecast-3753f968?mod=mw_rss_topstories",
-          "title": "Why Goldman Sachs is now changing its Federal Reserve interest-rate forecast"
+          "name": "Investing.com Commodities",
+          "url": "https://www.investing.com/news/commodities-news/gold-clings-below-4000-as-inflation-fears-fuel-bets-on-bigger-fed-hikes-5020139",
+          "title": "Gold slips below $4,000 as hawkish Fed bets keep bullion under pressure"
         }
       ],
       "headlines": [
-        "Why Goldman Sachs is now changing its Federal Reserve interest-rate forecast"
+        "Gold slips below $4,000 as hawkish Fed bets keep bullion under pressure"
       ],
-      "newestAt": "2026-11-11T10:37:00.000Z",
-      "headline": "Goldman Sachs Expects More Fed Rate Hikes After Hot CPI Data",
-      "standfirst": "Goldman Sachs has revised its forecast, anticipating further Federal Reserve rate hikes.",
+      "newestAt": "2026-11-12T10:16:28.000Z",
+      "headline": "Gold's Drop Below $4,000 Signals Fed Rate Hike Expectations",
+      "standfirst": "Gold prices fell below $4,000 as investors anticipate further Fed rate hikes.",
       "classification": {
         "eventType": "monetary-policy",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some tightening, but the hot CPI data suggests more aggressive action.",
+        "pricedInRationale": "Gold's decline reflects some anticipation of rate hikes, but further moves may occur as expectations solidify.",
         "persistence": "weeks",
         "regionFocus": [
+          "Global",
           "US"
         ]
       },
       "whatHappened": {
-        "plain": "Goldman Sachs has updated its forecast to predict additional interest rate hikes by the Federal Reserve. This change follows the release of higher-than-expected Consumer Price Index (CPI) data.",
-        "whyItMatters": "Investors need to reassess their expectations for interest rates, which affects borrowing costs and investment returns.",
-        "detail": "The hotter-than-expected CPI print has led Goldman Sachs to anticipate that the Fed will raise rates more aggressively to combat inflation."
+        "plain": "Gold prices fell below $4,000 as investors expect the Federal Reserve to raise interest rates. This expectation is putting pressure on gold, which does not offer interest.",
+        "whyItMatters": "Gold's decline suggests investors are shifting towards assets that benefit from higher interest rates.",
+        "detail": "The drop in gold prices below $4,000 is driven by market anticipation of a hawkish Federal Reserve stance, increasing the opportunity cost of holding non-yielding assets like gold."
       },
       "chains": [
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "The Fed is now more likely to raise interest rates.",
-              "detail": "The CPI data increases the probability of the Fed implementing additional rate hikes to control inflation."
-            },
-            {
-              "plain": "Higher rates make borrowing more expensive.",
-              "detail": "As the Fed raises rates, the cost of borrowing for consumers and businesses increases, potentially slowing economic activity."
-            }
-          ],
-          "endpoint": "borrowers and lenders",
-          "strength": "strong"
-        },
         {
           "channel": "discount-rate",
           "links": [
             {
-              "plain": "Bond yields are likely to rise.",
-              "detail": "With expectations of higher Fed rates, government bond yields are set to increase as investors demand higher returns."
+              "plain": "Higher interest rate expectations push government bond yields up.",
+              "detail": "As the market prices in Fed rate hikes, the yield on government bonds rises, reflecting higher discount rates for future cash flows."
             },
             {
-              "plain": "Higher yields can lead to lower bond prices.",
-              "detail": "As yields rise, the prices of existing bonds fall, affecting portfolios with fixed-income securities."
+              "plain": "Rising bond yields make gold less attractive compared to interest-bearing assets.",
+              "detail": "With bond yields climbing, the relative attractiveness of gold declines as it offers no yield, prompting investors to shift towards bonds."
             }
           ],
-          "endpoint": "bondholders",
+          "endpoint": "gold market",
           "strength": "strong"
         },
         {
-          "channel": "earnings",
+          "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "Companies may face higher borrowing costs.",
-              "detail": "Rising interest rates increase corporate financing costs, which can squeeze profit margins."
+              "plain": "A stronger dollar makes gold more expensive for foreign buyers.",
+              "detail": "As US interest rate expectations rise, the dollar appreciates, increasing the cost of gold in other currencies and dampening demand."
             },
             {
-              "plain": "This can lead to reduced earnings for some companies.",
-              "detail": "Higher interest expenses may reduce net income for debt-laden firms, impacting their stock valuations."
+              "plain": "Weaker demand from abroad pressures gold prices further.",
+              "detail": "The stronger dollar reduces international demand for gold, contributing to its price decline as foreign buyers face higher costs."
             }
           ],
-          "endpoint": "equity investors",
+          "endpoint": "international gold buyers",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
+          "assetClass": "commodities",
+          "instrument": "gold",
+          "direction": "down",
+          "magnitude": "2% to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Gold prices are likely to decline further as interest rate expectations solidify.",
+          "detail": "Continued anticipation of Fed rate hikes will keep gold under pressure, with prices expected to fall by 2% to 4% over the coming weeks."
+        },
+        {
           "assetClass": "rates",
           "instrument": "US 10-year Treasury yield",
           "direction": "up",
           "magnitude": "10 to 20 basis points",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 1,
-          "plain": "The yield on the US 10-year Treasury is expected to rise as investors anticipate more rate hikes.",
-          "detail": "Expectations of further Fed tightening will push the US 10-year yield higher as the market prices in more aggressive rate action."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "US stock market",
-          "direction": "down",
-          "magnitude": "1 to 2%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "US stocks may decline due to concerns over higher borrowing costs and their impact on corporate profits.",
-          "detail": "Higher interest rates could pressure stock valuations, particularly in sectors sensitive to borrowing costs, leading to a market pullback."
+          "plain": "US Treasury yields are expected to rise as the market prices in Fed rate hikes.",
+          "detail": "The anticipation of higher interest rates will likely push the US 10-year yield up by 10 to 20 basis points in the coming weeks."
         },
         {
-          "assetClass": "credit",
-          "instrument": "US corporate bonds",
-          "direction": "wider",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "days",
+          "assetClass": "fx",
+          "instrument": "US Dollar Index",
+          "direction": "up",
+          "magnitude": "1% to 2%",
+          "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Credit spreads may widen as investors demand more yield for corporate bonds amid rising rates.",
-          "detail": "As the cost of borrowing increases, credit spreads are likely to widen, reflecting higher risk premiums for corporate debt."
+          "plain": "The US dollar is likely to strengthen as interest rate expectations rise.",
+          "detail": "The prospect of higher US rates is supportive of the dollar, which could appreciate by 1% to 2% as markets adjust to the Fed's hawkish stance."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Many investors may underestimate the speed at which the Fed could act if inflation remains persistent, leading to a more rapid adjustment in interest rates than currently anticipated.",
-        "detail": "The market might not fully appreciate the Fed's willingness to accelerate rate hikes if inflation data continues to surprise on the upside, risking a sharper repricing of rate expectations."
+        "plain": "Investors may underestimate the impact of a stronger dollar on emerging market economies, which could face capital outflows and currency depreciation.",
+        "detail": "A stronger dollar could lead to tighter financial conditions in emerging markets, as capital flows back to the US, pressuring local currencies and potentially triggering economic instability."
       },
       "falsifiers": [
-        "Inflation data cools significantly in the next report.",
-        "The Federal Reserve signals a more dovish stance despite CPI data.",
-        "Global economic conditions deteriorate, prompting a policy pivot."
+        "The Federal Reserve signals a pause or reversal in rate hikes.",
+        "Gold demand surges due to geopolitical tensions or inflation fears.",
+        "Emerging market central banks intervene to support their currencies."
       ],
       "tradeExpression": [
         {
-          "idea": "Short US Treasuries",
-          "plain": "Sell US Treasury futures to profit from rising yields as the Fed tightens policy.",
-          "instrument": "US Treasury futures",
-          "risk": "The main risk is if inflation data weakens, leading to a reversal in rate hike expectations."
+          "idea": "Short Gold",
+          "plain": "Sell gold futures as rising interest rate expectations pressure prices lower.",
+          "instrument": "gold futures",
+          "risk": "Gold prices could rebound if the Fed changes its rate outlook or geopolitical tensions increase."
         }
       ],
       "watchNext": [
-        "Upcoming US CPI and PCE inflation reports.",
-        "Federal Reserve meeting minutes and public statements.",
-        "US employment data releases."
+        "Upcoming Federal Reserve meetings and statements",
+        "US inflation and employment data releases",
+        "Emerging market central bank actions"
       ],
       "glossary": [
         {
           "term": "basis point",
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "hawkish",
+          "plain": "Refers to a monetary policy stance that favours higher interest rates to contain inflation."
+        },
+        {
+          "term": "discount rate",
+          "plain": "The interest rate used to determine the present value of future cash flows."
         }
       ],
       "confidence": 3
     }
   ],
   "diagnostics": {
-    "articlesIngested": 211,
+    "articlesIngested": 188,
     "clustersConsidered": 25,
     "feeds": [
       {
@@ -823,7 +805,7 @@
         "ok": true,
         "parsed": 20,
         "fresh": 0,
-        "ms": 177,
+        "ms": 456,
         "error": null
       },
       {
@@ -832,7 +814,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 0,
-        "ms": 123,
+        "ms": 386,
         "error": null
       },
       {
@@ -840,8 +822,8 @@
         "name": "European Central Bank",
         "ok": true,
         "parsed": 15,
-        "fresh": 2,
-        "ms": 794,
+        "fresh": 0,
+        "ms": 555,
         "error": null
       },
       {
@@ -850,7 +832,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 564,
+        "ms": 536,
         "error": "HTTP 404"
       },
       {
@@ -859,7 +841,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 394,
+        "ms": 574,
         "error": "HTTP 404"
       },
       {
@@ -868,7 +850,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 473,
+        "ms": 410,
         "error": "HTTP 403"
       },
       {
@@ -877,7 +859,7 @@
         "ok": true,
         "parsed": 25,
         "fresh": 0,
-        "ms": 499,
+        "ms": 533,
         "error": null
       },
       {
@@ -886,7 +868,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 466,
+        "ms": 464,
         "error": null
       },
       {
@@ -895,7 +877,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 0,
-        "ms": 500,
+        "ms": 494,
         "error": null
       },
       {
@@ -912,8 +894,8 @@
         "name": "WSJ Markets",
         "ok": true,
         "parsed": 61,
-        "fresh": 34,
-        "ms": 541,
+        "fresh": 31,
+        "ms": 538,
         "error": null
       },
       {
@@ -921,8 +903,8 @@
         "name": "WSJ World",
         "ok": true,
         "parsed": 71,
-        "fresh": 30,
-        "ms": 543,
+        "fresh": 21,
+        "ms": 525,
         "error": null
       },
       {
@@ -931,7 +913,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 591,
+        "ms": 586,
         "error": "HTTP 404"
       },
       {
@@ -940,7 +922,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 29,
-        "ms": 805,
+        "ms": 653,
         "error": null
       },
       {
@@ -948,26 +930,26 @@
         "name": "CNBC Economy",
         "ok": true,
         "parsed": 30,
-        "fresh": 2,
-        "ms": 693,
+        "fresh": 3,
+        "ms": 726,
         "error": null
       },
       {
         "id": "ft",
         "name": "Financial Times",
         "ok": true,
-        "parsed": 11,
-        "fresh": 11,
-        "ms": 1287,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1102,
         "error": null
       },
       {
         "id": "bbc-biz",
         "name": "BBC Business",
         "ok": true,
-        "parsed": 52,
-        "fresh": 21,
-        "ms": 593,
+        "parsed": 56,
+        "fresh": 16,
+        "ms": 697,
         "error": null
       },
       {
@@ -975,8 +957,8 @@
         "name": "Guardian Business",
         "ok": true,
         "parsed": 40,
-        "fresh": 34,
-        "ms": 587,
+        "fresh": 28,
+        "ms": 679,
         "error": null
       },
       {
@@ -984,8 +966,8 @@
         "name": "Investing.com FX",
         "ok": true,
         "parsed": 10,
-        "fresh": 8,
-        "ms": 654,
+        "fresh": 10,
+        "ms": 701,
         "error": null
       },
       {
@@ -994,7 +976,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 655,
+        "ms": 698,
         "error": null
       },
       {
@@ -1003,7 +985,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 656,
+        "ms": 699,
         "error": null
       },
       {
@@ -1012,7 +994,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 1429,
+        "ms": 841,
         "error": "HTTP 404"
       },
       {
@@ -1021,7 +1003,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 666,
+        "ms": 697,
         "error": null
       }
     ],
@@ -1030,31 +1012,31 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 681,
+        "ms": 416,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 96,
+        "ms": 282,
         "error": "no rows"
       },
       {
         "provider": "fred",
         "ok": false,
         "count": 0,
-        "ms": 0,
+        "ms": 1,
         "error": "no rows"
       }
     ],
     "usage": {
       "calls": 6,
-      "inputTokens": 12461,
-      "outputTokens": 5974,
-      "estimatedCostUsd": 0.0909
+      "inputTokens": 12583,
+      "outputTokens": 5980,
+      "estimatedCostUsd": 0.0913
     },
-    "runtimeMs": 26261
+    "runtimeMs": 35681
   },
   "scorecardSummary": {
     "total": 30,
