@@ -1,0 +1,1141 @@
+{
+  "version": 1,
+  "date": "2026-11-13",
+  "dateLabel": "Friday, 13 November 2026",
+  "generatedAt": "2026-11-13T13:01:37.281Z",
+  "model": "openai/gpt-4o",
+  "marketRead": {
+    "headline": "Nvidia turmoil and inflation data shape markets",
+    "body": "Nvidia's ongoing scandal and leadership change are causing significant ripples across the tech sector, with potential broader earnings impacts. Investors are also closely watching upcoming US inflation data, which could influence Federal Reserve rate decisions and affect multiple asset classes. The market currently reflects a cautious stance, with equities up and volatility down, but further developments could prompt shifts in investment strategies.",
+    "regime": "cautious optimism with inflation focus"
+  },
+  "snapshot": {
+    "quotes": [
+      {
+        "key": "ukx",
+        "label": "FTSE 100",
+        "group": "equities",
+        "unit": "index",
+        "value": 10865.5,
+        "display": "10,866",
+        "change": 191.60000000000036,
+        "changePct": 1.7950327434208713,
+        "changeDisplay": "+1.80%",
+        "asOf": "2026-11-13",
+        "provider": "yahoo"
+      },
+      {
+        "key": "vix",
+        "label": "VIX",
+        "group": "vol",
+        "unit": "index",
+        "value": 18.35,
+        "display": "18.35",
+        "change": -1.5700000000000003,
+        "changePct": -7.881526104417672,
+        "changeDisplay": "-7.88%",
+        "asOf": "2026-11-13",
+        "provider": "yahoo"
+      }
+    ],
+    "report": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 629,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": true,
+        "count": 2,
+        "ms": 282,
+        "error": null
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "fetchedAt": "2026-11-13T13:01:13.733Z"
+  },
+  "stories": [
+    {
+      "id": "2026-11-13-nvidia-scandal-howard-lutnick-under-pressure-over-alleged-la",
+      "rank": 1,
+      "editorNote": "The Nvidia scandal is affecting multiple asset classes and could have lasting impacts on tech sector valuations.",
+      "materiality": {
+        "score": 72.1,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 9.1
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "war",
+          "repo",
+          "chip",
+          "nvidia"
+        ]
+      },
+      "sources": [
+        "Financial Times",
+        "Guardian Business"
+      ],
+      "links": [
+        {
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/190e5eea-7461-4b26-8b69-17a3288e31d4?syn-25a6b1a6=1",
+          "title": "US lawmakers pile pressure on Lutnick as Nvidia scandal widens"
+        },
+        {
+          "name": "Guardian Business",
+          "url": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china",
+          "title": "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action"
+        }
+      ],
+      "headlines": [
+        "US lawmakers pile pressure on Lutnick as Nvidia scandal widens",
+        "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action"
+      ],
+      "newestAt": "2026-11-13T09:41:22.000Z",
+      "headline": "Nvidia Scandal Threatens Tech Sector Valuations",
+      "standfirst": "The Nvidia scandal widens, putting pressure on US officials and affecting tech stocks.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some fallout from the Nvidia scandal, but the full implications for the tech sector are still unfolding.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Jensen Huang, CEO of Nvidia, resigned amid a widening scandal involving alleged Chinese espionage ties. US lawmakers are pressuring Howard Lutnick, the commerce secretary, for his lack of action.",
+        "whyItMatters": "This scandal could lead to regulatory changes and affect Nvidia's operations, impacting tech sector valuations.",
+        "detail": "Jensen Huang's resignation signals potential instability at Nvidia, raising concerns about regulatory scrutiny and its impact on the tech sector's growth prospects."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Nvidia's operations may face disruptions.",
+              "detail": "Regulatory scrutiny could lead to operational constraints for Nvidia, affecting its revenue and profitability."
+            },
+            {
+              "plain": "Tech companies reliant on Nvidia may see reduced profits.",
+              "detail": "Companies using Nvidia's technology might face supply chain issues, impacting their earnings."
+            }
+          ],
+          "endpoint": "Tech sector earnings",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "US may tighten regulations on tech companies.",
+              "detail": "The scandal could prompt US regulators to impose stricter rules on tech firms, affecting their growth."
+            }
+          ],
+          "endpoint": "Tech sector regulatory environment",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "US tech stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Tech stocks may fall as the Nvidia scandal raises regulatory and operational risks.",
+          "detail": "The anticipated regulatory scrutiny and potential operational disruptions at Nvidia are likely to weigh on tech stock valuations."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "VIX",
+          "direction": "up",
+          "magnitude": "3 to 5%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Market volatility may increase as investors react to uncertainties from the scandal.",
+          "detail": "The unfolding scandal could lead to heightened investor uncertainty, driving up implied volatility as measured by the VIX."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "Nvidia corporate bonds",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Nvidia's bond spreads may widen due to increased credit risk perceptions.",
+          "detail": "Investors may demand higher yields on Nvidia's bonds due to perceived risks from potential regulatory actions and operational challenges."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the broader impact on the tech supply chain, especially for companies heavily reliant on Nvidia's technology.",
+        "detail": "The market might not fully appreciate the downstream effects on Nvidia's partners and customers, which could amplify the impact on tech sector earnings."
+      },
+      "falsifiers": [
+        "Nvidia resolves the scandal quickly with minimal impact on operations",
+        "US regulators decide not to pursue stricter rules"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US tech stocks",
+          "plain": "Sell US tech stocks to hedge against potential declines from the Nvidia scandal.",
+          "instrument": "Equity futures or options on tech sector ETFs",
+          "risk": "If the scandal resolves quickly, tech stocks may rebound, leading to losses."
+        }
+      ],
+      "watchNext": [
+        "US regulatory announcements",
+        "Nvidia's next earnings report",
+        "Further resignations or management changes at Nvidia"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-13-stock-futures-lower-as-investors-look-to-u-s-inflation-data",
+      "rank": 2,
+      "editorNote": "US inflation data is a key focus for investors, potentially affecting rates and equities.",
+      "materiality": {
+        "score": 71.6,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 18.7,
+          "recency": 9.9
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "inflation",
+          "treasury",
+          "nvidia"
+        ]
+      },
+      "sources": [
+        "WSJ Markets",
+        "Investing.com Equities"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/stock-futures-lower-as-investors-look-to-u-s-inflation-data-5b1b5988?mod=rss_markets_main",
+          "title": "Stock Futures Lower as Investors Look to U.S. Inflation Data"
+        },
+        {
+          "name": "Investing.com Equities",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-nvidia-ceo-exit-spooks-wall-st-5023780",
+          "title": "U.S. stock futures climb amid upcoming inflation data, Nvidia fallout"
+        }
+      ],
+      "headlines": [
+        "Stock Futures Lower as Investors Look to U.S. Inflation Data",
+        "U.S. stock futures climb amid upcoming inflation data, Nvidia fallout"
+      ],
+      "newestAt": "2026-11-13T12:44:26.000Z",
+      "headline": "Nvidia Leadership Change and Inflation Data Weigh on Markets",
+      "standfirst": "Stock futures fell as Nvidia's leadership change and upcoming inflation data concerned investors.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Investors anticipated some impact from Nvidia's leadership change, but the full implications are unclear.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Nvidia announced a leadership change, causing uncertainty about its future direction. This, combined with anticipation of US inflation data, led to a drop in stock futures.",
+        "whyItMatters": "Nvidia is a major player in the tech sector, and changes at the top can affect its strategy and performance. Inflation data can influence interest rates, impacting borrowing costs and investment returns.",
+        "detail": "Nvidia's leadership change raises questions about strategic continuity, while US inflation data could prompt rate adjustments by the Federal Reserve, affecting market valuations."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Investors worry inflation data might lead to higher interest rates.",
+              "detail": "Concerns that strong inflation data could prompt the Fed to tighten monetary policy sooner."
+            },
+            {
+              "plain": "Higher rates could increase borrowing costs for companies.",
+              "detail": "A rate hike would raise the cost of capital, impacting corporate investment and expansion plans."
+            }
+          ],
+          "endpoint": "corporate borrowers",
+          "strength": "moderate"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors adjust positions due to uncertainty around Nvidia.",
+              "detail": "Portfolio managers rebalance their holdings in response to potential shifts in Nvidia's strategic outlook."
+            },
+            {
+              "plain": "This causes volatility in tech stocks.",
+              "detail": "Reallocation of funds leads to increased trading activity and price swings in the tech sector."
+            }
+          ],
+          "endpoint": "tech sector stocks",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "US tech stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 1,
+          "plain": "Tech stocks are likely to fall due to uncertainty around Nvidia and potential rate hikes.",
+          "detail": "The leadership change at Nvidia and possible Fed actions on inflation create a risk-off sentiment in tech equities."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 2,
+          "plain": "Treasury yields may rise as investors anticipate higher rates due to inflation.",
+          "detail": "Expectations of tighter monetary policy push yields higher as the market prices in potential Fed rate hikes."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "VIX",
+          "direction": "up",
+          "magnitude": "10 to 15%",
+          "horizon": "intraday",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Market volatility could increase as investors react to Nvidia's changes and inflation data.",
+          "detail": "Uncertainty surrounding Nvidia and potential inflation surprises lead to higher implied volatility in equity markets."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may not fully appreciate how Nvidia's leadership change could alter its competitive position, especially if new strategies diverge from the past.",
+        "detail": "The market might underestimate the strategic shifts that a new leadership team at Nvidia could implement, affecting its long-term growth trajectory."
+      },
+      "falsifiers": [
+        "Nvidia's new leadership outlines a clear, reassuring strategy.",
+        "Inflation data shows a significant decline, reducing rate hike fears."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US Tech",
+          "plain": "Sell US tech stocks to hedge against potential declines due to Nvidia's leadership change.",
+          "instrument": "sell Nasdaq futures",
+          "risk": "Tech sector rebounds if Nvidia's strategy reassures investors."
+        }
+      ],
+      "watchNext": [
+        "Nvidia's first strategic announcements under new leadership",
+        "Upcoming US inflation data releases"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-13-the-fed-expected-rate-cuts-this-year-now-it-s-bracing-for-an",
+      "rank": 3,
+      "editorNote": "The Fed's potential shift in rate policy due to inflation concerns could have broad market implications.",
+      "materiality": {
+        "score": 68.5,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 20,
+          "recency": 10
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "fed",
+          "rate cut",
+          "inflation"
+        ]
+      },
+      "sources": [
+        "CNBC",
+        "CNBC Economy"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+          "title": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight"
+        },
+        {
+          "name": "CNBC Economy",
+          "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+          "title": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight"
+        }
+      ],
+      "headlines": [
+        "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight"
+      ],
+      "newestAt": "2026-11-13T12:59:36.000Z",
+      "headline": "Fed's Inflation Concerns May Delay Rate Cuts",
+      "standfirst": "October's inflation reading was higher than expected at 0.4%, raising concerns for the Fed.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some inflationary pressures, but the higher reading was not fully expected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The inflation rate for October was higher than expected, reaching 0.4%. This has raised concerns about the Fed's potential rate cuts.",
+        "whyItMatters": "Higher inflation could delay the Fed's rate cuts, affecting borrowing costs and investment decisions.",
+        "detail": "The unexpected rise in inflation suggests persistent price pressures, which may force the Fed to reconsider its timeline for easing monetary policy."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "The Fed may delay rate cuts due to inflation concerns.",
+              "detail": "The Fed could maintain current rates longer to curb inflation, affecting monetary policy expectations."
+            }
+          ],
+          "endpoint": "US monetary policy",
+          "strength": "strong"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Higher inflation could push bond yields up.",
+              "detail": "Rising inflation increases the likelihood of higher future interest rates, leading to upward pressure on bond yields."
+            }
+          ],
+          "endpoint": "US Treasury yields",
+          "strength": "moderate"
+        },
+        {
+          "channel": "credit",
+          "links": [
+            {
+              "plain": "Companies may face higher borrowing costs.",
+              "detail": "As bond yields rise, corporate borrowing costs increase, particularly for firms with weaker credit profiles."
+            }
+          ],
+          "endpoint": "corporate debt issuers",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "US Treasury yields are likely to rise as inflation concerns delay rate cuts.",
+          "detail": "The higher-than-expected inflation reading increases the probability of the Fed maintaining rates, pushing yields higher."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "US corporate bonds",
+          "direction": "wider",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Corporate bond spreads may widen due to increased borrowing costs.",
+          "detail": "Rising Treasury yields could lead to wider credit spreads as investors demand more yield for corporate risk."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US stock market",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US stocks may decline as higher rates impact growth expectations.",
+          "detail": "The delay in rate cuts could dampen economic growth prospects, leading to a repricing of equities."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may not fully appreciate the Fed's potential to maintain higher rates longer than expected, which could lead to sustained pressure on equities and corporate bonds.",
+        "detail": "The market may underestimate the Fed's commitment to controlling inflation, resulting in prolonged higher rates that weigh on risk assets."
+      },
+      "falsifiers": [
+        "A significant drop in next month's inflation data.",
+        "The Fed signals a readiness to cut rates despite inflation."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long US Treasury yields",
+          "plain": "Buy US Treasury futures to profit from rising yields as inflation concerns persist.",
+          "instrument": "US Treasury futures",
+          "risk": "Inflation unexpectedly decreases, prompting the Fed to cut rates sooner."
+        }
+      ],
+      "watchNext": [
+        "Next month's US inflation report.",
+        "Upcoming Fed meeting and policy statement."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-13-nvidia-tumbles-as-its-ceo-jensen-huang-departs-amid-multiply",
+      "rank": 4,
+      "editorNote": "Nvidia's CEO departure adds uncertainty to the company's future and impacts the AI sector.",
+      "materiality": {
+        "score": 63.2,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 10.2,
+          "recency": 10
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "credit",
+          "nvidia"
+        ]
+      },
+      "sources": [
+        "WSJ Markets",
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/nvidia-tumbles-as-its-ceo-jensen-huang-departs-amid-multiplying-scandals-d380df1f?mod=rss_markets_main",
+          "title": "Nvidia Tumbles as its CEO Jensen Huang Departs Amid Multiplying Scandals"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html",
+          "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs"
+        }
+      ],
+      "headlines": [
+        "Nvidia Tumbles as its CEO Jensen Huang Departs Amid Multiplying Scandals",
+        "What's ahead for AI financing after Nvidia CEO Jensen Huang departs"
+      ],
+      "newestAt": "2026-11-13T12:54:43.000Z",
+      "headline": "Nvidia Scandals Shake AI Sector as CEO Departs",
+      "standfirst": "Nvidia's CEO Jensen Huang resigns amid scandals, affecting AI and competitors.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some impact due to ongoing scandals, but the CEO's sudden departure added unexpected uncertainty.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Nvidia's CEO Jensen Huang has resigned amid a series of scandals affecting the company. This unexpected leadership change has raised concerns about Nvidia's future in the AI sector.",
+        "whyItMatters": "Nvidia is a major player in AI technology, and the CEO's departure creates uncertainty for the company's strategic direction.",
+        "detail": "Jensen Huang's resignation amid scandals introduces significant uncertainty, affecting Nvidia's leadership stability and strategic execution in the AI market."
+      },
+      "chains": [
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Nvidia's troubles make AMD and Broadcom more attractive.",
+              "detail": "Investors shift focus to AMD and Broadcom as Nvidia's leadership issues raise concerns about its competitive edge."
+            },
+            {
+              "plain": "AMD and Broadcom stocks rise as investors seek alternatives.",
+              "detail": "As Nvidia faces uncertainty, capital rotates into AMD and Broadcom, boosting their share prices."
+            }
+          ],
+          "endpoint": "AMD and Broadcom",
+          "strength": "strong"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Nvidia's scandals could hurt its future profits.",
+              "detail": "Uncertainty about Nvidia's leadership and strategy may impact its ability to secure AI contracts, affecting future earnings."
+            },
+            {
+              "plain": "Investors lower their profit expectations for Nvidia.",
+              "detail": "Analysts may revise down Nvidia's earnings forecasts due to potential disruptions in its business operations."
+            }
+          ],
+          "endpoint": "Nvidia",
+          "strength": "moderate"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors holding Nvidia shares may sell due to uncertainty.",
+              "detail": "Portfolio managers may reduce Nvidia positions to manage risk amid leadership uncertainty."
+            },
+            {
+              "plain": "This selling pressure could further depress Nvidia's stock price.",
+              "detail": "Increased sell orders in Nvidia shares could exacerbate downward price movement as liquidity providers adjust."
+            }
+          ],
+          "endpoint": "Nvidia stock",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Nvidia stock",
+          "direction": "down",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Nvidia's stock is likely to fall as investors react to leadership uncertainty.",
+          "detail": "The unexpected CEO departure may lead to a reassessment of Nvidia's growth prospects, driving its stock lower."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "AMD and Broadcom stocks",
+          "direction": "up",
+          "magnitude": "3 to 5%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "AMD and Broadcom stocks may rise as investors look for stable alternatives.",
+          "detail": "Investor rotation from Nvidia to AMD and Broadcom could lead to price appreciation as they are seen as safer bets."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "VIX",
+          "direction": "up",
+          "magnitude": "2 to 4 points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Market volatility may increase as investors reassess risks in the tech sector.",
+          "detail": "The uncertainty surrounding Nvidia could lead to higher implied volatility, reflected in a rising VIX index."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of leadership instability on Nvidia's innovation capacity in AI, which could affect its competitive positioning in the rapidly evolving tech landscape.",
+        "detail": "The market may not fully price in the potential for prolonged strategic drift at Nvidia, which could impair its ability to maintain a leadership role in AI development."
+      },
+      "falsifiers": [
+        "Nvidia announces a strong interim CEO with a clear strategic vision.",
+        "Nvidia's next earnings report shows resilience despite leadership changes.",
+        "Broader tech sector strength offsets Nvidia's individual issues."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long AMD and Broadcom",
+          "plain": "Buy AMD and Broadcom stocks as they may benefit from Nvidia's troubles.",
+          "instrument": "equity cash",
+          "risk": "If Nvidia quickly stabilises, AMD and Broadcom may not see the expected inflows."
+        }
+      ],
+      "watchNext": [
+        "Nvidia's announcement of a new CEO or interim leadership.",
+        "Nvidia's upcoming earnings report.",
+        "Market reaction to any further developments in Nvidia's scandals."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "VIX",
+          "plain": "An index that measures the stock market's expectation of volatility based on S&P 500 index options."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-13-dollar-extends-gains-as-rate-hike-bets-firm",
+      "rank": 5,
+      "editorNote": "The strengthening dollar and rate hike expectations are influencing currency and bond markets.",
+      "materiality": {
+        "score": 64.5,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 9.5
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "federal reserve",
+          "rate hike",
+          "dollar"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/currencies/french-political-and-fiscal-uncertainty-could-weigh-on-euro-c7deca5f?mod=rss_markets_main",
+          "title": "Dollar Extends Gains as Rate-Hike Bets Firm"
+        }
+      ],
+      "headlines": [
+        "Dollar Extends Gains as Rate-Hike Bets Firm"
+      ],
+      "newestAt": "2026-11-13T11:21:00.000Z",
+      "headline": "Dollar Surge Signals More Fed Rate Hikes Ahead",
+      "standfirst": "The dollar hit a 19-month high as markets anticipate further Fed rate hikes.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The dollar's rise reflects some anticipation of rate hikes, but full implications for global markets may not be fully absorbed.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The US dollar has reached its highest level in 19 months against a basket of other currencies. This move is driven by expectations that the Federal Reserve will continue to raise interest rates.",
+        "whyItMatters": "A stronger dollar impacts global trade and investment flows, affecting everything from company earnings to bond yields.",
+        "detail": "The dollar's appreciation is linked to market expectations of tighter monetary policy by the Federal Reserve, which influences global capital flows and exchange rates."
+      },
+      "chains": [
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "A stronger dollar makes US exports more expensive.",
+              "detail": "The appreciation of the dollar increases the cost of US goods for foreign buyers, potentially reducing demand."
+            },
+            {
+              "plain": "Foreign companies earn less when converting US sales back to their currencies.",
+              "detail": "The stronger dollar reduces the local currency value of sales made in the US for foreign firms, impacting their earnings."
+            }
+          ],
+          "endpoint": "US exporters and foreign companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Higher rate expectations push up US bond yields.",
+              "detail": "Anticipation of Fed rate hikes leads to higher expected returns on US Treasuries, raising yields."
+            },
+            {
+              "plain": "Global borrowing costs rise as US yields set a higher baseline.",
+              "detail": "The increase in US yields affects global bond markets, as US Treasuries serve as a benchmark for global interest rates."
+            }
+          ],
+          "endpoint": "global bond markets",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "fx",
+          "instrument": "US Dollar Index",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "The dollar is likely to continue rising as rate hike expectations firm up.",
+          "detail": "With the Fed expected to raise rates, the dollar gains as investors seek higher returns in US assets."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 2,
+          "plain": "US bond yields are set to rise as the market prices in further rate hikes.",
+          "detail": "The expectation of continued Fed tightening is likely to push Treasury yields higher as investors demand more return for holding US debt."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Emerging Market Stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Emerging market stocks may fall as a stronger dollar makes debt servicing more expensive.",
+          "detail": "The rising dollar increases the cost of dollar-denominated debt for emerging markets, which could pressure their stock markets."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the impact of a stronger dollar on global growth, as it can tighten financial conditions worldwide, especially in emerging markets.",
+        "detail": "The dollar's rise could lead to tighter global financial conditions, particularly affecting emerging markets with high dollar-denominated debt, which could slow global growth more than currently anticipated."
+      },
+      "falsifiers": [
+        "Fed signals a pause in rate hikes",
+        "Dollar weakens unexpectedly",
+        "Emerging markets show resilience despite higher dollar"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short Emerging Market Stocks",
+          "plain": "Sell emerging market stocks to hedge against the risk of a stronger dollar and rising US rates.",
+          "instrument": "Sell EEM ETF",
+          "risk": "Emerging markets could outperform if global growth surprises on the upside."
+        }
+      ],
+      "watchNext": [
+        "Upcoming Fed meeting",
+        "US inflation data release",
+        "Emerging market debt levels"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    }
+  ],
+  "diagnostics": {
+    "articlesIngested": 210,
+    "clustersConsidered": 25,
+    "feeds": [
+      {
+        "id": "fed",
+        "name": "Federal Reserve",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 3,
+        "ms": 170,
+        "error": null
+      },
+      {
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 1,
+        "ms": 130,
+        "error": null
+      },
+      {
+        "id": "ecb",
+        "name": "European Central Bank",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 1,
+        "ms": 747,
+        "error": null
+      },
+      {
+        "id": "boe",
+        "name": "Bank of England",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 882,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 483,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 496,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 26,
+        "fresh": 1,
+        "ms": 844,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 648,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 695,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 718,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 35,
+        "ms": 783,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 72,
+        "fresh": 20,
+        "ms": 776,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 995,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 30,
+        "ms": 1055,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 3,
+        "ms": 1011,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 11,
+        "fresh": 11,
+        "ms": 1598,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 55,
+        "fresh": 20,
+        "ms": 964,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": true,
+        "parsed": 40,
+        "fresh": 35,
+        "ms": 940,
+        "error": null
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1025,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1027,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1034,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 2215,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 1025,
+        "error": null
+      }
+    ],
+    "marketProviders": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 629,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": true,
+        "count": 2,
+        "ms": 282,
+        "error": null
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "usage": {
+      "calls": 6,
+      "inputTokens": 12815,
+      "outputTokens": 5776,
+      "estimatedCostUsd": 0.0898
+    },
+    "runtimeMs": 26791
+  },
+  "scorecardSummary": {
+    "total": 33,
+    "open": 18,
+    "flat": 2,
+    "hits": 4,
+    "misses": 9,
+    "settled": 13,
+    "hitRate": 30.8,
+    "byClass": {
+      "rates": {
+        "hits": 1,
+        "total": 2,
+        "rate": 50
+      },
+      "commodities": {
+        "hits": 1,
+        "total": 3,
+        "rate": 33.3
+      },
+      "fx": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "vol": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "credit": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "equities": {
+        "hits": 0,
+        "total": 5,
+        "rate": 0
+      }
+    },
+    "byConviction": {
+      "3": {
+        "hits": 2,
+        "total": 8,
+        "rate": 25
+      },
+      "4": {
+        "hits": 2,
+        "total": 5,
+        "rate": 40
+      }
+    }
+  }
+}

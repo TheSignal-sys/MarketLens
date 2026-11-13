@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T13:42:46.926Z",
+  "updatedAt": "2026-11-13T13:01:37.280Z",
   "calls": [
     {
       "id": "demo-1",
@@ -624,6 +624,57 @@
       "entryValue": 4090.4,
       "entryDisplay": "4090.40",
       "openedAt": "2026-11-10T10:01:49.660Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-13-nvidia-scandal-howard-lutnick-under-pressure-over-alleged-la:vix",
+      "storyId": "2026-11-13-nvidia-scandal-howard-lutnick-under-pressure-over-alleged-la",
+      "instrumentKey": "vix",
+      "instrumentLabel": "VIX",
+      "assetClass": "vol",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "3 to 5%",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Market volatility may increase as investors react to uncertainties from the scandal.",
+      "entryValue": 18.35,
+      "entryDisplay": "18.35",
+      "openedAt": "2026-11-13T13:01:37.280Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-13-stock-futures-lower-as-investors-look-to-u-s-inflation-data:vix",
+      "storyId": "2026-11-13-stock-futures-lower-as-investors-look-to-u-s-inflation-data",
+      "instrumentKey": "vix",
+      "instrumentLabel": "VIX",
+      "assetClass": "vol",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "10 to 15%",
+      "horizon": "intraday",
+      "conviction": 3,
+      "rationale": "Market volatility could increase as investors react to Nvidia's changes and inflation data.",
+      "entryValue": 18.35,
+      "entryDisplay": "18.35",
+      "openedAt": "2026-11-13T13:01:37.280Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-13-nvidia-tumbles-as-its-ceo-jensen-huang-departs-amid-multiply:vix",
+      "storyId": "2026-11-13-nvidia-tumbles-as-its-ceo-jensen-huang-departs-amid-multiply",
+      "instrumentKey": "vix",
+      "instrumentLabel": "VIX",
+      "assetClass": "vol",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "2 to 4 points",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Market volatility may increase as investors reassess risks in the tech sector.",
+      "entryValue": 18.35,
+      "entryDisplay": "18.35",
+      "openedAt": "2026-11-13T13:01:37.280Z",
       "status": "open"
     }
   ]
