@@ -2,12 +2,12 @@
   "version": 1,
   "date": "2026-11-16",
   "dateLabel": "Monday, 16 November 2026",
-  "generatedAt": "2026-11-16T13:18:48.510Z",
+  "generatedAt": "2026-11-16T13:33:54.805Z",
   "model": "openai/gpt-4o",
   "marketRead": {
     "headline": "Nvidia turmoil and EU bank merger dominate",
-    "body": "Nvidia's leadership uncertainty and AI sell-off are causing significant volatility in tech equities, with potential long-term impacts on AI investments. UniCredit's EU-approved bid for Commerzbank signals a major shift in European banking, affecting credit and equity markets. The decline in US Treasury yields, amid Fed rate-hike speculation, suggests persistent uncertainty in interest rate expectations.",
-    "regime": "volatility driven by tech and banking shifts"
+    "body": "Nvidia's leadership uncertainty and AI sell-off are creating volatility in tech stocks, impacting broader equity markets. UniCredit's approved bid for Commerzbank signals potential consolidation in European banking, affecting credit and FX markets. These developments suggest a shift towards risk aversion, with investors reassessing tech exposure and European financial stability.",
+    "regime": "risk aversion amid tech volatility"
   },
   "snapshot": {
     "quotes": [],
@@ -16,14 +16,14 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 521,
+        "ms": 733,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 115,
+        "ms": 96,
         "error": "no rows"
       },
       {
@@ -34,21 +34,21 @@
         "error": "no rows"
       }
     ],
-    "fetchedAt": "2026-11-16T13:18:23.770Z"
+    "fetchedAt": "2026-11-16T13:33:27.786Z"
   },
   "stories": [
     {
       "id": "2026-11-16-ai-sell-off-resumes-as-jensen-huang-discusses-comeback-as-nv",
       "rank": 1,
-      "editorNote": "Nvidia's CEO discussions and AI sell-off have broad implications for tech equities and volatility.",
+      "editorNote": "Nvidia's CEO uncertainty and AI sell-off have broad implications for tech stocks and market volatility.",
       "materiality": {
-        "score": 69.8,
+        "score": 69.9,
         "components": {
           "corroboration": 21,
           "authority": 13,
           "breadth": 9,
           "salience": 17,
-          "recency": 9.8
+          "recency": 9.9
         },
         "distinctSources": 2,
         "salienceTerms": [
@@ -77,100 +77,111 @@
         "Jensen Huang discusses comeback as Nvidia CEO with allies",
         "AI sell-off resumes as Jensen Huang ‘discusses comeback as Nvidia CEO’ – business live"
       ],
-      "newestAt": "2026-11-16T12:30:45.000Z",
+      "newestAt": "2026-11-16T13:17:32.000Z",
       "headline": "Nvidia CEO Speculation Fuels AI Stock Volatility",
-      "standfirst": "Jensen Huang is considering a return as Nvidia CEO, affecting AI stock prices.",
+      "standfirst": "Jensen Huang is considering a return as Nvidia CEO, impacting AI stocks.",
       "classification": {
         "eventType": "corporate",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Market participants had anticipated some leadership changes, but the specifics of Huang's potential return added new uncertainty.",
+        "pricedInRationale": "The market had anticipated some leadership changes at Nvidia but not the specific possibility of Huang's return.",
         "persistence": "weeks",
         "regionFocus": [
           "Global"
         ]
       },
       "whatHappened": {
-        "plain": "Jensen Huang is reportedly discussing a return as Nvidia's CEO. This news comes amid a broader sell-off in AI-related stocks.",
-        "whyItMatters": "Nvidia is a key player in the AI sector, and leadership changes can significantly impact investor sentiment and stock valuations.",
-        "detail": "Huang's potential return introduces uncertainty in Nvidia's strategic direction, affecting investor sentiment in AI equities."
+        "plain": "Jensen Huang is reportedly discussing a return as Nvidia's CEO. This news comes amid a sell-off in AI stocks.",
+        "whyItMatters": "Leadership changes at major tech companies like Nvidia can influence investor sentiment and stock valuations.",
+        "detail": "The potential return of Jensen Huang as Nvidia CEO introduces uncertainty in leadership, affecting investor confidence in AI-related stocks."
       },
       "chains": [
         {
           "channel": "positioning",
           "links": [
             {
-              "plain": "Investors react to the potential leadership change at Nvidia.",
-              "detail": "Speculation about Huang's return leads to repositioning in AI stocks, as investors reassess Nvidia's future strategy."
+              "plain": "Investors react to the news by selling AI stocks.",
+              "detail": "The speculation about Huang's return causes a reassessment of Nvidia's strategic direction, leading to a sell-off."
             },
             {
-              "plain": "AI stock volatility increases as investors adjust their portfolios.",
-              "detail": "The uncertainty prompts portfolio adjustments, increasing volatility in AI-related equities."
+              "plain": "The sell-off pressures other tech stocks.",
+              "detail": "As Nvidia is a major player, its volatility impacts related tech stocks due to sector correlation."
             }
           ],
-          "endpoint": "AI-related equities",
+          "endpoint": "AI and tech stock investors",
           "strength": "strong"
         },
         {
           "channel": "earnings",
           "links": [
             {
-              "plain": "Nvidia's potential leadership change raises questions about its future earnings.",
-              "detail": "Huang's return could alter Nvidia's strategic focus, impacting its earnings outlook."
+              "plain": "AI companies face increased scrutiny on their earnings.",
+              "detail": "With Nvidia's leadership in question, investors may demand stronger performance metrics from AI firms."
             },
             {
-              "plain": "Investors reassess earnings potential for Nvidia and its competitors.",
-              "detail": "The potential shift in Nvidia's strategy prompts a reevaluation of earnings forecasts across the AI sector."
+              "plain": "This could lead to lower valuations if earnings disappoint.",
+              "detail": "If AI companies fail to meet heightened expectations, their stock prices could decline further."
             }
           ],
-          "endpoint": "AI sector equities",
+          "endpoint": "AI sector valuations",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
           "assetClass": "equities",
-          "instrument": "AI-related stocks",
+          "instrument": "Global AI stocks",
           "direction": "down",
           "magnitude": "2 to 4%",
-          "horizon": "days",
+          "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "AI stocks may decline as investors react to uncertainties around Nvidia's leadership.",
-          "detail": "The speculation about Huang's return increases uncertainty, leading to a sell-off in AI equities."
+          "plain": "AI stocks are likely to fall as investors reassess their positions.",
+          "detail": "The uncertainty around Nvidia's leadership could reduce confidence in AI stocks, leading to a sell-off."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Nvidia shares",
+          "direction": "mixed",
+          "magnitude": "3 to 5%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 1,
+          "plain": "Nvidia shares may experience volatility as investors react to leadership news.",
+          "detail": "The potential return of Huang could initially cause volatility, with longer-term impacts depending on strategic changes."
         },
         {
           "assetClass": "vol",
-          "instrument": "AI sector volatility index",
+          "instrument": "Tech sector volatility index",
           "direction": "up",
           "magnitude": "5 to 10%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Volatility in the AI sector may rise as investors adjust to potential changes at Nvidia.",
-          "detail": "Increased uncertainty around Nvidia's leadership drives volatility higher in AI-related indices."
+          "plain": "Volatility in tech stocks is expected to increase.",
+          "detail": "Nvidia's leadership uncertainty could lead to broader tech sector volatility as investors adjust their portfolios."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the long-term strategic shifts that Huang's return could bring to Nvidia and the broader AI industry.",
-        "detail": "Huang's leadership could lead to significant strategic changes at Nvidia, impacting its competitive position and the broader AI market."
+        "plain": "Investors may not fully appreciate how Nvidia's leadership changes could impact its long-term strategic direction, particularly in AI and data centre markets.",
+        "detail": "The market might underestimate the potential shift in Nvidia's strategic focus under new or returning leadership, affecting long-term growth prospects."
       },
       "falsifiers": [
-        "Huang confirms he will not return as CEO.",
-        "Nvidia announces a clear strategic plan that reassures investors.",
-        "The AI sector shows resilience despite Nvidia's leadership uncertainty."
+        "Nvidia confirms Huang's return with a clear strategic plan",
+        "AI stocks rally despite leadership uncertainty",
+        "Broader tech sector remains stable"
       ],
       "tradeExpression": [
         {
-          "idea": "Short AI Volatility",
-          "plain": "Consider shorting AI sector volatility indices given the expected increase in uncertainty.",
-          "instrument": "Sell AI sector volatility futures",
-          "risk": "A quick resolution to Nvidia's leadership uncertainty could reduce volatility."
+          "idea": "Short AI stocks",
+          "plain": "Sell AI stocks to hedge against potential declines due to Nvidia's leadership uncertainty.",
+          "instrument": "Equity futures or options on AI sector ETFs",
+          "risk": "AI stocks may rebound if Nvidia clarifies its leadership and strategic direction positively."
         }
       ],
       "watchNext": [
-        "Official statements from Nvidia or Jensen Huang regarding the CEO position.",
-        "Earnings reports from major AI companies.",
-        "Market reactions to broader tech sector developments."
+        "Nvidia's official announcement on leadership",
+        "Next earnings season for AI companies",
+        "Tech sector investor sentiment indicators"
       ],
       "glossary": [
         {
@@ -183,9 +194,9 @@
     {
       "id": "2026-11-16-unicredit-s-commerzbank-bid-gets-eu-approval",
       "rank": 2,
-      "editorNote": "UniCredit's acquisition of Commerzbank affects multiple asset classes, including equities, FX, and credit.",
+      "editorNote": "The EU approval of UniCredit's bid for Commerzbank could lead to significant changes in European banking, affecting credit and FX markets.",
       "materiality": {
-        "score": 68.4,
+        "score": 68.3,
         "components": {
           "corroboration": 13,
           "authority": 13,
@@ -215,121 +226,91 @@
         "UniCredit’s Commerzbank Bid Gets EU Approval"
       ],
       "newestAt": "2026-11-16T10:57:00.000Z",
-      "headline": "UniCredit's Commerzbank Takeover Could Shift European Banking Landscape",
-      "standfirst": "The EU has approved UniCredit's acquisition of Commerzbank.",
+      "headline": "UniCredit's Commerzbank Takeover Shakes Up European Banking",
+      "standfirst": "The EU has approved UniCredit's bid to acquire Commerzbank.",
       "classification": {
         "eventType": "corporate",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market anticipated EU approval, but the strategic implications for European banks are still unfolding.",
+        "pricedInRationale": "The market anticipated the approval, but the full implications for competition and market share are still unfolding.",
         "persistence": "weeks",
         "regionFocus": [
           "Europe"
         ]
       },
       "whatHappened": {
-        "plain": "UniCredit, an Italian bank, received approval from the European Union to acquire Commerzbank, a major German bank.",
-        "whyItMatters": "This merger could reshape the competitive dynamics in the European banking sector, affecting profitability and market share.",
-        "detail": "The EU's green light allows UniCredit to proceed with its strategic acquisition, potentially altering the competitive landscape among European banks."
+        "plain": "UniCredit received approval from the European Union to acquire Commerzbank, a major German bank. This merger will create a significant player in the European banking sector.",
+        "whyItMatters": "This merger could lead to changes in the competitive landscape of European banking, potentially affecting borrowing costs and market dynamics.",
+        "detail": "The EU's approval allows UniCredit to proceed with its acquisition of Commerzbank, which could lead to consolidation in the banking sector and influence credit markets."
       },
       "chains": [
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "UniCredit may achieve cost savings and revenue synergies.",
-              "detail": "The merger could lead to operational efficiencies and cross-selling opportunities, boosting UniCredit's profitability."
-            },
-            {
-              "plain": "Competitors may face increased pressure to consolidate.",
-              "detail": "Other European banks might pursue mergers to remain competitive, potentially triggering a wave of consolidation."
-            }
-          ],
-          "endpoint": "European banks",
-          "strength": "moderate"
-        },
         {
           "channel": "credit",
           "links": [
             {
-              "plain": "UniCredit's borrowing costs could decrease.",
-              "detail": "The combined entity's larger balance sheet might improve its credit profile, lowering borrowing costs."
-            },
-            {
-              "plain": "Other banks might face higher borrowing costs.",
-              "detail": "Increased competition could pressure smaller banks, potentially leading to higher credit spreads for those with weaker balance sheets."
+              "plain": "The merger may lead to increased borrowing costs for smaller banks.",
+              "detail": "The consolidation of UniCredit and Commerzbank could reduce competition, potentially increasing borrowing costs for smaller banks as they face a larger competitor."
             }
           ],
-          "endpoint": "European bank credit spreads",
-          "strength": "strong"
+          "endpoint": "smaller European banks",
+          "strength": "moderate"
         },
         {
           "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "The euro might strengthen slightly.",
-              "detail": "A stronger banking sector could improve investor sentiment towards the euro, leading to modest appreciation."
+              "plain": "The euro could strengthen as a result of increased confidence in European banks.",
+              "detail": "The merger may boost investor confidence in the stability of European banks, leading to a stronger euro as capital flows into the region."
             }
           ],
-          "endpoint": "EUR/USD",
+          "endpoint": "euro currency",
           "strength": "speculative"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "equities",
-          "instrument": "European bank stocks",
-          "direction": "up",
-          "magnitude": "2 to 4%",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 2,
-          "plain": "European bank stocks could rise as investors anticipate further consolidation.",
-          "detail": "The merger could set a precedent for more deals, boosting valuations across the sector."
-        },
-        {
           "assetClass": "credit",
-          "instrument": "UniCredit credit spreads",
-          "direction": "tighter",
-          "magnitude": "10 to 20 basis points",
+          "instrument": "European bank credit spreads",
+          "direction": "wider",
+          "magnitude": "5 to 10 basis points",
           "horizon": "weeks",
           "conviction": 3,
-          "order": 1,
-          "plain": "UniCredit's credit spreads might tighten as its credit profile improves.",
-          "detail": "The merger enhances UniCredit's balance sheet, likely leading to tighter spreads."
+          "order": 2,
+          "plain": "Credit spreads for smaller European banks may widen due to increased competition.",
+          "detail": "The merger could lead to wider credit spreads for smaller banks as they face pressure from a larger, more competitive entity."
         },
         {
           "assetClass": "fx",
-          "instrument": "EUR/USD",
+          "instrument": "euro",
           "direction": "up",
           "magnitude": "0.5 to 1%",
-          "horizon": "weeks",
+          "horizon": "days",
           "conviction": 2,
           "order": 2,
-          "plain": "The euro could gain slightly as confidence in European banks improves.",
-          "detail": "The strategic merger may enhance the eurozone's economic outlook, supporting the euro."
+          "plain": "The euro might appreciate slightly due to increased confidence in European banking.",
+          "detail": "Investor confidence in the eurozone's banking stability could lead to a modest appreciation of the euro."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the long-term impact of this merger on European banking consolidation.",
-        "detail": "The strategic implications of UniCredit's acquisition could catalyse a broader wave of mergers, reshaping the industry."
+        "plain": "Investors might underestimate the long-term impact of increased market concentration on borrowing costs and competition in the European banking sector.",
+        "detail": "The market could be overlooking the potential for reduced competition to drive up borrowing costs and alter competitive dynamics in the long term."
       },
       "falsifiers": [
-        "UniCredit fails to achieve expected synergies.",
-        "Regulatory challenges arise post-merger.",
-        "Competitors do not pursue further consolidation."
+        "The merger fails to complete",
+        "Borrowing costs for smaller banks decrease",
+        "The euro weakens significantly"
       ],
       "tradeExpression": [
         {
-          "idea": "Long European bank stocks",
-          "plain": "Buy European bank stocks to benefit from potential consolidation and improved sector outlook.",
-          "instrument": "Equity futures or ETFs",
-          "risk": "If the merger fails to deliver expected synergies, bank stocks could underperform."
+          "idea": "Long euro",
+          "plain": "Buy the euro against the US dollar, anticipating a rise due to increased confidence in European banks.",
+          "instrument": "FX spot or futures",
+          "risk": "The euro could weaken if broader economic conditions deteriorate."
         }
       ],
       "watchNext": [
-        "UniCredit's post-merger integration plans",
-        "Announcements of further mergers in the sector",
-        "European Central Bank policy meetings"
+        "Completion of the UniCredit-Commerzbank merger",
+        "ECB policy announcements",
+        "Earnings reports from European banks"
       ],
       "glossary": [
         {
@@ -342,7 +323,7 @@
     {
       "id": "2026-11-16-asian-equities-drop-as-u-s-chip-selloff-spills-over",
       "rank": 3,
-      "editorNote": "The spillover of the US chip sell-off into Asian equities indicates broader market volatility.",
+      "editorNote": "The spillover of the U.S. chip sell-off to Asian equities highlights global market interconnectedness and risk.",
       "materiality": {
         "score": 67.5,
         "components": {
@@ -374,117 +355,121 @@
         "Asian Equities Drop as U.S. Chip Selloff Spills Over"
       ],
       "newestAt": "2026-11-16T06:16:00.000Z",
-      "headline": "Asian Markets Hit by U.S. Chip Selloff Ripple Effect",
-      "standfirst": "A selloff in U.S. chip stocks has spread to Asian markets, causing significant declines.",
+      "headline": "Asian Markets Hit by U.S. Chip Selloff, Impacting Global Equities",
+      "standfirst": "A U.S. chip selloff spread to Asia, hitting Taiwan's market hardest.",
       "classification": {
         "eventType": "flows",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The initial U.S. selloff was expected, but the extent of the impact on Asian markets was underestimated.",
+        "pricedInRationale": "The initial selloff in the U.S. was reflected in Friday's trading, but the full impact on Asian markets was not yet fully absorbed.",
         "persistence": "days",
         "regionFocus": [
-          "Global",
+          "US",
           "Asia",
-          "US"
+          "Global"
         ]
       },
       "whatHappened": {
-        "plain": "U.S. chip stocks fell sharply on Friday, leading to a decline in Asian equities on Monday. Taiwan's Taiex index saw significant drops due to its concentration of chip and hardware companies.",
-        "whyItMatters": "Investors are concerned about the health of the tech sector, which is critical to global economic growth. This selloff indicates potential broader market volatility.",
-        "detail": "The U.S. chip sector faced a selloff due to concerns over demand and pricing pressures, which then led to a selloff in Asian markets heavily reliant on tech exports."
+        "plain": "A selloff in U.S. chip stocks on Friday affected Asian markets on Monday, with Taiwan's Taiex index seeing significant declines. This highlights the interconnectedness of global markets.",
+        "whyItMatters": "Investors should care because it shows how market movements in one region can quickly affect others, impacting global portfolios.",
+        "detail": "The U.S. chip sector selloff, driven by concerns over demand and pricing pressures, caused ripple effects in Asia, particularly affecting Taiwan's tech-heavy market."
       },
       "chains": [
         {
           "channel": "positioning",
           "links": [
             {
-              "plain": "Investors in the U.S. sold off chip stocks.",
-              "detail": "Portfolio managers reduced exposure to U.S. chip stocks due to demand concerns."
+              "plain": "Investors sold Asian tech stocks following the U.S. chip selloff.",
+              "detail": "The U.S. chip selloff led to de-risking in Asian tech sectors as investors adjusted their portfolios."
             },
             {
-              "plain": "Asian investors followed suit, selling local tech stocks.",
-              "detail": "Asian markets, particularly Taiwan, saw increased sell orders as investors mirrored U.S. actions to mitigate risk."
+              "plain": "This selling pressure led to declines in Taiwan's market.",
+              "detail": "The concentrated selling in Taiwan's tech-heavy index exacerbated declines, as it is heavily weighted towards chipmakers."
             }
           ],
-          "endpoint": "Asian tech equities",
+          "endpoint": "Taiwanese tech stocks",
           "strength": "strong"
         },
         {
-          "channel": "earnings",
+          "channel": "correlation",
           "links": [
             {
-              "plain": "Lower demand forecasts hit chipmakers' expected profits.",
-              "detail": "Revised forecasts for chip demand led to downward adjustments in earnings expectations for chipmakers."
+              "plain": "Global tech stocks moved together, increasing volatility.",
+              "detail": "The correlation between U.S. and Asian tech stocks increased, leading to heightened volatility across global tech sectors."
             },
             {
-              "plain": "Companies in supply chains could face reduced orders.",
-              "detail": "Suppliers to chipmakers may see a drop in orders as chip companies adjust production plans."
+              "plain": "Investors reassessed risk across tech sectors globally.",
+              "detail": "The breakdown in correlation prompted a reassessment of risk, leading to portfolio rebalancing and increased volatility."
             }
           ],
-          "endpoint": "global tech supply chain",
+          "endpoint": "Global tech stocks",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
           "assetClass": "equities",
-          "instrument": "Asian tech stocks",
+          "instrument": "Taiwanese tech stocks",
           "direction": "down",
-          "magnitude": "2 to 4%",
+          "magnitude": "3% to 5%",
           "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "Asian tech stocks are likely to continue falling as investors react to the U.S. selloff.",
-          "detail": "The decline in U.S. chip stocks has triggered a risk-off sentiment in Asian tech equities, leading to further selloffs."
+          "plain": "Taiwanese tech stocks are likely to see further declines as investors react to the U.S. selloff.",
+          "detail": "Given the heavy weighting of chipmakers in Taiwan's index, the selloff is expected to continue as investors adjust their positions."
         },
         {
-          "assetClass": "fx",
-          "instrument": "Taiwan Dollar",
+          "assetClass": "equities",
+          "instrument": "Global tech stocks",
           "direction": "down",
-          "magnitude": "0.5 to 1%",
+          "magnitude": "1% to 2%",
           "horizon": "days",
           "conviction": 3,
           "order": 2,
-          "plain": "The Taiwan Dollar may weaken as investors pull out of Taiwanese equities.",
-          "detail": "Capital outflows from Taiwan due to equity selloffs are likely to exert downward pressure on the Taiwan Dollar."
+          "plain": "Global tech stocks may face additional pressure as correlation with U.S. markets increases.",
+          "detail": "The increased correlation between U.S. and global tech stocks suggests further downside risk as investors reassess sector exposure."
         },
         {
-          "assetClass": "credit",
-          "instrument": "Asian corporate bonds",
-          "direction": "wider",
-          "magnitude": "10 to 20 basis points",
+          "assetClass": "vol",
+          "instrument": "Tech sector volatility index",
+          "direction": "up",
+          "magnitude": "2 to 4 points",
           "horizon": "days",
           "conviction": 3,
           "order": 2,
-          "plain": "Credit spreads for Asian corporates may widen as risk aversion increases.",
-          "detail": "Increased risk aversion following equity selloffs could lead to wider credit spreads for Asian corporate bonds."
+          "plain": "Volatility in the tech sector is expected to rise as investors react to market moves.",
+          "detail": "The increased correlation and repositioning activities are likely to drive volatility indices higher in the tech sector."
         }
       ],
       "whatMarketMisses": {
-        "plain": "The market may not fully appreciate the potential for a prolonged slowdown in tech demand, which could have lasting impacts on global supply chains.",
-        "detail": "Investors might underestimate the duration and depth of reduced demand in the tech sector, affecting supply chain stability and profitability."
+        "plain": "Investors may underestimate the duration of volatility in tech stocks, as the interconnectedness of global markets means that any recovery will likely be gradual and dependent on broader economic signals.",
+        "detail": "The market may not fully appreciate the persistence of heightened volatility, given the complex interdependencies in global tech markets that could delay stabilization."
       },
       "falsifiers": [
-        "A rebound in U.S. chip stocks reversing the sentiment",
-        "Stronger-than-expected earnings reports from major chipmakers",
-        "Central bank interventions stabilizing markets"
+        "A rapid recovery in U.S. chip stocks would indicate the analysis is wrong.",
+        "Stronger-than-expected earnings from major chipmakers could reverse the trend.",
+        "Central bank interventions that stabilize market sentiment."
       ],
       "tradeExpression": [
         {
-          "idea": "Short Asian Tech Stocks",
-          "plain": "Sell Asian tech stocks to profit from continued declines following the U.S. selloff.",
-          "instrument": "Sell futures on Asian tech indices",
-          "risk": "A sudden recovery in U.S. tech stocks could reverse Asian market declines."
+          "idea": "Short Taiwan tech stocks",
+          "plain": "Sell Taiwanese tech stocks to benefit from continued pressure following the U.S. selloff.",
+          "instrument": "Sell Taiwan tech index futures",
+          "risk": "A quick recovery in U.S. chip stocks could lead to a swift rebound in Taiwanese stocks."
         }
       ],
       "watchNext": [
-        "Upcoming earnings reports from major U.S. chipmakers",
-        "Central bank statements regarding market stability",
-        "Economic data releases on global tech demand"
+        "Upcoming earnings reports from major U.S. and Asian chipmakers.",
+        "Central bank announcements regarding interest rates.",
+        "Trade data releases impacting tech supply chains."
       ],
       "glossary": [
         {
           "term": "basis point",
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "volatility index",
+          "plain": "A measure of the market's expectation of volatility, often used to gauge fear or uncertainty."
         }
       ],
       "confidence": 3
@@ -492,15 +477,15 @@
     {
       "id": "2026-11-16-u-s-treasury-yields-decline-but-fed-rate-hike-prospects-in-f",
       "rank": 4,
-      "editorNote": "US Treasury yield movements and Fed rate-hike prospects impact rates and FX markets.",
+      "editorNote": "U.S. Treasury yield movements and Fed rate hike prospects are crucial for understanding future interest rate paths and FX implications.",
       "materiality": {
-        "score": 64.1,
+        "score": 64,
         "components": {
           "corroboration": 13,
           "authority": 13,
           "breadth": 9,
           "salience": 20,
-          "recency": 9.1
+          "recency": 9
         },
         "distinctSources": 1,
         "salienceTerms": [
@@ -526,12 +511,12 @@
         "U.S. Treasury Yields Decline but Fed Rate-Hike Prospects in Focus"
       ],
       "newestAt": "2026-11-16T10:03:00.000Z",
-      "headline": "US Treasury Yields Fall as Fed Rate-Hike Concerns Linger",
-      "standfirst": "US Treasury yields dropped while focus remains on potential Fed rate hikes.",
+      "headline": "U.S. Treasury Yields Drop Amid Fed Rate Hike Speculation",
+      "standfirst": "U.S. Treasury yields fell as markets focus on potential Fed rate hikes.",
       "classification": {
         "eventType": "monetary-policy",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Markets had anticipated some of the yield movement due to prior Fed comments, but the extent of the decline was unexpected.",
+        "pricedInRationale": "The market had anticipated some yield movement due to prior Fed comments, but the full extent of the drop was not expected.",
         "persistence": "days",
         "regionFocus": [
           "US",
@@ -539,17 +524,17 @@
         ]
       },
       "whatHappened": {
-        "plain": "US Treasury yields fell after rising last week due to inflation data and hawkish comments from the Federal Reserve. Eurozone bond yields showed less movement.",
-        "whyItMatters": "Changes in US Treasury yields affect borrowing costs and investment returns globally.",
-        "detail": "The decline in US Treasury yields follows a week of upward pressure from inflation data and hawkish Fed remarks, indicating market uncertainty about future rate hikes."
+        "plain": "U.S. Treasury yields decreased after they had risen significantly last week due to inflation data and hawkish comments from the Federal Reserve. Eurozone bond yields remained uncertain.",
+        "whyItMatters": "Treasury yields affect borrowing costs and investment returns globally, influencing economic growth and currency values.",
+        "detail": "The decline in U.S. Treasury yields followed a previous spike driven by higher-than-expected inflation figures and aggressive Fed rhetoric, which had led to market expectations of faster rate hikes."
       },
       "chains": [
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Lower Treasury yields may lead the Fed to reconsider the pace of rate hikes.",
-              "detail": "Falling yields signal market expectations of slower economic growth, which could prompt the Fed to delay rate increases."
+              "plain": "Lower yields may lead the Fed to reconsider the pace of rate hikes.",
+              "detail": "A drop in yields could signal to the Fed that market conditions are tightening, potentially slowing their rate hike trajectory."
             }
           ],
           "endpoint": "Federal Reserve",
@@ -559,22 +544,22 @@
           "channel": "discount-rate",
           "links": [
             {
-              "plain": "Lower yields reduce the cost of borrowing for companies.",
-              "detail": "A drop in Treasury yields lowers the baseline interest rates, reducing corporate borrowing costs."
+              "plain": "Falling Treasury yields reduce the baseline for other investment returns.",
+              "detail": "As Treasury yields set the risk-free rate, their decline lowers the discount rate applied to future cash flows across asset classes."
             }
           ],
-          "endpoint": "corporate borrowers",
+          "endpoint": "global financial markets",
           "strength": "strong"
         },
         {
           "channel": "fx-terms-of-trade",
           "links": [
             {
-              "plain": "A decrease in US yields can weaken the dollar, affecting trade balances.",
-              "detail": "Lower yields make US assets less attractive, potentially weakening the dollar and impacting import/export dynamics."
+              "plain": "Lower U.S. yields can weaken the dollar, affecting trade balances.",
+              "detail": "A decline in yields reduces the attractiveness of dollar-denominated assets, potentially leading to a depreciation of the currency and altering trade dynamics."
             }
           ],
-          "endpoint": "US dollar",
+          "endpoint": "U.S. exporters and importers",
           "strength": "moderate"
         }
       ],
@@ -587,58 +572,69 @@
           "horizon": "days",
           "conviction": 4,
           "order": 1,
-          "plain": "US 10-year Treasury yields are likely to fall as markets adjust to potential Fed actions.",
-          "detail": "The yields are expected to decline as investors reassess the likelihood of future rate hikes."
+          "plain": "The yield on the 10-year Treasury is likely to fall as investors reassess rate hike expectations.",
+          "detail": "The yield decline reflects a recalibration of market expectations for future Fed rate hikes, driven by the recent yield drop."
         },
         {
           "assetClass": "fx",
-          "instrument": "US dollar",
+          "instrument": "US Dollar Index",
           "direction": "down",
           "magnitude": "0.5 to 1%",
           "horizon": "days",
           "conviction": 3,
           "order": 2,
-          "plain": "The US dollar may weaken as lower yields make US assets less appealing.",
-          "detail": "A drop in yields reduces the relative attractiveness of dollar-denominated assets, pressuring the currency."
+          "plain": "A weaker dollar is expected as lower yields make U.S. assets less attractive.",
+          "detail": "The drop in Treasury yields diminishes the carry advantage of holding dollar assets, pressuring the currency lower."
         },
         {
           "assetClass": "equities",
-          "instrument": "US equities",
+          "instrument": "US stock market",
           "direction": "up",
           "magnitude": "1 to 2%",
           "horizon": "days",
           "conviction": 3,
           "order": 2,
-          "plain": "US stocks might rise as lower yields ease borrowing costs and boost valuations.",
-          "detail": "Falling yields can support equity valuations by reducing discount rates and improving corporate borrowing conditions."
+          "plain": "Stock markets may rise as lower yields make equities more attractive relative to bonds.",
+          "detail": "The decrease in yields lowers the equity risk premium, supporting higher stock valuations as investors seek better returns."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the potential for a more dovish Fed stance if economic data weakens further, which could lead to a more significant drop in yields.",
-        "detail": "The market might not fully appreciate the Fed's flexibility to pause rate hikes if growth indicators soften, potentially causing a sharper yield decline."
+        "plain": "Investors may underestimate the impact of sustained lower yields on the Fed's long-term policy path, potentially leading to a more dovish stance than currently expected.",
+        "detail": "The market might not fully appreciate how persistent yield declines could influence the Fed to adopt a more accommodative policy approach, altering rate hike projections."
       },
       "falsifiers": [
-        "Stronger-than-expected economic data leading to renewed Fed hawkishness",
-        "A sudden geopolitical event causing a flight to safety and yield increases",
-        "Unexpected inflation data that pressures the Fed to hike rates sooner"
+        "A sharp rebound in Treasury yields would invalidate the current analysis.",
+        "Unexpectedly strong economic data prompting immediate Fed action."
       ],
       "tradeExpression": [
         {
-          "idea": "Long US Treasuries",
-          "plain": "Buy US Treasuries to benefit from falling yields as Fed rate hikes become less likely.",
-          "instrument": "US Treasury futures",
-          "risk": "The main risk is stronger economic data prompting the Fed to maintain a hawkish stance."
+          "idea": "Long US Equities",
+          "plain": "Buy U.S. equities to benefit from lower yields making stocks more attractive.",
+          "instrument": "Equity index futures",
+          "risk": "Yields rebound sharply, reducing the relative attractiveness of equities."
         }
       ],
       "watchNext": [
-        "Upcoming US economic data releases",
-        "Statements from Federal Reserve officials",
-        "Global geopolitical developments"
+        "Upcoming Federal Reserve meeting minutes.",
+        "Next U.S. inflation report.",
+        "Comments from Federal Reserve officials."
       ],
       "glossary": [
         {
           "term": "basis point",
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "yield curve",
+          "plain": "A graph showing the relationship between interest rates and different bond maturities."
+        },
+        {
+          "term": "hawkish",
+          "plain": "Describes a central bank's focus on controlling inflation, often leading to higher interest rates."
+        },
+        {
+          "term": "carry trade",
+          "plain": "An investment strategy where investors borrow in a low-yielding currency to invest in higher-yielding assets."
         }
       ],
       "confidence": 3
@@ -646,7 +642,7 @@
     {
       "id": "2026-11-16-gold-slides-to-lowest-level-in-over-a-year-on-dollar-strengt",
       "rank": 5,
-      "editorNote": "Gold's decline due to dollar strength and Fed hike bets affects commodities and FX markets.",
+      "editorNote": "Gold's decline due to dollar strength and Fed hike bets reflects broader commodity and FX market trends.",
       "materiality": {
         "score": 61.6,
         "components": {
@@ -677,21 +673,22 @@
         "Gold slides to lowest level in over a year on dollar strength, Fed hike bets"
       ],
       "newestAt": "2026-11-16T11:15:14.000Z",
-      "headline": "Gold's Decline Signals Stronger Dollar and Rising Fed Rate Expectations",
-      "standfirst": "Gold prices fall to their lowest in over a year due to a stronger dollar and expectations of further interest rate hikes by the Federal Reserve.",
+      "headline": "Gold Decline Signals Strong Dollar and Fed Rate Hike Expectations",
+      "standfirst": "Gold prices have fallen to their lowest in over a year due to a stronger dollar and expectations of a Federal Reserve rate hike.",
       "classification": {
         "eventType": "monetary-policy",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some dollar strength but not the full extent of the Fed's hawkish stance.",
+        "pricedInRationale": "The market had anticipated some dollar strength, but the extent of gold's decline suggests further repricing is occurring.",
         "persistence": "weeks",
         "regionFocus": [
+          "US",
           "Global"
         ]
       },
       "whatHappened": {
-        "plain": "Gold prices have dropped to their lowest level in over a year. This is due to a stronger US dollar and increased expectations that the Federal Reserve will raise interest rates.",
-        "whyItMatters": "Investors should care because gold is often used as a hedge against currency weakness and inflation. Its decline signals changing expectations about future monetary policy and currency strength.",
-        "detail": "The strengthening dollar makes gold more expensive in other currencies, reducing demand. Fed rate hike expectations increase the opportunity cost of holding non-yielding assets like gold."
+        "plain": "Gold prices have dropped to their lowest level in over a year. This is mainly due to a stronger US dollar and growing expectations of a Federal Reserve interest rate hike.",
+        "whyItMatters": "The decline in gold prices reflects broader trends in the currency and commodity markets, which can affect investment strategies and economic forecasts.",
+        "detail": "The strengthening of the US dollar and anticipation of higher interest rates are driving investors away from non-yielding assets like gold, causing its price to drop significantly."
       },
       "chains": [
         {
@@ -699,11 +696,11 @@
           "links": [
             {
               "plain": "A stronger dollar makes US exports more expensive.",
-              "detail": "As the dollar strengthens, US goods become pricier for foreign buyers, potentially reducing export demand."
+              "detail": "The appreciation of the US dollar increases the cost of US goods abroad, potentially reducing export demand."
             },
             {
-              "plain": "US exporters may see reduced sales abroad.",
-              "detail": "US companies with significant international sales might face headwinds as their products become less competitive due to currency effects."
+              "plain": "Reduced exports can slow US economic growth.",
+              "detail": "As US goods become pricier internationally, export volumes may decline, which could dampen GDP growth."
             }
           ],
           "endpoint": "US exporters",
@@ -713,22 +710,15 @@
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "The Fed may slow down rate hikes if growth weakens.",
-              "detail": "If the stronger dollar and higher rates start to dampen economic growth, the Fed could reconsider the pace of future rate increases."
-            }
-          ],
-          "endpoint": "Federal Reserve policy",
-          "strength": "speculative"
-        },
-        {
-          "channel": "substitution",
-          "links": [
+              "plain": "Fed rate hike expectations increase pressure on emerging markets.",
+              "detail": "Higher US rates attract capital flows away from emerging markets, increasing their borrowing costs and currency volatility."
+            },
             {
-              "plain": "Investors may shift from gold to higher-yielding assets.",
-              "detail": "As the opportunity cost of holding gold rises with higher rates, investors might prefer assets that offer better returns."
+              "plain": "Emerging market currencies may weaken further.",
+              "detail": "As investors seek higher yields in the US, emerging market currencies could face depreciation pressure."
             }
           ],
-          "endpoint": "Investment portfolios",
+          "endpoint": "Emerging market currencies",
           "strength": "strong"
         }
       ],
@@ -741,53 +731,53 @@
           "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "Gold prices are likely to continue falling as the dollar strengthens and rate hike expectations persist.",
-          "detail": "The combination of a strong dollar and rising interest rates makes gold less attractive, pressuring prices lower."
+          "plain": "Gold prices are likely to continue falling as the dollar remains strong and rate hikes loom.",
+          "detail": "With a robust dollar and the Fed's tightening stance, gold's appeal as a safe-haven asset diminishes, pushing prices lower."
         },
         {
           "assetClass": "fx",
-          "instrument": "US Dollar Index",
-          "direction": "up",
-          "magnitude": "1 to 2%",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "The US dollar is expected to strengthen further as rate hike expectations solidify.",
-          "detail": "The anticipation of higher US interest rates relative to other countries supports continued dollar appreciation."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "US exporters",
+          "instrument": "Emerging market currencies",
           "direction": "down",
-          "magnitude": "1 to 3%",
+          "magnitude": "1 to 2%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "US exporters might face pressure as a stronger dollar makes their products less competitive abroad.",
-          "detail": "A rising dollar increases the cost of US goods for foreign buyers, potentially reducing sales and impacting company earnings."
+          "plain": "Emerging market currencies might weaken as capital flows to the US.",
+          "detail": "The prospect of higher US rates draws capital away from emerging markets, pressuring their currencies to depreciate."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US Treasury yields may rise as expectations for a Fed rate hike increase.",
+          "detail": "Anticipation of tighter monetary policy could lead to a sell-off in Treasuries, pushing yields higher."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may not fully appreciate how a sustained strong dollar could dampen US economic growth, which could lead to a reassessment of the Fed's rate hike trajectory.",
-        "detail": "The market may underestimate the potential for a strong dollar to slow US exports and corporate earnings, which could ultimately influence the Fed's policy decisions."
+        "plain": "Investors may underestimate the impact of a stronger dollar on US corporate earnings, especially for companies with significant international exposure.",
+        "detail": "The market might not fully price in the negative earnings impact on US multinationals due to a stronger dollar, which reduces foreign revenue when converted back to USD."
       },
       "falsifiers": [
-        "A significant weakening of the dollar",
-        "A dovish shift in Fed communication",
-        "Stronger-than-expected US economic data"
+        "The Fed signals a pause in rate hikes.",
+        "The US dollar weakens unexpectedly.",
+        "Gold demand surges due to geopolitical tensions."
       ],
       "tradeExpression": [
         {
           "idea": "Short Gold",
-          "plain": "Sell gold futures to profit from continued price declines due to dollar strength and rate hikes.",
-          "instrument": "Gold futures",
-          "risk": "A reversal in dollar strength or a dovish Fed pivot could lead to gold price recovery."
+          "plain": "Sell gold futures to profit from expected continued price declines.",
+          "instrument": "Futures",
+          "risk": "If the dollar weakens or the Fed changes its rate hike stance, gold prices could rebound."
         }
       ],
       "watchNext": [
-        "Federal Reserve meeting minutes",
-        "US non-farm payrolls data",
-        "US CPI inflation report"
+        "Upcoming Fed meeting and statements",
+        "US inflation data releases",
+        "Emerging market central bank responses"
       ],
       "glossary": [
         {
@@ -799,7 +789,7 @@
     }
   ],
   "diagnostics": {
-    "articlesIngested": 160,
+    "articlesIngested": 161,
     "clustersConsidered": 25,
     "feeds": [
       {
@@ -808,7 +798,7 @@
         "ok": true,
         "parsed": 20,
         "fresh": 0,
-        "ms": 244,
+        "ms": 106,
         "error": null
       },
       {
@@ -817,7 +807,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 0,
-        "ms": 83,
+        "ms": 76,
         "error": null
       },
       {
@@ -826,7 +816,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 2,
-        "ms": 476,
+        "ms": 479,
         "error": null
       },
       {
@@ -835,7 +825,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 597,
+        "ms": 765,
         "error": "HTTP 404"
       },
       {
@@ -844,7 +834,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 425,
+        "ms": 200,
         "error": "HTTP 404"
       },
       {
@@ -853,7 +843,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 306,
+        "ms": 106,
         "error": "HTTP 403"
       },
       {
@@ -862,7 +852,7 @@
         "ok": true,
         "parsed": 27,
         "fresh": 0,
-        "ms": 491,
+        "ms": 222,
         "error": null
       },
       {
@@ -871,7 +861,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 268,
+        "ms": 111,
         "error": null
       },
       {
@@ -880,7 +870,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 0,
-        "ms": 273,
+        "ms": 113,
         "error": null
       },
       {
@@ -889,7 +879,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 0,
-        "ms": 273,
+        "ms": 117,
         "error": null
       },
       {
@@ -898,7 +888,7 @@
         "ok": true,
         "parsed": 61,
         "fresh": 23,
-        "ms": 268,
+        "ms": 114,
         "error": null
       },
       {
@@ -907,7 +897,7 @@
         "ok": true,
         "parsed": 70,
         "fresh": 15,
-        "ms": 274,
+        "ms": 115,
         "error": null
       },
       {
@@ -916,7 +906,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 309,
+        "ms": 132,
         "error": "HTTP 404"
       },
       {
@@ -924,8 +914,8 @@
         "name": "CNBC",
         "ok": true,
         "parsed": 30,
-        "fresh": 24,
-        "ms": 419,
+        "fresh": 25,
+        "ms": 380,
         "error": null
       },
       {
@@ -934,7 +924,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 1,
-        "ms": 429,
+        "ms": 367,
         "error": null
       },
       {
@@ -943,7 +933,7 @@
         "ok": true,
         "parsed": 12,
         "fresh": 12,
-        "ms": 969,
+        "ms": 831,
         "error": null
       },
       {
@@ -952,7 +942,7 @@
         "ok": true,
         "parsed": 56,
         "fresh": 11,
-        "ms": 321,
+        "ms": 234,
         "error": null
       },
       {
@@ -961,7 +951,7 @@
         "ok": true,
         "parsed": 39,
         "fresh": 28,
-        "ms": 323,
+        "ms": 219,
         "error": null
       },
       {
@@ -970,7 +960,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 4,
-        "ms": 372,
+        "ms": 276,
         "error": null
       },
       {
@@ -979,7 +969,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 390,
+        "ms": 279,
         "error": null
       },
       {
@@ -988,7 +978,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 366,
+        "ms": 282,
         "error": null
       },
       {
@@ -997,7 +987,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 2917,
+        "ms": 2277,
         "error": "HTTP 404"
       },
       {
@@ -1006,7 +996,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 377,
+        "ms": 281,
         "error": null
       }
     ],
@@ -1015,14 +1005,14 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 521,
+        "ms": 733,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
         "ok": false,
         "count": 0,
-        "ms": 115,
+        "ms": 96,
         "error": "no rows"
       },
       {
@@ -1035,11 +1025,11 @@
     ],
     "usage": {
       "calls": 6,
-      "inputTokens": 12568,
-      "outputTokens": 5770,
-      "estimatedCostUsd": 0.0891
+      "inputTokens": 12588,
+      "outputTokens": 5824,
+      "estimatedCostUsd": 0.0897
     },
-    "runtimeMs": 29419
+    "runtimeMs": 31282
   },
   "scorecardSummary": {
     "total": 33,
