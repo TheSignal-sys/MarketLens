@@ -1,0 +1,1116 @@
+{
+  "version": 1,
+  "date": "2026-11-18",
+  "dateLabel": "Wednesday, 18 November 2026",
+  "generatedAt": "2026-11-18T13:06:50.503Z",
+  "model": "openai/gpt-4o",
+  "marketRead": {
+    "headline": "Rate hike expectations and geopolitical tensions dominate",
+    "body": "Gold prices are falling sharply as expectations of a US rate hike strengthen, impacting commodities and currency markets. Meanwhile, geopolitical tensions escalate with Iran's attacks on Kuwait and Bahrain, which could disrupt oil supply and affect energy prices. European chip stocks are gaining momentum following Nvidia's strong results, indicating a potential shift in tech sector sentiment.",
+    "regime": "rate hike expectations and geopolitical tensions"
+  },
+  "snapshot": {
+    "quotes": [],
+    "report": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 620,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 235,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 1,
+        "error": "no rows"
+      }
+    ],
+    "fetchedAt": "2026-11-18T13:06:27.004Z"
+  },
+  "stories": [
+    {
+      "id": "2026-11-18-gold-down-2-5-on-firmer-dollar-rate-hike-bets",
+      "rank": 1,
+      "editorNote": "Gold's decline due to rate hike expectations affects multiple asset classes and indicates a significant market shift.",
+      "materiality": {
+        "score": 68.4,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 8.9
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "rate hike",
+          "gold",
+          "dollar"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/commodities-futures/gold-treads-water-as-fed-dollar-keep-weighing-3f6439e8?mod=rss_markets_main",
+          "title": "Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets"
+        }
+      ],
+      "headlines": [
+        "Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets"
+      ],
+      "newestAt": "2026-11-18T09:09:00.000Z",
+      "headline": "Gold Falls on Dollar Strength and Fed Rate Hike Expectations",
+      "standfirst": "Gold prices dropped due to a stronger dollar and anticipated Fed rate hikes.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some rate hikes, but the extent of the dollar's strength was underestimated.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Gold prices fell by 2.5%, reaching their lowest in over a year, as the dollar strengthened and investors expected more interest-rate hikes from the Federal Reserve.",
+        "whyItMatters": "Gold's decline signals a shift in market sentiment towards riskier assets and impacts currencies, bonds, and equities.",
+        "detail": "The strengthening dollar and expectations of further rate hikes have pressured gold prices, indicating a shift towards higher-yielding assets."
+      },
+      "chains": [
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Higher interest rates make bonds more attractive.",
+              "detail": "As the Fed signals more rate hikes, the yield on government bonds increases, making them more appealing compared to non-yielding assets like gold."
+            },
+            {
+              "plain": "Investors move from gold to bonds.",
+              "detail": "With rising bond yields, investors reallocate funds from gold to bonds, seeking higher returns."
+            }
+          ],
+          "endpoint": "bond markets",
+          "strength": "strong"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "A stronger dollar makes US exports more expensive.",
+              "detail": "As the dollar appreciates, US goods become pricier abroad, potentially reducing export competitiveness."
+            },
+            {
+              "plain": "Foreign companies may see reduced US sales.",
+              "detail": "Non-US companies exporting to the US may face lower demand as their products become relatively cheaper compared to US goods."
+            }
+          ],
+          "endpoint": "foreign exporters",
+          "strength": "moderate"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors shift from gold to other commodities.",
+              "detail": "With gold under pressure, investors may look to other commodities like oil or industrial metals for returns."
+            },
+            {
+              "plain": "Prices of alternative commodities may rise.",
+              "detail": "Increased demand for alternative commodities can drive their prices up as investors seek better returns."
+            }
+          ],
+          "endpoint": "commodity markets",
+          "strength": "speculative"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "Gold",
+          "direction": "down",
+          "magnitude": "2% to 3%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Gold is likely to continue its decline as rate hike expectations persist.",
+          "detail": "With the Fed's hawkish stance, gold faces ongoing pressure as investors prefer higher-yielding assets."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US Treasury yields are expected to rise as investors anticipate rate hikes.",
+          "detail": "The expectation of further Fed rate increases is likely to push Treasury yields higher as investors adjust their portfolios."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "US Dollar Index",
+          "direction": "up",
+          "magnitude": "0.5% to 1%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "The dollar is expected to strengthen further as rate hike expectations grow.",
+          "detail": "The prospect of higher US interest rates supports the dollar, attracting foreign investment and boosting its value."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "While the focus is on gold and the dollar, the impact on emerging markets could be significant as they face higher borrowing costs and currency pressures.",
+        "detail": "Emerging markets could experience capital outflows and currency depreciation as investors seek safer, higher-yielding US assets."
+      },
+      "falsifiers": [
+        "The Fed signals a pause or reduction in rate hikes.",
+        "Unexpected geopolitical events that weaken the dollar.",
+        "A sudden surge in gold demand from central banks or large investors."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short Gold",
+          "plain": "Sell gold futures as rate hike expectations continue to pressure prices.",
+          "instrument": "Sell gold futures",
+          "risk": "A reversal in Fed policy or a geopolitical crisis could drive gold prices higher."
+        }
+      ],
+      "watchNext": [
+        "Upcoming Federal Reserve meetings and statements",
+        "US inflation and employment data releases",
+        "Geopolitical developments impacting currency markets"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-18-iran-attacks-kuwait-and-bahrain-further-escalating-fight-ove",
+      "rank": 2,
+      "editorNote": "Iran's attacks could have lasting effects on oil prices and regional stability, impacting global markets.",
+      "materiality": {
+        "score": 56.1,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 16.2,
+          "recency": 9.5
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "strait",
+          "strike",
+          "natural gas"
+        ]
+      },
+      "sources": [
+        "WSJ World"
+      ],
+      "links": [
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/world/middle-east/iran-attacks-kuwait-and-bahrain-further-escalating-fight-over-strait-08f3a436?mod=rss_worldnews",
+          "title": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait"
+        }
+      ],
+      "headlines": [
+        "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait"
+      ],
+      "newestAt": "2026-11-18T11:17:00.000Z",
+      "headline": "Oil Prices Surge as Iran Attacks Raise Supply Concerns",
+      "standfirst": "Iran's attacks on Kuwait and Bahrain escalate tensions in the Strait of Hormuz.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The initial spike in oil prices reflects immediate supply concerns, but further escalation risks are not fully priced.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Global",
+          "Middle East"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Iran attacked Kuwait and Bahrain, escalating tensions over the Strait of Hormuz. This follows an earlier attack on a natural gas tanker.",
+        "whyItMatters": "The Strait of Hormuz is a critical chokepoint for global oil supply. Disruptions here can lead to significant fluctuations in oil prices.",
+        "detail": "The Strait of Hormuz sees a significant portion of the world's oil transit. Any military escalation threatens this vital supply route, impacting global oil markets."
+      },
+      "chains": [
+        {
+          "channel": "supply-shock",
+          "links": [
+            {
+              "plain": "Oil supply concerns push prices higher.",
+              "detail": "Market fears of disrupted oil flows through the Strait of Hormuz lead to a spike in crude prices."
+            },
+            {
+              "plain": "Higher oil prices increase inflation expectations.",
+              "detail": "Rising crude costs feed into broader inflation metrics, affecting consumer prices globally."
+            }
+          ],
+          "endpoint": "global consumers and businesses",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may delay rate cuts due to inflation fears.",
+              "detail": "With inflationary pressures from rising oil prices, central banks could hold off on easing monetary policy."
+            }
+          ],
+          "endpoint": "central banks",
+          "strength": "moderate"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "Oil-exporting currencies strengthen.",
+              "detail": "Currencies of countries that export oil, like the Canadian dollar, appreciate as oil prices rise."
+            }
+          ],
+          "endpoint": "oil-exporting countries",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "Brent crude oil",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Oil prices are likely to rise significantly due to supply concerns.",
+          "detail": "The immediate risk to oil supply through the Strait of Hormuz is likely to push Brent crude prices up sharply."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "Canadian dollar",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The Canadian dollar could strengthen as oil prices rise.",
+          "detail": "As an oil-exporting nation, Canada's currency benefits from higher oil prices, leading to appreciation against major peers."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Yields on US Treasuries may rise as inflation expectations increase.",
+          "detail": "Higher oil prices could lead to increased inflation expectations, prompting a rise in long-term Treasury yields."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the potential for prolonged conflict to disrupt oil supplies for an extended period, which could lead to sustained higher prices.",
+        "detail": "The market may not fully price in the risk of a protracted geopolitical conflict, which could cause long-term disruptions in oil supply and sustained price increases."
+      },
+      "falsifiers": [
+        "A quick de-escalation of tensions in the Strait of Hormuz",
+        "Increased oil production from other regions offsetting supply concerns"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long Brent crude",
+          "plain": "Buy Brent crude oil futures to profit from expected price increases due to supply disruptions.",
+          "instrument": "Brent crude futures",
+          "risk": "A resolution to the conflict could lead to a rapid decline in oil prices."
+        }
+      ],
+      "watchNext": [
+        "OPEC's response to the supply disruption",
+        "Further military developments in the Strait of Hormuz"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-18-european-chip-stocks-rise-after-strong-nvidia-results",
+      "rank": 3,
+      "editorNote": "Nvidia's strong results are boosting European chip stocks, suggesting a broader tech sector impact.",
+      "materiality": {
+        "score": 64,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 9
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "repo",
+          "chip",
+          "nvidia",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/nikkei-rises-1-0-led-by-chip-ai-stocks-b486ab61?mod=rss_markets_main",
+          "title": "European Chip Stocks Rise After Strong Nvidia Results"
+        }
+      ],
+      "headlines": [
+        "European Chip Stocks Rise After Strong Nvidia Results"
+      ],
+      "newestAt": "2026-11-18T09:31:00.000Z",
+      "headline": "European Chip Stocks Gain on Nvidia's Strong Results",
+      "standfirst": "Shares of European chip companies rose after Nvidia reported strong earnings.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated strong results from Nvidia, but the extent of the impact on European chip stocks was not fully expected.",
+        "persistence": "days",
+        "regionFocus": [
+          "Europe",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Nvidia announced strong earnings, which led to a rise in European chip stocks. Investors are optimistic about the broader tech sector's performance.",
+        "whyItMatters": "Nvidia's results indicate robust demand for chips, which is positive for the semiconductor industry.",
+        "detail": "Nvidia's earnings beat expectations, highlighting strong demand in AI and data centers, which lifted sentiment across the semiconductor sector."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Nvidia's strong earnings boost confidence in chip demand.",
+              "detail": "Nvidia's results signal robust chip demand, enhancing revenue expectations for semiconductor firms."
+            },
+            {
+              "plain": "European chip stocks rise as investors expect higher profits.",
+              "detail": "European semiconductor firms see share price gains as market anticipates improved earnings driven by Nvidia's upbeat outlook."
+            }
+          ],
+          "endpoint": "European chip companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors shift focus to other tech stocks.",
+              "detail": "Following Nvidia's results, investors rotate into tech stocks, expecting similar earnings strength."
+            }
+          ],
+          "endpoint": "European tech sector",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "European chip companies",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Shares of European chip companies are likely to rise as investors react to Nvidia's positive earnings.",
+          "detail": "The strong earnings report from Nvidia suggests increased demand for semiconductors, lifting European chip stocks by 2 to 4% over the next few days."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "European tech sector",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The broader European tech sector could see gains as investors expect strong earnings.",
+          "detail": "With Nvidia's results boosting sentiment, European tech stocks may rise by 1 to 2% as investors anticipate similar earnings strength."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "European chip company bonds",
+          "direction": "tighter",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads for European chip companies may tighten as earnings expectations improve.",
+          "detail": "Improved earnings outlook for European semiconductor firms could lead to a 5 to 10 basis point tightening in credit spreads as credit risk perceptions decrease."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might underestimate the potential for sustained demand in AI-driven applications, which could further boost semiconductor stocks beyond the initial reaction.",
+        "detail": "The market may not fully appreciate the long-term growth potential in AI and data centers, which could drive further upside in semiconductor equities."
+      },
+      "falsifiers": [
+        "Weak guidance from other tech firms",
+        "Unexpected macroeconomic downturn",
+        "Regulatory challenges in the semiconductor industry"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long European Chip Stocks",
+          "plain": "Buy shares in European semiconductor companies, expecting them to benefit from strong demand signals.",
+          "instrument": "Cash equities or ETF focused on European semiconductors",
+          "risk": "A slowdown in tech demand or adverse regulatory changes could hurt performance."
+        }
+      ],
+      "watchNext": [
+        "Earnings reports from other major tech companies",
+        "Central bank policy announcements",
+        "Economic data releases impacting tech demand"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-18-fed-s-waller-says-central-bank-may-need-to-shock-people-with",
+      "rank": 4,
+      "editorNote": "The Fed's potential rate hike could shock markets, affecting rates and investor sentiment.",
+      "materiality": {
+        "score": 60.5,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 20,
+          "recency": 10
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "rate hike",
+          "inflation"
+        ]
+      },
+      "sources": [
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+          "title": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike"
+        }
+      ],
+      "headlines": [
+        "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike"
+      ],
+      "newestAt": "2026-11-18T12:58:59.000Z",
+      "headline": "Fed's Rate Hike Warning Could Jolt Markets and Raise Borrowing Costs",
+      "standfirst": "Fed's Waller hints at a potential half-point rate hike to combat persistent inflation.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Markets have anticipated some tightening, but a half-point hike is more aggressive than expected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Federal Reserve Governor Waller suggested that the central bank might need to raise interest rates by half a percentage point to tackle inflation. This is above the usual quarter-point adjustments.",
+        "whyItMatters": "A larger-than-expected rate hike could increase borrowing costs and impact consumer spending and investment.",
+        "detail": "Waller's comments indicate the Fed is considering a more aggressive monetary policy stance to curb inflation, which could lead to higher interest rates across various financial instruments."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "The Fed might raise rates more aggressively.",
+              "detail": "Waller's comments suggest a potential shift to a 50 basis point increase, altering the expected path of Fed policy."
+            },
+            {
+              "plain": "Investors adjust their expectations for future rate hikes.",
+              "detail": "Market participants may reprice the likelihood of more aggressive rate hikes in upcoming FOMC meetings."
+            }
+          ],
+          "endpoint": "US interest rate markets",
+          "strength": "strong"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Government bond yields rise as markets anticipate higher rates.",
+              "detail": "Expectations of a 50 basis point hike push Treasury yields higher, reflecting increased borrowing costs."
+            },
+            {
+              "plain": "Higher yields make borrowing more expensive for companies.",
+              "detail": "Rising yields increase the cost of capital, impacting corporate financing and investment decisions."
+            }
+          ],
+          "endpoint": "corporate borrowing costs",
+          "strength": "moderate"
+        },
+        {
+          "channel": "credit",
+          "links": [
+            {
+              "plain": "Credit spreads widen as borrowing costs rise.",
+              "detail": "Increased Treasury yields lead to wider credit spreads, reflecting greater risk premiums on corporate debt."
+            },
+            {
+              "plain": "Companies with high debt face increased financial pressure.",
+              "detail": "Firms with significant leverage see higher interest expenses, potentially impacting their profitability."
+            }
+          ],
+          "endpoint": "highly leveraged companies",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Expect US 10-year Treasury yields to rise as markets price in a larger rate hike.",
+          "detail": "A potential 50 basis point hike pushes yields higher as investors adjust their expectations for future monetary policy."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "US corporate bonds",
+          "direction": "wider",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Corporate bond spreads are likely to widen due to higher expected borrowing costs.",
+          "detail": "As Treasury yields rise, credit spreads may widen to reflect increased risk premiums on corporate debt."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US stock market",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US stocks may face pressure as higher rates impact corporate profitability.",
+          "detail": "Increased borrowing costs and higher discount rates could weigh on equity valuations, particularly for growth stocks."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "The market might not fully appreciate the impact of a 50 basis point hike on consumer spending. Higher borrowing costs could significantly dampen consumer demand, affecting sectors reliant on discretionary spending.",
+        "detail": "A more aggressive rate hike could lead to a sharper-than-expected decline in consumer spending, particularly affecting retail and consumer discretionary sectors."
+      },
+      "falsifiers": [
+        "If inflation data shows a significant decline, reducing the need for aggressive rate hikes.",
+        "If Fed officials signal a return to more moderate rate increases.",
+        "If bond yields do not rise as expected, indicating market scepticism about the Fed's commitment."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short US equities",
+          "plain": "Sell US equities to profit from potential declines due to higher rates impacting corporate profits.",
+          "instrument": "futures",
+          "risk": "The main risk is that the Fed does not follow through with aggressive hikes, or inflation falls unexpectedly."
+        }
+      ],
+      "watchNext": [
+        "Upcoming US inflation data releases.",
+        "Statements from other Fed officials.",
+        "FOMC meeting minutes and policy announcements."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-18-ai-borrowing-binge-has-historic-parallels-with-subprime-bubb",
+      "rank": 5,
+      "editorNote": "The ECB's warning on AI borrowing highlights potential risks in credit markets, drawing parallels to past financial bubbles.",
+      "materiality": {
+        "score": 62.6,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 18.7,
+          "recency": 8.9
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "ecb",
+          "balance sheet",
+          "dollar"
+        ]
+      },
+      "sources": [
+        "Financial Times"
+      ],
+      "links": [
+        {
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/d16475ce-efce-4dc1-b5a3-2f7c79e9dea9?syn-25a6b1a6=1",
+          "title": "AI borrowing binge has ‘historic parallels’ with subprime bubble, says ECB"
+        }
+      ],
+      "headlines": [
+        "AI borrowing binge has ‘historic parallels’ with subprime bubble, says ECB"
+      ],
+      "newestAt": "2026-11-18T09:00:07.000Z",
+      "headline": "ECB Warns AI Borrowing Could Mirror Subprime Crisis Risks",
+      "standfirst": "The ECB warns that AI companies' borrowing patterns may echo past financial bubbles.",
+      "classification": {
+        "eventType": "regulatory",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market has anticipated some risk in tech borrowing, but not the full extent of ECB's warning.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The European Central Bank has warned that the borrowing practices of AI companies could lead to risks similar to the subprime mortgage crisis. These companies are engaging in large off-balance sheet commitments.",
+        "whyItMatters": "Investors should be cautious as this could lead to increased volatility in credit markets, affecting global financial stability.",
+        "detail": "The ECB's warning highlights the potential systemic risks posed by the substantial off-balance sheet liabilities of AI companies, reminiscent of pre-2008 subprime practices."
+      },
+      "chains": [
+        {
+          "channel": "credit",
+          "links": [
+            {
+              "plain": "AI companies may face higher borrowing costs.",
+              "detail": "As lenders reassess risk, AI firms could see credit spreads widen, increasing their cost of capital."
+            },
+            {
+              "plain": "Higher costs may reduce AI investment and expansion.",
+              "detail": "Increased borrowing costs can constrain AI firms' ability to finance growth, impacting their earnings potential."
+            }
+          ],
+          "endpoint": "AI technology sector",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks might tighten regulations on tech borrowing.",
+              "detail": "Regulators could impose stricter capital requirements on tech firms, aiming to mitigate systemic risks."
+            },
+            {
+              "plain": "Tighter regulations could slow tech sector growth.",
+              "detail": "Regulatory constraints may limit the ability of tech companies to leverage debt for expansion, affecting sector growth rates."
+            }
+          ],
+          "endpoint": "Global tech sector",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "credit",
+          "instrument": "AI company bonds",
+          "direction": "wider",
+          "magnitude": "20 to 30 basis points",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "AI company bonds may see their yields increase as borrowing costs rise.",
+          "detail": "Credit spreads for AI companies are likely to widen as investors demand higher returns for perceived risk."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Global tech stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Tech stocks could fall as regulatory pressures mount and borrowing costs rise.",
+          "detail": "Increased regulatory scrutiny and higher capital costs may lead to lower earnings forecasts, pressuring stock prices."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "European government bonds",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 2,
+          "order": 2,
+          "plain": "Government bond yields may fall as investors seek safer assets.",
+          "detail": "Flight-to-quality dynamics could push yields lower as investors move away from riskier tech debt."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the ripple effects of tighter credit conditions on smaller tech firms, which could lead to broader tech sector underperformance.",
+        "detail": "The market might not fully price in the impact of reduced credit availability on smaller, growth-dependent tech companies, potentially leading to sector-wide downgrades."
+      },
+      "falsifiers": [
+        "AI companies successfully refinance debt at current rates.",
+        "Regulators opt for lenient measures instead of strict regulations.",
+        "Tech sector earnings remain robust despite higher borrowing costs."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short AI company bonds",
+          "plain": "Sell AI company bonds to profit from expected widening credit spreads.",
+          "instrument": "short AI corporate bond futures",
+          "risk": "AI companies manage to secure alternative financing, stabilising spreads."
+        }
+      ],
+      "watchNext": [
+        "ECB policy meetings for regulatory updates",
+        "AI company earnings releases for financing strategies",
+        "Credit market reports on tech sector borrowing"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "credit spread",
+          "plain": "The difference in yield between a corporate bond and a government bond of the same maturity, reflecting credit risk."
+        },
+        {
+          "term": "off-balance sheet",
+          "plain": "Financial obligations not recorded on a company's balance sheet, often used to reduce apparent debt levels."
+        }
+      ],
+      "confidence": 3
+    }
+  ],
+  "diagnostics": {
+    "articlesIngested": 218,
+    "clustersConsidered": 25,
+    "feeds": [
+      {
+        "id": "fed",
+        "name": "Federal Reserve",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 0,
+        "ms": 114,
+        "error": null
+      },
+      {
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 0,
+        "ms": 117,
+        "error": null
+      },
+      {
+        "id": "ecb",
+        "name": "European Central Bank",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 3,
+        "ms": 438,
+        "error": null
+      },
+      {
+        "id": "boe",
+        "name": "Bank of England",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 795,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 394,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 425,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 28,
+        "fresh": 1,
+        "ms": 516,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 651,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 645,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 714,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 34,
+        "ms": 708,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 72,
+        "fresh": 34,
+        "ms": 734,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 823,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 30,
+        "ms": 911,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 5,
+        "ms": 915,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 11,
+        "fresh": 11,
+        "ms": 1417,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 43,
+        "fresh": 17,
+        "ms": 1165,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": true,
+        "parsed": 40,
+        "fresh": 33,
+        "ms": 934,
+        "error": null
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 997,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 992,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 981,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 1114,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 991,
+        "error": null
+      }
+    ],
+    "marketProviders": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 620,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 235,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 1,
+        "error": "no rows"
+      }
+    ],
+    "usage": {
+      "calls": 6,
+      "inputTokens": 12467,
+      "outputTokens": 6024,
+      "estimatedCostUsd": 0.0914
+    },
+    "runtimeMs": 25862
+  },
+  "scorecardSummary": {
+    "total": 33,
+    "open": 18,
+    "flat": 2,
+    "hits": 4,
+    "misses": 9,
+    "settled": 13,
+    "hitRate": 30.8,
+    "byClass": {
+      "rates": {
+        "hits": 1,
+        "total": 2,
+        "rate": 50
+      },
+      "commodities": {
+        "hits": 1,
+        "total": 3,
+        "rate": 33.3
+      },
+      "fx": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "vol": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "credit": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "equities": {
+        "hits": 0,
+        "total": 5,
+        "rate": 0
+      }
+    },
+    "byConviction": {
+      "3": {
+        "hits": 2,
+        "total": 8,
+        "rate": 25
+      },
+      "4": {
+        "hits": 2,
+        "total": 5,
+        "rate": 40
+      }
+    }
+  }
+}
