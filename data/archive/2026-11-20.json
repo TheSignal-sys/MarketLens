@@ -2,43 +2,29 @@
   "version": 1,
   "date": "2026-11-20",
   "dateLabel": "Friday, 20 November 2026",
-  "generatedAt": "2026-11-20T08:49:15.943Z",
+  "generatedAt": "2026-11-20T13:57:28.422Z",
   "model": "openai/gpt-4o",
   "marketRead": {
-    "headline": "AI Selloff and Inflation Concerns Dominate Markets",
-    "body": "The AI sector's ongoing selloff, highlighted by the underwhelming Anthropic IPO, is dragging down global equities and impacting market sentiment. Concurrently, inflation fears are resurfacing as oil's influence on bond markets wanes, contributing to a rise in US Treasury yields. Investors are navigating a market environment marked by heightened volatility and shifting inflation expectations.",
-    "regime": "inflation concerns with tech sector volatility"
+    "headline": "AI selloff and inflation fears dominate markets",
+    "body": "The AI sector is under pressure as Nvidia's turmoil and a broader selloff in tech stocks weigh on global equities. Inflation concerns are spreading, affecting bond markets and commodities like oil and gold. Investors are reassessing risk, with potential shifts towards safer assets amid persistent volatility.",
+    "regime": "risk-off sentiment with inflation concerns"
   },
   "snapshot": {
-    "quotes": [
-      {
-        "key": "us10y",
-        "label": "US 10Y",
-        "group": "rates",
-        "unit": "pct",
-        "value": 5.052,
-        "display": "5.05%",
-        "change": -0.10200000000000031,
-        "changePct": -1.9790454016298082,
-        "changeDisplay": "-10bp",
-        "asOf": "2026-11-19",
-        "provider": "yahoo"
-      }
-    ],
+    "quotes": [],
     "report": [
       {
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 449,
+        "ms": 627,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
-        "ok": true,
-        "count": 1,
-        "ms": 180,
-        "error": null
+        "ok": false,
+        "count": 0,
+        "ms": 302,
+        "error": "no rows"
       },
       {
         "provider": "fred",
@@ -48,187 +34,21 @@
         "error": "no rows"
       }
     ],
-    "fetchedAt": "2026-11-20T08:48:28.690Z"
+    "fetchedAt": "2026-11-20T13:57:02.201Z"
   },
   "stories": [
     {
-      "id": "2026-11-20-asian-stocks-headed-for-worst-week-since-2020-as-anthropic-i",
-      "rank": 1,
-      "editorNote": "The AI stock rout is affecting multiple asset classes, with persistent implications for market sentiment.",
-      "materiality": {
-        "score": 73.9,
-        "components": {
-          "corroboration": 13,
-          "authority": 13,
-          "breadth": 18,
-          "salience": 20,
-          "recency": 9.9
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "spread",
-          "rout",
-          "ipo",
-          "nvidia",
-          "euro"
-        ]
-      },
-      "sources": [
-        "Guardian Business"
-      ],
-      "links": [
-        {
-          "name": "Guardian Business",
-          "url": "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news",
-          "title": "Asian stocks headed for worst week since 2020 as Anthropic IPO fails to end AI rout – business live"
-        }
-      ],
-      "headlines": [
-        "Asian stocks headed for worst week since 2020 as Anthropic IPO fails to end AI rout – business live"
-      ],
-      "newestAt": "2026-11-20T08:36:32.000Z",
-      "headline": "AI Stock Rout Extends, Pressures Global Markets",
-      "standfirst": "Asian and European stocks tumble as AI sector struggles, impacting global sentiment.",
-      "classification": {
-        "eventType": "corporate",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The AI sector downturn was anticipated, but the extent of the spread to broader markets was not fully priced in.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "Global",
-          "Europe",
-          "Asia"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Asian stocks are having their worst week since 2020, driven by a sell-off in AI stocks. The European market is also down, with the Stoxx Europe 600 dropping 1% today.",
-        "whyItMatters": "Investors are concerned about the AI sector's outlook, which is affecting broader market sentiment and pushing global stocks lower.",
-        "detail": "The failure of the Anthropic IPO to stabilize AI stocks has led to a broader market sell-off, exacerbated by concerns about datacentre investments and leadership changes at Nvidia."
-      },
-      "chains": [
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "AI companies face reduced profits.",
-              "detail": "The AI sector is experiencing a downturn, which is expected to lower earnings projections for companies heavily invested in AI."
-            },
-            {
-              "plain": "Lower profits lead to stock sell-offs.",
-              "detail": "As earnings expectations decline, investors are selling off shares, causing a drop in stock prices."
-            }
-          ],
-          "endpoint": "equity investors",
-          "strength": "strong"
-        },
-        {
-          "channel": "correlation",
-          "links": [
-            {
-              "plain": "Tech stocks fall together.",
-              "detail": "The decline in AI stocks is causing a correlated sell-off in broader tech stocks as investors reassess risk."
-            },
-            {
-              "plain": "Broader market sentiment worsens.",
-              "detail": "The tech sector's struggles are spilling over into general market sentiment, leading to a wider sell-off."
-            }
-          ],
-          "endpoint": "global stock markets",
-          "strength": "moderate"
-        },
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "Central banks may reconsider rate hikes.",
-              "detail": "The market downturn could prompt central banks to pause or slow interest rate hikes to support economic stability."
-            },
-            {
-              "plain": "Interest rates might stabilize.",
-              "detail": "As central banks react to market volatility, interest rate expectations may stabilize, reducing bond yield fluctuations."
-            }
-          ],
-          "endpoint": "bond markets",
-          "strength": "speculative"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "equities",
-          "instrument": "Global technology stocks",
-          "direction": "down",
-          "magnitude": "2 to 4%",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Tech stocks are likely to continue falling as investor sentiment remains negative.",
-          "detail": "The ongoing sell-off in AI stocks is expected to drag down the broader technology sector, causing a significant decline in stock prices."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "down",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Bond yields may fall as central banks reassess interest rate policies.",
-          "detail": "The market uncertainty could lead to a flight to safety, pushing down Treasury yields as investors seek stable returns."
-        },
-        {
-          "assetClass": "credit",
-          "instrument": "High-yield corporate bonds",
-          "direction": "wider",
-          "magnitude": "10 to 20 basis points",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Credit spreads might widen as risk perceptions increase.",
-          "detail": "As the AI sector struggles, risk premiums on high-yield bonds could rise, leading to wider credit spreads."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may underestimate the long-term impact of AI sector volatility on tech innovation and future earnings growth.",
-        "detail": "The current market focus on immediate stock declines may overlook the potential for prolonged impacts on tech sector innovation and profit margins."
-      },
-      "falsifiers": [
-        "AI stocks rebound strongly next week",
-        "Central banks accelerate rate hikes despite market volatility",
-        "Tech sector earnings show unexpected resilience"
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Short Global Tech ETF",
-          "plain": "Sell a global tech ETF to profit from continued sector weakness.",
-          "instrument": "Sell short QQQ or similar tech-focused ETF",
-          "risk": "Tech sector could recover faster than expected, leading to losses."
-        }
-      ],
-      "watchNext": [
-        "Upcoming central bank meetings",
-        "Earnings reports from major tech companies",
-        "Economic data releases impacting market sentiment"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
       "id": "2026-11-20-oil-loses-grip-on-bond-markets-as-inflation-virus-spreads",
-      "rank": 2,
-      "editorNote": "Inflation concerns are resurfacing, impacting rates and commodities, with lasting effects on bond markets.",
+      "rank": 1,
+      "editorNote": "The spread of inflation concerns is affecting multiple asset classes, including bonds and commodities, suggesting a significant shift in market sentiment.",
       "materiality": {
-        "score": 68.4,
+        "score": 67,
         "components": {
           "corroboration": 13,
           "authority": 13,
           "breadth": 13.5,
           "salience": 20,
-          "recency": 8.9
+          "recency": 7.5
         },
         "distinctSources": 1,
         "salienceTerms": [
@@ -252,52 +72,48 @@
         "Oil loses grip on bond markets as inflation ‘virus’ spreads"
       ],
       "newestAt": "2026-11-20T05:00:26.000Z",
-      "headline": "Oil and Bond Market Decoupling Fuels Inflation Concerns",
-      "standfirst": "The link between oil prices and bond yields has weakened as inflation worries grow.",
+      "headline": "Inflation Concerns Break Oil-Bond Correlation, Impacting Markets",
+      "standfirst": "The link between oil prices and bond yields has weakened as inflation fears spread.",
       "classification": {
         "eventType": "macro-data",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Markets have reacted to inflation concerns, but the full impact on bonds is still unfolding.",
+        "pricedInRationale": "Markets have reacted to inflation concerns, but the full impact on asset correlations is still unfolding.",
         "persistence": "weeks",
         "regionFocus": [
           "Global"
         ]
       },
       "whatHappened": {
-        "plain": "The close relationship between oil prices and bond yields has broken down. This is happening as inflation fears spread across markets.",
-        "whyItMatters": "Investors rely on these relationships to manage risk. A breakdown can lead to unexpected volatility.",
-        "detail": "The historical correlation between crude oil prices and government bond yields has diverged. Inflation concerns are driving this shift, affecting market expectations."
+        "plain": "The usual relationship between oil prices and bond yields has weakened. This change is due to growing inflation concerns affecting various asset classes.",
+        "whyItMatters": "Investors rely on asset correlations for hedging and risk management. A shift in these relationships can lead to unexpected market movements.",
+        "detail": "The decoupling of oil prices from bond yields suggests that inflation expectations are now driving yields more than commodity prices, altering traditional hedging strategies."
       },
       "chains": [
         {
           "channel": "correlation",
           "links": [
             {
-              "plain": "Oil prices no longer predict bond yields.",
-              "detail": "The historical correlation between oil prices and bond yields has weakened, reducing predictability."
+              "plain": "Oil prices no longer predict bond yield movements.",
+              "detail": "The historical positive correlation between crude oil prices and bond yields has weakened, indicating a shift in market drivers."
             },
             {
-              "plain": "Investors reassess risk models.",
-              "detail": "With correlation breakdown, investors must adjust risk models that relied on stable oil-bond relationships."
+              "plain": "Investors adjust portfolios due to changing correlations.",
+              "detail": "Funds that relied on oil-bond correlation for hedging are rebalancing, leading to increased volatility in both markets."
             }
           ],
-          "endpoint": "investment funds",
-          "strength": "strong"
+          "endpoint": "global bond markets",
+          "strength": "moderate"
         },
         {
           "channel": "policy-reaction",
           "links": [
             {
-              "plain": "Central banks may delay rate cuts.",
-              "detail": "Inflation concerns could lead central banks to postpone rate cuts, affecting monetary policy."
-            },
-            {
-              "plain": "Higher borrowing costs for businesses.",
-              "detail": "Delayed rate cuts mean businesses face higher borrowing costs, impacting investment decisions."
+              "plain": "Central banks may reassess interest rate paths.",
+              "detail": "With inflation concerns rising, central banks might delay rate cuts or consider hikes to manage inflation expectations."
             }
           ],
-          "endpoint": "corporate borrowers",
-          "strength": "moderate"
+          "endpoint": "central bank policy",
+          "strength": "strong"
         }
       ],
       "assetImpacts": [
@@ -305,70 +121,210 @@
           "assetClass": "rates",
           "instrument": "US 10-year Treasury yield",
           "direction": "up",
-          "magnitude": "5 to 10 basis points",
+          "magnitude": "10 to 20 basis points",
           "horizon": "weeks",
           "conviction": 4,
-          "order": 2,
-          "plain": "US bond yields may rise as inflation concerns persist.",
-          "detail": "As inflation remains a concern, the US 10-year yield could increase by 5 to 10 basis points over the coming weeks."
+          "order": 1,
+          "plain": "US bond yields are likely to rise as inflation concerns grow.",
+          "detail": "With inflation expectations driving yields, the US 10-year Treasury yield could see an increase of 10 to 20 basis points as investors demand higher returns."
         },
         {
-          "assetClass": "credit",
-          "instrument": "corporate bonds",
-          "direction": "wider",
-          "magnitude": "10 to 20 basis points",
+          "assetClass": "commodities",
+          "instrument": "Crude oil",
+          "direction": "mixed",
+          "magnitude": "1 to 2%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Corporate bond spreads may widen due to higher borrowing costs.",
-          "detail": "Delayed rate cuts and inflation fears could widen corporate bond spreads by 10 to 20 basis points."
+          "plain": "Oil prices may fluctuate as their link to bond yields weakens.",
+          "detail": "As the correlation with bond yields breaks down, oil prices might see increased volatility, moving within a 1 to 2% range."
         },
         {
           "assetClass": "equities",
-          "instrument": "energy sector stocks",
+          "instrument": "Global equities",
           "direction": "down",
           "magnitude": "2 to 4%",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Energy stocks might decline as oil loses its bond market influence.",
-          "detail": "With oil prices decoupling from bond yields, energy stocks could see a 2 to 4% drop."
+          "plain": "Global stocks could fall as inflation fears impact earnings expectations.",
+          "detail": "Rising bond yields and inflation concerns could pressure equity valuations, leading to a 2 to 4% decline in global stock indices."
         }
       ],
       "whatMarketMisses": {
-        "plain": "The market may underestimate the impact of sustained inflation on long-term borrowing costs and the broader economy.",
-        "detail": "Investors might not fully appreciate how persistent inflation could elevate long-term yields and dampen economic growth."
+        "plain": "Investors may underestimate the persistence of the decoupling between oil prices and bond yields, which could lead to prolonged volatility and mispricing in both markets.",
+        "detail": "The market might not fully appreciate the long-term implications of the broken oil-bond correlation, leading to sustained volatility and potential mispricing."
       },
       "falsifiers": [
-        "Oil prices and bond yields re-establish their correlation.",
-        "Inflation data shows a significant decline.",
-        "Central banks initiate unexpected rate cuts."
+        "A rapid decline in inflation expectations.",
+        "A re-establishment of the oil-bond yield correlation.",
+        "Central banks explicitly ruling out rate hikes."
       ],
       "tradeExpression": [
         {
-          "idea": "Short US Treasuries",
-          "plain": "Sell US Treasury futures to profit from rising yields due to inflation concerns.",
-          "instrument": "sell US 10-year Treasury futures",
-          "risk": "If inflation fears subside, yields could fall, leading to losses."
+          "idea": "Short global equities",
+          "plain": "Sell global equity indices to hedge against rising inflation concerns and potential earnings pressure.",
+          "instrument": "Futures on global equity indices",
+          "risk": "Equities could rally if inflation fears subside or if central banks signal accommodative policies."
         }
       ],
       "watchNext": [
-        "Upcoming US inflation reports",
-        "Central bank policy meetings",
-        "Oil market supply and demand data"
+        "Upcoming central bank meetings for interest rate guidance.",
+        "Inflation data releases in major economies.",
+        "Oil market supply and demand reports."
       ],
       "glossary": [
         {
           "term": "basis point",
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-20-x2018-nvidia-s-turmoil-has-me-spooked-should-i-sell-my-stock",
+      "rank": 2,
+      "editorNote": "Nvidia's issues are causing broader market uncertainty, prompting investors to reconsider their positions in equities and potentially shift to real estate.",
+      "materiality": {
+        "score": 66,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 17,
+          "recency": 9.5
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "cds",
+          "oil",
+          "nvidia"
+        ]
+      },
+      "sources": [
+        "MarketWatch"
+      ],
+      "links": [
+        {
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
+          "title": "&#x2018;Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate &#x2014; or ride out the storm?"
+        }
+      ],
+      "headlines": [
+        "&#x2018;Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate &#x2014; or ride out the storm?"
+      ],
+      "newestAt": "2026-11-20T12:00:00.000Z",
+      "headline": "Nvidia's struggles trigger market shift towards real estate",
+      "standfirst": "Nvidia's issues prompt investors to reconsider stocks, eyeing real estate instead.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market reacted to Nvidia's issues, but the broader impact on equities is still unfolding.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Nvidia is facing significant challenges, causing concern among investors. This has led to uncertainty in the stock market, with some considering moving investments to real estate.",
+        "whyItMatters": "Nvidia is a major player in the tech sector, and its troubles could signal broader issues in the market, affecting investor confidence.",
+        "detail": "Nvidia's operational or financial difficulties are creating volatility, prompting investors to reevaluate their equity positions and consider safer assets like real estate."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Nvidia's problems could hurt its profits.",
+              "detail": "Operational challenges or market conditions impacting Nvidia may lead to reduced revenue or increased costs, affecting its earnings."
+            },
+            {
+              "plain": "Tech sector stocks might drop as a result.",
+              "detail": "Investors may sell off tech stocks, fearing similar issues could arise in other companies, leading to a sector-wide decline."
+            }
+          ],
+          "endpoint": "Tech sector stocks",
+          "strength": "moderate"
         },
         {
-          "term": "spread",
-          "plain": "The difference in yield between two bonds, often indicating relative risk."
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors might shift from stocks to real estate.",
+              "detail": "As confidence in equities wavers, investors may seek the perceived stability of real estate investments."
+            },
+            {
+              "plain": "Real estate prices could rise due to increased demand.",
+              "detail": "Increased capital flow into real estate could drive up property prices, as more investors look for safe havens."
+            }
+          ],
+          "endpoint": "Real estate market",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Tech sector stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Tech stocks might fall as Nvidia's issues spread concern.",
+          "detail": "Nvidia's troubles could lead to a sell-off in tech stocks as investors anticipate similar problems across the sector."
         },
         {
-          "term": "yield",
-          "plain": "The income return on an investment, such as the interest or dividends received."
+          "assetClass": "real estate",
+          "instrument": "US real estate market",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Real estate prices may rise as investors seek stability.",
+          "detail": "With equities under pressure, investors might move funds into real estate, increasing demand and pushing prices higher."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "Corporate bonds of tech companies",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Tech company bond spreads could widen as risk perception grows.",
+          "detail": "As investors reassess risk in the tech sector, bond spreads may widen, reflecting increased credit risk."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might underestimate the potential for Nvidia's issues to affect consumer confidence in tech products, which could further impact sales across the industry.",
+        "detail": "The market may not fully price in the risk that Nvidia's struggles could dampen consumer sentiment towards tech products, potentially reducing demand and sales."
+      },
+      "falsifiers": [
+        "Nvidia resolves its issues quickly and reports strong earnings.",
+        "Tech sector stocks rebound despite Nvidia's problems.",
+        "Real estate prices remain stable or decline despite increased interest."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short tech stocks",
+          "plain": "Sell tech sector stocks to profit from potential declines due to Nvidia's issues.",
+          "instrument": "Short tech sector ETF",
+          "risk": "Tech stocks could rebound if Nvidia's problems are resolved quickly."
+        }
+      ],
+      "watchNext": [
+        "Nvidia's next earnings report",
+        "Real estate market data releases",
+        "Tech sector performance updates"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
         }
       ],
       "confidence": 3
@@ -376,15 +332,15 @@
     {
       "id": "2026-11-20-dollar-falls-modestly-as-ai-stock-selloff-weighs",
       "rank": 3,
-      "editorNote": "The dollar's movement in response to the AI selloff indicates broader market volatility.",
+      "editorNote": "The modest fall in the dollar due to the AI stock selloff indicates potential currency market impacts from the tech sector's volatility.",
       "materiality": {
-        "score": 66.4,
+        "score": 65,
         "components": {
           "corroboration": 13,
           "authority": 13,
           "breadth": 13.5,
           "salience": 17,
-          "recency": 9.9
+          "recency": 8.5
         },
         "distinctSources": 1,
         "salienceTerms": [
@@ -407,12 +363,12 @@
         "Dollar Falls Modestly as AI Stock Selloff Weighs"
       ],
       "newestAt": "2026-11-20T08:32:00.000Z",
-      "headline": "Dollar Weakens as AI Stock Selloff Sparks Market Volatility",
-      "standfirst": "The dollar dipped as Anthropic's IPO couldn't stop the AI stock downturn.",
+      "headline": "Dollar Dips as AI Stocks Slide Post-Anthropic IPO",
+      "standfirst": "The dollar fell slightly after AI stocks, including Anthropic, declined.",
       "classification": {
         "eventType": "corporate",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated volatility around the IPO, but the extent of the selloff was unexpected.",
+        "pricedInRationale": "Investors expected some volatility around the IPO, but the extent of the selloff was unexpected.",
         "persistence": "days",
         "regionFocus": [
           "US",
@@ -420,989 +376,208 @@
         ]
       },
       "whatHappened": {
-        "plain": "The dollar fell slightly after a significant selloff in U.S. AI stocks, despite Anthropic's record IPO. The IPO was expected to boost market confidence, but it failed to stop the decline.",
-        "whyItMatters": "Investors are concerned about the sustainability of high valuations in AI stocks, affecting broader market sentiment.",
-        "detail": "The dollar's decline reflects investor caution as AI stocks, despite a major IPO, continue to see selling pressure, raising concerns about valuations."
+        "plain": "The US dollar dropped slightly after a selloff in AI-related stocks, despite Anthropic's successful IPO. Investors were disappointed that the IPO did not stabilize the sector.",
+        "whyItMatters": "This matters because it shows how tech sector volatility can impact currency markets, potentially affecting global trade and investment flows.",
+        "detail": "The dollar's drop reflects investor sentiment shifting away from US assets due to perceived risks in the tech sector. The IPO was expected to boost confidence but failed to stop the decline."
       },
       "chains": [
         {
           "channel": "positioning",
           "links": [
             {
-              "plain": "Investors sold AI stocks, causing prices to drop.",
-              "detail": "Heavy selling in AI stocks led to a sharp decline in prices as investors adjusted positions."
+              "plain": "Investors sold AI stocks, causing a broader market selloff.",
+              "detail": "Heavy selling in AI stocks triggered broader market weakness as investors reduced exposure."
             },
             {
-              "plain": "The stock selloff reduced investor confidence in the market.",
-              "detail": "The decline in AI stocks shook investor confidence, leading to broader market caution."
+              "plain": "The selloff led to a weaker dollar as investors moved to safer assets.",
+              "detail": "The flight from riskier tech stocks to safer assets like bonds led to dollar selling."
             }
           ],
-          "endpoint": "equity investors",
-          "strength": "strong"
-        },
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "The dollar weakened as demand for U.S. assets fell.",
-              "detail": "With AI stocks under pressure, demand for U.S. assets, including the dollar, weakened."
-            }
-          ],
-          "endpoint": "currency traders",
+          "endpoint": "US dollar",
           "strength": "moderate"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "fx",
-          "instrument": "US Dollar Index",
-          "direction": "down",
-          "magnitude": "0.3% to 0.5%",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 1,
-          "plain": "The dollar is likely to weaken slightly as AI stock volatility affects investor confidence.",
-          "detail": "The dollar index could see a decline of 0.3% to 0.5% over the coming days as reduced demand for U.S. assets weighs on the currency."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "US AI Sector Stocks",
-          "direction": "down",
-          "magnitude": "2% to 4%",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 1,
-          "plain": "AI stocks may continue to fall as investors reassess valuations.",
-          "detail": "US AI sector stocks could experience a further decline of 2% to 4% as investors adjust their expectations following the IPO."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "down",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "The US 10-year yield might decrease as investors seek safer assets amid stock volatility.",
-          "detail": "Increased demand for Treasuries as a safe haven could push the US 10-year yield down by 5 to 10 basis points."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may not fully appreciate the potential for a broader tech sector downturn if AI stock valuations continue to be questioned.",
-        "detail": "The market might underestimate the risk of contagion to other tech stocks if AI valuations are seen as unsustainable."
-      },
-      "falsifiers": [
-        "A strong rebound in AI stocks",
-        "A stabilisation of the dollar",
-        "A shift in central bank policy towards more accommodative measures"
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Short US Dollar",
-          "plain": "Sell the US Dollar Index as AI stock volatility could weaken the currency further.",
-          "instrument": "Futures on the US Dollar Index",
-          "risk": "A sudden recovery in AI stocks could strengthen the dollar, resulting in losses."
-        }
-      ],
-      "watchNext": [
-        "Upcoming earnings reports from major AI companies",
-        "Federal Reserve statements on interest rates",
-        "Global economic data releases affecting risk sentiment"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-11-20-wsj-dollar-index-rises-to-new-52-week-high",
-      "rank": 4,
-      "editorNote": "The dollar index reaching a new high suggests significant currency market shifts.",
-      "materiality": {
-        "score": 66.7,
-        "components": {
-          "corroboration": 13,
-          "authority": 13,
-          "breadth": 13.5,
-          "salience": 20,
-          "recency": 7.2
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "fed",
-          "federal reserve",
-          "inflation",
-          "dollar"
-        ]
-      },
-      "sources": [
-        "WSJ Markets"
-      ],
-      "links": [
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-but-face-drag-from-fed-rate-bets-50c20e86?mod=rss_markets_main",
-          "title": "WSJ Dollar Index Rises to New 52-Week High"
-        },
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-but-may-be-weighed-by-risk-off-sentiment-d2acd03c?mod=rss_markets_main",
-          "title": "WSJ Dollar Index Rises 0.22% to 98.64"
-        }
-      ],
-      "headlines": [
-        "WSJ Dollar Index Rises to New 52-Week High",
-        "WSJ Dollar Index Rises 0.22% to 98.64"
-      ],
-      "newestAt": "2026-11-19T22:41:00.000Z",
-      "headline": "Dollar Strength Spurs Global Market Repricing",
-      "standfirst": "The WSJ Dollar Index hit a 52-week high, signalling shifts in currency markets.",
-      "classification": {
-        "eventType": "macro-data",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The dollar's strength was anticipated but the extent of the rise was not fully expected.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "Global"
-        ]
-      },
-      "whatHappened": {
-        "plain": "The WSJ Dollar Index rose to a new 52-week high, increasing by 0.22% to 98.64.",
-        "whyItMatters": "A stronger dollar affects global trade dynamics and investment flows, impacting profits and costs for companies worldwide.",
-        "detail": "The dollar's appreciation reflects market expectations of relative US economic strength and potential monetary policy adjustments."
-      },
-      "chains": [
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "A stronger dollar makes US exports more expensive.",
-              "detail": "Dollar appreciation increases the cost of US goods abroad, potentially reducing export competitiveness."
-            },
-            {
-              "plain": "Foreign companies earn less when converting US sales back to their currencies.",
-              "detail": "Non-US firms face currency translation losses as their dollar-denominated revenues convert to fewer units of their home currency."
-            }
-          ],
-          "endpoint": "US exporters and foreign companies with US sales",
-          "strength": "strong"
-        },
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "The Fed may delay rate cuts due to a strong dollar.",
-              "detail": "A robust dollar reduces inflationary pressures, potentially allowing the Fed to maintain higher rates longer."
-            }
-          ],
-          "endpoint": "US monetary policy",
-          "strength": "moderate"
-        },
-        {
-          "channel": "credit",
-          "links": [
-            {
-              "plain": "Emerging markets face higher borrowing costs.",
-              "detail": "A stronger dollar raises the cost of servicing dollar-denominated debt for emerging markets."
-            }
-          ],
-          "endpoint": "Emerging market borrowers",
-          "strength": "strong"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "fx",
-          "instrument": "Emerging market currencies",
-          "direction": "down",
-          "magnitude": "1.5 to 3%",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 2,
-          "plain": "Emerging market currencies may weaken due to increased dollar strength.",
-          "detail": "The stronger dollar pressures emerging market currencies as investors demand higher yields for perceived risk."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "US exporters",
-          "direction": "down",
-          "magnitude": "2 to 4%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "US exporters could see stock prices fall as their goods become pricier abroad.",
-          "detail": "US companies reliant on exports may face declining sales, impacting earnings and share prices."
-        },
-        {
-          "assetClass": "credit",
-          "instrument": "Emerging market sovereign bonds",
-          "direction": "wider",
-          "magnitude": "15 to 25 basis points",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 2,
-          "plain": "Emerging market bond spreads may widen as dollar strength increases debt servicing costs.",
-          "detail": "Investors demand higher yields on emerging market debt to compensate for increased currency risk and repayment challenges."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may underestimate the prolonged impact of a strong dollar on global trade balances and inflation dynamics, which could shift central bank policies worldwide.",
-        "detail": "Market participants might not fully appreciate how sustained dollar strength could alter trade deficits and global inflation, influencing central bank rate paths."
-      },
-      "falsifiers": [
-        "A rapid decline in the dollar index",
-        "Unexpected Fed rate cuts",
-        "Emerging market resilience to dollar strength"
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Short Emerging Market Currencies",
-          "plain": "Sell emerging market currencies against the dollar to profit from continued dollar strength.",
-          "instrument": "FX forwards or options",
-          "risk": "Emerging market currencies could appreciate if local economies outperform expectations."
-        }
-      ],
-      "watchNext": [
-        "Upcoming US Federal Reserve meetings",
-        "Emerging market GDP and inflation data releases",
-        "Trade balance reports from major economies"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-11-20-spot-gold-hits-over-14-month-low-amid-fed-rate-hike-certaint",
-      "rank": 5,
-      "editorNote": "Gold's decline amid rate hike expectations reflects broader market adjustments to inflation fears.",
-      "materiality": {
-        "score": 60.4,
-        "components": {
-          "corroboration": 13,
-          "authority": 7,
-          "breadth": 13.5,
-          "salience": 20,
-          "recency": 6.9
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "fed",
-          "rate hike",
-          "rout",
-          "gold"
-        ]
-      },
-      "sources": [
-        "Investing.com Commodities"
-      ],
-      "links": [
-        {
-          "name": "Investing.com Commodities",
-          "url": "https://www.investing.com/news/commodities-news/gold-rebounds-from-14month-low-as-bargain-hunters-emerge-despite-fed-hike-risks-5037506",
-          "title": "Spot gold hits over 14-month low amid Fed rate hike certainty, AI trade rout"
-        }
-      ],
-      "headlines": [
-        "Spot gold hits over 14-month low amid Fed rate hike certainty, AI trade rout"
-      ],
-      "newestAt": "2026-11-19T21:45:58.000Z",
-      "headline": "Gold Prices Drop as Rate Hike Expectations Rise",
-      "standfirst": "Spot gold prices have fallen due to certainty of a Fed rate hike.",
-      "classification": {
-        "eventType": "monetary-policy",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some rate hikes, but the extent of the certainty has led to further adjustments.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "US",
-          "Global"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Spot gold prices have dropped to a 14-month low because investors are certain the Federal Reserve will raise interest rates. This drop is also influenced by a sell-off in AI-related stocks.",
-        "whyItMatters": "Gold is often seen as a safe haven, so its decline signals changing investor expectations about inflation and interest rates.",
-        "detail": "The decline in gold prices reflects investor repositioning in anticipation of tighter monetary policy, which reduces gold's appeal as a non-yielding asset."
-      },
-      "chains": [
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "The Fed is more likely to raise rates soon.",
-              "detail": "Increased certainty about rate hikes makes the Fed's future tightening more probable."
-            },
-            {
-              "plain": "Higher rates make borrowing more expensive.",
-              "detail": "As rates rise, the cost of borrowing increases, affecting consumer and business spending."
-            }
-          ],
-          "endpoint": "US consumers and businesses",
-          "strength": "strong"
-        },
-        {
-          "channel": "substitution",
-          "links": [
-            {
-              "plain": "Investors move money from gold to bonds.",
-              "detail": "With higher yields expected, bonds become more attractive than gold."
-            }
-          ],
-          "endpoint": "bond markets",
-          "strength": "moderate"
-        },
-        {
-          "channel": "positioning",
-          "links": [
-            {
-              "plain": "Investors sell AI stocks, impacting tech sector.",
-              "detail": "The AI trade rout forces investors to liquidate positions, affecting broader tech valuations."
-            }
-          ],
-          "endpoint": "technology sector equities",
-          "strength": "moderate"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "commodities",
-          "instrument": "Spot gold",
-          "direction": "down",
-          "magnitude": "2 to 4%",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Gold prices are likely to continue falling as rate hike expectations solidify.",
-          "detail": "With rising yields, gold loses appeal as a non-yielding asset, leading to further price declines."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "up",
-          "magnitude": "8 to 12 basis points",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "US Treasury yields are expected to rise as investors anticipate higher interest rates.",
-          "detail": "Increased certainty of rate hikes drives yields higher as bonds are repriced for tighter monetary policy."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "AI and tech sector stocks",
-          "direction": "down",
-          "magnitude": "3 to 5%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Tech stocks may continue to fall as investors reassess valuations amid higher rates.",
-          "detail": "The tech sector, particularly AI stocks, faces valuation pressure as higher rates reduce future cash flow attractiveness."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may underestimate the broader impact of rate hikes on consumer spending and economic growth, which could lead to a larger market correction.",
-        "detail": "The market might be underpricing the ripple effects of tighter monetary policy on aggregate demand and subsequent corporate earnings."
-      },
-      "falsifiers": [
-        "The Fed signals a pause in rate hikes.",
-        "Inflation data comes in significantly lower than expected.",
-        "A major geopolitical event shifts investor focus away from monetary policy."
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Short Gold Futures",
-          "plain": "Sell gold futures to profit from expected price declines due to rising rates.",
-          "instrument": "Futures",
-          "risk": "Gold prices could rise if inflation fears increase or the Fed delays hikes."
-        }
-      ],
-      "watchNext": [
-        "Upcoming Fed meeting minutes",
-        "Next US inflation report",
-        "Major central bank speeches"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-11-20-nikkei-falls-5-1-to-lowest-level-since-april-9",
-      "rank": 6,
-      "editorNote": "The Nikkei's significant drop highlights the global impact of the AI selloff.",
-      "materiality": {
-        "score": 61.4,
-        "components": {
-          "corroboration": 13,
-          "authority": 13,
-          "breadth": 13.5,
-          "salience": 11.9,
-          "recency": 10
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "selloff",
-          "euro"
-        ]
-      },
-      "sources": [
-        "WSJ Markets"
-      ],
-      "links": [
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/stocks/nikkei-falls-2-9-dragged-by-chip-metals-stocks-0601645e?mod=rss_markets_main",
-          "title": "Nikkei Falls 5.1% to Lowest Level Since April 9"
-        }
-      ],
-      "headlines": [
-        "Nikkei Falls 5.1% to Lowest Level Since April 9"
-      ],
-      "newestAt": "2026-11-20T08:38:00.000Z",
-      "headline": "Global Tech Selloff Triggers Broad Market Declines",
-      "standfirst": "The Nikkei fell 5.1%, leading to sharp declines in European markets.",
-      "classification": {
-        "eventType": "flows",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The initial selloff in Japan was unexpected, but European markets had time to react before opening.",
-        "persistence": "days",
-        "regionFocus": [
-          "Global",
-          "Europe",
-          "Japan"
-        ]
-      },
-      "whatHappened": {
-        "plain": "The Nikkei index dropped by 5.1%, its lowest since April 9, due to a selloff in technology stocks. This triggered a similar decline in European stock markets.",
-        "whyItMatters": "A significant drop in a major index like the Nikkei can signal broader market fears, leading to global selloffs.",
-        "detail": "The Nikkei's drop was driven by a sharp selloff in technology stocks, reflecting investor concerns about valuations and future earnings."
-      },
-      "chains": [
-        {
-          "channel": "positioning",
-          "links": [
-            {
-              "plain": "Investors sold off Japanese tech stocks.",
-              "detail": "A crowded long position in Japanese tech stocks unwound, triggering a broader market selloff."
-            },
-            {
-              "plain": "European stocks fell as investors reassessed tech valuations.",
-              "detail": "The selloff in Japan led to risk-off sentiment in Europe, with investors reducing exposure to tech stocks."
-            }
-          ],
-          "endpoint": "European equity investors",
-          "strength": "strong"
         },
         {
           "channel": "earnings",
           "links": [
             {
-              "plain": "Tech companies face pressure on future earnings.",
-              "detail": "Concerns about high valuations and slowing growth in the tech sector hit earnings expectations."
+              "plain": "Lower AI stock prices could reduce tech companies' ability to raise capital.",
+              "detail": "The decline in AI stock valuations may constrain tech firms' fundraising and expansion plans."
             },
             {
-              "plain": "This impacts other sectors reliant on tech.",
-              "detail": "Lower tech earnings forecasts affect sectors like manufacturing and retail that depend on tech innovation."
+              "plain": "This could slow tech sector growth, impacting overall US economic growth.",
+              "detail": "Reduced capital access for tech firms could dampen innovation and slow economic contributions from the sector."
             }
           ],
-          "endpoint": "global tech and related sectors",
-          "strength": "moderate"
+          "endpoint": "US economic growth",
+          "strength": "speculative"
         }
       ],
       "assetImpacts": [
-        {
-          "assetClass": "equities",
-          "instrument": "European tech stocks",
-          "direction": "down",
-          "magnitude": "3 to 5%",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 1,
-          "plain": "European tech stocks are likely to see further declines as investors reassess valuations.",
-          "detail": "The selloff in Japan has led to a repricing of risk in European tech stocks, with investors trimming positions."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "down",
-          "magnitude": "5 to 8 basis points",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Safe-haven demand may push US Treasury yields lower.",
-          "detail": "As equities sell off, investors seek safety in US Treasuries, pushing yields down."
-        },
-        {
-          "assetClass": "fx",
-          "instrument": "Japanese Yen",
-          "direction": "up",
-          "magnitude": "1 to 2%",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "The Yen may strengthen as investors seek safe-haven assets.",
-          "detail": "Risk-off sentiment increases demand for the Yen, traditionally seen as a safe-haven currency."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors may underestimate the ripple effects on global supply chains, particularly in sectors heavily reliant on tech components.",
-        "detail": "The tech selloff could disrupt supply chains beyond immediate tech stocks, affecting sectors like automotive and consumer electronics."
-      },
-      "falsifiers": [
-        "A quick recovery in tech stock prices",
-        "Stronger-than-expected tech earnings announcements",
-        "Central bank interventions calming markets"
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Short European Tech",
-          "plain": "Sell European tech stocks as they are likely to face continued pressure.",
-          "instrument": "Sell futures on the Euro Stoxx Technology index",
-          "risk": "A sudden recovery in tech sentiment could lead to losses."
-        }
-      ],
-      "watchNext": [
-        "Upcoming tech earnings reports",
-        "Central bank policy announcements",
-        "Economic data releases impacting tech demand"
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-11-20-wall-street-pledged-to-mobilize-500-billion-for-nvidia-x2014",
-      "rank": 7,
-      "editorNote": "The lack of follow-through on Nvidia's funding pledge suggests potential credit market implications.",
-      "materiality": {
-        "score": 67,
-        "components": {
-          "corroboration": 21,
-          "authority": 13,
-          "breadth": 9,
-          "salience": 20,
-          "recency": 4
-        },
-        "distinctSources": 2,
-        "salienceTerms": [
-          "ipo",
-          "chip",
-          "nvidia",
-          "dollar"
-        ]
-      },
-      "sources": [
-        "WSJ Markets",
-        "WSJ World"
-      ],
-      "links": [
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/wall-street-pledged-to-mobilize-500-billion-for-nvidiabut-hasnt-put-up-a-dime-1e41f276?mod=rss_markets_main",
-          "title": "Wall Street Pledged to Mobilize $500 Billion for Nvidia&#x2014;but Hasn’t Put Up a Dime"
-        },
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/wall-street-pledged-to-mobilize-500-billion-for-nvidiabut-hasnt-put-up-a-dime-1e41f276?mod=rss_markets_main",
-          "title": "Wall Street Pledged to Mobilize $500 Billion for Nvidia&#x2014;but Hasn’t Put Up a Dime"
-        },
-        {
-          "name": "WSJ World",
-          "url": "https://www.wsj.com/world/wall-street-pledged-500-billion-for-nvidia-not-a-dollar-has-been-deployed-6bee9560?mod=rss_worldnews",
-          "title": "Wall Street Pledged $500 Billion for Nvidia. Not a Dollar Has Been Deployed."
-        }
-      ],
-      "headlines": [
-        "Wall Street Pledged to Mobilize $500 Billion for Nvidia&#x2014;but Hasn’t Put Up a Dime",
-        "Wall Street Pledged $500 Billion for Nvidia. Not a Dollar Has Been Deployed."
-      ],
-      "newestAt": "2026-11-19T11:03:00.000Z",
-      "headline": "Nvidia Funding Delay Raises Borrowing Cost Concerns",
-      "standfirst": "Wall Street's $500 billion pledge to Nvidia remains unfulfilled, impacting chip buyers.",
-      "classification": {
-        "eventType": "corporate",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "Investors anticipated some delays, but the complete lack of funding was unexpected.",
-        "persistence": "weeks",
-        "regionFocus": [
-          "US",
-          "Global"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Wall Street promised to provide $500 billion to help customers buy Nvidia chips, but no money has been given yet. This delay means companies relying on Nvidia chips might struggle to finance their purchases.",
-        "whyItMatters": "Without the expected funding, companies may face higher borrowing costs, potentially impacting their ability to invest in Nvidia's technology.",
-        "detail": "The $500 billion pledge was meant to facilitate purchases of Nvidia's chips, but the absence of this funding could lead to increased credit costs for Nvidia's customers, affecting their capital expenditure plans."
-      },
-      "chains": [
-        {
-          "channel": "credit",
-          "links": [
-            {
-              "plain": "Companies relying on Nvidia chips may face higher borrowing costs.",
-              "detail": "The lack of funding increases credit risk for companies dependent on Nvidia, leading to wider credit spreads."
-            },
-            {
-              "plain": "Higher borrowing costs could reduce demand for Nvidia chips.",
-              "detail": "As credit becomes more expensive, companies might cut back on planned purchases of Nvidia chips, impacting Nvidia's sales."
-            }
-          ],
-          "endpoint": "Nvidia and its customers",
-          "strength": "strong"
-        },
-        {
-          "channel": "earnings",
-          "links": [
-            {
-              "plain": "Nvidia's sales may decrease if customers can't afford chips.",
-              "detail": "Reduced demand due to higher borrowing costs could lead to lower revenue for Nvidia."
-            }
-          ],
-          "endpoint": "Nvidia",
-          "strength": "moderate"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "credit",
-          "instrument": "Nvidia-related corporate bonds",
-          "direction": "wider",
-          "magnitude": "10 to 20 basis points",
-          "horizon": "weeks",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Credit spreads for Nvidia-related bonds may widen due to increased perceived risk.",
-          "detail": "The absence of Wall Street's funding pledge heightens credit risk, leading to wider spreads on Nvidia-related corporate bonds."
-        },
-        {
-          "assetClass": "equities",
-          "instrument": "Nvidia stock",
-          "direction": "down",
-          "magnitude": "3 to 5%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 1,
-          "plain": "Nvidia's stock could fall as investors worry about reduced sales.",
-          "detail": "Investor concerns over potential revenue declines due to funding issues may lead to a sell-off in Nvidia shares."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "down",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "weeks",
-          "conviction": 2,
-          "order": 2,
-          "plain": "Treasury yields might fall as investors seek safer assets amid credit concerns.",
-          "detail": "Increased credit risk from the Nvidia funding delay could drive investors to Treasuries, pushing yields lower."
-        }
-      ],
-      "whatMarketMisses": {
-        "plain": "Investors might not fully appreciate how long it could take for the funding to materialize, which could prolong the impact on Nvidia's customers and sales.",
-        "detail": "The market may underestimate the duration of the funding delay and its extended impact on Nvidia's revenue and customer financing conditions."
-      },
-      "falsifiers": [
-        "Wall Street begins deploying the $500 billion pledge soon.",
-        "Nvidia announces alternative financing solutions for its customers.",
-        "Credit spreads for Nvidia-related bonds tighten unexpectedly."
-      ],
-      "tradeExpression": [
-        {
-          "idea": "Short Nvidia stock",
-          "plain": "Sell Nvidia shares expecting a decline due to funding delays impacting sales.",
-          "instrument": "Equity short",
-          "risk": "If Wall Street deploys the funds quickly, Nvidia's stock could rebound."
-        }
-      ],
-      "watchNext": [
-        "Announcements from Wall Street about funding deployment.",
-        "Nvidia's quarterly earnings report.",
-        "Changes in corporate bond spreads for tech companies."
-      ],
-      "glossary": [
-        {
-          "term": "basis point",
-          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        },
-        {
-          "term": "credit spread",
-          "plain": "The difference in yield between a corporate bond and a government bond of similar maturity, reflecting credit risk."
-        }
-      ],
-      "confidence": 3
-    },
-    {
-      "id": "2026-11-20-gold-falls-weighed-by-elevated-yields-strong-dollar",
-      "rank": 8,
-      "editorNote": "Gold's fall due to strong dollar and yields underscores inflationary pressures.",
-      "materiality": {
-        "score": 64.1,
-        "components": {
-          "corroboration": 13,
-          "authority": 13,
-          "breadth": 13.5,
-          "salience": 17,
-          "recency": 7.6
-        },
-        "distinctSources": 1,
-        "salienceTerms": [
-          "treasury",
-          "gold",
-          "dollar"
-        ]
-      },
-      "sources": [
-        "WSJ Markets"
-      ],
-      "links": [
-        {
-          "name": "WSJ Markets",
-          "url": "https://www.wsj.com/finance/commodities-futures/gold-falls-weighed-by-elevated-yields-strong-dollar-9ba37905?mod=rss_markets_main",
-          "title": "Gold Falls, Weighed by Elevated Yields, Strong Dollar"
-        }
-      ],
-      "headlines": [
-        "Gold Falls, Weighed by Elevated Yields, Strong Dollar"
-      ],
-      "newestAt": "2026-11-20T00:18:00.000Z",
-      "headline": "Gold Drops as Strong Dollar and Yields Increase Holding Costs",
-      "standfirst": "Gold prices fell due to rising Treasury yields and a strong dollar.",
-      "classification": {
-        "eventType": "macro-data",
-        "pricedIn": "partly-priced",
-        "pricedInRationale": "The market had anticipated some impact from rising yields, but the dollar's strength added unexpected pressure.",
-        "persistence": "days",
-        "regionFocus": [
-          "Global"
-        ]
-      },
-      "whatHappened": {
-        "plain": "Gold prices declined during Asian trading hours. This drop was driven by higher US Treasury yields and a stronger dollar, which increased the cost of holding gold.",
-        "whyItMatters": "Investors need to understand how interest rate movements and currency strength can impact commodity prices, affecting investment returns.",
-        "detail": "The increase in US Treasury yields raises the opportunity cost of holding non-yielding assets like gold, while a stronger dollar makes gold more expensive for foreign buyers."
-      },
-      "chains": [
-        {
-          "channel": "discount-rate",
-          "links": [
-            {
-              "plain": "Higher Treasury yields make gold less attractive.",
-              "detail": "The rise in US 10-year yields increases the opportunity cost of holding gold, as investors seek higher returns elsewhere."
-            },
-            {
-              "plain": "Investors sell gold, pushing prices lower.",
-              "detail": "As yields rise, investors reallocate portfolios, selling gold to invest in higher-yielding assets."
-            }
-          ],
-          "endpoint": "gold market",
-          "strength": "strong"
-        },
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "A stronger dollar makes gold more expensive globally.",
-              "detail": "The appreciation of the dollar increases the cost of gold in other currencies, reducing demand."
-            },
-            {
-              "plain": "Reduced global demand for gold further pressures prices.",
-              "detail": "As gold becomes more expensive in foreign markets, demand declines, leading to additional downward pressure on prices."
-            }
-          ],
-          "endpoint": "global gold demand",
-          "strength": "moderate"
-        }
-      ],
-      "assetImpacts": [
-        {
-          "assetClass": "commodities",
-          "instrument": "gold",
-          "direction": "down",
-          "magnitude": "2 to 4%",
-          "horizon": "days",
-          "conviction": 4,
-          "order": 1,
-          "plain": "Gold prices are likely to fall due to increased holding costs and reduced demand.",
-          "detail": "The combined effect of higher yields and a stronger dollar increases the opportunity cost and reduces demand for gold, leading to a price decline."
-        },
-        {
-          "assetClass": "rates",
-          "instrument": "US 10-year Treasury yield",
-          "direction": "up",
-          "magnitude": "5 to 10 basis points",
-          "horizon": "days",
-          "conviction": 3,
-          "order": 2,
-          "plain": "US Treasury yields may rise further as investors shift from gold to bonds.",
-          "detail": "The reallocation from gold to higher-yielding bonds could drive additional demand for Treasuries, pushing yields higher."
-        },
         {
           "assetClass": "fx",
           "instrument": "US dollar",
-          "direction": "up",
+          "direction": "down",
           "magnitude": "0.5 to 1%",
           "horizon": "days",
           "conviction": 3,
+          "order": 1,
+          "plain": "The dollar is likely to weaken slightly as investors move away from US tech stocks.",
+          "detail": "As tech stocks decline, investor sentiment shifts away from US assets, leading to dollar selling."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US tech stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Tech stocks are expected to continue falling as confidence in the sector remains shaky.",
+          "detail": "The failure of Anthropic's IPO to stabilize the sector suggests further downside risk for tech equities."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
           "order": 2,
-          "plain": "The dollar may strengthen further as global investors seek US assets.",
-          "detail": "As investors move to US assets for better returns, demand for the dollar increases, leading to further appreciation."
+          "plain": "Treasury yields may fall as investors seek safety amid tech sector uncertainty.",
+          "detail": "Increased demand for safe-haven assets like Treasuries could push yields lower as tech volatility persists."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors might underestimate the impact of sustained dollar strength on emerging markets, which could lead to broader financial instability.",
-        "detail": "Persistent dollar appreciation could strain emerging market economies with dollar-denominated debt, potentially leading to financial stress."
+        "plain": "Investors might be underestimating how much the tech sector's troubles could spill over into other sectors, especially those reliant on tech innovation and capital.",
+        "detail": "The market may not fully appreciate the potential for tech sector weakness to impact broader economic growth and capital investment in tech-dependent industries."
       },
       "falsifiers": [
-        "A significant drop in US Treasury yields",
-        "A reversal in the dollar's strength",
-        "Increased geopolitical tensions boosting gold demand"
+        "A strong rebound in AI stocks that stabilizes the tech sector",
+        "Unexpected positive economic data that boosts investor confidence",
+        "Intervention by central banks to support market stability"
       ],
       "tradeExpression": [
         {
-          "idea": "Short Gold",
-          "plain": "Sell gold futures to profit from expected price declines due to higher yields and a strong dollar.",
-          "instrument": "futures",
-          "risk": "A sudden increase in geopolitical tensions could drive gold prices higher."
+          "idea": "Short US Tech Stocks",
+          "plain": "Sell US tech stocks as the sector faces continued volatility and downside risk.",
+          "instrument": "equity futures or options",
+          "risk": "A sudden recovery in tech stocks could lead to losses."
         }
       ],
       "watchNext": [
-        "Upcoming US inflation data",
-        "Federal Reserve policy announcements",
-        "Dollar index movements"
+        "Upcoming earnings reports from major tech companies",
+        "Federal Reserve announcements on interest rates",
+        "Global economic data releases impacting investor sentiment"
       ],
       "glossary": [
         {
           "term": "basis point",
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
-        },
-        {
-          "term": "yield",
-          "plain": "The income return on an investment, such as the interest or dividends received."
-        },
-        {
-          "term": "opportunity cost",
-          "plain": "The loss of potential gain from other alternatives when one alternative is chosen."
         }
       ],
       "confidence": 3
     },
     {
-      "id": "2026-11-20-x2018-nvidia-s-turmoil-has-me-spooked-should-i-sell-my-stock",
-      "rank": 9,
-      "editorNote": "Investor sentiment towards Nvidia reflects broader market uncertainty and potential asset reallocation.",
+      "id": "2026-11-20-anthropic-shares-fall-in-pre-market-trade-as-ai-rout-hits-gl",
+      "rank": 4,
+      "editorNote": "The decline in Anthropic shares highlights the global impact of the AI sector's troubles, affecting market volatility and investor confidence.",
       "materiality": {
-        "score": 65,
+        "score": 64.7,
         "components": {
           "corroboration": 13,
           "authority": 13,
-          "breadth": 13.5,
-          "salience": 17,
-          "recency": 8.5
+          "breadth": 9,
+          "salience": 20,
+          "recency": 9.7
         },
         "distinctSources": 1,
         "salienceTerms": [
-          "cds",
-          "oil",
+          "rout",
+          "semiconductor",
+          "chip",
           "nvidia"
         ]
       },
       "sources": [
-        "MarketWatch"
+        "Guardian Business"
       ],
       "links": [
         {
-          "name": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-          "title": "&#x2018;Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate &#x2014; or ride out the storm?"
+          "name": "Guardian Business",
+          "url": "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news",
+          "title": "Anthropic shares fall in pre-market trade as AI rout hits global markets - business live"
         }
       ],
       "headlines": [
-        "&#x2018;Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate &#x2014; or ride out the storm?"
+        "Anthropic shares fall in pre-market trade as AI rout hits global markets - business live"
       ],
-      "newestAt": "2026-11-20T03:31:00.000Z",
-      "headline": "Nvidia's Troubles Shake Investor Confidence, Prompting Asset Reallocation",
-      "standfirst": "Nvidia's market instability raises concerns, prompting investors to consider shifting from stocks to real estate.",
+      "newestAt": "2026-11-20T12:44:48.000Z",
+      "headline": "AI Sector Turmoil Spurs Global Market Volatility",
+      "standfirst": "Anthropic shares drop as AI market turmoil affects global investor sentiment.",
       "classification": {
         "eventType": "corporate",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "The market has reacted to Nvidia's issues, but broader asset reallocation is still unfolding.",
+        "pricedInRationale": "The market had anticipated some volatility in AI stocks, but the extent of the impact on global markets was underestimated.",
         "persistence": "weeks",
         "regionFocus": [
-          "US",
           "Global"
         ]
       },
       "whatHappened": {
-        "plain": "Nvidia is experiencing market instability, causing investors to worry about their stock holdings. Some are considering moving their investments from stocks to real estate or certificates of deposit.",
-        "whyItMatters": "This shift in investor sentiment could lead to significant changes in asset prices and market dynamics.",
-        "detail": "Nvidia's volatility has heightened market uncertainty, prompting investors to reassess their portfolios and consider safer assets like real estate or CDs."
+        "plain": "Anthropic's shares fell in pre-market trading due to widespread issues in the AI sector. This was compounded by an investigation into Nvidia's export practices.",
+        "whyItMatters": "The AI sector's troubles are causing significant market volatility, affecting investor confidence globally.",
+        "detail": "The AI sector is facing a sell-off, with Anthropic's decline highlighting broader concerns. Nvidia's investigation adds to uncertainty, impacting tech stocks and related markets."
       },
       "chains": [
         {
-          "channel": "positioning",
+          "channel": "earnings",
           "links": [
             {
-              "plain": "Investors are selling Nvidia stocks.",
-              "detail": "Investors are reducing their exposure to Nvidia due to perceived risks, leading to increased selling pressure."
+              "plain": "AI companies face declining revenues due to market distrust.",
+              "detail": "Investor concerns over regulatory scrutiny and export restrictions lead to lower revenue forecasts for AI firms."
             },
             {
-              "plain": "This selling affects other tech stocks.",
-              "detail": "The sell-off in Nvidia spills over to other tech stocks as investors reassess sector-wide risks."
+              "plain": "Tech sector earnings expectations are revised down.",
+              "detail": "Lower revenue forecasts for AI firms result in analysts cutting earnings estimates for the broader tech sector."
             }
           ],
-          "endpoint": "tech sector equities",
+          "endpoint": "tech sector stocks",
           "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may delay interest rate hikes due to market volatility.",
+              "detail": "Increased market volatility and uncertainty may prompt central banks to adopt a more cautious approach to tightening monetary policy."
+            }
+          ],
+          "endpoint": "central bank policy",
+          "strength": "moderate"
         },
         {
           "channel": "substitution",
           "links": [
             {
-              "plain": "Investors consider real estate as a safer option.",
-              "detail": "With stocks seen as risky, investors look to real estate for stable returns and capital preservation."
-            },
-            {
-              "plain": "Real estate prices may rise due to increased demand.",
-              "detail": "Higher demand for real estate as an alternative investment could drive up property prices."
+              "plain": "Investors shift from tech to safer assets.",
+              "detail": "As tech stocks become riskier, investors look for stability in bonds or defensive sectors."
             }
           ],
-          "endpoint": "real estate market",
+          "endpoint": "bond markets",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
           "assetClass": "equities",
-          "instrument": "US tech sector stocks",
+          "instrument": "Global tech sector stocks",
           "direction": "down",
-          "magnitude": "2 to 4%",
+          "magnitude": "3 to 5%",
           "horizon": "weeks",
           "conviction": 4,
           "order": 1,
-          "plain": "Tech stocks may fall as investors sell off due to Nvidia's troubles.",
-          "detail": "Nvidia's instability has led to a sector-wide reassessment, causing a decline in tech stock prices."
-        },
-        {
-          "assetClass": "real estate",
-          "instrument": "US real estate market",
-          "direction": "up",
-          "magnitude": "1 to 2%",
-          "horizon": "weeks",
-          "conviction": 3,
-          "order": 2,
-          "plain": "Real estate prices might increase as investors seek safer assets.",
-          "detail": "The shift from stocks to real estate could lead to higher property prices due to increased demand."
+          "plain": "Tech stocks are likely to fall as earnings expectations are revised down.",
+          "detail": "The AI sector's issues lead to a reevaluation of growth prospects, causing a sell-off in tech stocks."
         },
         {
           "assetClass": "rates",
@@ -1412,186 +587,188 @@
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Treasury yields might fall as investors seek safe havens.",
-          "detail": "Increased demand for Treasuries as a safe asset could push yields down."
+          "plain": "Bond yields may fall as investors seek safer assets amid market turmoil.",
+          "detail": "Increased demand for Treasuries as a safe haven drives yields lower, reflecting risk-off sentiment."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "VIX Index",
+          "direction": "up",
+          "magnitude": "10 to 15%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Market volatility is expected to rise as uncertainty in the AI sector persists.",
+          "detail": "The VIX, a measure of market volatility, is likely to increase as investors react to ongoing uncertainty in tech and AI sectors."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the potential for a broader tech sector correction if Nvidia's issues persist, leading to a more significant market impact.",
-        "detail": "The market might not fully price in the risk of a wider tech sell-off if Nvidia's situation worsens, affecting broader equity valuations."
+        "plain": "Investors may not fully appreciate the long-term impact of regulatory scrutiny on AI sector growth prospects. The focus is currently on immediate market reactions, but the regulatory environment could reshape the industry's future.",
+        "detail": "The market may be underestimating the potential for long-term regulatory changes to alter the competitive dynamics and growth trajectories within the AI sector."
       },
       "falsifiers": [
-        "Nvidia stabilizes and reassures investors, halting the sell-off.",
-        "Real estate demand does not increase as expected, keeping prices stable.",
-        "Treasury yields rise due to unexpected rate hikes or inflation concerns."
+        "AI sector stocks recover quickly, indicating that the market overreacted.",
+        "Central banks proceed with rate hikes despite market volatility.",
+        "Regulatory investigations conclude with minimal impact on Nvidia and other AI firms."
       ],
       "tradeExpression": [
         {
-          "idea": "Short US tech sector",
-          "plain": "Sell US tech sector stocks to profit from potential declines due to Nvidia's instability.",
-          "instrument": "short US tech sector ETF",
-          "risk": "Tech sector stabilizes or rebounds, causing losses on the short position."
+          "idea": "Short Global Tech Stocks",
+          "plain": "Sell tech sector stocks to profit from expected declines due to revised earnings forecasts.",
+          "instrument": "cash equities or tech sector ETF shorts",
+          "risk": "Tech stocks could rebound if market fears prove exaggerated."
         }
       ],
       "watchNext": [
-        "Nvidia's upcoming earnings report for further insights.",
-        "Federal Reserve's next policy meeting for interest rate guidance.",
-        "Real estate market data releases for demand and price trends."
+        "Updates on the Nvidia investigation",
+        "Central bank policy announcements",
+        "Earnings reports from major tech companies"
       ],
       "glossary": [
         {
           "term": "basis point",
           "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "VIX Index",
+          "plain": "A measure of market volatility, often referred to as the 'fear index'."
         }
       ],
       "confidence": 3
     },
     {
-      "id": "2026-11-20-japan-core-inflation-soars-to-highest-this-year-as-energy-su",
-      "rank": 10,
-      "editorNote": "Japan's rising inflation due to energy costs signals potential global inflationary trends.",
+      "id": "2026-11-20-ai-stocks-tumble-across-the-globe-as-slowdown-fears-mount",
+      "rank": 5,
+      "editorNote": "The global tumble in AI stocks reflects mounting fears of a slowdown, which could have lasting effects on investor sentiment and market dynamics.",
       "materiality": {
-        "score": 58.7,
+        "score": 59.9,
         "components": {
-          "corroboration": 21,
+          "corroboration": 13,
           "authority": 13,
           "breadth": 9,
-          "salience": 7.7,
-          "recency": 8.1
+          "salience": 15.3,
+          "recency": 9.6
         },
-        "distinctSources": 2,
+        "distinctSources": 1,
         "salienceTerms": [
-          "inflation"
+          "tariff",
+          "war"
         ]
       },
       "sources": [
-        "CNBC",
-        "CNBC Economy"
+        "WSJ Markets"
       ],
       "links": [
         {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html",
-          "title": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices"
-        },
-        {
-          "name": "CNBC Economy",
-          "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html",
-          "title": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices"
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/nasdaq-set-for-fresh-decline-as-ai-selloff-intensifies-e974bbb5?mod=rss_markets_main",
+          "title": "AI Stocks Tumble Across the Globe as Slowdown Fears Mount"
         }
       ],
       "headlines": [
-        "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices"
+        "AI Stocks Tumble Across the Globe as Slowdown Fears Mount"
       ],
-      "newestAt": "2026-11-20T01:49:03.000Z",
-      "headline": "Japan's Inflation Rise Sparks Global Energy Cost Concerns",
-      "standfirst": "Japan's core inflation increased due to higher energy costs.",
+      "newestAt": "2026-11-20T12:32:00.000Z",
+      "headline": "AI Stock Slump Raises Fears of Broader Market Slowdown",
+      "standfirst": "AI stocks fell globally amid concerns of an economic slowdown.",
       "classification": {
-        "eventType": "macro-data",
+        "eventType": "corporate",
         "pricedIn": "partly-priced",
-        "pricedInRationale": "Markets anticipated some inflation rise but underestimated the energy impact.",
+        "pricedInRationale": "The market had already seen hints of a slowdown, but the extent of the AI stock drop adds new urgency.",
         "persistence": "weeks",
         "regionFocus": [
-          "Japan",
           "Global"
         ]
       },
       "whatHappened": {
-        "plain": "Japan's core inflation rose sharply as energy subsidies ended, pushing up consumer prices. This increase was less than economists expected but marked the highest level this year.",
-        "whyItMatters": "Rising inflation in Japan highlights potential global inflationary pressures, especially from energy costs.",
-        "detail": "Japan's core inflation, excluding food, surged due to the expiry of energy subsidies, indicating potential cost pressures that could influence global inflation trends."
+        "plain": "AI stocks fell sharply around the world as investors worried about a potential slowdown in the sector. This led to a broader decline in stock markets, especially affecting tech-heavy indices.",
+        "whyItMatters": "Investors are concerned that a slowdown in AI could signal broader economic issues, affecting market sentiment and investment strategies.",
+        "detail": "The global decline in AI stocks is significant as it suggests investors are re-evaluating growth prospects in a key sector, which could lead to a reassessment of risk across tech and related industries."
       },
       "chains": [
-        {
-          "channel": "policy-reaction",
-          "links": [
-            {
-              "plain": "Central banks may delay interest rate cuts.",
-              "detail": "The rise in inflation may prompt central banks to reconsider the timing of interest rate adjustments, maintaining higher rates longer."
-            }
-          ],
-          "endpoint": "global central banks",
-          "strength": "moderate"
-        },
-        {
-          "channel": "fx-terms-of-trade",
-          "links": [
-            {
-              "plain": "The yen may weaken against the dollar.",
-              "detail": "Higher inflation without corresponding rate hikes could weaken the yen as investors seek higher returns elsewhere."
-            }
-          ],
-          "endpoint": "JPY/USD currency pair",
-          "strength": "strong"
-        },
         {
           "channel": "earnings",
           "links": [
             {
-              "plain": "Energy companies might see increased profits.",
-              "detail": "With rising energy costs, companies in the energy sector could experience higher revenues as prices increase."
+              "plain": "AI companies may see reduced profits.",
+              "detail": "Lower demand expectations for AI solutions could lead to revenue shortfalls and margin compression for AI firms."
+            },
+            {
+              "plain": "Tech suppliers could face reduced orders.",
+              "detail": "Suppliers to AI companies might experience order cuts as AI firms adjust to lower growth expectations."
             }
           ],
-          "endpoint": "energy sector companies",
+          "endpoint": "Tech suppliers",
+          "strength": "strong"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors may sell other tech stocks.",
+              "detail": "The decline in AI stocks could prompt investors to reduce exposure to tech, leading to broader sectoral selling."
+            }
+          ],
+          "endpoint": "Tech sector",
           "strength": "moderate"
         }
       ],
       "assetImpacts": [
         {
-          "assetClass": "fx",
-          "instrument": "JPY/USD currency pair",
+          "assetClass": "equities",
+          "instrument": "Global tech stocks",
           "direction": "down",
-          "magnitude": "1 to 2%",
+          "magnitude": "2 to 4%",
           "horizon": "weeks",
           "conviction": 4,
-          "order": 2,
-          "plain": "The yen is likely to weaken against the dollar due to higher inflation without rate hikes.",
-          "detail": "As Japan's inflation rises, the yen could depreciate if the Bank of Japan maintains its current interest rate stance, making the currency less attractive."
+          "order": 1,
+          "plain": "Tech stocks are likely to continue falling as investors reassess growth prospects.",
+          "detail": "The revaluation of AI growth expectations will likely lead to a sustained decline in tech stock prices as investors adjust their portfolios."
         },
         {
-          "assetClass": "equities",
-          "instrument": "Japanese energy companies",
-          "direction": "up",
-          "magnitude": "3 to 5%",
+          "assetClass": "credit",
+          "instrument": "Tech corporate bonds",
+          "direction": "wider",
+          "magnitude": "10 to 20 basis points",
           "horizon": "weeks",
           "conviction": 3,
           "order": 2,
-          "plain": "Japanese energy stocks may rise as higher energy costs boost company profits.",
-          "detail": "Energy firms in Japan could benefit from increased revenues as the expiry of subsidies leads to higher energy prices."
+          "plain": "Credit spreads for tech companies may widen as perceived risk increases.",
+          "detail": "The increased risk of slower growth in the tech sector could lead to wider credit spreads for tech corporate bonds, reflecting higher default risk."
         },
         {
           "assetClass": "rates",
           "instrument": "US 10-year Treasury yield",
-          "direction": "up",
+          "direction": "down",
           "magnitude": "5 to 10 basis points",
-          "horizon": "weeks",
-          "conviction": 3,
+          "horizon": "days",
+          "conviction": 2,
           "order": 2,
-          "plain": "US Treasury yields might rise as global inflation concerns grow.",
-          "detail": "Increased global inflation pressures could lead to higher US yields as investors demand greater compensation for inflation risk."
+          "plain": "Treasury yields might fall as investors seek safety amid tech stock volatility.",
+          "detail": "The flight to safety triggered by a tech stock sell-off could drive demand for Treasuries, pushing yields lower."
         }
       ],
       "whatMarketMisses": {
-        "plain": "Investors may underestimate the potential for sustained global inflation driven by energy costs, which could lead to prolonged higher interest rates.",
-        "detail": "The market might not fully price in the risk of extended global inflationary pressures from energy, affecting rate expectations and asset valuations."
+        "plain": "Investors may underestimate the ripple effects of an AI slowdown on non-tech sectors that rely on AI advancements for efficiency gains.",
+        "detail": "The slowdown in AI could have broader implications for industries that depend on AI for operational improvements, potentially affecting their growth and profitability."
       },
       "falsifiers": [
-        "Japan's inflation falls back quickly due to new subsidies.",
-        "Global energy prices decrease significantly.",
-        "The Bank of Japan raises interest rates unexpectedly."
+        "A strong rebound in AI stock prices",
+        "Positive earnings surprises from major AI companies",
+        "Improved economic data that alleviates slowdown fears"
       ],
       "tradeExpression": [
         {
-          "idea": "Long Japanese energy stocks",
-          "plain": "Buy shares in Japanese energy companies expecting profit boosts from higher energy prices.",
-          "instrument": "cash equities",
-          "risk": "Energy prices fall or subsidies are reintroduced, reducing expected profits."
+          "idea": "Short Global Tech",
+          "plain": "Sell global tech stocks to hedge against further declines in the sector.",
+          "instrument": "Sell tech-focused ETFs or futures",
+          "risk": "A sudden positive shift in AI sector sentiment could lead to losses."
         }
       ],
       "watchNext": [
-        "Upcoming Bank of Japan policy meeting",
-        "Global energy price trends",
-        "Japanese government announcements on subsidies"
+        "Upcoming earnings reports from major AI companies",
+        "Central bank meetings discussing economic outlook",
+        "Tech sector investment announcements"
       ],
       "glossary": [
         {
@@ -1603,7 +780,7 @@
     }
   ],
   "diagnostics": {
-    "articlesIngested": 217,
+    "articlesIngested": 209,
     "clustersConsidered": 25,
     "feeds": [
       {
@@ -1612,7 +789,7 @@
         "ok": true,
         "parsed": 20,
         "fresh": 1,
-        "ms": 105,
+        "ms": 177,
         "error": null
       },
       {
@@ -1621,7 +798,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 0,
-        "ms": 74,
+        "ms": 131,
         "error": null
       },
       {
@@ -1630,7 +807,7 @@
         "ok": true,
         "parsed": 15,
         "fresh": 1,
-        "ms": 502,
+        "ms": 445,
         "error": null
       },
       {
@@ -1639,7 +816,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 310,
+        "ms": 772,
         "error": "HTTP 404"
       },
       {
@@ -1648,7 +825,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 468,
+        "ms": 285,
         "error": "HTTP 404"
       },
       {
@@ -1657,7 +834,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 321,
+        "ms": 394,
         "error": "HTTP 403"
       },
       {
@@ -1666,7 +843,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 1,
-        "ms": 445,
+        "ms": 728,
         "error": null
       },
       {
@@ -1675,7 +852,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 439,
+        "ms": 594,
         "error": null
       },
       {
@@ -1684,7 +861,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 0,
-        "ms": 437,
+        "ms": 605,
         "error": null
       },
       {
@@ -1693,7 +870,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 0,
-        "ms": 487,
+        "ms": 660,
         "error": null
       },
       {
@@ -1701,17 +878,17 @@
         "name": "WSJ Markets",
         "ok": true,
         "parsed": 61,
-        "fresh": 42,
-        "ms": 487,
+        "fresh": 41,
+        "ms": 653,
         "error": null
       },
       {
         "id": "wsj-world",
         "name": "WSJ World",
         "ok": true,
-        "parsed": 74,
-        "fresh": 28,
-        "ms": 524,
+        "parsed": 73,
+        "fresh": 26,
+        "ms": 743,
         "error": null
       },
       {
@@ -1720,7 +897,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 523,
+        "ms": 880,
         "error": "HTTP 404"
       },
       {
@@ -1729,7 +906,7 @@
         "ok": true,
         "parsed": 30,
         "fresh": 30,
-        "ms": 679,
+        "ms": 872,
         "error": null
       },
       {
@@ -1738,16 +915,16 @@
         "ok": true,
         "parsed": 30,
         "fresh": 3,
-        "ms": 708,
+        "ms": 898,
         "error": null
       },
       {
         "id": "ft",
         "name": "Financial Times",
         "ok": true,
-        "parsed": 12,
-        "fresh": 12,
-        "ms": 1016,
+        "parsed": 11,
+        "fresh": 11,
+        "ms": 1466,
         "error": null
       },
       {
@@ -1755,17 +932,17 @@
         "name": "BBC Business",
         "ok": true,
         "parsed": 57,
-        "fresh": 27,
-        "ms": 679,
+        "fresh": 20,
+        "ms": 899,
         "error": null
       },
       {
         "id": "guardian-biz",
         "name": "Guardian Business",
         "ok": true,
-        "parsed": 39,
-        "fresh": 22,
-        "ms": 591,
+        "parsed": 40,
+        "fresh": 25,
+        "ms": 923,
         "error": null
       },
       {
@@ -1774,7 +951,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 683,
+        "ms": 1006,
         "error": null
       },
       {
@@ -1783,7 +960,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 671,
+        "ms": 949,
         "error": null
       },
       {
@@ -1792,7 +969,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 683,
+        "ms": 1017,
         "error": null
       },
       {
@@ -1801,7 +978,7 @@
         "ok": false,
         "parsed": 0,
         "fresh": 0,
-        "ms": 3026,
+        "ms": 1066,
         "error": "HTTP 404"
       },
       {
@@ -1810,7 +987,7 @@
         "ok": true,
         "parsed": 10,
         "fresh": 10,
-        "ms": 712,
+        "ms": 944,
         "error": null
       }
     ],
@@ -1819,15 +996,15 @@
         "provider": "stooq",
         "ok": false,
         "count": 0,
-        "ms": 449,
+        "ms": 627,
         "error": "Error: HTTP 404"
       },
       {
         "provider": "yahoo",
-        "ok": true,
-        "count": 1,
-        "ms": 180,
-        "error": null
+        "ok": false,
+        "count": 0,
+        "ms": 302,
+        "error": "no rows"
       },
       {
         "provider": "fred",
@@ -1838,12 +1015,12 @@
       }
     ],
     "usage": {
-      "calls": 11,
-      "inputTokens": 22659,
-      "outputTokens": 11408,
-      "estimatedCostUsd": 0.1707
+      "calls": 6,
+      "inputTokens": 12622,
+      "outputTokens": 5809,
+      "estimatedCostUsd": 0.0896
     },
-    "runtimeMs": 51013
+    "runtimeMs": 28709
   },
   "scorecardSummary": {
     "total": 41,
