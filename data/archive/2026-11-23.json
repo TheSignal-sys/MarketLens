@@ -1,0 +1,1071 @@
+{
+  "version": 1,
+  "date": "2026-11-23",
+  "dateLabel": "Monday, 23 November 2026",
+  "generatedAt": "2026-11-23T15:54:07.634Z",
+  "model": "openai/gpt-4o",
+  "marketRead": {
+    "headline": "Nvidia CEO change drives tech surge",
+    "body": "Jensen Huang's return as Nvidia CEO has sparked a significant rally in tech stocks, with the Nasdaq jumping over 7% and Nvidia shares surging 33%. This leadership change is expected to have lasting effects on the tech sector, influencing investor sentiment and potentially leading to further gains in related equities. Meanwhile, European chip stocks are also benefiting, indicating a broader impact across global markets.",
+    "regime": "tech-driven optimism"
+  },
+  "snapshot": {
+    "quotes": [],
+    "report": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 713,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 240,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 1,
+        "error": "no rows"
+      }
+    ],
+    "fetchedAt": "2026-11-23T15:53:38.704Z"
+  },
+  "stories": [
+    {
+      "id": "2026-11-23-european-chip-stocks-surge-after-nvidia-reinstates-huang-as-",
+      "rank": 1,
+      "editorNote": "Nvidia's CEO change is causing a broad tech rally, affecting multiple asset classes.",
+      "materiality": {
+        "score": 77.3,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 9.8
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "selloff",
+          "chip",
+          "nvidia",
+          "euro"
+        ]
+      },
+      "sources": [
+        "WSJ Markets",
+        "Investing.com Economy"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/some-underperforming-japan-stocks-may-start-rising-after-strong-results-e6e3f434?mod=rss_markets_main",
+          "title": "European Chip Stocks Surge After Nvidia Reinstates Huang as CEO"
+        },
+        {
+          "name": "Investing.com Economy",
+          "url": "https://www.investing.com/news/economy-news/nvidia-reinstates-jensen-huang-as-ceo-igniting-tech-surge-5045917",
+          "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge"
+        }
+      ],
+      "headlines": [
+        "European Chip Stocks Surge After Nvidia Reinstates Huang as CEO",
+        "Nvidia reinstates Jensen Huang as CEO, igniting tech surge"
+      ],
+      "newestAt": "2026-11-23T15:01:52.000Z",
+      "headline": "Nvidia CEO Change Boosts European Tech Stocks",
+      "standfirst": "Nvidia reinstated Jensen Huang as CEO, sparking a rally in European tech stocks.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had partly anticipated a leadership change but not the immediate impact on European tech stocks.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Nvidia has reinstated Jensen Huang as its CEO. This change has led to a surge in European tech stocks linked to AI.",
+        "whyItMatters": "Leadership changes at major companies can signal strategic shifts, affecting investor sentiment and stock prices.",
+        "detail": "Nvidia's decision to bring back Jensen Huang is seen as a stabilizing move, boosting confidence in AI-related sectors."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Nvidia's leadership change boosts investor confidence in AI.",
+              "detail": "Huang's return is expected to refocus Nvidia's strategy on AI, enhancing growth prospects."
+            },
+            {
+              "plain": "Higher confidence in AI boosts European tech stocks.",
+              "detail": "Investors anticipate better earnings for European AI-linked companies, lifting their stock prices."
+            }
+          ],
+          "endpoint": "European tech companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors shift from other sectors to tech.",
+              "detail": "The tech sector becomes more attractive, prompting reallocations from less promising sectors."
+            }
+          ],
+          "endpoint": "broader equity markets",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "European AI-linked stocks",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "European AI-linked stocks are likely to rise as confidence in the sector improves.",
+          "detail": "The reinstatement of Huang is expected to drive optimism in AI-related revenues, lifting stock prices."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "European tech sector",
+          "direction": "up",
+          "magnitude": "1 to 3%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The tech sector in Europe may see a sustained rally as investors reallocate funds.",
+          "detail": "Funds are likely to flow into tech stocks as investors adjust portfolios to capture potential AI growth."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "European tech corporate bonds",
+          "direction": "tighter",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads for European tech companies could tighten as their outlook improves.",
+          "detail": "Improved earnings prospects reduce perceived credit risk, leading to tighter spreads."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term strategic impact of Huang's return on Nvidia's market positioning in AI.",
+        "detail": "The market might not fully appreciate how Huang's leadership could accelerate Nvidia's AI initiatives, potentially reshaping the competitive landscape."
+      },
+      "falsifiers": [
+        "Nvidia's strategic direction remains unchanged despite the CEO change.",
+        "European tech stocks fail to sustain gains over the next few weeks.",
+        "AI-related earnings do not improve as anticipated."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long European Tech",
+          "plain": "Buy European tech stocks to capture potential gains from increased investor confidence.",
+          "instrument": "cash equities",
+          "risk": "The trade loses if tech stocks underperform due to broader market weakness."
+        }
+      ],
+      "watchNext": [
+        "Nvidia's next earnings report",
+        "European Central Bank policy announcements",
+        "Global tech sector performance"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-23-nasdaq-jumps-nvidia-surges-after-huang-returns-as-ceo",
+      "rank": 2,
+      "editorNote": "The Nasdaq's significant rise highlights the market's reaction to Nvidia's leadership change.",
+      "materiality": {
+        "score": 64.8,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 11.9,
+          "recency": 9.9
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "selloff",
+          "nvidia"
+        ]
+      },
+      "sources": [
+        "WSJ Markets",
+        "Investing.com Equities"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/stock-futures-rally-as-dust-settles-after-ai-driven-selloff-705ff2c4?mod=rss_markets_main",
+          "title": "Nasdaq Jumps, Nvidia Surges After Huang Returns as CEO"
+        },
+        {
+          "name": "Investing.com Equities",
+          "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-rebound-after-rough-week-for-ailinked-shares-5044594",
+          "title": "Wall St roars back as Jensen Huang returns to Nvidia as CEO"
+        }
+      ],
+      "headlines": [
+        "Nasdaq Jumps, Nvidia Surges After Huang Returns as CEO",
+        "Wall St roars back as Jensen Huang returns to Nvidia as CEO"
+      ],
+      "newestAt": "2026-11-23T15:24:30.000Z",
+      "headline": "Nasdaq Surges as Nvidia CEO Jensen Huang Returns",
+      "standfirst": "U.S. stocks rose sharply after Nvidia reinstated Jensen Huang as CEO.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market anticipated some positive impact, but the scale of the rally suggests it was not fully expected.",
+        "persistence": "days",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Jensen Huang returned as CEO of Nvidia, leading to a sharp rise in the company's stock. This boosted the Nasdaq index significantly.",
+        "whyItMatters": "Investors see Huang's return as a positive sign for Nvidia's future, impacting the broader tech sector.",
+        "detail": "Jensen Huang's leadership is highly regarded, and his return is expected to steer Nvidia towards stronger performance, lifting market sentiment."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Nvidia's stock price rose sharply.",
+              "detail": "Investors expect Huang's leadership to improve Nvidia's profitability, driving the stock higher."
+            },
+            {
+              "plain": "Other tech stocks rose in sympathy.",
+              "detail": "Improved outlook for Nvidia under Huang's leadership boosts confidence in similar tech companies."
+            }
+          ],
+          "endpoint": "Tech sector equities",
+          "strength": "strong"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors adjusted their portfolios to increase tech exposure.",
+              "detail": "Huang's return prompted repositioning towards tech, leading to increased buying pressure."
+            },
+            {
+              "plain": "Short sellers covered positions in tech stocks.",
+              "detail": "The unexpected rally forced short sellers to cover, amplifying upward momentum."
+            }
+          ],
+          "endpoint": "Nasdaq composite index",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Nasdaq composite index",
+          "direction": "up",
+          "magnitude": "2 to 3%",
+          "horizon": "intraday",
+          "conviction": 4,
+          "order": 1,
+          "plain": "The Nasdaq index rose as investors reacted positively to Huang's return.",
+          "detail": "The reinstatement of a respected CEO at Nvidia boosted confidence in tech stocks, lifting the Nasdaq."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Tech sector stocks",
+          "direction": "up",
+          "magnitude": "1.5 to 2.5%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Tech stocks gained as Nvidia's leadership change improved sentiment.",
+          "detail": "Investors extrapolated positive implications for the tech sector from Nvidia's expected performance boost."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "While the immediate reaction is positive, there is a risk that expectations for Nvidia's turnaround are overly optimistic, given broader market challenges.",
+        "detail": "The market may be underestimating external headwinds that could limit Nvidia's ability to capitalize on leadership changes."
+      },
+      "falsifiers": [
+        "Nvidia's next earnings report disappoints",
+        "Tech sector faces unexpected regulatory challenges"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long Nasdaq via futures",
+          "plain": "Buy Nasdaq futures to benefit from continued tech sector strength due to Nvidia's leadership change.",
+          "instrument": "Nasdaq futures",
+          "risk": "Tech sector faces a broader market sell-off."
+        }
+      ],
+      "watchNext": [
+        "Nvidia's upcoming earnings release",
+        "Federal Reserve's next policy meeting"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-23-asian-regulators-step-up-efforts-to-calm-ai-driven-market-tu",
+      "rank": 3,
+      "editorNote": "Asian regulators' actions to calm AI-driven market turmoil suggest potential policy shifts.",
+      "materiality": {
+        "score": 71.5,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 13.5,
+          "salience": 17,
+          "recency": 7
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "rout",
+          "oil",
+          "regulat"
+        ]
+      },
+      "sources": [
+        "WSJ Markets",
+        "WSJ World"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/stocks/asian-regulators-step-up-efforts-to-calm-ai-driven-market-turmoil-95ea6cf8?mod=rss_markets_main",
+          "title": "Asian Regulators Step Up Efforts to Calm AI-Driven Market Turmoil"
+        },
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/finance/stocks/asian-regulators-step-up-efforts-to-calm-ai-driven-market-turmoil-95ea6cf8?mod=rss_worldnews",
+          "title": "Asian Regulators Step Up Efforts to Calm AI-Driven Market Turmoil"
+        }
+      ],
+      "headlines": [
+        "Asian Regulators Step Up Efforts to Calm AI-Driven Market Turmoil"
+      ],
+      "newestAt": "2026-11-23T04:55:00.000Z",
+      "headline": "Asian Regulators Intervene to Stabilise AI Stock Markets",
+      "standfirst": "China, South Korea, and Taiwan introduced emergency measures to counter AI stock market turmoil.",
+      "classification": {
+        "eventType": "regulatory",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Markets had anticipated some intervention given the ongoing volatility, but the specific measures were not fully expected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "China",
+          "South Korea",
+          "Taiwan",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Regulators in China, South Korea, and Taiwan have implemented emergency measures to address the instability in AI-related stock markets. These actions aim to restore investor confidence amidst a global downturn in AI stocks.",
+        "whyItMatters": "This intervention could signal a shift in regulatory stance towards more active market management, impacting investor sentiment and future policy decisions.",
+        "detail": "The measures include trading halts and liquidity support, reflecting a coordinated effort to stabilise markets that have been disrupted by sharp declines in AI stock valuations."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Central banks may delay interest rate hikes.",
+              "detail": "Regulatory interventions suggest a cautious approach, reducing the likelihood of near-term rate increases to support financial stability."
+            }
+          ],
+          "endpoint": "Central banks",
+          "strength": "moderate"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors may reduce exposure to AI stocks.",
+              "detail": "The regulatory actions prompt a reassessment of risk, leading to portfolio rebalancing away from volatile AI stocks."
+            },
+            {
+              "plain": "This could increase volatility in other tech sectors.",
+              "detail": "As investors unwind AI positions, correlated tech sectors might experience increased volatility due to cross-sector reallocations."
+            }
+          ],
+          "endpoint": "Tech sector equities",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Asian AI-related stocks",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "AI stocks in Asia might see a short-term rebound due to the regulatory support.",
+          "detail": "Regulatory measures could temporarily boost AI stocks as they provide a safety net, encouraging some investors to buy back into the market."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "Asian currencies",
+          "direction": "up",
+          "magnitude": "0.5 to 1%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Asian currencies could strengthen as market confidence improves.",
+          "detail": "Stabilisation efforts may lead to capital inflows, supporting local currencies as investor sentiment recovers."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "Global tech sector volatility indices",
+          "direction": "up",
+          "magnitude": "10 to 20%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Volatility in global tech sectors could rise as investors adjust their positions.",
+          "detail": "Position unwinding in AI stocks can spill over, increasing volatility in broader tech indices as correlations shift."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the potential for further regulatory interventions if market instability persists, which could lead to more significant policy shifts impacting broader financial markets.",
+        "detail": "The market might not fully price in the likelihood of additional regulatory actions should current measures fail to stabilise AI stock markets, affecting broader risk assessments."
+      },
+      "falsifiers": [
+        "AI stocks continue to decline despite regulatory measures.",
+        "Central banks proceed with rate hikes contrary to expectations.",
+        "Volatility in tech sectors does not increase as anticipated."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long Asian AI stocks",
+          "plain": "Buy Asian AI stocks for a short-term rebound on regulatory support.",
+          "instrument": "Cash equities or ETFs focused on Asian AI sector",
+          "risk": "Further declines in AI stock prices if regulatory measures are insufficient."
+        }
+      ],
+      "watchNext": [
+        "Upcoming central bank meetings for any policy shifts.",
+        "Further regulatory announcements from Asian governments.",
+        "Earnings reports from major AI companies."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-23-gas-prices-in-europe-surge-as-forecast-cold-snap-feeds-suppl",
+      "rank": 4,
+      "editorNote": "European gas price surge due to supply fears could have lasting effects on energy markets.",
+      "materiality": {
+        "score": 64.8,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 18,
+          "salience": 12.8,
+          "recency": 8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "euro"
+        ]
+      },
+      "sources": [
+        "Guardian Business"
+      ],
+      "links": [
+        {
+          "name": "Guardian Business",
+          "url": "https://www.theguardian.com/business/2026/nov/23/gas-prices-in-europe-surge-as-forecast-cold-snap-feeds-supply-shortage-fears",
+          "title": "Gas prices in Europe surge as forecast cold snap feeds supply shortage fears"
+        }
+      ],
+      "headlines": [
+        "Gas prices in Europe surge as forecast cold snap feeds supply shortage fears"
+      ],
+      "newestAt": "2026-11-23T08:45:13.000Z",
+      "headline": "European Gas Price Surge Raises Inflation and Policy Concerns",
+      "standfirst": "Gas prices in Europe surged due to a forecast cold snap and supply fears.",
+      "classification": {
+        "eventType": "supply-shock",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The immediate price jump reflects initial market reactions, but broader impacts remain under-assessed.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Gas prices in Europe have surged sharply due to forecasts of a cold snap and concerns over supply shortages. This comes after a slowdown in supplies from Qatar and depleted reserves from the summer.",
+        "whyItMatters": "This price surge could lead to higher energy costs for households and businesses, potentially affecting inflation and economic growth.",
+        "detail": "The Dutch month-ahead gas contract, a key European benchmark, rose significantly, indicating heightened concerns over winter supply security and its economic implications."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Higher gas prices increase energy costs for European manufacturers.",
+              "detail": "Rising gas prices elevate operational costs for energy-intensive industries, squeezing profit margins."
+            },
+            {
+              "plain": "Manufacturers may pass costs to consumers, raising product prices.",
+              "detail": "To maintain margins, companies could increase prices, contributing to inflationary pressures."
+            }
+          ],
+          "endpoint": "European consumers and manufacturers",
+          "strength": "strong"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Rising energy costs could lead central banks to reconsider interest rate policies.",
+              "detail": "Inflationary pressures from higher energy costs may prompt central banks to adjust rate hike expectations."
+            }
+          ],
+          "endpoint": "European Central Bank",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "European natural gas futures",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Gas prices are likely to remain elevated due to continued supply concerns.",
+          "detail": "The futures market will price in sustained supply risks, maintaining upward pressure on gas contracts."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "European industrial sector",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Higher energy costs could weigh on industrial sector profits, pressuring stock prices.",
+          "detail": "Increased operational costs may reduce earnings expectations, leading to a sell-off in industrial stocks."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "German Bund yields",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Inflation concerns might push bond yields higher as investors demand more for inflation risk.",
+          "detail": "As inflation expectations rise, bond yields adjust upwards to reflect the increased risk premium."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the potential for prolonged supply disruptions if geopolitical tensions with major gas suppliers worsen.",
+        "detail": "Geopolitical risks, particularly involving key suppliers like Qatar, could exacerbate supply shortages, leading to further price volatility."
+      },
+      "falsifiers": [
+        "A mild winter reducing heating demand.",
+        "Increased gas supplies from alternative sources.",
+        "Central banks dismissing inflation concerns."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long European Gas Futures",
+          "plain": "Buy European gas futures to capitalize on expected price increases due to supply fears.",
+          "instrument": "Futures",
+          "risk": "Prices could fall if supply issues resolve faster than anticipated."
+        }
+      ],
+      "watchNext": [
+        "Weather forecasts for Europe over the next month.",
+        "Announcements from major gas suppliers regarding output.",
+        "European Central Bank's next policy meeting."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-23-gold-climbs-3-focus-on-rate-hike-bets",
+      "rank": 5,
+      "editorNote": "Gold's rise amid rate-hike bets indicates shifting investor strategies in response to monetary policy.",
+      "materiality": {
+        "score": 63.8,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 8.8
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "monetary policy",
+          "inflation",
+          "gold"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/commodities-futures/gold-rises-in-likely-technical-rebound-f895016c?mod=rss_markets_main",
+          "title": "Gold Climbs 3%, Focus on Rate-Hike Bets"
+        }
+      ],
+      "headlines": [
+        "Gold Climbs 3%, Focus on Rate-Hike Bets"
+      ],
+      "newestAt": "2026-11-23T11:43:00.000Z",
+      "headline": "Gold Prices Surge as Investors Eye US Inflation Data",
+      "standfirst": "Gold prices increased by 3% as investors focused on upcoming US inflation data.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Investors had anticipated some movement in gold prices due to inflation concerns, but the full extent of the rise was not fully expected.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Gold prices climbed by 3% as investors looked ahead to US inflation data, which could influence future monetary policy decisions.",
+        "whyItMatters": "This rise in gold suggests investors are adjusting their strategies based on expectations of how inflation data might impact interest rates.",
+        "detail": "The 3% increase in gold prices reflects a shift in investor sentiment as they anticipate that upcoming US inflation data will provide clarity on the Federal Reserve's rate hike trajectory."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Investors expect higher inflation data to lead to more rate hikes.",
+              "detail": "Anticipation of elevated inflation figures is driving expectations that the Federal Reserve will continue its rate hiking cycle."
+            },
+            {
+              "plain": "Rate hikes could strengthen the US dollar, impacting gold prices.",
+              "detail": "A continuation of rate hikes would likely bolster the US dollar, which traditionally has an inverse relationship with gold prices."
+            }
+          ],
+          "endpoint": "gold prices",
+          "strength": "moderate"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors move from bonds to gold as a hedge against inflation.",
+              "detail": "With inflation concerns rising, investors are reallocating from fixed income to gold, seeking a hedge against currency devaluation."
+            },
+            {
+              "plain": "This shift increases demand for gold, pushing prices higher.",
+              "detail": "The reallocation towards gold as a safe haven asset increases demand, thereby driving up its price."
+            }
+          ],
+          "endpoint": "gold prices",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "gold",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Gold prices are likely to rise further as investors seek safe havens amidst inflation concerns.",
+          "detail": "Continued demand for gold as a hedge against inflationary pressures is expected to sustain upward momentum in its price."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "US dollar",
+          "direction": "up",
+          "magnitude": "0.5 to 1%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The US dollar may strengthen if rate hike expectations solidify.",
+          "detail": "A firming outlook for rate hikes could enhance the dollar's appeal, leading to appreciation against other currencies."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "US Treasury yields could rise as inflation expectations firm.",
+          "detail": "Higher anticipated inflation may lead to increased yields as investors demand greater compensation for inflation risk."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Many investors might underestimate the potential for sustained gold demand if inflation persists longer than expected. This could lead to a more prolonged rally in gold prices than currently anticipated.",
+        "detail": "The market may not fully appreciate the longevity of gold's appeal as an inflation hedge, especially if inflation proves to be more entrenched, supporting higher prices for an extended period."
+      },
+      "falsifiers": [
+        "US inflation data comes in significantly lower than expected.",
+        "The Federal Reserve signals a pause or slowdown in rate hikes.",
+        "A sudden appreciation of the US dollar unrelated to rate hikes."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long Gold Futures",
+          "plain": "Buy gold futures to benefit from expected price increases driven by inflation concerns.",
+          "instrument": "futures",
+          "risk": "The main risk is a stronger-than-expected US dollar or lower inflation data, which could depress gold prices."
+        }
+      ],
+      "watchNext": [
+        "Upcoming US inflation data releases",
+        "Federal Reserve's next policy meeting",
+        "US dollar index movements"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    }
+  ],
+  "diagnostics": {
+    "articlesIngested": 173,
+    "clustersConsidered": 25,
+    "feeds": [
+      {
+        "id": "fed",
+        "name": "Federal Reserve",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 0,
+        "ms": 126,
+        "error": null
+      },
+      {
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 0,
+        "ms": 106,
+        "error": null
+      },
+      {
+        "id": "ecb",
+        "name": "European Central Bank",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 2,
+        "ms": 479,
+        "error": null
+      },
+      {
+        "id": "boe",
+        "name": "Bank of England",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 475,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 282,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 199,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 360,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 225,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 224,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 220,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 29,
+        "ms": 227,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 71,
+        "fresh": 17,
+        "ms": 225,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 242,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 26,
+        "ms": 632,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 479,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 8,
+        "fresh": 8,
+        "ms": 1304,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 52,
+        "fresh": 21,
+        "ms": 365,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": true,
+        "parsed": 40,
+        "fresh": 23,
+        "ms": 297,
+        "error": null
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 7,
+        "ms": 417,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 370,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 578,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 1465,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 589,
+        "error": null
+      }
+    ],
+    "marketProviders": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 713,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 240,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 1,
+        "error": "no rows"
+      }
+    ],
+    "usage": {
+      "calls": 6,
+      "inputTokens": 12668,
+      "outputTokens": 5426,
+      "estimatedCostUsd": 0.0859
+    },
+    "runtimeMs": 32092
+  },
+  "scorecardSummary": {
+    "total": 41,
+    "open": 23,
+    "flat": 2,
+    "hits": 4,
+    "misses": 12,
+    "settled": 16,
+    "hitRate": 25,
+    "byClass": {
+      "rates": {
+        "hits": 1,
+        "total": 5,
+        "rate": 20
+      },
+      "commodities": {
+        "hits": 1,
+        "total": 3,
+        "rate": 33.3
+      },
+      "fx": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "vol": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "credit": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "equities": {
+        "hits": 0,
+        "total": 5,
+        "rate": 0
+      }
+    },
+    "byConviction": {
+      "3": {
+        "hits": 2,
+        "total": 9,
+        "rate": 22.2
+      },
+      "4": {
+        "hits": 2,
+        "total": 7,
+        "rate": 28.6
+      }
+    }
+  }
+}
