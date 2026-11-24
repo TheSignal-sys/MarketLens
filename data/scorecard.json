@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T15:54:07.633Z",
+  "updatedAt": "2026-11-24T15:45:47.732Z",
   "calls": [
     {
       "id": "demo-1",
@@ -560,7 +560,14 @@
       "entryValue": 7376.86,
       "entryDisplay": "7,377",
       "openedAt": "2026-11-09T13:49:25.897Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 7159.73,
+      "markDisplay": "7,160",
+      "moveAbs": -217.1300000000001,
+      "movePct": -2.9433932594627,
+      "moveDisplay": "-2.94%",
+      "outcome": "S&P 500 down -2.94% vs called up",
+      "settledAt": "2026-11-24T15:45:47.732Z"
     },
     {
       "id": "2026-11-09-gold-rises-above-4-100-an-ounce-with-focus-on-u-s-inflation-:spx",
@@ -577,7 +584,14 @@
       "entryValue": 7376.86,
       "entryDisplay": "7,377",
       "openedAt": "2026-11-09T13:49:25.897Z",
-      "status": "open"
+      "status": "hit",
+      "markValue": 7159.73,
+      "markDisplay": "7,160",
+      "moveAbs": -217.1300000000001,
+      "movePct": -2.9433932594627,
+      "moveDisplay": "-2.94%",
+      "outcome": "S&P 500 down -2.94% vs called down",
+      "settledAt": "2026-11-24T15:45:47.732Z"
     },
     {
       "id": "2026-11-10-better-risk-appetite-weighs-on-dollar-treasury-yields-seek-d:gold",
@@ -832,6 +846,40 @@
       "entryValue": 5.052,
       "entryDisplay": "5.05%",
       "openedAt": "2026-11-20T08:49:15.942Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-24-u-s-treasury-yields-tick-down-ahead-of-inflation-data:spx",
+      "storyId": "2026-11-24-u-s-treasury-yields-tick-down-ahead-of-inflation-data",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "1 to 1.5%",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Equity markets may rise if lower yields and stable inflation boost investor confidence.",
+      "entryValue": 7159.73,
+      "entryDisplay": "7,160",
+      "openedAt": "2026-11-24T15:45:47.732Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-24-fed-s-john-williams-indicates-higher-interest-rates-likely-o:spx",
+      "storyId": "2026-11-24-fed-s-john-williams-indicates-higher-interest-rates-likely-o",
+      "instrumentKey": "spx",
+      "instrumentLabel": "S&P 500",
+      "assetClass": "equities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "1.5% to 3%",
+      "horizon": "days",
+      "conviction": 4,
+      "rationale": "The S&P 500 is likely to fall as higher rates reduce the attractiveness of stocks.",
+      "entryValue": 7159.73,
+      "entryDisplay": "7,160",
+      "openedAt": "2026-11-24T15:45:47.732Z",
       "status": "open"
     }
   ]
