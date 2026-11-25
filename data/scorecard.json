@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T15:45:47.732Z",
+  "updatedAt": "2026-11-25T15:30:26.217Z",
   "calls": [
     {
       "id": "demo-1",
@@ -676,7 +676,14 @@
       "entryValue": 18.35,
       "entryDisplay": "18.35",
       "openedAt": "2026-11-13T13:01:37.280Z",
-      "status": "open"
+      "status": "hit",
+      "markValue": 32.21,
+      "markDisplay": "32.21",
+      "moveAbs": 13.86,
+      "movePct": 75.53133514986375,
+      "moveDisplay": "+75.53%",
+      "outcome": "VIX up +75.53% vs called up",
+      "settledAt": "2026-11-25T15:30:26.216Z"
     },
     {
       "id": "2026-11-13-stock-futures-lower-as-investors-look-to-u-s-inflation-data:vix",
@@ -693,7 +700,14 @@
       "entryValue": 18.35,
       "entryDisplay": "18.35",
       "openedAt": "2026-11-13T13:01:37.280Z",
-      "status": "open"
+      "status": "hit",
+      "markValue": 32.21,
+      "markDisplay": "32.21",
+      "moveAbs": 13.86,
+      "movePct": 75.53133514986375,
+      "moveDisplay": "+75.53%",
+      "outcome": "VIX up +75.53% vs called up",
+      "settledAt": "2026-11-25T15:30:26.216Z"
     },
     {
       "id": "2026-11-13-nvidia-tumbles-as-its-ceo-jensen-huang-departs-amid-multiply:vix",
@@ -710,7 +724,14 @@
       "entryValue": 18.35,
       "entryDisplay": "18.35",
       "openedAt": "2026-11-13T13:01:37.280Z",
-      "status": "open"
+      "status": "hit",
+      "markValue": 32.21,
+      "markDisplay": "32.21",
+      "moveAbs": 13.86,
+      "movePct": 75.53133514986375,
+      "moveDisplay": "+75.53%",
+      "outcome": "VIX up +75.53% vs called up",
+      "settledAt": "2026-11-25T15:30:26.216Z"
     },
     {
       "id": "2026-11-20-asian-stocks-headed-for-worst-week-since-2020-as-anthropic-i:us10y",
@@ -727,7 +748,14 @@
       "entryValue": 5.052,
       "entryDisplay": "5.05%",
       "openedAt": "2026-11-20T08:49:15.942Z",
-      "status": "open"
+      "status": "hit",
+      "markValue": 4.8259997,
+      "markDisplay": "4.83%",
+      "moveAbs": -0.22600029999999993,
+      "movePct": -4.473481789390339,
+      "moveDisplay": "-23bp",
+      "outcome": "US 10Y down -23bp vs called down",
+      "settledAt": "2026-11-25T15:30:26.216Z"
     },
     {
       "id": "2026-11-20-oil-loses-grip-on-bond-markets-as-inflation-virus-spreads:us10y",
@@ -744,7 +772,12 @@
       "entryValue": 5.052,
       "entryDisplay": "5.05%",
       "openedAt": "2026-11-20T08:49:15.942Z",
-      "status": "open"
+      "status": "open",
+      "markValue": 4.8259997,
+      "markDisplay": "4.83%",
+      "moveAbs": -0.22600029999999993,
+      "movePct": -4.473481789390339,
+      "moveDisplay": "-23bp"
     },
     {
       "id": "2026-11-20-dollar-falls-modestly-as-ai-stock-selloff-weighs:us10y",
@@ -761,7 +794,14 @@
       "entryValue": 5.052,
       "entryDisplay": "5.05%",
       "openedAt": "2026-11-20T08:49:15.942Z",
-      "status": "open"
+      "status": "hit",
+      "markValue": 4.8259997,
+      "markDisplay": "4.83%",
+      "moveAbs": -0.22600029999999993,
+      "movePct": -4.473481789390339,
+      "moveDisplay": "-23bp",
+      "outcome": "US 10Y down -23bp vs called down",
+      "settledAt": "2026-11-25T15:30:26.216Z"
     },
     {
       "id": "2026-11-20-spot-gold-hits-over-14-month-low-amid-fed-rate-hike-certaint:us10y",
@@ -778,7 +818,14 @@
       "entryValue": 5.052,
       "entryDisplay": "5.05%",
       "openedAt": "2026-11-20T08:49:15.942Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 4.8259997,
+      "markDisplay": "4.83%",
+      "moveAbs": -0.22600029999999993,
+      "movePct": -4.473481789390339,
+      "moveDisplay": "-23bp",
+      "outcome": "US 10Y down -23bp vs called up",
+      "settledAt": "2026-11-25T15:30:26.216Z"
     },
     {
       "id": "2026-11-20-nikkei-falls-5-1-to-lowest-level-since-april-9:us10y",
@@ -795,7 +842,14 @@
       "entryValue": 5.052,
       "entryDisplay": "5.05%",
       "openedAt": "2026-11-20T08:49:15.942Z",
-      "status": "open"
+      "status": "hit",
+      "markValue": 4.8259997,
+      "markDisplay": "4.83%",
+      "moveAbs": -0.22600029999999993,
+      "movePct": -4.473481789390339,
+      "moveDisplay": "-23bp",
+      "outcome": "US 10Y down -23bp vs called down",
+      "settledAt": "2026-11-25T15:30:26.216Z"
     },
     {
       "id": "2026-11-20-gold-falls-weighed-by-elevated-yields-strong-dollar:us10y",
@@ -812,7 +866,14 @@
       "entryValue": 5.052,
       "entryDisplay": "5.05%",
       "openedAt": "2026-11-20T08:49:15.942Z",
-      "status": "open"
+      "status": "miss",
+      "markValue": 4.8259997,
+      "markDisplay": "4.83%",
+      "moveAbs": -0.22600029999999993,
+      "movePct": -4.473481789390339,
+      "moveDisplay": "-23bp",
+      "outcome": "US 10Y down -23bp vs called up",
+      "settledAt": "2026-11-25T15:30:26.216Z"
     },
     {
       "id": "2026-11-20-x2018-nvidia-s-turmoil-has-me-spooked-should-i-sell-my-stock:us10y",
@@ -829,7 +890,12 @@
       "entryValue": 5.052,
       "entryDisplay": "5.05%",
       "openedAt": "2026-11-20T08:49:15.942Z",
-      "status": "open"
+      "status": "open",
+      "markValue": 4.8259997,
+      "markDisplay": "4.83%",
+      "moveAbs": -0.22600029999999993,
+      "movePct": -4.473481789390339,
+      "moveDisplay": "-23bp"
     },
     {
       "id": "2026-11-20-japan-core-inflation-soars-to-highest-this-year-as-energy-su:us10y",
@@ -846,7 +912,12 @@
       "entryValue": 5.052,
       "entryDisplay": "5.05%",
       "openedAt": "2026-11-20T08:49:15.942Z",
-      "status": "open"
+      "status": "open",
+      "markValue": 4.8259997,
+      "markDisplay": "4.83%",
+      "moveAbs": -0.22600029999999993,
+      "movePct": -4.473481789390339,
+      "moveDisplay": "-23bp"
     },
     {
       "id": "2026-11-24-u-s-treasury-yields-tick-down-ahead-of-inflation-data:spx",
@@ -880,6 +951,159 @@
       "entryValue": 7159.73,
       "entryDisplay": "7,160",
       "openedAt": "2026-11-24T15:45:47.732Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-25-fed-s-preferred-inflation-gauge-accelerated-to-3-8-in-octobe:us10y",
+      "storyId": "2026-11-25-fed-s-preferred-inflation-gauge-accelerated-to-3-8-in-octobe",
+      "instrumentKey": "us10y",
+      "instrumentLabel": "US 10Y",
+      "assetClass": "rates",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "10 to 20 basis points",
+      "horizon": "weeks",
+      "conviction": 4,
+      "rationale": "The US 10-year Treasury yield is likely to rise as expectations for Fed rate hikes increase.",
+      "entryValue": 4.8259997,
+      "entryDisplay": "4.83%",
+      "openedAt": "2026-11-25T15:30:26.216Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-25-fed-s-preferred-inflation-gauge-accelerated-to-3-8-in-octobe:ndx",
+      "storyId": "2026-11-25-fed-s-preferred-inflation-gauge-accelerated-to-3-8-in-octobe",
+      "instrumentKey": "ndx",
+      "instrumentLabel": "Nasdaq 100",
+      "assetClass": "equities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "3 to 5%",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "Higher bond yields may lead to a decline in tech-heavy indices like the Nasdaq 100.",
+      "entryValue": 25082.201,
+      "entryDisplay": "25,082",
+      "openedAt": "2026-11-25T15:30:26.216Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-25-fed-s-preferred-inflation-gauge-accelerated-to-3-8-in-octobe:vix",
+      "storyId": "2026-11-25-fed-s-preferred-inflation-gauge-accelerated-to-3-8-in-octobe",
+      "instrumentKey": "vix",
+      "instrumentLabel": "VIX",
+      "assetClass": "vol",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "5 to 10%",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "Market volatility is likely to increase as uncertainty over Fed policy grows.",
+      "entryValue": 32.21,
+      "entryDisplay": "32.21",
+      "openedAt": "2026-11-25T15:30:26.216Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-25-treasury-yields-extend-fall-after-u-s-data-flurry:us10y",
+      "storyId": "2026-11-25-treasury-yields-extend-fall-after-u-s-data-flurry",
+      "instrumentKey": "us10y",
+      "instrumentLabel": "US 10Y",
+      "assetClass": "rates",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "15 to 25 basis points",
+      "horizon": "days",
+      "conviction": 4,
+      "rationale": "US 10-year Treasury yields are likely to continue falling as investors expect rate cuts.",
+      "entryValue": 4.8259997,
+      "entryDisplay": "4.83%",
+      "openedAt": "2026-11-25T15:30:26.216Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-25-treasury-yields-extend-fall-after-u-s-data-flurry:ndx",
+      "storyId": "2026-11-25-treasury-yields-extend-fall-after-u-s-data-flurry",
+      "instrumentKey": "ndx",
+      "instrumentLabel": "Nasdaq 100",
+      "assetClass": "equities",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "2 to 4%",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Nasdaq 100 may rise as lower yields make stocks more attractive.",
+      "entryValue": 25082.201,
+      "entryDisplay": "25,082",
+      "openedAt": "2026-11-25T15:30:26.216Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-25-treasury-yields-extend-fall-after-u-s-data-flurry:vix",
+      "storyId": "2026-11-25-treasury-yields-extend-fall-after-u-s-data-flurry",
+      "instrumentKey": "vix",
+      "instrumentLabel": "VIX",
+      "assetClass": "vol",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "2 to 5%",
+      "horizon": "intraday",
+      "conviction": 3,
+      "rationale": "Volatility is likely to rise as investors adjust to new interest rate expectations.",
+      "entryValue": 32.21,
+      "entryDisplay": "32.21",
+      "openedAt": "2026-11-25T15:30:26.216Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-25-the-morning-risk-report-china-s-huawei-convicted-of-fraud-in:ndx",
+      "storyId": "2026-11-25-the-morning-risk-report-china-s-huawei-convicted-of-fraud-in",
+      "instrumentKey": "ndx",
+      "instrumentLabel": "Nasdaq 100",
+      "assetClass": "equities",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "2 to 4%",
+      "horizon": "weeks",
+      "conviction": 4,
+      "rationale": "The Nasdaq 100 is likely to decline further as tech companies face regulatory and earnings pressures.",
+      "entryValue": 25082.201,
+      "entryDisplay": "25,082",
+      "openedAt": "2026-11-25T15:30:26.216Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-25-the-morning-risk-report-china-s-huawei-convicted-of-fraud-in:vix",
+      "storyId": "2026-11-25-the-morning-risk-report-china-s-huawei-convicted-of-fraud-in",
+      "instrumentKey": "vix",
+      "instrumentLabel": "VIX",
+      "assetClass": "vol",
+      "direction": "up",
+      "statedDirection": "up",
+      "magnitude": "5 to 10%",
+      "horizon": "weeks",
+      "conviction": 3,
+      "rationale": "Market volatility is expected to rise as investors react to increased uncertainty.",
+      "entryValue": 32.21,
+      "entryDisplay": "32.21",
+      "openedAt": "2026-11-25T15:30:26.216Z",
+      "status": "open"
+    },
+    {
+      "id": "2026-11-25-sterling-today-pound-slips-as-risk-unwind-lifts-dollar-befor:us10y",
+      "storyId": "2026-11-25-sterling-today-pound-slips-as-risk-unwind-lifts-dollar-befor",
+      "instrumentKey": "us10y",
+      "instrumentLabel": "US 10Y",
+      "assetClass": "rates",
+      "direction": "down",
+      "statedDirection": "down",
+      "magnitude": "5 to 10 basis points",
+      "horizon": "days",
+      "conviction": 3,
+      "rationale": "Treasury yields may fall as investors seek safety in US government bonds.",
+      "entryValue": 4.8259997,
+      "entryDisplay": "4.83%",
+      "openedAt": "2026-11-25T15:30:26.216Z",
       "status": "open"
     }
   ]

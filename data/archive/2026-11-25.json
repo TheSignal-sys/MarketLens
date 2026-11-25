@@ -1,0 +1,1187 @@
+{
+  "version": 1,
+  "date": "2026-11-25",
+  "dateLabel": "Wednesday, 25 November 2026",
+  "generatedAt": "2026-11-25T15:30:26.218Z",
+  "model": "openai/gpt-4o",
+  "marketRead": {
+    "headline": "Inflation Concerns and Market Volatility Rise",
+    "body": "The Fed's preferred inflation gauge accelerated to 3.8% in October, suggesting further rate hikes may be needed, which has not been fully priced in. The US 10-year yield fell 23 basis points, reflecting market uncertainty and risk aversion, while the VIX spiked, indicating increased market volatility. Huawei's conviction in a US criminal trial adds geopolitical tension, potentially affecting US-China relations and impacting technology stocks.",
+    "regime": "inflation concerns and geopolitical tensions"
+  },
+  "snapshot": {
+    "quotes": [
+      {
+        "key": "ndx",
+        "label": "Nasdaq 100",
+        "group": "equities",
+        "unit": "index",
+        "value": 25082.201,
+        "display": "25,082",
+        "change": -2034.0589999999975,
+        "changePct": -7.501252016317876,
+        "changeDisplay": "-7.50%",
+        "asOf": "2026-11-25",
+        "provider": "yahoo"
+      },
+      {
+        "key": "us10y",
+        "label": "US 10Y",
+        "group": "rates",
+        "unit": "pct",
+        "value": 4.8259997,
+        "display": "4.83%",
+        "change": -0.22600029999999993,
+        "changePct": -4.473481789390339,
+        "changeDisplay": "-23bp",
+        "asOf": "2026-11-25",
+        "provider": "yahoo"
+      },
+      {
+        "key": "vix",
+        "label": "VIX",
+        "group": "vol",
+        "unit": "index",
+        "value": 32.21,
+        "display": "32.21",
+        "change": 3.7699999999999996,
+        "changePct": 13.255977496483823,
+        "changeDisplay": "+13.26%",
+        "asOf": "2026-11-25",
+        "provider": "yahoo"
+      }
+    ],
+    "report": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 684,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": true,
+        "count": 3,
+        "ms": 218,
+        "error": null
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "fetchedAt": "2026-11-25T15:29:52.053Z"
+  },
+  "stories": [
+    {
+      "id": "2026-11-25-fed-s-preferred-inflation-gauge-accelerated-to-3-8-in-octobe",
+      "rank": 1,
+      "editorNote": "The acceleration in the Fed's preferred inflation gauge suggests further rate hikes, impacting rates and equities.",
+      "materiality": {
+        "score": 68,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 15.3,
+          "recency": 9.7
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "fed",
+          "inflation"
+        ]
+      },
+      "sources": [
+        "CNBC",
+        "CNBC Economy"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+          "title": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank"
+        },
+        {
+          "name": "CNBC Economy",
+          "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+          "title": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank"
+        }
+      ],
+      "headlines": [
+        "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank"
+      ],
+      "newestAt": "2026-11-25T14:18:45.000Z",
+      "headline": "Fed's Inflation Gauge Rise Hints at Rate Hikes, Pressures Markets",
+      "standfirst": "The Fed's preferred inflation measure rose to 3.8% in October, indicating potential rate hikes.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market expected an increase in inflation, but the specific acceleration was not fully anticipated.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The personal consumption expenditures price index, the Fed's preferred measure of inflation, rose to 3.8% in October. This was in line with expectations but still signals rising inflation pressures.",
+        "whyItMatters": "Higher inflation increases the likelihood of the Fed raising interest rates, which can affect borrowing costs and market valuations.",
+        "detail": "The PCE price index's rise to 3.8% suggests persistent inflation pressures, increasing the probability of further Fed rate hikes to control inflation."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "The Fed is more likely to raise rates to combat inflation.",
+              "detail": "The rise in the PCE index strengthens the case for the Fed to hike rates to maintain its inflation target."
+            },
+            {
+              "plain": "Higher rates increase borrowing costs for companies.",
+              "detail": "As the Fed raises rates, the cost of borrowing for businesses increases, potentially slowing investment and expansion."
+            }
+          ],
+          "endpoint": "US businesses and consumers",
+          "strength": "strong"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Rising rates push bond yields up.",
+              "detail": "Higher expected Fed rates lead to increased Treasury yields as investors demand more return for holding bonds."
+            },
+            {
+              "plain": "Higher yields make equities less attractive.",
+              "detail": "As bond yields rise, the relative attractiveness of equities diminishes, leading to potential sell-offs in stock markets."
+            }
+          ],
+          "endpoint": "US equity markets",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "10 to 20 basis points",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "The US 10-year Treasury yield is likely to rise as expectations for Fed rate hikes increase.",
+          "detail": "With the PCE index rising, the market anticipates further Fed rate hikes, pushing the US 10-year yield higher as investors adjust to a higher rate environment."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Nasdaq 100",
+          "direction": "down",
+          "magnitude": "3 to 5%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Higher bond yields may lead to a decline in tech-heavy indices like the Nasdaq 100.",
+          "detail": "As bond yields rise, the discount rate for future earnings increases, particularly affecting high-growth tech stocks, leading to potential declines in the Nasdaq 100."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "VIX",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Market volatility is likely to increase as uncertainty over Fed policy grows.",
+          "detail": "The rise in inflation and potential for further rate hikes increases uncertainty, leading to higher implied volatility as measured by the VIX."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the persistence of inflation and the Fed's commitment to controlling it, which could lead to more aggressive rate hikes than currently expected.",
+        "detail": "The market may not fully appreciate the Fed's resolve to rein in inflation, potentially resulting in more aggressive rate hikes than are currently priced in."
+      },
+      "falsifiers": [
+        "Inflation data in the coming months show a significant decrease.",
+        "The Fed signals a pause or reversal in its rate hike strategy.",
+        "Global economic conditions deteriorate, prompting a shift in Fed policy."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long US 10-year Treasury yields",
+          "plain": "Buy US 10-year Treasury yields expecting them to rise as the Fed hikes rates.",
+          "instrument": "Futures on US 10-year Treasury yields",
+          "risk": "The main risk is if inflation unexpectedly decreases, causing yields to fall."
+        }
+      ],
+      "watchNext": [
+        "Upcoming Fed meetings and statements for rate guidance.",
+        "Next month's inflation data for signs of continued pressure.",
+        "Global economic indicators that might influence Fed policy."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-25-treasury-yields-extend-fall-after-u-s-data-flurry",
+      "rank": 2,
+      "editorNote": "The fall in Treasury yields after US data indicates a significant market reaction to economic conditions.",
+      "materiality": {
+        "score": 65,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 10
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "fed",
+          "federal reserve",
+          "inflation",
+          "treasury"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995?mod=rss_markets_main",
+          "title": "Treasury Yields Extend Fall After U.S. Data Flurry"
+        }
+      ],
+      "headlines": [
+        "Treasury Yields Extend Fall After U.S. Data Flurry"
+      ],
+      "newestAt": "2026-11-25T15:21:00.000Z",
+      "headline": "US Treasury Yields Drop as Inflation Data Sparks Rate Cut Speculation",
+      "standfirst": "US Treasury yields fell after new inflation data suggested a potential rate cut.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had expected some impact from the inflation data, but the extent of the yield drop suggests a stronger-than-anticipated reaction.",
+        "persistence": "days",
+        "regionFocus": [
+          "US"
+        ]
+      },
+      "whatHappened": {
+        "plain": "US Treasury yields fell after new data showed lower-than-expected inflation. This data included the personal consumption expenditures price index, which the Federal Reserve closely watches.",
+        "whyItMatters": "Lower yields indicate that investors expect the Federal Reserve might cut interest rates, affecting borrowing costs and investment returns.",
+        "detail": "The personal consumption expenditures price index came in below expectations, leading to a drop in Treasury yields as markets priced in increased chances of a rate cut by the Federal Reserve."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "The inflation data suggests the Fed might cut rates.",
+              "detail": "The lower-than-expected inflation data increases the probability that the Federal Reserve will opt for a rate cut to stimulate the economy."
+            },
+            {
+              "plain": "Investors anticipate lower borrowing costs.",
+              "detail": "With the potential for a Fed rate cut, the market expects lower future borrowing costs, impacting financial conditions."
+            }
+          ],
+          "endpoint": "borrowers and investors",
+          "strength": "strong"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Lower Treasury yields reduce the cost of money.",
+              "detail": "The decline in Treasury yields decreases the baseline return, affecting the discount rate for all investments."
+            },
+            {
+              "plain": "Asset prices adjust to the new discount rate.",
+              "detail": "As the discount rate falls, asset prices, particularly equities, adjust upwards to reflect the lower cost of money."
+            }
+          ],
+          "endpoint": "equity markets",
+          "strength": "moderate"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors adjust their portfolios based on the new data.",
+              "detail": "The unexpected drop in yields forces investors to rebalance portfolios, particularly those with a short position in bonds."
+            },
+            {
+              "plain": "This rebalancing increases market volatility.",
+              "detail": "Portfolio adjustments lead to increased trading activity, contributing to heightened market volatility."
+            }
+          ],
+          "endpoint": "volatility indices",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "15 to 25 basis points",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "US 10-year Treasury yields are likely to continue falling as investors expect rate cuts.",
+          "detail": "The yield on the US 10-year Treasury is expected to decline further as the market prices in a higher probability of Federal Reserve rate cuts following the inflation data."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Nasdaq 100",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Nasdaq 100 may rise as lower yields make stocks more attractive.",
+          "detail": "With falling Treasury yields, the relative attractiveness of equities increases, potentially lifting the Nasdaq 100 index as investors seek higher returns."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "VIX",
+          "direction": "up",
+          "magnitude": "2 to 5%",
+          "horizon": "intraday",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Volatility is likely to rise as investors adjust to new interest rate expectations.",
+          "detail": "The VIX index may increase as the market reacts to the unexpected inflation data and adjusts expectations for future Fed policy moves."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Most investors may underestimate the speed at which the Federal Reserve could act on a rate cut if inflation continues to undershoot their target.",
+        "detail": "The market may not fully appreciate the Fed's willingness to act swiftly if inflation data persistently falls below target, leading to a quicker-than-expected rate cut."
+      },
+      "falsifiers": [
+        "Upcoming inflation data showing a significant rise.",
+        "Federal Reserve statements indicating no urgency for a rate cut.",
+        "A sudden geopolitical event causing a flight to safety."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long US Treasuries",
+          "plain": "Buy US Treasuries to benefit from further yield declines as rate cut expectations rise.",
+          "instrument": "Cash bonds or futures",
+          "risk": "The main risk is if inflation data surprises to the upside, reversing rate cut expectations."
+        }
+      ],
+      "watchNext": [
+        "Next month's US inflation data release",
+        "Federal Reserve meeting minutes",
+        "Speeches by Federal Reserve officials"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-25-the-morning-risk-report-china-s-huawei-convicted-of-fraud-in",
+      "rank": 3,
+      "editorNote": "Huawei's conviction could have lasting geopolitical and market implications, particularly for technology stocks.",
+      "materiality": {
+        "score": 66.2,
+        "components": {
+          "corroboration": 26,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 13.6,
+          "recency": 9.1
+        },
+        "distinctSources": 3,
+        "salienceTerms": [
+          "fed",
+          "repo"
+        ]
+      },
+      "sources": [
+        "WSJ Markets",
+        "WSJ World",
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-chinas-huawei-convicted-of-fraud-in-u-s-criminal-trial-63fc5211?mod=rss_markets_main",
+          "title": "The Morning Risk Report: China’s Huawei Convicted of Fraud in U.S. Criminal Trial"
+        },
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/business/telecom/chinas-huawei-convicted-of-fraud-in-u-s-criminal-trial-20e17ac3?mod=rss_worldnews",
+          "title": "China’s Huawei Convicted of Fraud in U.S. Criminal Trial"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/25/huawei-fraud-trade-trial.html",
+          "title": "U.S. jury convicts Huawei in a criminal trial over fraud and trade secrets"
+        }
+      ],
+      "headlines": [
+        "The Morning Risk Report: China’s Huawei Convicted of Fraud in U.S. Criminal Trial",
+        "China’s Huawei Convicted of Fraud in U.S. Criminal Trial",
+        "U.S. jury convicts Huawei in a criminal trial over fraud and trade secrets"
+      ],
+      "newestAt": "2026-11-25T12:13:00.000Z",
+      "headline": "Huawei Conviction Sparks Tech Selloff Amid Trade Tensions",
+      "standfirst": "A U.S. jury has convicted Huawei of fraud, escalating tensions between China and the U.S.",
+      "classification": {
+        "eventType": "geopolitical",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some legal risks for Huawei, but the conviction adds unexpected severity.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US",
+          "China",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Huawei has been convicted by a U.S. jury of fraud and stealing trade secrets. This legal decision heightens existing tensions between the U.S. and China.",
+        "whyItMatters": "The conviction could lead to stricter regulations on Chinese tech firms, impacting global tech supply chains.",
+        "detail": "The conviction is a significant legal blow to Huawei, potentially leading to increased scrutiny and regulatory actions against Chinese tech companies in the U.S."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Tech companies face increased regulatory costs.",
+              "detail": "U.S. tech firms could see higher compliance costs as regulations tighten in response to the Huawei conviction."
+            },
+            {
+              "plain": "This reduces their profit margins.",
+              "detail": "Higher compliance costs will likely squeeze profit margins for tech companies, impacting their earnings outlook."
+            }
+          ],
+          "endpoint": "U.S. technology companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "The U.S. dollar strengthens against the Chinese yuan.",
+              "detail": "The Huawei conviction increases geopolitical risk, leading investors to favour the U.S. dollar over the yuan."
+            },
+            {
+              "plain": "This makes U.S. exports more expensive.",
+              "detail": "A stronger dollar raises the cost of U.S. goods abroad, potentially reducing export competitiveness."
+            }
+          ],
+          "endpoint": "U.S. exporters",
+          "strength": "moderate"
+        },
+        {
+          "channel": "positioning",
+          "links": [
+            {
+              "plain": "Investors sell tech stocks heavily exposed to China.",
+              "detail": "Funds with significant positions in tech stocks exposed to China are forced to rebalance, leading to further selloffs."
+            },
+            {
+              "plain": "This increases market volatility.",
+              "detail": "The selloff in tech stocks exacerbates market volatility, as reflected in the rising VIX index."
+            }
+          ],
+          "endpoint": "Global equity markets",
+          "strength": "strong"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "Nasdaq 100",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 2,
+          "plain": "The Nasdaq 100 is likely to decline further as tech companies face regulatory and earnings pressures.",
+          "detail": "The increased regulatory scrutiny and potential earnings impact on tech companies are likely to drive the Nasdaq 100 down by 2 to 4% over the coming weeks."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "USD/CNY",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The U.S. dollar is expected to strengthen against the Chinese yuan as geopolitical tensions rise.",
+          "detail": "The Huawei conviction increases geopolitical risk, prompting a flight to safety into the U.S. dollar, likely appreciating it by 1 to 2% against the yuan."
+        },
+        {
+          "assetClass": "vol",
+          "instrument": "VIX",
+          "direction": "up",
+          "magnitude": "5 to 10%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Market volatility is expected to rise as investors react to increased uncertainty.",
+          "detail": "The increased uncertainty from the Huawei conviction is likely to push the VIX up by 5 to 10% as investors hedge against further market disruptions."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact on supply chains, as U.S. firms could face disruptions if China retaliates with its own regulations.",
+        "detail": "The market might not fully price in the potential for supply chain disruptions if China implements countermeasures against U.S. tech companies."
+      },
+      "falsifiers": [
+        "China and the U.S. reach a diplomatic resolution reducing tensions.",
+        "Huawei successfully appeals the conviction, reducing regulatory pressure.",
+        "Global tech supply chains remain unaffected by the conviction."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Short Nasdaq 100",
+          "plain": "Sell Nasdaq 100 futures to profit from expected declines in tech stocks.",
+          "instrument": "Nasdaq 100 futures",
+          "risk": "A quick resolution to U.S.-China tensions could drive tech stocks higher."
+        }
+      ],
+      "watchNext": [
+        "Statements from U.S. and Chinese regulators regarding tech sector policies.",
+        "Huawei's response and potential appeal of the conviction.",
+        "Market reaction to upcoming U.S. economic data releases."
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "VIX",
+          "plain": "The VIX is a measure of expected stock market volatility, often referred to as the 'fear index'."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-25-boe-s-bailey-sees-lower-peak-for-inflation-if-energy-prices-",
+      "rank": 4,
+      "editorNote": "BOE's comments on inflation and energy prices provide insights into potential future monetary policy.",
+      "materiality": {
+        "score": 73,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 10
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "bank of england",
+          "bailey",
+          "inflation",
+          "oil",
+          "natural gas"
+        ]
+      },
+      "sources": [
+        "WSJ Markets",
+        "WSJ World"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/pro/central-banking/boes-bailey-sees-lower-peak-for-inflation-if-energy-prices-stay-where-they-are-8678fd4f?mod=rss_markets_main",
+          "title": "BOE’s Bailey Sees Lower Peak For Inflation If Energy Prices Stay Where They Are"
+        },
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/pro/central-banking/boes-bailey-sees-lower-peak-for-inflation-if-energy-prices-stay-where-they-are-8678fd4f?mod=rss_worldnews",
+          "title": "BOE’s Bailey Sees Lower Peak For Inflation If Energy Prices Stay Where They Are"
+        }
+      ],
+      "headlines": [
+        "BOE’s Bailey Sees Lower Peak For Inflation If Energy Prices Stay Where They Are"
+      ],
+      "newestAt": "2026-11-25T15:24:00.000Z",
+      "headline": "BOE's Inflation Outlook Eases Pressure on Rate Hikes",
+      "standfirst": "The Bank of England sees a lower peak for inflation if energy prices hold steady.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market has already considered stable energy prices but has not fully adjusted to the BOE's revised inflation outlook.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "UK",
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The Bank of England stated that if current energy prices remain stable, inflation in the UK will peak at a lower level than previously expected.",
+        "whyItMatters": "This suggests the BOE might not need to raise interest rates as aggressively as anticipated, impacting borrowing costs and market expectations.",
+        "detail": "Governor Andrew Bailey's comments imply a potential shift in the BOE's monetary policy trajectory, reducing the urgency for rate hikes if inflationary pressures ease."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "The BOE may slow its rate hikes.",
+              "detail": "With a lower inflation peak, the BOE could adopt a less aggressive rate hike path."
+            },
+            {
+              "plain": "This could reduce borrowing costs for businesses.",
+              "detail": "Slower rate hikes would lead to lower interest rates, easing financial conditions for corporate borrowing."
+            }
+          ],
+          "endpoint": "UK businesses",
+          "strength": "strong"
+        },
+        {
+          "channel": "discount-rate",
+          "links": [
+            {
+              "plain": "Government bond yields may fall.",
+              "detail": "Expectations of slower rate hikes can lead to a decline in bond yields as the cost of money decreases."
+            },
+            {
+              "plain": "This could support equity valuations.",
+              "detail": "Lower discount rates increase the present value of future cash flows, boosting equity valuations."
+            }
+          ],
+          "endpoint": "UK equities",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "UK 10-year Gilt yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "UK government bond yields are likely to fall as the BOE signals a slower rate hike path.",
+          "detail": "The expectation of reduced rate hikes leads to a decline in gilt yields as investors adjust to a lower cost of money."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "FTSE 100",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "UK stocks may rise as lower bond yields support higher equity valuations.",
+          "detail": "With lower discount rates, the present value of future corporate earnings increases, potentially boosting stock prices."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "UK corporate bonds",
+          "direction": "tighter",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Corporate bond spreads could tighten as borrowing costs decrease.",
+          "detail": "Easing monetary policy expectations reduce credit risk premiums, tightening spreads for corporate bonds."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors might underestimate the impact of stable energy prices on long-term inflation expectations, which could lead to a more prolonged period of accommodative monetary policy.",
+        "detail": "The market may not fully price in the possibility that stable energy prices could anchor inflation expectations, delaying the need for aggressive rate hikes."
+      },
+      "falsifiers": [
+        "Energy prices rise significantly",
+        "UK inflation data shows unexpected acceleration",
+        "BOE changes its inflation forecast"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long UK Gilts",
+          "plain": "Buy UK government bonds to benefit from falling yields as the BOE signals slower rate hikes.",
+          "instrument": "UK Gilt futures",
+          "risk": "The main risk is a sudden increase in energy prices, which could reignite inflation concerns."
+        }
+      ],
+      "watchNext": [
+        "UK CPI data release",
+        "BOE's next monetary policy meeting",
+        "Energy price trends"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "gilt",
+          "plain": "A UK government bond."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-25-sterling-today-pound-slips-as-risk-unwind-lifts-dollar-befor",
+      "rank": 5,
+      "editorNote": "The movement in Sterling and the dollar highlights currency market reactions to risk and inflation data.",
+      "materiality": {
+        "score": 62.9,
+        "components": {
+          "corroboration": 13,
+          "authority": 7,
+          "breadth": 13.5,
+          "salience": 20,
+          "recency": 9.4
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "pce",
+          "unwind",
+          "dollar",
+          "sterling"
+        ]
+      },
+      "sources": [
+        "Investing.com FX"
+      ],
+      "links": [
+        {
+          "name": "Investing.com FX",
+          "url": "https://www.investing.com/news/forex-news/sterling-today-pound-falls-as-risk-unwind-sends-funds-back-to-dollar-5050111",
+          "title": "Sterling today: Pound slips as risk unwind lifts dollar before PCE data"
+        }
+      ],
+      "headlines": [
+        "Sterling today: Pound slips as risk unwind lifts dollar before PCE data"
+      ],
+      "newestAt": "2026-11-25T13:16:09.000Z",
+      "headline": "Sterling Weakens as Dollar Strengthens Ahead of PCE Data",
+      "standfirst": "The British pound fell against the dollar as investors shifted towards safer assets.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "Markets had anticipated some dollar strength due to risk aversion, but the full impact was not yet reflected.",
+        "persistence": "days",
+        "regionFocus": [
+          "Global",
+          "US",
+          "UK"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The British pound fell against the US dollar as investors moved to safer assets ahead of the Personal Consumption Expenditures (PCE) data release. This shift indicates heightened risk aversion in the market.",
+        "whyItMatters": "The movement in currency reflects investor sentiment and can impact international trade and investment flows.",
+        "detail": "Sterling's decline against the dollar is driven by a 'risk-off' sentiment as investors anticipate the PCE data, which could influence future Federal Reserve policy."
+      },
+      "chains": [
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "As the dollar strengthens, US exports become more expensive.",
+              "detail": "A stronger dollar increases the cost of US goods abroad, potentially reducing demand for US exports."
+            },
+            {
+              "plain": "UK exporters benefit from a weaker pound.",
+              "detail": "A weaker pound makes UK goods cheaper for foreign buyers, potentially boosting UK export volumes."
+            }
+          ],
+          "endpoint": "Exporters in the US and UK",
+          "strength": "moderate"
+        },
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "The Fed may consider the dollar's strength in its rate decisions.",
+              "detail": "A stronger dollar can tighten financial conditions, potentially influencing the Fed to pause rate hikes."
+            }
+          ],
+          "endpoint": "Federal Reserve policy",
+          "strength": "speculative"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "fx",
+          "instrument": "GBP/USD",
+          "direction": "down",
+          "magnitude": "0.5 to 1%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 1,
+          "plain": "The pound is likely to continue weakening against the dollar in the near term.",
+          "detail": "With risk aversion driving flows into the dollar, GBP/USD could see further declines as market sentiment remains cautious."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US exporters",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "days",
+          "conviction": 2,
+          "order": 2,
+          "plain": "US exporters may see pressure on their stock prices due to a stronger dollar.",
+          "detail": "The stronger dollar could weigh on revenues for US companies with significant international sales, impacting their stock performance."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Treasury yields may fall as investors seek safety in US government bonds.",
+          "detail": "Increased demand for Treasuries as a safe haven could push yields lower, reflecting the shift in risk sentiment."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate how persistent the dollar's strength could be if the PCE data reinforces expectations of higher US rates.",
+        "detail": "If the upcoming PCE data signals stronger inflation, the dollar's strength could persist longer than currently anticipated, impacting global trade dynamics."
+      },
+      "falsifiers": [
+        "A weaker-than-expected PCE print causing the dollar to weaken.",
+        "A sudden shift in risk sentiment back to 'risk-on'.",
+        "Unexpected dovish commentary from the Federal Reserve."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long USD/Short GBP",
+          "plain": "Buy USD and sell GBP to benefit from the dollar's strength.",
+          "instrument": "FX forward or spot trade",
+          "risk": "The main risk is a reversal in risk sentiment or unexpected UK economic strength."
+        }
+      ],
+      "watchNext": [
+        "US PCE data release",
+        "Federal Reserve's next policy meeting",
+        "UK economic data releases"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "risk-off",
+          "plain": "A market condition where investors move away from risky assets to safer ones."
+        },
+        {
+          "term": "PCE data",
+          "plain": "Personal Consumption Expenditures data, a measure of inflation in the US."
+        }
+      ],
+      "confidence": 3
+    }
+  ],
+  "diagnostics": {
+    "articlesIngested": 186,
+    "clustersConsidered": 25,
+    "feeds": [
+      {
+        "id": "fed",
+        "name": "Federal Reserve",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 1,
+        "ms": 118,
+        "error": null
+      },
+      {
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 1,
+        "ms": 78,
+        "error": null
+      },
+      {
+        "id": "ecb",
+        "name": "European Central Bank",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 2,
+        "ms": 599,
+        "error": null
+      },
+      {
+        "id": "boe",
+        "name": "Bank of England",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 501,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 342,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 213,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 32,
+        "fresh": 2,
+        "ms": 346,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 212,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 237,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 236,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 30,
+        "ms": 246,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 71,
+        "fresh": 29,
+        "ms": 288,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 426,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 30,
+        "ms": 538,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 5,
+        "ms": 585,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 12,
+        "fresh": 12,
+        "ms": 958,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 52,
+        "fresh": 24,
+        "ms": 408,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 352,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 418,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 423,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 422,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 3281,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 422,
+        "error": null
+      }
+    ],
+    "marketProviders": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 684,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": true,
+        "count": 3,
+        "ms": 218,
+        "error": null
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "usage": {
+      "calls": 6,
+      "inputTokens": 12729,
+      "outputTokens": 6255,
+      "estimatedCostUsd": 0.0944
+    },
+    "runtimeMs": 38473
+  },
+  "scorecardSummary": {
+    "total": 52,
+    "open": 24,
+    "flat": 2,
+    "hits": 11,
+    "misses": 15,
+    "settled": 26,
+    "hitRate": 42.3,
+    "byClass": {
+      "rates": {
+        "hits": 4,
+        "total": 10,
+        "rate": 40
+      },
+      "commodities": {
+        "hits": 1,
+        "total": 3,
+        "rate": 33.3
+      },
+      "fx": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "vol": {
+        "hits": 4,
+        "total": 4,
+        "rate": 100
+      },
+      "credit": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "equities": {
+        "hits": 1,
+        "total": 7,
+        "rate": 14.3
+      }
+    },
+    "byConviction": {
+      "3": {
+        "hits": 9,
+        "total": 18,
+        "rate": 50
+      },
+      "4": {
+        "hits": 2,
+        "total": 8,
+        "rate": 25
+      }
+    }
+  }
+}
