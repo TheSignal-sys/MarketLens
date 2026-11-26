@@ -1,0 +1,1106 @@
+{
+  "version": 1,
+  "date": "2026-11-26",
+  "dateLabel": "Thursday, 26 November 2026",
+  "generatedAt": "2026-11-26T15:03:47.551Z",
+  "model": "openai/gpt-4o",
+  "marketRead": {
+    "headline": "Central Bank Changes and AI Investment Shifts",
+    "body": "Pablo Hernández de Cos's appointment as ECB president signals potential shifts in European monetary policy, affecting rates and FX markets. The AI selloff is prompting wealthy European investors to diversify beyond equities, impacting multiple asset classes. Norse Atlantic's potential bankruptcy highlights ongoing credit market vulnerabilities, with broader implications for the airline industry and related sectors.",
+    "regime": "policy shifts and investment realignment"
+  },
+  "snapshot": {
+    "quotes": [],
+    "report": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 695,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 175,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "fetchedAt": "2026-11-26T15:03:28.032Z"
+  },
+  "stories": [
+    {
+      "id": "2026-11-26-spain-s-pablo-hern-ndez-de-cos-set-to-lead-european-central-",
+      "rank": 1,
+      "editorNote": "The appointment of a new ECB president could lead to significant changes in European monetary policy, affecting rates and FX markets.",
+      "materiality": {
+        "score": 72.5,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 19.6,
+          "recency": 10
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "ecb",
+          "lagarde",
+          "euro"
+        ]
+      },
+      "sources": [
+        "CNBC",
+        "CNBC Economy"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+          "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank"
+        },
+        {
+          "name": "CNBC Economy",
+          "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+          "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank"
+        }
+      ],
+      "headlines": [
+        "Spain’s Pablo Hernández de Cos set to lead European Central Bank"
+      ],
+      "newestAt": "2026-11-26T14:59:47.000Z",
+      "headline": "ECB Leadership Change Could Signal Policy Shift",
+      "standfirst": "Pablo Hernández de Cos is set to become the new ECB President.",
+      "classification": {
+        "eventType": "monetary-policy",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market anticipated a leadership change but not the specific policy direction de Cos might take.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Pablo Hernández de Cos is expected to take over as the President of the European Central Bank, succeeding Christine Lagarde. This transition comes at a time of political uncertainty and uneven economic growth in Europe.",
+        "whyItMatters": "The new leadership could lead to changes in the ECB's monetary policy, impacting interest rates and currency values.",
+        "detail": "De Cos's appointment could influence the ECB's approach to interest rates and quantitative easing, affecting financial conditions across Europe."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "De Cos could adopt a more dovish policy stance.",
+              "detail": "De Cos might favour lower interest rates or further quantitative easing, impacting monetary policy expectations."
+            },
+            {
+              "plain": "This could lead to lower interest rates in the Eurozone.",
+              "detail": "A dovish shift would increase the probability of rate cuts, affecting the yield curve."
+            }
+          ],
+          "endpoint": "Eurozone interest rates",
+          "strength": "strong"
+        },
+        {
+          "channel": "fx-terms-of-trade",
+          "links": [
+            {
+              "plain": "A dovish ECB stance could weaken the euro.",
+              "detail": "Lower rates would reduce the euro's appeal to yield-seeking investors, putting downward pressure on the currency."
+            }
+          ],
+          "endpoint": "EUR/USD exchange rate",
+          "strength": "moderate"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Lower rates could boost borrowing for European companies.",
+              "detail": "Cheaper credit could improve corporate balance sheets, potentially enhancing profitability."
+            }
+          ],
+          "endpoint": "European corporate earnings",
+          "strength": "speculative"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "rates",
+          "instrument": "Eurozone government bond yields",
+          "direction": "down",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Eurozone bond yields may fall if the ECB adopts a more dovish stance.",
+          "detail": "Expectations of lower rates and potential quantitative easing could drive yields lower across the curve."
+        },
+        {
+          "assetClass": "fx",
+          "instrument": "EUR/USD",
+          "direction": "down",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "The euro could weaken against the dollar if ECB policy turns more dovish.",
+          "detail": "A shift towards lower rates would reduce the euro's yield advantage, pressuring the currency lower."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "European stocks",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 2,
+          "order": 2,
+          "plain": "Lower borrowing costs could support European stock prices.",
+          "detail": "Cheaper credit and potential for improved earnings could lift equity valuations."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the potential for de Cos to implement unconventional policy measures, such as expanded asset purchases, which could have a significant impact on financial markets.",
+        "detail": "The market might be overlooking de Cos's potential to pursue aggressive monetary easing, which could alter asset price dynamics significantly."
+      },
+      "falsifiers": [
+        "De Cos signals a continuation of Lagarde's policy approach.",
+        "Eurozone economic data improves significantly, reducing the need for dovish policies.",
+        "Political developments in Europe shift the ECB's focus away from monetary easing."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long European equities",
+          "plain": "Buy European stocks to benefit from potential lower rates and improved corporate earnings.",
+          "instrument": "European equity futures",
+          "risk": "A hawkish shift in ECB policy would undermine this position."
+        }
+      ],
+      "watchNext": [
+        "De Cos's first public statements as ECB President",
+        "Upcoming ECB policy meetings",
+        "Eurozone inflation and growth data releases"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-26-wealthy-europeans-look-beyond-stocks-amid-ai-selloff-here-s-",
+      "rank": 2,
+      "editorNote": "The shift in investment strategies by wealthy Europeans due to the AI selloff impacts multiple asset classes, including equities and commodities.",
+      "materiality": {
+        "score": 68.9,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 18,
+          "salience": 17,
+          "recency": 7.9
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "selloff",
+          "gold",
+          "euro"
+        ]
+      },
+      "sources": [
+        "CNBC"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
+          "title": "Wealthy Europeans look beyond stocks amid AI selloff. Here’s where they’re investing"
+        }
+      ],
+      "headlines": [
+        "Wealthy Europeans look beyond stocks amid AI selloff. Here’s where they’re investing"
+      ],
+      "newestAt": "2026-11-26T07:23:42.000Z",
+      "headline": "Wealthy Europeans Shift to Alternatives Amid AI-Driven Stock Selloff",
+      "standfirst": "Wealthy Europeans are moving investments to alternatives due to AI stock selloff.",
+      "classification": {
+        "eventType": "flows",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The shift away from equities has been anticipated but not fully reflected in alternative asset prices.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Wealthy European investors are shifting their money from stocks to alternative investments due to a selloff in AI-related equities. They are looking for more stable returns in a volatile market.",
+        "whyItMatters": "This change in strategy affects various asset classes, potentially leading to price adjustments in both equities and alternatives.",
+        "detail": "The AI stock selloff has prompted high-net-worth investors to reassess their portfolios, increasing demand for alternative assets like real estate, private equity, and commodities."
+      },
+      "chains": [
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors sell AI stocks.",
+              "detail": "High-net-worth investors are liquidating positions in AI equities due to perceived overvaluation and volatility."
+            },
+            {
+              "plain": "They buy alternative assets.",
+              "detail": "Proceeds from AI stock sales are redirected into alternatives such as real estate and private equity, seeking diversification and stability."
+            }
+          ],
+          "endpoint": "alternative asset markets",
+          "strength": "strong"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Alternative asset managers see increased inflows.",
+              "detail": "Firms managing real estate, private equity, and other alternatives benefit from new capital inflows, potentially boosting their revenue."
+            },
+            {
+              "plain": "Their profits may rise.",
+              "detail": "Higher asset management fees from increased assets under management can lead to improved profitability for these firms."
+            }
+          ],
+          "endpoint": "alternative asset managers",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "European AI stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "European AI stocks are likely to fall further as investors sell off.",
+          "detail": "Continued selling pressure from high-net-worth investors could drive European AI stock prices down by 2 to 4% over the coming weeks."
+        },
+        {
+          "assetClass": "commodities",
+          "instrument": "Gold",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Gold may rise as investors seek safe-haven assets.",
+          "detail": "As investors shift towards alternatives, gold could see a 1 to 2% increase as it is perceived as a stable store of value."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "European alternative asset managers",
+          "direction": "tighter",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Credit spreads for alternative asset managers may tighten due to increased inflows.",
+          "detail": "With higher inflows, alternative asset managers could see their credit spreads tighten by 5 to 10 basis points as their financial stability improves."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "The market might be underestimating the long-term impact of this shift on traditional asset classes. As more investors move away from equities, the pressure on stock prices could persist longer than expected, affecting broader market sentiment.",
+        "detail": "Investors may not fully appreciate the prolonged impact on equity markets as the shift to alternatives could lead to sustained downward pressure on stock valuations."
+      },
+      "falsifiers": [
+        "A rebound in AI stock valuations reversing the selloff trend",
+        "Central banks cutting rates, boosting equity markets",
+        "A significant geopolitical event redirecting flows back to equities"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long Gold",
+          "plain": "Buy gold to benefit from the shift to safe-haven assets.",
+          "instrument": "Gold futures",
+          "risk": "A sudden recovery in equity markets could reduce gold's appeal."
+        }
+      ],
+      "watchNext": [
+        "Central bank meetings discussing interest rates",
+        "Earnings reports from major alternative asset managers",
+        "Economic data releases affecting investor sentiment"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-26-norse-atlantic-suspends-all-flights-warns-it-may-file-for-ba",
+      "rank": 3,
+      "editorNote": "Norse Atlantic's potential bankruptcy highlights credit market vulnerabilities and could have broader implications for the airline industry.",
+      "materiality": {
+        "score": 61.9,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 13.6,
+          "recency": 9.8
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "war",
+          "bankruptcy"
+        ]
+      },
+      "sources": [
+        "CNBC",
+        "BBC Business"
+      ],
+      "links": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
+          "title": "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse"
+        },
+        {
+          "name": "BBC Business",
+          "url": "https://www.bbc.co.uk/news/articles/c9kgmd0ldy0lo?at_medium=RSS&at_campaign=rss",
+          "title": "Norse Atlantic suspends all flights as it faces potential collapse"
+        }
+      ],
+      "headlines": [
+        "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse",
+        "Norse Atlantic suspends all flights as it faces potential collapse"
+      ],
+      "newestAt": "2026-11-26T14:28:22.000Z",
+      "headline": "Norse Atlantic's potential bankruptcy shakes airline credit markets",
+      "standfirst": "Norse Atlantic has halted all flights and may file for bankruptcy.",
+      "classification": {
+        "eventType": "corporate",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated financial trouble but not a complete suspension of flights.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "Europe",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Norse Atlantic has stopped all flights and warned it might need to declare bankruptcy. This comes just after the airline revealed its dire financial state.",
+        "whyItMatters": "This situation highlights weaknesses in the credit market and could affect the broader airline industry.",
+        "detail": "Norse Atlantic's suspension of operations underscores the fragility in the airline sector, which could lead to tighter credit conditions and impact other carriers."
+      },
+      "chains": [
+        {
+          "channel": "credit",
+          "links": [
+            {
+              "plain": "Airlines may face higher borrowing costs.",
+              "detail": "Norse Atlantic's troubles could lead lenders to reassess risk, increasing credit spreads for the sector."
+            }
+          ],
+          "endpoint": "Airline companies",
+          "strength": "strong"
+        },
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Competing airlines might see higher demand.",
+              "detail": "With Norse Atlantic halting flights, other airlines could capture displaced passengers, boosting their revenues."
+            }
+          ],
+          "endpoint": "Competing airlines",
+          "strength": "moderate"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors may shift to more stable sectors.",
+              "detail": "As airline risk increases, investors might reallocate to sectors perceived as safer, like utilities or consumer staples."
+            }
+          ],
+          "endpoint": "Equity markets",
+          "strength": "speculative"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "credit",
+          "instrument": "European airline credit spreads",
+          "direction": "wider",
+          "magnitude": "20 to 40 basis points",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Credit spreads for European airlines are likely to widen as lenders reassess risk.",
+          "detail": "The suspension of flights by Norse Atlantic could lead to a repricing of credit risk across the airline sector, widening spreads."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "European airline stocks",
+          "direction": "down",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 1,
+          "plain": "European airline stocks may fall due to increased credit concerns.",
+          "detail": "The potential bankruptcy of Norse Atlantic could lead to a sell-off in airline equities as investors price in higher risk."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "Global utility stocks",
+          "direction": "up",
+          "magnitude": "1 to 2%",
+          "horizon": "weeks",
+          "conviction": 2,
+          "order": 2,
+          "plain": "Investors might shift funds to utility stocks, seen as safer amid airline sector instability.",
+          "detail": "As risk in the airline sector rises, a rotation into defensive sectors like utilities could occur, lifting their stock prices."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the ripple effects on suppliers and partners of Norse Atlantic, who could face financial strain from unpaid contracts.",
+        "detail": "The potential bankruptcy of Norse Atlantic could lead to cascading defaults among its suppliers and partners, impacting credit markets beyond airlines."
+      },
+      "falsifiers": [
+        "Norse Atlantic secures emergency funding",
+        "Improvement in airline credit conditions",
+        "Increased passenger demand offsets risks"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long utility stocks",
+          "plain": "Buy utility stocks as a defensive play against airline sector volatility.",
+          "instrument": "Cash equity, futures",
+          "risk": "Airline sector stabilisation reduces defensive demand."
+        }
+      ],
+      "watchNext": [
+        "Norse Atlantic bankruptcy filing",
+        "Credit rating updates for airlines",
+        "Central bank statements on credit conditions"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        },
+        {
+          "term": "credit spread",
+          "plain": "The difference in yield between a corporate bond and a government bond of similar maturity, reflecting credit risk."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-26-gold-rises-but-u-s-inflation-data-fuels-rate-hike-expectatio",
+      "rank": 4,
+      "editorNote": "Rising gold prices amid U.S. inflation data suggest potential rate hikes, affecting both rates and commodities markets.",
+      "materiality": {
+        "score": 63.2,
+        "components": {
+          "corroboration": 13,
+          "authority": 13,
+          "breadth": 9,
+          "salience": 20,
+          "recency": 8.2
+        },
+        "distinctSources": 1,
+        "salienceTerms": [
+          "rate hike",
+          "inflation",
+          "gold"
+        ]
+      },
+      "sources": [
+        "WSJ Markets"
+      ],
+      "links": [
+        {
+          "name": "WSJ Markets",
+          "url": "https://www.wsj.com/finance/commodities-futures/gold-edges-lower-amid-rate-hike-bets-1d4057c0?mod=rss_markets_main",
+          "title": "Gold Rises But U.S. Inflation Data Fuels Rate-Hike Expectations"
+        }
+      ],
+      "headlines": [
+        "Gold Rises But U.S. Inflation Data Fuels Rate-Hike Expectations"
+      ],
+      "newestAt": "2026-11-26T08:40:00.000Z",
+      "headline": "Gold Rises as Inflation Data Points to More Rate Hikes",
+      "standfirst": "Gold prices increased after inflation data suggested further rate hikes.",
+      "classification": {
+        "eventType": "macro-data",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market had anticipated some inflation impact, but the extent of rate hike expectations was not fully priced in.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "US",
+          "Global"
+        ]
+      },
+      "whatHappened": {
+        "plain": "Gold prices rose after a fall on Wednesday, but are still expected to end the week lower. This movement came after new U.S. inflation data suggested that interest rates might increase further.",
+        "whyItMatters": "Investors care because higher inflation can lead to rate hikes, which affect the cost of borrowing and investment returns.",
+        "detail": "The latest inflation figures have reinforced expectations for the Federal Reserve to continue its rate-hiking cycle, impacting both gold prices and broader financial markets."
+      },
+      "chains": [
+        {
+          "channel": "policy-reaction",
+          "links": [
+            {
+              "plain": "Inflation data suggests the Fed may raise rates again.",
+              "detail": "Stronger-than-expected inflation data increases the likelihood of further Federal Reserve rate hikes."
+            },
+            {
+              "plain": "Higher rates could slow economic growth.",
+              "detail": "Increased borrowing costs from rate hikes may dampen economic activity by reducing consumer spending and business investment."
+            }
+          ],
+          "endpoint": "US economic growth",
+          "strength": "strong"
+        },
+        {
+          "channel": "substitution",
+          "links": [
+            {
+              "plain": "Investors buy gold as a hedge against inflation.",
+              "detail": "With rising inflation, investors turn to gold as a traditional store of value, driving up its price."
+            },
+            {
+              "plain": "Higher gold prices make other commodities less attractive.",
+              "detail": "As gold becomes more expensive, investors may shy away from other commodities, affecting their prices."
+            }
+          ],
+          "endpoint": "commodity markets",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "commodities",
+          "instrument": "Gold",
+          "direction": "up",
+          "magnitude": "2% to 4%",
+          "horizon": "weeks",
+          "conviction": 4,
+          "order": 1,
+          "plain": "Gold prices are likely to rise as investors seek a hedge against inflation.",
+          "detail": "With inflation expectations rising, gold becomes more attractive as a safe-haven asset, pushing its price higher."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "US 10-year Treasury yield",
+          "direction": "up",
+          "magnitude": "8 to 15 basis points",
+          "horizon": "days",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Treasury yields may increase as rate hike expectations grow.",
+          "detail": "The expectation of further Fed rate hikes could lead to a sell-off in Treasuries, pushing yields higher."
+        },
+        {
+          "assetClass": "equities",
+          "instrument": "US consumer discretionary stocks",
+          "direction": "down",
+          "magnitude": "1% to 2%",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Consumer stocks might fall due to higher borrowing costs reducing spending.",
+          "detail": "Higher interest rates can squeeze consumer budgets, leading to lower sales for discretionary goods and affecting stock prices."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may not fully appreciate how quickly further rate hikes could slow economic growth, leading to a potential overvaluation of equities.",
+        "detail": "Market participants might underestimate the speed at which additional rate hikes could dampen economic activity, risking a mispricing in equity valuations."
+      },
+      "falsifiers": [
+        "Inflation data showing a significant decline",
+        "Federal Reserve signals a pause in rate hikes",
+        "Gold prices falling despite inflation concerns"
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Buy Gold Futures",
+          "plain": "Purchase gold futures as a hedge against rising inflation and potential economic slowdown.",
+          "instrument": "Gold futures",
+          "risk": "If inflation fears subside, gold prices could fall, leading to losses."
+        }
+      ],
+      "watchNext": [
+        "Next Federal Reserve meeting",
+        "Upcoming US CPI release",
+        "Global economic growth indicators"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    },
+    {
+      "id": "2026-11-26-bank-of-england-proposes-cut-to-u-k-bank-capital-requirement",
+      "rank": 5,
+      "editorNote": "The Bank of England's proposal to cut capital requirements for UK banks could influence equities and credit markets.",
+      "materiality": {
+        "score": 59.8,
+        "components": {
+          "corroboration": 21,
+          "authority": 13,
+          "breadth": 4.5,
+          "salience": 11.9,
+          "recency": 9.4
+        },
+        "distinctSources": 2,
+        "salienceTerms": [
+          "bank of england",
+          "buyback"
+        ]
+      },
+      "sources": [
+        "WSJ World",
+        "Investing.com Economy"
+      ],
+      "links": [
+        {
+          "name": "WSJ World",
+          "url": "https://www.wsj.com/business/bank-of-england-proposes-cut-to-u-k-bank-capital-requirements-456b852d?mod=rss_worldnews",
+          "title": "Bank of England Proposes Cut to U.K. Bank Capital Requirements"
+        },
+        {
+          "name": "Investing.com Economy",
+          "url": "https://www.investing.com/news/economy-news/bank-of-england-to-cut-capital-requirements-for-ukfocused-lenders-5052497",
+          "title": "Bank of England to cut capital requirements for UK-focused lenders"
+        }
+      ],
+      "headlines": [
+        "Bank of England Proposes Cut to U.K. Bank Capital Requirements",
+        "Bank of England to cut capital requirements for UK-focused lenders"
+      ],
+      "newestAt": "2026-11-26T13:01:05.000Z",
+      "headline": "UK Banks Set for Profit Boost as Capital Rules Ease",
+      "standfirst": "The Bank of England plans to reduce capital requirements for UK banks.",
+      "classification": {
+        "eventType": "regulatory",
+        "pricedIn": "partly-priced",
+        "pricedInRationale": "The market expected some regulatory easing, but the scale and specifics were not fully known.",
+        "persistence": "weeks",
+        "regionFocus": [
+          "UK"
+        ]
+      },
+      "whatHappened": {
+        "plain": "The Bank of England proposed lowering the capital reserves UK banks must hold. This change would allow banks to use more of their funds for dividends, buybacks, or lending.",
+        "whyItMatters": "This policy could increase bank profits and lending capacity, impacting stock prices and economic growth.",
+        "detail": "The proposal aims to free up capital that banks currently hold as a safety buffer, potentially increasing their return on equity and lending volumes."
+      },
+      "chains": [
+        {
+          "channel": "earnings",
+          "links": [
+            {
+              "plain": "Banks can pay more dividends and buy back shares.",
+              "detail": "Lower capital requirements increase discretionary capital, enabling higher shareholder returns."
+            },
+            {
+              "plain": "Higher dividends and buybacks boost bank stock prices.",
+              "detail": "Increased capital distribution signals financial health, attracting investors and driving up stock prices."
+            }
+          ],
+          "endpoint": "UK bank shareholders",
+          "strength": "strong"
+        },
+        {
+          "channel": "credit",
+          "links": [
+            {
+              "plain": "Banks can lend more to businesses and households.",
+              "detail": "Reduced capital buffers lower the cost of lending, encouraging banks to extend more credit."
+            },
+            {
+              "plain": "Increased lending supports economic growth.",
+              "detail": "Greater credit availability can stimulate spending and investment, boosting GDP growth."
+            }
+          ],
+          "endpoint": "UK economy",
+          "strength": "moderate"
+        }
+      ],
+      "assetImpacts": [
+        {
+          "assetClass": "equities",
+          "instrument": "UK bank stocks",
+          "direction": "up",
+          "magnitude": "2 to 4%",
+          "horizon": "days",
+          "conviction": 4,
+          "order": 1,
+          "plain": "UK bank shares are likely to rise as investors anticipate higher profits.",
+          "detail": "The market will reprice UK bank stocks upwards due to expected increases in dividends and buybacks."
+        },
+        {
+          "assetClass": "credit",
+          "instrument": "UK corporate bonds",
+          "direction": "tighter",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "Corporate bond spreads may tighten as banks increase lending.",
+          "detail": "Increased bank lending capacity could reduce corporate reliance on bond markets, tightening spreads."
+        },
+        {
+          "assetClass": "rates",
+          "instrument": "UK government bond yields",
+          "direction": "up",
+          "magnitude": "5 to 10 basis points",
+          "horizon": "weeks",
+          "conviction": 3,
+          "order": 2,
+          "plain": "UK bond yields may rise as economic growth prospects improve.",
+          "detail": "Enhanced lending and economic activity could lead to higher inflation expectations, lifting yields."
+        }
+      ],
+      "whatMarketMisses": {
+        "plain": "Investors may underestimate the long-term impact of increased lending on UK economic growth. While immediate effects are visible in bank stocks, the broader economic benefits could lead to sustained growth and higher interest rates.",
+        "detail": "The market might not fully price in the potential for prolonged economic expansion driven by increased credit availability, which could lead to a steeper yield curve."
+      },
+      "falsifiers": [
+        "The Bank of England reverses its decision on capital requirements.",
+        "UK economic data shows no improvement in lending or growth.",
+        "Global economic conditions deteriorate, affecting UK banks."
+      ],
+      "tradeExpression": [
+        {
+          "idea": "Long UK bank stocks",
+          "plain": "Buy UK bank stocks to benefit from expected profit increases due to regulatory changes.",
+          "instrument": "Cash equities or equity futures",
+          "risk": "The main risk is a reversal of the regulatory decision or unexpected economic downturn."
+        }
+      ],
+      "watchNext": [
+        "Bank of England's final decision on capital requirements",
+        "UK lending and economic growth data releases",
+        "Global economic indicators impacting UK markets"
+      ],
+      "glossary": [
+        {
+          "term": "basis point",
+          "plain": "One hundredth of a percentage point. A move from 4.00% to 4.10% is ten basis points."
+        }
+      ],
+      "confidence": 3
+    }
+  ],
+  "diagnostics": {
+    "articlesIngested": 178,
+    "clustersConsidered": 25,
+    "feeds": [
+      {
+        "id": "fed",
+        "name": "Federal Reserve",
+        "ok": true,
+        "parsed": 20,
+        "fresh": 2,
+        "ms": 127,
+        "error": null
+      },
+      {
+        "id": "fed-fomc",
+        "name": "Federal Reserve (Monetary)",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 0,
+        "ms": 91,
+        "error": null
+      },
+      {
+        "id": "ecb",
+        "name": "European Central Bank",
+        "ok": true,
+        "parsed": 15,
+        "fresh": 3,
+        "ms": 639,
+        "error": null
+      },
+      {
+        "id": "boe",
+        "name": "Bank of England",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 725,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "imf",
+        "name": "IMF",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 443,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "bls",
+        "name": "US Bureau of Labor Statistics",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 466,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "eia",
+        "name": "US EIA",
+        "ok": true,
+        "parsed": 32,
+        "fresh": 1,
+        "ms": 592,
+        "error": null
+      },
+      {
+        "id": "mw-top",
+        "name": "MarketWatch",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 470,
+        "error": null
+      },
+      {
+        "id": "mw-pulse",
+        "name": "MarketWatch Market Pulse",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 0,
+        "ms": 469,
+        "error": null
+      },
+      {
+        "id": "mw-rt",
+        "name": "MarketWatch Real-time",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 0,
+        "ms": 482,
+        "error": null
+      },
+      {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "ok": true,
+        "parsed": 61,
+        "fresh": 29,
+        "ms": 487,
+        "error": null
+      },
+      {
+        "id": "wsj-world",
+        "name": "WSJ World",
+        "ok": true,
+        "parsed": 71,
+        "fresh": 18,
+        "ms": 499,
+        "error": null
+      },
+      {
+        "id": "yahoo-fin",
+        "name": "Yahoo Finance",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 525,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "cnbc-top",
+        "name": "CNBC",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 30,
+        "ms": 675,
+        "error": null
+      },
+      {
+        "id": "cnbc-econ",
+        "name": "CNBC Economy",
+        "ok": true,
+        "parsed": 30,
+        "fresh": 6,
+        "ms": 719,
+        "error": null
+      },
+      {
+        "id": "ft",
+        "name": "Financial Times",
+        "ok": true,
+        "parsed": 11,
+        "fresh": 11,
+        "ms": 1509,
+        "error": null
+      },
+      {
+        "id": "bbc-biz",
+        "name": "BBC Business",
+        "ok": true,
+        "parsed": 56,
+        "fresh": 29,
+        "ms": 569,
+        "error": null
+      },
+      {
+        "id": "guardian-biz",
+        "name": "Guardian Business",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 554,
+        "error": "HTTP 403"
+      },
+      {
+        "id": "inv-fx",
+        "name": "Investing.com FX",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 9,
+        "ms": 653,
+        "error": null
+      },
+      {
+        "id": "inv-cmdty",
+        "name": "Investing.com Commodities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 631,
+        "error": null
+      },
+      {
+        "id": "inv-econ",
+        "name": "Investing.com Economy",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 630,
+        "error": null
+      },
+      {
+        "id": "inv-bonds",
+        "name": "Investing.com Bonds",
+        "ok": false,
+        "parsed": 0,
+        "fresh": 0,
+        "ms": 4744,
+        "error": "HTTP 404"
+      },
+      {
+        "id": "inv-stock",
+        "name": "Investing.com Equities",
+        "ok": true,
+        "parsed": 10,
+        "fresh": 10,
+        "ms": 641,
+        "error": null
+      }
+    ],
+    "marketProviders": [
+      {
+        "provider": "stooq",
+        "ok": false,
+        "count": 0,
+        "ms": 695,
+        "error": "Error: HTTP 404"
+      },
+      {
+        "provider": "yahoo",
+        "ok": false,
+        "count": 0,
+        "ms": 175,
+        "error": "no rows"
+      },
+      {
+        "provider": "fred",
+        "ok": false,
+        "count": 0,
+        "ms": 0,
+        "error": "no rows"
+      }
+    ],
+    "usage": {
+      "calls": 6,
+      "inputTokens": 12541,
+      "outputTokens": 5737,
+      "estimatedCostUsd": 0.0887
+    },
+    "runtimeMs": 25249
+  },
+  "scorecardSummary": {
+    "total": 52,
+    "open": 24,
+    "flat": 2,
+    "hits": 11,
+    "misses": 15,
+    "settled": 26,
+    "hitRate": 42.3,
+    "byClass": {
+      "rates": {
+        "hits": 4,
+        "total": 10,
+        "rate": 40
+      },
+      "commodities": {
+        "hits": 1,
+        "total": 3,
+        "rate": 33.3
+      },
+      "fx": {
+        "hits": 0,
+        "total": 1,
+        "rate": 0
+      },
+      "vol": {
+        "hits": 4,
+        "total": 4,
+        "rate": 100
+      },
+      "credit": {
+        "hits": 1,
+        "total": 1,
+        "rate": 100
+      },
+      "equities": {
+        "hits": 1,
+        "total": 7,
+        "rate": 14.3
+      }
+    },
+    "byConviction": {
+      "3": {
+        "hits": 9,
+        "total": 18,
+        "rate": 50
+      },
+      "4": {
+        "hits": 2,
+        "total": 8,
+        "rate": 25
+      }
+    }
+  }
+}
